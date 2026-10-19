@@ -1,0 +1,6589 @@
+{
+ "id": "adab",
+ "versi": 1,
+ "bilangan": 96,
+ "soalan": [
+  {
+   "bahagian": "A",
+   "jenis": "bulat",
+   "soalan": "بولتکن جواڤن يڠ بتول.",
+   "rumi": "Bulatkan jawapan yang betul.",
+   "markah": 5,
+   "item": [
+    {
+     "teks": "کيت هندقله ____ ستياس نعمت يڠ دبريکن الله کڤد کيت.",
+     "rumi": "Kita hendaklah ____ sentiasa nikmat yang diberikan Allah kepada kita.",
+     "pilihan": [
+      {
+       "teks": "برشکور",
+       "rumi": "bersyukur"
+      },
+      {
+       "teks": "ملاڤکن",
+       "rumi": "melupakan"
+      }
+     ],
+     "jawapan": 0
+    },
+    {
+     "teks": "کيت هندقله مڠرجاءکن ____ ڤد اول وقتو سباݢاي تندا کتاعت کڤد الله.",
+     "rumi": "Kita hendaklah mengerjakan ____ pada awal waktu sebagai tanda ketaatan kepada Allah.",
+     "pilihan": [
+      {
+       "teks": "ڤرماءينن",
+       "rumi": "permainan"
+      },
+      {
+       "teks": "صلاة ليم وقتو",
+       "rumi": "solat lima waktu"
+      }
+     ],
+     "jawapan": 1
+    },
+    {
+     "teks": "سأورڠ مسلم هندقله ____ کڤد الله سهاج دڠن ڤنوه اخلاص.",
+     "rumi": "Seorang muslim hendaklah ____ kepada Allah sahaja dengan penuh ikhlas.",
+     "pilihan": [
+      {
+       "teks": "بردعاء",
+       "rumi": "berdoa"
+      },
+      {
+       "teks": "بڠݢ ديري",
+       "rumi": "bangga diri"
+      }
+     ],
+     "jawapan": 0
+    },
+    {
+     "teks": "کيت هندقله ممباچ ____ سبلاوم ممولاکن ڤکرجاءن يڠ باءيق.",
+     "rumi": "Kita hendaklah membaca ____ sebelum memulakan pekerjaan yang baik.",
+     "pilihan": [
+      {
+       "teks": "دعاء اورڠ لاءين",
+       "rumi": "doa orang lain"
+      },
+      {
+       "teks": "بسم الله",
+       "rumi": "Bismillah"
+      }
+     ],
+     "jawapan": 1
+    },
+    {
+     "teks": "کيت هندقله ____ رسول الله دڠن مڠيکوت سنة بݢيندا.",
+     "rumi": "Kita hendaklah ____ Rasulullah dengan mengikuti sunnah baginda.",
+     "pilihan": [
+      {
+       "teks": "مڠاسيهي",
+       "rumi": "mengasihi"
+      },
+      {
+       "teks": "مڠابايکن",
+       "rumi": "mengabaikan"
+      }
+     ],
+     "jawapan": 0
+    }
+   ],
+   "id": "adab-a1"
+  },
+  {
+   "bahagian": "A",
+   "jenis": "bulat",
+   "soalan": "بولتکن جواڤن يڠ بتول.",
+   "rumi": "Bulatkan jawapan yang betul.",
+   "markah": 5,
+   "item": [
+    {
+     "teks": "کيت هندقله برچاکڤ دڠن ايبو باڤ دڠن سوارا يڠ ____.",
+     "rumi": "Kita hendaklah bercakap dengan ibu bapa dengan suara yang ____.",
+     "pilihan": [
+      {
+       "teks": "کاسر دان کوتور",
+       "rumi": "kasar dan kotor"
+      },
+      {
+       "teks": "لمبوت دان سوڤن",
+       "rumi": "lembut dan sopan"
+      }
+     ],
+     "jawapan": 1
+    },
+    {
+     "teks": "سبلاوم کلوار رومه، کيت هندقله ____ ايبو باڤ.",
+     "rumi": "Sebelum keluar rumah, kita hendaklah ____ ibu bapa.",
+     "pilihan": [
+      {
+       "teks": "ممينتا ايذين",
+       "rumi": "meminta izin"
+      },
+      {
+       "teks": "مڠابايکن",
+       "rumi": "mengabaikan"
+      }
+     ],
+     "jawapan": 0
+    },
+    {
+     "teks": "کيت هندقله ____ ݢورو يڠ مڠاجر کيت دسکوله.",
+     "rumi": "Kita hendaklah ____ guru yang mengajar kita di sekolah.",
+     "pilihan": [
+      {
+       "teks": "مڠومڤت",
+       "rumi": "mengumpat"
+      },
+      {
+       "teks": "مڠحرمتي",
+       "rumi": "menghormati"
+      }
+     ],
+     "jawapan": 1
+    },
+    {
+     "teks": "کتيک ݢورو مڠاجر، کيت هندقله ____ دڠن ڤرهاتين.",
+     "rumi": "Ketika guru mengajar, kita hendaklah ____ dengan perhatian.",
+     "pilihan": [
+      {
+       "teks": "مندڠر",
+       "rumi": "mendengar"
+      },
+      {
+       "teks": "برماءين",
+       "rumi": "bermain"
+      }
+     ],
+     "jawapan": 0
+    },
+    {
+     "teks": "کيت هندقله ممبنتو ايبو باڤ دڠن ڤنوه ____.",
+     "rumi": "Kita hendaklah membantu ibu bapa dengan penuh ____.",
+     "pilihan": [
+      {
+       "teks": "ممبذير ماس",
+       "rumi": "membazir masa"
+      },
+      {
+       "teks": "اخلاص",
+       "rumi": "ikhlas"
+      }
+     ],
+     "jawapan": 1
+    }
+   ],
+   "id": "adab-a2"
+  },
+  {
+   "bahagian": "A",
+   "jenis": "bulat",
+   "soalan": "بولتکن جواڤن يڠ بتول.",
+   "rumi": "Bulatkan jawapan yang betul.",
+   "markah": 5,
+   "item": [
+    {
+     "teks": "سبلاوم ماکن، کيت هندقله ممباسوه تاڠن دان ممباچ ____.",
+     "rumi": "Sebelum makan, kita hendaklah membasuh tangan dan membaca ____.",
+     "pilihan": [
+      {
+       "teks": "بسم الله",
+       "rumi": "Bismillah"
+      },
+      {
+       "teks": "ڤرکاتاءن کاسر",
+       "rumi": "perkataan kasar"
+      }
+     ],
+     "jawapan": 0
+    },
+    {
+     "teks": "کيت هندقله ماکن دڠن تاڠن ____.",
+     "rumi": "Kita hendaklah makan dengan tangan ____.",
+     "pilihan": [
+      {
+       "teks": "کيري",
+       "rumi": "kiri"
+      },
+      {
+       "teks": "کانن",
+       "rumi": "kanan"
+      }
+     ],
+     "jawapan": 1
+    },
+    {
+     "teks": "کتيک مولوت ڤنوه ماکنن، کيت تيدق بوليه ____.",
+     "rumi": "Ketika mulut penuh makanan, kita tidak boleh ____.",
+     "pilihan": [
+      {
+       "teks": "برچاکڤ",
+       "rumi": "bercakap"
+      },
+      {
+       "teks": "مڠونيڠ",
+       "rumi": "mengunyah"
+      }
+     ],
+     "jawapan": 0
+    },
+    {
+     "teks": "کيت هندقله ماکن سچارا ____ اݢر سيهت.",
+     "rumi": "Kita hendaklah makan secara ____ agar sihat.",
+     "pilihan": [
+      {
+       "teks": "ݢلوجوه",
+       "rumi": "gelojoh"
+      },
+      {
+       "teks": "ڤرلاهن",
+       "rumi": "perlahan"
+      }
+     ],
+     "jawapan": 1
+    },
+    {
+     "teks": "کيت هندقله مڠهابيسکن ماکنن اݢر تيدق ____.",
+     "rumi": "Kita hendaklah menghabiskan makanan agar tidak ____.",
+     "pilihan": [
+      {
+       "teks": "ممبذير",
+       "rumi": "membazir"
+      },
+      {
+       "teks": "برشکور",
+       "rumi": "bersyukur"
+      }
+     ],
+     "jawapan": 0
+    }
+   ],
+   "id": "adab-a3"
+  },
+  {
+   "bahagian": "A",
+   "jenis": "bulat",
+   "soalan": "بولتکن جواڤن يڠ بتول.",
+   "rumi": "Bulatkan jawapan yang betul.",
+   "markah": 5,
+   "item": [
+    {
+     "teks": "کيت هندقله ممباچ دعاء سبلاوم ____.",
+     "rumi": "Kita hendaklah membaca doa sebelum ____.",
+     "pilihan": [
+      {
+       "teks": "برماءين",
+       "rumi": "bermain"
+      },
+      {
+       "teks": "تيدور",
+       "rumi": "tidur"
+      }
+     ],
+     "jawapan": 1
+    },
+    {
+     "teks": "کتيک ماسوق تندس، کيت هندقله مڠݢوناکن کاکي ____.",
+     "rumi": "Ketika masuk tandas, kita hendaklah menggunakan kaki ____.",
+     "pilihan": [
+      {
+       "teks": "کيري",
+       "rumi": "kiri"
+      },
+      {
+       "teks": "کانن",
+       "rumi": "kanan"
+      }
+     ],
+     "jawapan": 0
+    },
+    {
+     "teks": "کيت هندقله ماسوق مسجد دڠن کاکي ____.",
+     "rumi": "Kita hendaklah masuk masjid dengan kaki ____.",
+     "pilihan": [
+      {
+       "teks": "کيري",
+       "rumi": "kiri"
+      },
+      {
+       "teks": "کانن",
+       "rumi": "kanan"
+      }
+     ],
+     "jawapan": 1
+    },
+    {
+     "teks": "اڤابيلا باڠون درڤد تيدور، کيت هندقله ممباچ ____.",
+     "rumi": "Apabila bangun daripada tidur, kita hendaklah membaca ____.",
+     "pilihan": [
+      {
+       "teks": "الحمد لله",
+       "rumi": "Alhamdulillah"
+      },
+      {
+       "teks": "دعاء ماسوق تندس",
+       "rumi": "doa masuk tandas"
+      }
+     ],
+     "jawapan": 0
+    },
+    {
+     "teks": "ددالم مسجد، کيت هندقله ____.",
+     "rumi": "Di dalam masjid, kita hendaklah ____.",
+     "pilihan": [
+      {
+       "teks": "برماءين دان برچاکڤ",
+       "rumi": "bermain dan bercakap"
+      },
+      {
+       "teks": "برصلاة دڠن ترتيب",
+       "rumi": "bersolat dengan tertib"
+      }
+     ],
+     "jawapan": 1
+    }
+   ],
+   "id": "adab-a4"
+  },
+  {
+   "bahagian": "A",
+   "jenis": "bulat",
+   "soalan": "بولتکن جواڤن يڠ بتول.",
+   "rumi": "Bulatkan jawapan yang betul.",
+   "markah": 5,
+   "item": [
+    {
+     "teks": "اورڠ يڠ برکات بنر دان تيدق بربوهوڠ دسيبوت اورڠ يڠ ____.",
+     "rumi": "Orang yang berkata benar dan tidak berbohong disebut orang yang ____.",
+     "pilihan": [
+      {
+       "teks": "تامق",
+       "rumi": "tamak"
+      },
+      {
+       "teks": "جوجور",
+       "rumi": "jujur"
+      }
+     ],
+     "jawapan": 1
+    },
+    {
+     "teks": "کيت هندقله ____ امانه يڠ دبريکن اورڠ لاءين.",
+     "rumi": "Kita hendaklah ____ amanah yang diberikan orang lain.",
+     "pilihan": [
+      {
+       "teks": "منجاݢ",
+       "rumi": "menjaga"
+      },
+      {
+       "teks": "ممبواڠ",
+       "rumi": "membuang"
+      }
+     ],
+     "jawapan": 0
+    },
+    {
+     "teks": "تيدق سنڠ مليهت کباءيکن اورڠ لاءين اداله سيفت ____.",
+     "rumi": "Tidak senang melihat kebaikan orang lain adalah sifat ____.",
+     "pilihan": [
+      {
+       "teks": "کاسيه سايڠ",
+       "rumi": "kasih sayang"
+      },
+      {
+       "teks": "حسد دڠکي",
+       "rumi": "hasad dengki"
+      }
+     ],
+     "jawapan": 1
+    },
+    {
+     "teks": "مڠومڤت اورڠ لاءين اداله ڤربواتن يڠ ____.",
+     "rumi": "Mengumpat orang lain adalah perbuatan yang ____.",
+     "pilihan": [
+      {
+       "teks": "دلاڠ اوليه إسلام",
+       "rumi": "dilarang oleh Islam"
+      },
+      {
+       "teks": "دݢالقکن اوليه إسلام",
+       "rumi": "digalakkan oleh Islam"
+      }
+     ],
+     "jawapan": 0
+    },
+    {
+     "teks": "اورڠ يڠ ____ اکن دبنچي اوليه مشارکت.",
+     "rumi": "Orang yang ____ akan dibenci oleh masyarakat.",
+     "pilihan": [
+      {
+       "teks": "جوجور",
+       "rumi": "jujur"
+      },
+      {
+       "teks": "سومبوڠ",
+       "rumi": "sombong"
+      }
+     ],
+     "jawapan": 1
+    }
+   ],
+   "id": "adab-a5"
+  },
+  {
+   "bahagian": "A",
+   "jenis": "suai",
+   "soalan": "سوايکن ادب دڠن تمڤت يڠ برکاءيتن.",
+   "rumi": "Suaikan adab dengan tempat yang berkaitan.",
+   "markah": 5,
+   "pasangan": [
+    {
+     "kiri": "منجاݢ کبرسيهن دان تيدق برچاکڤ بيسيڠ",
+     "kiriRumi": "Menjaga kebersihan dan tidak bercakap bising",
+     "kanan": "ددالم مسجد",
+     "kananRumi": "Di dalam masjid"
+    },
+    {
+     "kiri": "ممباچ دعاء ماسوق دان کلوار",
+     "kiriRumi": "Membaca doa masuk dan keluar",
+     "kanan": "ددالم تندس",
+     "kananRumi": "Di dalam tandas"
+    },
+    {
+     "kiri": "مندڠر ڤنجلسن ݢورو دڠن ڤرهاتين",
+     "kiriRumi": "Mendengar penjelasan guru dengan perhatian",
+     "kanan": "ددالم مجليس علمو",
+     "kananRumi": "Di dalam majlis ilmu"
+    },
+    {
+     "kiri": "ممبري لالوان کڤد اورڠ توا",
+     "kiriRumi": "Memberi laluan kepada orang tua",
+     "kanan": "دالم ڤرجالنن",
+     "kananRumi": "Dalam perjalanan"
+    },
+    {
+     "kiri": "برچاکڤ دڠن سوارا يڠ لمبوت",
+     "kiriRumi": "Bercakap dengan suara yang lembut",
+     "kanan": "کتيک برچاکڤ دڠن اورڠ لاءين",
+     "kananRumi": "Ketika bercakap dengan orang lain"
+    }
+   ],
+   "id": "adab-a6"
+  },
+  {
+   "bahagian": "A",
+   "jenis": "suai",
+   "soalan": "سوايکن سيفت دڠن مکسود يڠ بتول.",
+   "rumi": "Suaikan sifat dengan maksud yang betul.",
+   "markah": 5,
+   "pasangan": [
+    {
+     "kiri": "جوجور",
+     "kiriRumi": "Jujur",
+     "kanan": "برکات بنر دان تيدق بربوهوڠ",
+     "kananRumi": "Berkata benar dan tidak berbohong"
+    },
+    {
+     "kiri": "امانه",
+     "kiriRumi": "Amanah",
+     "kanan": "منجاݢ کڤرچاءأن اورڠ لاءين",
+     "kananRumi": "Menjaga kepercayaan orang lain"
+    },
+    {
+     "kiri": "صبر",
+     "kiriRumi": "Sabar",
+     "kanan": "برتاهن هاتي کتيک مڠهادڤي اوجين",
+     "kananRumi": "Bertahan hati ketika menghadapi ujian"
+    },
+    {
+     "kiri": "تامق",
+     "kiriRumi": "Tamak",
+     "kanan": "اينݢين مڠمبيل سموا بارڠ اونتوق ديري سنديري",
+     "kananRumi": "Ingin mengambil semua barang untuk diri sendiri"
+    },
+    {
+     "kiri": "مڠومڤت",
+     "kiriRumi": "Mengumpat",
+     "kanan": "برچاکڤ کبوروکن اورڠ لاءين دبلکڠ مريک",
+     "kananRumi": "Bercakap keburukan orang lain di belakang mereka"
+    }
+   ],
+   "id": "adab-a7"
+  },
+  {
+   "bahagian": "A",
+   "jenis": "suai",
+   "soalan": "سوايکن امالن دڠن چارا يڠ بتول.",
+   "rumi": "Suaikan amalan dengan cara yang betul.",
+   "markah": 5,
+   "pasangan": [
+    {
+     "kiri": "ماسوق کرومه",
+     "kiriRumi": "Masuk ke rumah",
+     "kanan": "ممبري سلام دان ممينتا ايذين",
+     "kananRumi": "Memberi salam dan meminta izin"
+    },
+    {
+     "kiri": "ماکن",
+     "kiriRumi": "Makan",
+     "kanan": "ممباچ بسم الله دان مڠݢوناکن تاڠن کانن",
+     "kananRumi": "Membaca Bismillah dan menggunakan tangan kanan"
+    },
+    {
+     "kiri": "تيدور",
+     "kiriRumi": "Tidur",
+     "kanan": "مڠيريڠ ک سبله کانن دان ممباچ دعاء",
+     "kananRumi": "Mengiring ke sebelah kanan dan membaca doa"
+    },
+    {
+     "kiri": "مينوم",
+     "kiriRumi": "Minum",
+     "kanan": "دودوق دان تيدق برچاکڤ کتيک مينوم",
+     "kananRumi": "Duduk dan tidak bercakap ketika minum"
+    },
+    {
+     "kiri": "منزيارهي اورڠ ساکيت",
+     "kiriRumi": "Menziarahi orang sakit",
+     "kanan": "مندعاءکن کصيحتن مريک",
+     "kananRumi": "Mendoakan kesihatan mereka"
+    }
+   ],
+   "id": "adab-a8"
+  },
+  {
+   "bahagian": "A",
+   "jenis": "suai",
+   "soalan": "سوايکن سيکڤ دڠن کسن يڠ بتول.",
+   "rumi": "Suaikan sikap dengan kesan yang betul.",
+   "markah": 5,
+   "pasangan": [
+    {
+     "kiri": "برادب دڠن جيرن",
+     "kiriRumi": "Beradab dengan jiran",
+     "kanan": "هيدوڤ دالم مشارکت منجادي داماي",
+     "kananRumi": "Hidup dalam masyarakat menjadi damai"
+    },
+    {
+     "kiri": "بربوهوڠ",
+     "kiriRumi": "Berbohong",
+     "kanan": "تيدق دڤرچاءاي اوليه اورڠ لاءين",
+     "kananRumi": "Tidak dipercayai oleh orang lain"
+    },
+    {
+     "kiri": "مڠحرمتي اورڠ توا",
+     "kiriRumi": "Menghormati orang tua",
+     "kanan": "دسايڠي دان دبري برکت دالم هيدوڤ",
+     "kananRumi": "Disayangi dan diberi berkat dalam hidup"
+    },
+    {
+     "kiri": "ممبذير ماکنن",
+     "kiriRumi": "Membazir makanan",
+     "kanan": "منداڤت دوسا دان تيدق برشکور",
+     "kananRumi": "Mendapat dosa dan tidak bersyukur"
+    },
+    {
+     "kiri": "برکوڠسي ماينن دڠن راکن",
+     "kiriRumi": "Berkongsi mainan dengan rakan",
+     "kanan": "دسايڠي اوليه راکن",
+     "kananRumi": "Disayangi oleh rakan"
+    }
+   ],
+   "id": "adab-a9"
+  },
+  {
+   "bahagian": "A",
+   "jenis": "betul_salah",
+   "soalan": "تنداکن ✓ ڤد ڤتاتاءن يڠ بتول دان ✗ ڤد ڤتاتاءن يڠ ساله.",
+   "rumi": "Tandakan ✓ pada pernyataan yang betul dan ✗ pada pernyataan yang salah.",
+   "markah": 5,
+   "item": [
+    {
+     "teks": "کيت هندقله مڠوچڤکن الحمد لله سباݢاي تندا برشکور کڤد الله.",
+     "rumi": "Kita hendaklah mengucapkan Alhamdulillah sebagai tanda bersyukur kepada Allah.",
+     "betul": true,
+     "jawapan": -1
+    },
+    {
+     "teks": "کيت بوليه مڠابايکن صلاة کران سيبوق برماءين.",
+     "rumi": "Kita boleh mengabaikan solat kerana sibuk bermain.",
+     "betul": false,
+     "jawapan": -1
+    },
+    {
+     "teks": "کيت هندقله مڠحرمتي ايبو باڤ دان ممينتا ايذين کڤد مريک.",
+     "rumi": "Kita hendaklah menghormati ibu bapa dan meminta izin kepada mereka.",
+     "betul": true,
+     "jawapan": -1
+    },
+    {
+     "teks": "مڠومڤت ايبو باڤ اداله ڤربواتن يڠ دݢالقکن دالم إسلام.",
+     "rumi": "Mengumpat ibu bapa adalah perbuatan yang digalakkan dalam Islam.",
+     "betul": false,
+     "jawapan": -1
+    },
+    {
+     "teks": "کيت هندقله ممباچ القرءان دان مڠيکوت سنة رسول الله.",
+     "rumi": "Kita hendaklah membaca Al-Quran dan mengikuti sunnah Rasulullah.",
+     "betul": true,
+     "jawapan": -1
+    }
+   ],
+   "id": "adab-a10"
+  },
+  {
+   "bahagian": "A",
+   "jenis": "betul_salah",
+   "soalan": "تنداکن ✓ ڤد ڤتاتاءن يڠ بتول دان ✗ ڤد ڤتاتاءن يڠ ساله.",
+   "rumi": "Tandakan ✓ pada pernyataan yang betul dan ✗ pada pernyataan yang salah.",
+   "markah": 5,
+   "item": [
+    {
+     "teks": "کيت هندقله ماسوق تندس دڠن کاکي کانن.",
+     "rumi": "Kita hendaklah masuk tandas dengan kaki kanan.",
+     "betul": false,
+     "jawapan": -1
+    },
+    {
+     "teks": "کيت هندقله ممباسوه تاڠن سبلاوم ماکن.",
+     "rumi": "Kita hendaklah membasuh tangan sebelum makan.",
+     "betul": true,
+     "jawapan": -1
+    },
+    {
+     "teks": "کيت هندقله مڠيريڠ ک سبله کيري کتيک تيدور.",
+     "rumi": "Kita hendaklah mengiring ke sebelah kiri ketika tidur.",
+     "betul": false,
+     "jawapan": -1
+    },
+    {
+     "teks": "کيت تيدق بوليه برچاکڤ سامبيل مولوت ڤنوه ماکنن.",
+     "rumi": "Kita tidak boleh bercakap sambil mulut penuh makanan.",
+     "betul": true,
+     "jawapan": -1
+    },
+    {
+     "teks": "کيت تيدق ڤرلو ممبرسيهکن ديري سلڤس مڠݢوناکن تندس.",
+     "rumi": "Kita tidak perlu membersihkan diri selepas menggunakan tandas.",
+     "betul": false,
+     "jawapan": -1
+    }
+   ],
+   "id": "adab-a11"
+  },
+  {
+   "bahagian": "A",
+   "jenis": "betul_salah",
+   "soalan": "تنداکن ✓ ڤد ڤتاتاءن يڠ بتول دان ✗ ڤد ڤتاتاءن يڠ ساله.",
+   "rumi": "Tandakan ✓ pada pernyataan yang betul dan ✗ pada pernyataan yang salah.",
+   "markah": 5,
+   "item": [
+    {
+     "teks": "کيت هندقله ماسوق مسجد دڠن کاکي کانن.",
+     "rumi": "Kita hendaklah masuk masjid dengan kaki kanan.",
+     "betul": true,
+     "jawapan": -1
+    },
+    {
+     "teks": "کيت بوليه برماءين دان برلاري ددالم مسجد.",
+     "rumi": "Kita boleh bermain dan berlari di dalam masjid.",
+     "betul": false,
+     "jawapan": -1
+    },
+    {
+     "teks": "کتيک براد ددالم مجليس علمو، کيت هندقله مندڠر دڠن ڤرهاتين.",
+     "rumi": "Ketika berada di dalam majlis ilmu, kita hendaklah mendengar dengan perhatian.",
+     "betul": true,
+     "jawapan": -1
+    },
+    {
+     "teks": "کيت بوليه ممبواڠ سمڤه دجالن راي.",
+     "rumi": "Kita boleh membuang sampah di jalan raya.",
+     "betul": false,
+     "jawapan": -1
+    },
+    {
+     "teks": "کيت هندقله ممبري لالوان کڤد اورڠ توا کتيک برجالن.",
+     "rumi": "Kita hendaklah memberi laluan kepada orang tua ketika berjalan.",
+     "betul": true,
+     "jawapan": -1
+    }
+   ],
+   "id": "adab-a12"
+  },
+  {
+   "bahagian": "A",
+   "jenis": "betul_salah",
+   "soalan": "تنداکن ✓ ڤد ڤتاتاءن يڠ بتول دان ✗ ڤد ڤتاتاءن يڠ ساله.",
+   "rumi": "Tandakan ✓ pada pernyataan yang betul dan ✗ pada pernyataan yang salah.",
+   "markah": 5,
+   "item": [
+    {
+     "teks": "کيت بوليه بربوت ماينن دڠن راکن.",
+     "rumi": "Kita boleh berebut mainan dengan rakan.",
+     "betul": false,
+     "jawapan": -1
+    },
+    {
+     "teks": "کيت هندقله ممبري سلام دان مڠحرمتي جيرن.",
+     "rumi": "Kita hendaklah memberi salam dan menghormati jiran.",
+     "betul": true,
+     "jawapan": -1
+    },
+    {
+     "teks": "کيت بوليه مڠومڤت راکن دبلکڠ مريک.",
+     "rumi": "Kita boleh mengumpat rakan di belakang mereka.",
+     "betul": false,
+     "jawapan": -1
+    },
+    {
+     "teks": "کيت هندقله ملاين تتامو دڠن باءيق دان ممبري هيدڠن.",
+     "rumi": "Kita hendaklah melayan tetamu dengan baik dan memberi hidangan.",
+     "betul": true,
+     "jawapan": -1
+    },
+    {
+     "teks": "کيت تيدق ڤرلو ممينتا معاف جک کيت برساله دڠن راکن.",
+     "rumi": "Kita tidak perlu meminta maaf jika kita bersalah dengan rakan.",
+     "betul": false,
+     "jawapan": -1
+    }
+   ],
+   "id": "adab-a13"
+  },
+  {
+   "bahagian": "A",
+   "jenis": "tempat_kosong",
+   "soalan": "ايسي تمڤت کوسوڠ دڠن ڤركاتاءن درڤد بانك يڠ دبري.",
+   "rumi": "Isi tempat kosong dengan perkataan daripada bank yang diberi.",
+   "markah": 5,
+   "bank": [
+    "بسم الله",
+    "کانن",
+    "برچاکڤ",
+    "برسيه",
+    "دعاء"
+   ],
+   "bankRumi": [
+    "Bismillah",
+    "kanan",
+    "bercakap",
+    "bersih",
+    "doa"
+   ],
+   "item": [
+    {
+     "teks": "کيت هندقله ممباچ ____ سبلاوم ممولاکن ماکن.",
+     "rumi": "Kita hendaklah membaca ____ sebelum memulakan makan."
+    },
+    {
+     "teks": "کيت هندقله ماکن دڠن تاڠن ____.",
+     "rumi": "Kita hendaklah makan dengan tangan ____."
+    },
+    {
+     "teks": "کتيک مولوت ڤنوه ماکنن، کيت تيدق بوليه ____.",
+     "rumi": "Ketika mulut penuh makanan, kita tidak boleh ____."
+    },
+    {
+     "teks": "کيت هندقله ممبرسيهکن ديري اݢر سلالو ____.",
+     "rumi": "Kita hendaklah membersihkan diri agar selalu ____."
+    },
+    {
+     "teks": "کيت هندقله ممباچ ____ سبلاوم تيدور.",
+     "rumi": "Kita hendaklah membaca ____ sebelum tidur."
+    }
+   ],
+   "id": "adab-a14"
+  },
+  {
+   "bahagian": "A",
+   "jenis": "tempat_kosong",
+   "soalan": "ايسي تمڤت کوسوڠ دڠن ڤركاتاءن درڤد بانك يڠ دبري.",
+   "rumi": "Isi tempat kosong dengan perkataan daripada bank yang diberi.",
+   "markah": 5,
+   "bank": [
+    "سلام",
+    "هيدڠن",
+    "معاف",
+    "بنتوان",
+    "ممنوهي"
+   ],
+   "bankRumi": [
+    "salam",
+    "hidangan",
+    "maaf",
+    "bantuan",
+    "memenuhi"
+   ],
+   "item": [
+    {
+     "teks": "سبلاوم ماسوق کرومه اورڠ، کيت هندقله ممبري ____.",
+     "rumi": "Sebelum masuk ke rumah orang, kita hendaklah memberi ____."
+    },
+    {
+     "teks": "کيت هندقله ممبري ____ کڤد تتامو يڠ داتڠ.",
+     "rumi": "Kita hendaklah memberi ____ kepada tetamu yang datang."
+    },
+    {
+     "teks": "کيت هندقله ممينتا ____ جک کيت برساله دڠن راکن.",
+     "rumi": "Kita hendaklah meminta ____ jika kita bersalah dengan rakan."
+    },
+    {
+     "teks": "کيت هندقله ممبري ____ کڤد جيرن يڠ سوسه.",
+     "rumi": "Kita hendaklah memberi ____ kepada jiran yang susah."
+    },
+    {
+     "teks": "کيت هندقله ____ ڤرينته ايبو باڤ دڠن باءيق.",
+     "rumi": "Kita hendaklah ____ perintah ibu bapa dengan baik."
+    }
+   ],
+   "id": "adab-a15"
+  },
+  {
+   "bahagian": "A",
+   "jenis": "tempat_kosong",
+   "soalan": "ايسي تمڤت کوسوڠ دڠن ڤركاتاءن درڤد بانك يڠ دبري.",
+   "rumi": "Isi tempat kosong dengan perkataan daripada bank yang diberi.",
+   "markah": 5,
+   "bank": [
+    "مسجد",
+    "تندس",
+    "ݢورو",
+    "علمو",
+    "ترتيب"
+   ],
+   "bankRumi": [
+    "masjid",
+    "tandas",
+    "guru",
+    "ilmu",
+    "tertib"
+   ],
+   "item": [
+    {
+     "teks": "کيت هندقله ماسوق ____ دڠن کاکي کانن.",
+     "rumi": "Kita hendaklah masuk ____ dengan kaki kanan."
+    },
+    {
+     "teks": "کيت هندقله ماسوق ____ دڠن کاکي کيري.",
+     "rumi": "Kita hendaklah masuk ____ dengan kaki kiri."
+    },
+    {
+     "teks": "کيت هندقله ممبري ڤڠحرمتن کڤد ____ يڠ مڠاجر کيت.",
+     "rumi": "Kita hendaklah memberi penghormatan kepada ____ yang mengajar kita."
+    },
+    {
+     "teks": "کيت هندقله ممباچ بوکو اونتوق منمبه ____.",
+     "rumi": "Kita hendaklah membaca buku untuk menambah ____."
+    },
+    {
+     "teks": "کيت هندقله دودوق دڠن ____ ددالم مجليس علمو.",
+     "rumi": "Kita hendaklah duduk dengan ____ di dalam majlis ilmu."
+    }
+   ],
+   "id": "adab-a16"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "اڤاکه يڠ ڤرلو دلاکوکن سباݢاي تندا برشکور کڤد الله؟",
+   "rumi": "Apakah yang perlu dilakukan sebagai tanda bersyukur kepada Allah?",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "مڠومڤت اورڠ لاءين",
+       "rumi": "Mengumpat orang lain"
+      },
+      {
+       "teks": "مڠوچڤکن الحمد لله",
+       "rumi": "Mengucapkan Alhamdulillah"
+      },
+      {
+       "teks": "ممبذير ماکنن",
+       "rumi": "Membazir makanan"
+      },
+      {
+       "teks": "ممينتا ڤوجين اورڠ",
+       "rumi": "Meminta pujian orang"
+      }
+     ],
+     "jawapan": 1
+    }
+   ],
+   "id": "adab-b1"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "اڤاکه يڠ ڤرلو دلاکوکن اوليه سأورڠ مسلم ترهادڤ نبي محمد ﷺ؟",
+   "rumi": "Apakah yang perlu dilakukan oleh seorang muslim terhadap Nabi Muhammad SAW?",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "منجاݢ ݢمبر نبي سهاج",
+       "rumi": "Menjaga gambar Nabi sahaja"
+      },
+      {
+       "teks": "ملاوت مقام نبي ستياڤ هاري",
+       "rumi": "Melawat makam Nabi setiap hari"
+      },
+      {
+       "teks": "مڠابايکن اجرن نبي",
+       "rumi": "Mengabaikan ajaran Nabi"
+      },
+      {
+       "teks": "برصلوات دان مڠيکوت سنة بݢيندا",
+       "rumi": "Berselawat dan mengikuti sunnah baginda"
+      }
+     ],
+     "jawapan": 3
+    }
+   ],
+   "id": "adab-b2"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "سبلاوم کلوار رومه، اڤاکه يڠ ڤرلو دلاکوکن اوليه سأورڠ انق؟",
+   "rumi": "Sebelum keluar rumah, apakah yang perlu dilakukan oleh seorang anak?",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "ممينتا ايذين ايبو باڤ",
+       "rumi": "Meminta izin ibu bapa"
+      },
+      {
+       "teks": "ترس ماسوق کدالم کريتا",
+       "rumi": "Terus masuk ke dalam kereta"
+      },
+      {
+       "teks": "ماکن دهولو تنڤا ايذين",
+       "rumi": "Makan dahulu tanpa izin"
+      },
+      {
+       "teks": "برماءين دهولو دسکوله",
+       "rumi": "Bermain dahulu di sekolah"
+      }
+     ],
+     "jawapan": 0
+    }
+   ],
+   "id": "adab-b3"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "اڤاکه چارا برچاکڤ يڠ بتول دڠن ايبو باڤ؟",
+   "rumi": "Apakah cara bercakap yang betul dengan ibu bapa?",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "برچاکڤ دڠن سوارا يڠ کاسر",
+       "rumi": "Bercakap dengan suara yang kasar"
+      },
+      {
+       "teks": "ممينتا ڤرتولوڠن راکن اونتوق برچاکڤ",
+       "rumi": "Meminta pertolongan rakan untuk bercakap"
+      },
+      {
+       "teks": "برچاکڤ دڠن سوارا لمبوت دان سوڤن",
+       "rumi": "Bercakap dengan suara lembut dan sopan"
+      },
+      {
+       "teks": "مڠيلقکن ڤربينچڠن دڠن ايبو باڤ",
+       "rumi": "Mengelakkan perbincangan dengan ibu bapa"
+      }
+     ],
+     "jawapan": 2
+    }
+   ],
+   "id": "adab-b4"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "اڤاکه ادب موريد ترهادڤ ݢورو ددالم کلس؟",
+   "rumi": "Apakah adab murid terhadap guru di dalam kelas?",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "برچاکڤ دڠن راکن کتيک ݢورو مڠاجر",
+       "rumi": "Bercakap dengan rakan ketika guru mengajar"
+      },
+      {
+       "teks": "ترس کلوار دڠن تيدق ممينتا ايذين",
+       "rumi": "Terus keluar dengan tidak meminta izin"
+      },
+      {
+       "teks": "مندڠر ڤنجلسن ݢورو دڠن ڤرهاتين",
+       "rumi": "Mendengar penjelasan guru dengan perhatian"
+      },
+      {
+       "teks": "ممبواڠ سمڤه ددالم کلس",
+       "rumi": "Membuang sampah di dalam kelas"
+      }
+     ],
+     "jawapan": 2
+    }
+   ],
+   "id": "adab-b5"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "اڤاکه کباءيکن يڠ کيت داڤت جک مڠحرمتي ݢورو؟",
+   "rumi": "Apakah kebaikan yang kita dapat jika menghormati guru?",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "دبريکن برکت دالم علمو",
+       "rumi": "Diberikan berkat dalam ilmu"
+      },
+      {
+       "teks": "دبريکن واءڠ يڠ باڽق",
+       "rumi": "Diberikan wang yang banyak"
+      },
+      {
+       "teks": "دبريکن کمودهن برماءين",
+       "rumi": "Diberikan kemudahan bermain"
+      },
+      {
+       "teks": "دبريکن هديه ستياڤ هاري",
+       "rumi": "Diberikan hadiah setiap hari"
+      }
+     ],
+     "jawapan": 0
+    }
+   ],
+   "id": "adab-b6"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "اڤاکه سيکڤ يڠ بتول ترهادڤ ادق-برادق؟",
+   "rumi": "Apakah sikap yang betul terhadap adik-beradik?",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "بربوت ڤرماءينن دڠن ادق",
+       "rumi": "Berebut permainan dengan adik"
+      },
+      {
+       "teks": "ممبري تاهو رهسيا ادق کڤد راکن",
+       "rumi": "Memberitahu rahsia adik kepada rakan"
+      },
+      {
+       "teks": "مڠابايکن ادق يڠ ماسيه کچيل",
+       "rumi": "Mengabaikan adik yang masih kecil"
+      },
+      {
+       "teks": "ساليڠ ممبنتو دان مڠاسيهي",
+       "rumi": "Saling membantu dan mengasihi"
+      }
+     ],
+     "jawapan": 3
+    }
+   ],
+   "id": "adab-b7"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "اڤاکه ادب کيت ترهادڤ داتوق دان نينيق؟",
+   "rumi": "Apakah adab kita terhadap datuk dan nenek?",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "مڠݢوناکن تيليفون مريک تنڤا ايذين",
+       "rumi": "Menggunakan telefon mereka tanpa izin"
+      },
+      {
+       "teks": "ممبري سلام دان مڠحرمتي مريک",
+       "rumi": "Memberi salam dan menghormati mereka"
+      },
+      {
+       "teks": "برچاکڤ کاسر کڤد مريک",
+       "rumi": "Bercakap kasar kepada mereka"
+      },
+      {
+       "teks": "ممينتا واءڠ ستياڤ هاري",
+       "rumi": "Meminta wang setiap hari"
+      }
+     ],
+     "jawapan": 1
+    }
+   ],
+   "id": "adab-b8"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "اڤاکه کسن يڠ دڤراوليه جک کيت برادب دڠن جيرن؟",
+   "rumi": "Apakah kesan yang diperoleh jika kita beradab dengan jiran?",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "هيدوڤ دالم مشارکت منجادي داماي دان امان",
+       "rumi": "Hidup dalam masyarakat menjadi damai dan aman"
+      },
+      {
+       "teks": "جيرن اکن منجادي موسوه کيت",
+       "rumi": "Jiran akan menjadi musuh kita"
+      },
+      {
+       "teks": "کيت اکن دجاءوهي اوليه راکن",
+       "rumi": "Kita akan dijauhi oleh rakan"
+      },
+      {
+       "teks": "کيت اکن کحيلاڠن رزقي",
+       "rumi": "Kita akan kehilangan rezeki"
+      }
+     ],
+     "jawapan": 0
+    }
+   ],
+   "id": "adab-b9"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "اڤاکه ادب کيت اڤابيلا مڠݢوناکن کمودهن عوام؟",
+   "rumi": "Apakah adab kita apabila menggunakan kemudahan awam?",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "مروسقکن ڤرابوت تمڤت اوموم",
+       "rumi": "Merosakkan perabot tempat awam"
+      },
+      {
+       "teks": "ممبواڠ سمڤه دکاوسن اوموم",
+       "rumi": "Membuang sampah di kawasan awam"
+      },
+      {
+       "teks": "منجاݢ کمودهن عوام دڠن باءيق",
+       "rumi": "Menjaga kemudahan awam dengan baik"
+      },
+      {
+       "teks": "مڠيلقکن ݢيليرن کتيک براتور",
+       "rumi": "Mengelakkan giliran ketika beratur"
+      }
+     ],
+     "jawapan": 2
+    }
+   ],
+   "id": "adab-b10"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "اڤاکه ادب کيت کتيک داتڠ تتامو کرومه کيت؟",
+   "rumi": "Apakah adab kita ketika datang tetamu ke rumah kita?",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "برماءين تنڤا مڠهيراوکن تتامو",
+       "rumi": "Bermain tanpa menghiraukan tetamu"
+      },
+      {
+       "teks": "ممبري سلام دان منجمڤوت مريک دودوق",
+       "rumi": "Memberi salam dan menjemput mereka duduk"
+      },
+      {
+       "teks": "منجاݢ ڤينتو ترکونچي سهاج",
+       "rumi": "Menjaga pintu terkunci sahaja"
+      },
+      {
+       "teks": "برچاکڤ کاسر کڤد تتامو",
+       "rumi": "Bercakap kasar kepada tetamu"
+      }
+     ],
+     "jawapan": 1
+    }
+   ],
+   "id": "adab-b11"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "اڤاکه چارا ملاين تتامو يڠ داتڠ کرومه؟",
+   "rumi": "Apakah cara melayan tetamu yang datang ke rumah?",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "برتاڽ ڤرکارا ڤريبادي تتامو",
+       "rumi": "Bertanya perkara peribadi tetamu"
+      },
+      {
+       "teks": "مڠابايکن تتامو يڠ داتڠ",
+       "rumi": "Mengabaikan tetamu yang datang"
+      },
+      {
+       "teks": "ممينتا تتامو باليق دڠن سݢرا",
+       "rumi": "Meminta tetamu balik dengan segera"
+      },
+      {
+       "teks": "ملاين تتامو دڠن باءيق",
+       "rumi": "Melayan tetamu dengan baik"
+      }
+     ],
+     "jawapan": 3
+    }
+   ],
+   "id": "adab-b12"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "اڤاکه ادب کتيک منزيارهي اورڠ ساکيت؟",
+   "rumi": "Apakah adab ketika menziarahi orang sakit?",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "برچاکڤ ڤنوه سوارا ددالم واد",
+       "rumi": "Bercakap penuh suara di dalam wad"
+      },
+      {
+       "teks": "ممينتا ڤساکيت برجالن دلوار",
+       "rumi": "Meminta pesakit berjalan di luar"
+      },
+      {
+       "teks": "ممبري ماکنن يڠ باڽق کڤد ڤساکيت",
+       "rumi": "Memberi makanan yang banyak kepada pesakit"
+      },
+      {
+       "teks": "مندعاءکن کصيحتن کڤد ڤساکيت",
+       "rumi": "Mendoakan kesihatan kepada pesakit"
+      }
+     ],
+     "jawapan": 3
+    }
+   ],
+   "id": "adab-b13"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "اڤاکه يڠ ڤرلو دلاکوکن سبلاوم ماسوق کرومه اورڠ؟",
+   "rumi": "Apakah yang perlu dilakukan sebelum masuk ke rumah orang?",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "ترس ماسوق ددالم رومه",
+       "rumi": "Terus masuk di dalam rumah"
+      },
+      {
+       "teks": "ممبري سلام دان ممينتا ايذين",
+       "rumi": "Memberi salam dan meminta izin"
+      },
+      {
+       "teks": "مڠکوڤ ڤينتو دڠن کاسر",
+       "rumi": "Mengetuk pintu dengan kasar"
+      },
+      {
+       "teks": "مڠوچڤکن نام سنديري دلوار رومه",
+       "rumi": "Mengucapkan nama sendiri di luar rumah"
+      }
+     ],
+     "jawapan": 1
+    }
+   ],
+   "id": "adab-b14"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "اڤاکه يڠ ڤرلو دلاکوکن سبلاوم ماکن؟",
+   "rumi": "Apakah yang perlu dilakukan sebelum makan?",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "ترس ماکن تنڤا برچاکڤ",
+       "rumi": "Terus makan tanpa bercakap"
+      },
+      {
+       "teks": "مڠمبيل ماکنن راکن",
+       "rumi": "Mengambil makanan rakan"
+      },
+      {
+       "teks": "ممباسوه تاڠن دان ممباچ بسم الله",
+       "rumi": "Membasuh tangan dan membaca Bismillah"
+      },
+      {
+       "teks": "منوڠݢو راکن مڠهيدڠ ماکنن",
+       "rumi": "Menunggu rakan menghidang makanan"
+      }
+     ],
+     "jawapan": 2
+    }
+   ],
+   "id": "adab-b15"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "کيت هندقله ماکن دڠن تاڠن يڠ مان؟",
+   "rumi": "Kita hendaklah makan dengan tangan yang mana?",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "تاڠن کانن",
+       "rumi": "Tangan kanan"
+      },
+      {
+       "teks": "تاڠن کيري",
+       "rumi": "Tangan kiri"
+      },
+      {
+       "teks": "کدوا تاڠن دالم ماس يڠ سام",
+       "rumi": "Kedua tangan dalam masa yang sama"
+      },
+      {
+       "teks": "تاڠن اورڠ لاءين",
+       "rumi": "Tangan orang lain"
+      }
+     ],
+     "jawapan": 0
+    }
+   ],
+   "id": "adab-b16"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "اڤاکه سيکڤ يڠ تيدق بتول کتيک ماکن؟",
+   "rumi": "Apakah sikap yang tidak betul ketika makan?",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "ممباسوه تاڠن سبلاوم ماکن",
+       "rumi": "Membasuh tangan sebelum makan"
+      },
+      {
+       "teks": "برچاکڤ کتيک مولوت ڤنوه ماکنن",
+       "rumi": "Bercakap ketika mulut penuh makanan"
+      },
+      {
+       "teks": "ممباچ بسم الله سبلاوم ماکن",
+       "rumi": "Membaca Bismillah sebelum makan"
+      },
+      {
+       "teks": "ماکن دڠن تاڠن کانن",
+       "rumi": "Makan dengan tangan kanan"
+      }
+     ],
+     "jawapan": 1
+    }
+   ],
+   "id": "adab-b17"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "اڤاکه عاقبت ممبذير ماکنن؟",
+   "rumi": "Apakah akibat membazir makanan?",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "منداڤت دوسا دان تيدق برشکور",
+       "rumi": "Mendapat dosa dan tidak bersyukur"
+      },
+      {
+       "teks": "منداڤت ڤهالا دان برکت",
+       "rumi": "Mendapat pahala dan berkat"
+      },
+      {
+       "teks": "منداڤت هديه درڤد الله",
+       "rumi": "Mendapat hadiah daripada Allah"
+      },
+      {
+       "teks": "منداڤت ڤوجين مشارکت",
+       "rumi": "Mendapat pujian masyarakat"
+      }
+     ],
+     "jawapan": 0
+    }
+   ],
+   "id": "adab-b18"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "اڤاکه ادب يڠ بتول کتيک مينوم اءير؟",
+   "rumi": "Apakah adab yang betul ketika minum air?",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "مينوم سامبيل برديري",
+       "rumi": "Minum sambil berdiri"
+      },
+      {
+       "teks": "مينوم دڠن تاڠن کيري",
+       "rumi": "Minum dengan tangan kiri"
+      },
+      {
+       "teks": "مينوم دڠن دودوق دان ممباچ بسم الله",
+       "rumi": "Minum dengan duduk dan membaca Bismillah"
+      },
+      {
+       "teks": "مينوم سموا اءير ددالم چاوان دڠن سکالي تݢوق",
+       "rumi": "Minum semua air di dalam cawan dengan sekali teguk"
+      }
+     ],
+     "jawapan": 2
+    }
+   ],
+   "id": "adab-b19"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "اڤاکه ادب کتيک برباريڠ اونتوق تيدور؟",
+   "rumi": "Apakah adab ketika berbaring untuk tidur?",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "مڠيريڠ ک سبله کيري",
+       "rumi": "Mengiring ke sebelah kiri"
+      },
+      {
+       "teks": "مڠيريڠ ک سبله هادڤن",
+       "rumi": "Mengiring ke sebelah hadapan"
+      },
+      {
+       "teks": "مڠيريڠ ددالم ݢلاڤ",
+       "rumi": "Mengiring dalam gelap"
+      },
+      {
+       "teks": "مڠيريڠ ک سبله کانن دان ممباچ دعاء",
+       "rumi": "Mengiring ke sebelah kanan dan membaca doa"
+      }
+     ],
+     "jawapan": 3
+    }
+   ],
+   "id": "adab-b20"
+  },
+  {
+   "bahagian": "C",
+   "jenis": "tulis",
+   "soalan": "ڽاتاکن ليم ادب ترهادڤ الله.",
+   "rumi": "Nyatakan lima adab terhadap Allah.",
+   "markah": 5,
+   "idea": [
+    {
+     "maksud": "Sentiasa bersyukur akan nikmat Allah",
+     "kata": [
+      "syukur",
+      "bersyukur",
+      "syukuri",
+      "kesyukuran",
+      "برسيفت",
+      "شوکور",
+      "نعمت"
+     ]
+    },
+    {
+     "maksud": "Bertawakal kepada Allah selepas berusaha",
+     "kata": [
+      "tawakal",
+      "bertawakal",
+      "bertawakkal",
+      "برتاوکال",
+      "ستله",
+      "براوسها"
+     ]
+    },
+    {
+     "maksud": "Sentiasa berdoa dan memohon pertolongan Allah",
+     "kata": [
+      "doa",
+      "berdoa",
+      "mendoa",
+      "mendoakan",
+      "memohon",
+      "بردوءا"
+     ]
+    },
+    {
+     "maksud": "Bertaqwa dengan menjalankan perintah Allah",
+     "kata": [
+      "takwa",
+      "taqwa",
+      "bertaqwa",
+      "bertakwa",
+      "برتقوى",
+      "منجالنکن",
+      "سوروهن"
+     ]
+    },
+    {
+     "maksud": "Mentaati perintah Allah dan meninggalkan larangan-Nya",
+     "kata": [
+      "taat",
+      "mentaati",
+      "meninggalkan",
+      "larangan",
+      "منتاعتي",
+      "ڤرينته",
+      "مڠيڠکلکن",
+      "لارڠنڽ",
+      "سموا"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "1. سنتياس برسيفت شوکور اکن نعمت الله.",
+    "2. برتاوکال کڤد الله ستله براوسها.",
+    "3. سنتياس بردوءا کڤد الله.",
+    "4. برتقوى دڠن منجالنکن سوروهن الله.",
+    "5. منتاعتي سموا ڤرينته الله دان مڠيڠکلکن لارڠنڽ."
+   ],
+   "jawapanContohRumi": [
+    "1. Sentiasa bersifat syukur akan nikmat Allah.",
+    "2. Bertawakal kepada Allah selepas berusaha.",
+    "3. Sentiasa berdoa kepada Allah.",
+    "4. Bertaqwa dengan menjalankan suruhan Allah.",
+    "5. Mentaati semua perintah Allah dan meninggalkan larangan-Nya."
+   ],
+   "id": "adab-c1"
+  },
+  {
+   "bahagian": "C",
+   "jenis": "tulis",
+   "soalan": "بريکن امڤت ادب ترهادڤ رسول الله.",
+   "rumi": "Berikan empat adab terhadap Rasulullah.",
+   "markah": 4,
+   "idea": [
+    {
+     "maksud": "Mengamalkan sunnah Rasulullah",
+     "kata": [
+      "sunnah",
+      "sunah",
+      "bersunnah",
+      "mengamalkan",
+      "مڠم",
+      "سنة",
+      "هيدوڤ"
+     ]
+    },
+    {
+     "maksud": "Banyak berselawat ke atas Nabi",
+     "kata": [
+      "selawat",
+      "berselawat",
+      "selawati",
+      "membaca",
+      "سنتياس",
+      "برصلوات",
+      "کأاتس",
+      "نبي",
+      "محمد"
+     ]
+    },
+    {
+     "maksud": "Mencintai Rasulullah melebihi segala-galanya",
+     "kata": [
+      "cinta",
+      "mencintai",
+      "kasih",
+      "rindu",
+      "merindui",
+      "منچينتاي",
+      "ملبيهي",
+      "سگالا",
+      "ݢالا"
+     ]
+    },
+    {
+     "maksud": "Menghormati dan memuliakan Rasulullah",
+     "kata": [
+      "hormat",
+      "menghormati",
+      "mulia",
+      "memuliakan",
+      "مڠحرمتي",
+      "ممولياکن"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "1. مڠمalkan سنة رسول الله دالم هيدوڤ.",
+    "2. سنتياس برصلوات کأاتس نبي محمد.",
+    "3. منچينتاي رسول الله ملبيهي سگالا-ݢالا.",
+    "4. مڠحرمتي دان ممولياکن رسول الله."
+   ],
+   "jawapanContohRumi": [
+    "1. Mengamalkan sunnah Rasulullah dalam hidup.",
+    "2. Sentiasa berselawat ke atas Nabi Muhammad.",
+    "3. Mencintai Rasulullah melebihi segala-galanya.",
+    "4. Menghormati dan memuliakan Rasulullah."
+   ],
+   "id": "adab-c2"
+  },
+  {
+   "bahagian": "C",
+   "jenis": "tulis",
+   "soalan": "ڽاتاکن ليم ادب ترهادڤ ايبو باڤ.",
+   "rumi": "Nyatakan lima adab terhadap ibu bapa.",
+   "markah": 5,
+   "idea": [
+    {
+     "maksud": "Memberi salam dan bersalaman dengan ibu bapa",
+     "kata": [
+      "salam",
+      "bersalam",
+      "bersalaman",
+      "salaman",
+      "ممبري",
+      "سلام",
+      "برسلامن"
+     ]
+    },
+    {
+     "maksud": "Bertutur dengan lemah lembut",
+     "kata": [
+      "lembut",
+      "berlembut",
+      "melembut",
+      "melembutkan",
+      "برتوتور",
+      "لمه",
+      "لمبوت"
+     ]
+    },
+    {
+     "maksud": "Meminta izin sebelum keluar rumah",
+     "kata": [
+      "izin",
+      "keizinan",
+      "berizin",
+      "meminta",
+      "ممينتا",
+      "ايذين",
+      "سبلوم",
+      "کلوار"
+     ]
+    },
+    {
+     "maksud": "Menolong ibu bapa mengerjakan kerja rumah",
+     "kata": [
+      "tolong",
+      "menolong",
+      "bantu",
+      "membantu",
+      "membantunya",
+      "منولوڠ",
+      "مڠرجاکن",
+      "ڤکرجاءن"
+     ]
+    },
+    {
+     "maksud": "Mendoakan kesejahteraan ibu bapa",
+     "kata": [
+      "doa",
+      "berdoa",
+      "mendoa",
+      "mendoakan",
+      "kesejahteraan",
+      "سنتياس",
+      "بردوءا",
+      "کسجهتراءن"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "1. ممبري سلام دان برسلامن دڠن ايبو باڤ.",
+    "2. برتوتور دڠن لمه لمبوت.",
+    "3. ممينتا ايذين سبلوم کلوار رومه.",
+    "4. منولوڠ ايبو باڤ مڠرجاکن ڤکرجاءن رومه.",
+    "5. سنتياس بردوءا اونتوق کسجهتراءن ايبو باڤ."
+   ],
+   "jawapanContohRumi": [
+    "1. Memberi salam dan bersalaman dengan ibu bapa.",
+    "2. Bertutur dengan lemah lembut.",
+    "3. Meminta izin sebelum keluar rumah.",
+    "4. Menolong ibu bapa mengerjakan kerja rumah.",
+    "5. Sentiasa berdoa untuk kesejahteraan ibu bapa."
+   ],
+   "id": "adab-c3"
+  },
+  {
+   "bahagian": "C",
+   "jenis": "tulis",
+   "soalan": "سنارايکن ليم ادب يڠ ڤرلو دلاکوکن ترهادڤ ݢورو.",
+   "rumi": "Senaraikan lima adab yang perlu dilakukan terhadap guru.",
+   "markah": 5,
+   "idea": [
+    {
+     "maksud": "Memberi salam apabila bertemu guru",
+     "kata": [
+      "salam",
+      "bersalam",
+      "bersalaman",
+      "سلام"
+     ]
+    },
+    {
+     "maksud": "Menumpukan perhatian ketika guru mengajar",
+     "kata": [
+      "perhatian",
+      "menumpukan",
+      "tumpu",
+      "fokus",
+      "ڤرهاتين",
+      "مڠاجر"
+     ]
+    },
+    {
+     "maksud": "Menyiapkan tugasan yang diberi",
+     "kata": [
+      "tugasan",
+      "menyiapkan",
+      "latihan",
+      "kerja",
+      "مڽياڤکن",
+      "توݢسن",
+      "دبري",
+      "اوليه"
+     ]
+    },
+    {
+     "maksud": "Menghormati guru dan tidak melawan cakapnya",
+     "kata": [
+      "hormat",
+      "menghormati",
+      "melawan",
+      "مڠحرمتي",
+      "ملاون",
+      "کاتا٢ڽ",
+      "تيدق"
+     ]
+    },
+    {
+     "maksud": "Meminta maaf apabila melakukan kesalahan",
+     "kata": [
+      "maaf",
+      "kemaafan",
+      "meminta",
+      "kesalahan",
+      "ممينتا",
+      "معاف",
+      "اڤابيلا",
+      "ملاکوکن",
+      "کسالهن"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "1. ممبري سلام کڤد ݢورو.",
+    "2. ممبري ڤرهاتين کتيک ݢورو مڠاجر.",
+    "3. مڽياڤکن توݢسن يڠ دبري اوليه ݢورو.",
+    "4. مڠحرمتي ݢورو دان تيدق ملاون کاتا٢ڽ.",
+    "5. ممينتا معاف اڤابيلا ملاکوکن کسالهن."
+   ],
+   "jawapanContohRumi": [
+    "1. Memberi salam kepada guru.",
+    "2. Memberi perhatian ketika guru mengajar.",
+    "3. Menyiapkan tugasan yang diberi oleh guru.",
+    "4. Menghormati guru dan tidak melawan kata-katanya.",
+    "5. Meminta maaf apabila melakukan kesalahan."
+   ],
+   "id": "adab-c4"
+  },
+  {
+   "bahagian": "C",
+   "jenis": "tulis",
+   "soalan": "بريکن ليم ادب ترهادڤ اهل کلوارݢ.",
+   "rumi": "Berikan lima adab terhadap ahli keluarga.",
+   "markah": 5,
+   "idea": [
+    {
+     "maksud": "Memberi salam apabila masuk ke rumah",
+     "kata": [
+      "salam",
+      "bersalam",
+      "bersalaman",
+      "ممبري",
+      "سلام",
+      "ماسوق"
+     ]
+    },
+    {
+     "maksud": "Kasih sayang dan menyayangi antara satu sama lain",
+     "kata": [
+      "sayang",
+      "menyayangi",
+      "kasih",
+      "mengasihi",
+      "کاسيه",
+      "مڠاسيهي"
+     ]
+    },
+    {
+     "maksud": "Saling menolong dalam kerja rumah",
+     "kata": [
+      "tolong",
+      "menolong",
+      "bantu",
+      "membantu",
+      "kerjasama",
+      "منولوڠ",
+      "مڠرجاکن",
+      "ڤکرجاءن"
+     ]
+    },
+    {
+     "maksud": "Menghormati ahli keluarga yang lebih tua",
+     "kata": [
+      "hormat",
+      "menghormati",
+      "tua",
+      "menghormatinya",
+      "مڠحرمتي",
+      "لبه",
+      "توا"
+     ]
+    },
+    {
+     "maksud": "Tidak bergaduh atau berkelahi sesama ahli keluarga",
+     "kata": [
+      "gaduh",
+      "bergaduh",
+      "kelahi",
+      "berkelahi",
+      "pertengkaran",
+      "برݢدوه",
+      "تيدق"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "1. ممبري سلام کتيک ماسوق ک رومه.",
+    "2. ساليڠ کاسيه مڠاسيهي سسام اهل کلوارݢ.",
+    "3. ساليڠ منولوڠ دالم مڠرجاکن ڤکرجاءن رومه.",
+    "4. مڠحرمتي اهل کلوارݢ يڠ لبه توا.",
+    "5. تيدق برݢدوه سسام اهل کلوارݢ."
+   ],
+   "jawapanContohRumi": [
+    "1. Memberi salam ketika masuk ke rumah.",
+    "2. Saling kasih mengasihi sesama ahli keluarga.",
+    "3. Saling menolong dalam mengerjakan kerja rumah.",
+    "4. Menghormati ahli keluarga yang lebih tua.",
+    "5. Tidak bergaduh sesama ahli keluarga."
+   ],
+   "id": "adab-c5"
+  },
+  {
+   "bahagian": "C",
+   "jenis": "tulis",
+   "soalan": "ڽاتاکن ليم ادب ترهادڤ جيران.",
+   "rumi": "Nyatakan lima adab terhadap jiran.",
+   "markah": 5,
+   "idea": [
+    {
+     "maksud": "Memberi dan menjawab salam",
+     "kata": [
+      "salam",
+      "bersalam",
+      "menjawab",
+      "منجواب",
+      "سلام"
+     ]
+    },
+    {
+     "maksud": "Menziarahi jiran pada masa yang sesuai",
+     "kata": [
+      "ziarah",
+      "menziarahi",
+      "menziarah",
+      "melawat",
+      "منزيارهي",
+      "ماس",
+      "سسواي"
+     ]
+    },
+    {
+     "maksud": "Menolong jiran yang memerlukan bantuan",
+     "kata": [
+      "tolong",
+      "menolong",
+      "bantu",
+      "membantu",
+      "منولوڠ",
+      "ممرلوکن",
+      "بنتوان"
+     ]
+    },
+    {
+     "maksud": "Memberi hadiah atau makanan kepada jiran",
+     "kata": [
+      "hadiah",
+      "menghadiahkan",
+      "makanan",
+      "memberi",
+      "حديه"
+     ]
+    },
+    {
+     "maksud": "Tidak mengganggu ketenteraman jiran",
+     "kata": [
+      "ganggu",
+      "mengganggu",
+      "kacau",
+      "mengacau",
+      "bising",
+      "مڠݢڠݢو",
+      "کتنترامن",
+      "تيدق"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "1. ممبري دان منجواب سلام دڠن جيران.",
+    "2. منزيارهي جيران ڤد ماس يڠ سسواي.",
+    "3. منولوڠ جيران يڠ ممرلوکن بنتوان.",
+    "4. ممبري حديه کڤد جيران.",
+    "5. تيدق مڠݢڠݢو کتنترامن جيران."
+   ],
+   "jawapanContohRumi": [
+    "1. Memberi dan menjawab salam dengan jiran.",
+    "2. Menziarahi jiran pada masa yang sesuai.",
+    "3. Menolong jiran yang memerlukan bantuan.",
+    "4. Memberi hadiah kepada jiran.",
+    "5. Tidak mengganggu ketenteraman jiran."
+   ],
+   "id": "adab-c6"
+  },
+  {
+   "bahagian": "C",
+   "jenis": "tulis",
+   "soalan": "اڤاکه ادب کتيک منريم تامو؟ بريکن ليم.",
+   "rumi": "Apakah adab ketika menerima tetamu? Berikan lima.",
+   "markah": 5,
+   "idea": [
+    {
+     "maksud": "Memberi salam dengan muka yang manis",
+     "kata": [
+      "salam",
+      "bersalam",
+      "senyum",
+      "senyuman",
+      "manis",
+      "ممبري",
+      "سلام",
+      "موک",
+      "مانيس"
+     ]
+    },
+    {
+     "maksud": "Mempersilakan tetamu masuk ke dalam rumah",
+     "kata": [
+      "silakan",
+      "mempersilakan",
+      "persilakan",
+      "jemput",
+      "menjemput",
+      "ممڤرسيلاکن",
+      "ماسوق",
+      "رومه"
+     ]
+    },
+    {
+     "maksud": "Menghidangkan makanan dan minuman",
+     "kata": [
+      "hidang",
+      "menghidangkan",
+      "jamu",
+      "menjamu",
+      "minuman",
+      "مڠهيدڠکن",
+      "ماکنن",
+      "مينومن"
+     ]
+    },
+    {
+     "maksud": "Melayan tetamu dengan mesra dan berbual dengan sopan",
+     "kata": [
+      "layan",
+      "melayan",
+      "melayani",
+      "mesra",
+      "berbual",
+      "ملاين",
+      "مسرا",
+      "بربوال",
+      "سوڤن"
+     ]
+    },
+    {
+     "maksud": "Menghantar tetamu sampai ke pintu",
+     "kata": [
+      "hantar",
+      "menghantar",
+      "pintu",
+      "mengiringi",
+      "مڠهانتر",
+      "سمڤاي",
+      "ڤينتو"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "1. ممبري سلام دڠن موک يڠ مانيس.",
+    "2. ممڤرسيلاکن تامو ماسوق ک دالم رومه.",
+    "3. مڠهيدڠکن ماکنن دان مينومن کڤد تامو.",
+    "4. ملاين تامو دڠن مسرا دان بربوال دڠن سوڤن.",
+    "5. مڠهانتر تامو سمڤاي ک ڤينتو."
+   ],
+   "jawapanContohRumi": [
+    "1. Memberi salam dengan muka yang manis.",
+    "2. Mempersilakan tetamu masuk ke dalam rumah.",
+    "3. Menghidangkan makanan dan minuman kepada tetamu.",
+    "4. Melayan tetamu dengan mesra dan berbual dengan sopan.",
+    "5. Menghantar tetamu sampai ke pintu."
+   ],
+   "id": "adab-c7"
+  },
+  {
+   "bahagian": "C",
+   "jenis": "tulis",
+   "soalan": "بريکن امڤت ادب ترهادڤ رکن.",
+   "rumi": "Berikan empat adab terhadap rakan.",
+   "markah": 4,
+   "idea": [
+    {
+     "maksud": "Menghormati rakan tanpa membeza-bezakan",
+     "kata": [
+      "hormat",
+      "menghormati",
+      "membezakan",
+      "bezakan",
+      "مڠحرمتي",
+      "تانڤ",
+      "ممبيذا",
+      "بيذاکن"
+     ]
+    },
+    {
+     "maksud": "Menolong rakan yang dalam kesusahan",
+     "kata": [
+      "tolong",
+      "menolong",
+      "bantu",
+      "membantu",
+      "kesusahan",
+      "منولوڠ",
+      "کسوسهن"
+     ]
+    },
+    {
+     "maksud": "Berkongsi barang atau makanan dengan rakan",
+     "kata": [
+      "kongsi",
+      "berkongsi",
+      "kongsikan",
+      "berkongsian",
+      "برکوڠسي",
+      "بارڠ",
+      "ماکنن"
+     ]
+    },
+    {
+     "maksud": "Tidak mengumpat atau menghina rakan",
+     "kata": [
+      "umpat",
+      "mengumpat",
+      "hina",
+      "menghina",
+      "kutuk",
+      "مڠومڤت",
+      "مڠهينا",
+      "تيدق"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "1. مڠحرمتي رکن تانڤ ممبيذا-بيذاکن.",
+    "2. منولوڠ رکن يڠ دالم کسوسهن.",
+    "3. برکوڠسي بارڠ دان ماکنن دڠن رکن.",
+    "4. تيدق مڠومڤت اتاو مڠهينا رکن."
+   ],
+   "jawapanContohRumi": [
+    "1. Menghormati rakan tanpa membeza-bezakan.",
+    "2. Menolong rakan yang dalam kesusahan.",
+    "3. Berkongsi barang dan makanan dengan rakan.",
+    "4. Tidak mengumpat atau menghina rakan."
+   ],
+   "id": "adab-c8"
+  },
+  {
+   "bahagian": "C",
+   "jenis": "tulis",
+   "soalan": "سنارايکن اينم ادب سبلوم دان کتيک ماکن.",
+   "rumi": "Senaraikan enam adab sebelum dan ketika makan.",
+   "markah": 6,
+   "idea": [
+    {
+     "maksud": "Membaca Bismillah sebelum makan",
+     "kata": [
+      "bismillah",
+      "bismillahirrahmanirrahim",
+      "بسم",
+      "الله"
+     ]
+    },
+    {
+     "maksud": "Mencuci tangan sebelum makan",
+     "kata": [
+      "cuci",
+      "mencuci",
+      "tangan",
+      "منچوچي"
+     ]
+    },
+    {
+     "maksud": "Makan dengan tangan kanan",
+     "kata": [
+      "kanan",
+      "tangan",
+      "کانن"
+     ]
+    },
+    {
+     "maksud": "Duduk ketika makan",
+     "kata": [
+      "duduk",
+      "menduduki",
+      "دودوق"
+     ]
+    },
+    {
+     "maksud": "Tidak membazir dan menghabiskan makanan",
+     "kata": [
+      "bazir",
+      "membazir",
+      "membazirkan",
+      "habis",
+      "menghabiskan",
+      "ممبازير",
+      "ماکنن",
+      "مڠهبيسکنڽ",
+      "تيدق"
+     ]
+    },
+    {
+     "maksud": "Mengucapkan Alhamdulillah selepas makan",
+     "kata": [
+      "alhamdulillah",
+      "hamdalah",
+      "syukur",
+      "الحمد",
+      "لله",
+      "سلفس",
+      "حمد"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "1. ممباچ بسم الله سبلوم ماکن.",
+    "2. منچوچي تاڠن سبلوم ماکن.",
+    "3. ماکن دڠن تاڠن کانن.",
+    "4. دودوق کتيک ماکن.",
+    "5. تيدق ممبازير ماکنن دان مڠهبيسکنڽ.",
+    "6. ممباچ الحمد لله سلفس ماکن."
+   ],
+   "jawapanContohRumi": [
+    "1. Membaca Bismillah sebelum makan.",
+    "2. Mencuci tangan sebelum makan.",
+    "3. Makan dengan tangan kanan.",
+    "4. Duduk ketika makan.",
+    "5. Tidak membazir makanan dan menghabiskannya.",
+    "6. Membaca Alhamdulillah selepas makan."
+   ],
+   "id": "adab-c9"
+  },
+  {
+   "bahagian": "C",
+   "jenis": "tulis",
+   "soalan": "اڤاکه ادب سبلوم تيدور؟ بريکن ليم.",
+   "rumi": "Apakah adab sebelum tidur? Berikan lima.",
+   "markah": 5,
+   "idea": [
+    {
+     "maksud": "Mengambil wuduk sebelum tidur",
+     "kata": [
+      "wuduk",
+      "berwuduk",
+      "mengambil",
+      "مڠامبيل",
+      "وضوء"
+     ]
+    },
+    {
+     "maksud": "Membaca doa sebelum tidur",
+     "kata": [
+      "doa",
+      "berdoa",
+      "mendoa",
+      "membaca",
+      "ممباچ",
+      "دعاء"
+     ]
+    },
+    {
+     "maksud": "Baring dengan menghadap kiblat",
+     "kata": [
+      "kiblat",
+      "menghadap",
+      "baring",
+      "membaringkan",
+      "بربارڠ",
+      "مڠهادڤ",
+      "کعبة"
+     ]
+    },
+    {
+     "maksud": "Memberus gigi supaya badan bersih",
+     "kata": [
+      "gosok",
+      "menggosok",
+      "berus",
+      "memberus",
+      "gigi",
+      "ممبريوس",
+      "ݢيݢي",
+      "اݢر",
+      "بادن",
+      "برسيه"
+     ]
+    },
+    {
+     "maksud": "Memadamkan lampu sebelum tidur",
+     "kata": [
+      "lampu",
+      "padam",
+      "memadam",
+      "mematikan",
+      "ممادمکن",
+      "لمڤو"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "1. مڠامبيل وضوء سبلوم تيدور.",
+    "2. ممباچ دعاء سبلوم تيدور.",
+    "3. بربارڠ دڠن مڠهادڤ کعبة.",
+    "4. ممبريوس ݢيݢي اݢر بادن برسيه.",
+    "5. ممادمکن لمڤو سبلوم تيدور."
+   ],
+   "jawapanContohRumi": [
+    "1. Mengambil wuduk sebelum tidur.",
+    "2. Membaca doa sebelum tidur.",
+    "3. Berbaring dengan menghadap kiblat.",
+    "4. Memberus gigi agar badan bersih.",
+    "5. Memadamkan lampu sebelum tidur."
+   ],
+   "id": "adab-c10"
+  },
+  {
+   "bahagian": "C",
+   "jenis": "tulis",
+   "soalan": "بريکن امڤت ادب سلفس باڠون درڤد تيدور.",
+   "rumi": "Berikan empat adab selepas bangun daripada tidur.",
+   "markah": 4,
+   "idea": [
+    {
+     "maksud": "Membaca doa bangun daripada tidur",
+     "kata": [
+      "doa",
+      "berdoa",
+      "mendoa",
+      "membaca",
+      "ممباچ",
+      "دعاء",
+      "باڠون"
+     ]
+    },
+    {
+     "maksud": "Mengucapkan Alhamdulillah",
+     "kata": [
+      "alhamdulillah",
+      "hamdalah",
+      "مڠوچڤکن",
+      "الحمد",
+      "لله",
+      "حمد"
+     ]
+    },
+    {
+     "maksud": "Mengemas tempat tidur",
+     "kata": [
+      "kemas",
+      "mengemas",
+      "katil",
+      "tilam",
+      "tempat",
+      "مڠمس",
+      "تمڤت"
+     ]
+    },
+    {
+     "maksud": "Mandi dan bersiap untuk ke sekolah",
+     "kata": [
+      "mandi",
+      "siap",
+      "bersiap",
+      "sekolah",
+      "مندي",
+      "برسيڤ",
+      "سکوله"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "1. ممباچ دعاء باڠون درڤد تيدور.",
+    "2. مڠوچڤکن الحمد لله.",
+    "3. مڠمس تمڤت تيدور.",
+    "4. مندي دان برسيڤ اونتوق ک سکوله."
+   ],
+   "jawapanContohRumi": [
+    "1. Membaca doa bangun daripada tidur.",
+    "2. Mengucapkan Alhamdulillah.",
+    "3. Mengemas tempat tidur.",
+    "4. Mandi dan bersiap untuk ke sekolah."
+   ],
+   "id": "adab-c11"
+  },
+  {
+   "bahagian": "C",
+   "jenis": "tulis",
+   "soalan": "سنارايکن اينم ادب ماسوق کدالم رومه.",
+   "rumi": "Senaraikan enam adab masuk ke dalam rumah.",
+   "markah": 6,
+   "idea": [
+    {
+     "maksud": "Mengetuk pintu sebelum masuk",
+     "kata": [
+      "ketuk",
+      "mengetuk",
+      "pintu",
+      "مڠتوق",
+      "ڤينتو"
+     ]
+    },
+    {
+     "maksud": "Memberi salam apabila masuk",
+     "kata": [
+      "salam",
+      "bersalam",
+      "memberi",
+      "ممبري",
+      "سلام",
+      "اڤابيلا"
+     ]
+    },
+    {
+     "maksud": "Membaca doa masuk rumah",
+     "kata": [
+      "doa",
+      "berdoa",
+      "mendoa",
+      "membaca",
+      "ممباچ",
+      "دعاء"
+     ]
+    },
+    {
+     "maksud": "Menanggalkan kasut dan menyimpannya di tempatnya",
+     "kata": [
+      "kasut",
+      "selipar",
+      "tanggal",
+      "menanggalkan",
+      "menyimpan",
+      "منڠݢلکن",
+      "کاسوت",
+      "مڽيمڤنڽ",
+      "تمڤتڽ"
+     ]
+    },
+    {
+     "maksud": "Bersalaman dengan ibu bapa",
+     "kata": [
+      "salam",
+      "bersalam",
+      "bersalaman",
+      "cium",
+      "mencium",
+      "برسلامن",
+      "ايبو",
+      "باڤ"
+     ]
+    },
+    {
+     "maksud": "Meminta izin sebelum masuk ke bilik",
+     "kata": [
+      "izin",
+      "bilik",
+      "meminta",
+      "ممينتا",
+      "ايذين",
+      "بيليق"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "1. مڠتوق ڤينتو سبلوم ماسوق.",
+    "2. ممبري سلام اڤابيلا ماسوق ک رومه.",
+    "3. ممباچ دعاء ماسوق رومه.",
+    "4. منڠݢلکن کاسوت دان مڽيمڤنڽ ڤد تمڤتڽ.",
+    "5. برسلامن دڠن ايبو باڤ.",
+    "6. ممينتا ايذين سبلوم ماسوق ک بيليق."
+   ],
+   "jawapanContohRumi": [
+    "1. Mengetuk pintu sebelum masuk.",
+    "2. Memberi salam apabila masuk ke rumah.",
+    "3. Membaca doa masuk rumah.",
+    "4. Menanggalkan kasut dan menyimpannya pada tempatnya.",
+    "5. Bersalaman dengan ibu bapa.",
+    "6. Meminta izin sebelum masuk ke bilik."
+   ],
+   "id": "adab-c12"
+  },
+  {
+   "bahagian": "C",
+   "jenis": "tulis",
+   "soalan": "بريکن ليم ادب سبلوم کلوار درڤد رومه.",
+   "rumi": "Berikan lima adab sebelum keluar daripada rumah.",
+   "markah": 5,
+   "idea": [
+    {
+     "maksud": "Meminta izin daripada ibu bapa",
+     "kata": [
+      "izin",
+      "meminta",
+      "keizinan",
+      "ممينتا",
+      "ايذين",
+      "ايبو",
+      "باڤ"
+     ]
+    },
+    {
+     "maksud": "Memberi salam kepada ahli keluarga",
+     "kata": [
+      "salam",
+      "bersalam",
+      "memberi",
+      "ممبري",
+      "سلام",
+      "اهل",
+      "کلوارݢ"
+     ]
+    },
+    {
+     "maksud": "Membaca doa keluar rumah",
+     "kata": [
+      "doa",
+      "berdoa",
+      "mendoa",
+      "membaca",
+      "ممباچ",
+      "دعاء",
+      "کلوار",
+      "رومه"
+     ]
+    },
+    {
+     "maksud": "Berpakaian bersih, sopan dan menutup aurat",
+     "kata": [
+      "sopan",
+      "bersih",
+      "aurat",
+      "pakaian",
+      "berpakaian",
+      "برڤاکاين",
+      "برسيه",
+      "سوڤن"
+     ]
+    },
+    {
+     "maksud": "Mengunci pintu dan menutupnya dengan rapat",
+     "kata": [
+      "kunci",
+      "mengunci",
+      "tutup",
+      "menutup",
+      "pintu",
+      "مڠونچي",
+      "ڤينتو",
+      "راڤت"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "1. ممينتا ايذين درڤد ايبو باڤ.",
+    "2. ممبري سلام کڤد اهل کلوارݢ.",
+    "3. ممباچ دعاء کلوار رومه.",
+    "4. برڤاکاين برسيه دان سوڤن.",
+    "5. مڠونچي ڤينتو دڠن راڤت."
+   ],
+   "jawapanContohRumi": [
+    "1. Meminta izin daripada ibu bapa.",
+    "2. Memberi salam kepada ahli keluarga.",
+    "3. Membaca doa keluar rumah.",
+    "4. Berpakaian bersih dan sopan.",
+    "5. Mengunci pintu dengan rapat."
+   ],
+   "id": "adab-c13"
+  },
+  {
+   "bahagian": "C",
+   "jenis": "tulis",
+   "soalan": "اڤاکه ادب ماسوق تندس؟ بريکن ليم.",
+   "rumi": "Apakah adab masuk tandas? Berikan lima.",
+   "markah": 5,
+   "idea": [
+    {
+     "maksud": "Membaca doa masuk tandas",
+     "kata": [
+      "doa",
+      "berdoa",
+      "mendoa",
+      "membaca",
+      "ممباچ",
+      "دعاء"
+     ]
+    },
+    {
+     "maksud": "Masuk dengan kaki kiri",
+     "kata": [
+      "kiri",
+      "kaki",
+      "کاکي",
+      "کيري"
+     ]
+    },
+    {
+     "maksud": "Memakai selipar dan menjaga aurat",
+     "kata": [
+      "selipar",
+      "aurat",
+      "memakai",
+      "kasut",
+      "ممکاي",
+      "سليڤر",
+      "منجاݢ",
+      "اورت"
+     ]
+    },
+    {
+     "maksud": "Tidak membawa atau makan makanan di dalam tandas",
+     "kata": [
+      "makanan",
+      "bawa",
+      "membawa",
+      "makan",
+      "ممباوا",
+      "ماکنن",
+      "تيدق"
+     ]
+    },
+    {
+     "maksud": "Membersihkan tandas selepas digunakan",
+     "kata": [
+      "bersih",
+      "membersih",
+      "siram",
+      "menyiram",
+      "cuci",
+      "mencuci",
+      "ممبرسيهکن",
+      "سلفس",
+      "دݢوناکن"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "1. ممباچ دعاء ماسوق تندس.",
+    "2. ماسوق دڠن کاکي کيري.",
+    "3. ممکاي سليڤر دان منجاݢ اورت.",
+    "4. تيدق ممباوا ماکنن ک دالم تندس.",
+    "5. ممبرسيهکن تندس سلفس دݢوناکن."
+   ],
+   "jawapanContohRumi": [
+    "1. Membaca doa masuk tandas.",
+    "2. Masuk dengan kaki kiri.",
+    "3. Memakai selipar dan menjaga aurat.",
+    "4. Tidak membawa makanan ke dalam tandas.",
+    "5. Membersihkan tandas selepas digunakan."
+   ],
+   "id": "adab-c14"
+  },
+  {
+   "bahagian": "C",
+   "jenis": "tulis",
+   "soalan": "سنارايکن اينم ادب کتيک براد د دالم مسجد.",
+   "rumi": "Senaraikan enam adab ketika berada di dalam masjid.",
+   "markah": 6,
+   "idea": [
+    {
+     "maksud": "Memberi salam dan berwuduk sebelum masuk",
+     "kata": [
+      "salam",
+      "wuduk",
+      "berwuduk",
+      "memberi",
+      "ممبري",
+      "سلام",
+      "بروضوء",
+      "سبلوم"
+     ]
+    },
+    {
+     "maksud": "Melangkah masuk dengan kaki kanan",
+     "kata": [
+      "kanan",
+      "kaki",
+      "melangkah",
+      "ملاڠکه",
+      "کاکي",
+      "کانن"
+     ]
+    },
+    {
+     "maksud": "Mendirikan solat dan solat berjemaah",
+     "kata": [
+      "solat",
+      "jemaah",
+      "berjemaah",
+      "mendirikan",
+      "منديريکن",
+      "صلاة",
+      "برجماعه"
+     ]
+    },
+    {
+     "maksud": "Meluruskan dan merapatkan saf",
+     "kata": [
+      "saf",
+      "meluruskan",
+      "merapatkan",
+      "merapat",
+      "ملوروسکن",
+      "مراڤتکن",
+      "صف"
+     ]
+    },
+    {
+     "maksud": "Merendahkan suara dan tidak bising",
+     "kata": [
+      "bising",
+      "suara",
+      "rendah",
+      "merendahkan",
+      "مرنداهکن",
+      "سوارا",
+      "بيسيڠ",
+      "تيدق"
+     ]
+    },
+    {
+     "maksud": "Menjaga kebersihan dan kesucian masjid",
+     "kata": [
+      "bersih",
+      "kebersihan",
+      "suci",
+      "kesucian",
+      "menjaga",
+      "منجاݢ",
+      "کبرسيهن",
+      "کسوچين",
+      "مسجد"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "1. ممبري سلام دان بروضوء سبلوم ماسوق.",
+    "2. ملاڠکه ماسوق دڠن کاکي کانن.",
+    "3. منديريکن صلاة دان صلاة برجماعه.",
+    "4. ملوروسکن دان مراڤتکن صف.",
+    "5. مرنداهکن سوارا دان تيدق بيسيڠ.",
+    "6. منجاݢ کبرسيهن دان کسوچين مسجد."
+   ],
+   "jawapanContohRumi": [
+    "1. Memberi salam dan berwuduk sebelum masuk.",
+    "2. Melangkah masuk dengan kaki kanan.",
+    "3. Mendirikan solat dan solat berjemaah.",
+    "4. Meluruskan dan merapatkan saf.",
+    "5. Merendahkan suara dan tidak bising.",
+    "6. Menjaga kebersihan dan kesucian masjid."
+   ],
+   "id": "adab-c15"
+  },
+  {
+   "bahagian": "C",
+   "jenis": "tulis",
+   "soalan": "سنارايکن اينم ادب کتيک براد د دالم مجلس علمو.",
+   "rumi": "Senaraikan enam adab ketika berada di dalam majlis ilmu.",
+   "markah": 6,
+   "idea": [
+    {
+     "maksud": "Memberi salam kepada guru dan hadirin",
+     "kata": [
+      "salam",
+      "bersalam",
+      "memberi",
+      "ممبري",
+      "سلام",
+      "حاضيرين"
+     ]
+    },
+    {
+     "maksud": "Duduk dengan tertib dan menumpukan perhatian",
+     "kata": [
+      "tertib",
+      "duduk",
+      "perhatian",
+      "menumpukan",
+      "tumpu",
+      "دودوق",
+      "ترتيب",
+      "منومڤوکن",
+      "ڤرهاتين"
+     ]
+    },
+    {
+     "maksud": "Mendengar penerangan guru dengan teliti",
+     "kata": [
+      "dengar",
+      "mendengar",
+      "teliti",
+      "mendengarkan",
+      "مندڠر",
+      "ڤنرڠن",
+      "تليتي"
+     ]
+    },
+    {
+     "maksud": "Tidak bercakap atau membuat bising",
+     "kata": [
+      "bising",
+      "cakap",
+      "bercakap",
+      "membuat",
+      "برچاکڤ",
+      "ممبوات",
+      "بيسيڠ"
+     ]
+    },
+    {
+     "maksud": "Mencatat nota pelajaran",
+     "kata": [
+      "nota",
+      "catat",
+      "mencatat",
+      "mencatatkan",
+      "منچاتت",
+      "نوتا",
+      "ڤلاجرن"
+     ]
+    },
+    {
+     "maksud": "Bertanya dengan sopan apabila tidak faham",
+     "kata": [
+      "tanya",
+      "bertanya",
+      "sopan",
+      "soalan",
+      "برتاڽ",
+      "سوڤن",
+      "اڤابيلا",
+      "فهم"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "1. ممبري سلام کڤد ݢورو دان حاضيرين.",
+    "2. دودوق دڠن ترتيب دان منومڤوکن ڤرهاتين.",
+    "3. مندڠر ڤنرڠن ݢورو دڠن تليتي.",
+    "4. تيدق برچاکڤ اتاو ممبوات بيسيڠ.",
+    "5. منچاتت نوتا ڤلاجرن.",
+    "6. برتاڽ دڠن سوڤن اڤابيلا تيدق فهم."
+   ],
+   "jawapanContohRumi": [
+    "1. Memberi salam kepada guru dan hadirin.",
+    "2. Duduk dengan tertib dan menumpukan perhatian.",
+    "3. Mendengar penerangan guru dengan teliti.",
+    "4. Tidak bercakap atau membuat bising.",
+    "5. Mencatat nota pelajaran.",
+    "6. Bertanya dengan sopan apabila tidak faham."
+   ],
+   "id": "adab-c16"
+  },
+  {
+   "bahagian": "C",
+   "jenis": "tulis",
+   "soalan": "اڤاکه ادب کتيک مناءيقي کندراءن عوام؟ بريکن اينم.",
+   "rumi": "Apakah adab ketika menaiki kenderaan awam? Berikan enam.",
+   "markah": 6,
+   "idea": [
+    {
+     "maksud": "Beratur dan tidak berebut ketika menaiki kenderaan",
+     "kata": [
+      "beratur",
+      "baris",
+      "berbaris",
+      "berebut",
+      "tertib",
+      "براتور",
+      "بربوت",
+      "ماسوق"
+     ]
+    },
+    {
+     "maksud": "Memberi tempat duduk kepada warga tua dan orang kurang upaya",
+     "kata": [
+      "tua",
+      "emas",
+      "warga",
+      "hamil",
+      "upaya",
+      "ممبري",
+      "تمڤت",
+      "دودوق",
+      "ورݢ",
+      "اماس"
+     ]
+    },
+    {
+     "maksud": "Tidak membuat bising di dalam kenderaan",
+     "kata": [
+      "bising",
+      "kecoh",
+      "bunyi",
+      "ممبوات",
+      "بيسيڠ"
+     ]
+    },
+    {
+     "maksud": "Menjaga kebersihan dan tidak membuang sampah",
+     "kata": [
+      "bersih",
+      "kebersihan",
+      "sampah",
+      "buang",
+      "منجاݢ",
+      "کبرسيهن",
+      "ممبواڠ",
+      "سمڤه"
+     ]
+    },
+    {
+     "maksud": "Membayar tambang dengan jujur",
+     "kata": [
+      "tambang",
+      "bayar",
+      "membayar",
+      "jujur",
+      "ممباير",
+      "تمبڠ",
+      "جوجور"
+     ]
+    },
+    {
+     "maksud": "Memegang pemegang atau duduk dengan selamat",
+     "kata": [
+      "pemegang",
+      "pegang",
+      "memegang",
+      "selamat",
+      "keselamatan",
+      "مميڠݢڠ",
+      "ڤميݢڠ",
+      "سلامت"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "1. براتور دان تيدق بربوت کتيک ماسوق ک کندراءن.",
+    "2. ممبري تمڤت دودوق کڤد ورݢ اماس.",
+    "3. تيدق ممبوات بيسيڠ د دالم کندراءن.",
+    "4. منجاݢ کبرسيهن دان تيدق ممبواڠ سمڤه.",
+    "5. ممباير تمبڠ دڠن جوجور.",
+    "6. مميڠݢڠ ڤميݢڠ دڠن سلامت."
+   ],
+   "jawapanContohRumi": [
+    "1. Beratur dan tidak berebut ketika masuk ke kenderaan.",
+    "2. Memberi tempat duduk kepada warga emas.",
+    "3. Tidak membuat bising di dalam kenderaan.",
+    "4. Menjaga kebersihan dan tidak membuang sampah.",
+    "5. Membayar tambang dengan jujur.",
+    "6. Memegang pemegang dengan selamat."
+   ],
+   "id": "adab-c17"
+  },
+  {
+   "bahagian": "C",
+   "jenis": "tulis",
+   "soalan": "اڤاکه ادب کتيک برچاکڤ دڠن اورڠ لاءين؟ بريکن ليم.",
+   "rumi": "Apakah adab ketika bercakap dengan orang lain? Berikan lima.",
+   "markah": 5,
+   "idea": [
+    {
+     "maksud": "Bercakap dengan suara yang lembut",
+     "kata": [
+      "lembut",
+      "berlembut",
+      "melembut",
+      "melembutkan",
+      "لمبوت"
+     ]
+    },
+    {
+     "maksud": "Tidak meninggikan suara",
+     "kata": [
+      "suara",
+      "tinggi",
+      "meninggikan",
+      "منيڠݢيکن"
+     ]
+    },
+    {
+     "maksud": "Tidak memotong percakapan orang lain",
+     "kata": [
+      "potong",
+      "memotong",
+      "memintas",
+      "memintasi",
+      "مموتوڠ",
+      "ڤرچاکڤن",
+      "لاءين"
+     ]
+    },
+    {
+     "maksud": "Memandang muka orang yang bercakap",
+     "kata": [
+      "muka",
+      "memandang",
+      "pandang",
+      "memandangnya",
+      "مماندڠ",
+      "موک",
+      "سدڠ"
+     ]
+    },
+    {
+     "maksud": "Bercakap perkara yang benar dan berfaedah",
+     "kata": [
+      "benar",
+      "kebenaran",
+      "berfaedah",
+      "faedah",
+      "ڤرکارا",
+      "بتول",
+      "برفاءيده"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "1. برچاکڤ دڠن سوارا يڠ لمبوت.",
+    "2. تيدق منيڠݢيکن سوارا.",
+    "3. تيدق مموتوڠ ڤرچاکڤن اورڠ لاءين.",
+    "4. مماندڠ موک اورڠ يڠ سدڠ برچاکڤ.",
+    "5. برچاکڤ ڤرکارا يڠ بتول دان برفاءيده."
+   ],
+   "jawapanContohRumi": [
+    "1. Bercakap dengan suara yang lembut.",
+    "2. Tidak meninggikan suara.",
+    "3. Tidak memotong percakapan orang lain.",
+    "4. Memandang muka orang yang sedang bercakap.",
+    "5. Bercakap perkara yang betul dan berfaedah."
+   ],
+   "id": "adab-c18"
+  },
+  {
+   "bahagian": "C",
+   "jenis": "tulis",
+   "soalan": "سنارايکن ليم ادب کتيک ممبري دان منريم ڤمبريان.",
+   "rumi": "Senaraikan lima adab ketika memberi dan menerima pemberian.",
+   "markah": 5,
+   "idea": [
+    {
+     "maksud": "Menggunakan tangan kanan",
+     "kata": [
+      "kanan",
+      "tangan",
+      "تاڠن",
+      "کانن"
+     ]
+    },
+    {
+     "maksud": "Menerima pemberian dengan penuh hormat",
+     "kata": [
+      "hormat",
+      "menghormati",
+      "menerima",
+      "ڤمبريان",
+      "ڤنوه",
+      "حرمت"
+     ]
+    },
+    {
+     "maksud": "Mengucapkan terima kasih",
+     "kata": [
+      "kasih",
+      "terimakasih",
+      "ucapkan",
+      "mengucapkan",
+      "مڠوچڤکن",
+      "تريما",
+      "کاسيه"
+     ]
+    },
+    {
+     "maksud": "Menerima dengan redha dan tidak memilih",
+     "kata": [
+      "redha",
+      "rela",
+      "menerima",
+      "memilih",
+      "رضا",
+      "مميليه",
+      "تيدق"
+     ]
+    },
+    {
+     "maksud": "Memberi dengan ikhlas dan senyuman",
+     "kata": [
+      "ikhlas",
+      "senyum",
+      "senyuman",
+      "memberi",
+      "اخلاص",
+      "سنيوم"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "1. ممبري دان منريم دڠن تاڠن کانن.",
+    "2. منريم ڤمبريان دڠن ڤنوه حرمت.",
+    "3. مڠوچڤکن تريما کاسيه.",
+    "4. منريم دڠن رضا دان تيدق مميليه.",
+    "5. ممبري دڠن اخلاص دان سنيوم."
+   ],
+   "jawapanContohRumi": [
+    "1. Memberi dan menerima dengan tangan kanan.",
+    "2. Menerima pemberian dengan penuh hormat.",
+    "3. Mengucapkan terima kasih.",
+    "4. Menerima dengan redha dan tidak memilih.",
+    "5. Memberi dengan ikhlas dan senyuman."
+   ],
+   "id": "adab-c19"
+  },
+  {
+   "bahagian": "C",
+   "jenis": "tulis",
+   "soalan": "بريکن امڤت ادب ترهادڤ اورڠ يڠ لبه توا.",
+   "rumi": "Berikan empat adab terhadap orang yang lebih tua.",
+   "markah": 4,
+   "idea": [
+    {
+     "maksud": "Memberi salam apabila bertemu",
+     "kata": [
+      "salam",
+      "bersalam",
+      "bersalaman",
+      "ممبري",
+      "سلام",
+      "اڤابيلا",
+      "برتمو"
+     ]
+    },
+    {
+     "maksud": "Mencium tangan orang yang lebih tua",
+     "kata": [
+      "cium",
+      "mencium",
+      "tangan",
+      "منچيوم",
+      "تاڠن",
+      "اورڠ",
+      "لبه",
+      "توا"
+     ]
+    },
+    {
+     "maksud": "Bercakap dengan bahasa yang hormat",
+     "kata": [
+      "hormat",
+      "menghormati",
+      "bahasa",
+      "sopan",
+      "برچاکڤ",
+      "بهاس",
+      "حرمت"
+     ]
+    },
+    {
+     "maksud": "Menolong mereka yang memerlukan",
+     "kata": [
+      "tolong",
+      "menolong",
+      "bantu",
+      "membantu",
+      "منولوڠ",
+      "مريک",
+      "ممرلوکن",
+      "بنتوان"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "1. ممبري سلام اڤابيلا برتمو.",
+    "2. منچيوم تاڠن اورڠ يڠ لبه توا.",
+    "3. برچاکڤ دڠن بهاس يڠ حرمت.",
+    "4. منولوڠ مريک يڠ ممرلوکن بنتوان."
+   ],
+   "jawapanContohRumi": [
+    "1. Memberi salam apabila bertemu.",
+    "2. Mencium tangan orang yang lebih tua.",
+    "3. Bercakap dengan bahasa yang hormat.",
+    "4. Menolong mereka yang memerlukan bantuan."
+   ],
+   "id": "adab-c20"
+  },
+  {
+   "bahagian": "C",
+   "jenis": "tulis",
+   "soalan": "بريکن ليم چونتوه ڤربواتن جوجور د سکوله.",
+   "rumi": "Berikan lima contoh perbuatan jujur di sekolah.",
+   "markah": 5,
+   "idea": [
+    {
+     "maksud": "Tidak meniru jawapan rakan",
+     "kata": [
+      "tiru",
+      "meniru",
+      "menyalin",
+      "salin",
+      "jawapan",
+      "منيرو",
+      "جواڤن"
+     ]
+    },
+    {
+     "maksud": "Memulangkan barang yang dijumpai",
+     "kata": [
+      "jumpa",
+      "dijumpai",
+      "memulangkan",
+      "pulangkan",
+      "barang",
+      "ممولڠکن",
+      "دجومڤاي"
+     ]
+    },
+    {
+     "maksud": "Bercakap benar kepada guru",
+     "kata": [
+      "benar",
+      "cakap",
+      "bercakap",
+      "betul",
+      "برچاکڤ",
+      "بتول",
+      "ݢورو"
+     ]
+    },
+    {
+     "maksud": "Tidak menipu wang atau barang",
+     "kata": [
+      "tipu",
+      "menipu",
+      "wang",
+      "duit",
+      "منيڤو",
+      "واڠ"
+     ]
+    },
+    {
+     "maksud": "Mengaku kesalahan sendiri",
+     "kata": [
+      "mengaku",
+      "mengakui",
+      "pengakuan",
+      "kesalahan",
+      "مڠاکو",
+      "کسالهن",
+      "سنديري"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "1. تيدق منيرو جواڤن رکن.",
+    "2. ممولڠکن بارڠ يڠ دجومڤاي.",
+    "3. برچاکڤ بتول کڤد ݢورو.",
+    "4. تيدق منيڤو واڠ اتاو بارڠ رکن.",
+    "5. مڠاکو کسالهن سنديري."
+   ],
+   "jawapanContohRumi": [
+    "1. Tidak meniru jawapan rakan.",
+    "2. Memulangkan barang yang dijumpai.",
+    "3. Bercakap betul kepada guru.",
+    "4. Tidak menipu wang atau barang rakan.",
+    "5. Mengaku kesalahan sendiri."
+   ],
+   "id": "adab-c21"
+  },
+  {
+   "bahagian": "C",
+   "jenis": "tulis",
+   "soalan": "بريکن امڤت چونتوه ڤربواتن امانه.",
+   "rumi": "Berikan empat contoh perbuatan amanah.",
+   "markah": 4,
+   "idea": [
+    {
+     "maksud": "Menjaga barang yang dipinjam",
+     "kata": [
+      "pinjam",
+      "meminjam",
+      "barang",
+      "menjaga",
+      "pinjaman",
+      "منجاݢ",
+      "دڤينجم"
+     ]
+    },
+    {
+     "maksud": "Menjalankan tugas yang diberi dengan baik",
+     "kata": [
+      "tugas",
+      "tugasan",
+      "menjalankan",
+      "amanah",
+      "منجالنکن",
+      "توݢس",
+      "دبري",
+      "باءيق"
+     ]
+    },
+    {
+     "maksud": "Tidak mengambil barang kepunyaan orang lain",
+     "kata": [
+      "ambil",
+      "mengambil",
+      "curi",
+      "mencuri",
+      "مڠامبيل",
+      "کڤوڽاءن",
+      "اورڠ",
+      "لاءين",
+      "تيدق"
+     ]
+    },
+    {
+     "maksud": "Menyampaikan pesanan dengan betul",
+     "kata": [
+      "pesan",
+      "pesanan",
+      "menyampaikan",
+      "sampai",
+      "مڽمڤايکن",
+      "ڤسان",
+      "بتول"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "1. منجاݢ بارڠ يڠ دڤينجم.",
+    "2. منجالنکن توݢس يڠ دبري دڠن باءيق.",
+    "3. تيدق مڠامبيل بارڠ کڤوڽاءن اورڠ لاءين.",
+    "4. مڽمڤايکن ڤسان دڠن بتول."
+   ],
+   "jawapanContohRumi": [
+    "1. Menjaga barang yang dipinjam.",
+    "2. Menjalankan tugas yang diberi dengan baik.",
+    "3. Tidak mengambil barang kepunyaan orang lain.",
+    "4. Menyampaikan pesanan dengan betul."
+   ],
+   "id": "adab-c22"
+  },
+  {
+   "bahagian": "C",
+   "jenis": "tulis",
+   "soalan": "سنارايکن ليم حکمه برصبر کتيک مڠهادڤي کسوسهن.",
+   "rumi": "Senaraikan lima hikmah bersabar ketika menghadapi kesusahan.",
+   "markah": 5,
+   "idea": [
+    {
+     "maksud": "Mendapat pahala daripada Allah",
+     "kata": [
+      "pahala",
+      "mendapat",
+      "ganjaran",
+      "منداڤت",
+      "ڤهالا"
+     ]
+    },
+    {
+     "maksud": "Hati menjadi tenang dan tidak gelisah",
+     "kata": [
+      "tenang",
+      "ketenangan",
+      "gelisah",
+      "resah",
+      "هاتي",
+      "مڠجادي",
+      "تنڠ",
+      "ݢليسه"
+     ]
+    },
+    {
+     "maksud": "Tidak mudah berputus asa",
+     "kata": [
+      "putus",
+      "asa",
+      "putusasa",
+      "berputus",
+      "موده",
+      "برڤوتوس",
+      "اسا"
+     ]
+    },
+    {
+     "maksud": "Dijanjikan syurga oleh Allah",
+     "kata": [
+      "syurga",
+      "dijanjikan",
+      "janji",
+      "دجانجيکن",
+      "شورݢ",
+      "اوليه"
+     ]
+    },
+    {
+     "maksud": "Menerima ketentuan Allah dengan redha",
+     "kata": [
+      "redha",
+      "keredhaan",
+      "rela",
+      "ketentuan",
+      "منريم",
+      "کتنتوان",
+      "رضا"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "1. منداڤت ڤهالا درڤد الله.",
+    "2. هاتي مڠجادي تنڠ دان تيدق ݢليسه.",
+    "3. تيدق موده برڤوتوس اسا.",
+    "4. دجانجيکن شورݢ اوليه الله.",
+    "5. منريم کتنتوان الله دڠن رضا."
+   ],
+   "jawapanContohRumi": [
+    "1. Mendapat pahala daripada Allah.",
+    "2. Hati menjadi tenang dan tidak gelisah.",
+    "3. Tidak mudah berputus asa.",
+    "4. Dijanjikan syurga oleh Allah.",
+    "5. Menerima ketentuan Allah dengan redha."
+   ],
+   "id": "adab-c23"
+  },
+  {
+   "bahagian": "C",
+   "jenis": "tulis",
+   "soalan": "سنارايکن ليم چيري اورڠ يڠ اخلاص.",
+   "rumi": "Senaraikan lima ciri orang yang ikhlas.",
+   "markah": 5,
+   "idea": [
+    {
+     "maksud": "Berniat kerana Allah",
+     "kata": [
+      "niat",
+      "berniat",
+      "kerana",
+      "allah",
+      "برنيت",
+      "کران",
+      "الله"
+     ]
+    },
+    {
+     "maksud": "Tidak mengharapkan pujian manusia",
+     "kata": [
+      "puji",
+      "pujian",
+      "dipuji",
+      "memuji",
+      "ڤوجين",
+      "ماءنسي"
+     ]
+    },
+    {
+     "maksud": "Tidak menunjuk-nunjuk atau riak",
+     "kata": [
+      "riak",
+      "menunjuk",
+      "tunjuk",
+      "menunjuknunjuk",
+      "منونجوق",
+      "نونجوق",
+      "برسيفت",
+      "رياک"
+     ]
+    },
+    {
+     "maksud": "Tidak mengharapkan balasan atau upah",
+     "kata": [
+      "balas",
+      "balasan",
+      "upah",
+      "mengharapkan",
+      "بالس",
+      "اوڤه"
+     ]
+    },
+    {
+     "maksud": "Melakukan kebaikan walaupun tidak dilihat orang",
+     "kata": [
+      "lihat",
+      "dilihat",
+      "sembunyi",
+      "tersembunyi",
+      "melihat",
+      "ملاکوکن",
+      "کباءيقن",
+      "والاوڤون",
+      "دليهت",
+      "اورڠ"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "1. برنيت کران الله.",
+    "2. تيدق مڠهارڤکن ڤوجين ماءنسي.",
+    "3. تيدق منونجوق-نونجوق اتاو برسيفت رياک.",
+    "4. تيدق مڠهارڤکن بالس اتاو اوڤه.",
+    "5. ملاکوکن کباءيقن والاوڤون تيدق دليهت اورڠ."
+   ],
+   "jawapanContohRumi": [
+    "1. Berniat kerana Allah.",
+    "2. Tidak mengharapkan pujian manusia.",
+    "3. Tidak menunjuk-nunjuk atau bersifat riak.",
+    "4. Tidak mengharapkan balas atau upah.",
+    "5. Melakukan kebaikan walaupun tidak dilihat orang."
+   ],
+   "id": "adab-c24"
+  },
+  {
+   "bahagian": "C",
+   "jenis": "tulis",
+   "soalan": "بريکن ليم چارا منونجوقکن کاسيه سايڠ کڤد اهل کلوارݢ.",
+   "rumi": "Berikan lima cara menunjukkan kasih sayang kepada ahli keluarga.",
+   "markah": 5,
+   "idea": [
+    {
+     "maksud": "Memberi salam dan memeluk mereka",
+     "kata": [
+      "peluk",
+      "memeluk",
+      "salam",
+      "bersalam",
+      "سلام",
+      "مملوق",
+      "ايبو",
+      "باڤ"
+     ]
+    },
+    {
+     "maksud": "Membantu kerja rumah tanpa disuruh",
+     "kata": [
+      "bantu",
+      "membantu",
+      "tolong",
+      "menolong",
+      "ممبنتو",
+      "ڤکرجاءن",
+      "رومه",
+      "تانڤ",
+      "دسوروه"
+     ]
+    },
+    {
+     "maksud": "Memberi hadiah pada hari istimewa",
+     "kata": [
+      "hadiah",
+      "menghadiahkan",
+      "memberi",
+      "حديه",
+      "هاري",
+      "لاڤ"
+     ]
+    },
+    {
+     "maksud": "Menjaga mereka ketika sakit",
+     "kata": [
+      "sakit",
+      "menjaga",
+      "merawat",
+      "rawat",
+      "منجاݢ",
+      "اهل",
+      "کلوارݢ",
+      "ساکيت"
+     ]
+    },
+    {
+     "maksud": "Meluangkan masa berkumpul bersama",
+     "kata": [
+      "meluangkan",
+      "bersama",
+      "berkumpul",
+      "masa",
+      "ملوڠکن",
+      "ماس",
+      "برکومڤول",
+      "برسام",
+      "سام"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "1. ممبري سلام دان مملوق ايبو باڤ.",
+    "2. ممبنتو ڤکرجاءن رومه تانڤ دسوروه.",
+    "3. ممبري حديه ڤد هاري لاڤ.",
+    "4. منجاݢ اهل کلوارݢ کتيک ساکيت.",
+    "5. ملوڠکن ماس برکومڤول برسام-سام."
+   ],
+   "jawapanContohRumi": [
+    "1. Memberi salam dan memeluk ibu bapa.",
+    "2. Membantu kerja rumah tanpa disuruh.",
+    "3. Memberi hadiah pada hari lahir.",
+    "4. Menjaga ahli keluarga ketika sakit.",
+    "5. Meluangkan masa berkumpul bersama-sama."
+   ],
+   "id": "adab-c25"
+  },
+  {
+   "bahagian": "C",
+   "jenis": "tulis",
+   "soalan": "سنارايکن اينم فاءيده هرمت-مڠحرمتي دالم مشارکت.",
+   "rumi": "Senaraikan enam faedah hormat-menghormati dalam masyarakat.",
+   "markah": 6,
+   "idea": [
+    {
+     "maksud": "Hidup menjadi aman dan damai",
+     "kata": [
+      "aman",
+      "damai",
+      "keamanan",
+      "harmoni",
+      "هيدوڤ",
+      "امان",
+      "داماي"
+     ]
+    },
+    {
+     "maksud": "Perpaduan masyarakat terjaga",
+     "kata": [
+      "padu",
+      "perpaduan",
+      "bersatu",
+      "perpadu",
+      "ڤرڤادوان",
+      "ترجاݢ"
+     ]
+    },
+    {
+     "maksud": "Tidak berlaku pergaduhan",
+     "kata": [
+      "gaduh",
+      "bergaduh",
+      "kelahi",
+      "berkelahi",
+      "pergaduhan",
+      "برلاکو",
+      "ڤرݢدوهن",
+      "تيدق"
+     ]
+    },
+    {
+     "maksud": "Dihormati dan disayangi orang lain",
+     "kata": [
+      "hormat",
+      "dihormati",
+      "sayang",
+      "disayangi",
+      "دحرمتي",
+      "دسايڠي",
+      "اورڠ",
+      "لاءين"
+     ]
+    },
+    {
+     "maksud": "Kerja menjadi mudah kerana bekerjasama",
+     "kata": [
+      "kerjasama",
+      "bekerjasama",
+      "gotong",
+      "royong",
+      "ڤکرجاءن",
+      "موده",
+      "کران",
+      "بکرجاسام"
+     ]
+    },
+    {
+     "maksud": "Masyarakat dan negara menjadi maju",
+     "kata": [
+      "maju",
+      "kemajuan",
+      "negara",
+      "masyarakat",
+      "نݢارا",
+      "ماجو"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "1. هيدوڤ مڠجادي امان دان داماي.",
+    "2. ڤرڤادوان مشارکت ترجاݢ.",
+    "3. تيدق برلاکو ڤرݢدوهن.",
+    "4. دحرمتي دان دسايڠي اورڠ لاءين.",
+    "5. ڤکرجاءن مڠجادي موده کران بکرجاسام.",
+    "6. مشارکت دان نݢارا مڠجادي ماجو."
+   ],
+   "jawapanContohRumi": [
+    "1. Hidup menjadi aman dan damai.",
+    "2. Perpaduan masyarakat terjaga.",
+    "3. Tidak berlaku pergaduhan.",
+    "4. Dihormati dan disayangi orang lain.",
+    "5. Pekerjaan menjadi mudah kerana bekerjasama.",
+    "6. Masyarakat dan negara menjadi maju."
+   ],
+   "id": "adab-c26"
+  },
+  {
+   "bahagian": "C",
+   "jenis": "tulis",
+   "soalan": "سنارايکن اينم عاقبت برسيفت بوڠ.",
+   "rumi": "Senaraikan enam akibat bersifat bohong.",
+   "markah": 6,
+   "idea": [
+    {
+     "maksud": "Tidak dipercayai oleh orang lain",
+     "kata": [
+      "percaya",
+      "dipercayai",
+      "kepercayaan",
+      "دڤرچاياءي",
+      "اوليه",
+      "اورڠ",
+      "لاءين"
+     ]
+    },
+    {
+     "maksud": "Mendapat dosa daripada Allah",
+     "kata": [
+      "dosa",
+      "berdosa",
+      "منداڤت",
+      "دوس",
+      "الله"
+     ]
+    },
+    {
+     "maksud": "Dibenci dan dijauhi kawan",
+     "kata": [
+      "benci",
+      "dibenci",
+      "jauhi",
+      "dijauhi",
+      "kawan",
+      "دبنچي",
+      "دجاءوهي"
+     ]
+    },
+    {
+     "maksud": "Tempatnya di dalam neraka",
+     "kata": [
+      "neraka",
+      "tempat",
+      "تمڤتڽ",
+      "نراک"
+     ]
+    },
+    {
+     "maksud": "Hati menjadi gelisah dan tidak tenang",
+     "kata": [
+      "gelisah",
+      "resah",
+      "tenang",
+      "ketenangan",
+      "هاتي",
+      "مڠجادي",
+      "ݢليسه",
+      "تنڠ"
+     ]
+    },
+    {
+     "maksud": "Kehilangan kawan dan sahabat",
+     "kata": [
+      "hilang",
+      "kehilangan",
+      "kawan",
+      "sahabat",
+      "rakan",
+      "کحيلڠن",
+      "سحابت"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "1. تيدق دڤرچاياءي اوليه اورڠ لاءين.",
+    "2. منداڤت دوس درڤد الله.",
+    "3. دبنچي دان دجاءوهي کاون.",
+    "4. تمڤتڽ د دالم نراک.",
+    "5. هاتي مڠجادي ݢليسه دان تيدق تنڠ.",
+    "6. کحيلڠن کاون دان سحابت."
+   ],
+   "jawapanContohRumi": [
+    "1. Tidak dipercayai oleh orang lain.",
+    "2. Mendapat dosa daripada Allah.",
+    "3. Dibenci dan dijauhi kawan.",
+    "4. Tempatnya di dalam neraka.",
+    "5. Hati menjadi gelisah dan tidak tenang.",
+    "6. Kehilangan kawan dan sahabat."
+   ],
+   "id": "adab-c27"
+  },
+  {
+   "bahagian": "C",
+   "jenis": "tulis",
+   "soalan": "مڠاڤاکه کيت تيدق بوليه برسيفت تامق؟ بريکن ليم سبب.",
+   "rumi": "Mengapakah kita tidak boleh bersifat tamak? Berikan lima sebab.",
+   "markah": 5,
+   "idea": [
+    {
+     "maksud": "Tidak bersyukur akan nikmat Allah",
+     "kata": [
+      "syukur",
+      "bersyukur",
+      "kesyukuran",
+      "برسيفت",
+      "شوکور",
+      "نعمت"
+     ]
+    },
+    {
+     "maksud": "Sangat cinta akan harta dan dunia",
+     "kata": [
+      "harta",
+      "dunia",
+      "cinta",
+      "mencintai",
+      "ساڠت",
+      "چينت",
+      "هرتا",
+      "دنيا"
+     ]
+    },
+    {
+     "maksud": "Menyebabkan pergaduhan sesama manusia",
+     "kata": [
+      "gaduh",
+      "bergaduh",
+      "kelahi",
+      "pergaduhan",
+      "مڠي",
+      "ڤرݢدوهن",
+      "سسام",
+      "ماءنسي"
+     ]
+    },
+    {
+     "maksud": "Berdosa kerana melanggar larangan Allah",
+     "kata": [
+      "dosa",
+      "berdosa",
+      "larangan",
+      "بردوس",
+      "کران",
+      "ملاڠݢر",
+      "لارڠن"
+     ]
+    },
+    {
+     "maksud": "Hati menjadi gelisah dan tidak tenang",
+     "kata": [
+      "gelisah",
+      "resah",
+      "tenang",
+      "ketenangan",
+      "هاتي",
+      "مڠجادي",
+      "ݢليسه",
+      "تنڠ"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "1. تيدق برسيفت شوکور اکن نعمت الله.",
+    "2. ساڠت چينت اکن هرتا دان دنيا.",
+    "3. مڠيebabkan ڤرݢدوهن سسام ماءنسي.",
+    "4. بردوس کران ملاڠݢر لارڠن الله.",
+    "5. هاتي مڠجادي ݢليسه دان تيدق تنڠ."
+   ],
+   "jawapanContohRumi": [
+    "1. Tidak bersifat syukur akan nikmat Allah.",
+    "2. Sangat cinta akan harta dan dunia.",
+    "3. Menyebabkan pergaduhan sesama manusia.",
+    "4. Berdosa kerana melanggar larangan Allah.",
+    "5. Hati menjadi gelisah dan tidak tenang."
+   ],
+   "id": "adab-c28"
+  },
+  {
+   "bahagian": "C",
+   "jenis": "tulis",
+   "soalan": "سنارايکن امڤت عاقبت ڤربواتن حسد.",
+   "rumi": "Senaraikan empat akibat perbuatan hasad.",
+   "markah": 4,
+   "idea": [
+    {
+     "maksud": "Hubungan persaudaraan menjadi putus",
+     "kata": [
+      "putus",
+      "memutuskan",
+      "persaudaraan",
+      "saudara",
+      "هوبوڠن",
+      "ڤرساوداراءن",
+      "ڤوتوس"
+     ]
+    },
+    {
+     "maksud": "Menjadi bermusuhan sesama sendiri",
+     "kata": [
+      "musuh",
+      "bermusuhan",
+      "bermusuh",
+      "برموسوهن",
+      "سسام",
+      "سنديري"
+     ]
+    },
+    {
+     "maksud": "Hati sentiasa gelisah dan tidak tenang",
+     "kata": [
+      "gelisah",
+      "resah",
+      "tenang",
+      "هاتي",
+      "سنتياس",
+      "ݢليسه",
+      "تنڠ",
+      "تيدق"
+     ]
+    },
+    {
+     "maksud": "Mendapat dosa daripada Allah",
+     "kata": [
+      "dosa",
+      "berdosa",
+      "منداڤت",
+      "دوس",
+      "الله"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "1. هوبوڠن ڤرساوداراءن مڠجادي ڤوتوس.",
+    "2. مڠجادي برموسوهن سسام سنديري.",
+    "3. هاتي سنتياس ݢليسه دان تيدق تنڠ.",
+    "4. منداڤت دوس درڤد الله."
+   ],
+   "jawapanContohRumi": [
+    "1. Hubungan persaudaraan menjadi putus.",
+    "2. Menjadi bermusuhan sesama sendiri.",
+    "3. Hati sentiasa gelisah dan tidak tenang.",
+    "4. Mendapat dosa daripada Allah."
+   ],
+   "id": "adab-c29"
+  },
+  {
+   "bahagian": "C",
+   "jenis": "tulis",
+   "soalan": "سنارايکن ليم عاقبت برسيفت سومبوڠ.",
+   "rumi": "Senaraikan lima akibat bersifat sombong.",
+   "markah": 5,
+   "idea": [
+    {
+     "maksud": "Dibenci oleh orang lain",
+     "kata": [
+      "benci",
+      "dibenci",
+      "dijauhi",
+      "دبنچي"
+     ]
+    },
+    {
+     "maksud": "Dijauhkan daripada rahmat Allah",
+     "kata": [
+      "rahmat",
+      "dijauhkan",
+      "jauh",
+      "دجاءوهکن",
+      "رحمة"
+     ]
+    },
+    {
+     "maksud": "Amalan tidak diterima oleh Allah",
+     "kata": [
+      "amalan",
+      "diterima",
+      "terima",
+      "عملن",
+      "دتريما",
+      "تيدق"
+     ]
+    },
+    {
+     "maksud": "Tempatnya di dalam neraka",
+     "kata": [
+      "neraka",
+      "tempat",
+      "تمڤتڽ",
+      "نراک"
+     ]
+    },
+    {
+     "maksud": "Memandang rendah akan orang lain",
+     "kata": [
+      "rendah",
+      "merendahkan",
+      "hina",
+      "menghina",
+      "memandang",
+      "مماندڠ",
+      "رنده"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "1. دبنچي اوليه اورڠ لاءين.",
+    "2. دجاءوهکن درڤد رحمة الله.",
+    "3. عملن تيدق دتريما اوليه الله.",
+    "4. تمڤتڽ د دالم نراک.",
+    "5. مماندڠ رنده اکن اورڠ لاءين."
+   ],
+   "jawapanContohRumi": [
+    "1. Dibenci oleh orang lain.",
+    "2. Dijauhkan daripada rahmat Allah.",
+    "3. Amalan tidak diterima oleh Allah.",
+    "4. Tempatnya di dalam neraka.",
+    "5. Memandang rendah akan orang lain."
+   ],
+   "id": "adab-c30"
+  },
+  {
+   "bahagian": "C",
+   "jenis": "tulis",
+   "soalan": "سنارايکن ليم عاقبت مڠومڤت اورڠ لاءين.",
+   "rumi": "Senaraikan lima akibat mengumpat orang lain.",
+   "markah": 5,
+   "idea": [
+    {
+     "maksud": "Mendapat dosa daripada Allah",
+     "kata": [
+      "dosa",
+      "berdosa",
+      "منداڤت",
+      "دوس",
+      "الله"
+     ]
+    },
+    {
+     "maksud": "Dibenci dan dijauhi oleh rakan",
+     "kata": [
+      "benci",
+      "dibenci",
+      "jauhi",
+      "dijauhi",
+      "rakan",
+      "دبنچي",
+      "دجاءوهي",
+      "اوليه",
+      "رکن"
+     ]
+    },
+    {
+     "maksud": "Berlaku pergaduhan dan permusuhan",
+     "kata": [
+      "gaduh",
+      "bergaduh",
+      "musuh",
+      "bermusuhan",
+      "برلاکو",
+      "ڤرݢدوهن",
+      "ڤرموسوهن"
+     ]
+    },
+    {
+     "maksud": "Hilang kepercayaan orang lain",
+     "kata": [
+      "percaya",
+      "kepercayaan",
+      "dipercayai",
+      "هيلڠ",
+      "کڤرچاياءن",
+      "لاءين"
+     ]
+    },
+    {
+     "maksud": "Menyakiti hati orang yang diumpat",
+     "kata": [
+      "menyakiti",
+      "sakiti",
+      "hati",
+      "terluka",
+      "مڽاکيتي",
+      "هاتي",
+      "داومڤت"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "1. منداڤت دوس درڤد الله.",
+    "2. دبنچي دان دجاءوهي اوليه رکن.",
+    "3. برلاکو ڤرݢدوهن دان ڤرموسوهن.",
+    "4. هيلڠ کڤرچاياءن اورڠ لاءين.",
+    "5. مڽاکيتي هاتي اورڠ يڠ داومڤت."
+   ],
+   "jawapanContohRumi": [
+    "1. Mendapat dosa daripada Allah.",
+    "2. Dibenci dan dijauhi oleh rakan.",
+    "3. Berlaku pergaduhan dan permusuhan.",
+    "4. Hilang kepercayaan orang lain.",
+    "5. Menyakiti hati orang yang diumpat."
+   ],
+   "id": "adab-c31"
+  },
+  {
+   "bahagian": "C",
+   "jenis": "tulis",
+   "soalan": "اڤاکه ادب کتيک منزيارهي اورڠ يڠ ساکيت؟ بريکن اينم.",
+   "rumi": "Apakah adab ketika menziarahi orang yang sakit? Berikan enam.",
+   "markah": 6,
+   "idea": [
+    {
+     "maksud": "Memberi salam apabila masuk",
+     "kata": [
+      "salam",
+      "bersalam",
+      "memberi",
+      "ممبري",
+      "سلام",
+      "اڤابيلا",
+      "ماسوق",
+      "بيليق"
+     ]
+    },
+    {
+     "maksud": "Mendoakan kesembuhan pesakit",
+     "kata": [
+      "doa",
+      "berdoa",
+      "mendoakan",
+      "sembuh",
+      "kesembuhan",
+      "مندوءاکن",
+      "کسمبوهن",
+      "ڤساکيت"
+     ]
+    },
+    {
+     "maksud": "Membawa buah tangan atau hadiah",
+     "kata": [
+      "buah",
+      "hadiah",
+      "membawa",
+      "bawa",
+      "ممباوا",
+      "بواه",
+      "تاڠن",
+      "حديه"
+     ]
+    },
+    {
+     "maksud": "Tidak melawat terlalu lama",
+     "kata": [
+      "lama",
+      "berlama",
+      "melawat",
+      "ترلالو",
+      "لام",
+      "تيدق"
+     ]
+    },
+    {
+     "maksud": "Bercakap dengan lembut dan menghiburkan",
+     "kata": [
+      "lembut",
+      "hibur",
+      "menghiburkan",
+      "berlembut",
+      "برچاکڤ",
+      "لمبوت",
+      "مڠهيبورکن"
+     ]
+    },
+    {
+     "maksud": "Memilih masa yang sesuai untuk melawat",
+     "kata": [
+      "masa",
+      "sesuai",
+      "melawat",
+      "مميليه",
+      "ماس",
+      "سسواي"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "1. ممبري سلام اڤابيلا ماسوق ک بيليق.",
+    "2. مندوءاکن کسمبوهن ڤساکيت.",
+    "3. ممباوا بواه تاڠن اتاو حديه.",
+    "4. تيدق ملاوت ترلالو لام.",
+    "5. برچاکڤ دڠن لمبوت دان مڠهيبورکن.",
+    "6. مميليه ماس يڠ سسواي اونتوق ملاوت."
+   ],
+   "jawapanContohRumi": [
+    "1. Memberi salam apabila masuk ke bilik.",
+    "2. Mendoakan kesembuhan pesakit.",
+    "3. Membawa buah tangan atau hadiah.",
+    "4. Tidak melawat terlalu lama.",
+    "5. Bercakap dengan lembut dan menghiburkan.",
+    "6. Memilih masa yang sesuai untuk melawat."
+   ],
+   "id": "adab-c32"
+  },
+  {
+   "bahagian": "C",
+   "jenis": "tulis",
+   "soalan": "اڤاکه ادب ترهادڤ کلوارݢ اورڠ يڠ تله مڠيڠݢل دنيا؟ بريکن ليم.",
+   "rumi": "Apakah adab terhadap keluarga orang yang telah meninggal dunia? Berikan lima.",
+   "markah": 5,
+   "idea": [
+    {
+     "maksud": "Mengucapkan takziah kepada keluarga si mati",
+     "kata": [
+      "takziah",
+      "bertakziah",
+      "mengucapkan",
+      "مڠوچڤکن",
+      "تکزيه"
+     ]
+    },
+    {
+     "maksud": "Mendoakan keampunan si mati",
+     "kata": [
+      "doa",
+      "berdoa",
+      "mendoakan",
+      "ampun",
+      "keampunan",
+      "مندوءاکن",
+      "کأمڤونن"
+     ]
+    },
+    {
+     "maksud": "Menghantar makanan kepada keluarga si mati",
+     "kata": [
+      "hantar",
+      "menghantar",
+      "makanan",
+      "bantuan",
+      "مڠهانتر",
+      "ماکنن"
+     ]
+    },
+    {
+     "maksud": "Tidak bising atau ketawa di rumah si mati",
+     "kata": [
+      "bising",
+      "ketawa",
+      "gelak",
+      "berketawa",
+      "بيسيڠ",
+      "کتاو",
+      "رومه",
+      "تيدق"
+     ]
+    },
+    {
+     "maksud": "Mengiringi dan menghadiri pengebumian",
+     "kata": [
+      "kubur",
+      "pengebumian",
+      "mengebumi",
+      "mengiringi",
+      "مڠيڠيري",
+      "مڠحاضيري",
+      "ڤنݢبومين"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "1. مڠوچڤکن تکزيه کڤد کلوارݢ س ماتي.",
+    "2. مندوءاکن کأمڤونن س ماتي.",
+    "3. مڠهانتر ماکنن کڤد کلوارݢ س ماتي.",
+    "4. تيدق بيسيڠ اتاو کتاو د رومه س ماتي.",
+    "5. مڠيڠيري دان مڠحاضيري ڤنݢبومين."
+   ],
+   "jawapanContohRumi": [
+    "1. Mengucapkan takziah kepada keluarga si mati.",
+    "2. Mendoakan keampunan si mati.",
+    "3. Menghantar makanan kepada keluarga si mati.",
+    "4. Tidak bising atau ketawa di rumah si mati.",
+    "5. Mengiringi dan menghadiri pengebumian."
+   ],
+   "id": "adab-c33"
+  },
+  {
+   "bahagian": "C",
+   "jenis": "tulis",
+   "soalan": "بريکن امڤت ادب کتيک مڠݢوناکن ميديا سوسيال.",
+   "rumi": "Berikan empat adab ketika menggunakan media sosial.",
+   "markah": 4,
+   "idea": [
+    {
+     "maksud": "Tidak menyebarkan berita palsu",
+     "kata": [
+      "palsu",
+      "berita",
+      "sebar",
+      "menyebar",
+      "menyebarkan",
+      "مڽبارکن",
+      "بريت",
+      "ڤلسو"
+     ]
+    },
+    {
+     "maksud": "Tidak mengumpat atau menghina orang lain",
+     "kata": [
+      "umpat",
+      "mengumpat",
+      "hina",
+      "menghina",
+      "مڠومڤت",
+      "مڠهينا",
+      "لاءين"
+     ]
+    },
+    {
+     "maksud": "Menggunakan bahasa yang sopan",
+     "kata": [
+      "sopan",
+      "bahasa",
+      "kesopanan",
+      "lembut",
+      "مڠݢوناکن",
+      "بهاس",
+      "سوڤن"
+     ]
+    },
+    {
+     "maksud": "Meminta izin sebelum memuat naik gambar orang",
+     "kata": [
+      "izin",
+      "gambar",
+      "memuat",
+      "muat",
+      "ممينتا",
+      "ايذين",
+      "سبلوم",
+      "مموات",
+      "نائيک",
+      "ݢمبر"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "1. تيدق مڽبارکن بريت ڤلسو.",
+    "2. تيدق مڠومڤت اتاو مڠهينا اورڠ لاءين.",
+    "3. مڠݢوناکن بهاس يڠ سوڤن.",
+    "4. ممينتا ايذين سبلوم مموات نائيک ݢمبر اورڠ."
+   ],
+   "jawapanContohRumi": [
+    "1. Tidak menyebarkan berita palsu.",
+    "2. Tidak mengumpat atau menghina orang lain.",
+    "3. Menggunakan bahasa yang sopan.",
+    "4. Meminta izin sebelum memuat naik gambar orang."
+   ],
+   "id": "adab-c34"
+  },
+  {
+   "bahagian": "C",
+   "jenis": "tulis",
+   "soalan": "اڤاکه ادب کتيک مڠݢوناکن هرتا بندا عوام؟ بريکن ليم.",
+   "rumi": "Apakah adab ketika menggunakan harta benda awam? Berikan lima.",
+   "markah": 5,
+   "idea": [
+    {
+     "maksud": "Menjaga harta benda awam dengan baik",
+     "kata": [
+      "jaga",
+      "menjaga",
+      "memelihara",
+      "harta",
+      "منجاݢ",
+      "هرتا",
+      "بندا",
+      "باءيق"
+     ]
+    },
+    {
+     "maksud": "Tidak merosakkan kemudahan awam",
+     "kata": [
+      "rosak",
+      "merosakkan",
+      "musnah",
+      "kemudahan",
+      "مروسقکن",
+      "کعمودهن"
+     ]
+    },
+    {
+     "maksud": "Menggunakannya dengan cermat",
+     "kata": [
+      "cermat",
+      "berhati",
+      "menggunakan",
+      "hemah",
+      "مڠݢوناکنڽ",
+      "چرمت"
+     ]
+    },
+    {
+     "maksud": "Mengganti atau membayar jika merosakkannya",
+     "kata": [
+      "ganti",
+      "mengganti",
+      "bayar",
+      "membayar",
+      "مڠݢنتي",
+      "ممباير",
+      "مروسقکنڽ",
+      "جک"
+     ]
+    },
+    {
+     "maksud": "Tidak menconteng atau menulis di tempat awam",
+     "kata": [
+      "conteng",
+      "menconteng",
+      "tulis",
+      "menulis",
+      "منچونتڠ",
+      "منوليس",
+      "تمڤت"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "1. منجاݢ هرتا بندا عوام دڠن باءيق.",
+    "2. تيدق مروسقکن کعمودهن عوام.",
+    "3. مڠݢوناکنڽ دڠن چرمت.",
+    "4. مڠݢنتي اتاو ممباير جک مروسقکنڽ.",
+    "5. تيدق منچونتڠ اتاو منوليس د تمڤت عوام."
+   ],
+   "jawapanContohRumi": [
+    "1. Menjaga harta benda awam dengan baik.",
+    "2. Tidak merosakkan kemudahan awam.",
+    "3. Menggunakannya dengan cermat.",
+    "4. Mengganti atau membayar jika merosakkannya.",
+    "5. Tidak menconteng atau menulis di tempat awam."
+   ],
+   "id": "adab-c35"
+  },
+  {
+   "bahagian": "C",
+   "jenis": "tulis",
+   "soalan": "سنارايکن امڤت ادب منجاݢ کبرسيهن تمڤت عوام.",
+   "rumi": "Senaraikan empat adab menjaga kebersihan tempat awam.",
+   "markah": 4,
+   "idea": [
+    {
+     "maksud": "Membuang sampah ke dalam tong sampah",
+     "kata": [
+      "sampah",
+      "tong",
+      "buang",
+      "membuang",
+      "ممبواڠ",
+      "سمڤه",
+      "توڠ"
+     ]
+    },
+    {
+     "maksud": "Mengitar semula bahan yang boleh digunakan lagi",
+     "kata": [
+      "kitar",
+      "semula",
+      "kitarsemula",
+      "kitarulang",
+      "مڠکيتار",
+      "سمولا",
+      "باهن",
+      "دݢوناکن",
+      "لاݢي",
+      "بوليه"
+     ]
+    },
+    {
+     "maksud": "Tidak merosakkan pokok dan tumbuhan",
+     "kata": [
+      "pokok",
+      "tumbuhan",
+      "tebang",
+      "rosak",
+      "مروسقکن",
+      "ڤوکوق",
+      "تومبوهن",
+      "تيدق"
+     ]
+    },
+    {
+     "maksud": "Membersihkan meja selepas makan di gerai",
+     "kata": [
+      "meja",
+      "bersih",
+      "membersihkan",
+      "gerai",
+      "ممبرسيهکن",
+      "ميجا",
+      "سلفس",
+      "ماکن",
+      "ݢراي"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "1. ممبواڠ سمڤه ک دالم توڠ سمڤه.",
+    "2. مڠکيتار سمولا باهن يڠ بوليه دݢوناکن لاݢي.",
+    "3. تيدق مروسقکن ڤوکوق دان تومبوهن.",
+    "4. ممبرسيهکن ميجا سلفس ماکن د ݢراي."
+   ],
+   "jawapanContohRumi": [
+    "1. Membuang sampah ke dalam tong sampah.",
+    "2. Mengitar semula bahan yang boleh digunakan lagi.",
+    "3. Tidak merosakkan pokok dan tumbuhan.",
+    "4. Membersihkan meja selepas makan di gerai."
+   ],
+   "id": "adab-c36"
+  },
+  {
+   "bahagian": "D",
+   "jenis": "huraian",
+   "soalan": "ايبو باڤ سنتياس بركوربان اونتوق انق. جلسکن ليم چارا اونتوق ممبالس جاس ايبو باڤ.",
+   "rumi": "Ibu bapa sentiasa berkorban untuk anak. Jelaskan lima cara untuk membalas jasa ibu bapa.",
+   "markah": 5,
+   "idea": [
+    {
+     "maksud": "Belajar dengan rajin dan bersungguh-sungguh",
+     "kata": [
+      "belajar",
+      "rajin",
+      "bersungguh",
+      "tekun",
+      "بلاجر",
+      "راجين",
+      "برسوڠݢوه",
+      "سوڠݢوه"
+     ]
+    },
+    {
+     "maksud": "Menolong ibu bapa mengerjakan kerja rumah",
+     "kata": [
+      "tolong",
+      "menolong",
+      "bantu",
+      "membantu",
+      "منولوڠ",
+      "ايبو",
+      "باڤ",
+      "مڠرجاکن",
+      "ڤکرجاءن",
+      "رومه"
+     ]
+    },
+    {
+     "maksud": "Mendoakan kesejahteraan mereka",
+     "kata": [
+      "doa",
+      "berdoa",
+      "mendoakan",
+      "kesejahteraan",
+      "مندوءاکن",
+      "کسجهتراءن"
+     ]
+    },
+    {
+     "maksud": "Menghormati dan mentaati mereka",
+     "kata": [
+      "hormat",
+      "menghormati",
+      "taat",
+      "mentaati",
+      "menaati",
+      "مڠحرمتي",
+      "منتاعتي"
+     ]
+    },
+    {
+     "maksud": "Menjaga mereka apabila sudah tua",
+     "kata": [
+      "jaga",
+      "menjaga",
+      "tua",
+      "memelihara",
+      "منجاݢ",
+      "اڤابيلا",
+      "سوداه",
+      "توا"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "1. بلاجر دڠن راجين دان برسوڠݢوه-سوڠݢوه.",
+    "2. منولوڠ ايبو باڤ مڠرجاکن ڤکرجاءن رومه.",
+    "3. مندوءاکن کسجهتراءن مريک.",
+    "4. مڠحرمتي دان منتاعتي مريک.",
+    "5. منجاݢ مريک اڤابيلا سوداه توا."
+   ],
+   "jawapanContohRumi": [
+    "1. Belajar dengan rajin dan bersungguh-sungguh.",
+    "2. Menolong ibu bapa mengerjakan kerja rumah.",
+    "3. Mendoakan kesejahteraan mereka.",
+    "4. Menghormati dan mentaati mereka.",
+    "5. Menjaga mereka apabila sudah tua."
+   ],
+   "id": "adab-d1"
+  },
+  {
+   "bahagian": "D",
+   "jenis": "huraian",
+   "soalan": "موريد يڠ برادب اکن برجاي دالم ڤلاجرن. جلسکن ليم کباءيقن برادب ترهادڤ ݢورو.",
+   "rumi": "Murid yang beradab akan berjaya dalam pelajaran. Jelaskan lima kebaikan beradab terhadap guru.",
+   "markah": 5,
+   "idea": [
+    {
+     "maksud": "Disayangi oleh guru",
+     "kata": [
+      "sayang",
+      "disayangi",
+      "kasih",
+      "mengasihi",
+      "دسايڠي",
+      "اوليه",
+      "ݢورو"
+     ]
+    },
+    {
+     "maksud": "Ilmu yang dipelajari menjadi berkat",
+     "kata": [
+      "berkat",
+      "keberkatan",
+      "berkah",
+      "علمو",
+      "دڤلاجري",
+      "مڠجادي",
+      "برکت"
+     ]
+    },
+    {
+     "maksud": "Mudah memahami pelajaran yang diajar",
+     "kata": [
+      "faham",
+      "memahami",
+      "pelajaran",
+      "belajar",
+      "موده",
+      "ممهامي",
+      "ڤلاجرن",
+      "داجر"
+     ]
+    },
+    {
+     "maksud": "Mendapat nasihat dan tunjuk ajar",
+     "kata": [
+      "nasihat",
+      "menasihati",
+      "tunjuk",
+      "ajar",
+      "نصيحت",
+      "تونجوق",
+      "اجر"
+     ]
+    },
+    {
+     "maksud": "Mendapat markah yang baik dalam peperiksaan",
+     "kata": [
+      "markah",
+      "baik",
+      "peperiksaan",
+      "cemerlang",
+      "مرکه",
+      "باءيق",
+      "ڤڤريقساءن"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "1. دسايڠي اوليه ݢورو.",
+    "2. علمو يڠ دڤلاجري مڠجادي برکت.",
+    "3. موده ممهامي ڤلاجرن يڠ داجر.",
+    "4. منداڤت نصيحت دان تونجوق اجر.",
+    "5. منداڤت مرکه يڠ باءيق دالم ڤڤريقساءن."
+   ],
+   "jawapanContohRumi": [
+    "1. Disayangi oleh guru.",
+    "2. Ilmu yang dipelajari menjadi berkat.",
+    "3. Mudah memahami pelajaran yang diajar.",
+    "4. Mendapat nasihat dan tunjuk ajar.",
+    "5. Mendapat markah yang baik dalam peperiksaan."
+   ],
+   "id": "adab-d2"
+  },
+  {
+   "bahagian": "D",
+   "jenis": "huraian",
+   "soalan": "جيران اداله اورڠ يڠ تيڠݢل برهامڤيرن دڠن کيت. جلسکن اينم کڤنتيڠن برادب ترهادڤ جيران.",
+   "rumi": "Jiran adalah orang yang tinggal berhampiran dengan kita. Jelaskan enam kepentingan beradab terhadap jiran.",
+   "markah": 6,
+   "idea": [
+    {
+     "maksud": "Hidup menjadi aman dan harmoni",
+     "kata": [
+      "aman",
+      "harmoni",
+      "damai",
+      "keamanan",
+      "هيدوڤ",
+      "مڠجادي",
+      "امان",
+      "هرموني"
+     ]
+    },
+    {
+     "maksud": "Saling menolong ketika kesusahan",
+     "kata": [
+      "tolong",
+      "menolong",
+      "bantu",
+      "membantu",
+      "ساليڠ",
+      "منولوڠ",
+      "کسوسهن"
+     ]
+    },
+    {
+     "maksud": "Keselamatan kawasan terjaga",
+     "kata": [
+      "selamat",
+      "keselamatan",
+      "terjaga",
+      "کسلامتن",
+      "کاوسن",
+      "ترجاݢ"
+     ]
+    },
+    {
+     "maksud": "Tidak berlaku pergaduhan sesama jiran",
+     "kata": [
+      "gaduh",
+      "bergaduh",
+      "kelahi",
+      "pergaduhan",
+      "برلاکو",
+      "ڤرݢدوهن",
+      "سسام",
+      "تيدق"
+     ]
+    },
+    {
+     "maksud": "Perpaduan masyarakat bertambah kuat",
+     "kata": [
+      "padu",
+      "perpaduan",
+      "bersatu",
+      "perpadu",
+      "ڤرڤادوان",
+      "مشارکت",
+      "برتمبه",
+      "قوات"
+     ]
+    },
+    {
+     "maksud": "Dihormati dan disayangi oleh jiran",
+     "kata": [
+      "hormat",
+      "dihormati",
+      "sayang",
+      "disayangi",
+      "دحرمتي",
+      "دسايڠي",
+      "اوليه"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "1. هيدوڤ مڠجادي امان دان هرموني.",
+    "2. ساليڠ منولوڠ کتيک کسوسهن.",
+    "3. کسلامتن کاوسن ترجاݢ.",
+    "4. تيدق برلاکو ڤرݢدوهن سسام جيران.",
+    "5. ڤرڤادوان مشارکت برتمبه قوات.",
+    "6. دحرمتي دان دسايڠي اوليه جيران."
+   ],
+   "jawapanContohRumi": [
+    "1. Hidup menjadi aman dan harmoni.",
+    "2. Saling menolong ketika kesusahan.",
+    "3. Keselamatan kawasan terjaga.",
+    "4. Tidak berlaku pergaduhan sesama jiran.",
+    "5. Perpaduan masyarakat bertambah kuat.",
+    "6. Dihormati dan disayangi oleh jiran."
+   ],
+   "id": "adab-d3"
+  },
+  {
+   "bahagian": "D",
+   "jenis": "huraian",
+   "soalan": "زهرا برکونجوڠ ک رومه جيرانڽ. جلسکن ليم ادب يڠ ڤرلو دجݢ اوليه زهرا کتيک برتامو.",
+   "rumi": "Zahra berkunjung ke rumah jirannya. Jelaskan lima adab yang perlu dijaga oleh Zahra ketika bertamu.",
+   "markah": 5,
+   "idea": [
+    {
+     "maksud": "Memberi salam apabila sampai di rumah orang",
+     "kata": [
+      "salam",
+      "bersalam",
+      "memberi",
+      "ممبري",
+      "سلام",
+      "اڤابيلا",
+      "سمڤاي"
+     ]
+    },
+    {
+     "maksud": "Mengetuk pintu dan meminta izin sebelum masuk",
+     "kata": [
+      "ketuk",
+      "mengetuk",
+      "izin",
+      "pintu",
+      "meminta",
+      "مڠتوق",
+      "ڤينتو",
+      "ممينتا",
+      "ايذين",
+      "سبلوم",
+      "ماسوق"
+     ]
+    },
+    {
+     "maksud": "Memberitahu tujuan kedatangan dengan sopan",
+     "kata": [
+      "tujuan",
+      "sopan",
+      "memberitahu",
+      "kedatangan",
+      "ممبريتاهو",
+      "توجوان",
+      "کداتڠن",
+      "سوڤن"
+     ]
+    },
+    {
+     "maksud": "Tidak menyentuh barang tanpa kebenaran",
+     "kata": [
+      "barang",
+      "menyentuh",
+      "kebenaran",
+      "menjamah",
+      "مڽنتوه",
+      "بارڠ",
+      "تانڤ",
+      "کبنارن"
+     ]
+    },
+    {
+     "maksud": "Tidak berlama-lama di rumah orang",
+     "kata": [
+      "lama",
+      "berlama",
+      "cepat",
+      "pulang",
+      "برلام",
+      "لام"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "1. ممبري سلام اڤابيلا سمڤاي ک رومه اورڠ.",
+    "2. مڠتوق ڤينتو دان ممينتا ايذين سبلوم ماسوق.",
+    "3. ممبريتاهو توجوان کداتڠن دڠن سوڤن.",
+    "4. تيدق مڽنتوه بارڠ تانڤ کبنارن.",
+    "5. تيدق برلام-لام د رومه اورڠ."
+   ],
+   "jawapanContohRumi": [
+    "1. Memberi salam apabila sampai ke rumah orang.",
+    "2. Mengetuk pintu dan meminta izin sebelum masuk.",
+    "3. Memberitahu tujuan kedatangan dengan sopan.",
+    "4. Tidak menyentuh barang tanpa kebenaran.",
+    "5. Tidak berlama-lama di rumah orang."
+   ],
+   "id": "adab-d4"
+  },
+  {
+   "bahagian": "D",
+   "jenis": "huraian",
+   "soalan": "احمد دجوموت ماکن د رومه رکنڽ. جلسکن ليم ادب ماکن يڠ ڤرلو دجݢ اوليه احمد.",
+   "rumi": "Ahmad dijemput makan di rumah rakannya. Jelaskan lima adab makan yang perlu dijaga oleh Ahmad.",
+   "markah": 5,
+   "idea": [
+    {
+     "maksud": "Membaca Bismillah sebelum makan",
+     "kata": [
+      "bismillah",
+      "bismillahirrahmanirrahim",
+      "ممباچ",
+      "بسم",
+      "سبلوم",
+      "الله"
+     ]
+    },
+    {
+     "maksud": "Makan dengan tangan kanan",
+     "kata": [
+      "kanan",
+      "tangan",
+      "تاڠن",
+      "کانن"
+     ]
+    },
+    {
+     "maksud": "Menunggu tuan rumah mempersilakan dahulu",
+     "kata": [
+      "tunggu",
+      "menunggu",
+      "dahulu",
+      "mendahului",
+      "persilakan",
+      "مڠوڠݢو",
+      "توان",
+      "رومه",
+      "ممڤرسيلاکن",
+      "دهولو"
+     ]
+    },
+    {
+     "maksud": "Tidak mencela atau mengkritik makanan",
+     "kata": [
+      "cela",
+      "mencela",
+      "kritik",
+      "mengkritik",
+      "منچيلا",
+      "مڠکريتيک",
+      "ماکنن"
+     ]
+    },
+    {
+     "maksud": "Tidak tamak, ambil dengan kadar yang cukup",
+     "kata": [
+      "tamak",
+      "tambah",
+      "menambah",
+      "cukup",
+      "تامق،",
+      "امبيل",
+      "کادر",
+      "چوکوڤ"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "1. ممباچ بسم الله سبلوم ماکن.",
+    "2. ماکن دڠن تاڠن کانن.",
+    "3. مڠوڠݢو توان رومه ممڤرسيلاکن دهولو.",
+    "4. تيدق منچيلا اتاو مڠکريتيک ماکنن.",
+    "5. تيدق تامق، امبيل دڠن کادر يڠ چوکوڤ."
+   ],
+   "jawapanContohRumi": [
+    "1. Membaca Bismillah sebelum makan.",
+    "2. Makan dengan tangan kanan.",
+    "3. Menunggu tuan rumah mempersilakan dahulu.",
+    "4. Tidak mencela atau mengkritik makanan.",
+    "5. Tidak tamak, ambil dengan kadar yang cukup."
+   ],
+   "id": "adab-d5"
+  },
+  {
+   "bahagian": "D",
+   "jenis": "huraian",
+   "soalan": "موريد يڠ تيدور ليوات مالم اکن برسيفت مالس کتيک براد د سکوله. جلسکن ليم عاقبت تيدور ليوات مالم.",
+   "rumi": "Murid yang tidur lewat malam akan bersifat malas ketika berada di sekolah. Jelaskan lima akibat tidur lewat malam.",
+   "markah": 5,
+   "idea": [
+    {
+     "maksud": "Bangun lewat dan kesiangan",
+     "kata": [
+      "bangun",
+      "lewat",
+      "kesiangan",
+      "lewatbangun",
+      "باڠون",
+      "ليوات",
+      "کسيڠن"
+     ]
+    },
+    {
+     "maksud": "Badan menjadi lemah dan tidak bermaya",
+     "kata": [
+      "lemah",
+      "letih",
+      "penat",
+      "lesu",
+      "malas",
+      "بادن",
+      "مڠجادي",
+      "لمه",
+      "برمايا"
+     ]
+    },
+    {
+     "maksud": "Tidak fokus dan mengantuk di dalam kelas",
+     "kata": [
+      "fokus",
+      "mengantuk",
+      "tumpu",
+      "perhatian",
+      "فوكوس",
+      "مڠنتوق",
+      "کلاس"
+     ]
+    },
+    {
+     "maksud": "Kesihatan terjejas dan mudah sakit",
+     "kata": [
+      "sihat",
+      "kesihatan",
+      "sakit",
+      "penyakit",
+      "کسيحتن",
+      "ترججس",
+      "موده",
+      "ساکيت"
+     ]
+    },
+    {
+     "maksud": "Tidak dapat mengulang kaji pelajaran",
+     "kata": [
+      "ulang",
+      "mengulang",
+      "kaji",
+      "mengulangkaji",
+      "داڤت",
+      "مڠولاڠ",
+      "کاجي",
+      "ڤلاجرن"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "1. باڠون ليوات دان کسيڠن.",
+    "2. بادن مڠجادي لمه دان تيدق برمايا.",
+    "3. تيدق فوكوس دان مڠنتوق د دالم کلاس.",
+    "4. کسيحتن ترججس دان موده ساکيت.",
+    "5. تيدق داڤت مڠولاڠ کاجي ڤلاجرن."
+   ],
+   "jawapanContohRumi": [
+    "1. Bangun lewat dan kesiangan.",
+    "2. Badan menjadi lemah dan tidak bermaya.",
+    "3. Tidak fokus dan mengantuk di dalam kelas.",
+    "4. Kesihatan terjejas dan mudah sakit.",
+    "5. Tidak dapat mengulang kaji pelajaran."
+   ],
+   "id": "adab-d6"
+  },
+  {
+   "bahagian": "D",
+   "jenis": "huraian",
+   "soalan": "ماسوق دان کلوار رومه اد اداڤنڽ. جلسکن امڤت عاقبت جک تيدق برادب کتيک ماسوق دان کلوار رومه.",
+   "rumi": "Masuk dan keluar rumah ada adabnya. Jelaskan empat akibat jika tidak beradab ketika masuk dan keluar rumah.",
+   "markah": 4,
+   "idea": [
+    {
+     "maksud": "Ibu bapa menjadi marah dan kecewa",
+     "kata": [
+      "marah",
+      "kecewa",
+      "sedih",
+      "dimarahi",
+      "ايبو",
+      "باڤ",
+      "مڠجادي",
+      "ماره",
+      "کچيوا"
+     ]
+    },
+    {
+     "maksud": "Rumah mudah diganggu syaitan",
+     "kata": [
+      "syaitan",
+      "ganggu",
+      "diganggu",
+      "iblis",
+      "موده",
+      "دݢڠݢو",
+      "شيطان"
+     ]
+    },
+    {
+     "maksud": "Hilang keberkatan dalam rumah",
+     "kata": [
+      "berkat",
+      "keberkatan",
+      "berkah",
+      "هيلڠ",
+      "کبرکتن"
+     ]
+    },
+    {
+     "maksud": "Keselamatan diri dan keluarga terancam",
+     "kata": [
+      "selamat",
+      "keselamatan",
+      "bahaya",
+      "terancam",
+      "کسلامتن",
+      "ديري",
+      "کلوارݢ",
+      "ترانچم"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "1. ايبو باڤ مڠجادي ماره دان کچيوا.",
+    "2. رومه موده دݢڠݢو شيطان.",
+    "3. هيلڠ کبرکتن دالم رومه.",
+    "4. کسلامتن ديري دان کلوارݢ ترانچم."
+   ],
+   "jawapanContohRumi": [
+    "1. Ibu bapa menjadi marah dan kecewa.",
+    "2. Rumah mudah diganggu syaitan.",
+    "3. Hilang keberkatan dalam rumah.",
+    "4. Keselamatan diri dan keluarga terancam."
+   ],
+   "id": "adab-d7"
+  },
+  {
+   "bahagian": "D",
+   "jenis": "huraian",
+   "soalan": "مسجد اداله رومه الله. جلسکن ليم حکمه برادب کتيک براد د دالم مسجد.",
+   "rumi": "Masjid adalah rumah Allah. Jelaskan lima hikmah beradab ketika berada di dalam masjid.",
+   "markah": 5,
+   "idea": [
+    {
+     "maksud": "Mendapat rahmat dan kasih sayang Allah",
+     "kata": [
+      "rahmat",
+      "dirahmati",
+      "kasih",
+      "sayang",
+      "رحمة",
+      "کاسيه",
+      "سايڠ"
+     ]
+    },
+    {
+     "maksud": "Mendapat pahala yang berlipat ganda",
+     "kata": [
+      "pahala",
+      "berlipat",
+      "ganjaran",
+      "ڤهالا",
+      "برليڤت",
+      "ݢندا"
+     ]
+    },
+    {
+     "maksud": "Mendapat perlindungan daripada Allah",
+     "kata": [
+      "lindung",
+      "perlindungan",
+      "melindungi",
+      "ڤرليندوڠن"
+     ]
+    },
+    {
+     "maksud": "Hati menjadi tenang dan tenteram",
+     "kata": [
+      "tenang",
+      "ketenangan",
+      "tenteram",
+      "هاتي",
+      "مڠجادي",
+      "تنڠ",
+      "تنترم"
+     ]
+    },
+    {
+     "maksud": "Masjid sentiasa bersih dan selesa untuk beribadah",
+     "kata": [
+      "bersih",
+      "selesa",
+      "kebersihan",
+      "مسجد",
+      "سنتياس",
+      "برسيه",
+      "سلسا",
+      "برعبادة"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "1. منداڤت رحمة دان کاسيه سايڠ الله.",
+    "2. منداڤت ڤهالا يڠ برليڤت ݢندا.",
+    "3. منداڤت ڤرليندوڠن درڤد الله.",
+    "4. هاتي مڠجادي تنڠ دان تنترم.",
+    "5. مسجد سنتياس برسيه دان سلسا اونتوق برعبادة."
+   ],
+   "jawapanContohRumi": [
+    "1. Mendapat rahmat dan kasih sayang Allah.",
+    "2. Mendapat pahala yang berlipat ganda.",
+    "3. Mendapat perlindungan daripada Allah.",
+    "4. Hati menjadi tenang dan tenteram.",
+    "5. Masjid sentiasa bersih dan selesa untuk beribadah."
+   ],
+   "id": "adab-d8"
+  },
+  {
+   "bahagian": "D",
+   "jenis": "huraian",
+   "soalan": "علمو ڤنچاها هيدوڤ. جلسکن ليم کڤنتيڠن منونتق علمو کڤد سأورڠ موريد.",
+   "rumi": "Ilmu pencahaya hidup. Jelaskan lima kepentingan menuntut ilmu kepada seorang murid.",
+   "markah": 5,
+   "idea": [
+    {
+     "maksud": "Menjadi orang yang pandai dan berilmu",
+     "kata": [
+      "pandai",
+      "berilmu",
+      "cerdik",
+      "bijak",
+      "مڠجادي",
+      "اورڠ",
+      "ڤنداي",
+      "برعلمو"
+     ]
+    },
+    {
+     "maksud": "Mendapat pekerjaan yang baik pada masa hadapan",
+     "kata": [
+      "kerja",
+      "pekerjaan",
+      "jawatan",
+      "hadapan",
+      "منداڤت",
+      "ڤکرجاءن",
+      "ماس",
+      "هاداڤن"
+     ]
+    },
+    {
+     "maksud": "Dihormati oleh masyarakat",
+     "kata": [
+      "hormat",
+      "dihormati",
+      "masyarakat",
+      "دحرمتي",
+      "اوليه"
+     ]
+    },
+    {
+     "maksud": "Dapat membantu keluarga dan masyarakat",
+     "kata": [
+      "bantu",
+      "membantu",
+      "tolong",
+      "menolong",
+      "ممبنتو",
+      "کلوارݢ"
+     ]
+    },
+    {
+     "maksud": "Dapat membezakan yang baik dan yang buruk",
+     "kata": [
+      "bezakan",
+      "membezakan",
+      "buruk",
+      "baik",
+      "ممبيذاکن",
+      "بوروق"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "1. مڠجادي اورڠ يڠ ڤنداي دان برعلمو.",
+    "2. منداڤت ڤکرجاءن يڠ باءيق ڤد ماس هاداڤن.",
+    "3. دحرمتي اوليه مشارکت.",
+    "4. داڤت ممبنتو کلوارݢ دان مشارکت.",
+    "5. داڤت ممبيذاکن يڠ باءيق دان يڠ بوروق."
+   ],
+   "jawapanContohRumi": [
+    "1. Menjadi orang yang pandai dan berilmu.",
+    "2. Mendapat pekerjaan yang baik pada masa hadapan.",
+    "3. Dihormati oleh masyarakat.",
+    "4. Dapat membantu keluarga dan masyarakat.",
+    "5. Dapat membezakan yang baik dan yang buruk."
+   ],
+   "id": "adab-d9"
+  },
+  {
+   "bahagian": "D",
+   "jenis": "huraian",
+   "soalan": "کلوارݢ رزوان بربالق ک کامڤوڠ دڠن بيس. جلسکن اينم ادب يڠ ڤرلو دجݢ اوليه کلوارݢ رزوان دالم ڤرجالنن.",
+   "rumi": "Keluarga Razuan pulang ke kampung dengan bas. Jelaskan enam adab yang perlu dijaga oleh keluarga Razuan dalam perjalanan.",
+   "markah": 6,
+   "idea": [
+    {
+     "maksud": "Beratur dan tidak berebut ketika menaiki bas",
+     "kata": [
+      "beratur",
+      "baris",
+      "berbaris",
+      "berebut",
+      "tertib",
+      "براتور",
+      "بربوت",
+      "ماءيقي"
+     ]
+    },
+    {
+     "maksud": "Memberi tempat duduk kepada warga tua",
+     "kata": [
+      "tua",
+      "emas",
+      "warga",
+      "hamil",
+      "تمڤت",
+      "دودوق",
+      "ورݢ",
+      "اماس"
+     ]
+    },
+    {
+     "maksud": "Tidak bising dan tidak mengganggu penumpang lain",
+     "kata": [
+      "bising",
+      "kecoh",
+      "ganggu",
+      "mengganggu",
+      "بيسيڠ",
+      "مڠݢڠݢو",
+      "ڤنومڤڠ",
+      "لاءين"
+     ]
+    },
+    {
+     "maksud": "Menjaga barang dan wang dengan baik",
+     "kata": [
+      "barang",
+      "wang",
+      "beg",
+      "menjaga",
+      "منجاݢ",
+      "بارڠ",
+      "واڠ",
+      "باءيق"
+     ]
+    },
+    {
+     "maksud": "Mematuhi peraturan keselamatan dalam bas",
+     "kata": [
+      "peraturan",
+      "selamat",
+      "keselamatan",
+      "mematuhi",
+      "مماتوهي",
+      "ڤراتورن",
+      "کسلامتن"
+     ]
+    },
+    {
+     "maksud": "Memberi salam dan berterima kasih kepada pemandu bas",
+     "kata": [
+      "salam",
+      "pemandu",
+      "kasih",
+      "terimakasih",
+      "سلام",
+      "برتريما",
+      "کاسيه",
+      "ڤمندو"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "1. براتور دان تيدق بربوت کتيک ماءيقي بيس.",
+    "2. ممبري تمڤت دودوق کڤد ورݢ اماس.",
+    "3. تيدق بيسيڠ دان تيدق مڠݢڠݢو ڤنومڤڠ لاءين.",
+    "4. منجاݢ بارڠ دان واڠ دڠن باءيق.",
+    "5. مماتوهي ڤراتورن کسلامتن د دالم بيس.",
+    "6. ممبري سلام دان برتريما کاسيه کڤد ڤمندو بيس."
+   ],
+   "jawapanContohRumi": [
+    "1. Beratur dan tidak berebut ketika menaiki bas.",
+    "2. Memberi tempat duduk kepada warga emas.",
+    "3. Tidak bising dan tidak mengganggu penumpang lain.",
+    "4. Menjaga barang dan wang dengan baik.",
+    "5. Mematuhi peraturan keselamatan di dalam bas.",
+    "6. Memberi salam dan berterima kasih kepada pemandu bas."
+   ],
+   "id": "adab-d10"
+  },
+  {
+   "bahagian": "D",
+   "jenis": "huraian",
+   "soalan": "اورڠ يڠ برادب اکن منجاݢ ڤرکاتاءنڽ. جلسکن ليم عاقبت جک کيت برچاکڤ دڠن کاسر کڤد اورڠ لاءين.",
+   "rumi": "Orang yang beradab akan menjaga perkataannya. Jelaskan lima akibat jika kita bercakap dengan kasar kepada orang lain.",
+   "markah": 5,
+   "idea": [
+    {
+     "maksud": "Menyakiti hati orang lain",
+     "kata": [
+      "menyakiti",
+      "sakiti",
+      "hati",
+      "terluka",
+      "melukai",
+      "مڽاکيتي",
+      "هاتي"
+     ]
+    },
+    {
+     "maksud": "Kehilangan kawan dan sahabat",
+     "kata": [
+      "hilang",
+      "kawan",
+      "rakan",
+      "sahabat",
+      "کحيلڠن",
+      "کاون",
+      "سحابت"
+     ]
+    },
+    {
+     "maksud": "Berlaku pergaduhan",
+     "kata": [
+      "gaduh",
+      "bergaduh",
+      "kelahi",
+      "pergaduhan",
+      "برلاکو",
+      "ڤرݢدوهن"
+     ]
+    },
+    {
+     "maksud": "Dibenci dan dijauhi orang lain",
+     "kata": [
+      "benci",
+      "dibenci",
+      "jauhi",
+      "dijauhi",
+      "دبنچي",
+      "دجاءوهي"
+     ]
+    },
+    {
+     "maksud": "Menyesal selepas itu",
+     "kata": [
+      "menyesal",
+      "sesal",
+      "penyesalan",
+      "مڠيڽل",
+      "سلفس",
+      "ايت"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "1. مڽاکيتي هاتي اورڠ لاءين.",
+    "2. کحيلڠن کاون دان سحابت.",
+    "3. برلاکو ڤرݢدوهن.",
+    "4. دبنچي دان دجاءوهي اورڠ لاءين.",
+    "5. مڠيڽل سلفس ايت."
+   ],
+   "jawapanContohRumi": [
+    "1. Menyakiti hati orang lain.",
+    "2. Kehilangan kawan dan sahabat.",
+    "3. Berlaku pergaduhan.",
+    "4. Dibenci dan dijauhi orang lain.",
+    "5. Menyesal selepas itu."
+   ],
+   "id": "adab-d11"
+  },
+  {
+   "bahagian": "D",
+   "jenis": "huraian",
+   "soalan": "سأورڠ موريد منولوڠ راکنڽ تاڤي مڠهارڤکن ڤوجين درڤد ݢورو. جلسکن ليم سبب عملن ترسبوت تيدق دتريما اوليه الله.",
+   "rumi": "Seorang murid menolong rakannya tetapi mengharapkan pujian daripada guru. Jelaskan lima sebab amalan tersebut tidak diterima oleh Allah.",
+   "markah": 5,
+   "idea": [
+    {
+     "maksud": "Tidak ikhlas kerana Allah",
+     "kata": [
+      "ikhlas",
+      "keikhlasan",
+      "ketulusan",
+      "اخلاص",
+      "کران"
+     ]
+    },
+    {
+     "maksud": "Mengharapkan pujian daripada manusia",
+     "kata": [
+      "pujian",
+      "puji",
+      "dipuji",
+      "memuji",
+      "ڤوجين",
+      "ماءنسي"
+     ]
+    },
+    {
+     "maksud": "Melakukan riak dan menunjuk-nunjuk",
+     "kata": [
+      "riak",
+      "menunjuk",
+      "tunjuk",
+      "menunjuknunjuk",
+      "ملاکوکن",
+      "رياک",
+      "منونجوق",
+      "نونجوق"
+     ]
+    },
+    {
+     "maksud": "Tidak mengharapkan keredhaan Allah",
+     "kata": [
+      "redha",
+      "keredhaan",
+      "meredhai",
+      "کرضاءن"
+     ]
+    },
+    {
+     "maksud": "Amalan menjadi sia-sia dan tidak berbaloi",
+     "kata": [
+      "sia",
+      "siasia",
+      "berbaloi",
+      "عملن",
+      "مڠجادي",
+      "سيا",
+      "بربالوي"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "1. تيدق اخلاص کران الله.",
+    "2. مڠهارڤکن ڤوجين درڤد ماءنسي.",
+    "3. ملاکوکن رياک دان منونجوق-نونجوق.",
+    "4. تيدق مڠهارڤکن کرضاءن الله.",
+    "5. عملن مڠجادي سيا-سيا دان تيدق بربالوي."
+   ],
+   "jawapanContohRumi": [
+    "1. Tidak ikhlas kerana Allah.",
+    "2. Mengharapkan pujian daripada manusia.",
+    "3. Melakukan riak dan menunjuk-nunjuk.",
+    "4. Tidak mengharapkan keredhaan Allah.",
+    "5. Amalan menjadi sia-sia dan tidak berbaloi."
+   ],
+   "id": "adab-d12"
+  },
+  {
+   "bahagian": "D",
+   "jenis": "huraian",
+   "soalan": "امانه اداله صيفت يڠ ڤنتيڠ دالم ڤرݢاءولن. جلسکن امڤت عاقبت اورڠ يڠ تيدق امانه.",
+   "rumi": "Amanah adalah sifat yang penting dalam pergaulan. Jelaskan empat akibat orang yang tidak amanah.",
+   "markah": 4,
+   "idea": [
+    {
+     "maksud": "Tidak dipercayai oleh orang lain",
+     "kata": [
+      "percaya",
+      "dipercayai",
+      "kepercayaan",
+      "دڤرچاياءي",
+      "اورڠ",
+      "لاءين",
+      "تيدق"
+     ]
+    },
+    {
+     "maksud": "Dijauhi oleh rakan dan jiran",
+     "kata": [
+      "jauhi",
+      "dijauhi",
+      "rakan",
+      "jiran",
+      "دجاءوهي",
+      "رکن",
+      "جيران"
+     ]
+    },
+    {
+     "maksud": "Sukar mendapat pekerjaan",
+     "kata": [
+      "kerja",
+      "pekerjaan",
+      "sukar",
+      "susah",
+      "سوکر",
+      "ڤکرجاءن"
+     ]
+    },
+    {
+     "maksud": "Mendapat dosa daripada Allah",
+     "kata": [
+      "dosa",
+      "berdosa",
+      "دوس",
+      "الله"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "1. تيدق دڤرچاياءي اوليه اورڠ لاءين.",
+    "2. دجاءوهي اوليه رکن دان جيران.",
+    "3. سوکر منداڤت ڤکرجاءن.",
+    "4. منداڤت دوس درڤد الله."
+   ],
+   "jawapanContohRumi": [
+    "1. Tidak dipercayai oleh orang lain.",
+    "2. Dijauhi oleh rakan dan jiran.",
+    "3. Sukar mendapat pekerjaan.",
+    "4. Mendapat dosa daripada Allah."
+   ],
+   "id": "adab-d13"
+  },
+  {
+   "bahagian": "D",
+   "jenis": "huraian",
+   "soalan": "جوجور اداله صيفت اورڠ يڠ برتقوى. جلسکن ليم کباءيقن جوجور دالم هيدوڤ سهارين.",
+   "rumi": "Jujur adalah sifat orang yang bertaqwa. Jelaskan lima kebaikan jujur dalam hidup seharian.",
+   "markah": 5,
+   "idea": [
+    {
+     "maksud": "Dipercayai oleh orang lain",
+     "kata": [
+      "percaya",
+      "dipercayai",
+      "kepercayaan",
+      "دڤرچاياءي",
+      "لاءين"
+     ]
+    },
+    {
+     "maksud": "Disenangi dan disukai orang",
+     "kata": [
+      "senang",
+      "disenangi",
+      "suka",
+      "disukai",
+      "دسنڠي",
+      "دسوکاي"
+     ]
+    },
+    {
+     "maksud": "Hidup diberkati Allah",
+     "kata": [
+      "berkat",
+      "keberkatan",
+      "diberkati",
+      "هيدوڤ",
+      "دبرکتي",
+      "الله"
+     ]
+    },
+    {
+     "maksud": "Hati menjadi tenang dan tenteram",
+     "kata": [
+      "tenang",
+      "ketenangan",
+      "tenteram",
+      "هاتي",
+      "مڠجادي",
+      "تنڠ",
+      "تنترم"
+     ]
+    },
+    {
+     "maksud": "Berjaya dalam pelajaran dan pekerjaan",
+     "kata": [
+      "berjaya",
+      "kejayaan",
+      "pekerjaan",
+      "pelajaran",
+      "برجاي",
+      "ڤلاجرن",
+      "ڤکرجاءن"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "1. دڤرچاياءي اوليه اورڠ لاءين.",
+    "2. دسنڠي دان دسوکاي اوليه اورڠ.",
+    "3. هيدوڤ دبرکتي الله.",
+    "4. هاتي مڠجادي تنڠ دان تنترم.",
+    "5. برجاي دالم ڤلاجرن دان ڤکرجاءن."
+   ],
+   "jawapanContohRumi": [
+    "1. Dipercayai oleh orang lain.",
+    "2. Disenangi dan disukai oleh orang.",
+    "3. Hidup diberkati Allah.",
+    "4. Hati menjadi tenang dan tenteram.",
+    "5. Berjaya dalam pelajaran dan pekerjaan."
+   ],
+   "id": "adab-d14"
+  },
+  {
+   "bahagian": "D",
+   "jenis": "huraian",
+   "soalan": "صلاة اداله تياڠ اݢام. جلسکن ليم حکمه صلاة دالم هيدوڤ سأورڠ مسلم.",
+   "rumi": "Solat adalah tiang agama. Jelaskan lima hikmah solat dalam hidup seorang Muslim.",
+   "markah": 5,
+   "idea": [
+    {
+     "maksud": "Hati menjadi tenang dan tenteram",
+     "kata": [
+      "tenang",
+      "ketenangan",
+      "tenteram",
+      "هاتي",
+      "مڠجادي",
+      "تنڠ",
+      "تنترم"
+     ]
+    },
+    {
+     "maksud": "Dijauhi daripada perbuatan keji dan mungkar",
+     "kata": [
+      "keji",
+      "mungkar",
+      "jahat",
+      "dijauhi",
+      "دجاءوهي",
+      "ڤربواتن",
+      "کجي",
+      "موڠکر"
+     ]
+    },
+    {
+     "maksud": "Mendapat pahala daripada Allah",
+     "kata": [
+      "pahala",
+      "mendapat",
+      "ganjaran",
+      "منداڤت",
+      "ڤهالا"
+     ]
+    },
+    {
+     "maksud": "Disayangi dan dirahmati Allah",
+     "kata": [
+      "sayang",
+      "disayangi",
+      "rahmat",
+      "kasih",
+      "دسايڠي",
+      "درحمتي"
+     ]
+    },
+    {
+     "maksud": "Melatih diri menghargai masa dan berdisiplin",
+     "kata": [
+      "disiplin",
+      "masa",
+      "tepat",
+      "menghargai",
+      "ملاتيه",
+      "ديري",
+      "مڠهرݢاي",
+      "ماس",
+      "برديسيڤلين"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "1. هاتي مڠجادي تنڠ دان تنترم.",
+    "2. دجاءوهي درڤد ڤربواتن کجي دان موڠکر.",
+    "3. منداڤت ڤهالا درڤد الله.",
+    "4. دسايڠي دان درحمتي الله.",
+    "5. ملاتيه ديري مڠهرݢاي ماس دان برديسيڤلين."
+   ],
+   "jawapanContohRumi": [
+    "1. Hati menjadi tenang dan tenteram.",
+    "2. Dijauhi daripada perbuatan keji dan mungkar.",
+    "3. Mendapat pahala daripada Allah.",
+    "4. Disayangi dan dirahmati Allah.",
+    "5. Melatih diri menghargai masa dan berdisiplin."
+   ],
+   "id": "adab-d15"
+  },
+  {
+   "bahagian": "D",
+   "jenis": "huraian",
+   "soalan": "عائشة مأهو کلوار برماءين تاڤي تيدق ممينتا ايذين درڤد ايبوڽ. جلسکن ليم عاقبت ڤربواتن عائشة.",
+   "rumi": "Aisyah mahu keluar bermain tetapi tidak meminta izin daripada ibunya. Jelaskan lima akibat perbuatan Aisyah.",
+   "markah": 5,
+   "idea": [
+    {
+     "maksud": "Ibu menjadi marah dan kecewa",
+     "kata": [
+      "marah",
+      "kecewa",
+      "sedih",
+      "dimarahi",
+      "مڠجادي",
+      "ماره",
+      "کچيوا"
+     ]
+    },
+    {
+     "maksud": "Berdosa kerana menderhaka kepada ibu bapa",
+     "kata": [
+      "dosa",
+      "derhaka",
+      "menderhaka",
+      "بردوس",
+      "کران",
+      "مڠديرهکا",
+      "باڤ"
+     ]
+    },
+    {
+     "maksud": "Tidak mendapat keberkatan dalam hidup",
+     "kata": [
+      "berkat",
+      "keberkatan",
+      "diberkati",
+      "منداڤت",
+      "کبرکتن",
+      "هيدوڤ",
+      "تيدق"
+     ]
+    },
+    {
+     "maksud": "Boleh ditimpa bahaya atau kemalangan",
+     "kata": [
+      "bahaya",
+      "kemalangan",
+      "selamat",
+      "keselamatan",
+      "دتيمڤا",
+      "بهاي",
+      "کملاڠن",
+      "بوليه"
+     ]
+    },
+    {
+     "maksud": "Hilang kepercayaan ibu terhadapnya",
+     "kata": [
+      "percaya",
+      "kepercayaan",
+      "dipercayai",
+      "هيلڠ",
+      "کڤرچاياءن",
+      "ترهادڤڽ"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "1. ايبو مڠجادي ماره دان کچيوا.",
+    "2. بردوس کران مڠديرهکا کڤد ايبو باڤ.",
+    "3. تيدق منداڤت کبرکتن دالم هيدوڤ.",
+    "4. بوليه دتيمڤا بهاي اتاو کملاڠن.",
+    "5. هيلڠ کڤرچاياءن ايبو ترهادڤڽ."
+   ],
+   "jawapanContohRumi": [
+    "1. Ibu menjadi marah dan kecewa.",
+    "2. Berdosa kerana menderhaka kepada ibu bapa.",
+    "3. Tidak mendapat keberkatan dalam hidup.",
+    "4. Boleh ditimpa bahaya atau kemalangan.",
+    "5. Hilang kepercayaan ibu terhadapnya."
+   ],
+   "id": "adab-d16"
+  },
+  {
+   "bahagian": "D",
+   "jenis": "huraian",
+   "soalan": "اورڠ يڠ برادب ترهادڤ اهل کلوارݢ اکن مڠحرمتي يڠ توا دان مڠسيهي يڠ مودا. جلسکن اينم چارا منونجوقکن کاسيه سايڠ دالم کلوارݢ.",
+   "rumi": "Orang yang beradab terhadap ahli keluarga akan menghormati yang tua dan mengasihi yang muda. Jelaskan enam cara menunjukkan kasih sayang dalam keluarga.",
+   "markah": 6,
+   "idea": [
+    {
+     "maksud": "Memberi dan menjawab salam",
+     "kata": [
+      "salam",
+      "bersalam",
+      "menjawab",
+      "منجواب",
+      "سلام"
+     ]
+    },
+    {
+     "maksud": "Menolong ibu bapa mengerjakan kerja rumah",
+     "kata": [
+      "tolong",
+      "menolong",
+      "bantu",
+      "membantu",
+      "منولوڠ",
+      "ايبو",
+      "باڤ",
+      "مڠرجاکن",
+      "ڤکرجاءن",
+      "رومه"
+     ]
+    },
+    {
+     "maksud": "Meluangkan masa berkumpul bersama keluarga",
+     "kata": [
+      "meluangkan",
+      "bersama",
+      "berkumpul",
+      "berkelah",
+      "ملوڠکن",
+      "ماس",
+      "برکومڤول",
+      "برسام",
+      "کلوارݢ"
+     ]
+    },
+    {
+     "maksud": "Memberi hadiah pada hari istimewa",
+     "kata": [
+      "hadiah",
+      "menghadiahkan",
+      "memberi",
+      "حديه",
+      "هاري",
+      "إستيميوا"
+     ]
+    },
+    {
+     "maksud": "Menziarahi datuk dan nenek",
+     "kata": [
+      "ziarah",
+      "menziarahi",
+      "datuk",
+      "nenek",
+      "atuk",
+      "منزيارهي",
+      "اتوق",
+      "نينيق"
+     ]
+    },
+    {
+     "maksud": "Bertanya khabar dan menjaga hati mereka",
+     "kata": [
+      "khabar",
+      "bertanya",
+      "menanya",
+      "hati",
+      "برتاڽ",
+      "خبر",
+      "منجاݢ",
+      "هاتي",
+      "مريک"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "1. ممبري دان منجواب سلام.",
+    "2. منولوڠ ايبو باڤ مڠرجاکن ڤکرجاءن رومه.",
+    "3. ملوڠکن ماس برکومڤول برسام کلوارݢ.",
+    "4. ممبري حديه ڤد هاري إستيميوا.",
+    "5. منزيارهي اتوق دان نينيق.",
+    "6. برتاڽ خبر دان منجاݢ هاتي مريک."
+   ],
+   "jawapanContohRumi": [
+    "1. Memberi dan menjawab salam.",
+    "2. Menolong ibu bapa mengerjakan kerja rumah.",
+    "3. Meluangkan masa berkumpul bersama keluarga.",
+    "4. Memberi hadiah pada hari istimewa.",
+    "5. Menziarahi atuk dan nenek.",
+    "6. Bertanya khabar dan menjaga hati mereka."
+   ],
+   "id": "adab-d17"
+  },
+  {
+   "bahagian": "D",
+   "jenis": "huraian",
+   "soalan": "نورول برتمو سأورڠ ورݢ اماس د جالن راي. جلسکن ليم چارا منونجوقکن ادب کڤد ورݢ اماس.",
+   "rumi": "Nurul bertemu seorang warga emas di jalan raya. Jelaskan lima cara menunjukkan adab kepada warga emas.",
+   "markah": 5,
+   "idea": [
+    {
+     "maksud": "Memberi salam dan mencium tangannya",
+     "kata": [
+      "salam",
+      "cium",
+      "mencium",
+      "tangan",
+      "ممبري",
+      "سلام",
+      "منچيوم",
+      "تاڠنڽ"
+     ]
+    },
+    {
+     "maksud": "Bercakap dengan bahasa yang hormat",
+     "kata": [
+      "hormat",
+      "menghormati",
+      "bahasa",
+      "sopan",
+      "بهاس",
+      "حرمت"
+     ]
+    },
+    {
+     "maksud": "Membantu memimpin atau membawa barang",
+     "kata": [
+      "bantu",
+      "membantu",
+      "tolong",
+      "barang",
+      "memimpin",
+      "ممبنتو",
+      "مميمڤين",
+      "ممباوا",
+      "بارڠڽ"
+     ]
+    },
+    {
+     "maksud": "Mendahulukan warga emas dalam urusan",
+     "kata": [
+      "dahulu",
+      "mendahului",
+      "mendahulukan",
+      "urusan",
+      "مندهولواکن",
+      "ورݢ",
+      "اماس",
+      "اوروسن"
+     ]
+    },
+    {
+     "maksud": "Tidak meninggikan suara ketika bercakap",
+     "kata": [
+      "suara",
+      "tinggi",
+      "meninggikan",
+      "منيڠݢيکن",
+      "سوارا",
+      "تيدق"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "1. ممبري سلام دان منچيوم تاڠنڽ.",
+    "2. برچاکڤ دڠن بهاس يڠ حرمت.",
+    "3. ممبنتو مميمڤين اتاو ممباوا بارڠڽ.",
+    "4. مندهولواکن ورݢ اماس دالم اوروسن.",
+    "5. تيدق منيڠݢيکن سوارا کتيک برچاکڤ."
+   ],
+   "jawapanContohRumi": [
+    "1. Memberi salam dan mencium tangannya.",
+    "2. Bercakap dengan bahasa yang hormat.",
+    "3. Membantu memimpin atau membawa barangnya.",
+    "4. Mendahulukan warga emas dalam urusan.",
+    "5. Tidak meninggikan suara ketika bercakap."
+   ],
+   "id": "adab-d18"
+  },
+  {
+   "bahagian": "D",
+   "jenis": "huraian",
+   "soalan": "تامق اداله صيفت يڠ دجاءوهي دالم إسلام. جلسکن ليم عاقبت سيفت تامق.",
+   "rumi": "Tamak adalah sifat yang dijauhi dalam Islam. Jelaskan lima akibat sifat tamak.",
+   "markah": 5,
+   "idea": [
+    {
+     "maksud": "Tidak bersyukur akan nikmat Allah",
+     "kata": [
+      "syukur",
+      "bersyukur",
+      "kesyukuran",
+      "برسيفت",
+      "شوکور",
+      "نعمت"
+     ]
+    },
+    {
+     "maksud": "Sangat cinta akan harta dan dunia",
+     "kata": [
+      "harta",
+      "dunia",
+      "cinta",
+      "mencintai",
+      "ساڠت",
+      "چينت",
+      "هرتا",
+      "دنيا"
+     ]
+    },
+    {
+     "maksud": "Menyebabkan pergaduhan sesama manusia",
+     "kata": [
+      "gaduh",
+      "bergaduh",
+      "kelahi",
+      "pergaduhan",
+      "مڠي",
+      "ڤرݢدوهن",
+      "سسام",
+      "ماءنسي"
+     ]
+    },
+    {
+     "maksud": "Mendapat dosa daripada Allah",
+     "kata": [
+      "dosa",
+      "berdosa",
+      "منداڤت",
+      "دوس"
+     ]
+    },
+    {
+     "maksud": "Hati menjadi gelisah dan tidak tenang",
+     "kata": [
+      "gelisah",
+      "resah",
+      "tenang",
+      "ketenangan",
+      "هاتي",
+      "مڠجادي",
+      "ݢليسه",
+      "تنڠ"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "1. تيدق برسيفت شوکور اکن نعمت الله.",
+    "2. ساڠت چينت اکن هرتا دان دنيا.",
+    "3. مڠيebabkan ڤرݢدوهن سسام ماءنسي.",
+    "4. منداڤت دوس درڤد الله.",
+    "5. هاتي مڠجادي ݢليسه دان تيدق تنڠ."
+   ],
+   "jawapanContohRumi": [
+    "1. Tidak bersifat syukur akan nikmat Allah.",
+    "2. Sangat cinta akan harta dan dunia.",
+    "3. Menyebabkan pergaduhan sesama manusia.",
+    "4. Mendapat dosa daripada Allah.",
+    "5. Hati menjadi gelisah dan tidak tenang."
+   ],
+   "id": "adab-d19"
+  },
+  {
+   "bahagian": "D",
+   "jenis": "huraian",
+   "soalan": "ممبري دان منريم ڤمبريان اد ادبڽ. جلسکن امڤت حکمه برادب کتيک ممبري دان منريم ڤمبريان.",
+   "rumi": "Memberi dan menerima pemberian ada adabnya. Jelaskan empat hikmah beradab ketika memberi dan menerima pemberian.",
+   "markah": 4,
+   "idea": [
+    {
+     "maksud": "Hubungan menjadi erat dan mesra",
+     "kata": [
+      "erat",
+      "hubungan",
+      "mesra",
+      "mengeratkan",
+      "هوبوڠن",
+      "ارت",
+      "مسرا"
+     ]
+    },
+    {
+     "maksud": "Mendapat keberkatan daripada Allah",
+     "kata": [
+      "berkat",
+      "keberkatan",
+      "diberkati",
+      "منداڤت",
+      "کبرکتن",
+      "الله"
+     ]
+    },
+    {
+     "maksud": "Disukai dan dihormati orang lain",
+     "kata": [
+      "suka",
+      "disukai",
+      "hormat",
+      "dihormati",
+      "دسوکاي",
+      "دحرمتي",
+      "اوليه",
+      "اورڠ",
+      "لاءين"
+     ]
+    },
+    {
+     "maksud": "Hati menjadi gembira dan senang",
+     "kata": [
+      "gembira",
+      "seronok",
+      "senang",
+      "هاتي",
+      "ݢمبيرا",
+      "سنڠ"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "1. هوبوڠن مڠجادي ارت دان مسرا.",
+    "2. منداڤت کبرکتن درڤد الله.",
+    "3. دسوکاي دان دحرمتي اوليه اورڠ لاءين.",
+    "4. هاتي مڠجادي ݢمبيرا دان سنڠ."
+   ],
+   "jawapanContohRumi": [
+    "1. Hubungan menjadi erat dan mesra.",
+    "2. Mendapat keberkatan daripada Allah.",
+    "3. Disukai dan dihormati oleh orang lain.",
+    "4. Hati menjadi gembira dan senang."
+   ],
+   "id": "adab-d20"
+  },
+  {
+   "bahagian": "D",
+   "jenis": "huraian",
+   "soalan": "تندس اداله تمڤت يڠ کوتور. جلسکن ليم ادب يڠ ڤرلو دجݢ کتيک ماسوق دان کلوار تندس.",
+   "rumi": "Tandas adalah tempat yang kotor. Jelaskan lima adab yang perlu dijaga ketika masuk dan keluar tandas.",
+   "markah": 5,
+   "idea": [
+    {
+     "maksud": "Membaca doa masuk dan keluar tandas",
+     "kata": [
+      "doa",
+      "berdoa",
+      "mendoa",
+      "membaca",
+      "ممباچ",
+      "دعاء"
+     ]
+    },
+    {
+     "maksud": "Masuk dengan kaki kiri dan keluar dengan kaki kanan",
+     "kata": [
+      "kiri",
+      "kanan",
+      "kaki",
+      "کاکي",
+      "کيري",
+      "کانن"
+     ]
+    },
+    {
+     "maksud": "Memakai selipar dan menjaga aurat",
+     "kata": [
+      "selipar",
+      "aurat",
+      "memakai",
+      "kasut",
+      "ممکاي",
+      "سليڤر",
+      "منجاݢ",
+      "اورت"
+     ]
+    },
+    {
+     "maksud": "Membersihkan tandas selepas digunakan",
+     "kata": [
+      "bersih",
+      "membersih",
+      "cuci",
+      "mencuci",
+      "siram",
+      "ممبرسيهکن",
+      "سلفس",
+      "دݢوناکن"
+     ]
+    },
+    {
+     "maksud": "Tidak berlama-lama di dalam tandas",
+     "kata": [
+      "lama",
+      "berlama",
+      "cepat",
+      "برلام",
+      "لام",
+      "تيدق"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "1. ممباچ دعاء ماسوق دان کلوار تندس.",
+    "2. ماسوق دڠن کاکي کيري دان کلوار دڠن کاکي کانن.",
+    "3. ممکاي سليڤر دان منجاݢ اورت.",
+    "4. ممبرسيهکن تندس سلفس دݢوناکن.",
+    "5. تيدق برلام-لام د دالم تندس."
+   ],
+   "jawapanContohRumi": [
+    "1. Membaca doa masuk dan keluar tandas.",
+    "2. Masuk dengan kaki kiri dan keluar dengan kaki kanan.",
+    "3. Memakai selipar dan menjaga aurat.",
+    "4. Membersihkan tandas selepas digunakan.",
+    "5. Tidak berlama-lama di dalam tandas."
+   ],
+   "id": "adab-d21"
+  },
+  {
+   "bahagian": "D",
+   "jenis": "huraian",
+   "soalan": "سأورڠ موريد منزيارهي راکنڽ يڠ ساکيت د هوسڤيتل. جلسکن ليم ادب يڠ ڤرلو دجݢ کتيک منزيارهي ڤساکيت.",
+   "rumi": "Seorang murid menziarahi rakannya yang sakit di hospital. Jelaskan lima adab yang perlu dijaga ketika menziarahi pesakit.",
+   "markah": 5,
+   "idea": [
+    {
+     "maksud": "Memberi salam apabila masuk ke bilik pesakit",
+     "kata": [
+      "salam",
+      "bersalam",
+      "memberi",
+      "ممبري",
+      "سلام",
+      "اڤابيلا",
+      "ماسوق",
+      "بيليق"
+     ]
+    },
+    {
+     "maksud": "Mendoakan kesembuhan pesakit",
+     "kata": [
+      "doa",
+      "berdoa",
+      "mendoakan",
+      "sembuh",
+      "kesembuhan",
+      "مندوءاکن",
+      "کسمبوهن"
+     ]
+    },
+    {
+     "maksud": "Membawa buah tangan atau hadiah",
+     "kata": [
+      "buah",
+      "hadiah",
+      "membawa",
+      "bawa",
+      "ممباوا",
+      "بواه",
+      "تاڠن",
+      "حديه"
+     ]
+    },
+    {
+     "maksud": "Tidak melawat terlalu lama",
+     "kata": [
+      "lama",
+      "berlama",
+      "melawat",
+      "ملاوت",
+      "ترلالو",
+      "لام",
+      "تيدق"
+     ]
+    },
+    {
+     "maksud": "Bercakap dengan lembut dan menghiburkan hati pesakit",
+     "kata": [
+      "lembut",
+      "hibur",
+      "menghiburkan",
+      "berlembut",
+      "برچاکڤ",
+      "لمبوت",
+      "مڠهيبورکن",
+      "هاتي"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "1. ممبري سلام اڤابيلا ماسوق ک بيليق ڤساکيت.",
+    "2. مندوءاکن کسمبوهن ڤساکيت.",
+    "3. ممباوا بواه تاڠن اتاو حديه.",
+    "4. تيدق ملاوت ترلالو لام.",
+    "5. برچاکڤ دڠن لمبوت دان مڠهيبورکن هاتي ڤساکيت."
+   ],
+   "jawapanContohRumi": [
+    "1. Memberi salam apabila masuk ke bilik pesakit.",
+    "2. Mendoakan kesembuhan pesakit.",
+    "3. Membawa buah tangan atau hadiah.",
+    "4. Tidak melawat terlalu lama.",
+    "5. Bercakap dengan lembut dan menghiburkan hati pesakit."
+   ],
+   "id": "adab-d22"
+  },
+  {
+   "bahagian": "D",
+   "jenis": "huraian",
+   "soalan": "موريد يڠ تيدق ممبري ڤرهاتين دالم کلاس اکن ترڠݢو ڤلاجرن. جلسکن اينم عاقبت تيدق برادب دالم مجلس علمو.",
+   "rumi": "Murid yang tidak memberi perhatian dalam kelas akan terganggu pelajaran. Jelaskan enam akibat tidak beradab dalam majlis ilmu.",
+   "markah": 6,
+   "idea": [
+    {
+     "maksud": "Tidak faham akan pelajaran yang diajar",
+     "kata": [
+      "faham",
+      "memahami",
+      "pelajaran",
+      "diajar",
+      "فهم",
+      "ڤلاجرن",
+      "داجر"
+     ]
+    },
+    {
+     "maksud": "Markah peperiksaan merosot",
+     "kata": [
+      "markah",
+      "merosot",
+      "rendah",
+      "gagal",
+      "مرکه",
+      "ڤڤريقساءن",
+      "مروسوت"
+     ]
+    },
+    {
+     "maksud": "Dimarahi oleh guru",
+     "kata": [
+      "marah",
+      "dimarahi",
+      "guru",
+      "دممارهي",
+      "اوليه",
+      "ݢورو"
+     ]
+    },
+    {
+     "maksud": "Mengganggu rakan yang sedang belajar",
+     "kata": [
+      "ganggu",
+      "mengganggu",
+      "rakan",
+      "kawan",
+      "مڠݢڠݢو",
+      "رکن",
+      "سدڠ",
+      "بلاجر"
+     ]
+    },
+    {
+     "maksud": "Tidak mendapat keberkatan ilmu",
+     "kata": [
+      "berkat",
+      "keberkatan",
+      "ilmu",
+      "منداڤت",
+      "کبرکتن",
+      "علمو"
+     ]
+    },
+    {
+     "maksud": "Menyesal pada masa hadapan",
+     "kata": [
+      "menyesal",
+      "sesal",
+      "penyesalan",
+      "مڠيڽل",
+      "ماس",
+      "هاداڤن"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "1. تيدق فهم اکن ڤلاجرن يڠ داجر.",
+    "2. مرکه ڤڤريقساءن مروسوت.",
+    "3. دممارهي اوليه ݢورو.",
+    "4. مڠݢڠݢو رکن يڠ سدڠ بلاجر.",
+    "5. تيدق منداڤت کبرکتن علمو.",
+    "6. مڠيڽل ڤد ماس هاداڤن."
+   ],
+   "jawapanContohRumi": [
+    "1. Tidak faham akan pelajaran yang diajar.",
+    "2. Markah peperiksaan merosot.",
+    "3. Dimarahi oleh guru.",
+    "4. Mengganggu rakan yang sedang belajar.",
+    "5. Tidak mendapat keberkatan ilmu.",
+    "6. Menyesal pada masa hadapan."
+   ],
+   "id": "adab-d23"
+  },
+  {
+   "bahagian": "D",
+   "jenis": "huraian",
+   "soalan": "هرمت-مڠحرمتي ڤنتيڠ دالم مشارکت. جلسکن امڤت عاقبت جک تيدق برسيفت هرمت-مڠحرمتي.",
+   "rumi": "Hormat-menghormati penting dalam masyarakat. Jelaskan empat akibat jika tidak bersifat hormat-menghormati.",
+   "markah": 4,
+   "idea": [
+    {
+     "maksud": "Berlaku pergaduhan sesama masyarakat",
+     "kata": [
+      "gaduh",
+      "bergaduh",
+      "kelahi",
+      "pergaduhan",
+      "برلاکو",
+      "ڤرݢدوهن",
+      "سسام"
+     ]
+    },
+    {
+     "maksud": "Hidup tidak aman dan tidak tenteram",
+     "kata": [
+      "aman",
+      "tenteram",
+      "keamanan",
+      "هيدوڤ",
+      "امان",
+      "تنترم"
+     ]
+    },
+    {
+     "maksud": "Masyarakat berpecah belah",
+     "kata": [
+      "pecah",
+      "berpecah",
+      "belah",
+      "perpecahan",
+      "برڤچه",
+      "بله"
+     ]
+    },
+    {
+     "maksud": "Negara menjadi mundur dan tidak maju",
+     "kata": [
+      "mundur",
+      "negara",
+      "maju",
+      "kemajuan",
+      "نݢارا",
+      "مڠجادي",
+      "موندور",
+      "ماجو"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "1. برلاکو ڤرݢدوهن سسام مشارکت.",
+    "2. هيدوڤ تيدق امان دان تيدق تنترم.",
+    "3. مشارکت برڤچه بله.",
+    "4. نݢارا مڠجادي موندور دان تيدق ماجو."
+   ],
+   "jawapanContohRumi": [
+    "1. Berlaku pergaduhan sesama masyarakat.",
+    "2. Hidup tidak aman dan tidak tenteram.",
+    "3. Masyarakat berpecah belah.",
+    "4. Negara menjadi mundur dan tidak maju."
+   ],
+   "id": "adab-d24"
+  }
+ ]
+}

@@ -1,0 +1,7109 @@
+{
+ "id": "akidah",
+ "versi": 1,
+ "bilangan": 146,
+ "soalan": [
+  {
+   "bahagian": "A",
+   "jenis": "bulat",
+   "soalan": "بولتکن جواڤن يڠ بتول.",
+   "rumi": "Bulatkan jawapan yang betul.",
+   "markah": 6,
+   "item": [
+    {
+     "teks": "صيفت علم برمقصود",
+     "rumi": "Sifat Ilmu bermaksud",
+     "pilihan": [
+      {
+       "teks": "مڠتاهوءي",
+       "rumi": "mengetahui"
+      },
+      {
+       "teks": "مندڠر",
+       "rumi": "mendengar"
+      }
+     ],
+     "jawapan": 0
+    },
+    {
+     "teks": "صيفت سمع برمقصود",
+     "rumi": "Sifat Sama' bermaksud",
+     "pilihan": [
+      {
+       "teks": "مليهت",
+       "rumi": "melihat"
+      },
+      {
+       "teks": "مندڠر",
+       "rumi": "mendengar"
+      }
+     ],
+     "jawapan": 1
+    },
+    {
+     "teks": "صيفت بصر برمقصود",
+     "rumi": "Sifat Basar bermaksud",
+     "pilihan": [
+      {
+       "teks": "مندڠر",
+       "rumi": "mendengar"
+      },
+      {
+       "teks": "مليهت",
+       "rumi": "melihat"
+      }
+     ],
+     "jawapan": 1
+    },
+    {
+     "teks": "صيفت قدرة برمقصود",
+     "rumi": "Sifat Qudrat bermaksud",
+     "pilihan": [
+      {
+       "teks": "برکواس",
+       "rumi": "berkuasa"
+      },
+      {
+       "teks": "هيدوڤ",
+       "rumi": "hidup"
+      }
+     ],
+     "jawapan": 0
+    },
+    {
+     "teks": "صيفت إرادة برمقصود",
+     "rumi": "Sifat Iradat bermaksud",
+     "pilihan": [
+      {
+       "teks": "برکأندهق",
+       "rumi": "berkehendak"
+      },
+      {
+       "teks": "ککال",
+       "rumi": "kekal"
+      }
+     ],
+     "jawapan": 0
+    },
+    {
+     "teks": "صيفت كلام برمقصود",
+     "rumi": "Sifat Kalam bermaksud",
+     "pilihan": [
+      {
+       "teks": "مڠتاهوءي",
+       "rumi": "mengetahui"
+      },
+      {
+       "teks": "برکات-کات",
+       "rumi": "berkata-kata"
+      }
+     ],
+     "jawapan": 1
+    }
+   ],
+   "id": "akidah-a1"
+  },
+  {
+   "bahagian": "A",
+   "jenis": "bulat",
+   "soalan": "بولتکن جواڤن يڠ بتول.",
+   "rumi": "Bulatkan jawapan yang betul.",
+   "markah": 6,
+   "item": [
+    {
+     "teks": "ماءنا «الحمد لله» اياله",
+     "rumi": "Maksud «Alhamdulillah» ialah",
+     "pilihan": [
+      {
+       "teks": "مها سوچي الله",
+       "rumi": "Maha Suci Allah"
+      },
+      {
+       "teks": "سݢالا ڤوجي باݢي الله",
+       "rumi": "segala puji bagi Allah"
+      }
+     ],
+     "jawapan": 1
+    },
+    {
+     "teks": "ماءنا «الله أكبر» اياله",
+     "rumi": "Maksud «Allahu Akbar» ialah",
+     "pilihan": [
+      {
+       "teks": "الله مها بسر",
+       "rumi": "Allah Maha Besar"
+      },
+      {
+       "teks": "الله مها ڤڠمڤون",
+       "rumi": "Allah Maha Pengampun"
+      }
+     ],
+     "jawapan": 0
+    },
+    {
+     "teks": "ماءنا «سبحان الله» اياله",
+     "rumi": "Maksud «Subhanallah» ialah",
+     "pilihan": [
+      {
+       "teks": "مها سوچي الله",
+       "rumi": "Maha Suci Allah"
+      },
+      {
+       "teks": "تياد دايا دان اوفايا ملاينکن دڠن الله",
+       "rumi": "tiada daya dan upaya melainkan dengan Allah"
+      }
+     ],
+     "jawapan": 0
+    },
+    {
+     "teks": "ماءنا «لا حول ولا قوة إلا بالله» اياله",
+     "rumi": "Maksud «La hawla wa la quwwata illa billah» ialah",
+     "pilihan": [
+      {
+       "teks": "سݢالا ڤوجي باݢي الله",
+       "rumi": "segala puji bagi Allah"
+      },
+      {
+       "teks": "تياد دايا دان اوفايا ملاينکن دڠن الله",
+       "rumi": "tiada daya dan upaya melainkan dengan Allah"
+      }
+     ],
+     "jawapan": 1
+    },
+    {
+     "teks": "ماءنا «لا إله إلا الله» اياله",
+     "rumi": "Maksud «La ilaha illallah» ialah",
+     "pilihan": [
+      {
+       "teks": "تياد توهن ملاينکن الله",
+       "rumi": "tiada Tuhan melainkan Allah"
+      },
+      {
+       "teks": "نبي محمد ڤسوروه الله",
+       "rumi": "Nabi Muhammad pesuruh Allah"
+      }
+     ],
+     "jawapan": 0
+    },
+    {
+     "teks": "ماءنا «محمد رسول الله» اياله",
+     "rumi": "Maksud «Muhammadur Rasulullah» ialah",
+     "pilihan": [
+      {
+       "teks": "الله مها مندڠر",
+       "rumi": "Allah Maha Mendengar"
+      },
+      {
+       "teks": "نبي محمد ڤسوروه الله",
+       "rumi": "Nabi Muhammad pesuruh Allah"
+      }
+     ],
+     "jawapan": 1
+    }
+   ],
+   "id": "akidah-a2"
+  },
+  {
+   "bahagian": "A",
+   "jenis": "bulat",
+   "soalan": "بولتکن جواڤن يڠ بتول.",
+   "rumi": "Bulatkan jawapan yang betul.",
+   "markah": 5,
+   "item": [
+    {
+     "teks": "ملايکة جبريل برتوݢس",
+     "rumi": "Malaikat Jibril bertugas",
+     "pilihan": [
+      {
+       "teks": "مڠمباکن وهيو",
+       "rumi": "menyampaikan wahyu"
+      },
+      {
+       "teks": "منچابوت ڽاوا",
+       "rumi": "mencabut nyawa"
+      }
+     ],
+     "jawapan": 0
+    },
+    {
+     "teks": "ملايکة ميكائيل برتوݢس",
+     "rumi": "Malaikat Mikail bertugas",
+     "pilihan": [
+      {
+       "teks": "منيوڤ سڠکاکال",
+       "rumi": "meniup sangkakala"
+      },
+      {
+       "teks": "ممبهاݢي رزقي",
+       "rumi": "membahagi rezeki"
+      }
+     ],
+     "jawapan": 1
+    },
+    {
+     "teks": "ملايکة إسرافيل برتوݢس",
+     "rumi": "Malaikat Israfil bertugas",
+     "pilihan": [
+      {
+       "teks": "منيوڤ سڠکاکال",
+       "rumi": "meniup sangkakala"
+      },
+      {
+       "teks": "منجاݢ نراک",
+       "rumi": "menjaga neraka"
+      }
+     ],
+     "jawapan": 0
+    },
+    {
+     "teks": "ملايکة عزرائيل برتوݢس",
+     "rumi": "Malaikat Izrail bertugas",
+     "pilihan": [
+      {
+       "teks": "مڠمباکن وهيو",
+       "rumi": "menyampaikan wahyu"
+      },
+      {
+       "teks": "منچابوت ڽاوا",
+       "rumi": "mencabut nyawa"
+      }
+     ],
+     "jawapan": 1
+    },
+    {
+     "teks": "ملايکة مالك منجاݢ",
+     "rumi": "Malaikat Malik menjaga",
+     "pilihan": [
+      {
+       "teks": "ڤينتو نراک",
+       "rumi": "pintu neraka"
+      },
+      {
+       "teks": "ڤينتو شورݢ",
+       "rumi": "pintu syurga"
+      }
+     ],
+     "jawapan": 0
+    }
+   ],
+   "id": "akidah-a3"
+  },
+  {
+   "bahagian": "A",
+   "jenis": "bulat",
+   "soalan": "بولتکن جواڤن يڠ بتول.",
+   "rumi": "Bulatkan jawapan yang betul.",
+   "markah": 5,
+   "item": [
+    {
+     "teks": "کتاب توراة دتورونکن کڤد",
+     "rumi": "Kitab Taurat diturunkan kepada",
+     "pilihan": [
+      {
+       "teks": "نبي موسى",
+       "rumi": "Nabi Musa"
+      },
+      {
+       "teks": "نبي عيسى",
+       "rumi": "Nabi Isa"
+      }
+     ],
+     "jawapan": 0
+    },
+    {
+     "teks": "کتاب زبور دتورونکن کڤد",
+     "rumi": "Kitab Zabur diturunkan kepada",
+     "pilihan": [
+      {
+       "teks": "نبي موسى",
+       "rumi": "Nabi Musa"
+      },
+      {
+       "teks": "نبي داود",
+       "rumi": "Nabi Daud"
+      }
+     ],
+     "jawapan": 1
+    },
+    {
+     "teks": "کتاب إنجيل دتورونکن کڤد",
+     "rumi": "Kitab Injil diturunkan kepada",
+     "pilihan": [
+      {
+       "teks": "نبي عيسى",
+       "rumi": "Nabi Isa"
+      },
+      {
+       "teks": "نبي داود",
+       "rumi": "Nabi Daud"
+      }
+     ],
+     "jawapan": 0
+    },
+    {
+     "teks": "کتاب القرءان دتورونکن کڤد",
+     "rumi": "Kitab Al-Quran diturunkan kepada",
+     "pilihan": [
+      {
+       "teks": "نبي عيسى",
+       "rumi": "Nabi Isa"
+      },
+      {
+       "teks": "نبي محمد",
+       "rumi": "Nabi Muhammad"
+      }
+     ],
+     "jawapan": 1
+    },
+    {
+     "teks": "کتاب يڠ ڤاليڠ اخير اداله",
+     "rumi": "Kitab yang paling akhir ialah",
+     "pilihan": [
+      {
+       "teks": "القرءان",
+       "rumi": "Al-Quran"
+      },
+      {
+       "teks": "زبور",
+       "rumi": "Zabur"
+      }
+     ],
+     "jawapan": 0
+    }
+   ],
+   "id": "akidah-a4"
+  },
+  {
+   "bahagian": "A",
+   "jenis": "suai",
+   "soalan": "سوايکن (أ) دڠن (ب).",
+   "rumi": "Suaikan (A) dengan (B).",
+   "markah": 5,
+   "pasangan": [
+    {
+     "kiri": "وجود",
+     "kanan": "اد",
+     "kiriRumi": "Wujud",
+     "kananRumi": "Ada"
+    },
+    {
+     "kiri": "قديم",
+     "kanan": "سديا اد تيدا ڤرمولاءن",
+     "kiriRumi": "Qidam",
+     "kananRumi": "Sedia ada, tiada permulaan"
+    },
+    {
+     "kiri": "بقاء",
+     "kanan": "ککال",
+     "kiriRumi": "Baqa",
+     "kananRumi": "Kekal"
+    },
+    {
+     "kiri": "مخالفة للحوادث",
+     "kanan": "تيدق سام دڠن مخلوق",
+     "kiriRumi": "Mukhalafatu lil hawadisi",
+     "kananRumi": "Tidak sama dengan makhluk"
+    },
+    {
+     "kiri": "قيامه بنفسه",
+     "kanan": "برديري سنديري",
+     "kiriRumi": "Qiyamuhu binafsihi",
+     "kananRumi": "Berdiri sendiri"
+    }
+   ],
+   "id": "akidah-a5"
+  },
+  {
+   "bahagian": "A",
+   "jenis": "suai",
+   "soalan": "سوايکن (أ) دڠن (ب).",
+   "rumi": "Suaikan (A) dengan (B).",
+   "markah": 5,
+   "pasangan": [
+    {
+     "kiri": "الرحمن",
+     "kanan": "مها ڤموره",
+     "kiriRumi": "Ar-Rahman",
+     "kananRumi": "Maha Pemurah"
+    },
+    {
+     "kiri": "الرحيم",
+     "kanan": "مها ڤڽايڠ",
+     "kiriRumi": "Ar-Rahim",
+     "kananRumi": "Maha Penyayang"
+    },
+    {
+     "kiri": "العليم",
+     "kanan": "مها مڠتاهوءي",
+     "kiriRumi": "Al-Alim",
+     "kananRumi": "Maha Mengetahui"
+    },
+    {
+     "kiri": "السميع",
+     "kanan": "مها مندڠر",
+     "kiriRumi": "As-Sami'",
+     "kananRumi": "Maha Mendengar"
+    },
+    {
+     "kiri": "البصير",
+     "kanan": "مها مليهت",
+     "kiriRumi": "Al-Basir",
+     "kananRumi": "Maha Melihat"
+    }
+   ],
+   "id": "akidah-a6"
+  },
+  {
+   "bahagian": "A",
+   "jenis": "suai",
+   "soalan": "سوايکن (أ) دڠن (ب).",
+   "rumi": "Suaikan (A) dengan (B).",
+   "markah": 4,
+   "pasangan": [
+    {
+     "kiri": "رضوان",
+     "kanan": "منجاݢ ڤينتو شورݢ",
+     "kiriRumi": "Ridzuan",
+     "kananRumi": "Menjaga pintu syurga"
+    },
+    {
+     "kiri": "راقيب",
+     "kanan": "منچتت عملن بائيک",
+     "kiriRumi": "Raqib",
+     "kananRumi": "Mencatat amalan baik"
+    },
+    {
+     "kiri": "عتيد",
+     "kanan": "منچتت عملن جاهت",
+     "kiriRumi": "Atid",
+     "kananRumi": "Mencatat amalan jahat"
+    },
+    {
+     "kiri": "منكر دان نكير",
+     "kanan": "مڽوال ماءنسي دالم قبر",
+     "kiriRumi": "Munkar dan Nakir",
+     "kananRumi": "Menyoal manusia di dalam kubur"
+    }
+   ],
+   "id": "akidah-a7"
+  },
+  {
+   "bahagian": "A",
+   "jenis": "betul_salah",
+   "soalan": "تنداکن (✓) ڤد ڤرپاتاءن يڠ بتول دان (✗) ڤد ڤرپاتاءن يڠ ساله.",
+   "rumi": "Tandakan (✓) pada pernyataan yang betul dan (✗) pada pernyataan yang salah.",
+   "markah": 6,
+   "item": [
+    {
+     "teks": "رکن ايمان کيت اد انم ڤرکارا.",
+     "rumi": "Rukun iman kita ada enam perkara.",
+     "betul": true,
+     "jawapan": -1
+    },
+    {
+     "teks": "ملايکة دچيڤتا اوليه الله درڤد تانه.",
+     "rumi": "Malaikat dicipta oleh Allah daripada tanah.",
+     "betul": false,
+     "jawapan": -1
+    },
+    {
+     "teks": "کتاب إنجيل دتورونکن کڤد نبي عيسى.",
+     "rumi": "Kitab Injil diturunkan kepada Nabi Isa.",
+     "betul": true,
+     "jawapan": -1
+    },
+    {
+     "teks": "القرءان اداله کتاب يڠ ڤرتام.",
+     "rumi": "Al-Quran ialah kitab yang pertama.",
+     "betul": false,
+     "jawapan": -1
+    },
+    {
+     "teks": "ڤرچاي کڤد قضاء دان قدر اداله رکن ايمان يڠ کانم.",
+     "rumi": "Percaya kepada qada dan qadar ialah rukun iman yang keenam.",
+     "betul": true,
+     "jawapan": -1
+    },
+    {
+     "teks": "نبي محمد اداله رسول يڠ ڤرتام.",
+     "rumi": "Nabi Muhammad ialah rasul yang pertama.",
+     "betul": false,
+     "jawapan": -1
+    }
+   ],
+   "id": "akidah-a8"
+  },
+  {
+   "bahagian": "A",
+   "jenis": "betul_salah",
+   "soalan": "تنداکن (✓) ڤد ڤرپاتاءن يڠ بتول دان (✗) ڤد ڤرپاتاءن يڠ ساله.",
+   "rumi": "Tandakan (✓) pada pernyataan yang betul dan (✗) pada pernyataan yang salah.",
+   "markah": 5,
+   "item": [
+    {
+     "teks": "عالم برزخ اداله عالم انتارا دنيا دان اخيرت.",
+     "rumi": "Alam barzakh ialah alam antara dunia dan akhirat.",
+     "betul": true,
+     "jawapan": -1
+    },
+    {
+     "teks": "منكر دان نكير مڽوال ماءنسي دالم قبر.",
+     "rumi": "Munkar dan Nakir menyoal manusia di dalam kubur.",
+     "betul": true,
+     "jawapan": -1
+    },
+    {
+     "teks": "شورݢ اداله بالسن باݢي اورڠ يڠ کافر.",
+     "rumi": "Syurga ialah balasan bagi orang yang kafir.",
+     "betul": false,
+     "jawapan": -1
+    },
+    {
+     "teks": "کليمة شهادة دأوچڤکن کتيک ماسوق اسلام.",
+     "rumi": "Kalimah syahadah diucapkan ketika masuk Islam.",
+     "betul": true,
+     "jawapan": -1
+    },
+    {
+     "teks": "شريک اداله ڤربواتن مڠساکن الله.",
+     "rumi": "Syirik ialah perbuatan mengesakan Allah.",
+     "betul": false,
+     "jawapan": -1
+    }
+   ],
+   "id": "akidah-a9"
+  },
+  {
+   "bahagian": "A",
+   "jenis": "betul_salah",
+   "soalan": "تنداکن (✓) ڤد ڤرپاتاءن يڠ بتول دان (✗) ڤد ڤرپاتاءن يڠ ساله.",
+   "rumi": "Tandakan (✓) pada pernyataan yang betul dan (✗) pada pernyataan yang salah.",
+   "markah": 4,
+   "item": [
+    {
+     "teks": "بردعاء برمقصود مموهون کڤد الله.",
+     "rumi": "Berdoa bermaksud memohon kepada Allah.",
+     "betul": true,
+     "jawapan": -1
+    },
+    {
+     "teks": "کيت ممباچ بسم الله سبلوم ماکن.",
+     "rumi": "Kita membaca Bismillah sebelum makan.",
+     "betul": true,
+     "jawapan": -1
+    },
+    {
+     "teks": "ذکر برمقصود ملوڤاکن الله.",
+     "rumi": "Zikir bermaksud melupakan Allah.",
+     "betul": false,
+     "jawapan": -1
+    },
+    {
+     "teks": "کيت بوليه برزکير دالم مسجيد سهاج.",
+     "rumi": "Kita boleh berzikir di dalam masjid sahaja.",
+     "betul": false,
+     "jawapan": -1
+    }
+   ],
+   "id": "akidah-a10"
+  },
+  {
+   "bahagian": "A",
+   "jenis": "tempat_kosong",
+   "soalan": "ايسي تمڤت کوسوڠ دڠن ڤرکاتاءن يڠ دبري.",
+   "rumi": "Isi tempat kosong dengan perkataan yang diberi.",
+   "markah": 4,
+   "bank": [
+    "الله",
+    "محمد",
+    "شهادة",
+    "دوا"
+   ],
+   "bankRumi": [
+    "Allah",
+    "Muhammad",
+    "syahadah",
+    "dua"
+   ],
+   "item": [
+    {
+     "teks": "ماءنا «لا إله إلا الله» اياله تياد توهن ملاينکن ____.",
+     "rumi": "Maksud «La ilaha illallah» ialah tiada Tuhan melainkan ____.",
+     "jawapan": -1
+    },
+    {
+     "teks": "ماءنا «محمد رسول الله» اياله نبي ____ ڤسوروه الله.",
+     "rumi": "Maksud «Muhammadur Rasulullah» ialah Nabi ____ pesuruh Allah.",
+     "jawapan": -1
+    },
+    {
+     "teks": "کليمة ____ دأوچڤکن کتيک ماسوق اسلام.",
+     "rumi": "Kalimah ____ diucapkan ketika masuk Islam.",
+     "jawapan": -1
+    },
+    {
+     "teks": "کليمة شهادة مڠاندوڠي ____ بهاݢين.",
+     "rumi": "Kalimah syahadah mengandungi ____ bahagian.",
+     "jawapan": -1
+    }
+   ],
+   "id": "akidah-a11"
+  },
+  {
+   "bahagian": "A",
+   "jenis": "tempat_kosong",
+   "soalan": "ايسي تمڤت کوسوڠ دڠن ڤرکاتاءن يڠ دبري.",
+   "rumi": "Isi tempat kosong dengan perkataan yang diberi.",
+   "markah": 5,
+   "bank": [
+    "موسى",
+    "إنجيل",
+    "القرءان",
+    "جبريل",
+    "محمد"
+   ],
+   "bankRumi": [
+    "Musa",
+    "Injil",
+    "Al-Quran",
+    "Jibril",
+    "Muhammad"
+   ],
+   "item": [
+    {
+     "teks": "کتاب توراة دتورونکن کڤد نبي ____.",
+     "rumi": "Kitab Taurat diturunkan kepada Nabi ____.",
+     "jawapan": -1
+    },
+    {
+     "teks": "کتاب ____ دتورونکن کڤد نبي عيسى.",
+     "rumi": "Kitab ____ diturunkan kepada Nabi Isa.",
+     "jawapan": -1
+    },
+    {
+     "teks": "کتاب ____ دتورونکن کڤد نبي محمد.",
+     "rumi": "Kitab ____ diturunkan kepada Nabi Muhammad.",
+     "jawapan": -1
+    },
+    {
+     "teks": "ملايکة ____ برتوݢس مڠمباکن وهيو.",
+     "rumi": "Malaikat ____ bertugas menyampaikan wahyu.",
+     "jawapan": -1
+    },
+    {
+     "teks": "نبي ____ اداله نبي يڠ منريم کتاب القرءان.",
+     "rumi": "Nabi ____ ialah nabi yang menerima kitab Al-Quran.",
+     "jawapan": -1
+    }
+   ],
+   "id": "akidah-a12"
+  },
+  {
+   "bahagian": "A",
+   "jenis": "tempat_kosong",
+   "soalan": "ايسي تمڤت کوسوڠ دڠن ڤرکاتاءن يڠ دبري.",
+   "rumi": "Isi tempat kosong dengan perkataan yang diberi.",
+   "markah": 6,
+   "bank": [
+    "علم",
+    "سمع",
+    "بصر",
+    "قدرة",
+    "حياة",
+    "وجود"
+   ],
+   "bankRumi": [
+    "Ilmu",
+    "Sama'",
+    "Basar",
+    "Qudrat",
+    "Hayat",
+    "Wujud"
+   ],
+   "item": [
+    {
+     "teks": "صيفت ____ برمقصود الله مها مڠتاهوءي.",
+     "rumi": "Sifat ____ bermaksud Allah Maha Mengetahui.",
+     "jawapan": -1
+    },
+    {
+     "teks": "صيفت ____ برمقصود الله مها مندڠر.",
+     "rumi": "Sifat ____ bermaksud Allah Maha Mendengar.",
+     "jawapan": -1
+    },
+    {
+     "teks": "صيفت ____ برمقصود الله مها مليهت.",
+     "rumi": "Sifat ____ bermaksud Allah Maha Melihat.",
+     "jawapan": -1
+    },
+    {
+     "teks": "صيفت ____ برمقصود الله مها برکواس.",
+     "rumi": "Sifat ____ bermaksud Allah Maha Berkuasa.",
+     "jawapan": -1
+    },
+    {
+     "teks": "صيفت ____ برمقصود الله مها هيدوڤ.",
+     "rumi": "Sifat ____ bermaksud Allah Maha Hidup.",
+     "jawapan": -1
+    },
+    {
+     "teks": "صيفت ____ برمقصود الله سنتياس اد.",
+     "rumi": "Sifat ____ bermaksud Allah sentiasa ada.",
+     "jawapan": -1
+    }
+   ],
+   "id": "akidah-a13"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "ببراڤکه رکن ايمان؟",
+   "rumi": "Berapakah rukun iman?",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "ليما",
+       "rumi": "Lima"
+      },
+      {
+       "teks": "امڤت",
+       "rumi": "Empat"
+      },
+      {
+       "teks": "انم",
+       "rumi": "Enam"
+      },
+      {
+       "teks": "تيݢ",
+       "rumi": "Tiga"
+      }
+     ],
+     "jawapan": 2
+    }
+   ],
+   "id": "akidah-b1"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "اڤاکه رکن ايمان يڠ ڤرتام؟",
+   "rumi": "Apakah rukun iman yang pertama?",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "ايمان کڤد الله",
+       "rumi": "Iman kepada Allah"
+      },
+      {
+       "teks": "ايمان کڤد ملائكة",
+       "rumi": "Iman kepada malaikat"
+      },
+      {
+       "teks": "ايمان کڤد کتاب",
+       "rumi": "Iman kepada kitab"
+      },
+      {
+       "teks": "ايمان کڤد رسول",
+       "rumi": "Iman kepada rasul"
+      }
+     ],
+     "jawapan": 0
+    }
+   ],
+   "id": "akidah-b2"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "ايمان کڤد قضاء دان قدر اداله رکن ايمان يڠ ______.",
+   "rumi": "Iman kepada qada dan qadar ialah rukun iman yang ______.",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "کدو",
+       "rumi": "kedua"
+      },
+      {
+       "teks": "کتيݢ",
+       "rumi": "ketiga"
+      },
+      {
+       "teks": "کليما",
+       "rumi": "kelima"
+      },
+      {
+       "teks": "کانم",
+       "rumi": "keenam"
+      }
+     ],
+     "jawapan": 3
+    }
+   ],
+   "id": "akidah-b3"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "ملايکة دچيڤتا اوليه الله درڤد ______.",
+   "rumi": "Malaikat dicipta oleh Allah daripada ______.",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "تانه",
+       "rumi": "tanah"
+      },
+      {
+       "teks": "چهاي",
+       "rumi": "cahaya"
+      },
+      {
+       "teks": "اير",
+       "rumi": "air"
+      },
+      {
+       "teks": "اڠين",
+       "rumi": "angin"
+      }
+     ],
+     "jawapan": 1
+    }
+   ],
+   "id": "akidah-b4"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "ايمان کڤد ملايکة اداله رکن ايمان يڠ ک ______.",
+   "rumi": "Iman kepada malaikat ialah rukun iman yang ke-______.",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "تيݢ",
+       "rumi": "tiga"
+      },
+      {
+       "teks": "امڤت",
+       "rumi": "empat"
+      },
+      {
+       "teks": "دوا",
+       "rumi": "dua"
+      },
+      {
+       "teks": "ليما",
+       "rumi": "lima"
+      }
+     ],
+     "jawapan": 2
+    }
+   ],
+   "id": "akidah-b5"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "کليمة شهادة مڠاندوڠي ببراڤ کليمة؟",
+   "rumi": "Kalimah syahadah mengandungi berapa kalimah?",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "امڤت",
+       "rumi": "empat"
+      },
+      {
+       "teks": "ليما",
+       "rumi": "lima"
+      },
+      {
+       "teks": "تيݢ",
+       "rumi": "tiga"
+      },
+      {
+       "teks": "دوا",
+       "rumi": "dua"
+      }
+     ],
+     "jawapan": 3
+    }
+   ],
+   "id": "akidah-b6"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "اڤاکه ماءنا «أشهد أن لا إله إلا الله»؟",
+   "rumi": "Apakah maksud «Asyhadu an la ilaha illallah»?",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "تياد توهن ملاينکن الله",
+       "rumi": "tiada Tuhan melainkan Allah"
+      },
+      {
+       "teks": "نبي محمد ڤسوروه الله",
+       "rumi": "Nabi Muhammad pesuruh Allah"
+      },
+      {
+       "teks": "الله مها بسر",
+       "rumi": "Allah Maha Besar"
+      },
+      {
+       "teks": "سݢالا ڤوجي باݢي الله",
+       "rumi": "segala puji bagi Allah"
+      }
+     ],
+     "jawapan": 0
+    }
+   ],
+   "id": "akidah-b7"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "اڤاکه ماءنا «أشهد أن محمدا رسول الله»؟",
+   "rumi": "Apakah maksud «Asyhadu anna Muhammadar Rasulullah»?",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "تياد توهن ملاينکن الله",
+       "rumi": "tiada Tuhan melainkan Allah"
+      },
+      {
+       "teks": "نبي محمد ڤسوروه الله",
+       "rumi": "Nabi Muhammad pesuruh Allah"
+      },
+      {
+       "teks": "الله مها مڠتاهوءي",
+       "rumi": "Allah Maha Mengetahui"
+      },
+      {
+       "teks": "الله مها مليهت",
+       "rumi": "Allah Maha Melihat"
+      }
+     ],
+     "jawapan": 1
+    }
+   ],
+   "id": "akidah-b8"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "اورڠ يڠ هندق ماسوق اسلام واجب مڠوچڤکن ______.",
+   "rumi": "Orang yang hendak masuk Islam wajib mengucapkan ______.",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "الحمد لله",
+       "rumi": "Alhamdulillah"
+      },
+      {
+       "teks": "الله أكبر",
+       "rumi": "Allahu Akbar"
+      },
+      {
+       "teks": "سبحان الله",
+       "rumi": "Subhanallah"
+      },
+      {
+       "teks": "کليمة شهادة",
+       "rumi": "kalimah syahadah"
+      }
+     ],
+     "jawapan": 3
+    }
+   ],
+   "id": "akidah-b9"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "ملايکة جبريل برتوݢس ______.",
+   "rumi": "Malaikat Jibril bertugas ______.",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "ممبهاݢي رزقي",
+       "rumi": "membahagi rezeki"
+      },
+      {
+       "teks": "منيوڤ سڠکاکال",
+       "rumi": "meniup sangkakala"
+      },
+      {
+       "teks": "مڠمباکن وهيو",
+       "rumi": "menyampaikan wahyu"
+      },
+      {
+       "teks": "منچابوت ڽاوا",
+       "rumi": "mencabut nyawa"
+      }
+     ],
+     "jawapan": 2
+    }
+   ],
+   "id": "akidah-b10"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "ملايکة ميكائيل برتوݢس ______.",
+   "rumi": "Malaikat Mikail bertugas ______.",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "ممبهاݢي رزقي",
+       "rumi": "membahagi rezeki"
+      },
+      {
+       "teks": "مڠمباکن وهيو",
+       "rumi": "menyampaikan wahyu"
+      },
+      {
+       "teks": "منچتت عملن",
+       "rumi": "mencatat amalan"
+      },
+      {
+       "teks": "منجاݢ نراک",
+       "rumi": "menjaga neraka"
+      }
+     ],
+     "jawapan": 0
+    }
+   ],
+   "id": "akidah-b11"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "ملايکة إسرافيل برتوݢس ______.",
+   "rumi": "Malaikat Israfil bertugas ______.",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "منچابوت ڽاوا",
+       "rumi": "mencabut nyawa"
+      },
+      {
+       "teks": "منيوڤ سڠکاکال",
+       "rumi": "meniup sangkakala"
+      },
+      {
+       "teks": "ممبهاݢي رزقي",
+       "rumi": "membahagi rezeki"
+      },
+      {
+       "teks": "مڽوال دالم قبر",
+       "rumi": "menyoal di dalam kubur"
+      }
+     ],
+     "jawapan": 1
+    }
+   ],
+   "id": "akidah-b12"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "ملايکة عزرائيل برتوݢس ______.",
+   "rumi": "Malaikat Izrail bertugas ______.",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "منيوڤ سڠکاکال",
+       "rumi": "meniup sangkakala"
+      },
+      {
+       "teks": "مڠمباکن وهيو",
+       "rumi": "menyampaikan wahyu"
+      },
+      {
+       "teks": "منجاݢ شورݢ",
+       "rumi": "menjaga syurga"
+      },
+      {
+       "teks": "منچابوت ڽاوا",
+       "rumi": "mencabut nyawa"
+      }
+     ],
+     "jawapan": 3
+    }
+   ],
+   "id": "akidah-b13"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "ملايکة مالك منجاݢ ______.",
+   "rumi": "Malaikat Malik menjaga ______.",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "ڤينتو شورݢ",
+       "rumi": "pintu syurga"
+      },
+      {
+       "teks": "عالم قبر",
+       "rumi": "alam kubur"
+      },
+      {
+       "teks": "ڤينتو نراک",
+       "rumi": "pintu neraka"
+      },
+      {
+       "teks": "لڠيت",
+       "rumi": "langit"
+      }
+     ],
+     "jawapan": 2
+    }
+   ],
+   "id": "akidah-b14"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "ملايکة رضوان منجاݢ ______.",
+   "rumi": "Malaikat Ridzuan menjaga ______.",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "ڤينتو نراک",
+       "rumi": "pintu neraka"
+      },
+      {
+       "teks": "ڤينتو شورݢ",
+       "rumi": "pintu syurga"
+      },
+      {
+       "teks": "لڠيت",
+       "rumi": "langit"
+      },
+      {
+       "teks": "قبر",
+       "rumi": "kubur"
+      }
+     ],
+     "jawapan": 1
+    }
+   ],
+   "id": "akidah-b15"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "ملايکة راقيب برتوݢس ______.",
+   "rumi": "Malaikat Raqib bertugas ______.",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "منچتت عملن بائيک",
+       "rumi": "mencatat amalan baik"
+      },
+      {
+       "teks": "منچتت عملن جاهت",
+       "rumi": "mencatat amalan jahat"
+      },
+      {
+       "teks": "مڽوال دالم قبر",
+       "rumi": "menyoal di dalam kubur"
+      },
+      {
+       "teks": "منچابوت ڽاوا",
+       "rumi": "mencabut nyawa"
+      }
+     ],
+     "jawapan": 0
+    }
+   ],
+   "id": "akidah-b16"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "ملايکة عتيد برتوݢس ______.",
+   "rumi": "Malaikat Atid bertugas ______.",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "منچتت عملن بائيک",
+       "rumi": "mencatat amalan baik"
+      },
+      {
+       "teks": "ممبهاݢي رزقي",
+       "rumi": "membahagi rezeki"
+      },
+      {
+       "teks": "منچتت عملن جاهت",
+       "rumi": "mencatat amalan jahat"
+      },
+      {
+       "teks": "منيوڤ سڠکاکال",
+       "rumi": "meniup sangkakala"
+      }
+     ],
+     "jawapan": 2
+    }
+   ],
+   "id": "akidah-b17"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "ملايکة منكر دان نكير برتوݢس ______.",
+   "rumi": "Malaikat Munkar dan Nakir bertugas ______.",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "منچتت عملن",
+       "rumi": "mencatat amalan"
+      },
+      {
+       "teks": "منجاݢ شورݢ",
+       "rumi": "menjaga syurga"
+      },
+      {
+       "teks": "منچابوت ڽاوا",
+       "rumi": "mencabut nyawa"
+      },
+      {
+       "teks": "مڽوال ماءنسي دالم قبر",
+       "rumi": "menyoal manusia di dalam kubur"
+      }
+     ],
+     "jawapan": 3
+    }
+   ],
+   "id": "akidah-b18"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "انتارا برايكوت، يڠ ماناکه بتول تنتڠ ملايکة؟",
+   "rumi": "Antara berikut, yang manakah betul tentang malaikat?",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "ملايکة ماکن دان مينوم",
+       "rumi": "Malaikat makan dan minum"
+      },
+      {
+       "teks": "ملايکة سنتياس طاعة کڤد الله",
+       "rumi": "Malaikat sentiasa taat kepada Allah"
+      },
+      {
+       "teks": "ملايکة برکاهوين",
+       "rumi": "Malaikat berkahwin"
+      },
+      {
+       "teks": "ملايکة ماتي کتيک توا",
+       "rumi": "Malaikat mati ketika tua"
+      }
+     ],
+     "jawapan": 1
+    }
+   ],
+   "id": "akidah-b19"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "ببراڤکه کتاب يڠ واجب کيت کتاهوءي؟",
+   "rumi": "Berapakah kitab yang wajib kita ketahui?",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "امڤت",
+       "rumi": "empat"
+      },
+      {
+       "teks": "تيݢ",
+       "rumi": "tiga"
+      },
+      {
+       "teks": "دوا",
+       "rumi": "dua"
+      },
+      {
+       "teks": "ليما",
+       "rumi": "lima"
+      }
+     ],
+     "jawapan": 0
+    }
+   ],
+   "id": "akidah-b20"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "کتاب توراة دتورونکن کڤد ______.",
+   "rumi": "Kitab Taurat diturunkan kepada ______.",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "نبي عيسى",
+       "rumi": "Nabi Isa"
+      },
+      {
+       "teks": "نبي داود",
+       "rumi": "Nabi Daud"
+      },
+      {
+       "teks": "نبي محمد",
+       "rumi": "Nabi Muhammad"
+      },
+      {
+       "teks": "نبي موسى",
+       "rumi": "Nabi Musa"
+      }
+     ],
+     "jawapan": 3
+    }
+   ],
+   "id": "akidah-b21"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "کتاب زبور دتورونکن کڤد ______.",
+   "rumi": "Kitab Zabur diturunkan kepada ______.",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "نبي داود",
+       "rumi": "Nabi Daud"
+      },
+      {
+       "teks": "نبي موسى",
+       "rumi": "Nabi Musa"
+      },
+      {
+       "teks": "نبي عيسى",
+       "rumi": "Nabi Isa"
+      },
+      {
+       "teks": "نبي نوح",
+       "rumi": "Nabi Nuh"
+      }
+     ],
+     "jawapan": 0
+    }
+   ],
+   "id": "akidah-b22"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "کتاب إنجيل دتورونکن کڤد ______.",
+   "rumi": "Kitab Injil diturunkan kepada ______.",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "نبي موسى",
+       "rumi": "Nabi Musa"
+      },
+      {
+       "teks": "نبي محمد",
+       "rumi": "Nabi Muhammad"
+      },
+      {
+       "teks": "نبي عيسى",
+       "rumi": "Nabi Isa"
+      },
+      {
+       "teks": "نبي داود",
+       "rumi": "Nabi Daud"
+      }
+     ],
+     "jawapan": 2
+    }
+   ],
+   "id": "akidah-b23"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "کتاب القرءان دتورونکن کڤد ______.",
+   "rumi": "Kitab Al-Quran diturunkan kepada ______.",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "نبي إبراهيم",
+       "rumi": "Nabi Ibrahim"
+      },
+      {
+       "teks": "نبي محمد",
+       "rumi": "Nabi Muhammad"
+      },
+      {
+       "teks": "نبي عيسى",
+       "rumi": "Nabi Isa"
+      },
+      {
+       "teks": "نبي داود",
+       "rumi": "Nabi Daud"
+      }
+     ],
+     "jawapan": 1
+    }
+   ],
+   "id": "akidah-b24"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "کتاب يڠ ڤاليڠ اخير اداله ______.",
+   "rumi": "Kitab yang paling akhir ialah ______.",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "إنجيل",
+       "rumi": "Injil"
+      },
+      {
+       "teks": "زبور",
+       "rumi": "Zabur"
+      },
+      {
+       "teks": "القرءان",
+       "rumi": "Al-Quran"
+      },
+      {
+       "teks": "توراة",
+       "rumi": "Taurat"
+      }
+     ],
+     "jawapan": 2
+    }
+   ],
+   "id": "akidah-b25"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "اڤاکه ماءنا «قل هو الله أحد»؟",
+   "rumi": "Apakah maksud «Qul huwallahu ahad»?",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "الله مها اسا",
+       "rumi": "Allah Maha Esa"
+      },
+      {
+       "teks": "الله مها بسر",
+       "rumi": "Allah Maha Besar"
+      },
+      {
+       "teks": "الله مها ڤڠمڤون",
+       "rumi": "Allah Maha Pengampun"
+      },
+      {
+       "teks": "الله مها مڠتاهوءي",
+       "rumi": "Allah Maha Mengetahui"
+      }
+     ],
+     "jawapan": 0
+    }
+   ],
+   "id": "akidah-b26"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "ببراڤکه بيلاڠن رسول يڠ واجب کيت کتاهوءي؟",
+   "rumi": "Berapakah bilangan rasul yang wajib kita ketahui?",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "سڤولوه",
+       "rumi": "sepuluh"
+      },
+      {
+       "teks": "دوا ڤولوه ليما",
+       "rumi": "dua puluh lima"
+      },
+      {
+       "teks": "ليما",
+       "rumi": "lima"
+      },
+      {
+       "teks": "امڤت ڤولوه",
+       "rumi": "empat puluh"
+      }
+     ],
+     "jawapan": 1
+    }
+   ],
+   "id": "akidah-b27"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "رسول يڠ ڤرتام اياله ______.",
+   "rumi": "Rasul yang pertama ialah ______.",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "نبي نوح",
+       "rumi": "Nabi Nuh"
+      },
+      {
+       "teks": "نبي إبراهيم",
+       "rumi": "Nabi Ibrahim"
+      },
+      {
+       "teks": "نبي عيسى",
+       "rumi": "Nabi Isa"
+      },
+      {
+       "teks": "نبي آدم",
+       "rumi": "Nabi Adam"
+      }
+     ],
+     "jawapan": 3
+    }
+   ],
+   "id": "akidah-b28"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "رسول يڠ ترواخير اياله ______.",
+   "rumi": "Rasul yang terakhir ialah ______.",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "نبي محمد",
+       "rumi": "Nabi Muhammad"
+      },
+      {
+       "teks": "نبي عيسى",
+       "rumi": "Nabi Isa"
+      },
+      {
+       "teks": "نبي موسى",
+       "rumi": "Nabi Musa"
+      },
+      {
+       "teks": "نبي إبراهيم",
+       "rumi": "Nabi Ibrahim"
+      }
+     ],
+     "jawapan": 0
+    }
+   ],
+   "id": "akidah-b29"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "صيفت واجب رسول يڠ برمقصود «بنر» اياله ______.",
+   "rumi": "Sifat wajib rasul yang bermaksud «benar» ialah ______.",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "أمانة",
+       "rumi": "Amanah"
+      },
+      {
+       "teks": "تبليغ",
+       "rumi": "Tabligh"
+      },
+      {
+       "teks": "صدق",
+       "rumi": "Siddiq"
+      },
+      {
+       "teks": "فطانة",
+       "rumi": "Fatanah"
+      }
+     ],
+     "jawapan": 2
+    }
+   ],
+   "id": "akidah-b30"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "صيفت واجب رسول يڠ برمقصود «بوليه ڤرچاي» اياله ______.",
+   "rumi": "Sifat wajib rasul yang bermaksud «boleh dipercayai» ialah ______.",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "صدق",
+       "rumi": "Siddiq"
+      },
+      {
+       "teks": "تبليغ",
+       "rumi": "Tabligh"
+      },
+      {
+       "teks": "فطانة",
+       "rumi": "Fatanah"
+      },
+      {
+       "teks": "أمانة",
+       "rumi": "Amanah"
+      }
+     ],
+     "jawapan": 3
+    }
+   ],
+   "id": "akidah-b31"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "صيفت واجب رسول يڠ برمقصود «مڠمباکن» اياله ______.",
+   "rumi": "Sifat wajib rasul yang bermaksud «menyampaikan» ialah ______.",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "صدق",
+       "rumi": "Siddiq"
+      },
+      {
+       "teks": "تبليغ",
+       "rumi": "Tabligh"
+      },
+      {
+       "teks": "أمانة",
+       "rumi": "Amanah"
+      },
+      {
+       "teks": "فطانة",
+       "rumi": "Fatanah"
+      }
+     ],
+     "jawapan": 1
+    }
+   ],
+   "id": "akidah-b32"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "صيفت واجب رسول يڠ برمقصود «چرديک» اياله ______.",
+   "rumi": "Sifat wajib rasul yang bermaksud «cerdik» ialah ______.",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "فطانة",
+       "rumi": "Fatanah"
+      },
+      {
+       "teks": "صدق",
+       "rumi": "Siddiq"
+      },
+      {
+       "teks": "أمانة",
+       "rumi": "Amanah"
+      },
+      {
+       "teks": "تبليغ",
+       "rumi": "Tabligh"
+      }
+     ],
+     "jawapan": 0
+    }
+   ],
+   "id": "akidah-b33"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "صيفت مستحيل رسول يڠ برمقصود «دوستا» اياله ______.",
+   "rumi": "Sifat mustahil rasul yang bermaksud «dusta» ialah ______.",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "خيانة",
+       "rumi": "Khianat"
+      },
+      {
+       "teks": "کتمان",
+       "rumi": "Kitman"
+      },
+      {
+       "teks": "بلادة",
+       "rumi": "Baladah"
+      },
+      {
+       "teks": "کذب",
+       "rumi": "Kizb"
+      }
+     ],
+     "jawapan": 3
+    }
+   ],
+   "id": "akidah-b34"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "صيفت مستحيل رسول يڠ برمقصود «مڠکيانتي» اياله ______.",
+   "rumi": "Sifat mustahil rasul yang bermaksud «mengkhianati» ialah ______.",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "کذب",
+       "rumi": "Kizb"
+      },
+      {
+       "teks": "کتمان",
+       "rumi": "Kitman"
+      },
+      {
+       "teks": "خيانة",
+       "rumi": "Khianat"
+      },
+      {
+       "teks": "بلادة",
+       "rumi": "Baladah"
+      }
+     ],
+     "jawapan": 2
+    }
+   ],
+   "id": "akidah-b35"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "صيفت مستحيل رسول يڠ برمقصود «مڽمبونييکن» اياله ______.",
+   "rumi": "Sifat mustahil rasul yang bermaksud «menyembunyikan» ialah ______.",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "کذب",
+       "rumi": "Kizb"
+      },
+      {
+       "teks": "کتمان",
+       "rumi": "Kitman"
+      },
+      {
+       "teks": "خيانة",
+       "rumi": "Khianat"
+      },
+      {
+       "teks": "بلادة",
+       "rumi": "Baladah"
+      }
+     ],
+     "jawapan": 1
+    }
+   ],
+   "id": "akidah-b36"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "صيفت مستحيل رسول يڠ برمقصود «بودوه» اياله ______.",
+   "rumi": "Sifat mustahil rasul yang bermaksud «bodoh» ialah ______.",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "کذب",
+       "rumi": "Kizb"
+      },
+      {
+       "teks": "خيانة",
+       "rumi": "Khianat"
+      },
+      {
+       "teks": "کتمان",
+       "rumi": "Kitman"
+      },
+      {
+       "teks": "بلادة",
+       "rumi": "Baladah"
+      }
+     ],
+     "jawapan": 3
+    }
+   ],
+   "id": "akidah-b37"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "صيفت واجب الله «وجود» برمقصود ______.",
+   "rumi": "Sifat wajib Allah «wujud» bermaksud ______.",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "اد",
+       "rumi": "ada"
+      },
+      {
+       "teks": "ککال",
+       "rumi": "kekal"
+      },
+      {
+       "teks": "هيدوڤ",
+       "rumi": "hidup"
+      },
+      {
+       "teks": "مندڠر",
+       "rumi": "mendengar"
+      }
+     ],
+     "jawapan": 0
+    }
+   ],
+   "id": "akidah-b38"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "صيفت واجب الله «قديم» برمقصود ______.",
+   "rumi": "Sifat wajib Allah «qidam» bermaksud ______.",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "اد",
+       "rumi": "ada"
+      },
+      {
+       "teks": "ککال",
+       "rumi": "kekal"
+      },
+      {
+       "teks": "سديا اد تيدا ڤرمولاءن",
+       "rumi": "sedia ada, tiada permulaan"
+      },
+      {
+       "teks": "برديري سنديري",
+       "rumi": "berdiri sendiri"
+      }
+     ],
+     "jawapan": 2
+    }
+   ],
+   "id": "akidah-b39"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "صيفت واجب الله «بقاء» برمقصود ______.",
+   "rumi": "Sifat wajib Allah «baqa» bermaksud ______.",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "اد",
+       "rumi": "ada"
+      },
+      {
+       "teks": "ککال",
+       "rumi": "kekal"
+      },
+      {
+       "teks": "هيدوڤ",
+       "rumi": "hidup"
+      },
+      {
+       "teks": "اسا",
+       "rumi": "esa"
+      }
+     ],
+     "jawapan": 1
+    }
+   ],
+   "id": "akidah-b40"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "صيفت واجب الله «مخالفة للحوادث» برمقصود ______.",
+   "rumi": "Sifat wajib Allah «mukhalafatu lil hawadisi» bermaksud ______.",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "تيدق سام دڠن مخلوق",
+       "rumi": "tidak sama dengan makhluk"
+      },
+      {
+       "teks": "برديري سنديري",
+       "rumi": "berdiri sendiri"
+      },
+      {
+       "teks": "اسا",
+       "rumi": "esa"
+      },
+      {
+       "teks": "مڠتاهوءي",
+       "rumi": "mengetahui"
+      }
+     ],
+     "jawapan": 0
+    }
+   ],
+   "id": "akidah-b41"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "صيفت واجب الله «قيامه بنفسه» برمقصود ______.",
+   "rumi": "Sifat wajib Allah «qiyamuhu binafsihi» bermaksud ______.",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "اد",
+       "rumi": "ada"
+      },
+      {
+       "teks": "اسا",
+       "rumi": "esa"
+      },
+      {
+       "teks": "ککال",
+       "rumi": "kekal"
+      },
+      {
+       "teks": "برديري سنديري",
+       "rumi": "berdiri sendiri"
+      }
+     ],
+     "jawapan": 3
+    }
+   ],
+   "id": "akidah-b42"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "صيفت واجب الله «وحدانية» برمقصود ______.",
+   "rumi": "Sifat wajib Allah «wahdaniyah» bermaksud ______.",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "اد",
+       "rumi": "ada"
+      },
+      {
+       "teks": "اسا",
+       "rumi": "esa"
+      },
+      {
+       "teks": "هيدوڤ",
+       "rumi": "hidup"
+      },
+      {
+       "teks": "مليهت",
+       "rumi": "melihat"
+      }
+     ],
+     "jawapan": 1
+    }
+   ],
+   "id": "akidah-b43"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "صيفت واجب الله «قدرة» برمقصود ______.",
+   "rumi": "Sifat wajib Allah «qudrat» bermaksud ______.",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "مڠتاهوءي",
+       "rumi": "mengetahui"
+      },
+      {
+       "teks": "مندڠر",
+       "rumi": "mendengar"
+      },
+      {
+       "teks": "برکواس",
+       "rumi": "berkuasa"
+      },
+      {
+       "teks": "برکات",
+       "rumi": "berkata"
+      }
+     ],
+     "jawapan": 2
+    }
+   ],
+   "id": "akidah-b44"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "صيفت واجب الله «إرادة» برمقصود ______.",
+   "rumi": "Sifat wajib Allah «iradat» bermaksud ______.",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "برکأندهق",
+       "rumi": "berkehendak"
+      },
+      {
+       "teks": "برکواس",
+       "rumi": "berkuasa"
+      },
+      {
+       "teks": "هيدوڤ",
+       "rumi": "hidup"
+      },
+      {
+       "teks": "مڠتاهوءي",
+       "rumi": "mengetahui"
+      }
+     ],
+     "jawapan": 0
+    }
+   ],
+   "id": "akidah-b45"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "صيفت واجب الله «علم» برمقصود ______.",
+   "rumi": "Sifat wajib Allah «ilmu» bermaksud ______.",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "مندڠر",
+       "rumi": "mendengar"
+      },
+      {
+       "teks": "مليهت",
+       "rumi": "melihat"
+      },
+      {
+       "teks": "مڠتاهوءي",
+       "rumi": "mengetahui"
+      },
+      {
+       "teks": "هيدوڤ",
+       "rumi": "hidup"
+      }
+     ],
+     "jawapan": 2
+    }
+   ],
+   "id": "akidah-b46"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "صيفت واجب الله «حياة» برمقصود ______.",
+   "rumi": "Sifat wajib Allah «hayat» bermaksud ______.",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "اد",
+       "rumi": "ada"
+      },
+      {
+       "teks": "ککال",
+       "rumi": "kekal"
+      },
+      {
+       "teks": "اسا",
+       "rumi": "esa"
+      },
+      {
+       "teks": "هيدوڤ",
+       "rumi": "hidup"
+      }
+     ],
+     "jawapan": 3
+    }
+   ],
+   "id": "akidah-b47"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "صيفت واجب الله «سمع» برمقصود ______.",
+   "rumi": "Sifat wajib Allah «sama'» bermaksud ______.",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "مليهت",
+       "rumi": "melihat"
+      },
+      {
+       "teks": "مندڠر",
+       "rumi": "mendengar"
+      },
+      {
+       "teks": "مڠتاهوءي",
+       "rumi": "mengetahui"
+      },
+      {
+       "teks": "برکات",
+       "rumi": "berkata"
+      }
+     ],
+     "jawapan": 1
+    }
+   ],
+   "id": "akidah-b48"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "صيفت واجب الله «بصر» برمقصود ______.",
+   "rumi": "Sifat wajib Allah «basar» bermaksud ______.",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "مندڠر",
+       "rumi": "mendengar"
+      },
+      {
+       "teks": "مڠتاهوءي",
+       "rumi": "mengetahui"
+      },
+      {
+       "teks": "مليهت",
+       "rumi": "melihat"
+      },
+      {
+       "teks": "برکواس",
+       "rumi": "berkuasa"
+      }
+     ],
+     "jawapan": 2
+    }
+   ],
+   "id": "akidah-b49"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "صيفت واجب الله «كلام» برمقصود ______.",
+   "rumi": "Sifat wajib Allah «kalam» bermaksud ______.",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "برکات-کات",
+       "rumi": "berkata-kata"
+      },
+      {
+       "teks": "مندڠر",
+       "rumi": "mendengar"
+      },
+      {
+       "teks": "مليهت",
+       "rumi": "melihat"
+      },
+      {
+       "teks": "برکواس",
+       "rumi": "berkuasa"
+      }
+     ],
+     "jawapan": 0
+    }
+   ],
+   "id": "akidah-b50"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "صيفت مستحيل الله «جهل» برمقصود ______.",
+   "rumi": "Sifat mustahil Allah «jahl» bermaksud ______.",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "تيدا",
+       "rumi": "tiada"
+      },
+      {
+       "teks": "ماتي",
+       "rumi": "mati"
+      },
+      {
+       "teks": "لموه",
+       "rumi": "lemah"
+      },
+      {
+       "teks": "بودوه",
+       "rumi": "bodoh"
+      }
+     ],
+     "jawapan": 3
+    }
+   ],
+   "id": "akidah-b51"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "صيفت مستحيل الله «موت» برمقصود ______.",
+   "rumi": "Sifat mustahil Allah «maut» bermaksud ______.",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "تيدا",
+       "rumi": "tiada"
+      },
+      {
+       "teks": "ماتي",
+       "rumi": "mati"
+      },
+      {
+       "teks": "بودوه",
+       "rumi": "bodoh"
+      },
+      {
+       "teks": "لموه",
+       "rumi": "lemah"
+      }
+     ],
+     "jawapan": 1
+    }
+   ],
+   "id": "akidah-b52"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "صيفت مستحيل الله «عمى» برمقصود ______.",
+   "rumi": "Sifat mustahil Allah «ama» bermaksud ______.",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "تيدا مندڠر",
+       "rumi": "tidak mendengar"
+      },
+      {
+       "teks": "ماتي",
+       "rumi": "mati"
+      },
+      {
+       "teks": "تيدا مليهت",
+       "rumi": "tidak melihat"
+      },
+      {
+       "teks": "بودوه",
+       "rumi": "bodoh"
+      }
+     ],
+     "jawapan": 2
+    }
+   ],
+   "id": "akidah-b53"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "الرحمن برمقصود ______.",
+   "rumi": "Ar-Rahman bermaksud ______.",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "مها ڤڠمڤون",
+       "rumi": "Maha Pengampun"
+      },
+      {
+       "teks": "مها ڤموره",
+       "rumi": "Maha Pemurah"
+      },
+      {
+       "teks": "مها مڠتاهوءي",
+       "rumi": "Maha Mengetahui"
+      },
+      {
+       "teks": "مها مليهت",
+       "rumi": "Maha Melihat"
+      }
+     ],
+     "jawapan": 1
+    }
+   ],
+   "id": "akidah-b54"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "الرحيم برمقصود ______.",
+   "rumi": "Ar-Rahim bermaksud ______.",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "مها ڤڽايڠ",
+       "rumi": "Maha Penyayang"
+      },
+      {
+       "teks": "مها ڤموره",
+       "rumi": "Maha Pemurah"
+      },
+      {
+       "teks": "مها بسر",
+       "rumi": "Maha Besar"
+      },
+      {
+       "teks": "مها ڤڠمڤون",
+       "rumi": "Maha Pengampun"
+      }
+     ],
+     "jawapan": 0
+    }
+   ],
+   "id": "akidah-b55"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "العليم برمقصود ______.",
+   "rumi": "Al-Alim bermaksud ______.",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "مها مليهت",
+       "rumi": "Maha Melihat"
+      },
+      {
+       "teks": "مها ڤڠمڤون",
+       "rumi": "Maha Pengampun"
+      },
+      {
+       "teks": "مها ڤموره",
+       "rumi": "Maha Pemurah"
+      },
+      {
+       "teks": "مها مڠتاهوءي",
+       "rumi": "Maha Mengetahui"
+      }
+     ],
+     "jawapan": 3
+    }
+   ],
+   "id": "akidah-b56"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "مڠساکن الله دالم ذات، صيفت دان ڤربواتن دڤڠݢيل ______.",
+   "rumi": "Mengesakan Allah dalam zat, sifat dan perbuatan dipanggil ______.",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "توحيد",
+       "rumi": "tauhid"
+      },
+      {
+       "teks": "شريک",
+       "rumi": "syirik"
+      },
+      {
+       "teks": "دعاء",
+       "rumi": "doa"
+      },
+      {
+       "teks": "ذکر",
+       "rumi": "zikir"
+      }
+     ],
+     "jawapan": 0
+    }
+   ],
+   "id": "akidah-b57"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "مڽکوتوکن الله دڠن سسواتو دڤڠݢيل ______.",
+   "rumi": "Menyekutukan Allah dengan sesuatu dipanggil ______.",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "توحيد",
+       "rumi": "tauhid"
+      },
+      {
+       "teks": "دعاء",
+       "rumi": "doa"
+      },
+      {
+       "teks": "شريک",
+       "rumi": "syirik"
+      },
+      {
+       "teks": "ذکر",
+       "rumi": "zikir"
+      }
+     ],
+     "jawapan": 2
+    }
+   ],
+   "id": "akidah-b58"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "اڤاکه نام عالم انتارا دنيا دان اخيرت؟",
+   "rumi": "Apakah nama alam antara dunia dan akhirat?",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "عالم دنيا",
+       "rumi": "alam dunia"
+      },
+      {
+       "teks": "عالم برزخ",
+       "rumi": "alam barzakh"
+      },
+      {
+       "teks": "عالم اخيرت",
+       "rumi": "alam akhirat"
+      },
+      {
+       "teks": "عالم شورݢ",
+       "rumi": "alam syurga"
+      }
+     ],
+     "jawapan": 1
+    }
+   ],
+   "id": "akidah-b59"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "هاري قيامة دڤڠݢيل جوݢ هاري ______.",
+   "rumi": "Hari kiamat dipanggil juga hari ______.",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "لاهير",
+       "rumi": "lahir"
+      },
+      {
+       "teks": "ڤرنکاهن",
+       "rumi": "pernikahan"
+      },
+      {
+       "teks": "راي عيد الفطري",
+       "rumi": "raya Aidilfitri"
+      },
+      {
+       "teks": "ڤمبالسن",
+       "rumi": "pembalasan"
+      }
+     ],
+     "jawapan": 3
+    }
+   ],
+   "id": "akidah-b60"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "کيت واجب براوسها کأمودين ______.",
+   "rumi": "Kita wajib berusaha kemudian ______.",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "ممڤرچايي ديري سنديري",
+       "rumi": "mempercayai diri sendiri"
+      },
+      {
+       "teks": "ڤوتوس أسا",
+       "rumi": "putus asa"
+      },
+      {
+       "teks": "برتوکل کڤد الله",
+       "rumi": "bertawakal kepada Allah"
+      },
+      {
+       "teks": "مڠڠکوه ديري",
+       "rumi": "mengangkuh diri"
+      }
+     ],
+     "jawapan": 2
+    }
+   ],
+   "id": "akidah-b61"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "ڤرچاي کڤد قضاء دان قدر اياله ڤرچاي بهاوا سݢالا کتتاڤن الله سأجق ______.",
+   "rumi": "Percaya kepada qada dan qadar ialah percaya bahawa segala ketetapan Allah sejak ______.",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "ازلي",
+       "rumi": "azali"
+      },
+      {
+       "teks": "سکأرڠ",
+       "rumi": "sekarang"
+      },
+      {
+       "teks": "هاري کيامة",
+       "rumi": "hari kiamat"
+      },
+      {
+       "teks": "سلفس ماتي",
+       "rumi": "selepas mati"
+      }
+     ],
+     "jawapan": 0
+    }
+   ],
+   "id": "akidah-b62"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "کليمة طيبة يڠ ڤاليڠ افضل اياله ______.",
+   "rumi": "Kalimah tayyibah yang paling afdal ialah ______.",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "سبحان الله",
+       "rumi": "Subhanallah"
+      },
+      {
+       "teks": "لا إله إلا الله",
+       "rumi": "La ilaha illallah"
+      },
+      {
+       "teks": "الحمد لله",
+       "rumi": "Alhamdulillah"
+      },
+      {
+       "teks": "الله أكبر",
+       "rumi": "Allahu Akbar"
+      }
+     ],
+     "jawapan": 1
+    }
+   ],
+   "id": "akidah-b63"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "ماءنا «الله أكبر» اياله ______.",
+   "rumi": "Maksud «Allahu Akbar» ialah ______.",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "سݢالا ڤوجي باݢي الله",
+       "rumi": "segala puji bagi Allah"
+      },
+      {
+       "teks": "مها سوچي الله",
+       "rumi": "Maha Suci Allah"
+      },
+      {
+       "teks": "تياد دايا دان اوفايا ملاينکن دڠن الله",
+       "rumi": "tiada daya dan upaya melainkan dengan Allah"
+      },
+      {
+       "teks": "الله مها بسر",
+       "rumi": "Allah Maha Besar"
+      }
+     ],
+     "jawapan": 3
+    }
+   ],
+   "id": "akidah-b64"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "سبلوم ماکن، کيت ممباچ ______.",
+   "rumi": "Sebelum makan, kita membaca ______.",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "الحمد لله",
+       "rumi": "Alhamdulillah"
+      },
+      {
+       "teks": "بسم الله",
+       "rumi": "Bismillah"
+      },
+      {
+       "teks": "الله أكبر",
+       "rumi": "Allahu Akbar"
+      },
+      {
+       "teks": "سبحان الله",
+       "rumi": "Subhanallah"
+      }
+     ],
+     "jawapan": 1
+    }
+   ],
+   "id": "akidah-b65"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "بردعاء برمقصود ______ کڤد الله.",
+   "rumi": "Berdoa bermaksud ______ kepada Allah.",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "ممبري",
+       "rumi": "memberi"
+      },
+      {
+       "teks": "مڠامبيل",
+       "rumi": "mengambil"
+      },
+      {
+       "teks": "مڠاجر",
+       "rumi": "mengajar"
+      },
+      {
+       "teks": "مموهون",
+       "rumi": "memohon"
+      }
+     ],
+     "jawapan": 3
+    }
+   ],
+   "id": "akidah-b66"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "ذکر برمقصود ______ الله.",
+   "rumi": "Zikir bermaksud ______ Allah.",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "ملالايکن",
+       "rumi": "melalaikan"
+      },
+      {
+       "teks": "ملوڤاکن",
+       "rumi": "melupakan"
+      },
+      {
+       "teks": "مڠيڠتي",
+       "rumi": "mengingati"
+      },
+      {
+       "teks": "مڠجاءوهي",
+       "rumi": "menjauhi"
+      }
+     ],
+     "jawapan": 2
+    }
+   ],
+   "id": "akidah-b67"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "بردعاء دان برزکير مڠداتڠکن ______ دالم هاتي.",
+   "rumi": "Berdoa dan berzikir mendatangkan ______ dalam hati.",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "کتنترمن",
+       "rumi": "ketenangan"
+      },
+      {
+       "teks": "کسلن",
+       "rumi": "kesedihan"
+      },
+      {
+       "teks": "کتاکوتن",
+       "rumi": "ketakutan"
+      },
+      {
+       "teks": "کبينچاءن",
+       "rumi": "kebencian"
+      }
+     ],
+     "jawapan": 0
+    }
+   ],
+   "id": "akidah-b68"
+  },
+  {
+   "bahagian": "C",
+   "jenis": "tulis",
+   "soalan": "سنارايکن اينم رکون ايمان.",
+   "rumi": "Senaraikan enam rukun iman.",
+   "markah": 6,
+   "idea": [
+    {
+     "maksud": "Iman kepada Allah",
+     "kata": [
+      "allah",
+      "الله",
+      "ايمان کفد الله",
+      "کفد الله"
+     ]
+    },
+    {
+     "maksud": "Iman kepada malaikat",
+     "kata": [
+      "malaikat",
+      "malak",
+      "ملائكة"
+     ]
+    },
+    {
+     "maksud": "Iman kepada kitab-kitab Allah",
+     "kata": [
+      "kitab",
+      "کتاب"
+     ]
+    },
+    {
+     "maksud": "Iman kepada rasul-rasul Allah",
+     "kata": [
+      "rasul",
+      "utusan",
+      "رسول",
+      "ايمان کفد رسول",
+      "کفد رسول"
+     ]
+    },
+    {
+     "maksud": "Iman kepada hari akhirat",
+     "kata": [
+      "akhirat",
+      "kiamat",
+      "qiamat",
+      "هاري",
+      "قيامة"
+     ]
+    },
+    {
+     "maksud": "Iman kepada qada dan qadar",
+     "kata": [
+      "qada",
+      "qadar",
+      "kadar",
+      "takdir",
+      "qadak",
+      "قضاء",
+      "قدر"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "ايمان کفد الله",
+    "ايمان کفد ملائكة",
+    "ايمان کفد کتاب",
+    "ايمان کفد رسول",
+    "ايمان کفد هاري قيامة",
+    "ايمان کفد قضاء دان قدر"
+   ],
+   "jawapanContohRumi": [
+    "Iman kepada Allah",
+    "Iman kepada malaikat",
+    "Iman kepada kitab",
+    "Iman kepada rasul",
+    "Iman kepada hari kiamat",
+    "Iman kepada qada dan qadar"
+   ],
+   "id": "akidah-c1"
+  },
+  {
+   "bahagian": "C",
+   "jenis": "tulis",
+   "soalan": "برايکن نام صيفت واجب باݢي الله يڠ برمقصود: (i) برکواس (ii) برکهندق (iii) مڠتاهوءي (iv) هيدوڤ (v) مندڠر (vi) مليهت (vii) برکات.",
+   "rumi": "Berikan nama sifat wajib bagi Allah yang bermaksud: (i) berkuasa (ii) berkehendak (iii) mengetahui (iv) hidup (v) mendengar (vi) melihat (vii) berkata.",
+   "markah": 7,
+   "idea": [
+    {
+     "maksud": "Qudrat - Maha Berkuasa",
+     "kata": [
+      "qudrat",
+      "kudrat",
+      "qudrah",
+      "qadirun",
+      "kadirun",
+      "قدرة"
+     ]
+    },
+    {
+     "maksud": "Iradat - Maha Berkehendak",
+     "kata": [
+      "iradat",
+      "iradah",
+      "إرادة"
+     ]
+    },
+    {
+     "maksud": "Ilmu - Maha Mengetahui",
+     "kata": [
+      "ilmu",
+      "alim",
+      "aliman",
+      "علم"
+     ]
+    },
+    {
+     "maksud": "Hayat - Maha Hidup",
+     "kata": [
+      "hayat",
+      "hayah",
+      "hayyun",
+      "حياة"
+     ]
+    },
+    {
+     "maksud": "Sama' - Maha Mendengar",
+     "kata": [
+      "sama",
+      "sami",
+      "samiun",
+      "سمع"
+     ]
+    },
+    {
+     "maksud": "Basar - Maha Melihat",
+     "kata": [
+      "basar",
+      "bashar",
+      "basirun",
+      "بصر"
+     ]
+    },
+    {
+     "maksud": "Kalam - Maha Berkata",
+     "kata": [
+      "kalam",
+      "mutakallimun",
+      "berkata",
+      "cakap",
+      "کلام"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "(i) قدرة",
+    "(ii) إرادة",
+    "(iii) علم",
+    "(iv) حياة",
+    "(v) سمع",
+    "(vi) بصر",
+    "(vii) کلام"
+   ],
+   "jawapanContohRumi": [
+    "(i) Qudrat",
+    "(ii) Iradat",
+    "(iii) Ilmu",
+    "(iv) Hayat",
+    "(v) Sama'",
+    "(vi) Basar",
+    "(vii) Kalam"
+   ],
+   "id": "akidah-c2"
+  },
+  {
+   "bahagian": "C",
+   "jenis": "huraian",
+   "soalan": "برايکن مکنا صيفت واجب باݢي الله يڠ برايکوت: قيدم، بقاء، وحدة، قيامه بنفسه دان مخالفة للحوادث.",
+   "rumi": "Berikan makna sifat wajib bagi Allah yang berikut: qidam, baqa, wahdaniah, qiamuhu binafsihi dan mukhollafatul lil hawadith.",
+   "markah": 5,
+   "idea": [
+    {
+     "maksud": "Qidam - sedia ada sejak azali, tiada permulaan",
+     "kata": [
+      "sedia",
+      "qidam",
+      "terdahulu",
+      "dahulu",
+      "awal",
+      "قيدم",
+      "سديا",
+      "ادا",
+      "سجق",
+      "ازلي",
+      "ڤرمولاءن",
+      "اد"
+     ]
+    },
+    {
+     "maksud": "Baqa - kekal selama-lamanya",
+     "kata": [
+      "kekal",
+      "baqa",
+      "abadi",
+      "بقاء",
+      "ککال",
+      "سلما",
+      "لاماڽ"
+     ]
+    },
+    {
+     "maksud": "Wahdaniah - Maha Esa dan tunggal",
+     "kata": [
+      "esa",
+      "wahdah",
+      "wahdaniah",
+      "tunggal",
+      "وحدة",
+      "مها",
+      "اسا",
+      "تونݢل"
+     ]
+    },
+    {
+     "maksud": "Qiamuhu binafsihi - berdiri sendiri, tidak berhajat kepada sesuatu",
+     "kata": [
+      "sendiri",
+      "binafsihi",
+      "berdiri",
+      "hajat",
+      "berhajat",
+      "قيامه",
+      "بنفسه",
+      "برديري",
+      "سنديري،",
+      "برحاجت",
+      "کفد",
+      "سسواتو"
+     ]
+    },
+    {
+     "maksud": "Mukhollafatul lil hawadith - tidak sama dengan semua makhluk",
+     "kata": [
+      "sama",
+      "berbeza",
+      "beza",
+      "makhluk",
+      "hawadith",
+      "hawadis",
+      "mukholafah",
+      "مخالفة",
+      "للحوادث",
+      "سام",
+      "مخلوقڽ",
+      "سموا"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "قيدم: سديا ادا سجق ازلي دان تيدق اد ڤرمولاءن.",
+    "بقاء: الله ککال سلما-لاماڽ.",
+    "وحدة: الله مها اسا دان تونݢل.",
+    "قيامه بنفسه: الله برديري سنديري، تيدق برحاجت کفد سسواتو.",
+    "مخالفة للحوادث: الله تيدق سام دڠن سموا مخلوقڽ."
+   ],
+   "jawapanContohRumi": [
+    "Qidam: sedia ada sejak azali dan tiada permulaan.",
+    "Baqa: Allah kekal selama-lamanya.",
+    "Wahdaniah: Allah Maha Esa dan tunggal.",
+    "Qiamuhu binafsihi: Allah berdiri sendiri, tidak berhajat kepada sesuatu.",
+    "Mukhollafatul lil hawadith: Allah tidak sama dengan semua makhluk-Nya."
+   ],
+   "id": "akidah-c3"
+  },
+  {
+   "bahagian": "C",
+   "jenis": "tulis",
+   "soalan": "سنارايکن سڤولوه ملائكة يڠ واجب دکتاهوءي اوليه ستياف مسلم.",
+   "rumi": "Senaraikan sepuluh malaikat yang wajib diketahui oleh setiap muslim.",
+   "markah": 10,
+   "idea": [
+    {
+     "maksud": "Jibril",
+     "kata": [
+      "jibril",
+      "jibrail",
+      "jibrail",
+      "جبريل"
+     ]
+    },
+    {
+     "maksud": "Mikail",
+     "kata": [
+      "mikail",
+      "mikaail",
+      "mikhail",
+      "ميکائيل"
+     ]
+    },
+    {
+     "maksud": "Israfil",
+     "kata": [
+      "israfil",
+      "israfil",
+      "اسرافيل"
+     ]
+    },
+    {
+     "maksud": "Izrail",
+     "kata": [
+      "izrail",
+      "azrail",
+      "izroil",
+      "عزرائيل"
+     ]
+    },
+    {
+     "maksud": "Munkar",
+     "kata": [
+      "munkar",
+      "mungkar",
+      "منکر"
+     ]
+    },
+    {
+     "maksud": "Nakir",
+     "kata": [
+      "nakir",
+      "nangkir",
+      "نکير"
+     ]
+    },
+    {
+     "maksud": "Raqib",
+     "kata": [
+      "raqib",
+      "rakib",
+      "roqib",
+      "رقيب"
+     ]
+    },
+    {
+     "maksud": "Atid",
+     "kata": [
+      "atid",
+      "atik",
+      "عتيد"
+     ]
+    },
+    {
+     "maksud": "Malik",
+     "kata": [
+      "malik",
+      "مالک"
+     ]
+    },
+    {
+     "maksud": "Ridhwan",
+     "kata": [
+      "ridhwan",
+      "ridwan",
+      "redhwan",
+      "رضوان"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "جبريل، ميکائيل، اسرافيل، عزرائيل، منکر، نکير، رقيب، عتيد، مالک، رضوان."
+   ],
+   "jawapanContohRumi": [
+    "Jibril, Mikail, Israfil, Izrail, Munkar, Nakir, Raqib, Atid, Malik, Ridhwan."
+   ],
+   "id": "akidah-c4"
+  },
+  {
+   "bahagian": "C",
+   "jenis": "huraian",
+   "soalan": "ترڠکن تواݢس ليم ملائكة برايکوت: جبريل، ميکائيل، اسرافيل، عزرائيل دان رقيب.",
+   "rumi": "Terangkan tugas lima malaikat berikut: Jibril, Mikail, Israfil, Izrail dan Raqib.",
+   "markah": 5,
+   "idea": [
+    {
+     "maksud": "Jibril - menyampaikan wahyu kepada para nabi",
+     "kata": [
+      "wahyu",
+      "wahyi",
+      "wahyu",
+      "جبريل",
+      "منيامڤيکن",
+      "وحي",
+      "نبي٢"
+     ]
+    },
+    {
+     "maksud": "Mikail - membahagi dan memberi rezeki",
+     "kata": [
+      "rezeki",
+      "rezki",
+      "rezeki",
+      "ميکائيل",
+      "ممبهاݢي",
+      "رزقي",
+      "مخلوق"
+     ]
+    },
+    {
+     "maksud": "Israfil - meniup sangkakala",
+     "kata": [
+      "sangkakala",
+      "tiup",
+      "meniup",
+      "اسرافيل",
+      "منيوڤ",
+      "سڠکاکالا"
+     ]
+    },
+    {
+     "maksud": "Izrail - mencabut nyawa",
+     "kata": [
+      "nyawa",
+      "cabut",
+      "mencabut",
+      "عزرائيل",
+      "منچابوت",
+      "نياوا"
+     ]
+    },
+    {
+     "maksud": "Raqib - mencatat amalan baik manusia",
+     "kata": [
+      "catat",
+      "mencatat",
+      "cetat",
+      "rekod",
+      "رقيب",
+      "منچاتت",
+      "عملن",
+      "بايق"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "جبريل: منيامڤيکن وحي کفد نبي٢.",
+    "ميکائيل: ممبهاݢي رزقي کفد مخلوق.",
+    "اسرافيل: منيوڤ سڠکاکالا.",
+    "عزرائيل: منچابوت نياوا.",
+    "رقيب: منچاتت عملن يڠ بايق."
+   ],
+   "jawapanContohRumi": [
+    "Jibril: menyampaikan wahyu kepada nabi-nabi.",
+    "Mikail: membahagi rezeki kepada makhluk.",
+    "Israfil: meniup sangkakala.",
+    "Izrail: mencabut nyawa.",
+    "Raqib: mencatat amalan yang baik."
+   ],
+   "id": "akidah-c5"
+  },
+  {
+   "bahagian": "C",
+   "jenis": "tulis",
+   "soalan": "سنارايکن امڤت کتاب يڠ دتورونکن اوليه الله کفد نبي٢ڽ.",
+   "rumi": "Senaraikan empat kitab yang diturunkan oleh Allah kepada nabi-nabi-Nya.",
+   "markah": 4,
+   "idea": [
+    {
+     "maksud": "Taurat",
+     "kata": [
+      "taurat",
+      "taurat",
+      "taurat",
+      "توراة"
+     ]
+    },
+    {
+     "maksud": "Zabur",
+     "kata": [
+      "zabur",
+      "زبور"
+     ]
+    },
+    {
+     "maksud": "Injil",
+     "kata": [
+      "injil",
+      "ingjil",
+      "انجيل"
+     ]
+    },
+    {
+     "maksud": "Al-Quran",
+     "kata": [
+      "quran",
+      "alquran",
+      "kuran",
+      "quran",
+      "القرءان",
+      "قرءان"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "توراة، زبور، انجيل دان القرءان."
+   ],
+   "jawapanContohRumi": [
+    "Taurat, Zabur, Injil dan Al-Quran."
+   ],
+   "id": "akidah-c6"
+  },
+  {
+   "bahagian": "C",
+   "jenis": "huraian",
+   "soalan": "نياتکن نبي يڠ منريم کتاب برايکوت: توراة، زبور، انجيل دان القرءان.",
+   "rumi": "Nyatakan nabi yang menerima kitab berikut: Taurat, Zabur, Injil dan Al-Quran.",
+   "markah": 4,
+   "idea": [
+    {
+     "maksud": "Nabi Musa menerima Taurat",
+     "kata": [
+      "musa",
+      "توراة",
+      "موسى"
+     ]
+    },
+    {
+     "maksud": "Nabi Daud menerima Zabur",
+     "kata": [
+      "daud",
+      "dawud",
+      "daut",
+      "زبور",
+      "داؤد"
+     ]
+    },
+    {
+     "maksud": "Nabi Isa menerima Injil",
+     "kata": [
+      "isa",
+      "انجيل",
+      "عيسى"
+     ]
+    },
+    {
+     "maksud": "Nabi Muhammad menerima Al-Quran",
+     "kata": [
+      "muhammad",
+      "muhd",
+      "mohamad",
+      "القرءان",
+      "قرءان",
+      "محمد"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "توراة دتورونکن کفد نبي موسى.",
+    "زبور دتورونکن کفد نبي داؤد.",
+    "انجيل دتورونکن کفد نبي عيسى.",
+    "القرءان دتورونکن کفد نبي محمد."
+   ],
+   "jawapanContohRumi": [
+    "Taurat diturunkan kepada Nabi Musa.",
+    "Zabur diturunkan kepada Nabi Daud.",
+    "Injil diturunkan kepada Nabi Isa.",
+    "Al-Quran diturunkan kepada Nabi Muhammad."
+   ],
+   "id": "akidah-c7"
+  },
+  {
+   "bahagian": "C",
+   "jenis": "tulis",
+   "soalan": "سنارايکن ليم رسول يڠ برݢلر اولوالعزم.",
+   "rumi": "Senaraikan lima rasul yang bergelar ulul azmi.",
+   "markah": 5,
+   "idea": [
+    {
+     "maksud": "Nabi Nuh",
+     "kata": [
+      "nuh",
+      "نوح",
+      "نبي نوح"
+     ]
+    },
+    {
+     "maksud": "Nabi Ibrahim",
+     "kata": [
+      "ibrahim",
+      "ابراهيم",
+      "نبي ابراهيم"
+     ]
+    },
+    {
+     "maksud": "Nabi Musa",
+     "kata": [
+      "musa",
+      "موسى",
+      "نبي موسى"
+     ]
+    },
+    {
+     "maksud": "Nabi Isa",
+     "kata": [
+      "isa",
+      "عيسى",
+      "نبي عيسى"
+     ]
+    },
+    {
+     "maksud": "Nabi Muhammad",
+     "kata": [
+      "muhammad",
+      "muhd",
+      "mohamad",
+      "محمد",
+      "نبي محمد"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "نبي نوح، نبي ابراهيم، نبي موسى، نبي عيسى دان نبي محمد."
+   ],
+   "jawapanContohRumi": [
+    "Nabi Nuh, Nabi Ibrahim, Nabi Musa, Nabi Isa dan Nabi Muhammad."
+   ],
+   "id": "akidah-c8"
+  },
+  {
+   "bahagian": "C",
+   "jenis": "tulis",
+   "soalan": "سنارايکن امڤت صيفت واجب باݢي رسول.",
+   "rumi": "Senaraikan empat sifat wajib bagi rasul.",
+   "markah": 4,
+   "idea": [
+    {
+     "maksud": "Siddiq - benar",
+     "kata": [
+      "siddiq",
+      "sidik",
+      "sidiq",
+      "صدق"
+     ]
+    },
+    {
+     "maksud": "Amanah - boleh dipercayai",
+     "kata": [
+      "amanah",
+      "amanat",
+      "امانة"
+     ]
+    },
+    {
+     "maksud": "Tabligh - menyampaikan",
+     "kata": [
+      "tabligh",
+      "tablig",
+      "تبليغ"
+     ]
+    },
+    {
+     "maksud": "Fatanah - cerdik",
+     "kata": [
+      "fatanah",
+      "fathanah",
+      "fatanat",
+      "فطانة"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "صدق، امانة، تبليغ دان فطانة."
+   ],
+   "jawapanContohRumi": [
+    "Siddiq, Amanah, Tabligh dan Fatanah."
+   ],
+   "id": "akidah-c9"
+  },
+  {
+   "bahagian": "C",
+   "jenis": "huraian",
+   "soalan": "برايکن مکنا صيفت واجب باݢي رسول يڠ برايکوت: صدق، امانة، تبليغ دان فطانة.",
+   "rumi": "Berikan makna sifat wajib bagi rasul yang berikut: siddiq, amanah, tabligh dan fatanah.",
+   "markah": 4,
+   "idea": [
+    {
+     "maksud": "Siddiq - benar dan jujur",
+     "kata": [
+      "benar",
+      "betul",
+      "jujur",
+      "siddiq",
+      "sidik",
+      "صدق",
+      "برکات",
+      "بنر"
+     ]
+    },
+    {
+     "maksud": "Amanah - boleh dipercayai",
+     "kata": [
+      "percaya",
+      "dipercayai",
+      "amanah",
+      "amanat",
+      "امانة",
+      "دڤرچاياءي",
+      "بوليه"
+     ]
+    },
+    {
+     "maksud": "Tabligh - menyampaikan ajaran Allah",
+     "kata": [
+      "sampai",
+      "menyampaikan",
+      "sampaikan",
+      "tabligh",
+      "tablig",
+      "dakwah",
+      "تبليغ",
+      "منيامڤيکن",
+      "اجرن",
+      "کفد",
+      "اومت",
+      "الله"
+     ]
+    },
+    {
+     "maksud": "Fatanah - cerdik dan bijak",
+     "kata": [
+      "cerdik",
+      "pandai",
+      "bijak",
+      "pintar",
+      "fatanah",
+      "fathanah",
+      "فطانة",
+      "چرديک",
+      "بيجق"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "صدق: برکات دڠن بنر.",
+    "امانة: بوليه دڤرچاياءي.",
+    "تبليغ: منيامڤيکن اجرن الله کفد اومت.",
+    "فطانة: چرديک دان بيجق."
+   ],
+   "jawapanContohRumi": [
+    "Siddiq: berkata dengan benar.",
+    "Amanah: boleh dipercayai.",
+    "Tabligh: menyampaikan ajaran Allah kepada umat.",
+    "Fatanah: cerdik dan bijak."
+   ],
+   "id": "akidah-c10"
+  },
+  {
+   "bahagian": "C",
+   "jenis": "huraian",
+   "soalan": "برايکن مکنا صيفت مستحيل باݢي رسول يڠ برايکوت: کذب، خيانات، کتمان دان بلادة.",
+   "rumi": "Berikan makna sifat mustahil bagi rasul yang berikut: kizb, khianat, kitman dan baladah.",
+   "markah": 4,
+   "idea": [
+    {
+     "maksud": "Kizb - berdusta",
+     "kata": [
+      "dusta",
+      "bohong",
+      "berdusta",
+      "kizb",
+      "kidzib",
+      "کذب",
+      "برفوستا"
+     ]
+    },
+    {
+     "maksud": "Khianat - mengkhianati atau tidak jujur",
+     "kata": [
+      "khianat",
+      "curang",
+      "menipu",
+      "belot",
+      "mungkir",
+      "خيانات",
+      "مغخياناتي",
+      "امانة"
+     ]
+    },
+    {
+     "maksud": "Kitman - menyembunyikan ajaran Allah",
+     "kata": [
+      "sembunyi",
+      "menyembunyikan",
+      "sembunyikan",
+      "kitman",
+      "کتمان",
+      "مڽمبوڽيکن",
+      "اجرن",
+      "الله"
+     ]
+    },
+    {
+     "maksud": "Baladah - bodoh",
+     "kata": [
+      "bodoh",
+      "bebal",
+      "tolol",
+      "baladah",
+      "بلادة",
+      "بودوه"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "کذب: برفوستا.",
+    "خيانات: مغخياناتي امانة.",
+    "کتمان: مڽمبوڽيکن اجرن الله.",
+    "بلادة: بودوه."
+   ],
+   "jawapanContohRumi": [
+    "Kizb: berdusta.",
+    "Khianat: mengkhianati amanah.",
+    "Kitman: menyembunyikan ajaran Allah.",
+    "Baladah: bodoh."
+   ],
+   "id": "akidah-c11"
+  },
+  {
+   "bahagian": "C",
+   "jenis": "huraian",
+   "soalan": "برايکن ليم تندا کچيل هاري قيامة.",
+   "rumi": "Berikan lima tanda kecil hari kiamat.",
+   "markah": 5,
+   "idea": [
+    {
+     "maksud": "Berlaku kematian",
+     "kata": [
+      "mati",
+      "kematian",
+      "maut",
+      "meninggal",
+      "برلاکو",
+      "کماتين"
+     ]
+    },
+    {
+     "maksud": "Gempa bumi",
+     "kata": [
+      "gempa",
+      "gempabumi",
+      "ݢمڤا",
+      "بومي"
+     ]
+    },
+    {
+     "maksud": "Banjir besar",
+     "kata": [
+      "banjir",
+      "بنجير",
+      "بسر"
+     ]
+    },
+    {
+     "maksud": "Peperangan berlaku di merata tempat",
+     "kata": [
+      "perang",
+      "peperangan",
+      "pertempuran",
+      "ڤڤرڠن"
+     ]
+    },
+    {
+     "maksud": "Maksiat berleluasa",
+     "kata": [
+      "maksiat",
+      "mungkar",
+      "derhaka",
+      "zina",
+      "معصية",
+      "برللواسا"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "برلاکو کماتين.",
+    "ݢمڤا بومي.",
+    "بنجير بسر.",
+    "ڤڤرڠن.",
+    "معصية برللواسا."
+   ],
+   "jawapanContohRumi": [
+    "Berlaku kematian.",
+    "Gempa bumi.",
+    "Banjir besar.",
+    "Peperangan.",
+    "Maksiat berleluasa."
+   ],
+   "id": "akidah-c12"
+  },
+  {
+   "bahagian": "C",
+   "jenis": "huraian",
+   "soalan": "برايکن سڤولوه تندا بسر هاري قيامة.",
+   "rumi": "Berikan sepuluh tanda besar hari kiamat.",
+   "markah": 10,
+   "idea": [
+    {
+     "maksud": "Israfil meniup sangkakala",
+     "kata": [
+      "sangkakala",
+      "tiup",
+      "meniup",
+      "اسرافيل",
+      "منيوڤ",
+      "سڠکاکالا"
+     ]
+    },
+    {
+     "maksud": "Matahari terbit dari arah barat",
+     "kata": [
+      "matahari",
+      "barat",
+      "terbit",
+      "ماتاهاري",
+      "تربيت",
+      "اره",
+      "بارت"
+     ]
+    },
+    {
+     "maksud": "Keluarnya Dajjal",
+     "kata": [
+      "dajjal",
+      "dajal",
+      "دجال"
+     ]
+    },
+    {
+     "maksud": "Turunnya Nabi Isa",
+     "kata": [
+      "isa",
+      "تورونڽ",
+      "عيسى",
+      "نبي"
+     ]
+    },
+    {
+     "maksud": "Keluarnya Ya'juj dan Ma'juj",
+     "kata": [
+      "yajuj",
+      "majuj",
+      "yakjuj",
+      "makjuj",
+      "juj",
+      "يأجوج",
+      "مأجوج"
+     ]
+    },
+    {
+     "maksud": "Keluarnya binatang besar dari bumi",
+     "kata": [
+      "dabbah",
+      "dabah",
+      "binatang",
+      "haiwan",
+      "بيناتڠ",
+      "بسر"
+     ]
+    },
+    {
+     "maksud": "Keluarnya asap tebal",
+     "kata": [
+      "dukhan",
+      "asap",
+      "kabut",
+      "اسڤ",
+      "تبل"
+     ]
+    },
+    {
+     "maksud": "Gempa bumi yang dahsyat",
+     "kata": [
+      "gempa",
+      "ݢمڤا",
+      "دهشته"
+     ]
+    },
+    {
+     "maksud": "Munculnya Imam Mahdi",
+     "kata": [
+      "mahdi",
+      "مونچولڽ",
+      "إمام",
+      "مهدي"
+     ]
+    },
+    {
+     "maksud": "Api keluar dari bumi Yaman",
+     "kata": [
+      "yaman",
+      "api",
+      "اڤي",
+      "کلوار",
+      "يمن"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "اسرافيل منيوڤ سڠکاکالا.",
+    "ماتاهاري تربيت دري اره بارت.",
+    "کلوارڽ دجال.",
+    "تورونڽ نبي عيسى.",
+    "کلوارڽ يأجوج دان مأجوج.",
+    "کلوارڽ بيناتڠ بسر دري بومي.",
+    "کلوارڽ اسڤ تبل.",
+    "ݢمڤا بومي يڠ دهشته.",
+    "مونچولڽ إمام مهدي.",
+    "اڤي کلوار دري بومي يمن."
+   ],
+   "jawapanContohRumi": [
+    "Israfil meniup sangkakala.",
+    "Matahari terbit dari arah barat.",
+    "Keluarnya Dajjal.",
+    "Turunnya Nabi Isa.",
+    "Keluarnya Yajuj dan Majuj.",
+    "Keluarnya binatang besar dari bumi.",
+    "Keluarnya asap tebal.",
+    "Gempa bumi yang dahsyat.",
+    "Munculnya Imam Mahdi.",
+    "Api keluar dari bumi Yaman."
+   ],
+   "id": "akidah-c13"
+  },
+  {
+   "bahagian": "C",
+   "jenis": "huraian",
+   "soalan": "برايکن مکنا قضاء، قدر، قضاء مبرم دان قضاء معلق.",
+   "rumi": "Berikan makna qada, qadar, qada mubram dan qada muallaq.",
+   "markah": 4,
+   "idea": [
+    {
+     "maksud": "Qada - ketentuan Allah sejak azali",
+     "kata": [
+      "azali",
+      "terdahulu",
+      "dahulu",
+      "سجق",
+      "ازلي"
+     ]
+    },
+    {
+     "maksud": "Qadar - ketentuan Allah yang berlaku ke atas makhluk",
+     "kata": [
+      "berlaku",
+      "terlaksana",
+      "laksana",
+      "terjadi",
+      "takdir",
+      "قدر",
+      "برلاکو",
+      "کأتس",
+      "مخلوقڽ"
+     ]
+    },
+    {
+     "maksud": "Qada mubram - ketentuan yang tetap dan tidak boleh diubah",
+     "kata": [
+      "mubram",
+      "mubrom",
+      "مبرم",
+      "تتاڤ",
+      "دأوبه",
+      "تيدق"
+     ]
+    },
+    {
+     "maksud": "Qada muallaq - ketentuan yang boleh berubah",
+     "kata": [
+      "muallaq",
+      "muallak",
+      "bergantung",
+      "معلق",
+      "براوبه",
+      "اوسها",
+      "دعاء"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "قضاء: کتنتوان الله سجق ازلي.",
+    "قدر: کتنتوان الله يڠ برلاکو کأتس مخلوقڽ.",
+    "قضاء مبرم: کتنتوان يڠ تتاڤ دان تيدق بوليه دأوبه.",
+    "قضاء معلق: کتنتوان يڠ بوليه براوبه دڠن اوسها دان دعاء."
+   ],
+   "jawapanContohRumi": [
+    "Qada: ketentuan Allah sejak azali.",
+    "Qadar: ketentuan Allah yang berlaku ke atas makhluk-Nya.",
+    "Qada mubram: ketentuan yang tetap dan tidak boleh diubah.",
+    "Qada muallaq: ketentuan yang boleh berubah dengan usaha dan doa."
+   ],
+   "id": "akidah-c14"
+  },
+  {
+   "bahagian": "C",
+   "jenis": "huraian",
+   "soalan": "برايکن ليم حکمه برايمان کفد قضاء دان قدر.",
+   "rumi": "Berikan lima hikmah beriman kepada qada dan qadar.",
+   "markah": 5,
+   "idea": [
+    {
+     "maksud": "Bersabar apabila ditimpa ujian",
+     "kata": [
+      "sabar",
+      "bersabar",
+      "kesabaran",
+      "صبر",
+      "دتيمڤا",
+      "اوجين"
+     ]
+    },
+    {
+     "maksud": "Bertawakal kepada Allah",
+     "kata": [
+      "tawakal",
+      "bertawakal",
+      "berserah",
+      "توکل",
+      "کفد"
+     ]
+    },
+    {
+     "maksud": "Berusaha dan berikhtiar",
+     "kata": [
+      "usaha",
+      "berusaha",
+      "ikhtiar",
+      "berikhtiar",
+      "براوسها",
+      "براختيار"
+     ]
+    },
+    {
+     "maksud": "Redha dengan ketentuan Allah",
+     "kata": [
+      "redha",
+      "reda",
+      "rela",
+      "meredhai",
+      "رضا",
+      "کتنتوان"
+     ]
+    },
+    {
+     "maksud": "Bersyukur atas nikmat Allah",
+     "kata": [
+      "syukur",
+      "bersyukur",
+      "syukuri",
+      "nikmat",
+      "شکور",
+      "أتس",
+      "نعمت"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "صبر کتيک دتيمڤا اوجين.",
+    "توکل کفد الله.",
+    "براوسها دان براختيار.",
+    "رضا دڠن کتنتوان الله.",
+    "شکور أتس نعمت الله."
+   ],
+   "jawapanContohRumi": [
+    "Sabar apabila ditimpa ujian.",
+    "Bertawakal kepada Allah.",
+    "Berusaha dan berikhtiar.",
+    "Redha dengan ketentuan Allah.",
+    "Bersyukur atas nikmat Allah."
+   ],
+   "id": "akidah-c15"
+  },
+  {
+   "bahagian": "C",
+   "jenis": "huraian",
+   "soalan": "برايکن مکنا کليمه طيبة برايکوت: سبحان الله، الحمد لله، الله اکبر، استغفر الله دان لا اله الا الله.",
+   "rumi": "Berikan makna kalimah tayyibah berikut: Subhanallah, Alhamdulillah, Allahu Akbar, Astaghfirullah dan Lailahaillallah.",
+   "markah": 5,
+   "idea": [
+    {
+     "maksud": "Subhanallah - Maha Suci Allah",
+     "kata": [
+      "subhanallah",
+      "suci",
+      "subhan",
+      "tasbih",
+      "سبحان",
+      "سوچي"
+     ]
+    },
+    {
+     "maksud": "Alhamdulillah - segala puji bagi Allah",
+     "kata": [
+      "alhamdulillah",
+      "puji",
+      "pujian",
+      "tahmid",
+      "الحمد",
+      "لله",
+      "سݢالا",
+      "ڤوجي",
+      "باݢي",
+      "حمد"
+     ]
+    },
+    {
+     "maksud": "Allahu Akbar - Allah Maha Besar",
+     "kata": [
+      "akbar",
+      "agung",
+      "takbir",
+      "اکبر",
+      "بسر"
+     ]
+    },
+    {
+     "maksud": "Astaghfirullah - aku memohon ampun kepada Allah",
+     "kata": [
+      "astaghfirullah",
+      "ampun",
+      "istighfar",
+      "استغفر",
+      "اکو",
+      "مموهون",
+      "امڤون",
+      "کفد"
+     ]
+    },
+    {
+     "maksud": "Lailahaillallah - tiada tuhan selain Allah",
+     "kata": [
+      "lailahaillallah",
+      "illallah",
+      "tuhan",
+      "اله",
+      "الا",
+      "توهن",
+      "سلاين",
+      "تيدق",
+      "اد"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "سبحان الله: مها سوچي الله.",
+    "الحمد لله: سݢالا ڤوجي باݢي الله.",
+    "الله اکبر: الله مها بسر.",
+    "استغفر الله: اکو مموهون امڤون کفد الله.",
+    "لا اله الا الله: تيدق اد توهن سلاين الله."
+   ],
+   "jawapanContohRumi": [
+    "Subhanallah: Maha Suci Allah.",
+    "Alhamdulillah: segala puji bagi Allah.",
+    "Allahu Akbar: Allah Maha Besar.",
+    "Astaghfirullah: aku memohon ampun kepada Allah.",
+    "Lailahaillallah: tiada tuhan selain Allah."
+   ],
+   "id": "akidah-c16"
+  },
+  {
+   "bahagian": "C",
+   "jenis": "huraian",
+   "soalan": "برايکن مکنا توحيد دان شيريك، ساتو چونتوه باݢي ماسيڠ-ماسيڠ، دان حکوم شيريك.",
+   "rumi": "Berikan makna tauhid dan syirik, satu contoh bagi masing-masing, dan hukum syirik.",
+   "markah": 5,
+   "idea": [
+    {
+     "maksud": "Tauhid - mengesakan Allah",
+     "kata": [
+      "tauhid",
+      "esa",
+      "mengesakan",
+      "tunggal",
+      "مڠساءکن"
+     ]
+    },
+    {
+     "maksud": "Syirik - menyekutukan Allah",
+     "kata": [
+      "syirik",
+      "sekutu",
+      "menyekutukan",
+      "sekutukan",
+      "مڽکوتوکن"
+     ]
+    },
+    {
+     "maksud": "Contoh tauhid - menunaikan solat, berdoa dan berzikir kepada Allah",
+     "kata": [
+      "solat",
+      "sembahyang",
+      "doa",
+      "berdoa",
+      "zikir",
+      "puasa",
+      "ibadah",
+      "منونايکن",
+      "صلاة",
+      "بردعاء",
+      "کفد"
+     ]
+    },
+    {
+     "maksud": "Contoh syirik - memakai tangkal atau mempercayai bomoh",
+     "kata": [
+      "tangkal",
+      "azimat",
+      "jimat",
+      "bomoh",
+      "dukun",
+      "pawang",
+      "sihir",
+      "berhala",
+      "nujum",
+      "ممکاي",
+      "تڠکل",
+      "ممرچاياءي",
+      "بوموه"
+     ]
+    },
+    {
+     "maksud": "Hukum syirik - haram dan berdosa besar",
+     "kata": [
+      "haram",
+      "dosa",
+      "berdosa",
+      "حکوم",
+      "حرام",
+      "بردوسا",
+      "بسر"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "توحيد: مڠساءکن الله.",
+    "شيريك: مڽکوتوکن الله.",
+    "چونتوه توحيد: منونايکن صلاة دان بردعاء کفد الله.",
+    "چونتوه شيريك: ممکاي تڠکل اتاو ممرچاياءي بوموه.",
+    "حکوم شيريك: حرام دان بردوسا بسر."
+   ],
+   "jawapanContohRumi": [
+    "Tauhid: mengesakan Allah.",
+    "Syirik: menyekutukan Allah.",
+    "Contoh tauhid: menunaikan solat dan berdoa kepada Allah.",
+    "Contoh syirik: memakai tangkal atau mempercayai bomoh.",
+    "Hukum syirik: haram dan berdosa besar."
+   ],
+   "id": "akidah-c17"
+  },
+  {
+   "bahagian": "C",
+   "jenis": "huraian",
+   "soalan": "برايکن امڤت چونتوه ڤربواتن توحيد دان امڤت چونتوه ڤربواتن شيريك.",
+   "rumi": "Berikan empat contoh perbuatan tauhid dan empat contoh perbuatan syirik.",
+   "markah": 8,
+   "idea": [
+    {
+     "maksud": "Menunaikan solat lima waktu",
+     "kata": [
+      "solat",
+      "sembahyang",
+      "lima",
+      "صلاة",
+      "ليم",
+      "وقتو"
+     ]
+    },
+    {
+     "maksud": "Berdoa dan memohon hanya kepada Allah",
+     "kata": [
+      "doa",
+      "berdoa",
+      "memohon",
+      "meminta",
+      "بردعاء",
+      "مموهون",
+      "هاث",
+      "کفد"
+     ]
+    },
+    {
+     "maksud": "Berzikir dan mengingati Allah",
+     "kata": [
+      "zikir",
+      "berzikir",
+      "ingat",
+      "mengingati",
+      "برذکر",
+      "مڠيڠاتي"
+     ]
+    },
+    {
+     "maksud": "Bersedekah, berpuasa dan menunaikan zakat",
+     "kata": [
+      "sedekah",
+      "puasa",
+      "zakat",
+      "برصدقه،",
+      "برڤواسا",
+      "زکاة"
+     ]
+    },
+    {
+     "maksud": "Memakai tangkal atau azimat",
+     "kata": [
+      "tangkal",
+      "azimat",
+      "jimat",
+      "ممکاي",
+      "تڠکل",
+      "عزيمة"
+     ]
+    },
+    {
+     "maksud": "Mempercayai bomoh, dukun atau tukang sihir",
+     "kata": [
+      "bomoh",
+      "dukun",
+      "pawang",
+      "sihir",
+      "nujum",
+      "ممرچاياءي",
+      "بوموه،",
+      "دوکون",
+      "توکڠ",
+      "سيهير"
+     ]
+    },
+    {
+     "maksud": "Menyembah berhala atau patung",
+     "kata": [
+      "berhala",
+      "patung",
+      "menyembah",
+      "puja",
+      "مڽمبه",
+      "برهالا",
+      "ڤاتوڠ"
+     ]
+    },
+    {
+     "maksud": "Menyembelih haiwan untuk selain Allah",
+     "kata": [
+      "sembelih",
+      "korban",
+      "haiwan",
+      "مڽمبليه",
+      "بيناتڠ",
+      "سلاين"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "منونايکن صلاة ليم وقتو.",
+    "بردعاء دان مموهون هاث کفد الله.",
+    "برذکر دان مڠيڠاتي الله.",
+    "برصدقه، برڤواسا دان منونايکن زکاة.",
+    "ممکاي تڠکل اتاو عزيمة.",
+    "ممرچاياءي بوموه، دوکون اتاو توکڠ سيهير.",
+    "مڽمبه برهالا اتاو ڤاتوڠ.",
+    "مڽمبليه بيناتڠ اونتوق سلاين الله."
+   ],
+   "jawapanContohRumi": [
+    "Menunaikan solat lima waktu.",
+    "Berdoa dan memohon hanya kepada Allah.",
+    "Berzikir dan mengingati Allah.",
+    "Bersedekah, berpuasa dan menunaikan zakat.",
+    "Memakai tangkal atau azimat.",
+    "Mempercayai bomoh, dukun atau tukang sihir.",
+    "Menyembah berhala atau patung.",
+    "Menyembelih haiwan untuk selain Allah."
+   ],
+   "id": "akidah-c18"
+  },
+  {
+   "bahagian": "C",
+   "jenis": "huraian",
+   "soalan": "برايکن ليم حکمه برايمان کفد ملائكة.",
+   "rumi": "Berikan lima hikmah beriman kepada malaikat.",
+   "markah": 5,
+   "idea": [
+    {
+     "maksud": "Sentiasa taat kepada perintah Allah",
+     "kata": [
+      "taat",
+      "patuh",
+      "perintah",
+      "turut",
+      "سنتياس",
+      "تاءت",
+      "کفد",
+      "ڤرينته",
+      "الله"
+     ]
+    },
+    {
+     "maksud": "Berhati-hati kerana amalan dicatat oleh malaikat",
+     "kata": [
+      "catat",
+      "dicatat",
+      "mencatat",
+      "rekod",
+      "برهاتي",
+      "هاتي",
+      "کران",
+      "دچاتت",
+      "اوليه",
+      "ملائكة"
+     ]
+    },
+    {
+     "maksud": "Melakukan amalan yang baik",
+     "kata": [
+      "amal",
+      "baik",
+      "kebaikan",
+      "kebajikan",
+      "ملاکوکن",
+      "بايق"
+     ]
+    },
+    {
+     "maksud": "Menjauhi perbuatan yang jahat",
+     "kata": [
+      "jahat",
+      "kejahatan",
+      "mungkar",
+      "منجاوهي",
+      "ڤربواتن",
+      "جاهت"
+     ]
+    },
+    {
+     "maksud": "Mempercayai perkara yang ghaib",
+     "kata": [
+      "ghaib",
+      "ghaib",
+      "ممرچاياءي",
+      "ڤرکارا",
+      "غاءيب"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "سنتياس تاءت کفد ڤرينته الله.",
+    "برهاتي-هاتي کران عملن دچاتت اوليه ملائكة.",
+    "ملاکوکن عملن يڠ بايق.",
+    "منجاوهي ڤربواتن يڠ جاهت.",
+    "ممرچاياءي ڤرکارا يڠ غاءيب."
+   ],
+   "jawapanContohRumi": [
+    "Sentiasa taat kepada perintah Allah.",
+    "Berhati-hati kerana amalan dicatat oleh malaikat.",
+    "Melakukan amalan yang baik.",
+    "Menjauhi perbuatan yang jahat.",
+    "Mempercayai perkara yang ghaib."
+   ],
+   "id": "akidah-c19"
+  },
+  {
+   "bahagian": "C",
+   "jenis": "huraian",
+   "soalan": "برايکن مکنا: عالم برزخ، هاري قيامة، شرݢ دان نراک.",
+   "rumi": "Berikan makna: alam barzakh, hari kiamat, syurga dan neraka.",
+   "markah": 4,
+   "idea": [
+    {
+     "maksud": "Alam barzakh - alam antara dunia dan akhirat atau alam kubur",
+     "kata": [
+      "barzakh",
+      "kubur",
+      "antara",
+      "عالم",
+      "برزخ",
+      "انتارا",
+      "دنيا",
+      "اخيرة",
+      "قبور"
+     ]
+    },
+    {
+     "maksud": "Hari kiamat - hari dibangkitkan semua makhluk",
+     "kata": [
+      "kiamat",
+      "qiamat",
+      "bangkit",
+      "dibangkitkan",
+      "akhirat",
+      "hancur",
+      "هاري",
+      "قيامة",
+      "دبڠکيتکن",
+      "مخلوق",
+      "سموا"
+     ]
+    },
+    {
+     "maksud": "Syurga - tempat nikmat dan balasan kebaikan",
+     "kata": [
+      "syurga",
+      "nikmat",
+      "bahagia",
+      "seronok",
+      "indah",
+      "شرݢ",
+      "نعمت",
+      "کباءيکن"
+     ]
+    },
+    {
+     "maksud": "Neraka - tempat azab dan balasan kejahatan",
+     "kata": [
+      "neraka",
+      "azab",
+      "siksa",
+      "seksa",
+      "bakar",
+      "نراک",
+      "عذاب",
+      "کجاهاتن"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "عالم برزخ: عالم انتارا دنيا دان اخيرة اتاو عالم قبور.",
+    "هاري قيامة: هاري دبڠکيتکن سموا مخلوق.",
+    "شرݢ: تمڤت نعمت دان بالسن کباءيکن.",
+    "نراک: تمڤت عذاب دان بالسن کجاهاتن."
+   ],
+   "jawapanContohRumi": [
+    "Alam barzakh: alam antara dunia dan akhirat atau alam kubur.",
+    "Hari kiamat: hari dibangkitkan semua makhluk.",
+    "Syurga: tempat nikmat dan balasan kebaikan.",
+    "Neraka: tempat azab dan balasan kejahatan."
+   ],
+   "id": "akidah-c20"
+  },
+  {
+   "bahagian": "C",
+   "jenis": "huraian",
+   "soalan": "برايکن ليم حکمه برايمان کفد هاري قيامة.",
+   "rumi": "Berikan lima hikmah beriman kepada hari kiamat.",
+   "markah": 5,
+   "idea": [
+    {
+     "maksud": "Bersegera bertaubat kepada Allah",
+     "kata": [
+      "taubat",
+      "bertaubat",
+      "insaf",
+      "برسݢرا",
+      "برتوبة"
+     ]
+    },
+    {
+     "maksud": "Beramal salih",
+     "kata": [
+      "amal",
+      "salih",
+      "soleh",
+      "ibadah",
+      "برعمل",
+      "صالح"
+     ]
+    },
+    {
+     "maksud": "Sentiasa mengingati kematian",
+     "kata": [
+      "ingat",
+      "mengingati",
+      "mati",
+      "kematian",
+      "سنتياس",
+      "مڠيڠاتي",
+      "کماتين"
+     ]
+    },
+    {
+     "maksud": "Tidak leka dengan dunia",
+     "kata": [
+      "dunia",
+      "duniawi",
+      "leka",
+      "lalai",
+      "ليک",
+      "دنيا",
+      "تيدق"
+     ]
+    },
+    {
+     "maksud": "Takut kepada azab Allah",
+     "kata": [
+      "takut",
+      "azab",
+      "seksa",
+      "siksa",
+      "تاکوت",
+      "عذاب"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "برسݢرا برتوبة کفد الله.",
+    "برعمل صالح.",
+    "سنتياس مڠيڠاتي کماتين.",
+    "تيدق ليک دڠن دنيا.",
+    "تاکوت کفد عذاب الله."
+   ],
+   "jawapanContohRumi": [
+    "Bersegera bertaubat kepada Allah.",
+    "Beramal salih.",
+    "Sentiasa mengingati kematian.",
+    "Tidak leka dengan dunia.",
+    "Takut kepada azab Allah."
+   ],
+   "id": "akidah-c21"
+  },
+  {
+   "bahagian": "C",
+   "jenis": "huraian",
+   "soalan": "برايکن ليم حکمه برايمان کفد کتاب الله.",
+   "rumi": "Berikan lima hikmah beriman kepada kitab-kitab Allah.",
+   "markah": 5,
+   "idea": [
+    {
+     "maksud": "Menjadikan Al-Quran sebagai panduan hidup",
+     "kata": [
+      "panduan",
+      "petunjuk",
+      "pedoman",
+      "hidayah",
+      "bimbingan",
+      "منجاديکن",
+      "القرءان",
+      "ڤندوان",
+      "هيدوڤ",
+      "قرءان"
+     ]
+    },
+    {
+     "maksud": "Mengetahui hukum dan peraturan Allah",
+     "kata": [
+      "hukum",
+      "peraturan",
+      "syariat",
+      "مڠتاهوءي",
+      "حکوم",
+      "ڤراتورن"
+     ]
+    },
+    {
+     "maksud": "Menambah ilmu pengetahuan",
+     "kata": [
+      "ilmu",
+      "pengetahuan",
+      "belajar",
+      "pelajari",
+      "منمبه",
+      "علمو",
+      "ڤڠتاهوان"
+     ]
+    },
+    {
+     "maksud": "Membentuk akhlak yang mulia",
+     "kata": [
+      "akhlak",
+      "mulia",
+      "budi",
+      "sopan",
+      "ممبنتوق",
+      "اخلاق",
+      "موليا"
+     ]
+    },
+    {
+     "maksud": "Mendapat rahmat dan berkat Allah",
+     "kata": [
+      "rahmat",
+      "berkat",
+      "nikmat",
+      "redha",
+      "منداڤت",
+      "رحمة",
+      "برکت"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "منجاديکن القرءان ڤندوان هيدوڤ.",
+    "مڠتاهوءي حکوم دان ڤراتورن الله.",
+    "منمبه علمو ڤڠتاهوان.",
+    "ممبنتوق اخلاق يڠ موليا.",
+    "منداڤت رحمة دان برکت الله."
+   ],
+   "jawapanContohRumi": [
+    "Menjadikan Al-Quran panduan hidup.",
+    "Mengetahui hukum dan peraturan Allah.",
+    "Menambah ilmu pengetahuan.",
+    "Membentuk akhlak yang mulia.",
+    "Mendapat rahmat dan berkat Allah."
+   ],
+   "id": "akidah-c22"
+  },
+  {
+   "bahagian": "C",
+   "jenis": "huraian",
+   "soalan": "نياتکن امڤت صيفت ملائكة يڠ ممبيذاکنڽ دڠن ماءنسي.",
+   "rumi": "Nyatakan empat sifat malaikat yang membezakannya dengan manusia.",
+   "markah": 4,
+   "idea": [
+    {
+     "maksud": "Dijadikan daripada cahaya",
+     "kata": [
+      "cahaya",
+      "دجاديکن",
+      "چهاي"
+     ]
+    },
+    {
+     "maksud": "Tidak makan dan tidak minum",
+     "kata": [
+      "makan",
+      "minum",
+      "مکان",
+      "مينوم"
+     ]
+    },
+    {
+     "maksud": "Tidak tidur",
+     "kata": [
+      "tidur",
+      "تيدور"
+     ]
+    },
+    {
+     "maksud": "Tidak berjantina",
+     "kata": [
+      "jantina",
+      "lelaki",
+      "perempuan",
+      "برجنتينا"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "ملائكة دجاديکن دري چهاي.",
+    "ملائكة تيدق مکان دان تيدق مينوم.",
+    "ملائكة تيدق تيدور.",
+    "ملائكة تيدق برجنتينا."
+   ],
+   "jawapanContohRumi": [
+    "Malaikat dijadikan daripada cahaya.",
+    "Malaikat tidak makan dan tidak minum.",
+    "Malaikat tidak tidur.",
+    "Malaikat tidak berjantina."
+   ],
+   "id": "akidah-c23"
+  },
+  {
+   "bahagian": "C",
+   "jenis": "huraian",
+   "soalan": "برايکن ليم ڤرکارا يڠ ڤرلو دلاکوکن اوليه سأورڠ يڠ برايمان کفد الله.",
+   "rumi": "Berikan lima perkara yang perlu dilakukan oleh seseorang yang beriman kepada Allah.",
+   "markah": 5,
+   "idea": [
+    {
+     "maksud": "Menunaikan solat lima waktu",
+     "kata": [
+      "solat",
+      "sembahyang",
+      "lima",
+      "منونايکن",
+      "صلاة",
+      "ليم",
+      "وقتو"
+     ]
+    },
+    {
+     "maksud": "Berdoa hanya kepada Allah",
+     "kata": [
+      "doa",
+      "berdoa",
+      "memohon",
+      "بردعاء",
+      "هاث",
+      "کفد"
+     ]
+    },
+    {
+     "maksud": "Berzikir dan mengingati Allah",
+     "kata": [
+      "zikir",
+      "berzikir",
+      "ingat",
+      "mengingati",
+      "برذکر",
+      "مڠيڠاتي"
+     ]
+    },
+    {
+     "maksud": "Bersyukur atas nikmat Allah",
+     "kata": [
+      "syukur",
+      "bersyukur",
+      "nikmat",
+      "برشکور",
+      "أتس",
+      "نعمت"
+     ]
+    },
+    {
+     "maksud": "Mentaati perintah dan menjauhi larangan Allah",
+     "kata": [
+      "taat",
+      "patuh",
+      "perintah",
+      "jauhi",
+      "larangan",
+      "turut",
+      "مناءتي",
+      "ڤرينته",
+      "منجاوهي",
+      "لارڠن"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "منونايکن صلاة ليم وقتو.",
+    "بردعاء هاث کفد الله.",
+    "برذکر دان مڠيڠاتي الله.",
+    "برشکور أتس نعمت الله.",
+    "مناءتي ڤرينته دان منجاوهي لارڠن الله."
+   ],
+   "jawapanContohRumi": [
+    "Menunaikan solat lima waktu.",
+    "Berdoa hanya kepada Allah.",
+    "Berzikir dan mengingati Allah.",
+    "Bersyukur atas nikmat Allah.",
+    "Mentaati perintah dan menjauhi larangan Allah."
+   ],
+   "id": "akidah-c24"
+  },
+  {
+   "bahagian": "C",
+   "jenis": "huraian",
+   "soalan": "برايکن امڤت حکمه برايمان کفد ملائكة دان دوا حکمه برايمان کفد قضاء دان قدر.",
+   "rumi": "Berikan empat hikmah beriman kepada malaikat dan dua hikmah beriman kepada qada dan qadar.",
+   "markah": 6,
+   "idea": [
+    {
+     "maksud": "Sentiasa taat kepada perintah Allah",
+     "kata": [
+      "taat",
+      "patuh",
+      "perintah",
+      "تاءت",
+      "ڤرينته"
+     ]
+    },
+    {
+     "maksud": "Berhati-hati kerana amalan dicatat",
+     "kata": [
+      "catat",
+      "mencatat",
+      "dicatat",
+      "rekod",
+      "برهاتي",
+      "هاتي",
+      "کران",
+      "دچاتت"
+     ]
+    },
+    {
+     "maksud": "Melakukan amalan yang baik",
+     "kata": [
+      "amal",
+      "baik",
+      "kebaikan",
+      "ملاکوکن",
+      "بايق"
+     ]
+    },
+    {
+     "maksud": "Mempercayai perkara yang ghaib",
+     "kata": [
+      "ghaib",
+      "ghaib",
+      "ممرچاياءي",
+      "ڤرکارا",
+      "غاءيب"
+     ]
+    },
+    {
+     "maksud": "Bersabar dengan ujian",
+     "kata": [
+      "sabar",
+      "bersabar",
+      "صبر",
+      "اوجين"
+     ]
+    },
+    {
+     "maksud": "Bertawakal kepada Allah",
+     "kata": [
+      "tawakal",
+      "bertawakal",
+      "berserah",
+      "توکل"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "تاءت کفد ڤرينته الله.",
+    "برهاتي-هاتي کران عملن دچاتت.",
+    "ملاکوکن عملن يڠ بايق.",
+    "ممرچاياءي ڤرکارا يڠ غاءيب.",
+    "صبر دڠن اوجين.",
+    "توکل کفد الله."
+   ],
+   "jawapanContohRumi": [
+    "Taat kepada perintah Allah.",
+    "Berhati-hati kerana amalan dicatat.",
+    "Melakukan amalan yang baik.",
+    "Mempercayai perkara yang ghaib.",
+    "Sabar dengan ujian.",
+    "Bertawakal kepada Allah."
+   ],
+   "id": "akidah-c25"
+  },
+  {
+   "bahagian": "C",
+   "jenis": "huraian",
+   "soalan": "برايکن مکنا توجوه اسماء الحسنى برايکوت: الرحمن، الرحيم، المالک، العليم، السميع، البصير دان القدير.",
+   "rumi": "Berikan makna tujuh asmaul husna berikut: ar-Rahman, ar-Rahim, al-Malik, al-Alim, as-Sami', al-Basir dan al-Qadir.",
+   "markah": 7,
+   "idea": [
+    {
+     "maksud": "Ar-Rahman - Maha Pemurah",
+     "kata": [
+      "rahman",
+      "pemurah",
+      "murah",
+      "belas",
+      "الرحمن",
+      "ڤموره",
+      "رحمن"
+     ]
+    },
+    {
+     "maksud": "Ar-Rahim - Maha Penyayang",
+     "kata": [
+      "rahim",
+      "penyayang",
+      "sayang",
+      "mengasihi",
+      "الرحيم",
+      "ڤڽايڠ",
+      "رحيم"
+     ]
+    },
+    {
+     "maksud": "Al-Malik - Maha Pemilik atau Raja",
+     "kata": [
+      "malik",
+      "pemilik",
+      "raja",
+      "memiliki",
+      "tuan",
+      "المالک",
+      "ڤميلق",
+      "راج",
+      "مالک"
+     ]
+    },
+    {
+     "maksud": "Al-Alim - Maha Mengetahui",
+     "kata": [
+      "alim",
+      "mengetahui",
+      "tahu",
+      "ilmu",
+      "العليم",
+      "مڠتاهوءي",
+      "عليم"
+     ]
+    },
+    {
+     "maksud": "As-Sami' - Maha Mendengar",
+     "kata": [
+      "sama",
+      "sami",
+      "mendengar",
+      "dengar",
+      "السميع",
+      "مندڠر",
+      "سميع"
+     ]
+    },
+    {
+     "maksud": "Al-Basir - Maha Melihat",
+     "kata": [
+      "basar",
+      "basir",
+      "melihat",
+      "lihat",
+      "البصير",
+      "مليهت",
+      "بصير"
+     ]
+    },
+    {
+     "maksud": "Al-Qadir - Maha Berkuasa",
+     "kata": [
+      "qadir",
+      "kadir",
+      "berkuasa",
+      "kuasa",
+      "kudrat",
+      "القدير",
+      "برکواس",
+      "قدير"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "الرحمن: مها ڤموره.",
+    "الرحيم: مها ڤڽايڠ.",
+    "المالک: مها ڤميلق اتاو راج.",
+    "العليم: مها مڠتاهوءي.",
+    "السميع: مها مندڠر.",
+    "البصير: مها مليهت.",
+    "القدير: مها برکواس."
+   ],
+   "jawapanContohRumi": [
+    "Ar-Rahman: Maha Pemurah.",
+    "Ar-Rahim: Maha Penyayang.",
+    "Al-Malik: Maha Pemilik atau Raja.",
+    "Al-Alim: Maha Mengetahui.",
+    "As-Sami': Maha Mendengar.",
+    "Al-Basir: Maha Melihat.",
+    "Al-Qadir: Maha Berkuasa."
+   ],
+   "id": "akidah-c26"
+  },
+  {
+   "bahagian": "D",
+   "jenis": "huraian",
+   "soalan": "برايکن دوا دليل عقلي کووجودن الله.",
+   "rumi": "Berikan dua dalil akal (aqli) kewujudan Allah.",
+   "markah": 2,
+   "idea": [
+    {
+     "maksud": "Alam ini mesti ada pencipta",
+     "kata": [
+      "alam",
+      "cipta",
+      "pencipta",
+      "kejadian",
+      "عالم",
+      "اين",
+      "مستي",
+      "ادا",
+      "ڤنچيڤتا"
+     ]
+    },
+    {
+     "maksud": "Sesuatu yang baharu tidak boleh wujud dengan sendiri",
+     "kata": [
+      "baharu",
+      "baru",
+      "sendiri",
+      "wujud",
+      "سسواتو",
+      "بهارو",
+      "وجود",
+      "سنديري",
+      "تيدق",
+      "بوليه"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "عالم اين مستي ادا ڤنچيڤتا.",
+    "سسواتو يڠ بهارو تيدق بوليه وجود دڠن سنديري."
+   ],
+   "jawapanContohRumi": [
+    "Alam ini mesti ada pencipta.",
+    "Sesuatu yang baharu tidak boleh wujud dengan sendiri."
+   ],
+   "id": "akidah-d1"
+  },
+  {
+   "bahagian": "D",
+   "jenis": "huraian",
+   "soalan": "برايکن مکنا صيفت واجب باݢي الله: وجود، قيدم دان بقاء.",
+   "rumi": "Berikan makna sifat wajib bagi Allah: wujud, qidam dan baqa.",
+   "markah": 3,
+   "idea": [
+    {
+     "maksud": "Wujud - ada",
+     "kata": [
+      "ada",
+      "wujud",
+      "terwujud",
+      "وجود",
+      "الله"
+     ]
+    },
+    {
+     "maksud": "Qidam - sedia ada sejak azali",
+     "kata": [
+      "sedia",
+      "qidam",
+      "terdahulu",
+      "awal",
+      "قيدم",
+      "سديا",
+      "سجق",
+      "ازلي"
+     ]
+    },
+    {
+     "maksud": "Baqa - kekal selama-lamanya",
+     "kata": [
+      "kekal",
+      "baqa",
+      "abadi",
+      "بقاء",
+      "ککال",
+      "سلما",
+      "لاماڽ"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "وجود: الله ادا.",
+    "قيدم: سديا ادا سجق ازلي.",
+    "بقاء: ککال سلما-لاماڽ."
+   ],
+   "jawapanContohRumi": [
+    "Wujud: Allah ada.",
+    "Qidam: sedia ada sejak azali.",
+    "Baqa: kekal selama-lamanya."
+   ],
+   "id": "akidah-d2"
+  },
+  {
+   "bahagian": "D",
+   "jenis": "huraian",
+   "soalan": "اڤاکه مکنا اسماء الحسنى؟ برايکن ساتو چونتوه.",
+   "rumi": "Apakah makna asmaul husna? Berikan satu contoh.",
+   "markah": 2,
+   "idea": [
+    {
+     "maksud": "Nama-nama Allah yang baik dan indah",
+     "kata": [
+      "nama",
+      "baik",
+      "indah",
+      "agung",
+      "اسماء",
+      "الحسنى",
+      "نام٢",
+      "بايق",
+      "إنده",
+      "حسنى",
+      "الله"
+     ]
+    },
+    {
+     "maksud": "Contoh - ar-Rahman, ar-Rahim, al-Malik dan lain-lain",
+     "kata": [
+      "rahman",
+      "rahim",
+      "malik",
+      "alim",
+      "sami",
+      "basar",
+      "qadir",
+      "aziz",
+      "hakim",
+      "چونتوهڽ",
+      "الرحمن،",
+      "الرحيم",
+      "المالک",
+      "رحمن،",
+      "رحيم",
+      "مالک"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "اسماء الحسنى اياله نام٢ الله يڠ بايق دان إنده.",
+    "چونتوهڽ: الرحمن، الرحيم دان المالک."
+   ],
+   "jawapanContohRumi": [
+    "Asmaul husna ialah nama-nama Allah yang baik dan indah.",
+    "Contohnya: ar-Rahman, ar-Rahim dan al-Malik."
+   ],
+   "id": "akidah-d3"
+  },
+  {
+   "bahagian": "D",
+   "jenis": "huraian",
+   "soalan": "نياتکن مکنا صيفت وجود دان قيدم.",
+   "rumi": "Nyatakan makna sifat wujud dan qidam.",
+   "markah": 2,
+   "idea": [
+    {
+     "maksud": "Wujud - Allah ada",
+     "kata": [
+      "ada",
+      "wujud",
+      "وجود"
+     ]
+    },
+    {
+     "maksud": "Qidam - sedia ada dan tiada permulaan",
+     "kata": [
+      "sedia",
+      "qidam",
+      "awal",
+      "terdahulu",
+      "قيدم",
+      "سديا",
+      "ڤرمولاءن",
+      "تيدق",
+      "اد"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "وجود: الله ادا.",
+    "قيدم: الله سديا ادا دان تيدق اد ڤرمولاءن."
+   ],
+   "jawapanContohRumi": [
+    "Wujud: Allah ada.",
+    "Qidam: Allah sedia ada dan tiada permulaan."
+   ],
+   "id": "akidah-d4"
+  },
+  {
+   "bahagian": "D",
+   "jenis": "huraian",
+   "soalan": "برايکن تيݢ چونتوه ڤربواتن توحيد.",
+   "rumi": "Berikan tiga contoh perbuatan tauhid.",
+   "markah": 3,
+   "idea": [
+    {
+     "maksud": "Menunaikan solat",
+     "kata": [
+      "solat",
+      "sembahyang",
+      "منونايکن",
+      "صلاة"
+     ]
+    },
+    {
+     "maksud": "Berdoa kepada Allah",
+     "kata": [
+      "doa",
+      "berdoa",
+      "memohon",
+      "بردعاء"
+     ]
+    },
+    {
+     "maksud": "Berzikir dan bersyukur kepada Allah",
+     "kata": [
+      "zikir",
+      "berzikir",
+      "syukur",
+      "ingat",
+      "برذکر",
+      "برشکور"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "منونايکن صلاة.",
+    "بردعاء کفد الله.",
+    "برذکر دان برشکور کفد الله."
+   ],
+   "jawapanContohRumi": [
+    "Menunaikan solat.",
+    "Berdoa kepada Allah.",
+    "Berzikir dan bersyukur kepada Allah."
+   ],
+   "id": "akidah-d5"
+  },
+  {
+   "bahagian": "D",
+   "jenis": "huraian",
+   "soalan": "برايکن تيݢ چونتوه ڤربواتن شيريك يڠ ڤرلو دجاوهي.",
+   "rumi": "Berikan tiga contoh perbuatan syirik yang perlu dijauhi.",
+   "markah": 3,
+   "idea": [
+    {
+     "maksud": "Memakai tangkal atau azimat",
+     "kata": [
+      "tangkal",
+      "azimat",
+      "jimat",
+      "ممکاي",
+      "تڠکل",
+      "عزيمة"
+     ]
+    },
+    {
+     "maksud": "Mempercayai bomoh atau dukun",
+     "kata": [
+      "bomoh",
+      "dukun",
+      "pawang",
+      "sihir",
+      "nujum",
+      "ممرچاياءي",
+      "بوموه",
+      "دوکون"
+     ]
+    },
+    {
+     "maksud": "Menyembah berhala atau patung",
+     "kata": [
+      "berhala",
+      "patung",
+      "menyembah",
+      "puja",
+      "مڽمبه",
+      "برهالا",
+      "ڤاتوڠ"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "ممکاي تڠکل اتاو عزيمة.",
+    "ممرچاياءي بوموه اتاو دوکون.",
+    "مڽمبه برهالا اتاو ڤاتوڠ."
+   ],
+   "jawapanContohRumi": [
+    "Memakai tangkal atau azimat.",
+    "Mempercayai bomoh atau dukun.",
+    "Menyembah berhala atau patung."
+   ],
+   "id": "akidah-d6"
+  },
+  {
+   "bahagian": "D",
+   "jenis": "huraian",
+   "soalan": "اڤاکه مکنا ملائكة؟",
+   "rumi": "Apakah makna malaikat?",
+   "markah": 2,
+   "idea": [
+    {
+     "maksud": "Makhluk Allah yang dijadikan daripada cahaya",
+     "kata": [
+      "makhluk",
+      "cahaya",
+      "cipta",
+      "jadi",
+      "ملائكة",
+      "مخلوق",
+      "دجاديکن",
+      "چهاي"
+     ]
+    },
+    {
+     "maksud": "Sentiasa taat kepada perintah Allah",
+     "kata": [
+      "taat",
+      "patuh",
+      "perintah",
+      "سنتياس",
+      "تاءت",
+      "کفد",
+      "ڤرينته"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "ملائكة اياله مخلوق الله يڠ دجاديکن دري چهاي دان سنتياس تاءت کفد ڤرينته الله."
+   ],
+   "jawapanContohRumi": [
+    "Malaikat ialah makhluk Allah yang dijadikan daripada cahaya dan sentiasa taat kepada perintah Allah."
+   ],
+   "id": "akidah-d7"
+  },
+  {
+   "bahagian": "D",
+   "jenis": "huraian",
+   "soalan": "نياتکن تواݢس امڤت ملائكة: جبريل، ميکائيل، اسرافيل دان عزرائيل.",
+   "rumi": "Nyatakan tugas empat malaikat: Jibril, Mikail, Israfil dan Izrail.",
+   "markah": 4,
+   "idea": [
+    {
+     "maksud": "Jibril - menyampaikan wahyu",
+     "kata": [
+      "wahyu",
+      "wahyi",
+      "جبريل",
+      "منيامڤيکن",
+      "وحي"
+     ]
+    },
+    {
+     "maksud": "Mikail - membahagi rezeki",
+     "kata": [
+      "rezeki",
+      "rezki",
+      "ميکائيل",
+      "ممبهاݢي",
+      "رزقي"
+     ]
+    },
+    {
+     "maksud": "Israfil - meniup sangkakala",
+     "kata": [
+      "sangkakala",
+      "tiup",
+      "meniup",
+      "اسرافيل",
+      "منيوڤ",
+      "سڠکاکالا"
+     ]
+    },
+    {
+     "maksud": "Izrail - mencabut nyawa",
+     "kata": [
+      "nyawa",
+      "cabut",
+      "mencabut",
+      "عزرائيل",
+      "منچابوت",
+      "نياوا"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "جبريل منيامڤيکن وحي.",
+    "ميکائيل ممبهاݢي رزقي.",
+    "اسرافيل منيوڤ سڠکاکالا.",
+    "عزرائيل منچابوت نياوا."
+   ],
+   "jawapanContohRumi": [
+    "Jibril menyampaikan wahyu.",
+    "Mikail membahagi rezeki.",
+    "Israfil meniup sangkakala.",
+    "Izrail mencabut nyawa."
+   ],
+   "id": "akidah-d8"
+  },
+  {
+   "bahagian": "D",
+   "jenis": "huraian",
+   "soalan": "برايکن تيݢ صيفت ملائكة.",
+   "rumi": "Berikan tiga sifat malaikat.",
+   "markah": 3,
+   "idea": [
+    {
+     "maksud": "Dijadikan daripada cahaya",
+     "kata": [
+      "cahaya",
+      "دجاديکن",
+      "چهاي"
+     ]
+    },
+    {
+     "maksud": "Tidak makan dan tidak minum",
+     "kata": [
+      "makan",
+      "minum",
+      "مکان",
+      "مينوم"
+     ]
+    },
+    {
+     "maksud": "Tidak tidur dan tidak berjantina",
+     "kata": [
+      "tidur",
+      "jantina",
+      "تيدور",
+      "برجنتينا"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "دجاديکن دري چهاي.",
+    "تيدق مکان دان تيدق مينوم.",
+    "تيدق تيدور دان تيدق برجنتينا."
+   ],
+   "jawapanContohRumi": [
+    "Dijadikan daripada cahaya.",
+    "Tidak makan dan tidak minum.",
+    "Tidak tidur dan tidak berjantina."
+   ],
+   "id": "akidah-d9"
+  },
+  {
+   "bahagian": "D",
+   "jenis": "huraian",
+   "soalan": "سياڤاکه ملائكة يڠ منچاتت عملن بايق دان عملن بوروق ماءنسي؟",
+   "rumi": "Siapakah malaikat yang mencatat amalan baik dan amalan buruk manusia?",
+   "markah": 2,
+   "idea": [
+    {
+     "maksud": "Raqib mencatat amalan baik",
+     "kata": [
+      "raqib",
+      "rakib",
+      "رقيب",
+      "بايق"
+     ]
+    },
+    {
+     "maksud": "Atid mencatat amalan buruk",
+     "kata": [
+      "atid",
+      "atik",
+      "عتيد",
+      "بوروق"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "رقيب منچاتت عملن بايق.",
+    "عتيد منچاتت عملن بوروق."
+   ],
+   "jawapanContohRumi": [
+    "Raqib mencatat amalan baik.",
+    "Atid mencatat amalan buruk."
+   ],
+   "id": "akidah-d10"
+  },
+  {
+   "bahagian": "D",
+   "jenis": "huraian",
+   "soalan": "نياتکن تواݢس ملائكة منکر، مالک، رضوان دان رقيب.",
+   "rumi": "Nyatakan tugas malaikat Munkar, Malik, Ridhwan dan Raqib.",
+   "markah": 4,
+   "idea": [
+    {
+     "maksud": "Munkar - menyoal manusia di dalam kubur",
+     "kata": [
+      "soal",
+      "menyoal",
+      "soalan",
+      "kubur",
+      "منکر",
+      "منيوال",
+      "ماءنسي",
+      "قبور"
+     ]
+    },
+    {
+     "maksud": "Malik - menjaga neraka",
+     "kata": [
+      "neraka",
+      "jaga",
+      "menjaga",
+      "penjaga",
+      "مالک",
+      "نراک"
+     ]
+    },
+    {
+     "maksud": "Ridhwan - menjaga syurga",
+     "kata": [
+      "syurga",
+      "jaga",
+      "menjaga",
+      "penjaga",
+      "رضوان",
+      "شرݢ"
+     ]
+    },
+    {
+     "maksud": "Raqib - mencatat amalan baik",
+     "kata": [
+      "catat",
+      "mencatat",
+      "mencetat",
+      "rekod",
+      "رقيب",
+      "منچاتت",
+      "عملن",
+      "بايق"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "منکر منيوال ماءنسي دالم قبور.",
+    "مالک منجاݢ نراک.",
+    "رضوان منجاݢ شرݢ.",
+    "رقيب منچاتت عملن بايق."
+   ],
+   "jawapanContohRumi": [
+    "Munkar menyoal manusia di dalam kubur.",
+    "Malik menjaga neraka.",
+    "Ridhwan menjaga syurga.",
+    "Raqib mencatat amalan baik."
+   ],
+   "id": "akidah-d11"
+  },
+  {
+   "bahagian": "D",
+   "jenis": "huraian",
+   "soalan": "نياتکن نبي يڠ منريم کتاب: توراة، زبور، انجيل دان القرءان.",
+   "rumi": "Nyatakan nabi yang menerima kitab: Taurat, Zabur, Injil dan Al-Quran.",
+   "markah": 4,
+   "idea": [
+    {
+     "maksud": "Nabi Musa menerima Taurat",
+     "kata": [
+      "musa",
+      "موسى",
+      "توراة"
+     ]
+    },
+    {
+     "maksud": "Nabi Daud menerima Zabur",
+     "kata": [
+      "daud",
+      "dawud",
+      "daut",
+      "داؤد",
+      "زبور"
+     ]
+    },
+    {
+     "maksud": "Nabi Isa menerima Injil",
+     "kata": [
+      "isa",
+      "عيسى",
+      "انجيل"
+     ]
+    },
+    {
+     "maksud": "Nabi Muhammad menerima Al-Quran",
+     "kata": [
+      "muhammad",
+      "muhd",
+      "mohamad",
+      "القرءان",
+      "محمد",
+      "قرءان"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "نبي موسى منريم توراة.",
+    "نبي داؤد منريم زبور.",
+    "نبي عيسى منريم انجيل.",
+    "نبي محمد منريم القرءان."
+   ],
+   "jawapanContohRumi": [
+    "Nabi Musa menerima Taurat.",
+    "Nabi Daud menerima Zabur.",
+    "Nabi Isa menerima Injil.",
+    "Nabi Muhammad menerima Al-Quran."
+   ],
+   "id": "akidah-d12"
+  },
+  {
+   "bahagian": "D",
+   "jenis": "huraian",
+   "soalan": "نياتکن دوا کتاب يڠ دتورونکن کفد نبي موسى دان نبي داؤد.",
+   "rumi": "Nyatakan dua kitab yang diturunkan kepada Nabi Musa dan Nabi Daud.",
+   "markah": 2,
+   "idea": [
+    {
+     "maksud": "Nabi Musa menerima kitab Taurat",
+     "kata": [
+      "taurat",
+      "taurat",
+      "موسى",
+      "توراة"
+     ]
+    },
+    {
+     "maksud": "Nabi Daud menerima kitab Zabur",
+     "kata": [
+      "zabur",
+      "داؤد",
+      "زبور"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "نبي موسى منريم کتاب توراة.",
+    "نبي داؤد منريم کتاب زبور."
+   ],
+   "jawapanContohRumi": [
+    "Nabi Musa menerima kitab Taurat.",
+    "Nabi Daud menerima kitab Zabur."
+   ],
+   "id": "akidah-d13"
+  },
+  {
+   "bahagian": "D",
+   "jenis": "huraian",
+   "soalan": "برايکن تيݢ کأيستيميواءن القرءان.",
+   "rumi": "Berikan tiga keistimewaan Al-Quran.",
+   "markah": 3,
+   "idea": [
+    {
+     "maksud": "Mukjizat terbesar Nabi Muhammad",
+     "kata": [
+      "mukjizat",
+      "muhammad",
+      "besar",
+      "معجزة",
+      "تربسر",
+      "نبي",
+      "محمد"
+     ]
+    },
+    {
+     "maksud": "Tidak dapat ditandingi dan tidak boleh diubah",
+     "kata": [
+      "tanding",
+      "ubah",
+      "tukar",
+      "cipta",
+      "دأڤت",
+      "دتنديڠي",
+      "دأوبه",
+      "تيدق",
+      "بوليه"
+     ]
+    },
+    {
+     "maksud": "Sesuai digunakan pada semua zaman dan tempat",
+     "kata": [
+      "zaman",
+      "tempat",
+      "semua",
+      "sejagat",
+      "سسواي",
+      "دݢوناکن",
+      "زمان",
+      "تمڤت",
+      "سموا"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "معجزة تربسر نبي محمد.",
+    "تيدق دأڤت دتنديڠي دان تيدق بوليه دأوبه.",
+    "سسواي دݢوناکن ڤد سموا زمان دان تمڤت."
+   ],
+   "jawapanContohRumi": [
+    "Mukjizat terbesar Nabi Muhammad.",
+    "Tidak dapat ditandingi dan tidak boleh diubah.",
+    "Sesuai digunakan pada semua zaman dan tempat."
+   ],
+   "id": "akidah-d14"
+  },
+  {
+   "bahagian": "D",
+   "jenis": "huraian",
+   "soalan": "برايکن دوا حکمه برايمان کفد کتاب الله.",
+   "rumi": "Berikan dua hikmah beriman kepada kitab-kitab Allah.",
+   "markah": 2,
+   "idea": [
+    {
+     "maksud": "Menjadikan Al-Quran panduan hidup",
+     "kata": [
+      "panduan",
+      "petunjuk",
+      "pedoman",
+      "hidayah",
+      "القرءان",
+      "منجادي",
+      "ڤندوان",
+      "هيدوڤ",
+      "قرءان"
+     ]
+    },
+    {
+     "maksud": "Mengetahui hukum dan peraturan Allah",
+     "kata": [
+      "hukum",
+      "peraturan",
+      "syariat",
+      "مڠتاهوءي",
+      "حکوم",
+      "ڤراتورن",
+      "الله"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "القرءان منجادي ڤندوان هيدوڤ.",
+    "مڠتاهوءي حکوم دان ڤراتورن الله."
+   ],
+   "jawapanContohRumi": [
+    "Al-Quran menjadi panduan hidup.",
+    "Mengetahui hukum dan peraturan Allah."
+   ],
+   "id": "akidah-d15"
+  },
+  {
+   "bahagian": "D",
+   "jenis": "huraian",
+   "soalan": "اڤاکه مکنا وحي دان کفد سياڤاکه دتورونکن؟",
+   "rumi": "Apakah makna wahyu dan kepada siapakah ia diturunkan?",
+   "markah": 2,
+   "idea": [
+    {
+     "maksud": "Perkhabaran atau kalam Allah",
+     "kata": [
+      "kalam",
+      "perkhabaran",
+      "firman",
+      "kata",
+      "وحي",
+      "کلام",
+      "الله",
+      "دتورونکن",
+      "کفد",
+      "نبي",
+      "کلام الله دتورونکن",
+      "الله دتورونکن کفد"
+     ]
+    },
+    {
+     "maksud": "Diturunkan kepada para nabi dan rasul",
+     "kata": [
+      "nabi",
+      "rasul",
+      "pesuruh",
+      "utusan",
+      "رسول"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "وحي اياله کلام الله يڠ دتورونکن کفد نبي دان رسول."
+   ],
+   "jawapanContohRumi": [
+    "Wahyu ialah kalam Allah yang diturunkan kepada nabi dan rasul."
+   ],
+   "id": "akidah-d16"
+  },
+  {
+   "bahagian": "D",
+   "jenis": "huraian",
+   "soalan": "نياتکن تيݢ رسول يڠ برݢلر اولوالعزم.",
+   "rumi": "Nyatakan tiga rasul yang bergelar ulul azmi.",
+   "markah": 3,
+   "idea": [
+    {
+     "maksud": "Nabi Nuh",
+     "kata": [
+      "nuh",
+      "نوح"
+     ]
+    },
+    {
+     "maksud": "Nabi Ibrahim",
+     "kata": [
+      "ibrahim",
+      "ابراهيم"
+     ]
+    },
+    {
+     "maksud": "Nabi Musa, Nabi Isa atau Nabi Muhammad",
+     "kata": [
+      "musa",
+      "isa",
+      "muhammad",
+      "muhd",
+      "موسى"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "نبي نوح، نبي ابراهيم دان نبي موسى."
+   ],
+   "jawapanContohRumi": [
+    "Nabi Nuh, Nabi Ibrahim dan Nabi Musa."
+   ],
+   "id": "akidah-d17"
+  },
+  {
+   "bahagian": "D",
+   "jenis": "huraian",
+   "soalan": "نياتکن امڤت صيفت واجب باݢي رسول.",
+   "rumi": "Nyatakan empat sifat wajib bagi rasul.",
+   "markah": 4,
+   "idea": [
+    {
+     "maksud": "Siddiq - benar",
+     "kata": [
+      "siddiq",
+      "sidik",
+      "sidiq",
+      "صدق"
+     ]
+    },
+    {
+     "maksud": "Amanah - boleh dipercayai",
+     "kata": [
+      "amanah",
+      "amanat",
+      "امانة"
+     ]
+    },
+    {
+     "maksud": "Tabligh - menyampaikan",
+     "kata": [
+      "tabligh",
+      "tablig",
+      "تبليغ"
+     ]
+    },
+    {
+     "maksud": "Fatanah - cerdik",
+     "kata": [
+      "fatanah",
+      "fathanah",
+      "fatanat",
+      "فطانة"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "صدق، امانة، تبليغ دان فطانة."
+   ],
+   "jawapanContohRumi": [
+    "Siddiq, Amanah, Tabligh dan Fatanah."
+   ],
+   "id": "akidah-d18"
+  },
+  {
+   "bahagian": "D",
+   "jenis": "huraian",
+   "soalan": "نياتکن امڤت صيفت مستحيل باݢي رسول.",
+   "rumi": "Nyatakan empat sifat mustahil bagi rasul.",
+   "markah": 4,
+   "idea": [
+    {
+     "maksud": "Kizb - berdusta",
+     "kata": [
+      "kizb",
+      "kidzib",
+      "dusta",
+      "bohong",
+      "کذب"
+     ]
+    },
+    {
+     "maksud": "Khianat - mengkhianati",
+     "kata": [
+      "khianat",
+      "curang",
+      "menipu",
+      "belot",
+      "خيانات"
+     ]
+    },
+    {
+     "maksud": "Kitman - menyembunyikan",
+     "kata": [
+      "kitman",
+      "sembunyi",
+      "menyembunyikan",
+      "کتمان"
+     ]
+    },
+    {
+     "maksud": "Baladah - bodoh",
+     "kata": [
+      "baladah",
+      "bodoh",
+      "bebal",
+      "tolol",
+      "بلادة"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "کذب، خيانات، کتمان دان بلادة."
+   ],
+   "jawapanContohRumi": [
+    "Kizb, Khianat, Kitman dan Baladah."
+   ],
+   "id": "akidah-d19"
+  },
+  {
+   "bahagian": "D",
+   "jenis": "huraian",
+   "soalan": "برايکن مکنا صيفت صدق دان امانة.",
+   "rumi": "Berikan makna sifat siddiq dan amanah.",
+   "markah": 2,
+   "idea": [
+    {
+     "maksud": "Siddiq - sentiasa berkata benar",
+     "kata": [
+      "benar",
+      "betul",
+      "jujur",
+      "صدق",
+      "سنتياس",
+      "برکات",
+      "بنر"
+     ]
+    },
+    {
+     "maksud": "Amanah - boleh dipercayai",
+     "kata": [
+      "percaya",
+      "dipercayai",
+      "amanah",
+      "amanat",
+      "امانة",
+      "دڤرچاياءي",
+      "بوليه"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "صدق: سنتياس برکات دڠن بنر.",
+    "امانة: بوليه دڤرچاياءي."
+   ],
+   "jawapanContohRumi": [
+    "Siddiq: sentiasa berkata dengan benar.",
+    "Amanah: boleh dipercayai."
+   ],
+   "id": "akidah-d20"
+  },
+  {
+   "bahagian": "D",
+   "jenis": "huraian",
+   "soalan": "برايکن تيݢ حکمه برايمان کفد رسول.",
+   "rumi": "Berikan tiga hikmah beriman kepada rasul.",
+   "markah": 3,
+   "idea": [
+    {
+     "maksud": "Mengetahui cara beribadah kepada Allah",
+     "kata": [
+      "ibadah",
+      "ibadat",
+      "sembah",
+      "cara",
+      "مڠتاهوءي",
+      "چارا",
+      "برعبادة",
+      "کفد",
+      "الله"
+     ]
+    },
+    {
+     "maksud": "Mencontohi akhlak rasul",
+     "kata": [
+      "akhlak",
+      "contoh",
+      "tiru",
+      "mencontohi",
+      "ikutan",
+      "منچونتوهي",
+      "اخلاق"
+     ]
+    },
+    {
+     "maksud": "Mengamalkan sunnah rasul dalam kehidupan",
+     "kata": [
+      "sunnah",
+      "amal",
+      "amalkan",
+      "mengamalkan",
+      "مڠعملکن",
+      "سنة",
+      "کهيدوڤن"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "مڠتاهوءي چارا برعبادة کفد الله.",
+    "منچونتوهي اخلاق رسول.",
+    "مڠعملکن سنة رسول دالم کهيدوڤن."
+   ],
+   "jawapanContohRumi": [
+    "Mengetahui cara beribadah kepada Allah.",
+    "Mencontohi akhlak rasul.",
+    "Mengamalkan sunnah rasul dalam kehidupan."
+   ],
+   "id": "akidah-d21"
+  },
+  {
+   "bahagian": "D",
+   "jenis": "huraian",
+   "soalan": "اڤاکه مکنا معجزة؟ برايکن ساتو چونتوه.",
+   "rumi": "Apakah makna mukjizat? Berikan satu contoh.",
+   "markah": 2,
+   "idea": [
+    {
+     "maksud": "Kemampuan luar biasa yang dikurniakan Allah kepada nabi dan rasul",
+     "kata": [
+      "luar",
+      "biasa",
+      "kurnia",
+      "anugerah",
+      "istimewa",
+      "معجزة",
+      "کمواڤوان",
+      "لوار",
+      "بياسا",
+      "دکرنياکن",
+      "کفد",
+      "الله",
+      "رسول"
+     ]
+    },
+    {
+     "maksud": "Contoh - Al-Quran, tongkat Nabi Musa, menyembuhkan orang buta",
+     "kata": [
+      "quran",
+      "tongkat",
+      "musa",
+      "buta",
+      "isa",
+      "sembuh",
+      "چونتوهڽ",
+      "القرءان",
+      "توڠکت",
+      "موسى",
+      "قرءان"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "معجزة اياله کمواڤوان لوار بياسا يڠ دکرنياکن الله کفد نبي دان رسول.",
+    "چونتوهڽ: القرءان دان توڠکت نبي موسى."
+   ],
+   "jawapanContohRumi": [
+    "Mukjizat ialah kemampuan luar biasa yang dikurniakan Allah kepada nabi dan rasul.",
+    "Contohnya: Al-Quran dan tongkat Nabi Musa."
+   ],
+   "id": "akidah-d22"
+  },
+  {
+   "bahagian": "D",
+   "jenis": "huraian",
+   "soalan": "سياڤاکه نبي يڠ منريم کتاب انجيل دان سياڤاکه نبي يڠ تراخير؟",
+   "rumi": "Siapakah nabi yang menerima kitab Injil dan siapakah nabi yang terakhir?",
+   "markah": 2,
+   "idea": [
+    {
+     "maksud": "Nabi Isa menerima kitab Injil",
+     "kata": [
+      "isa",
+      "عيسى",
+      "منريم",
+      "کتاب",
+      "انجيل"
+     ]
+    },
+    {
+     "maksud": "Nabi Muhammad ialah nabi yang terakhir",
+     "kata": [
+      "muhammad",
+      "muhd",
+      "mohamad",
+      "تراخير",
+      "محمد"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "نبي عيسى منريم کتاب انجيل.",
+    "نبي محمد اياله نبي يڠ تراخير."
+   ],
+   "jawapanContohRumi": [
+    "Nabi Isa menerima kitab Injil.",
+    "Nabi Muhammad ialah nabi yang terakhir."
+   ],
+   "id": "akidah-d23"
+  },
+  {
+   "bahagian": "D",
+   "jenis": "huraian",
+   "soalan": "برايکن مکنا عالم برزخ دان هاري حساب.",
+   "rumi": "Berikan makna alam barzakh dan hari hisab.",
+   "markah": 2,
+   "idea": [
+    {
+     "maksud": "Alam barzakh - alam antara dunia dan akhirat atau alam kubur",
+     "kata": [
+      "barzakh",
+      "kubur",
+      "antara",
+      "عالم",
+      "برزخ",
+      "انتارا",
+      "دنيا",
+      "اخيرة",
+      "قبور"
+     ]
+    },
+    {
+     "maksud": "Hari hisab - hari semua amalan manusia dihitung",
+     "kata": [
+      "hitung",
+      "hisab",
+      "kira",
+      "amal",
+      "هاري",
+      "حساب",
+      "عملن",
+      "ماءنسي",
+      "دهيتوڠ",
+      "سموا"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "عالم برزخ: عالم انتارا دنيا دان اخيرة اتاو عالم قبور.",
+    "هاري حساب: هاري سموا عملن ماءنسي دهيتوڠ."
+   ],
+   "jawapanContohRumi": [
+    "Alam barzakh: alam antara dunia dan akhirat atau alam kubur.",
+    "Hari hisab: hari semua amalan manusia dihitung."
+   ],
+   "id": "akidah-d24"
+  },
+  {
+   "bahagian": "D",
+   "jenis": "huraian",
+   "soalan": "نياتکن تيݢ تندا کچيل هاري قيامة.",
+   "rumi": "Nyatakan tiga tanda kecil hari kiamat.",
+   "markah": 3,
+   "idea": [
+    {
+     "maksud": "Berlaku kematian",
+     "kata": [
+      "mati",
+      "kematian",
+      "maut",
+      "برلاکو",
+      "کماتين"
+     ]
+    },
+    {
+     "maksud": "Gempa bumi dan banjir besar",
+     "kata": [
+      "gempa",
+      "banjir",
+      "ݢمڤا",
+      "بومي",
+      "بنجير",
+      "بسر"
+     ]
+    },
+    {
+     "maksud": "Maksiat berleluasa dan peperangan berlaku",
+     "kata": [
+      "maksiat",
+      "mungkar",
+      "perang",
+      "zina",
+      "معصية",
+      "برللواسا",
+      "ڤڤرڠن"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "برلاکو کماتين.",
+    "ݢمڤا بومي دان بنجير بسر.",
+    "معصية برللواسا دان ڤڤرڠن."
+   ],
+   "jawapanContohRumi": [
+    "Berlaku kematian.",
+    "Gempa bumi dan banjir besar.",
+    "Maksiat berleluasa dan peperangan."
+   ],
+   "id": "akidah-d25"
+  },
+  {
+   "bahagian": "D",
+   "jenis": "huraian",
+   "soalan": "نياتکن تيݢ تندا بسر هاري قيامة.",
+   "rumi": "Nyatakan tiga tanda besar hari kiamat.",
+   "markah": 3,
+   "idea": [
+    {
+     "maksud": "Israfil meniup sangkakala",
+     "kata": [
+      "sangkakala",
+      "tiup",
+      "meniup",
+      "israfil",
+      "اسرافيل",
+      "منيوڤ",
+      "سڠکاکالا"
+     ]
+    },
+    {
+     "maksud": "Matahari terbit dari arah barat",
+     "kata": [
+      "matahari",
+      "barat",
+      "terbit",
+      "ماتاهاري",
+      "تربيت",
+      "اره",
+      "بارت"
+     ]
+    },
+    {
+     "maksud": "Keluarnya Dajjal, Ya'juj dan Ma'juj",
+     "kata": [
+      "dajjal",
+      "dajal",
+      "yajuj",
+      "majuj",
+      "کلوارڽ",
+      "دجال،",
+      "يأجوج",
+      "مأجوج"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "اسرافيل منيوڤ سڠکاکالا.",
+    "ماتاهاري تربيت دري اره بارت.",
+    "کلوارڽ دجال، يأجوج دان مأجوج."
+   ],
+   "jawapanContohRumi": [
+    "Israfil meniup sangkakala.",
+    "Matahari terbit dari arah barat.",
+    "Keluarnya Dajjal, Ya'juj dan Ma'juj."
+   ],
+   "id": "akidah-d26"
+  },
+  {
+   "bahagian": "D",
+   "jenis": "huraian",
+   "soalan": "نياتکن تيݢ نام لاءين باݢي هاري قيامة.",
+   "rumi": "Nyatakan tiga nama lain bagi hari kiamat.",
+   "markah": 3,
+   "idea": [
+    {
+     "maksud": "Hari akhirat",
+     "kata": [
+      "akhirat",
+      "اخيرة"
+     ]
+    },
+    {
+     "maksud": "Hari hisab atau hari perhitungan",
+     "kata": [
+      "hisab",
+      "hitung",
+      "perhitungan",
+      "kira",
+      "حساب"
+     ]
+    },
+    {
+     "maksud": "Hari pembalasan atau hari kebangkitan",
+     "kata": [
+      "balas",
+      "pembalasan",
+      "balasan",
+      "bangkit",
+      "kebangkitan",
+      "ڤمبالسن"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "هاري اخيرة، هاري حساب دان هاري ڤمبالسن."
+   ],
+   "jawapanContohRumi": [
+    "Hari akhirat, hari hisab dan hari pembalasan."
+   ],
+   "id": "akidah-d27"
+  },
+  {
+   "bahagian": "D",
+   "jenis": "huraian",
+   "soalan": "نياتکن امڤت ڤرکارا يڠ برلاکو کفد ماءنسي سلڤس ماتي.",
+   "rumi": "Nyatakan empat perkara yang berlaku kepada manusia selepas mati.",
+   "markah": 4,
+   "idea": [
+    {
+     "maksud": "Diletakkan di dalam kubur atau alam barzakh",
+     "kata": [
+      "kubur",
+      "barzakh",
+      "tanam",
+      "دلتقکن",
+      "عالم",
+      "برزخ"
+     ]
+    },
+    {
+     "maksud": "Disoal oleh malaikat Munkar dan Nakir",
+     "kata": [
+      "soal",
+      "menyoal",
+      "munkar",
+      "nakir",
+      "دسوال",
+      "اوليه",
+      "ملائكة",
+      "منکر",
+      "نکير"
+     ]
+    },
+    {
+     "maksud": "Mendapat nikmat kubur atau azab kubur",
+     "kata": [
+      "nikmat",
+      "azab",
+      "siksa",
+      "منداڤت",
+      "نعمت",
+      "عذاب"
+     ]
+    },
+    {
+     "maksud": "Dibangkitkan pada hari kiamat",
+     "kata": [
+      "bangkit",
+      "dibangkitkan",
+      "kiamat",
+      "qiamat",
+      "دبڠکيتکن",
+      "هاري",
+      "قيامة"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "دلتقکن دالم قبور اتاو عالم برزخ.",
+    "دسوال اوليه ملائكة منکر دان نکير.",
+    "منداڤت نعمت قبور اتاو عذاب قبور.",
+    "دبڠکيتکن ڤد هاري قيامة."
+   ],
+   "jawapanContohRumi": [
+    "Diletakkan di dalam kubur atau alam barzakh.",
+    "Disoal oleh malaikat Munkar dan Nakir.",
+    "Mendapat nikmat kubur atau azab kubur.",
+    "Dibangkitkan pada hari kiamat."
+   ],
+   "id": "akidah-d28"
+  },
+  {
+   "bahagian": "D",
+   "jenis": "huraian",
+   "soalan": "اڤاکه مکنا حساب دان ميزان؟",
+   "rumi": "Apakah makna hisab dan mizan?",
+   "markah": 2,
+   "idea": [
+    {
+     "maksud": "Hisab - perhitungan semua amalan manusia",
+     "kata": [
+      "hitung",
+      "hisab",
+      "kira",
+      "amal",
+      "حساب",
+      "ڤرهيتوڠن",
+      "ماءنسي",
+      "سموا"
+     ]
+    },
+    {
+     "maksud": "Mizan - neraca atau timbangan amalan",
+     "kata": [
+      "neraca",
+      "timbang",
+      "mizan",
+      "dacing",
+      "ميزان",
+      "نراچ",
+      "تيمبڠن"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "حساب: ڤرهيتوڠن سموا عملن ماءنسي.",
+    "ميزان: نراچ اتاو تيمبڠن عملن."
+   ],
+   "jawapanContohRumi": [
+    "Hisab: perhitungan semua amalan manusia.",
+    "Mizan: neraca atau timbangan amalan."
+   ],
+   "id": "akidah-d29"
+  },
+  {
+   "bahagian": "D",
+   "jenis": "huraian",
+   "soalan": "برايکن تيݢ حکمه برايمان کفد هاري قيامة.",
+   "rumi": "Berikan tiga hikmah beriman kepada hari kiamat.",
+   "markah": 3,
+   "idea": [
+    {
+     "maksud": "Bersegera bertaubat",
+     "kata": [
+      "taubat",
+      "bertaubat",
+      "insaf",
+      "برسݢرا",
+      "برتوبة",
+      "کفد",
+      "الله"
+     ]
+    },
+    {
+     "maksud": "Beramal salih",
+     "kata": [
+      "amal",
+      "salih",
+      "soleh",
+      "ibadah",
+      "برعمل",
+      "صالح"
+     ]
+    },
+    {
+     "maksud": "Mengingati kematian dan tidak leka dengan dunia",
+     "kata": [
+      "ingat",
+      "mati",
+      "kematian",
+      "dunia",
+      "lalai",
+      "leka",
+      "مڠيڠاتي",
+      "کماتين",
+      "ليک",
+      "دنيا",
+      "تيدق"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "برسݢرا برتوبة کفد الله.",
+    "برعمل صالح.",
+    "مڠيڠاتي کماتين دان تيدق ليک دڠن دنيا."
+   ],
+   "jawapanContohRumi": [
+    "Bersegera bertaubat kepada Allah.",
+    "Beramal salih.",
+    "Mengingati kematian dan tidak leka dengan dunia."
+   ],
+   "id": "akidah-d30"
+  },
+  {
+   "bahagian": "D",
+   "jenis": "huraian",
+   "soalan": "اڤاکه مکنا قضاء دان قدر؟",
+   "rumi": "Apakah makna qada dan qadar?",
+   "markah": 2,
+   "idea": [
+    {
+     "maksud": "Qada - ketentuan Allah sejak azali",
+     "kata": [
+      "azali",
+      "terdahulu",
+      "dahulu",
+      "قضاء",
+      "سجق",
+      "ازلي"
+     ]
+    },
+    {
+     "maksud": "Qadar - ketentuan Allah yang berlaku ke atas makhluk",
+     "kata": [
+      "berlaku",
+      "terlaksana",
+      "laksana",
+      "terjadi",
+      "takdir",
+      "قدر",
+      "برلاکو",
+      "کأتس",
+      "مخلوقڽ"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "قضاء: کتنتوان الله سجق ازلي.",
+    "قدر: کتنتوان الله يڠ برلاکو کأتس مخلوقڽ."
+   ],
+   "jawapanContohRumi": [
+    "Qada: ketentuan Allah sejak azali.",
+    "Qadar: ketentuan Allah yang berlaku ke atas makhluk-Nya."
+   ],
+   "id": "akidah-d31"
+  },
+  {
+   "bahagian": "D",
+   "jenis": "huraian",
+   "soalan": "اڤاکه مکنا قضاء مبرم دان قضاء معلق؟",
+   "rumi": "Apakah makna qada mubram dan qada muallaq?",
+   "markah": 2,
+   "idea": [
+    {
+     "maksud": "Qada mubram - ketentuan yang tetap dan tidak boleh diubah",
+     "kata": [
+      "mubram",
+      "mubrom",
+      "tetap",
+      "مبرم",
+      "تتاڤ",
+      "دأوبه",
+      "تيدق"
+     ]
+    },
+    {
+     "maksud": "Qada muallaq - ketentuan yang boleh berubah",
+     "kata": [
+      "muallaq",
+      "muallak",
+      "berubah",
+      "معلق",
+      "براوبه"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "قضاء مبرم: کتنتوان يڠ تتاڤ دان تيدق بوليه دأوبه.",
+    "قضاء معلق: کتنتوان يڠ بوليه براوبه."
+   ],
+   "jawapanContohRumi": [
+    "Qada mubram: ketentuan yang tetap dan tidak boleh diubah.",
+    "Qada muallaq: ketentuan yang boleh berubah."
+   ],
+   "id": "akidah-d32"
+  },
+  {
+   "bahagian": "D",
+   "jenis": "huraian",
+   "soalan": "برايکن تيݢ حکمه برايمان کفد قضاء دان قدر.",
+   "rumi": "Berikan tiga hikmah beriman kepada qada dan qadar.",
+   "markah": 3,
+   "idea": [
+    {
+     "maksud": "Bersabar apabila ditimpa ujian",
+     "kata": [
+      "sabar",
+      "bersabar",
+      "kesabaran",
+      "صبر",
+      "دتيمڤا",
+      "اوجين"
+     ]
+    },
+    {
+     "maksud": "Bertawakal dan redha dengan ketentuan Allah",
+     "kata": [
+      "tawakal",
+      "bertawakal",
+      "redha",
+      "reda",
+      "rela",
+      "توکل",
+      "رضا",
+      "کتنتوان",
+      "الله"
+     ]
+    },
+    {
+     "maksud": "Berusaha dan berikhtiar",
+     "kata": [
+      "usaha",
+      "berusaha",
+      "ikhtiar",
+      "berikhtiar",
+      "براوسها",
+      "براختيار"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "صبر کتيک دتيمڤا اوجين.",
+    "توکل دان رضا دڠن کتنتوان الله.",
+    "براوسها دان براختيار."
+   ],
+   "jawapanContohRumi": [
+    "Sabar apabila ditimpa ujian.",
+    "Bertawakal dan redha dengan ketentuan Allah.",
+    "Berusaha dan berikhtiar."
+   ],
+   "id": "akidah-d33"
+  },
+  {
+   "bahagian": "D",
+   "jenis": "huraian",
+   "soalan": "اڤاکه مکنا کليمه شهادة؟",
+   "rumi": "Apakah makna kalimah syahadah?",
+   "markah": 2,
+   "idea": [
+    {
+     "maksud": "Bahagian pertama - tiada tuhan selain Allah",
+     "kata": [
+      "tuhan",
+      "allah",
+      "illallah",
+      "esa",
+      "اشهد",
+      "اله",
+      "الا",
+      "توهن",
+      "سلاين",
+      "تيدق",
+      "اد"
+     ]
+    },
+    {
+     "maksud": "Bahagian kedua - Nabi Muhammad ialah pesuruh Allah",
+     "kata": [
+      "muhammad",
+      "pesuruh",
+      "rasul",
+      "utusan",
+      "واشهد",
+      "محمدا",
+      "ڤسوروه",
+      "رسول",
+      "نبي",
+      "محمد"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "اشهد ان لا اله الا الله: تيدق اد توهن سلاين الله.",
+    "واشهد ان محمدا رسول الله: نبي محمد اياله ڤسوروه الله."
+   ],
+   "jawapanContohRumi": [
+    "Asyhadu an la ilaha illallah: tiada tuhan selain Allah.",
+    "Wa asyhadu anna Muhammadar rasulullah: Nabi Muhammad ialah pesuruh Allah."
+   ],
+   "id": "akidah-d34"
+  },
+  {
+   "bahagian": "D",
+   "jenis": "huraian",
+   "soalan": "برايکن تيݢ کليمه طيبة.",
+   "rumi": "Berikan tiga kalimah tayyibah.",
+   "markah": 3,
+   "idea": [
+    {
+     "maksud": "Lailahaillallah",
+     "kata": [
+      "lailahaillallah",
+      "illallah",
+      "lailahailallah",
+      "اله"
+     ]
+    },
+    {
+     "maksud": "Subhanallah, Alhamdulillah atau Allahu Akbar",
+     "kata": [
+      "subhanallah",
+      "alhamdulillah",
+      "akbar",
+      "سبحان",
+      "الله،",
+      "الحمد",
+      "لله",
+      "اکبر",
+      "له،",
+      "حمد"
+     ]
+    },
+    {
+     "maksud": "Astaghfirullah atau Lahaula wala quwwata illa billah",
+     "kata": [
+      "astaghfirullah",
+      "istighfar",
+      "lahaula",
+      "haul",
+      "استغفر",
+      "حول",
+      "ولا",
+      "قوة",
+      "بالله"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "لا اله الا الله.",
+    "سبحان الله، الحمد لله دان الله اکبر.",
+    "استغفر الله دان لا حول ولا قوة الا بالله."
+   ],
+   "jawapanContohRumi": [
+    "Lailahaillallah.",
+    "Subhanallah, Alhamdulillah dan Allahu Akbar.",
+    "Astaghfirullah dan Lahaula wala quwwata illa billah."
+   ],
+   "id": "akidah-d35"
+  },
+  {
+   "bahagian": "D",
+   "jenis": "huraian",
+   "soalan": "اڤاکه مکنا توحيد دان شيريك؟",
+   "rumi": "Apakah makna tauhid dan syirik?",
+   "markah": 2,
+   "idea": [
+    {
+     "maksud": "Tauhid - mengesakan Allah",
+     "kata": [
+      "tauhid",
+      "esa",
+      "mengesakan",
+      "tunggal",
+      "توحيد",
+      "مڠساءکن"
+     ]
+    },
+    {
+     "maksud": "Syirik - menyekutukan Allah",
+     "kata": [
+      "syirik",
+      "sekutu",
+      "menyekutukan",
+      "sekutukan",
+      "شيريك",
+      "مڽکوتوکن"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "توحيد: مڠساءکن الله.",
+    "شيريك: مڽکوتوکن الله."
+   ],
+   "jawapanContohRumi": [
+    "Tauhid: mengesakan Allah.",
+    "Syirik: menyekutukan Allah."
+   ],
+   "id": "akidah-d36"
+  },
+  {
+   "bahagian": "D",
+   "jenis": "huraian",
+   "soalan": "اڤاکه مکنا کليمه لا اله الا الله دان سبحان الله؟",
+   "rumi": "Apakah makna kalimah Lailahaillallah dan Subhanallah?",
+   "markah": 2,
+   "idea": [
+    {
+     "maksud": "Tiada tuhan selain Allah",
+     "kata": [
+      "tuhan",
+      "allah",
+      "illallah",
+      "esa",
+      "اله",
+      "الا",
+      "توهن",
+      "سلاين",
+      "تيدق",
+      "اد"
+     ]
+    },
+    {
+     "maksud": "Maha Suci Allah",
+     "kata": [
+      "suci",
+      "subhan",
+      "subhanallah",
+      "سبحان",
+      "مها",
+      "سوچي"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "لا اله الا الله: تيدق اد توهن سلاين الله.",
+    "سبحان الله: مها سوچي الله."
+   ],
+   "jawapanContohRumi": [
+    "Lailahaillallah: tiada tuhan selain Allah.",
+    "Subhanallah: Maha Suci Allah."
+   ],
+   "id": "akidah-d37"
+  },
+  {
+   "bahagian": "D",
+   "jenis": "huraian",
+   "soalan": "برايکن تيݢ چارا منجاݢ ايمان دالم کهيدوڤن هاريان.",
+   "rumi": "Berikan tiga cara menjaga iman dalam kehidupan harian.",
+   "markah": 3,
+   "idea": [
+    {
+     "maksud": "Menunaikan solat lima waktu",
+     "kata": [
+      "solat",
+      "sembahyang",
+      "lima",
+      "منونايکن",
+      "صلاة",
+      "ليم",
+      "وقتو"
+     ]
+    },
+    {
+     "maksud": "Membaca Al-Quran dan berzikir",
+     "kata": [
+      "quran",
+      "baca",
+      "membaca",
+      "zikir",
+      "berzikir",
+      "ممباچ",
+      "القرءان",
+      "برذکر",
+      "قرءان"
+     ]
+    },
+    {
+     "maksud": "Mengelakkan diri daripada perbuatan maksiat",
+     "kata": [
+      "maksiat",
+      "jauhi",
+      "mengelak",
+      "dosa",
+      "mungkar",
+      "مڠيلقکن",
+      "ديري",
+      "ڤربواتن",
+      "معصية"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "منونايکن صلاة ليم وقتو.",
+    "ممباچ القرءان دان برذکر.",
+    "مڠيلقکن ديري دري ڤربواتن معصية."
+   ],
+   "jawapanContohRumi": [
+    "Menunaikan solat lima waktu.",
+    "Membaca Al-Quran dan berzikir.",
+    "Mengelakkan diri daripada perbuatan maksiat."
+   ],
+   "id": "akidah-d38"
+  },
+  {
+   "bahagian": "D",
+   "jenis": "huraian",
+   "soalan": "برايکن تيݢ حکمه منجادي اورڠ يڠ برايمان کفد الله.",
+   "rumi": "Berikan tiga hikmah menjadi orang yang beriman kepada Allah.",
+   "markah": 3,
+   "idea": [
+    {
+     "maksud": "Mendapat keredhaan Allah",
+     "kata": [
+      "redha",
+      "reda",
+      "keredhaan",
+      "restu",
+      "کرضاءن",
+      "الله"
+     ]
+    },
+    {
+     "maksud": "Hidup tenang, tenteram dan bahagia",
+     "kata": [
+      "tenang",
+      "tenteram",
+      "bahagia",
+      "damai",
+      "aman",
+      "هيدوڤ",
+      "تنڠ،",
+      "تنترم",
+      "بهاݢيا"
+     ]
+    },
+    {
+     "maksud": "Mendapat pahala dan dimasukkan ke dalam syurga",
+     "kata": [
+      "pahala",
+      "ganjaran",
+      "syurga",
+      "balasan",
+      "ڤهالا",
+      "دماسوقکن",
+      "کدالم",
+      "شرݢ"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "منداڤت کرضاءن الله.",
+    "هيدوڤ تنڠ، تنترم دان بهاݢيا.",
+    "منداڤت ڤهالا دان دماسوقکن کدالم شرݢ."
+   ],
+   "jawapanContohRumi": [
+    "Mendapat keredhaan Allah.",
+    "Hidup tenang, tenteram dan bahagia.",
+    "Mendapat pahala dan dimasukkan ke dalam syurga."
+   ],
+   "id": "akidah-d39"
+  }
+ ]
+}

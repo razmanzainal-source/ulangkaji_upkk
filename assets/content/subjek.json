@@ -1,0 +1,121 @@
+{
+  "versi": 1,
+  "nota": "Format bahagian disahkan daripada kulit kertas UPKK 2024 dan 2025 (12 kertas). Semua kertas bernilai 70 markah dan diberi masa 1 jam 15 minit.",
+  "subjek": [
+    {
+      "id": "adab",
+      "kod": "UPKK04",
+      "nama": "Adab",
+      "namaJawi": "ادب",
+      "ikon": "🤲",
+      "warna": "#D81B60",
+      "bahasa": "jawi",
+      "bahagian": [
+        {"nama": "A", "markah": 10, "bilangan": 2, "jenis": ["bulat", "suai", "betul_salah", "tempat_kosong"], "arahan": "جواب سموا سوءالن.", "arahanRumi": "Jawab semua soalan."},
+        {"nama": "B", "markah": 10, "bilangan": 10, "jenis": ["objektif"], "arahan": "بولتکن جواڤن يڠ بتول.", "arahanRumi": "Bulatkan jawapan yang betul."},
+        {"nama": "C", "markah": 30, "bilangan": 6, "jenis": ["tulis", "tempat_kosong", "suai", "bulat", "betul_salah"], "arahan": "جواب سوءالن برايکوت.", "arahanRumi": "Jawab soalan berikut."},
+        {"nama": "D", "markah": 20, "bilangan": 4, "jenis": ["huraian"], "arahan": "جواب سوءالن برايکوت دڠن لڠکڤ.", "arahanRumi": "Jawab soalan berikut dengan lengkap."}
+      ],
+      "kertasSebenar": [
+        {"tahun": 2024, "folder": "adab-2024", "muka": 13},
+        {"tahun": 2025, "folder": "adab-2025", "muka": 14}
+      ]
+    },
+    {
+      "id": "akidah",
+      "kod": "UPKK02",
+      "nama": "Akidah",
+      "namaJawi": "عقيدة",
+      "ikon": "🕌",
+      "warna": "#8E24AA",
+      "bahasa": "jawi",
+      "bahagian": [
+        {"nama": "A", "markah": 10, "bilangan": 2, "jenis": ["bulat", "suai", "betul_salah", "tempat_kosong"], "arahan": "جواب سموا سوءالن.", "arahanRumi": "Jawab semua soalan."},
+        {"nama": "B", "markah": 10, "bilangan": 10, "jenis": ["objektif"], "arahan": "بولتکن جواڤن يڠ بتول.", "arahanRumi": "Bulatkan jawapan yang betul."},
+        {"nama": "C", "markah": 30, "bilangan": 4, "jenis": ["tulis", "tempat_kosong", "suai", "bulat", "betul_salah"], "arahan": "جواب سوءالن برايکوت.", "arahanRumi": "Jawab soalan berikut."},
+        {"nama": "D", "markah": 20, "bilangan": 6, "jenis": ["huraian"], "arahan": "جواب سوءالن برايکوت دڠن لڠکڤ.", "arahanRumi": "Jawab soalan berikut dengan lengkap."}
+      ],
+      "kertasSebenar": [
+        {"tahun": 2024, "folder": "akidah-2024", "muka": 16},
+        {"tahun": 2025, "folder": "akidah-2025", "muka": 14}
+      ]
+    },
+    {
+      "id": "arab",
+      "kod": "UPKK06",
+      "nama": "Bahasa Arab",
+      "namaJawi": "بهاس عرب",
+      "ikon": "📖",
+      "warna": "#00897B",
+      "bahasa": "arab",
+      "bahagian": [
+        {"nama": "A", "markah": 10, "bilangan": 3, "jenis": ["bulat", "suai", "betul_salah", "tempat_kosong"], "arahan": "جواب سموا سوءالن دالم توليسن عرب.", "arahanRumi": "Jawab semua soalan dalam tulisan Arab."},
+        {"nama": "B", "markah": 10, "bilangan": 10, "jenis": ["objektif"], "arahan": "بولتکن جواڤن يڠ بتول.", "arahanRumi": "Bulatkan jawapan yang betul."},
+        {"nama": "C", "markah": 20, "bilangan": 5, "jenis": ["tulis", "tempat_kosong", "suai", "bulat"], "arahan": "جواب سوءالن برايکوت دالم توليسن عرب.", "arahanRumi": "Jawab soalan berikut dalam tulisan Arab."},
+        {"nama": "D", "markah": 30, "bilangan": 4, "jenis": ["huraian"], "arahan": "جواب سوءالن برايکوت دڠن لڠکڤ.", "arahanRumi": "Jawab soalan berikut dengan lengkap."}
+      ],
+      "kertasSebenar": [
+        {"tahun": 2024, "folder": "arab-2024", "muka": 14},
+        {"tahun": 2025, "folder": "arab-2025", "muka": 14}
+      ]
+    },
+    {
+      "id": "ibadah",
+      "kod": "UPKK07",
+      "nama": "Ibadah",
+      "namaJawi": "عبادة",
+      "ikon": "🧎",
+      "warna": "#1E88E5",
+      "bahasa": "jawi",
+      "bahagian": [
+        {"nama": "A", "markah": 10, "bilangan": 3, "jenis": ["bulat", "suai", "betul_salah", "tempat_kosong"], "arahan": "جواب سموا سوءالن.", "arahanRumi": "Jawab semua soalan."},
+        {"nama": "B", "markah": 10, "bilangan": 10, "jenis": ["objektif"], "arahan": "بولتکن جواڤن يڠ بتول.", "arahanRumi": "Bulatkan jawapan yang betul."},
+        {"nama": "C", "markah": 30, "bilangan": 6, "jenis": ["tulis", "tempat_kosong", "suai", "bulat", "betul_salah"], "arahan": "جواب سوءالن برايکوت.", "arahanRumi": "Jawab soalan berikut."},
+        {"nama": "D", "markah": 20, "bilangan": 4, "jenis": ["huraian"], "arahan": "جواب سوءالن برايکوت دڠن لڠکڤ.", "arahanRumi": "Jawab soalan berikut dengan lengkap."}
+      ],
+      "kertasSebenar": [
+        {"tahun": 2024, "folder": "ibadah-2024", "muka": 14},
+        {"tahun": 2025, "folder": "ibadah-2025", "muka": 14}
+      ]
+    },
+    {
+      "id": "jawi",
+      "kod": "UPKK05",
+      "nama": "Jawi dan Khat",
+      "namaJawi": "جاوي دان خط",
+      "ikon": "✍️",
+      "warna": "#F4511E",
+      "bahasa": "jawi",
+      "bahagian": [
+        {"nama": "A", "markah": 10, "bilangan": 4, "jenis": ["bulat", "suai", "betul_salah", "tempat_kosong"], "arahan": "جواب سموا سوءالن.", "arahanRumi": "Jawab semua soalan."},
+        {"nama": "B", "markah": 10, "bilangan": 10, "jenis": ["objektif"], "arahan": "بولتکن جواڤن يڠ بتول.", "arahanRumi": "Bulatkan jawapan yang betul."},
+        {"nama": "C", "markah": 15, "bilangan": 3, "jenis": ["tulis", "tempat_kosong", "suai", "bulat", "betul_salah"], "arahan": "جواب سوءالن برايکوت.", "arahanRumi": "Jawab soalan berikut."},
+        {"nama": "D", "markah": 25, "bilangan": 4, "jenis": ["huraian", "tulis"], "arahan": "جواب سوءالن برايکوت دڠن لڠکڤ.", "arahanRumi": "Jawab soalan berikut dengan lengkap."},
+        {"nama": "E", "markah": 10, "bilangan": 1, "jenis": ["tulis"], "arahan": "توليس سمولا اية برايکوت دالم توليسن جاوي.", "arahanRumi": "Tulis semula ayat berikut dalam tulisan Jawi."}
+      ],
+      "kertasSebenar": [
+        {"tahun": 2024, "folder": "jawi-2024", "muka": 13},
+        {"tahun": 2025, "folder": "jawi-2025", "muka": 14}
+      ]
+    },
+    {
+      "id": "sirah",
+      "kod": "UPKK03",
+      "nama": "Sirah",
+      "namaJawi": "سيرة",
+      "ikon": "🐪",
+      "warna": "#6D4C41",
+      "bahasa": "jawi",
+      "bahagian": [
+        {"nama": "A", "markah": 10, "bilangan": 3, "jenis": ["bulat", "suai", "betul_salah", "tempat_kosong"], "arahan": "جواب سموا سوءالن.", "arahanRumi": "Jawab semua soalan."},
+        {"nama": "B", "markah": 10, "bilangan": 10, "jenis": ["objektif"], "arahan": "بولتکن جواڤن يڠ بتول.", "arahanRumi": "Bulatkan jawapan yang betul."},
+        {"nama": "C", "markah": 30, "bilangan": 4, "jenis": ["tulis", "tempat_kosong", "suai", "bulat", "betul_salah"], "arahan": "جواب سوءالن برايکوت.", "arahanRumi": "Jawab soalan berikut."},
+        {"nama": "D", "markah": 20, "bilangan": 2, "jenis": ["huraian"], "arahan": "جواب سوءالن برايکوت دڠن لڠکڤ.", "arahanRumi": "Jawab soalan berikut dengan lengkap."}
+      ],
+      "kertasSebenar": [
+        {"tahun": 2024, "folder": "sirah-2024", "muka": 13},
+        {"tahun": 2025, "folder": "sirah-2025", "muka": 13}
+      ]
+    }
+  ]
+}

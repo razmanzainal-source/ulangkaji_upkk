@@ -1,0 +1,7006 @@
+{
+ "id": "arab",
+ "versi": 1,
+ "bilangan": 138,
+ "soalan": [
+  {
+   "bahagian": "A",
+   "jenis": "bulat",
+   "bahasa": "arab",
+   "soalan": "ضَعْ خَطًّا تَحْتَ الْإِجَابَةِ الصَّحِيحَةِ.",
+   "rumi": "Dha' khattan tahta al-ijabah as-sahihah.",
+   "markah": 4,
+   "item": [
+    {
+     "teks": "الِاسْمُ: الْبَيْتُ / يَجْلِسُ",
+     "rumi": "Al-ism: al-bait / yajlis",
+     "pilihan": [
+      {
+       "teks": "الْبَيْتُ",
+       "rumi": "al-bait"
+      },
+      {
+       "teks": "يَجْلِسُ",
+       "rumi": "yajlis"
+      }
+     ],
+     "jawapan": 0
+    },
+    {
+     "teks": "الِاسْمُ: تَأْكُلُ / التُّفَّاحُ",
+     "rumi": "Al-ism: ta'kul / at-tuffah",
+     "pilihan": [
+      {
+       "teks": "تَأْكُلُ",
+       "rumi": "ta'kul"
+      },
+      {
+       "teks": "التُّفَّاحُ",
+       "rumi": "at-tuffah"
+      }
+     ],
+     "jawapan": 1
+    },
+    {
+     "teks": "الْفِعْلُ: يَكْتُبُ / الْكُرْسِيُّ",
+     "rumi": "Al-fi'l: yaktub / al-kursi",
+     "pilihan": [
+      {
+       "teks": "يَكْتُبُ",
+       "rumi": "yaktub"
+      },
+      {
+       "teks": "الْكُرْسِيُّ",
+       "rumi": "al-kursi"
+      }
+     ],
+     "jawapan": 0
+    },
+    {
+     "teks": "الْفِعْلُ: الْبَابُ / يَفْتَحُ",
+     "rumi": "Al-fi'l: al-bab / yaftah",
+     "pilihan": [
+      {
+       "teks": "الْبَابُ",
+       "rumi": "al-bab"
+      },
+      {
+       "teks": "يَفْتَحُ",
+       "rumi": "yaftah"
+      }
+     ],
+     "jawapan": 1
+    }
+   ],
+   "id": "arab-a1"
+  },
+  {
+   "bahagian": "A",
+   "jenis": "bulat",
+   "bahasa": "arab",
+   "soalan": "اخْتَرْ اسْمَ الْإِشَارَةِ الْمُنَاسِبَ.",
+   "rumi": "Ikhtar ism al-isyarah al-munasib.",
+   "markah": 4,
+   "item": [
+    {
+     "teks": "الْقَلَمُ قَرِيبٌ مِنِّي. ____ قَلَمٌ جَدِيدٌ.",
+     "rumi": "Al-qalam qarib minni. ____ qalam jadid.",
+     "pilihan": [
+      {
+       "teks": "هَذَا",
+       "rumi": "hadza"
+      },
+      {
+       "teks": "هَذِهِ",
+       "rumi": "hadzihi"
+      }
+     ],
+     "jawapan": 0
+    },
+    {
+     "teks": "السَّاعَةُ قَرِيبَةٌ مِنِّي. ____ سَاعَةٌ جَمِيلَةٌ.",
+     "rumi": "As-sa'ah qaribah minni. ____ sa'ah jamilah.",
+     "pilihan": [
+      {
+       "teks": "هَذَا",
+       "rumi": "hadza"
+      },
+      {
+       "teks": "هَذِهِ",
+       "rumi": "hadzihi"
+      }
+     ],
+     "jawapan": 1
+    },
+    {
+     "teks": "الْبَيْتُ بَعِيدٌ عَنِّي. ____ بَيْتٌ كَبِيرٌ.",
+     "rumi": "Al-bait ba'id anni. ____ bait kabir.",
+     "pilihan": [
+      {
+       "teks": "ذَلِكَ",
+       "rumi": "dzalika"
+      },
+      {
+       "teks": "تِلْكَ",
+       "rumi": "tilka"
+      }
+     ],
+     "jawapan": 0
+    },
+    {
+     "teks": "الْمَدْرَسَةُ بَعِيدَةٌ عَنِّي. ____ مَدْرَسَةٌ نَظِيفَةٌ.",
+     "rumi": "Al-madrasah ba'idah anni. ____ madrasah nazifah.",
+     "pilihan": [
+      {
+       "teks": "ذَلِكَ",
+       "rumi": "dzalika"
+      },
+      {
+       "teks": "تِلْكَ",
+       "rumi": "tilka"
+      }
+     ],
+     "jawapan": 1
+    }
+   ],
+   "id": "arab-a2"
+  },
+  {
+   "bahagian": "A",
+   "jenis": "bulat",
+   "bahasa": "arab",
+   "soalan": "اخْتَرْ ضَمِيرَ الْغَائِبِ الْمُنَاسِبَ.",
+   "rumi": "Ikhtar dhamir al-gha'ib al-munasib.",
+   "markah": 4,
+   "item": [
+    {
+     "teks": "أَحْمَدُ وَلَدٌ مُجْتَهِدٌ. ____ يُحِبُّ الْقِرَاءَةَ.",
+     "rumi": "Ahmad walad mujtahid. ____ yuhibb al-qira'ah.",
+     "pilihan": [
+      {
+       "teks": "هُوَ",
+       "rumi": "huwa"
+      },
+      {
+       "teks": "هِيَ",
+       "rumi": "hiya"
+      }
+     ],
+     "jawapan": 0
+    },
+    {
+     "teks": "فَاطِمَةُ بِنْتٌ صَالِحَةٌ. ____ تُسَاعِدُ أُمَّهَا.",
+     "rumi": "Fatimah bint solihah. ____ tusa'id ummaha.",
+     "pilihan": [
+      {
+       "teks": "هُوَ",
+       "rumi": "huwa"
+      },
+      {
+       "teks": "هِيَ",
+       "rumi": "hiya"
+      }
+     ],
+     "jawapan": 1
+    },
+    {
+     "teks": "أَنَا وَأُخْتِي فِي الْمَطْبَخِ. ____ نُسَاعِدُ أُمَّنَا.",
+     "rumi": "Ana wa ukhti fi al-matbakh. ____ nusa'id ummana.",
+     "pilihan": [
+      {
+       "teks": "نَحْنُ",
+       "rumi": "nahnu"
+      },
+      {
+       "teks": "هُمْ",
+       "rumi": "hum"
+      }
+     ],
+     "jawapan": 0
+    },
+    {
+     "teks": "يَا حَسَنُ، ____ تِلْمِيذٌ مُؤَدَّبٌ.",
+     "rumi": "Ya Hasan, ____ tilmidz muaddab.",
+     "pilihan": [
+      {
+       "teks": "أَنْتَ",
+       "rumi": "anta"
+      },
+      {
+       "teks": "هُوَ",
+       "rumi": "huwa"
+      }
+     ],
+     "jawapan": 0
+    }
+   ],
+   "id": "arab-a3"
+  },
+  {
+   "bahagian": "A",
+   "jenis": "bulat",
+   "bahasa": "arab",
+   "soalan": "اخْتَرِ اللَّوْنَ الْمُنَاسِبَ.",
+   "rumi": "Ikhtar al-laun al-munasib.",
+   "markah": 3,
+   "item": [
+    {
+     "teks": "لَوْنُ الْمَوْزِ ____.",
+     "rumi": "Laun al-mauz ____.",
+     "pilihan": [
+      {
+       "teks": "أَصْفَرُ",
+       "rumi": "asfar"
+      },
+      {
+       "teks": "أَحْمَرُ",
+       "rumi": "ahmar"
+      }
+     ],
+     "jawapan": 0
+    },
+    {
+     "teks": "لَوْنُ الْحَشِيشِ ____.",
+     "rumi": "Laun al-hasyisy ____.",
+     "pilihan": [
+      {
+       "teks": "أَزْرَقُ",
+       "rumi": "azraq"
+      },
+      {
+       "teks": "أَخْضَرُ",
+       "rumi": "akhdhar"
+      }
+     ],
+     "jawapan": 1
+    },
+    {
+     "teks": "لَوْنُ الْحَلِيبِ ____.",
+     "rumi": "Laun al-halib ____.",
+     "pilihan": [
+      {
+       "teks": "أَبْيَضُ",
+       "rumi": "abyadh"
+      },
+      {
+       "teks": "أَسْوَدُ",
+       "rumi": "aswad"
+      }
+     ],
+     "jawapan": 0
+    }
+   ],
+   "id": "arab-a4"
+  },
+  {
+   "bahagian": "A",
+   "jenis": "bulat",
+   "bahasa": "arab",
+   "soalan": "اخْتَرِ الرَّقْمَ الْمُنَاسِبَ.",
+   "rumi": "Ikhtar ar-raqm al-munasib.",
+   "markah": 3,
+   "item": [
+    {
+     "teks": "عِشْرُونَ وَثَلَاثُونَ = ____",
+     "rumi": "Isyrun wa thalathun = ____",
+     "pilihan": [
+      {
+       "teks": "٥٠",
+       "rumi": "khamsun"
+      },
+      {
+       "teks": "٤٠",
+       "rumi": "arba'un"
+      }
+     ],
+     "jawapan": 0
+    },
+    {
+     "teks": "خَمْسَةٌ وَخَمْسَةٌ = ____",
+     "rumi": "Khamsah wa khamsah = ____",
+     "pilihan": [
+      {
+       "teks": "١٥",
+       "rumi": "khamsata asyar"
+      },
+      {
+       "teks": "١٠",
+       "rumi": "asyarah"
+      }
+     ],
+     "jawapan": 1
+    },
+    {
+     "teks": "الرَّقْمُ بَعْدَ ٤٩ هُوَ ____",
+     "rumi": "Ar-raqm ba'da 49 huwa ____",
+     "pilihan": [
+      {
+       "teks": "٥٩",
+       "rumi": "tis'ah wa khamsun"
+      },
+      {
+       "teks": "٥٠",
+       "rumi": "khamsun"
+      }
+     ],
+     "jawapan": 1
+    }
+   ],
+   "id": "arab-a5"
+  },
+  {
+   "bahagian": "A",
+   "jenis": "bulat",
+   "bahasa": "arab",
+   "soalan": "اخْتَرِ الْجَمْعَ الْمُنَاسِبَ.",
+   "rumi": "Ikhtar al-jam' al-munasib.",
+   "markah": 3,
+   "item": [
+    {
+     "teks": "الْجَمْعُ لِكَلِمَةِ «قَلَمٍ» هُوَ ____.",
+     "rumi": "Al-jam' likalimah «qalam» huwa ____.",
+     "pilihan": [
+      {
+       "teks": "أَقْلَامٌ",
+       "rumi": "aqlam"
+      },
+      {
+       "teks": "قَلَامَةٌ",
+       "rumi": "qalamah"
+      }
+     ],
+     "jawapan": 0
+    },
+    {
+     "teks": "الْجَمْعُ لِكَلِمَةِ «وَلَدٍ» هُوَ ____.",
+     "rumi": "Al-jam' likalimah «walad» huwa ____.",
+     "pilihan": [
+      {
+       "teks": "وِلَادَةٌ",
+       "rumi": "wiladah"
+      },
+      {
+       "teks": "أَوْلَادٌ",
+       "rumi": "aulad"
+      }
+     ],
+     "jawapan": 1
+    },
+    {
+     "teks": "الْجَمْعُ لِكَلِمَةِ «تِلْمِيذٍ» هُوَ ____.",
+     "rumi": "Al-jam' likalimah «tilmidz» huwa ____.",
+     "pilihan": [
+      {
+       "teks": "تَلَامِيذُ",
+       "rumi": "talamidz"
+      },
+      {
+       "teks": "تِلْمِيذَةٌ",
+       "rumi": "tilmidzah"
+      }
+     ],
+     "jawapan": 0
+    }
+   ],
+   "id": "arab-a6"
+  },
+  {
+   "bahagian": "A",
+   "jenis": "bulat",
+   "bahasa": "arab",
+   "soalan": "اخْتَرْ كَلِمَةَ الضِّدِّ الْمُنَاسِبَةَ.",
+   "rumi": "Ikhtar kalimah adh-dhidd al-munasibah.",
+   "markah": 4,
+   "item": [
+    {
+     "teks": "الضِّدُّ لِكَلِمَةِ «كَبِيرٍ» هُوَ ____.",
+     "rumi": "Adh-dhidd likalimah «kabir» huwa ____.",
+     "pilihan": [
+      {
+       "teks": "صَغِيرٌ",
+       "rumi": "saghir"
+      },
+      {
+       "teks": "جَمِيلٌ",
+       "rumi": "jamil"
+      }
+     ],
+     "jawapan": 0
+    },
+    {
+     "teks": "الضِّدُّ لِكَلِمَةِ «نَظِيفٍ» هُوَ ____.",
+     "rumi": "Adh-dhidd likalimah «nazif» huwa ____.",
+     "pilihan": [
+      {
+       "teks": "وَاسِعٌ",
+       "rumi": "wasi'"
+      },
+      {
+       "teks": "وَسِخٌ",
+       "rumi": "wasikh"
+      }
+     ],
+     "jawapan": 1
+    },
+    {
+     "teks": "الضِّدُّ لِكَلِمَةِ «طَوِيلٍ» هُوَ ____.",
+     "rumi": "Adh-dhidd likalimah «tawil» huwa ____.",
+     "pilihan": [
+      {
+       "teks": "قَصِيرٌ",
+       "rumi": "qasir"
+      },
+      {
+       "teks": "قَدِيمٌ",
+       "rumi": "qadim"
+      }
+     ],
+     "jawapan": 0
+    },
+    {
+     "teks": "الضِّدُّ لِكَلِمَةِ «حَارٍّ» هُوَ ____.",
+     "rumi": "Adh-dhidd likalimah «harr» huwa ____.",
+     "pilihan": [
+      {
+       "teks": "لَذِيذٌ",
+       "rumi": "ladzidz"
+      },
+      {
+       "teks": "بَارِدٌ",
+       "rumi": "barid"
+      }
+     ],
+     "jawapan": 1
+    }
+   ],
+   "id": "arab-a7"
+  },
+  {
+   "bahagian": "A",
+   "jenis": "bulat",
+   "bahasa": "arab",
+   "soalan": "اخْتَرِ الْمَكَانَ الْمُنَاسِبَ.",
+   "rumi": "Ikhtar al-makan al-munasib.",
+   "markah": 3,
+   "item": [
+    {
+     "teks": "أُصَلِّي الْجَمَاعَةَ فِي ____.",
+     "rumi": "Usolli al-jama'ah fi ____.",
+     "pilihan": [
+      {
+       "teks": "الْمَسْجِدِ",
+       "rumi": "al-masjid"
+      },
+      {
+       "teks": "الْمَطْبَخِ",
+       "rumi": "al-matbakh"
+      }
+     ],
+     "jawapan": 0
+    },
+    {
+     "teks": "أَشْتَرِي الْفَاكِهَةَ فِي ____.",
+     "rumi": "Asytari al-fakihah fi ____.",
+     "pilihan": [
+      {
+       "teks": "الْمَدْرَسَةِ",
+       "rumi": "al-madrasah"
+      },
+      {
+       "teks": "السُّوقِ",
+       "rumi": "as-suq"
+      }
+     ],
+     "jawapan": 1
+    },
+    {
+     "teks": "أَنَامُ لَيْلًا فِي ____.",
+     "rumi": "Anam lailan fi ____.",
+     "pilihan": [
+      {
+       "teks": "غُرْفَةِ النَّوْمِ",
+       "rumi": "ghurfat an-naum"
+      },
+      {
+       "teks": "الْحَمَّامِ",
+       "rumi": "al-hammam"
+      }
+     ],
+     "jawapan": 0
+    }
+   ],
+   "id": "arab-a8"
+  },
+  {
+   "bahagian": "A",
+   "jenis": "suai",
+   "bahasa": "arab",
+   "soalan": "وَافِقْ بَيْنَ مَجْمُوعَةِ (أ) وَمَجْمُوعَةِ (ب).",
+   "rumi": "Wafiq baina majmu'ah (a) wa majmu'ah (b).",
+   "markah": 4,
+   "pasangan": [
+    {
+     "kiri": "مَا اسْمُكَ؟",
+     "kiriRumi": "Ma ismuka?",
+     "kanan": "اسْمِي حَسَنٌ",
+     "kananRumi": "Ismi Hasan"
+    },
+    {
+     "kiri": "كَمْ عُمْرُكَ؟",
+     "kiriRumi": "Kam umruka?",
+     "kanan": "عُمْرِي إِحْدَى عَشْرَةَ سَنَةً",
+     "kananRumi": "Umri ihda asyarah sanah"
+    },
+    {
+     "kiri": "مِنْ أَيْنَ أَنْتَ؟",
+     "kiriRumi": "Min aina anta?",
+     "kanan": "أَنَا مِنْ مَالِيزِيَا",
+     "kananRumi": "Ana min Maliziya"
+    },
+    {
+     "kiri": "كَيْفَ حَالُكَ؟",
+     "kiriRumi": "Kaifa haluka?",
+     "kanan": "أَنَا بِخَيْرٍ",
+     "kananRumi": "Ana bikhair"
+    }
+   ],
+   "id": "arab-a9"
+  },
+  {
+   "bahagian": "A",
+   "jenis": "suai",
+   "bahasa": "arab",
+   "soalan": "وَافِقْ بَيْنَ الْحَيَوَانِ وَعَمَلِهِ.",
+   "rumi": "Wafiq baina al-hayawan wa amalihi.",
+   "markah": 4,
+   "pasangan": [
+    {
+     "kiri": "التِّمْسَاحُ",
+     "kiriRumi": "At-timsah",
+     "kanan": "يَسْبَحُ فِي النَّهْرِ",
+     "kananRumi": "Yasbah fi an-nahr"
+    },
+    {
+     "kiri": "الْعُصْفُورُ",
+     "kiriRumi": "Al-usfur",
+     "kanan": "يَطِيرُ فِي السَّمَاءِ",
+     "kananRumi": "Yathir fi as-sama'"
+    },
+    {
+     "kiri": "الْبَقَرَةُ",
+     "kiriRumi": "Al-baqarah",
+     "kanan": "تُعْطِينَا الْحَلِيبَ",
+     "kananRumi": "Tu'tina al-halib"
+    },
+    {
+     "kiri": "الْقِطُّ",
+     "kiriRumi": "Al-qitt",
+     "kanan": "يَشْرَبُ الْحَلِيبَ",
+     "kananRumi": "Yasyrab al-halib"
+    }
+   ],
+   "id": "arab-a10"
+  },
+  {
+   "bahagian": "A",
+   "jenis": "suai",
+   "bahasa": "arab",
+   "soalan": "وَافِقْ بَيْنَ الْمُفْرَدِ وَالْجَمْعِ.",
+   "rumi": "Wafiq baina al-mufrad wal-jam'.",
+   "markah": 3,
+   "pasangan": [
+    {
+     "kiri": "سَيَّارَةٌ",
+     "kiriRumi": "Sayyarah",
+     "kanan": "سَيَّارَاتٌ",
+     "kananRumi": "Sayyarat"
+    },
+    {
+     "kiri": "تِلْمِيذٌ",
+     "kiriRumi": "Tilmidz",
+     "kanan": "تَلَامِيذُ",
+     "kananRumi": "Talamidz"
+    },
+    {
+     "kiri": "نَجْمٌ",
+     "kiriRumi": "Najm",
+     "kanan": "نُجُومٌ",
+     "kananRumi": "Nujum"
+    }
+   ],
+   "id": "arab-a11"
+  },
+  {
+   "bahagian": "A",
+   "jenis": "suai",
+   "bahasa": "arab",
+   "soalan": "وَافِقْ بَيْنَ السُّؤَالِ وَالْجَوَابِ.",
+   "rumi": "Wafiq baina as-su'al wal-jawab.",
+   "markah": 4,
+   "pasangan": [
+    {
+     "kiri": "مَا هَذَا؟",
+     "kiriRumi": "Ma hadza?",
+     "kanan": "هَذَا كِتَابٌ",
+     "kananRumi": "Hadza kitab"
+    },
+    {
+     "kiri": "مَنْ هُوَ؟",
+     "kiriRumi": "Man huwa?",
+     "kanan": "هُوَ أُسْتَاذِي",
+     "kananRumi": "Huwa ustadzi"
+    },
+    {
+     "kiri": "أَيْنَ الْقِطُّ؟",
+     "kiriRumi": "Aina al-qitt?",
+     "kanan": "الْقِطُّ تَحْتَ الطَّاوِلَةِ",
+     "kananRumi": "Al-qitt tahta at-thawilah"
+    },
+    {
+     "kiri": "كَمْ قَلَمًا عِنْدَكَ؟",
+     "kiriRumi": "Kam qalaman indaka?",
+     "kanan": "عِنْدِي ثَلَاثَةُ أَقْلَامٍ",
+     "kananRumi": "Indi thalathah aqlam"
+    }
+   ],
+   "id": "arab-a12"
+  },
+  {
+   "bahagian": "A",
+   "jenis": "suai",
+   "bahasa": "arab",
+   "soalan": "وَافِقْ بَيْنَ الْكَلِمَةِ وَالرَّقْمِ.",
+   "rumi": "Wafiq baina al-kalimah war-raqm.",
+   "markah": 3,
+   "pasangan": [
+    {
+     "kiri": "أَرْبَعَةٌ",
+     "kiriRumi": "Arba'ah",
+     "kanan": "٤",
+     "kananRumi": "arba'ah"
+    },
+    {
+     "kiri": "سِتُّونَ",
+     "kiriRumi": "Sittun",
+     "kanan": "٦٠",
+     "kananRumi": "sittun"
+    },
+    {
+     "kiri": "مِائَةٌ",
+     "kiriRumi": "Mi'ah",
+     "kanan": "١٠٠",
+     "kananRumi": "mi'ah"
+    }
+   ],
+   "id": "arab-a13"
+  },
+  {
+   "bahagian": "A",
+   "jenis": "betul_salah",
+   "bahasa": "arab",
+   "soalan": "ضَعْ عَلَامَةَ ✓ فِي الْعِبَارَةِ الصَّحِيحَةِ وَعَلَامَةَ ✗ فِي الْعِبَارَةِ الْخَاطِئَةِ.",
+   "rumi": "Dha' alamah ✓ fi al-ibarah as-sahihah wa alamah ✗ fi al-ibarah al-khati'ah.",
+   "markah": 4,
+   "item": [
+    {
+     "teks": "السَّرِيرُ فِي غُرْفَةِ النَّوْمِ.",
+     "rumi": "As-sarir fi ghurfat an-naum.",
+     "betul": true
+    },
+    {
+     "teks": "التِّلْفِزْيُونُ فِي الْحَمَّامِ.",
+     "rumi": "At-tilfizyun fi al-hammam.",
+     "betul": false
+    },
+    {
+     "teks": "أَطْبُخُ الطَّعَامَ فِي الْمَطْبَخِ.",
+     "rumi": "Athbukh at-ta'am fi al-matbakh.",
+     "betul": true
+    },
+    {
+     "teks": "أَسْتَحِمُّ فِي الْمَطْبَخِ.",
+     "rumi": "Astahimmu fi al-matbakh.",
+     "betul": false
+    }
+   ],
+   "id": "arab-a14"
+  },
+  {
+   "bahagian": "A",
+   "jenis": "betul_salah",
+   "bahasa": "arab",
+   "soalan": "ضَعْ عَلَامَةَ ✓ فِي الْعِبَارَةِ الصَّحِيحَةِ وَعَلَامَةَ ✗ فِي الْعِبَارَةِ الْخَاطِئَةِ.",
+   "rumi": "Dha' alamah ✓ fi al-ibarah as-sahihah wa alamah ✗ fi al-ibarah al-khati'ah.",
+   "markah": 3,
+   "item": [
+    {
+     "teks": "أَرَى بِالْعَيْنِ.",
+     "rumi": "Ara bil-ain.",
+     "betul": true
+    },
+    {
+     "teks": "أَسْمَعُ بِالْأَنْفِ.",
+     "rumi": "Asma' bil-anf.",
+     "betul": false
+    },
+    {
+     "teks": "أَلْبَسُ الْقُبَّعَةَ عَلَى الرَّأْسِ.",
+     "rumi": "Albis al-qubba'ah ala ar-ra's.",
+     "betul": true
+    }
+   ],
+   "id": "arab-a15"
+  },
+  {
+   "bahagian": "A",
+   "jenis": "betul_salah",
+   "bahasa": "arab",
+   "soalan": "ضَعْ عَلَامَةَ ✓ فِي الْعِبَارَةِ الصَّحِيحَةِ وَعَلَامَةَ ✗ فِي الْعِبَارَةِ الْخَاطِئَةِ.",
+   "rumi": "Dha' alamah ✓ fi al-ibarah as-sahihah wa alamah ✗ fi al-ibarah al-khati'ah.",
+   "markah": 3,
+   "item": [
+    {
+     "teks": "الْكَلْبُ يَطِيرُ فِي السَّمَاءِ.",
+     "rumi": "Al-kalb yathir fi as-sama'.",
+     "betul": false
+    },
+    {
+     "teks": "الْمَوْزُ فَاكِهَةٌ لَذِيذَةٌ.",
+     "rumi": "Al-mauz fakihah ladzidzah.",
+     "betul": true
+    },
+    {
+     "teks": "لَوْنُ الْمَاءِ أَحْمَرُ.",
+     "rumi": "Laun al-ma' ahmar.",
+     "betul": false
+    }
+   ],
+   "id": "arab-a16"
+  },
+  {
+   "bahagian": "A",
+   "jenis": "betul_salah",
+   "bahasa": "arab",
+   "soalan": "ضَعْ عَلَامَةَ ✓ فِي الْعِبَارَةِ الصَّحِيحَةِ وَعَلَامَةَ ✗ فِي الْعِبَارَةِ الْخَاطِئَةِ.",
+   "rumi": "Dha' alamah ✓ fi al-ibarah as-sahihah wa alamah ✗ fi al-ibarah al-khati'ah.",
+   "markah": 4,
+   "item": [
+    {
+     "teks": "الْمُسْلِمُ يَبْدَأُ كَلَامَهُ بِالسَّلَامِ.",
+     "rumi": "Al-muslim yabda' kalamahu bis-salam.",
+     "betul": true
+    },
+    {
+     "teks": "نَقُولُ «شُكْرًا» لِمَنْ أَحْسَنَ إِلَيْنَا.",
+     "rumi": "Naqul «syukran» liman ahsana ilaina.",
+     "betul": true
+    },
+    {
+     "teks": "نَقُولُ «مَعَ السَّلَامَةِ» عِنْدَمَا نَدْخُلُ الْفَصْلَ.",
+     "rumi": "Naqul «ma'as-salamah» indama nadkhul al-fasl.",
+     "betul": false
+    },
+    {
+     "teks": "نَقُولُ «صَبَاحَ الْخَيْرِ» فِي الصَّبَاحِ.",
+     "rumi": "Naqul «sabah al-khair» fi as-sabah.",
+     "betul": true
+    }
+   ],
+   "id": "arab-a17"
+  },
+  {
+   "bahagian": "A",
+   "jenis": "tempat_kosong",
+   "bahasa": "arab",
+   "soalan": "أَكْمِلِ الْفَرَاغَاتِ بِالْكَلِمَةِ الْمُنَاسِبَةِ مِنَ الْبَنْكِ.",
+   "rumi": "Akmil al-faraghah bil-kalimah al-munasibah min al-bank.",
+   "markah": 4,
+   "bank": [
+    "الْبَيْتِ",
+    "الْمَسْجِدِ",
+    "الْمَدْرَسَةِ",
+    "السُّوقِ"
+   ],
+   "bankRumi": [
+    "al-bait",
+    "al-masjid",
+    "al-madrasah",
+    "as-suq"
+   ],
+   "item": [
+    {
+     "teks": "أَسْكُنُ فِي ____ مَعَ أُسْرَتِي.",
+     "rumi": "Askun fi ____ ma'a usrati."
+    },
+    {
+     "teks": "أُصَلِّي الْجُمُعَةَ فِي ____.",
+     "rumi": "Usolli al-jumu'ah fi ____."
+    },
+    {
+     "teks": "أَتَعَلَّمُ الْعُلُومَ فِي ____.",
+     "rumi": "Ata'allam al-ulum fi ____."
+    },
+    {
+     "teks": "أَشْتَرِي الْفَاكِهَةَ فِي ____.",
+     "rumi": "Asytari al-fakihah fi ____."
+    }
+   ],
+   "id": "arab-a18"
+  },
+  {
+   "bahagian": "A",
+   "jenis": "tempat_kosong",
+   "bahasa": "arab",
+   "soalan": "أَكْمِلِ الْفَرَاغَاتِ بِالْكَلِمَةِ الْمُنَاسِبَةِ مِنَ الْبَنْكِ.",
+   "rumi": "Akmil al-faraghah bil-kalimah al-munasibah min al-bank.",
+   "markah": 4,
+   "bank": [
+    "اسْمِي",
+    "عُمْرِي",
+    "أَسْكُنُ",
+    "أَنَا"
+   ],
+   "bankRumi": [
+    "ismi",
+    "umri",
+    "askun",
+    "ana"
+   ],
+   "item": [
+    {
+     "teks": "مَا اسْمُكَ؟ ____ سَعِيدٌ.",
+     "rumi": "Ma ismuka? ____ Said."
+    },
+    {
+     "teks": "كَمْ عُمْرُكَ؟ ____ إِحْدَى عَشْرَةَ سَنَةً.",
+     "rumi": "Kam umruka? ____ ihda asyarah sanah."
+    },
+    {
+     "teks": "أَيْنَ تَسْكُنُ؟ ____ فِي مَالِيزِيَا.",
+     "rumi": "Aina taskun? ____ fi Maliziya."
+    },
+    {
+     "teks": "كَيْفَ حَالُكَ؟ ____ بِخَيْرٍ، الْحَمْدُ لِلَّهِ.",
+     "rumi": "Kaifa haluka? ____ bikhair, alhamdulillah."
+    }
+   ],
+   "id": "arab-a19"
+  },
+  {
+   "bahagian": "A",
+   "jenis": "tempat_kosong",
+   "bahasa": "arab",
+   "soalan": "أَكْمِلِ الْفَرَاغَاتِ بِالْكَلِمَةِ الْمُنَاسِبَةِ مِنَ الْبَنْكِ.",
+   "rumi": "Akmil al-faraghah bil-kalimah al-munasibah min al-bank.",
+   "markah": 4,
+   "bank": [
+    "خَمْسَةٌ",
+    "سَبْعَةٌ",
+    "اثْنَا عَشَرَ",
+    "عِشْرُونَ"
+   ],
+   "bankRumi": [
+    "khamsah",
+    "sab'ah",
+    "itsna asyar",
+    "isyrun"
+   ],
+   "item": [
+    {
+     "teks": "عَدَدُ أَصَابِعِ الْيَدِ الْوَاحِدَةِ ____ أَصَابِعَ.",
+     "rumi": "Adad asabi' al-yad al-wahidah ____ asabi'."
+    },
+    {
+     "teks": "عَدَدُ أَيَّامِ الْأُسْبُوعِ ____ أَيَّامٍ.",
+     "rumi": "Adad ayyam al-usbu' ____ ayyam."
+    },
+    {
+     "teks": "عَدَدُ شُهُورِ السَّنَةِ ____ شَهْرًا.",
+     "rumi": "Adad syuhur as-sanah ____ syahran."
+    },
+    {
+     "teks": "عَدَدُ أَصَابِعِ الْيَدَيْنِ ____ إِصْبَعًا.",
+     "rumi": "Adad asabi' al-yadain ____ isba'an."
+    }
+   ],
+   "id": "arab-a20"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "bahasa": "arab",
+   "markah": 1,
+   "soalan": "نُصَلِّي الصَّلَوَاتِ الْخَمْسَ فِي ____.",
+   "rumi": "Nusolli as-solawat al-khams fi ____.",
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "jawapan": 0,
+     "pilihan": [
+      {
+       "teks": "الْمَسْجِدِ",
+       "rumi": "al-masjid"
+      },
+      {
+       "teks": "الْمَقْصَفِ",
+       "rumi": "al-maqsaf"
+      },
+      {
+       "teks": "الْمَلْعَبِ",
+       "rumi": "al-mal'ab"
+      },
+      {
+       "teks": "الْمَكْتَبَةِ",
+       "rumi": "al-maktabah"
+      }
+     ]
+    }
+   ],
+   "id": "arab-b1"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "bahasa": "arab",
+   "markah": 1,
+   "soalan": "نَطْبُخُ الطَّعَامَ فِي ____.",
+   "rumi": "Nathbukh at-ta'am fi ____.",
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "jawapan": 1,
+     "pilihan": [
+      {
+       "teks": "غُرْفَةِ النَّوْمِ",
+       "rumi": "ghurfat an-naum"
+      },
+      {
+       "teks": "الْمَطْبَخِ",
+       "rumi": "al-matbakh"
+      },
+      {
+       "teks": "الْحَمَّامِ",
+       "rumi": "al-hammam"
+      },
+      {
+       "teks": "الْحَدِيقَةِ",
+       "rumi": "al-hadiqah"
+      }
+     ]
+    }
+   ],
+   "id": "arab-b2"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "bahasa": "arab",
+   "markah": 1,
+   "soalan": "نَسْتَحِمُّ وَنُنَظِّفُ الْجِسْمَ فِي ____.",
+   "rumi": "Nastahimmu wa nunazzif al-jism fi ____.",
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "jawapan": 2,
+     "pilihan": [
+      {
+       "teks": "غُرْفَةِ النَّوْمِ",
+       "rumi": "ghurfat an-naum"
+      },
+      {
+       "teks": "الْمَطْبَخِ",
+       "rumi": "al-matbakh"
+      },
+      {
+       "teks": "الْحَمَّامِ",
+       "rumi": "al-hammam"
+      },
+      {
+       "teks": "الْفَصْلِ",
+       "rumi": "al-fasl"
+      }
+     ]
+    }
+   ],
+   "id": "arab-b3"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "bahasa": "arab",
+   "markah": 1,
+   "soalan": "نَتَعَلَّمُ الْعُلُومَ وَنَقْرَأُ الْكُتُبَ فِي ____.",
+   "rumi": "Nata'allam al-ulum wa naqra' al-kutub fi ____.",
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "jawapan": 3,
+     "pilihan": [
+      {
+       "teks": "الْمَقْصَفِ",
+       "rumi": "al-maqsaf"
+      },
+      {
+       "teks": "الْحَمَّامِ",
+       "rumi": "al-hammam"
+      },
+      {
+       "teks": "الْحَدِيقَةِ",
+       "rumi": "al-hadiqah"
+      },
+      {
+       "teks": "الْفَصْلِ",
+       "rumi": "al-fasl"
+      }
+     ]
+    }
+   ],
+   "id": "arab-b4"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "bahasa": "arab",
+   "markah": 1,
+   "soalan": "نَلْعَبُ الْكُرَةَ مَعَ أَصْدِقَائِنَا فِي ____.",
+   "rumi": "Nal'ab al-kurah ma'a asdiqaina fi ____.",
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "jawapan": 1,
+     "pilihan": [
+      {
+       "teks": "الْمَكْتَبَةِ",
+       "rumi": "al-maktabah"
+      },
+      {
+       "teks": "الْمَلْعَبِ",
+       "rumi": "al-mal'ab"
+      },
+      {
+       "teks": "الْمَطْبَخِ",
+       "rumi": "al-matbakh"
+      },
+      {
+       "teks": "الْمَسْجِدِ",
+       "rumi": "al-masjid"
+      }
+     ]
+    }
+   ],
+   "id": "arab-b5"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "bahasa": "arab",
+   "markah": 1,
+   "soalan": "نَشْتَرِي الْفَاكِهَةَ وَالْخُضْرَةَ مِنَ ____.",
+   "rumi": "Nasytari al-fakihah wal-khudhrah mina ____.",
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "jawapan": 2,
+     "pilihan": [
+      {
+       "teks": "الْبَيْتِ",
+       "rumi": "al-bait"
+      },
+      {
+       "teks": "الْمَدْرَسَةِ",
+       "rumi": "al-madrasah"
+      },
+      {
+       "teks": "السُّوقِ",
+       "rumi": "as-suq"
+      },
+      {
+       "teks": "الْمَقْصَفِ",
+       "rumi": "al-maqsaf"
+      }
+     ]
+    }
+   ],
+   "id": "arab-b6"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "bahasa": "arab",
+   "markah": 1,
+   "soalan": "نَنَامُ فِي ____.",
+   "rumi": "Nanam fi ____.",
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "jawapan": 3,
+     "pilihan": [
+      {
+       "teks": "الْحَمَّامِ",
+       "rumi": "al-hammam"
+      },
+      {
+       "teks": "الْمَطْبَخِ",
+       "rumi": "al-matbakh"
+      },
+      {
+       "teks": "الْفَصْلِ",
+       "rumi": "al-fasl"
+      },
+      {
+       "teks": "غُرْفَةِ النَّوْمِ",
+       "rumi": "ghurfat an-naum"
+      }
+     ]
+    }
+   ],
+   "id": "arab-b7"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "bahasa": "arab",
+   "markah": 1,
+   "soalan": "نَأْكُلُ الطَّعَامَ فِي ____.",
+   "rumi": "Na'kul at-ta'am fi ____.",
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "jawapan": 0,
+     "pilihan": [
+      {
+       "teks": "الْمَقْصَفِ",
+       "rumi": "al-maqsaf"
+      },
+      {
+       "teks": "الْحَمَّامِ",
+       "rumi": "al-hammam"
+      },
+      {
+       "teks": "غُرْفَةِ النَّوْمِ",
+       "rumi": "ghurfat an-naum"
+      },
+      {
+       "teks": "الْفَصْلِ",
+       "rumi": "al-fasl"
+      }
+     ]
+    }
+   ],
+   "id": "arab-b8"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "bahasa": "arab",
+   "markah": 1,
+   "soalan": "الْقَلَمُ قَرِيبٌ مِنِّي. ____ قَلَمٌ جَدِيدٌ.",
+   "rumi": "Al-qalam qarib minni. ____ qalam jadid.",
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "jawapan": 2,
+     "pilihan": [
+      {
+       "teks": "هَذِهِ",
+       "rumi": "hadzihi"
+      },
+      {
+       "teks": "ذَلِكَ",
+       "rumi": "dzalika"
+      },
+      {
+       "teks": "هَذَا",
+       "rumi": "hadza"
+      },
+      {
+       "teks": "تِلْكَ",
+       "rumi": "tilka"
+      }
+     ]
+    }
+   ],
+   "id": "arab-b9"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "bahasa": "arab",
+   "markah": 1,
+   "soalan": "الْحَقِيبَةُ قَرِيبَةٌ مِنِّي. ____ حَقِيبَةٌ ثَقِيلَةٌ.",
+   "rumi": "Al-haqibah qaribah minni. ____ haqibah thaqilah.",
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "jawapan": 3,
+     "pilihan": [
+      {
+       "teks": "هَذَا",
+       "rumi": "hadza"
+      },
+      {
+       "teks": "هَذِهِ",
+       "rumi": "hadzihi"
+      },
+      {
+       "teks": "ذَلِكَ",
+       "rumi": "dzalika"
+      },
+      {
+       "teks": "تِلْكَ",
+       "rumi": "tilka"
+      }
+     ]
+    }
+   ],
+   "id": "arab-b10"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "bahasa": "arab",
+   "markah": 1,
+   "soalan": "الْبَيْتُ بَعِيدٌ عَنِّي. ____ بَيْتٌ كَبِيرٌ.",
+   "rumi": "Al-bait ba'id anni. ____ bait kabir.",
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "jawapan": 0,
+     "pilihan": [
+      {
+       "teks": "ذَلِكَ",
+       "rumi": "dzalika"
+      },
+      {
+       "teks": "هَذَا",
+       "rumi": "hadza"
+      },
+      {
+       "teks": "هَذِهِ",
+       "rumi": "hadzihi"
+      },
+      {
+       "teks": "تِلْكَ",
+       "rumi": "tilka"
+      }
+     ]
+    }
+   ],
+   "id": "arab-b11"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "bahasa": "arab",
+   "markah": 1,
+   "soalan": "الْمَدْرَسَةُ بَعِيدَةٌ عَنِّي. ____ مَدْرَسَةٌ نَظِيفَةٌ.",
+   "rumi": "Al-madrasah ba'idah anni. ____ madrasah nazifah.",
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "jawapan": 1,
+     "pilihan": [
+      {
+       "teks": "ذَلِكَ",
+       "rumi": "dzalika"
+      },
+      {
+       "teks": "تِلْكَ",
+       "rumi": "tilka"
+      },
+      {
+       "teks": "هَذَا",
+       "rumi": "hadza"
+      },
+      {
+       "teks": "هَذِهِ",
+       "rumi": "hadzihi"
+      }
+     ]
+    }
+   ],
+   "id": "arab-b12"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "bahasa": "arab",
+   "markah": 1,
+   "soalan": "أَحْمَدُ وَلَدٌ مُجْتَهِدٌ. ____ يُحِبُّ الْقِرَاءَةَ.",
+   "rumi": "Ahmad walad mujtahid. ____ yuhibb al-qira'ah.",
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "jawapan": 3,
+     "pilihan": [
+      {
+       "teks": "هُمْ",
+       "rumi": "hum"
+      },
+      {
+       "teks": "هِيَ",
+       "rumi": "hiya"
+      },
+      {
+       "teks": "أَنْتَ",
+       "rumi": "anta"
+      },
+      {
+       "teks": "هُوَ",
+       "rumi": "huwa"
+      }
+     ]
+    }
+   ],
+   "id": "arab-b13"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "bahasa": "arab",
+   "markah": 1,
+   "soalan": "فَاطِمَةُ تِلْمِيذَةٌ نَشِيطَةٌ. ____ تَقْرَأُ الْقُرْآنَ كُلَّ يَوْمٍ.",
+   "rumi": "Fatimah tilmidzah nasyitah. ____ taqra' al-qur'an kulla yaum.",
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "jawapan": 0,
+     "pilihan": [
+      {
+       "teks": "هِيَ",
+       "rumi": "hiya"
+      },
+      {
+       "teks": "هُوَ",
+       "rumi": "huwa"
+      },
+      {
+       "teks": "نَحْنُ",
+       "rumi": "nahnu"
+      },
+      {
+       "teks": "هُمْ",
+       "rumi": "hum"
+      }
+     ]
+    }
+   ],
+   "id": "arab-b14"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "bahasa": "arab",
+   "markah": 1,
+   "soalan": "أَنَا وَأَخِي فِي الْمَطْبَخِ. ____ نُسَاعِدُ أُمَّنَا.",
+   "rumi": "Ana wa akhi fi al-matbakh. ____ nusa'id ummana.",
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "jawapan": 1,
+     "pilihan": [
+      {
+       "teks": "هُمْ",
+       "rumi": "hum"
+      },
+      {
+       "teks": "نَحْنُ",
+       "rumi": "nahnu"
+      },
+      {
+       "teks": "أَنَا",
+       "rumi": "ana"
+      },
+      {
+       "teks": "هُوَ",
+       "rumi": "huwa"
+      }
+     ]
+    }
+   ],
+   "id": "arab-b15"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "bahasa": "arab",
+   "markah": 1,
+   "soalan": "أَحْمَدُ وَعُمَرُ وَعَلِيٌّ تَلَامِيذُ. ____ يَدْرُسُونَ فِي الْفَصْلِ.",
+   "rumi": "Ahmad wa Umar wa Ali talamidz. ____ yadrusun fi al-fasl.",
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "jawapan": 2,
+     "pilihan": [
+      {
+       "teks": "هُوَ",
+       "rumi": "huwa"
+      },
+      {
+       "teks": "أَنْتَ",
+       "rumi": "anta"
+      },
+      {
+       "teks": "هُمْ",
+       "rumi": "hum"
+      },
+      {
+       "teks": "هِيَ",
+       "rumi": "hiya"
+      }
+     ]
+    }
+   ],
+   "id": "arab-b16"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "bahasa": "arab",
+   "markah": 1,
+   "soalan": "____ عُمْرُكَ؟ عُمْرِي عَشْرُ سَنَوَاتٍ.",
+   "rumi": "____ umruka? Umri asyr sanawat.",
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "jawapan": 0,
+     "pilihan": [
+      {
+       "teks": "كَمْ",
+       "rumi": "kam"
+      },
+      {
+       "teks": "مَنْ",
+       "rumi": "man"
+      },
+      {
+       "teks": "أَيْنَ",
+       "rumi": "aina"
+      },
+      {
+       "teks": "مَا",
+       "rumi": "ma"
+      }
+     ]
+    }
+   ],
+   "id": "arab-b17"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "bahasa": "arab",
+   "markah": 1,
+   "soalan": "____ هَذَا؟ هَذَا مِصْبَاحٌ.",
+   "rumi": "____ hadza? Hadza misbah.",
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "jawapan": 2,
+     "pilihan": [
+      {
+       "teks": "مَنْ",
+       "rumi": "man"
+      },
+      {
+       "teks": "أَيْنَ",
+       "rumi": "aina"
+      },
+      {
+       "teks": "مَا",
+       "rumi": "ma"
+      },
+      {
+       "teks": "كَمْ",
+       "rumi": "kam"
+      }
+     ]
+    }
+   ],
+   "id": "arab-b18"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "bahasa": "arab",
+   "markah": 1,
+   "soalan": "____ الْمَسْجِدُ؟ الْمَسْجِدُ أَمَامَ السُّوقِ.",
+   "rumi": "____ al-masjid? Al-masjid amam as-suq.",
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "jawapan": 1,
+     "pilihan": [
+      {
+       "teks": "مَنْ",
+       "rumi": "man"
+      },
+      {
+       "teks": "أَيْنَ",
+       "rumi": "aina"
+      },
+      {
+       "teks": "مَا",
+       "rumi": "ma"
+      },
+      {
+       "teks": "كَمْ",
+       "rumi": "kam"
+      }
+     ]
+    }
+   ],
+   "id": "arab-b19"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "bahasa": "arab",
+   "markah": 1,
+   "soalan": "____ يُعَلِّمُ التَّلَامِيذَ فِي الْفَصْلِ؟ الْأُسْتَاذُ سَعِيدٌ.",
+   "rumi": "____ yu'allim at-talamidz fi al-fasl? Al-ustadz Said.",
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "jawapan": 3,
+     "pilihan": [
+      {
+       "teks": "مَا",
+       "rumi": "ma"
+      },
+      {
+       "teks": "كَمْ",
+       "rumi": "kam"
+      },
+      {
+       "teks": "أَيْنَ",
+       "rumi": "aina"
+      },
+      {
+       "teks": "مَنْ",
+       "rumi": "man"
+      }
+     ]
+    }
+   ],
+   "id": "arab-b20"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "bahasa": "arab",
+   "markah": 1,
+   "soalan": "خَمْسَةٌ وَخَمْسَةٌ = ____",
+   "rumi": "Khamsah wa khamsah = ____",
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "jawapan": 1,
+     "pilihan": [
+      {
+       "teks": "٢٠",
+       "rumi": "isyrun"
+      },
+      {
+       "teks": "١٠",
+       "rumi": "asyarah"
+      },
+      {
+       "teks": "١٥",
+       "rumi": "khamsata asyar"
+      },
+      {
+       "teks": "٥٥",
+       "rumi": "khamsah wa khamsun"
+      }
+     ]
+    }
+   ],
+   "id": "arab-b21"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "bahasa": "arab",
+   "markah": 1,
+   "soalan": "عِشْرُونَ وَثَلَاثُونَ = ____",
+   "rumi": "Isyrun wa thalathun = ____",
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "jawapan": 3,
+     "pilihan": [
+      {
+       "teks": "٤٠",
+       "rumi": "arba'un"
+      },
+      {
+       "teks": "٤٥",
+       "rumi": "khamsah wa arba'un"
+      },
+      {
+       "teks": "٦٠",
+       "rumi": "sittun"
+      },
+      {
+       "teks": "٥٠",
+       "rumi": "khamsun"
+      }
+     ]
+    }
+   ],
+   "id": "arab-b22"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "bahasa": "arab",
+   "markah": 1,
+   "soalan": "الرَّقْمُ بَعْدَ ٤٩ هُوَ ____",
+   "rumi": "Ar-raqm ba'da 49 huwa ____",
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "jawapan": 0,
+     "pilihan": [
+      {
+       "teks": "٥٠",
+       "rumi": "khamsun"
+      },
+      {
+       "teks": "٥٩",
+       "rumi": "tis'ah wa khamsun"
+      },
+      {
+       "teks": "٤٠",
+       "rumi": "arba'un"
+      },
+      {
+       "teks": "٦٠",
+       "rumi": "sittun"
+      }
+     ]
+    }
+   ],
+   "id": "arab-b23"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "bahasa": "arab",
+   "markah": 1,
+   "soalan": "الرَّقْمُ قَبْلَ ٨٠ هُوَ ____",
+   "rumi": "Ar-raqm qabla 80 huwa ____",
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "jawapan": 2,
+     "pilihan": [
+      {
+       "teks": "٩٠",
+       "rumi": "tis'un"
+      },
+      {
+       "teks": "٧٠",
+       "rumi": "sab'un"
+      },
+      {
+       "teks": "٧٩",
+       "rumi": "tis'ah wa sab'un"
+      },
+      {
+       "teks": "٨١",
+       "rumi": "wahid wa thamanun"
+      }
+     ]
+    }
+   ],
+   "id": "arab-b24"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "bahasa": "arab",
+   "markah": 1,
+   "soalan": "تِسْعَةٌ نَاقِصٌ ثَلَاثَةٌ = ____",
+   "rumi": "Tis'ah naqis thalathah = ____",
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "jawapan": 2,
+     "pilihan": [
+      {
+       "teks": "سَبْعَةٌ",
+       "rumi": "sab'ah"
+      },
+      {
+       "teks": "خَمْسَةٌ",
+       "rumi": "khamsah"
+      },
+      {
+       "teks": "سِتَّةٌ",
+       "rumi": "sittah"
+      },
+      {
+       "teks": "ثَلَاثَةٌ",
+       "rumi": "thalathah"
+      }
+     ]
+    }
+   ],
+   "id": "arab-b25"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "bahasa": "arab",
+   "markah": 1,
+   "soalan": "مِائَةٌ بِالْأَرْقَامِ هِيَ ____",
+   "rumi": "Mi'ah bil-arqam hiya ____",
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "jawapan": 0,
+     "pilihan": [
+      {
+       "teks": "١٠٠",
+       "rumi": "mi'ah"
+      },
+      {
+       "teks": "١٠",
+       "rumi": "asyarah"
+      },
+      {
+       "teks": "١٠٠٠",
+       "rumi": "alf"
+      },
+      {
+       "teks": "١١",
+       "rumi": "ahada asyar"
+      }
+     ]
+    }
+   ],
+   "id": "arab-b26"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "bahasa": "arab",
+   "markah": 1,
+   "soalan": "عَدَدُ أَصَابِعِ الْيَدِ الْوَاحِدَةِ ____.",
+   "rumi": "Adad asabi' al-yad al-wahidah ____.",
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "jawapan": 3,
+     "pilihan": [
+      {
+       "teks": "أَرْبَعَةٌ",
+       "rumi": "arba'ah"
+      },
+      {
+       "teks": "سِتَّةٌ",
+       "rumi": "sittah"
+      },
+      {
+       "teks": "ثَلَاثَةٌ",
+       "rumi": "thalathah"
+      },
+      {
+       "teks": "خَمْسَةٌ",
+       "rumi": "khamsah"
+      }
+     ]
+    }
+   ],
+   "id": "arab-b27"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "bahasa": "arab",
+   "markah": 1,
+   "soalan": "عَدَدُ أَيَّامِ الْأُسْبُوعِ ____ أَيَّامٍ.",
+   "rumi": "Adad ayyam al-usbu' ____ ayyam.",
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "jawapan": 1,
+     "pilihan": [
+      {
+       "teks": "خَمْسَةٌ",
+       "rumi": "khamsah"
+      },
+      {
+       "teks": "سَبْعَةٌ",
+       "rumi": "sab'ah"
+      },
+      {
+       "teks": "عَشَرَةٌ",
+       "rumi": "asyarah"
+      },
+      {
+       "teks": "ثَلَاثَةٌ",
+       "rumi": "thalathah"
+      }
+     ]
+    }
+   ],
+   "id": "arab-b28"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "bahasa": "arab",
+   "markah": 1,
+   "soalan": "لَوْنُ الْمَوْزِ ____.",
+   "rumi": "Laun al-mauz ____.",
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "jawapan": 3,
+     "pilihan": [
+      {
+       "teks": "أَزْرَقُ",
+       "rumi": "azraq"
+      },
+      {
+       "teks": "أَبْيَضُ",
+       "rumi": "abyadh"
+      },
+      {
+       "teks": "أَخْضَرُ",
+       "rumi": "akhdhar"
+      },
+      {
+       "teks": "أَصْفَرُ",
+       "rumi": "asfar"
+      }
+     ]
+    }
+   ],
+   "id": "arab-b29"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "bahasa": "arab",
+   "markah": 1,
+   "soalan": "لَوْنُ الْحَشِيشِ ____.",
+   "rumi": "Laun al-hasyisy ____.",
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "jawapan": 1,
+     "pilihan": [
+      {
+       "teks": "أَسْوَدُ",
+       "rumi": "aswad"
+      },
+      {
+       "teks": "أَخْضَرُ",
+       "rumi": "akhdhar"
+      },
+      {
+       "teks": "أَبْيَضُ",
+       "rumi": "abyadh"
+      },
+      {
+       "teks": "أَحْمَرُ",
+       "rumi": "ahmar"
+      }
+     ]
+    }
+   ],
+   "id": "arab-b30"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "bahasa": "arab",
+   "markah": 1,
+   "soalan": "لَوْنُ الْحَلِيبِ ____.",
+   "rumi": "Laun al-halib ____.",
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "jawapan": 2,
+     "pilihan": [
+      {
+       "teks": "أَخْضَرُ",
+       "rumi": "akhdhar"
+      },
+      {
+       "teks": "أَصْفَرُ",
+       "rumi": "asfar"
+      },
+      {
+       "teks": "أَبْيَضُ",
+       "rumi": "abyadh"
+      },
+      {
+       "teks": "أَحْمَرُ",
+       "rumi": "ahmar"
+      }
+     ]
+    }
+   ],
+   "id": "arab-b31"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "bahasa": "arab",
+   "markah": 1,
+   "soalan": "لَوْنُ السَّمَاءِ ____.",
+   "rumi": "Laun as-sama' ____.",
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "jawapan": 0,
+     "pilihan": [
+      {
+       "teks": "أَزْرَقُ",
+       "rumi": "azraq"
+      },
+      {
+       "teks": "أَحْمَرُ",
+       "rumi": "ahmar"
+      },
+      {
+       "teks": "أَصْفَرُ",
+       "rumi": "asfar"
+      },
+      {
+       "teks": "أَخْضَرُ",
+       "rumi": "akhdhar"
+      }
+     ]
+    }
+   ],
+   "id": "arab-b32"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "bahasa": "arab",
+   "markah": 1,
+   "soalan": "نَرَى الْأَشْيَاءَ بِـ____.",
+   "rumi": "Nara al-asyya' bi ____.",
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "jawapan": 0,
+     "pilihan": [
+      {
+       "teks": "الْعَيْنِ",
+       "rumi": "al-ain"
+      },
+      {
+       "teks": "الْأَنْفِ",
+       "rumi": "al-anf"
+      },
+      {
+       "teks": "الْأُذُنِ",
+       "rumi": "al-udzun"
+      },
+      {
+       "teks": "الْقَدَمِ",
+       "rumi": "al-qadam"
+      }
+     ]
+    }
+   ],
+   "id": "arab-b33"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "bahasa": "arab",
+   "markah": 1,
+   "soalan": "نَسْمَعُ الْأَصْوَاتَ بِـ____.",
+   "rumi": "Nasma' al-aswat bi ____.",
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "jawapan": 3,
+     "pilihan": [
+      {
+       "teks": "الْعَيْنِ",
+       "rumi": "al-ain"
+      },
+      {
+       "teks": "الْأَنْفِ",
+       "rumi": "al-anf"
+      },
+      {
+       "teks": "الْفَمِ",
+       "rumi": "al-fam"
+      },
+      {
+       "teks": "الْأُذُنِ",
+       "rumi": "al-udzun"
+      }
+     ]
+    }
+   ],
+   "id": "arab-b34"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "bahasa": "arab",
+   "markah": 1,
+   "soalan": "نَشُمُّ الرَّائِحَةَ بِـ____.",
+   "rumi": "Nasyumm ar-ra'ihah bi ____.",
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "jawapan": 2,
+     "pilihan": [
+      {
+       "teks": "الْأُذُنِ",
+       "rumi": "al-udzun"
+      },
+      {
+       "teks": "الْعَيْنِ",
+       "rumi": "al-ain"
+      },
+      {
+       "teks": "الْأَنْفِ",
+       "rumi": "al-anf"
+      },
+      {
+       "teks": "الرَّأْسِ",
+       "rumi": "ar-ra's"
+      }
+     ]
+    }
+   ],
+   "id": "arab-b35"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "bahasa": "arab",
+   "markah": 1,
+   "soalan": "نَمْشِي وَنَجْرِي بِـ____.",
+   "rumi": "Namsyi wa najri bi ____.",
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "jawapan": 1,
+     "pilihan": [
+      {
+       "teks": "الْيَدِ",
+       "rumi": "al-yad"
+      },
+      {
+       "teks": "الْقَدَمِ",
+       "rumi": "al-qadam"
+      },
+      {
+       "teks": "الرَّأْسِ",
+       "rumi": "ar-ra's"
+      },
+      {
+       "teks": "الْفَمِ",
+       "rumi": "al-fam"
+      }
+     ]
+    }
+   ],
+   "id": "arab-b36"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "bahasa": "arab",
+   "markah": 1,
+   "soalan": "نَأْكُلُ الطَّعَامَ بِـ____.",
+   "rumi": "Na'kul at-ta'am bi ____.",
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "jawapan": 1,
+     "pilihan": [
+      {
+       "teks": "الْأَنْفِ",
+       "rumi": "al-anf"
+      },
+      {
+       "teks": "الْفَمِ",
+       "rumi": "al-fam"
+      },
+      {
+       "teks": "الْأُذُنِ",
+       "rumi": "al-udzun"
+      },
+      {
+       "teks": "الْقَدَمِ",
+       "rumi": "al-qadam"
+      }
+     ]
+    }
+   ],
+   "id": "arab-b37"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "bahasa": "arab",
+   "markah": 1,
+   "soalan": "نَكْتُبُ الْوَاجِبَ بِـ____.",
+   "rumi": "Naktub al-wajib bi ____.",
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "jawapan": 0,
+     "pilihan": [
+      {
+       "teks": "الْيَدِ",
+       "rumi": "al-yad"
+      },
+      {
+       "teks": "الْقَدَمِ",
+       "rumi": "al-qadam"
+      },
+      {
+       "teks": "الْعَيْنِ",
+       "rumi": "al-ain"
+      },
+      {
+       "teks": "الْأَنْفِ",
+       "rumi": "al-anf"
+      }
+     ]
+    }
+   ],
+   "id": "arab-b38"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "bahasa": "arab",
+   "markah": 1,
+   "soalan": "الْفَاكِهَةُ الصَّفْرَاءُ الطَّوِيلَةُ هِيَ ____.",
+   "rumi": "Al-fakihah as-safra' at-tawilah hiya ____.",
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "jawapan": 3,
+     "pilihan": [
+      {
+       "teks": "التُّفَّاحُ",
+       "rumi": "at-tuffah"
+      },
+      {
+       "teks": "الْبُرْتُقَالُ",
+       "rumi": "al-burtuqal"
+      },
+      {
+       "teks": "الْعِنَبُ",
+       "rumi": "al-inab"
+      },
+      {
+       "teks": "الْمَوْزُ",
+       "rumi": "al-mauz"
+      }
+     ]
+    }
+   ],
+   "id": "arab-b39"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "bahasa": "arab",
+   "markah": 1,
+   "soalan": "الْجَزَرُ هُوَ مِنْ أَنْوَاعِ ____.",
+   "rumi": "Al-jazar huwa min anwa' ____.",
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "jawapan": 2,
+     "pilihan": [
+      {
+       "teks": "الْفَوَاكِهِ",
+       "rumi": "al-fawakih"
+      },
+      {
+       "teks": "الْمَلَابِسِ",
+       "rumi": "al-malabis"
+      },
+      {
+       "teks": "الْخُضْرَةِ",
+       "rumi": "al-khudhrah"
+      },
+      {
+       "teks": "الْأَلْوَانِ",
+       "rumi": "al-alwan"
+      }
+     ]
+    }
+   ],
+   "id": "arab-b40"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "bahasa": "arab",
+   "markah": 1,
+   "soalan": "نَشْرَبُ ____ صَبَاحًا وَمَسَاءً.",
+   "rumi": "Nasyrab ____ sabahan wa masaan.",
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "jawapan": 2,
+     "pilihan": [
+      {
+       "teks": "الْخُبْزَ",
+       "rumi": "al-khubz"
+      },
+      {
+       "teks": "الْأَرُزَّ",
+       "rumi": "al-aruzz"
+      },
+      {
+       "teks": "الْمَاءَ",
+       "rumi": "al-ma'"
+      },
+      {
+       "teks": "الْمِلْحَ",
+       "rumi": "al-milh"
+      }
+     ]
+    }
+   ],
+   "id": "arab-b41"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "bahasa": "arab",
+   "markah": 1,
+   "soalan": "نَأْكُلُ الْأَرُزَّ مَعَ ____ الْمَشْوِيِّ.",
+   "rumi": "Na'kul al-aruzz ma'a ____ al-masywi.",
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "jawapan": 1,
+     "pilihan": [
+      {
+       "teks": "الْخُبْزِ",
+       "rumi": "al-khubz"
+      },
+      {
+       "teks": "الدَّجَاجِ",
+       "rumi": "ad-dajaj"
+      },
+      {
+       "teks": "الْعِنَبِ",
+       "rumi": "al-inab"
+      },
+      {
+       "teks": "الْحَلِيبِ",
+       "rumi": "al-halib"
+      }
+     ]
+    }
+   ],
+   "id": "arab-b42"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "bahasa": "arab",
+   "markah": 1,
+   "soalan": "نَعْصِرُ ____ لِنَشْرَبَ عَصِيرًا لَذِيذًا.",
+   "rumi": "Na'sir ____ linsyarab asyiran ladzidzan.",
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "jawapan": 0,
+     "pilihan": [
+      {
+       "teks": "الْبُرْتُقَالَ",
+       "rumi": "al-burtuqal"
+      },
+      {
+       "teks": "الْخُبْزَ",
+       "rumi": "al-khubz"
+      },
+      {
+       "teks": "الْمِلْحَ",
+       "rumi": "al-milh"
+      },
+      {
+       "teks": "الْأَرُزَّ",
+       "rumi": "al-aruzz"
+      }
+     ]
+    }
+   ],
+   "id": "arab-b43"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "bahasa": "arab",
+   "markah": 1,
+   "soalan": "مِنَ الْفَوَاكِهِ: ____.",
+   "rumi": "Minal-fawakih: ____.",
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "jawapan": 3,
+     "pilihan": [
+      {
+       "teks": "الْبَطَاطِسُ",
+       "rumi": "al-batatis"
+      },
+      {
+       "teks": "الْجَزَرُ",
+       "rumi": "al-jazar"
+      },
+      {
+       "teks": "الْخِيَارُ",
+       "rumi": "al-khiyar"
+      },
+      {
+       "teks": "الْعِنَبُ",
+       "rumi": "al-inab"
+      }
+     ]
+    }
+   ],
+   "id": "arab-b44"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "bahasa": "arab",
+   "markah": 1,
+   "soalan": "نَلْبَسُ ____ فِي الْقَدَمِ.",
+   "rumi": "Nalbis ____ fi al-qadam.",
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "jawapan": 3,
+     "pilihan": [
+      {
+       "teks": "الْقُبَّعَةَ",
+       "rumi": "al-qubba'ah"
+      },
+      {
+       "teks": "الْقَمِيصَ",
+       "rumi": "al-qamis"
+      },
+      {
+       "teks": "الْحِزَامَ",
+       "rumi": "al-hizam"
+      },
+      {
+       "teks": "الْحِذَاءَ",
+       "rumi": "al-hidza'"
+      }
+     ]
+    }
+   ],
+   "id": "arab-b45"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "bahasa": "arab",
+   "markah": 1,
+   "soalan": "نَلْبَسُ ____ عَلَى الرَّأْسِ.",
+   "rumi": "Nalbis ____ ala ar-ra's.",
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "jawapan": 2,
+     "pilihan": [
+      {
+       "teks": "الْحِذَاءَ",
+       "rumi": "al-hidza'"
+      },
+      {
+       "teks": "الْجَوْرَبَ",
+       "rumi": "al-jaurab"
+      },
+      {
+       "teks": "الْقُبَّعَةَ",
+       "rumi": "al-qubba'ah"
+      },
+      {
+       "teks": "الْقَمِيصَ",
+       "rumi": "al-qamis"
+      }
+     ]
+    }
+   ],
+   "id": "arab-b46"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "bahasa": "arab",
+   "markah": 1,
+   "soalan": "نَضَعُ الْكِتَابَ وَالْقَلَمَ فِي ____.",
+   "rumi": "Nada' al-kitab wal-qalam fi ____.",
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "jawapan": 1,
+     "pilihan": [
+      {
+       "teks": "الْحِذَاءِ",
+       "rumi": "al-hidza'"
+      },
+      {
+       "teks": "الْحَقِيبَةِ",
+       "rumi": "al-haqibah"
+      },
+      {
+       "teks": "الْقُبَّعَةِ",
+       "rumi": "al-qubba'ah"
+      },
+      {
+       "teks": "الْجَوْرَبِ",
+       "rumi": "al-jaurab"
+      }
+     ]
+    }
+   ],
+   "id": "arab-b47"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "bahasa": "arab",
+   "markah": 1,
+   "soalan": "مِنْ أَنْوَاعِ الْمَلَابِسِ: ____.",
+   "rumi": "Min anwa' al-malabis: ____.",
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "jawapan": 0,
+     "pilihan": [
+      {
+       "teks": "الْبَنْطَلُونُ",
+       "rumi": "al-banthalun"
+      },
+      {
+       "teks": "الْمِلْعَقَةُ",
+       "rumi": "al-mil'aqah"
+      },
+      {
+       "teks": "الْمِصْبَاحُ",
+       "rumi": "al-misbah"
+      },
+      {
+       "teks": "الْقَلَمُ",
+       "rumi": "al-qalam"
+      }
+     ]
+    }
+   ],
+   "id": "arab-b48"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "bahasa": "arab",
+   "markah": 1,
+   "soalan": "الْحَيَوَانُ الَّذِي يَسْبَحُ فِي النَّهْرِ هُوَ ____.",
+   "rumi": "Al-hayawan al-ladzi yasbah fi an-nahr huwa ____.",
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "jawapan": 0,
+     "pilihan": [
+      {
+       "teks": "التِّمْسَاحُ",
+       "rumi": "at-timsah"
+      },
+      {
+       "teks": "الْقِطُّ",
+       "rumi": "al-qitt"
+      },
+      {
+       "teks": "الدِّيكُ",
+       "rumi": "ad-dik"
+      },
+      {
+       "teks": "الْفِيلُ",
+       "rumi": "al-fil"
+      }
+     ]
+    }
+   ],
+   "id": "arab-b49"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "bahasa": "arab",
+   "markah": 1,
+   "soalan": "الْحَيَوَانُ الَّذِي يَطِيرُ فِي السَّمَاءِ هُوَ ____.",
+   "rumi": "Al-hayawan al-ladzi yathir fi as-sama' huwa ____.",
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "jawapan": 1,
+     "pilihan": [
+      {
+       "teks": "الْقِطُّ",
+       "rumi": "al-qitt"
+      },
+      {
+       "teks": "الْعُصْفُورُ",
+       "rumi": "al-usfur"
+      },
+      {
+       "teks": "الْحِمَارُ",
+       "rumi": "al-himar"
+      },
+      {
+       "teks": "السَّمَكُ",
+       "rumi": "as-samak"
+      }
+     ]
+    }
+   ],
+   "id": "arab-b50"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "bahasa": "arab",
+   "markah": 1,
+   "soalan": "الْحَيَوَانُ الَّذِي نَشْرَبُ مِنْ لَبَنِهِ هُوَ ____.",
+   "rumi": "Al-hayawan al-ladzi nasyrab min labanihi huwa ____.",
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "jawapan": 3,
+     "pilihan": [
+      {
+       "teks": "الْأَسَدُ",
+       "rumi": "al-asad"
+      },
+      {
+       "teks": "الْقِرْدُ",
+       "rumi": "al-qird"
+      },
+      {
+       "teks": "الْكَلْبُ",
+       "rumi": "al-kalb"
+      },
+      {
+       "teks": "الْبَقَرَةُ",
+       "rumi": "al-baqarah"
+      }
+     ]
+    }
+   ],
+   "id": "arab-b51"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "bahasa": "arab",
+   "markah": 1,
+   "soalan": "الْحَيَوَانُ الَّذِي يَحْرُسُ الْبَيْتَ هُوَ ____.",
+   "rumi": "Al-hayawan al-ladzi yahrus al-bait huwa ____.",
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "jawapan": 2,
+     "pilihan": [
+      {
+       "teks": "الْأَسَدُ",
+       "rumi": "al-asad"
+      },
+      {
+       "teks": "الْفِيلُ",
+       "rumi": "al-fil"
+      },
+      {
+       "teks": "الْكَلْبُ",
+       "rumi": "al-kalb"
+      },
+      {
+       "teks": "الْقِرْدُ",
+       "rumi": "al-qird"
+      }
+     ]
+    }
+   ],
+   "id": "arab-b52"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "bahasa": "arab",
+   "markah": 1,
+   "soalan": "أَبُو أَبِي هُوَ ____.",
+   "rumi": "Abu abi huwa ____.",
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "jawapan": 2,
+     "pilihan": [
+      {
+       "teks": "أَخِي",
+       "rumi": "akhi"
+      },
+      {
+       "teks": "عَمِّي",
+       "rumi": "ammi"
+      },
+      {
+       "teks": "جَدِّي",
+       "rumi": "jaddi"
+      },
+      {
+       "teks": "خَالِي",
+       "rumi": "khali"
+      }
+     ]
+    }
+   ],
+   "id": "arab-b53"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "bahasa": "arab",
+   "markah": 1,
+   "soalan": "أُمُّ أُمِّي هِيَ ____.",
+   "rumi": "Ummu ummi hiya ____.",
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "jawapan": 0,
+     "pilihan": [
+      {
+       "teks": "جَدَّتِي",
+       "rumi": "jaddati"
+      },
+      {
+       "teks": "خَالَتِي",
+       "rumi": "khalati"
+      },
+      {
+       "teks": "أُخْتِي",
+       "rumi": "ukhti"
+      },
+      {
+       "teks": "عَمَّتِي",
+       "rumi": "ammati"
+      }
+     ]
+    }
+   ],
+   "id": "arab-b54"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "bahasa": "arab",
+   "markah": 1,
+   "soalan": "أَخُو أَبِي هُوَ ____.",
+   "rumi": "Akhu abi huwa ____.",
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "jawapan": 1,
+     "pilihan": [
+      {
+       "teks": "خَالِي",
+       "rumi": "khali"
+      },
+      {
+       "teks": "عَمِّي",
+       "rumi": "ammi"
+      },
+      {
+       "teks": "جَدِّي",
+       "rumi": "jaddi"
+      },
+      {
+       "teks": "أَخِي",
+       "rumi": "akhi"
+      }
+     ]
+    }
+   ],
+   "id": "arab-b55"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "bahasa": "arab",
+   "markah": 1,
+   "soalan": "أُخْتُ أُمِّي هِيَ ____.",
+   "rumi": "Ukhtu ummi hiya ____.",
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "jawapan": 3,
+     "pilihan": [
+      {
+       "teks": "عَمَّتِي",
+       "rumi": "ammati"
+      },
+      {
+       "teks": "جَدَّتِي",
+       "rumi": "jaddati"
+      },
+      {
+       "teks": "أُخْتِي",
+       "rumi": "ukhti"
+      },
+      {
+       "teks": "خَالَتِي",
+       "rumi": "khalati"
+      }
+     ]
+    }
+   ],
+   "id": "arab-b56"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "bahasa": "arab",
+   "markah": 1,
+   "soalan": "الْجَمْعُ لِكَلِمَةِ «قَلَمٍ» هُوَ ____.",
+   "rumi": "Al-jam' likalimah «qalam» huwa ____.",
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "jawapan": 1,
+     "pilihan": [
+      {
+       "teks": "قَلَمُونَ",
+       "rumi": "qalamun"
+      },
+      {
+       "teks": "أَقْلَامٌ",
+       "rumi": "aqlam"
+      },
+      {
+       "teks": "قَلَامَةٌ",
+       "rumi": "qalamah"
+      },
+      {
+       "teks": "مَقَالِمُ",
+       "rumi": "maqalim"
+      }
+     ]
+    }
+   ],
+   "id": "arab-b57"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "bahasa": "arab",
+   "markah": 1,
+   "soalan": "الْجَمْعُ لِكَلِمَةِ «وَلَدٍ» هُوَ ____.",
+   "rumi": "Al-jam' likalimah «walad» huwa ____.",
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "jawapan": 2,
+     "pilihan": [
+      {
+       "teks": "وِلَادَةٌ",
+       "rumi": "wiladah"
+      },
+      {
+       "teks": "وَلَدُونَ",
+       "rumi": "waladun"
+      },
+      {
+       "teks": "أَوْلَادٌ",
+       "rumi": "aulad"
+      },
+      {
+       "teks": "أَوَالِدُ",
+       "rumi": "awalid"
+      }
+     ]
+    }
+   ],
+   "id": "arab-b58"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "bahasa": "arab",
+   "markah": 1,
+   "soalan": "الضِّدُّ لِكَلِمَةِ «نَظِيفٍ» هُوَ ____.",
+   "rumi": "Adh-dhidd likalimah «nazif» huwa ____.",
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "jawapan": 0,
+     "pilihan": [
+      {
+       "teks": "وَسِخٌ",
+       "rumi": "wasikh"
+      },
+      {
+       "teks": "جَدِيدٌ",
+       "rumi": "jadid"
+      },
+      {
+       "teks": "حُلْوٌ",
+       "rumi": "hulw"
+      },
+      {
+       "teks": "طَوِيلٌ",
+       "rumi": "tawil"
+      }
+     ]
+    }
+   ],
+   "id": "arab-b59"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "bahasa": "arab",
+   "markah": 1,
+   "soalan": "الضِّدُّ لِكَلِمَةِ «سَهْلٍ» هُوَ ____.",
+   "rumi": "Adh-dhidd likalimah «sahl» huwa ____.",
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "jawapan": 3,
+     "pilihan": [
+      {
+       "teks": "قَرِيبٌ",
+       "rumi": "qarib"
+      },
+      {
+       "teks": "بَارِدٌ",
+       "rumi": "barid"
+      },
+      {
+       "teks": "قَدِيمٌ",
+       "rumi": "qadim"
+      },
+      {
+       "teks": "صَعْبٌ",
+       "rumi": "sa'b"
+      }
+     ]
+    }
+   ],
+   "id": "arab-b60"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "bahasa": "arab",
+   "markah": 1,
+   "soalan": "إِذَا قَالَ لِي صَدِيقِي «السَّلَامُ عَلَيْكُمْ»، فَأَقُولُ لَهُ: «____».",
+   "rumi": "Idza qala li sadiqi «as-salam alaikum», fa-aqul lahu: «____».",
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "jawapan": 3,
+     "pilihan": [
+      {
+       "teks": "صَبَاحَ الْخَيْرِ",
+       "rumi": "sabah al-khair"
+      },
+      {
+       "teks": "كَيْفَ حَالُكَ",
+       "rumi": "kaifa haluka"
+      },
+      {
+       "teks": "مَعَ السَّلَامَةِ",
+       "rumi": "ma'as-salamah"
+      },
+      {
+       "teks": "وَعَلَيْكُمُ السَّلَامُ",
+       "rumi": "wa alaikumus-salam"
+      }
+     ]
+    }
+   ],
+   "id": "arab-b61"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "bahasa": "arab",
+   "markah": 1,
+   "soalan": "إِذَا أَعْطَانِي الْأُسْتَاذُ هَدِيَّةً، فَأَقُولُ لَهُ: «____».",
+   "rumi": "Idza a'tani al-ustadz hadiyyah, fa-aqul lahu: «____».",
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "jawapan": 0,
+     "pilihan": [
+      {
+       "teks": "شُكْرًا يَا أُسْتَاذِي",
+       "rumi": "syukran ya ustadzi"
+      },
+      {
+       "teks": "أَهْلًا بِكَ",
+       "rumi": "ahlan bika"
+      },
+      {
+       "teks": "مَا اسْمُكَ",
+       "rumi": "ma ismuka"
+      },
+      {
+       "teks": "إِلَى اللِّقَاءِ",
+       "rumi": "ila al-liqa'"
+      }
+     ]
+    }
+   ],
+   "id": "arab-b62"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "bahasa": "arab",
+   "markah": 1,
+   "soalan": "فِي الصَّبَاحِ نَقُولُ لِأُسْتَاذِنَا: «____».",
+   "rumi": "Fi as-sabah naqul li-ustadzina: «____».",
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "jawapan": 2,
+     "pilihan": [
+      {
+       "teks": "مَسَاءَ الْخَيْرِ",
+       "rumi": "masa' al-khair"
+      },
+      {
+       "teks": "مَعَ السَّلَامَةِ",
+       "rumi": "ma'as-salamah"
+      },
+      {
+       "teks": "صَبَاحَ الْخَيْرِ",
+       "rumi": "sabah al-khair"
+      },
+      {
+       "teks": "عَفْوًا",
+       "rumi": "afwan"
+      }
+     ]
+    }
+   ],
+   "id": "arab-b63"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "bahasa": "arab",
+   "markah": 1,
+   "soalan": "إِذَا قَالَ لِي صَدِيقِي «كَيْفَ حَالُكَ؟»، فَأُجِيبُ: «____».",
+   "rumi": "Idza qala li sadiqi «kaifa haluka?», fa-ujib: «____».",
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "jawapan": 1,
+     "pilihan": [
+      {
+       "teks": "عِنْدِي قَلَمٌ جَدِيدٌ",
+       "rumi": "indi qalam jadid"
+      },
+      {
+       "teks": "أَنَا بِخَيْرٍ وَالْحَمْدُ لِلَّهِ",
+       "rumi": "ana bikhair walhamdulillah"
+      },
+      {
+       "teks": "أَنَا مِنْ مَالِيزِيَا",
+       "rumi": "ana min Maliziya"
+      },
+      {
+       "teks": "هَذَا كِتَابِي",
+       "rumi": "hadza kitabi"
+      }
+     ]
+    }
+   ],
+   "id": "arab-b64"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "bahasa": "arab",
+   "markah": 1,
+   "soalan": "الْحَرْفُ الْأَوَّلُ فِي كَلِمَةِ «كِتَاب» هُوَ ____.",
+   "rumi": "Al-harf al-awwal fi kalimah «kitab» huwa ____.",
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "jawapan": 1,
+     "pilihan": [
+      {
+       "teks": "ت",
+       "rumi": "ta"
+      },
+      {
+       "teks": "ك",
+       "rumi": "kaf"
+      },
+      {
+       "teks": "ا",
+       "rumi": "alif"
+      },
+      {
+       "teks": "ب",
+       "rumi": "ba"
+      }
+     ]
+    }
+   ],
+   "id": "arab-b65"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "bahasa": "arab",
+   "markah": 1,
+   "soalan": "الْحَرْفُ الْأَخِيرُ فِي كَلِمَةِ «مَسْجِد» هُوَ ____.",
+   "rumi": "Al-harf al-akhir fi kalimah «masjid» huwa ____.",
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "jawapan": 3,
+     "pilihan": [
+      {
+       "teks": "س",
+       "rumi": "sin"
+      },
+      {
+       "teks": "ج",
+       "rumi": "jim"
+      },
+      {
+       "teks": "م",
+       "rumi": "mim"
+      },
+      {
+       "teks": "د",
+       "rumi": "dal"
+      }
+     ]
+    }
+   ],
+   "id": "arab-b66"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "bahasa": "arab",
+   "markah": 1,
+   "soalan": "كَلِمَةٌ تَبْدَأُ بِحَرْفِ «ش» هِيَ ____.",
+   "rumi": "Kalimah tabda' biharf «syin» hiya ____.",
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "jawapan": 0,
+     "pilihan": [
+      {
+       "teks": "شَمْسٌ",
+       "rumi": "syams"
+      },
+      {
+       "teks": "قَمَرٌ",
+       "rumi": "qamar"
+      },
+      {
+       "teks": "نَجْمٌ",
+       "rumi": "najm"
+      },
+      {
+       "teks": "بَحْرٌ",
+       "rumi": "bahr"
+      }
+     ]
+    }
+   ],
+   "id": "arab-b67"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "bahasa": "arab",
+   "markah": 1,
+   "soalan": "الطَّائِرُ ____ فِي السَّمَاءِ.",
+   "rumi": "At-tha'ir ____ fi as-sama'.",
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "jawapan": 2,
+     "pilihan": [
+      {
+       "teks": "يَسْبَحُ",
+       "rumi": "yasbah"
+      },
+      {
+       "teks": "يَشْرَبُ",
+       "rumi": "yasyrab"
+      },
+      {
+       "teks": "يَطِيرُ",
+       "rumi": "yathir"
+      },
+      {
+       "teks": "يَأْكُلُ",
+       "rumi": "ya'kul"
+      }
+     ]
+    }
+   ],
+   "id": "arab-b68"
+  },
+  {
+   "bahagian": "C",
+   "jenis": "tulis",
+   "bahasa": "arab",
+   "markah": 4,
+   "soalan": "اكْتُبْ بِالْعَرَبِيَّةِ: رومه، سکوله، مسجد، ڤاسر.",
+   "rumi": "Uktub bil-'Arabiyyah: rumah, sekolah, masjid, pasar.",
+   "idea": [
+    {
+     "maksud": "Rumah — بَيْتٌ",
+     "kata": [
+      "bait",
+      "baitun",
+      "rumah",
+      "بَيْتٌ",
+      "بيت"
+     ]
+    },
+    {
+     "maksud": "Sekolah — مَدْرَسَةٌ",
+     "kata": [
+      "madrasah",
+      "madrasatun",
+      "sekolah",
+      "مَدْرَسَةٌ",
+      "مدرسة"
+     ]
+    },
+    {
+     "maksud": "Masjid — مَسْجِدٌ",
+     "kata": [
+      "masjid",
+      "masjidun",
+      "مَسْجِدٌ",
+      "مسجد"
+     ]
+    },
+    {
+     "maksud": "Pasar — سُوقٌ",
+     "kata": [
+      "suq",
+      "suk",
+      "suqun",
+      "pasar",
+      "سُوقٌ",
+      "سوق"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "بَيْتٌ، مَدْرَسَةٌ، مَسْجِدٌ، سُوقٌ"
+   ],
+   "jawapanContohRumi": [
+    "bait, madrasah, masjid, suq"
+   ],
+   "id": "arab-c1"
+  },
+  {
+   "bahagian": "C",
+   "jenis": "tulis",
+   "bahasa": "arab",
+   "markah": 4,
+   "soalan": "اكْتُبْ بِالْعَرَبِيَّةِ: بوکو، ڤن، ميجا، کروسي.",
+   "rumi": "Uktub bil-'Arabiyyah: buku, pen, meja, kursi.",
+   "idea": [
+    {
+     "maksud": "Buku — كِتَابٌ",
+     "kata": [
+      "kitab",
+      "kitabun",
+      "buku",
+      "كِتَابٌ",
+      "كتاب"
+     ]
+    },
+    {
+     "maksud": "Pen — قَلَمٌ",
+     "kata": [
+      "qalam",
+      "qalamun",
+      "kalam",
+      "pen",
+      "قَلَمٌ",
+      "قلم"
+     ]
+    },
+    {
+     "maksud": "Meja — طَاوِلَةٌ",
+     "kata": [
+      "tawilah",
+      "tawilatun",
+      "meja",
+      "طَاوِلَةٌ",
+      "طاولة"
+     ]
+    },
+    {
+     "maksud": "Kerusi — كُرْسِيٌّ",
+     "kata": [
+      "kursi",
+      "kursiyyun",
+      "kerusi",
+      "كُرْسِيٌّ",
+      "كرسي"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "كِتَابٌ، قَلَمٌ، طَاوِلَةٌ، كُرْسِيٌّ"
+   ],
+   "jawapanContohRumi": [
+    "kitab, qalam, tawilah, kursi"
+   ],
+   "id": "arab-c2"
+  },
+  {
+   "bahagian": "C",
+   "jenis": "tulis",
+   "bahasa": "arab",
+   "markah": 4,
+   "soalan": "اكْتُبْ بِالْعَرَبِيَّةِ هَذِهِ الْأَرْقَامَ: ٥، ١٠، ٢٠، ١٠٠.",
+   "rumi": "Uktub bil-'Arabiyyah hadhihil-arqam: 5, 10, 20, 100.",
+   "idea": [
+    {
+     "maksud": "Lima — خَمْسَةٌ",
+     "kata": [
+      "khamsah",
+      "khamsa",
+      "lima",
+      "خَمْسَةٌ",
+      "خمسة"
+     ]
+    },
+    {
+     "maksud": "Sepuluh — عَشَرَةٌ",
+     "kata": [
+      "asharah",
+      "asyarah",
+      "sepuluh",
+      "عَشَرَةٌ",
+      "عشرة"
+     ]
+    },
+    {
+     "maksud": "Dua puluh — عِشْرُونَ",
+     "kata": [
+      "ishrun",
+      "isyrun",
+      "puluh",
+      "عِشْرُونَ",
+      "عشرون"
+     ]
+    },
+    {
+     "maksud": "Seratus — مِائَةٌ",
+     "kata": [
+      "miah",
+      "seratus",
+      "ratus",
+      "مِائَةٌ",
+      "مائة"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "خَمْسَةٌ، عَشَرَةٌ، عِشْرُونَ، مِائَةٌ"
+   ],
+   "jawapanContohRumi": [
+    "khamsah, asharah, ishrun, mi'ah"
+   ],
+   "id": "arab-c3"
+  },
+  {
+   "bahagian": "C",
+   "jenis": "tulis",
+   "bahasa": "arab",
+   "markah": 4,
+   "soalan": "اكْتُبْ بِالْعَرَبِيَّةِ هَذِهِ الْأَلْوَانَ: ميره، بيرو، کونيڠ، هيجاو.",
+   "rumi": "Uktub bil-'Arabiyyah hadhihil-alwan: merah, biru, kuning, hijau.",
+   "idea": [
+    {
+     "maksud": "Merah — أَحْمَرُ",
+     "kata": [
+      "ahmar",
+      "hamra",
+      "merah",
+      "أَحْمَرُ",
+      "أحمر"
+     ]
+    },
+    {
+     "maksud": "Biru — أَزْرَقُ",
+     "kata": [
+      "azraq",
+      "zarqa",
+      "biru",
+      "أَزْرَقُ",
+      "أزرق"
+     ]
+    },
+    {
+     "maksud": "Kuning — أَصْفَرُ",
+     "kata": [
+      "asfar",
+      "safra",
+      "kuning",
+      "أَصْفَرُ",
+      "أصفر"
+     ]
+    },
+    {
+     "maksud": "Hijau — أَخْضَرُ",
+     "kata": [
+      "akhdar",
+      "khadra",
+      "hijau",
+      "أَخْضَرُ",
+      "أخضر"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "أَحْمَرُ، أَزْرَقُ، أَصْفَرُ، أَخْضَرُ"
+   ],
+   "jawapanContohRumi": [
+    "ahmar, azraq, asfar, akhdar"
+   ],
+   "id": "arab-c4"
+  },
+  {
+   "bahagian": "C",
+   "jenis": "tulis",
+   "bahasa": "arab",
+   "markah": 4,
+   "soalan": "اكْتُبْ بِالْعَرَبِيَّةِ: مات، هيدوڠ، مولا، تليڠا.",
+   "rumi": "Uktub bil-'Arabiyyah: mata, hidung, mulut, telinga.",
+   "idea": [
+    {
+     "maksud": "Mata — عَيْنٌ",
+     "kata": [
+      "ain",
+      "ainun",
+      "mata",
+      "عَيْنٌ",
+      "عين"
+     ]
+    },
+    {
+     "maksud": "Hidung — أَنْفٌ",
+     "kata": [
+      "anf",
+      "anfun",
+      "hidung",
+      "أَنْفٌ",
+      "أنف"
+     ]
+    },
+    {
+     "maksud": "Mulut — فَمٌ",
+     "kata": [
+      "fam",
+      "famun",
+      "mulut",
+      "فَمٌ",
+      "فم"
+     ]
+    },
+    {
+     "maksud": "Telinga — أُذُنٌ",
+     "kata": [
+      "udhun",
+      "uzun",
+      "telinga",
+      "أُذُنٌ",
+      "أذن"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "عَيْنٌ، أَنْفٌ، فَمٌ، أُذُنٌ"
+   ],
+   "jawapanContohRumi": [
+    "ain, anf, fam, udhun"
+   ],
+   "id": "arab-c5"
+  },
+  {
+   "bahagian": "C",
+   "jenis": "tulis",
+   "bahasa": "arab",
+   "markah": 4,
+   "soalan": "اكْتُبْ بِالْعَرَبِيَّةِ: تاغن، کاکي، کڤالا، ڤروت.",
+   "rumi": "Uktub bil-'Arabiyyah: tangan, kaki, kepala, perut.",
+   "idea": [
+    {
+     "maksud": "Tangan — يَدٌ",
+     "kata": [
+      "yad",
+      "yadun",
+      "tangan",
+      "يَدٌ",
+      "يد"
+     ]
+    },
+    {
+     "maksud": "Kaki — رِجْلٌ",
+     "kata": [
+      "rijl",
+      "rijlun",
+      "kaki",
+      "رِجْلٌ",
+      "رجل"
+     ]
+    },
+    {
+     "maksud": "Kepala — رَأْسٌ",
+     "kata": [
+      "ras",
+      "kepala",
+      "رَأْسٌ",
+      "رأس"
+     ]
+    },
+    {
+     "maksud": "Perut — بَطْنٌ",
+     "kata": [
+      "batn",
+      "batnun",
+      "perut",
+      "بَطْنٌ",
+      "بطن"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "يَدٌ، رِجْلٌ، رَأْسٌ، بَطْنٌ"
+   ],
+   "jawapanContohRumi": [
+    "yad, rijl, ra's, batn"
+   ],
+   "id": "arab-c6"
+  },
+  {
+   "bahagian": "C",
+   "jenis": "tulis",
+   "bahasa": "arab",
+   "markah": 4,
+   "soalan": "اكْتُبْ بِالْعَرَبِيَّةِ: ايه، ايبو، داتوق، نيني.",
+   "rumi": "Uktub bil-'Arabiyyah: ayah, ibu, datuk, nenek.",
+   "idea": [
+    {
+     "maksud": "Ayah — أَبٌ",
+     "kata": [
+      "ab",
+      "abun",
+      "ayah",
+      "bapa",
+      "أَبٌ",
+      "أب"
+     ]
+    },
+    {
+     "maksud": "Ibu — أُمٌّ",
+     "kata": [
+      "umm",
+      "ummun",
+      "ibu",
+      "emak",
+      "أُمٌّ",
+      "أم"
+     ]
+    },
+    {
+     "maksud": "Datuk — جَدٌّ",
+     "kata": [
+      "jadd",
+      "jaddun",
+      "datuk",
+      "جَدٌّ",
+      "جد"
+     ]
+    },
+    {
+     "maksud": "Nenek — جَدَّةٌ",
+     "kata": [
+      "jaddah",
+      "jaddatun",
+      "nenek",
+      "جَدَّةٌ",
+      "جدة"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "أَبٌ، أُمٌّ، جَدٌّ، جَدَّةٌ"
+   ],
+   "jawapanContohRumi": [
+    "ab, umm, jadd, jaddah"
+   ],
+   "id": "arab-c7"
+  },
+  {
+   "bahagian": "C",
+   "jenis": "tulis",
+   "bahasa": "arab",
+   "markah": 4,
+   "soalan": "اكْتُبْ بِالْعَرَبِيَّةِ: ابڠ، کاکق، باڤ ساودارا، ايبو ساودارا.",
+   "rumi": "Uktub bil-'Arabiyyah: abang, kakak, bapa saudara, ibu saudara.",
+   "idea": [
+    {
+     "maksud": "Abang / adik lelaki — أَخٌ",
+     "kata": [
+      "akh",
+      "akhun",
+      "abang",
+      "أَخٌ",
+      "أخ"
+     ]
+    },
+    {
+     "maksud": "Kakak / adik perempuan — أُخْتٌ",
+     "kata": [
+      "ukht",
+      "ukhtun",
+      "kakak",
+      "أُخْتٌ",
+      "أخت"
+     ]
+    },
+    {
+     "maksud": "Bapa saudara — عَمٌّ",
+     "kata": [
+      "amm",
+      "ammun",
+      "saudara",
+      "عَمٌّ",
+      "عم"
+     ]
+    },
+    {
+     "maksud": "Ibu saudara — عَمَّةٌ",
+     "kata": [
+      "ammah",
+      "ammatun",
+      "عَمَّةٌ",
+      "عمة"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "أَخٌ، أُخْتٌ، عَمٌّ، عَمَّةٌ"
+   ],
+   "jawapanContohRumi": [
+    "akh, ukht, amm, ammah"
+   ],
+   "id": "arab-c8"
+  },
+  {
+   "bahagian": "C",
+   "jenis": "tulis",
+   "bahasa": "arab",
+   "markah": 4,
+   "soalan": "اكْتُبْ بِالْعَرَبِيَّةِ: کوچيڠ، ايم، ايکن، بوروڠ.",
+   "rumi": "Uktub bil-'Arabiyyah: kucing, ayam, ikan, burung.",
+   "idea": [
+    {
+     "maksud": "Kucing — قِطٌّ",
+     "kata": [
+      "qitt",
+      "qittun",
+      "kucing",
+      "قِطٌّ",
+      "قط"
+     ]
+    },
+    {
+     "maksud": "Ayam — دَجَاجٌ",
+     "kata": [
+      "dajaj",
+      "dajajun",
+      "ayam",
+      "دَجَاجٌ",
+      "دجاج"
+     ]
+    },
+    {
+     "maksud": "Ikan — سَمَكٌ",
+     "kata": [
+      "samak",
+      "samakun",
+      "ikan",
+      "سَمَكٌ",
+      "سمك"
+     ]
+    },
+    {
+     "maksud": "Burung — طَائِرٌ",
+     "kata": [
+      "tair",
+      "tayr",
+      "burung",
+      "طَائِرٌ",
+      "طائر"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "قِطٌّ، دَجَاجٌ، سَمَكٌ، طَائِرٌ"
+   ],
+   "jawapanContohRumi": [
+    "qitt, dajaj, samak, tair"
+   ],
+   "id": "arab-c9"
+  },
+  {
+   "bahagian": "C",
+   "jenis": "tulis",
+   "bahasa": "arab",
+   "markah": 4,
+   "soalan": "اكْتُبْ بِالْعَرَبِيَّةِ: سيڠا، ݢاجه، کودا، لمبو.",
+   "rumi": "Uktub bil-'Arabiyyah: singa, gajah, kuda, lembu.",
+   "idea": [
+    {
+     "maksud": "Singa — أَسَدٌ",
+     "kata": [
+      "asad",
+      "asadun",
+      "singa",
+      "أَسَدٌ",
+      "أسد"
+     ]
+    },
+    {
+     "maksud": "Gajah — فِيلٌ",
+     "kata": [
+      "fil",
+      "filun",
+      "gajah",
+      "فِيلٌ",
+      "فيل"
+     ]
+    },
+    {
+     "maksud": "Kuda — حِصَانٌ",
+     "kata": [
+      "hisan",
+      "hisanun",
+      "kuda",
+      "حِصَانٌ",
+      "حصان"
+     ]
+    },
+    {
+     "maksud": "Lembu — بَقَرَةٌ",
+     "kata": [
+      "baqarah",
+      "baqaratun",
+      "lembu",
+      "بَقَرَةٌ",
+      "بقرة"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "أَسَدٌ، فِيلٌ، حِصَانٌ، بَقَرَةٌ"
+   ],
+   "jawapanContohRumi": [
+    "asad, fil, hisan, baqarah"
+   ],
+   "id": "arab-c10"
+  },
+  {
+   "bahagian": "C",
+   "jenis": "tulis",
+   "bahasa": "arab",
+   "markah": 4,
+   "soalan": "اكْتُبْ بِالْعَرَبِيَّةِ: ايڤل، ڤيسڠ، اورن، تيمبيکاي.",
+   "rumi": "Uktub bil-'Arabiyyah: epal, pisang, oren, tembikai.",
+   "idea": [
+    {
+     "maksud": "Epal — تُفَّاحٌ",
+     "kata": [
+      "tuffah",
+      "tuffahun",
+      "epal",
+      "تُفَّاحٌ",
+      "تفاح"
+     ]
+    },
+    {
+     "maksud": "Pisang — مَوْزٌ",
+     "kata": [
+      "mawz",
+      "mawzun",
+      "pisang",
+      "مَوْزٌ",
+      "موز"
+     ]
+    },
+    {
+     "maksud": "Oren — بُرْتُقَالٌ",
+     "kata": [
+      "burtuqal",
+      "burtuqalun",
+      "oren",
+      "limau",
+      "بُرْتُقَالٌ",
+      "برتقال"
+     ]
+    },
+    {
+     "maksud": "Tembikai — بَطِيخٌ",
+     "kata": [
+      "batikh",
+      "batikhun",
+      "tembikai",
+      "بَطِيخٌ",
+      "بطيخ"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "تُفَّاحٌ، مَوْزٌ، بُرْتُقَالٌ، بَطِيخٌ"
+   ],
+   "jawapanContohRumi": [
+    "tuffah, mawz, burtuqal, batikh"
+   ],
+   "id": "arab-c11"
+  },
+  {
+   "bahagian": "C",
+   "jenis": "tulis",
+   "bahasa": "arab",
+   "markah": 4,
+   "soalan": "اكْتُبْ بِالْعَرَبِيَّةِ: ناسي، روتي، اير، سوسو.",
+   "rumi": "Uktub bil-'Arabiyyah: nasi, roti, air, susu.",
+   "idea": [
+    {
+     "maksud": "Nasi — أَرُزٌّ",
+     "kata": [
+      "aruzz",
+      "aruz",
+      "nasi",
+      "beras",
+      "أَرُزٌّ",
+      "أرز"
+     ]
+    },
+    {
+     "maksud": "Roti — خُبْزٌ",
+     "kata": [
+      "khubz",
+      "khubzun",
+      "roti",
+      "خُبْزٌ",
+      "خبز"
+     ]
+    },
+    {
+     "maksud": "Air — مَاءٌ",
+     "kata": [
+      "ma",
+      "air",
+      "مَاءٌ",
+      "ماء"
+     ]
+    },
+    {
+     "maksud": "Susu — حَلِيبٌ",
+     "kata": [
+      "halib",
+      "halibun",
+      "susu",
+      "حَلِيبٌ",
+      "حليب"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "أَرُزٌّ، خُبْزٌ، مَاءٌ، حَلِيبٌ"
+   ],
+   "jawapanContohRumi": [
+    "aruzz, khubz, ma', halib"
+   ],
+   "id": "arab-c12"
+  },
+  {
+   "bahagian": "C",
+   "jenis": "tulis",
+   "bahasa": "arab",
+   "markah": 4,
+   "soalan": "اكْتُبْ بِالْعَرَبِيَّةِ: باڤو، سلوار، کاسوت، توڤي.",
+   "rumi": "Uktub bil-'Arabiyyah: baju, seluar, kasut, topi.",
+   "idea": [
+    {
+     "maksud": "Baju — قَمِيصٌ",
+     "kata": [
+      "qamis",
+      "qamisun",
+      "baju",
+      "قَمِيصٌ",
+      "قميص"
+     ]
+    },
+    {
+     "maksud": "Seluar — بَنْطَلُونٌ",
+     "kata": [
+      "bantalun",
+      "bantalunun",
+      "seluar",
+      "بَنْطَلُونٌ",
+      "بنطلون"
+     ]
+    },
+    {
+     "maksud": "Kasut — حِذَاءٌ",
+     "kata": [
+      "hida",
+      "hidha",
+      "kasut",
+      "حِذَاءٌ",
+      "حذاء"
+     ]
+    },
+    {
+     "maksud": "Topi — قُبَّعَةٌ",
+     "kata": [
+      "qubbah",
+      "qubbatun",
+      "topi",
+      "قُبَّعَةٌ",
+      "قبعة"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "قَمِيصٌ، بَنْطَلُونٌ، حِذَاءٌ، قُبَّعَةٌ"
+   ],
+   "jawapanContohRumi": [
+    "qamis, bantalun, hidha', qubbah"
+   ],
+   "id": "arab-c13"
+  },
+  {
+   "bahagian": "C",
+   "jenis": "tulis",
+   "bahasa": "arab",
+   "markah": 4,
+   "soalan": "أَكْمِلِ الْفَرَاغَاتِ بِاسْمِ الْإِشَارَةِ الْمُنَاسِبِ:\n(١) ______ كِتَابٌ.\n(٢) ______ زَهْرَةٌ.\n(٣) ______ مَسْجِدٌ بَعِيدٌ.\n(٤) ______ طَاوِلَةٌ بَعِيدَةٌ.",
+   "rumi": "Akmilil-faraghat bismil-isyaratil-munasib: (1) ______ kitabun. (2) ______ zahratun. (3) ______ masjidun ba'id. (4) ______ tawilatun ba'idah.",
+   "idea": [
+    {
+     "maksud": "Ini (lelaki) — هَذَا",
+     "kata": [
+      "hadha",
+      "haza",
+      "ini",
+      "هَذَا",
+      "هذا"
+     ]
+    },
+    {
+     "maksud": "Ini (perempuan) — هَذِهِ",
+     "kata": [
+      "hadhihi",
+      "hazihi",
+      "هَذِهِ",
+      "هذه"
+     ]
+    },
+    {
+     "maksud": "Itu (lelaki) — ذَلِكَ",
+     "kata": [
+      "dhalika",
+      "zalika",
+      "itu",
+      "ذَلِكَ",
+      "ذلك"
+     ]
+    },
+    {
+     "maksud": "Itu (perempuan) — تِلْكَ",
+     "kata": [
+      "tilka",
+      "تِلْكَ",
+      "تلك"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "هَذَا، هَذِهِ، ذَلِكَ، تِلْكَ"
+   ],
+   "jawapanContohRumi": [
+    "hadha, hadhihi, dhalika, tilka"
+   ],
+   "id": "arab-c14"
+  },
+  {
+   "bahagian": "C",
+   "jenis": "tulis",
+   "bahasa": "arab",
+   "markah": 4,
+   "soalan": "اكْتُبْ بِالْعَرَبِيَّةِ هَذِهِ الضَّمَائِرَ: ساي، اواڠ، دي (للاکي)، دي (ڤرمڤوان).",
+   "rumi": "Uktub bil-'Arabiyyah hadhihid-dhama'ir: saya, awak, dia (lelaki), dia (perempuan).",
+   "idea": [
+    {
+     "maksud": "Saya — أَنَا",
+     "kata": [
+      "ana",
+      "saya",
+      "أَنَا",
+      "أنا"
+     ]
+    },
+    {
+     "maksud": "Awak — أَنْتَ",
+     "kata": [
+      "anta",
+      "awak",
+      "engkau",
+      "kamu",
+      "أَنْتَ",
+      "أنت"
+     ]
+    },
+    {
+     "maksud": "Dia (lelaki) — هُوَ",
+     "kata": [
+      "huwa",
+      "dia",
+      "هُوَ"
+     ]
+    },
+    {
+     "maksud": "Dia (perempuan) — هِيَ",
+     "kata": [
+      "hiya",
+      "هِيَ"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "أَنَا، أَنْتَ، هُوَ، هِيَ"
+   ],
+   "jawapanContohRumi": [
+    "ana, anta, huwa, hiya"
+   ],
+   "id": "arab-c15"
+  },
+  {
+   "bahagian": "C",
+   "jenis": "tulis",
+   "bahasa": "arab",
+   "markah": 4,
+   "soalan": "اكْتُبْ بِالْعَرَبِيَّةِ: کامي، مريک، مريک (ڤرمڤوان)، اواڠ سموا.",
+   "rumi": "Uktub bil-'Arabiyyah: kami, mereka, mereka (perempuan), awak semua.",
+   "idea": [
+    {
+     "maksud": "Kami / kita — نَحْنُ",
+     "kata": [
+      "nahnu",
+      "kami",
+      "kita",
+      "نَحْنُ",
+      "نحن"
+     ]
+    },
+    {
+     "maksud": "Mereka (lelaki) — هُمْ",
+     "kata": [
+      "hum",
+      "mereka",
+      "هُمْ"
+     ]
+    },
+    {
+     "maksud": "Mereka (perempuan) — هُنَّ",
+     "kata": [
+      "hunna",
+      "هُنَّ",
+      "هن"
+     ]
+    },
+    {
+     "maksud": "Awak semua — أَنْتُمْ",
+     "kata": [
+      "antum",
+      "kamusekalian",
+      "أَنْتُمْ",
+      "أنتم"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "نَحْنُ، هُمْ، هُنَّ، أَنْتُمْ"
+   ],
+   "jawapanContohRumi": [
+    "nahnu, hum, hunna, antum"
+   ],
+   "id": "arab-c16"
+  },
+  {
+   "bahagian": "C",
+   "jenis": "tulis",
+   "bahasa": "arab",
+   "markah": 4,
+   "soalan": "اكْتُبْ بِالْعَرَبِيَّةِ أَدَوَاتِ الِاسْتِفْهَامِ: اڤ، سياڤ، دمان، براڤ.",
+   "rumi": "Uktub bil-'Arabiyyah adawatil-istifham: apa, siapa, di mana, berapa.",
+   "idea": [
+    {
+     "maksud": "Apa — مَا",
+     "kata": [
+      "ma",
+      "apa",
+      "مَا"
+     ]
+    },
+    {
+     "maksud": "Siapa — مَنْ",
+     "kata": [
+      "man",
+      "siapa",
+      "مَنْ"
+     ]
+    },
+    {
+     "maksud": "Di mana — أَيْنَ",
+     "kata": [
+      "aina",
+      "imana",
+      "mana",
+      "أَيْنَ",
+      "أين"
+     ]
+    },
+    {
+     "maksud": "Berapa — كَمْ",
+     "kata": [
+      "kam",
+      "berapa",
+      "كَمْ",
+      "كم"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "مَا، مَنْ، أَيْنَ، كَمْ"
+   ],
+   "jawapanContohRumi": [
+    "ma, man, aina, kam"
+   ],
+   "id": "arab-c17"
+  },
+  {
+   "bahagian": "C",
+   "jenis": "tulis",
+   "bahasa": "arab",
+   "markah": 4,
+   "soalan": "اكْتُبْ ضِدَّ هَذِهِ الْكَلِمَاتِ: كَبِيرٌ، طَوِيلٌ، جَدِيدٌ، نَظِيفٌ.",
+   "rumi": "Uktub didda hadhihil-kalimat: kabir, tawil, jadid, nazif.",
+   "idea": [
+    {
+     "maksud": "Kecil — صَغِيرٌ",
+     "kata": [
+      "saghir",
+      "kecil",
+      "صَغِيرٌ",
+      "صغير"
+     ]
+    },
+    {
+     "maksud": "Pendek — قَصِيرٌ",
+     "kata": [
+      "qasir",
+      "pendek",
+      "قَصِيرٌ",
+      "قصير"
+     ]
+    },
+    {
+     "maksud": "Lama — قَدِيمٌ",
+     "kata": [
+      "qadim",
+      "lama",
+      "قَدِيمٌ",
+      "قديم"
+     ]
+    },
+    {
+     "maksud": "Kotor — وَسِخٌ",
+     "kata": [
+      "wasikh",
+      "kotor",
+      "وَسِخٌ",
+      "وسخ"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "صَغِيرٌ، قَصِيرٌ، قَدِيمٌ، وَسِخٌ"
+   ],
+   "jawapanContohRumi": [
+    "saghir, qasir, qadim, wasikh"
+   ],
+   "id": "arab-c18"
+  },
+  {
+   "bahagian": "C",
+   "jenis": "tulis",
+   "bahasa": "arab",
+   "markah": 4,
+   "soalan": "اكْتُبْ ضِدَّ هَذِهِ الْكَلِمَاتِ: قَرِيبٌ، سَهْلٌ، حَارٌّ، كَثِيرٌ.",
+   "rumi": "Uktub didda hadhihil-kalimat: qarib, sahl, harr, kathir.",
+   "idea": [
+    {
+     "maksud": "Jauh — بَعِيدٌ",
+     "kata": [
+      "baid",
+      "jauh",
+      "بَعِيدٌ",
+      "بعيد"
+     ]
+    },
+    {
+     "maksud": "Susah — صَعْبٌ",
+     "kata": [
+      "saab",
+      "susah",
+      "sukar",
+      "صَعْبٌ",
+      "صعب"
+     ]
+    },
+    {
+     "maksud": "Sejuk — بَارِدٌ",
+     "kata": [
+      "barid",
+      "sejuk",
+      "بَارِدٌ",
+      "بارد"
+     ]
+    },
+    {
+     "maksud": "Sedikit — قَلِيلٌ",
+     "kata": [
+      "qalil",
+      "sedikit",
+      "sikit",
+      "قَلِيلٌ",
+      "قليل"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "بَعِيدٌ، صَعْبٌ، بَارِدٌ، قَلِيلٌ"
+   ],
+   "jawapanContohRumi": [
+    "ba'id, sa'b, barid, qalil"
+   ],
+   "id": "arab-c19"
+  },
+  {
+   "bahagian": "C",
+   "jenis": "tulis",
+   "bahasa": "arab",
+   "markah": 4,
+   "soalan": "اكْتُبْ جَمْعَ هَذِهِ الْكَلِمَاتِ: بَيْتٌ، كِتَابٌ، طَالِبٌ، وَلَدٌ.",
+   "rumi": "Uktub jam'a hadhihil-kalimat: baitun, kitabun, talibun, waladun.",
+   "idea": [
+    {
+     "maksud": "Jamak bagi بَيْتٌ — بُيُوتٌ (beberapa buah rumah)",
+     "kata": [
+      "buyut",
+      "rumah",
+      "بُيُوتٌ",
+      "بيوت"
+     ]
+    },
+    {
+     "maksud": "Jamak bagi كِتَابٌ — كُتُبٌ (beberapa buah buku)",
+     "kata": [
+      "kutub",
+      "buku",
+      "كُتُبٌ",
+      "كتب"
+     ]
+    },
+    {
+     "maksud": "Jamak bagi طَالِبٌ — طُلَّابٌ (murid-murid)",
+     "kata": [
+      "tullab",
+      "talabah",
+      "murid",
+      "طُلَّابٌ",
+      "طلاب"
+     ]
+    },
+    {
+     "maksud": "Jamak bagi وَلَدٌ — أَوْلَادٌ (anak-anak)",
+     "kata": [
+      "aulad",
+      "anak",
+      "أَوْلَادٌ",
+      "أولاد"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "بُيُوتٌ، كُتُبٌ، طُلَّابٌ، أَوْلَادٌ"
+   ],
+   "jawapanContohRumi": [
+    "buyut, kutub, tullab, aulad"
+   ],
+   "id": "arab-c20"
+  },
+  {
+   "bahagian": "C",
+   "jenis": "tulis",
+   "bahasa": "arab",
+   "markah": 4,
+   "soalan": "اكْتُبْ جَمْعَ هَذِهِ الْكَلِمَاتِ: مَدْرَسَةٌ، مُعَلِّمٌ، سَمَكَةٌ، فَاكِهَةٌ.",
+   "rumi": "Uktub jam'a hadhihil-kalimat: madrasatun, mu'allimun, samakatun, fakihatun.",
+   "idea": [
+    {
+     "maksud": "Jamak bagi مَدْرَسَةٌ — مَدَارِسُ (sekolah-sekolah)",
+     "kata": [
+      "madaris",
+      "sekolah",
+      "مَدَارِسُ",
+      "مدارس"
+     ]
+    },
+    {
+     "maksud": "Jamak bagi مُعَلِّمٌ — مُعَلِّمُونَ (guru-guru)",
+     "kata": [
+      "muallimun",
+      "guru",
+      "مُعَلِّمُونَ",
+      "معلمون"
+     ]
+    },
+    {
+     "maksud": "Jamak bagi سَمَكَةٌ — سَمَكٌ (ikan-ikan)",
+     "kata": [
+      "samak",
+      "ikan",
+      "سَمَكٌ",
+      "سمك"
+     ]
+    },
+    {
+     "maksud": "Jamak bagi فَاكِهَةٌ — فَوَاكِهُ (buah-buahan)",
+     "kata": [
+      "fawakih",
+      "buah",
+      "فَوَاكِهُ",
+      "فواكه"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "مَدَارِسُ، مُعَلِّمُونَ، سَمَكٌ، فَوَاكِهُ"
+   ],
+   "jawapanContohRumi": [
+    "madaris, mu'allimun, samak, fawakih"
+   ],
+   "id": "arab-c21"
+  },
+  {
+   "bahagian": "C",
+   "jenis": "tulis",
+   "bahasa": "arab",
+   "markah": 4,
+   "soalan": "اكْتُبْ مَعْنَى هَذِهِ الْكَلِمَاتِ بِالْمَلَايُوِيَّةِ: الْمِسْطَرَةُ، الْمِقَصُّ، السِّكِّينُ، الدَّفْتَرُ.",
+   "rumi": "Uktub ma'na hadhihil-kalimat bil-Malayuwiyyah: al-mistarah, al-miqass, as-sikkin, ad-daftar.",
+   "idea": [
+    {
+     "maksud": "Pembaris",
+     "kata": [
+      "pembaris",
+      "mistarah",
+      "penggaris",
+      "الْمِسْطَرَةُ",
+      "المسطرة",
+      "مسطرة"
+     ]
+    },
+    {
+     "maksud": "Gunting",
+     "kata": [
+      "gunting",
+      "miqass",
+      "الْمِقَصُّ",
+      "المقص",
+      "مقص"
+     ]
+    },
+    {
+     "maksud": "Pisau",
+     "kata": [
+      "pisau",
+      "sikkin",
+      "السِّكِّينُ",
+      "السكين",
+      "سكين"
+     ]
+    },
+    {
+     "maksud": "Buku latihan",
+     "kata": [
+      "latihan",
+      "daftar",
+      "buku",
+      "الدَّفْتَرُ",
+      "الدفتر",
+      "دفتر"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "الْمِسْطَرَةُ — Pembaris",
+    "الْمِقَصُّ — Gunting",
+    "السِّكِّينُ — Pisau",
+    "الدَّفْتَرُ — Buku latihan"
+   ],
+   "jawapanContohRumi": [
+    "al-mistarah — pembaris",
+    "al-miqass — gunting",
+    "as-sikkin — pisau",
+    "ad-daftar — buku latihan"
+   ],
+   "id": "arab-c22"
+  },
+  {
+   "bahagian": "C",
+   "jenis": "tulis",
+   "bahasa": "arab",
+   "markah": 4,
+   "soalan": "أَجِبْ عَنْ هَذِهِ الْأَسْئِلَةِ بِالْأَرْقَامِ:\n(١) كَمْ يَوْمًا فِي الْأُسْبُوعِ؟\n(٢) كَمْ شَهْرًا فِي السَّنَةِ؟\n(٣) كَمْ صَلَاةً فِي الْيَوْمِ؟\n(٤) كَمْ يَوْمَ عُطْلَةٍ فِي الْأُسْبُوعِ؟",
+   "rumi": "Ajib 'an hadhihil-as'ilah bil-arqam: (1) Kam yauman fil-usbu'? (2) Kam syahran fis-sanah? (3) Kam salatan fil-yaum? (4) Kam yauma 'utlatin fil-usbu'?",
+   "idea": [
+    {
+     "maksud": "Tujuh hari — سَبْعَةٌ",
+     "kata": [
+      "sabah",
+      "sabaa",
+      "tujuh",
+      "7",
+      "سَبْعَةُ",
+      "أَيَّامٍ",
+      "سَبْعَةٌ",
+      "سبعة",
+      "أيام"
+     ]
+    },
+    {
+     "maksud": "Dua belas bulan — اِثْنَا عَشَرَ",
+     "kata": [
+      "ithna",
+      "itsna",
+      "duabelas",
+      "12",
+      "اِثْنَا",
+      "عَشَرَ",
+      "شَهْرًا",
+      "اثنا",
+      "عشر",
+      "شهرا"
+     ]
+    },
+    {
+     "maksud": "Lima waktu solat — خَمْسٌ",
+     "kata": [
+      "khams",
+      "khamsah",
+      "lima",
+      "5",
+      "خَمْسُ",
+      "صَلَوَاتٍ",
+      "خَمْسٌ",
+      "خمس",
+      "صلوات"
+     ]
+    },
+    {
+     "maksud": "Dua hari cuti (Sabtu dan Ahad)",
+     "kata": [
+      "ithnan",
+      "itsnan",
+      "dua",
+      "2",
+      "يَوْمَانِ",
+      "يومان"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "سَبْعَةُ أَيَّامٍ",
+    "اِثْنَا عَشَرَ شَهْرًا",
+    "خَمْسُ صَلَوَاتٍ",
+    "يَوْمَانِ"
+   ],
+   "jawapanContohRumi": [
+    "sab'ah ayyam (tujuh hari)",
+    "ithna 'asyara syahran (dua belas bulan)",
+    "khamsu salawat (lima solat)",
+    "yaumani (dua hari)"
+   ],
+   "id": "arab-c23"
+  },
+  {
+   "bahagian": "C",
+   "jenis": "tulis",
+   "bahasa": "arab",
+   "markah": 4,
+   "soalan": "أَكْمِلِ الْحِوَارَ بَيْنَ زَيْدٍ وَعُمَرَ:\nزَيْدٌ: السَّلَامُ عَلَيْكُمْ.\nعُمَرُ: (١) ______.\nزَيْدٌ: كَيْفَ حَالُكَ؟\nعُمَرُ: (٢) ______، الْحَمْدُ لِلَّهِ.\nزَيْدٌ: مَا اسْمُكَ؟\nعُمَرُ: (٣) ______ عُمَرُ.\nزَيْدٌ: مِنْ أَيْنَ أَنْتَ؟\nعُمَرُ: أَنَا مِنْ (٤) ______.",
+   "rumi": "Akmilil-hiwar baina Zaidin wa 'Umar: Zaid: assalamu 'alaikum. 'Umar: (1) ______. Zaid: kaifa haluk? 'Umar: (2) ______, alhamdulillah. Zaid: masmuk? 'Umar: (3) ______ 'Umar. Zaid: min aina anta? 'Umar: ana min (4) ______.",
+   "idea": [
+    {
+     "maksud": "Jawapan salam — وَعَلَيْكُمُ السَّلَامُ",
+     "kata": [
+      "waalaikum",
+      "waalaikumsalam",
+      "salam",
+      "وَعَلَيْكُمُ",
+      "السَّلَامُ",
+      "وعليكم",
+      "السلام",
+      "سلام"
+     ]
+    },
+    {
+     "maksud": "Baik — بِخَيْرٍ",
+     "kata": [
+      "khair",
+      "baik",
+      "bikhair",
+      "بِخَيْرٍ",
+      "بخير"
+     ]
+    },
+    {
+     "maksud": "Nama saya — اسْمِي",
+     "kata": [
+      "ismi",
+      "nama",
+      "اسْمِي",
+      "اسمي"
+     ]
+    },
+    {
+     "maksud": "Negara kita — مَالِيزِيَا",
+     "kata": [
+      "malaysia",
+      "maliziya",
+      "مَالِيزِيَا",
+      "ماليزيا"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "وَعَلَيْكُمُ السَّلَامُ",
+    "بِخَيْرٍ",
+    "اسْمِي",
+    "مَالِيزِيَا"
+   ],
+   "jawapanContohRumi": [
+    "wa'alaikumussalam",
+    "bikhair",
+    "ismi",
+    "Maliziya (Malaysia)"
+   ],
+   "id": "arab-c24"
+  },
+  {
+   "bahagian": "C",
+   "jenis": "tulis",
+   "bahasa": "arab",
+   "markah": 4,
+   "soalan": "اكْتُبْ بِالْعَرَبِيَّةِ: صباح، ڤتڠ، تريما کاسيه، ساما-ساما.",
+   "rumi": "Uktub bil-'Arabiyyah: pagi, petang, terima kasih, sama-sama.",
+   "idea": [
+    {
+     "maksud": "Selamat pagi — صَبَاحُ الْخَيْرِ",
+     "kata": [
+      "sabah",
+      "sabahul",
+      "pagi",
+      "صَبَاحُ",
+      "الْخَيْرِ",
+      "صباح",
+      "الخير"
+     ]
+    },
+    {
+     "maksud": "Selamat petang — مَسَاءُ الْخَيْرِ",
+     "kata": [
+      "masa",
+      "masaul",
+      "petang",
+      "مَسَاءُ",
+      "الْخَيْرِ",
+      "مساء",
+      "الخير"
+     ]
+    },
+    {
+     "maksud": "Terima kasih — شُكْرًا",
+     "kata": [
+      "syukran",
+      "syukur",
+      "terimakasih",
+      "شُكْرًا",
+      "شكرا"
+     ]
+    },
+    {
+     "maksud": "Sama-sama — عَفْوًا",
+     "kata": [
+      "afwan",
+      "samasama",
+      "sama",
+      "عَفْوًا",
+      "عفوا"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "صَبَاحُ الْخَيْرِ، مَسَاءُ الْخَيْرِ، شُكْرًا، عَفْوًا"
+   ],
+   "jawapanContohRumi": [
+    "sabahul-khair, masa'ul-khair, syukran, 'afwan"
+   ],
+   "id": "arab-c25"
+  },
+  {
+   "bahagian": "C",
+   "jenis": "tulis",
+   "bahasa": "arab",
+   "markah": 4,
+   "soalan": "اكْتُبْ بِالْعَرَبِيَّةِ: بيليق تيدور، داڤور، بيليق اير، رواءڠ تامو.",
+   "rumi": "Uktub bil-'Arabiyyah: bilik tidur, dapur, bilik air, ruang tamu.",
+   "idea": [
+    {
+     "maksud": "Bilik tidur — غُرْفَةُ النَّوْمِ",
+     "kata": [
+      "naum",
+      "tidur",
+      "النَّوْمِ",
+      "غُرْفَةُ",
+      "النوم",
+      "نوم",
+      "غرفة"
+     ]
+    },
+    {
+     "maksud": "Dapur — مَطْبَخٌ",
+     "kata": [
+      "matbakh",
+      "matbakhun",
+      "dapur",
+      "مَطْبَخٌ",
+      "مطبخ"
+     ]
+    },
+    {
+     "maksud": "Bilik air — حَمَّامٌ",
+     "kata": [
+      "hammam",
+      "hammamun",
+      "حَمَّامٌ",
+      "حمام"
+     ]
+    },
+    {
+     "maksud": "Ruang tamu — غُرْفَةُ الْجُلُوسِ",
+     "kata": [
+      "julus",
+      "tamu",
+      "julush",
+      "الْجُلُوسِ",
+      "غُرْفَةُ",
+      "الجلوس",
+      "جلوس",
+      "غرفة"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "غُرْفَةُ النَّوْمِ، مَطْبَخٌ، حَمَّامٌ، غُرْفَةُ الْجُلُوسِ"
+   ],
+   "jawapanContohRumi": [
+    "ghurfatun-naum, matbakh, hammam, ghurfatul-julus"
+   ],
+   "id": "arab-c26"
+  },
+  {
+   "bahagian": "C",
+   "jenis": "tulis",
+   "bahasa": "arab",
+   "markah": 4,
+   "soalan": "اكْتُبْ بِالْعَرَبِيَّةِ: باݢايمانا، بيلا، مڠاڤا، اداکه.",
+   "rumi": "Uktub bil-'Arabiyyah: bagaimana, bila, mengapa, adakah.",
+   "idea": [
+    {
+     "maksud": "Bagaimana — كَيْفَ",
+     "kata": [
+      "kaifa",
+      "kifa",
+      "bagaimana",
+      "كَيْفَ",
+      "كيف"
+     ]
+    },
+    {
+     "maksud": "Bila — مَتَى",
+     "kata": [
+      "mata",
+      "bila",
+      "مَتَى",
+      "متى"
+     ]
+    },
+    {
+     "maksud": "Mengapa — لِمَاذَا",
+     "kata": [
+      "limadha",
+      "limaza",
+      "mengapa",
+      "kenapa",
+      "لِمَاذَا",
+      "لماذا"
+     ]
+    },
+    {
+     "maksud": "Adakah — هَلْ",
+     "kata": [
+      "hal",
+      "adakah",
+      "هَلْ"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "كَيْفَ، مَتَى، لِمَاذَا، هَلْ"
+   ],
+   "jawapanContohRumi": [
+    "kaifa, mata, limadha, hal"
+   ],
+   "id": "arab-c27"
+  },
+  {
+   "bahagian": "C",
+   "jenis": "tulis",
+   "bahasa": "arab",
+   "markah": 4,
+   "soalan": "اكْتُبْ مَعْنَى هَذِهِ الْكَلِمَاتِ بِالْمَلَايُوِيَّةِ: الْمُعَلِّمُ، الطَّالِبُ، الْحَدِيقَةُ، الْمَكْتَبَةُ.",
+   "rumi": "Uktub ma'na hadhihil-kalimat bil-Malayuwiyyah: al-mu'allim, at-talib, al-hadiqah, al-maktabah.",
+   "idea": [
+    {
+     "maksud": "Guru",
+     "kata": [
+      "guru",
+      "muallim",
+      "cikgu",
+      "الْمُعَلِّمُ",
+      "المعلم",
+      "معلم"
+     ]
+    },
+    {
+     "maksud": "Murid",
+     "kata": [
+      "murid",
+      "talib",
+      "pelajar",
+      "الطَّالِبُ",
+      "الطالب",
+      "طالب"
+     ]
+    },
+    {
+     "maksud": "Taman",
+     "kata": [
+      "taman",
+      "hadiqah",
+      "الْحَدِيقَةُ",
+      "الحديقة",
+      "حديقة"
+     ]
+    },
+    {
+     "maksud": "Perpustakaan",
+     "kata": [
+      "perpustakaan",
+      "maktabah",
+      "pustaka",
+      "الْمَكْتَبَةُ",
+      "المكتبة",
+      "مكتبة"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "الْمُعَلِّمُ — Guru",
+    "الطَّالِبُ — Murid",
+    "الْحَدِيقَةُ — Taman",
+    "الْمَكْتَبَةُ — Perpustakaan"
+   ],
+   "jawapanContohRumi": [
+    "al-mu'allim — guru",
+    "at-talib — murid",
+    "al-hadiqah — taman",
+    "al-maktabah — perpustakaan"
+   ],
+   "id": "arab-c28"
+  },
+  {
+   "bahagian": "C",
+   "jenis": "tulis",
+   "bahasa": "arab",
+   "markah": 4,
+   "soalan": "اكْتُبْ بِالْعَرَبِيَّةِ: اين (للاکي)، اين (ڤرمڤوان)، ايتو (للاکي)، ايتو (ڤرمڤوان).",
+   "rumi": "Uktub bil-'Arabiyyah: ini (lelaki), ini (perempuan), itu (lelaki), itu (perempuan).",
+   "idea": [
+    {
+     "maksud": "Ini (lelaki) — هَذَا",
+     "kata": [
+      "hadha",
+      "haza",
+      "ini",
+      "هَذَا",
+      "هذا"
+     ]
+    },
+    {
+     "maksud": "Ini (perempuan) — هَذِهِ",
+     "kata": [
+      "hadhihi",
+      "hazihi",
+      "هَذِهِ",
+      "هذه"
+     ]
+    },
+    {
+     "maksud": "Itu (lelaki) — ذَلِكَ",
+     "kata": [
+      "dhalika",
+      "zalika",
+      "itu",
+      "ذَلِكَ",
+      "ذلك"
+     ]
+    },
+    {
+     "maksud": "Itu (perempuan) — تِلْكَ",
+     "kata": [
+      "tilka",
+      "تِلْكَ",
+      "تلك"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "هَذَا، هَذِهِ، ذَلِكَ، تِلْكَ"
+   ],
+   "jawapanContohRumi": [
+    "hadha, hadhihi, dhalika, tilka"
+   ],
+   "id": "arab-c29"
+  },
+  {
+   "bahagian": "C",
+   "jenis": "tulis",
+   "bahasa": "arab",
+   "markah": 4,
+   "soalan": "أَجِبْ عَنْ هَذِهِ الْأَسْئِلَةِ عَنْ نَفْسِكَ:\n(١) مَا اسْمُكَ؟\n(٢) كَمْ عُمْرُكَ؟\n(٣) أَيْنَ تَسْكُنُ؟\n(٤) فِي أَيِّ صَفٍّ أَنْتَ؟",
+   "rumi": "Ajib 'an hadhihil-as'ilah 'an nafsik: (1) Masmuk? (2) Kam 'umruk? (3) Aina taskun? (4) Fi ayyi saffin anta?",
+   "idea": [
+    {
+     "maksud": "Nama sendiri — اسْمِي ...",
+     "kata": [
+      "ismi",
+      "nama",
+      "اسْمِي",
+      "عَبْدُ",
+      "اللهِ",
+      "اسمي",
+      "عبد",
+      "الله"
+     ]
+    },
+    {
+     "maksud": "Umur sendiri — عُمْرِي ... سَنَةً",
+     "kata": [
+      "umri",
+      "umur",
+      "tahun",
+      "عُمْرِي",
+      "إِحْدَى",
+      "عَشْرَةَ",
+      "سَنَةً",
+      "عمري",
+      "إحدى",
+      "عشرة",
+      "سنة"
+     ]
+    },
+    {
+     "maksud": "Tempat tinggal — أَسْكُنُ فِي ...",
+     "kata": [
+      "askun",
+      "tinggal",
+      "duduk",
+      "أَسْكُنُ",
+      "قَرْيَةٍ",
+      "فِي",
+      "أسكن",
+      "قرية"
+     ]
+    },
+    {
+     "maksud": "Kelas / darjah lima — الصَّفُّ الْخَامِسُ",
+     "kata": [
+      "saff",
+      "kelas",
+      "darjah",
+      "khamis",
+      "أَنَا",
+      "الصَّفِّ",
+      "الْخَامِسِ",
+      "الصَّفُّ",
+      "الْخَامِسُ",
+      "أنا",
+      "الصف",
+      "صف",
+      "الخامس",
+      "خامس"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "اسْمِي عَبْدُ اللهِ",
+    "عُمْرِي إِحْدَى عَشْرَةَ سَنَةً",
+    "أَسْكُنُ فِي قَرْيَةٍ",
+    "أَنَا فِي الصَّفِّ الْخَامِسِ"
+   ],
+   "jawapanContohRumi": [
+    "ismi Abdullah",
+    "'umri ihda 'asyrah sanah (umur saya sebelas tahun)",
+    "askun fi qaryah (saya tinggal di sebuah kampung)",
+    "ana fis-saffil-khamis (saya dalam darjah lima)"
+   ],
+   "id": "arab-c30"
+  },
+  {
+   "bahagian": "D",
+   "jenis": "huraian",
+   "bahasa": "arab",
+   "markah": 8,
+   "soalan": "اقْرَأِ الْقِطْعَةَ ثُمَّ أَجِبْ عَنِ الْأَسْئِلَةِ:\nأُسْرَةُ زَيْدٍ صَغِيرَةٌ. يَسْكُنُ زَيْدٌ فِي بَيْتٍ قَرِيبٍ مِنَ الْمَسْجِدِ. أَبُوهُ مُدَرِّسٌ وَأُمُّهُ طَبِيبَةٌ. لِزَيْدٍ أَخٌ صَغِيرٌ اسْمُهُ عُمَرُ. يُصَلِّي زَيْدٌ فِي الْمَسْجِدِ مَعَ أَبِيهِ. يُحِبُّ زَيْدٌ رُكُوبَ الدَّرَّاجَةِ.\n(١) مَا اسْمُ الْوَلَدِ؟\n(٢) أَيْنَ يَسْكُنُ زَيْدٌ؟\n(٣) مَا عَمَلُ أَبِيهِ؟\n(٤) مَا عَمَلُ أُمِّهِ؟\n(٥) مَا اسْمُ أَخِيهِ؟\n(٦) مَعَ مَنْ يُصَلِّي زَيْدٌ؟\n(٧) أَيْنَ يُصَلِّي زَيْدٌ؟\n(٨) مَا الَّذِي يُحِبُّهُ زَيْدٌ؟",
+   "rumi": "Iqra'il-qit'ah thumma ajib 'anil-as'ilah: Usratu Zaidin saghirah. Yaskunu Zaidun fi baitin qaribin minal-masjid. Abuhu mudarrisun wa ummuhu tabibah. Li Zaidin akhun saghirun ismuhu 'Umar. Yusalli Zaidun fil-masjidi ma'a abih. Yuhibbu Zaidun rukubad-darrajah. (1) Masmul-walad? (2) Aina yaskunu Zaid? (3) Ma 'amalu abih? (4) Ma 'amalu ummih? (5) Masmu akhih? (6) Ma'a man yusalli Zaid? (7) Aina yusalli Zaid? (8) Mal-ladhi yuhibbuhu Zaid?",
+   "idea": [
+    {
+     "maksud": "Nama budak itu Zaid",
+     "kata": [
+      "zaid",
+      "zayd",
+      "zaidun",
+      "زَيْدٌ",
+      "زيد"
+     ]
+    },
+    {
+     "maksud": "Zaid tinggal di rumah yang dekat dengan masjid",
+     "kata": [
+      "bait",
+      "rumah",
+      "بَيْتٍ",
+      "قَرِيبٍ",
+      "مِنَ",
+      "بيت",
+      "قريب"
+     ]
+    },
+    {
+     "maksud": "Pekerjaan ayahnya guru",
+     "kata": [
+      "mudarris",
+      "guru",
+      "cikgu",
+      "مُدَرِّسٌ",
+      "مدرس"
+     ]
+    },
+    {
+     "maksud": "Pekerjaan ibunya doktor",
+     "kata": [
+      "tabibah",
+      "doktor",
+      "tabib",
+      "طَبِيبَةٌ",
+      "طبيبة"
+     ]
+    },
+    {
+     "maksud": "Nama adiknya Umar",
+     "kata": [
+      "umar",
+      "omar",
+      "عُمَرُ",
+      "عمر"
+     ]
+    },
+    {
+     "maksud": "Zaid bersolat bersama ayahnya",
+     "kata": [
+      "ab",
+      "ayah",
+      "bapa",
+      "مَعَ",
+      "أَبِيهِ",
+      "أبيه"
+     ]
+    },
+    {
+     "maksud": "Zaid bersolat di masjid",
+     "kata": [
+      "masjid",
+      "في المسجد"
+     ]
+    },
+    {
+     "maksud": "Zaid suka menaiki basikal",
+     "kata": [
+      "darrajah",
+      "basikal",
+      "berbasikal",
+      "رُكُوبُ",
+      "الدَّرَّاجَةِ",
+      "ركوب",
+      "الدراجة",
+      "دراجة"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "زَيْدٌ",
+    "فِي بَيْتٍ قَرِيبٍ مِنَ الْمَسْجِدِ",
+    "مُدَرِّسٌ",
+    "طَبِيبَةٌ",
+    "عُمَرُ",
+    "مَعَ أَبِيهِ",
+    "فِي الْمَسْجِدِ",
+    "رُكُوبُ الدَّرَّاجَةِ"
+   ],
+   "jawapanContohRumi": [
+    "Zaid",
+    "di rumah yang dekat dengan masjid",
+    "guru",
+    "doktor",
+    "Umar",
+    "bersama ayahnya",
+    "di masjid",
+    "menaiki basikal"
+   ],
+   "id": "arab-d1"
+  },
+  {
+   "bahagian": "D",
+   "jenis": "huraian",
+   "bahasa": "arab",
+   "markah": 7,
+   "soalan": "اكْتُبْ ضِدَّ هَذِهِ الْكَلِمَاتِ: وَاسِعٌ، ثَقِيلٌ، سَعِيدٌ، جَمِيلٌ، الْيَمِينُ، مُجْتَهِدٌ، يَفْتَحُ.",
+   "rumi": "Uktub didda hadhihil-kalimat: wasi', thaqil, sa'id, jamil, al-yamin, mujtahid, yaftah.",
+   "idea": [
+    {
+     "maksud": "Sempit — ضَيِّقٌ",
+     "kata": [
+      "dhayyiq",
+      "dhaiaq",
+      "sempit",
+      "ضَيِّقٌ",
+      "ضيق"
+     ]
+    },
+    {
+     "maksud": "Ringan — خَفِيفٌ",
+     "kata": [
+      "khafif",
+      "ringan",
+      "خَفِيفٌ",
+      "خفيف"
+     ]
+    },
+    {
+     "maksud": "Sedih — حَزِينٌ",
+     "kata": [
+      "hazin",
+      "sedih",
+      "huzin",
+      "حَزِينٌ",
+      "حزين"
+     ]
+    },
+    {
+     "maksud": "Buruk — قَبِيحٌ",
+     "kata": [
+      "qabih",
+      "buruk",
+      "قَبِيحٌ",
+      "قبيح"
+     ]
+    },
+    {
+     "maksud": "Kiri — الشِّمَالُ",
+     "kata": [
+      "shimal",
+      "kiri",
+      "الشِّمَالُ",
+      "الشمال",
+      "شمال"
+     ]
+    },
+    {
+     "maksud": "Malas — كَسْلَانُ",
+     "kata": [
+      "kaslan",
+      "malas",
+      "كَسْلَانُ",
+      "كسلان"
+     ]
+    },
+    {
+     "maksud": "Menutup — يُغْلِقُ",
+     "kata": [
+      "yughliq",
+      "tutup",
+      "menutup",
+      "يُغْلِقُ",
+      "يغلق"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "ضَيِّقٌ، خَفِيفٌ، حَزِينٌ، قَبِيحٌ، الشِّمَالُ، كَسْلَانُ، يُغْلِقُ"
+   ],
+   "jawapanContohRumi": [
+    "dhayyiq, khafif, hazin, qabih, asy-syimal, kaslan, yughliq"
+   ],
+   "id": "arab-d2"
+  },
+  {
+   "bahagian": "D",
+   "jenis": "huraian",
+   "bahasa": "arab",
+   "markah": 7,
+   "soalan": "اكْتُبْ بِالْعَرَبِيَّةِ: ڤاسر، هوشڤيتل، ڤرڤوستاکاءن، کبون، رستوران، سوڠاي، ݢونوڠ.",
+   "rumi": "Uktub bil-'Arabiyyah: pasar, hospital, perpustakaan, kebun, restoran, sungai, gunung.",
+   "idea": [
+    {
+     "maksud": "Pasar — سُوقٌ",
+     "kata": [
+      "suq",
+      "suk",
+      "pasar",
+      "سُوقٌ",
+      "سوق"
+     ]
+    },
+    {
+     "maksud": "Hospital — مُسْتَشْفَى",
+     "kata": [
+      "mustashfa",
+      "hospital",
+      "مُسْتَشْفَى",
+      "مستشفى"
+     ]
+    },
+    {
+     "maksud": "Perpustakaan — مَكْتَبَةٌ",
+     "kata": [
+      "maktabah",
+      "perpustakaan",
+      "مَكْتَبَةٌ",
+      "مكتبة"
+     ]
+    },
+    {
+     "maksud": "Kebun — مَزْرَعَةٌ",
+     "kata": [
+      "mazraah",
+      "kebun",
+      "ladang",
+      "مَزْرَعَةٌ",
+      "مزرعة"
+     ]
+    },
+    {
+     "maksud": "Restoran — مَطْعَمٌ",
+     "kata": [
+      "matam",
+      "restoran",
+      "مَطْعَمٌ",
+      "مطعم"
+     ]
+    },
+    {
+     "maksud": "Sungai — نَهْرٌ",
+     "kata": [
+      "nahr",
+      "sungai",
+      "نَهْرٌ",
+      "نهر"
+     ]
+    },
+    {
+     "maksud": "Gunung — جَبَلٌ",
+     "kata": [
+      "jabal",
+      "gunung",
+      "جَبَلٌ",
+      "جبل"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "سُوقٌ، مُسْتَشْفَى، مَكْتَبَةٌ، مَزْرَعَةٌ، مَطْعَمٌ، نَهْرٌ، جَبَلٌ"
+   ],
+   "jawapanContohRumi": [
+    "suq, mustashfa, maktabah, mazra'ah, mat'am, nahr, jabal"
+   ],
+   "id": "arab-d3"
+  },
+  {
+   "bahagian": "D",
+   "jenis": "huraian",
+   "bahasa": "arab",
+   "markah": 8,
+   "soalan": "اقْرَأِ الْقِطْعَةَ ثُمَّ أَجِبْ عَنِ الْأَسْئِلَةِ:\nمَدْرَسَتِي قَرِيبَةٌ مِنْ بَيْتِي. أَذْهَبُ إِلَى الْمَدْرَسَةِ مَشْيًا فِي الصَّبَاحِ. فِي الْمَدْرَسَةِ مَكْتَبَةٌ وَمَلْعَبٌ كَبِيرٌ. مُعَلِّمُ اللُّغَةِ الْعَرَبِيَّةِ اسْمُهُ الْأُسْتَاذُ حَسَنٌ. أُحِبُّ دَرْسَ اللُّغَةِ الْعَرَبِيَّةِ.\n(١) أَيْنَ مَدْرَسَتُكَ؟\n(٢) مَتَى تَذْهَبُ إِلَى الْمَدْرَسَةِ؟\n(٣) كَيْفَ تَذْهَبُ إِلَى الْمَدْرَسَةِ؟\n(٤) مَا اسْمُ مُعَلِّمِ اللُّغَةِ الْعَرَبِيَّةِ؟\n(٥) أَيْنَ تَقْرَأُ الْكُتُبَ؟\n(٦) أَيْنَ يَلْعَبُ الطُّلَّابُ؟\n(٧) كَيْفَ الْمَلْعَبُ؟\n(٨) مَا الدَّرْسُ الَّذِي تُحِبُّهُ؟",
+   "rumi": "Iqra'il-qit'ah thumma ajib 'anil-as'ilah: Madrasati qaribah min baiti. Adhhabu ilal-madrasati masyyan fis-sabah. Fil-madrasati maktabatun wa mal'abun kabir. Mu'allimul-lughatil-'Arabiyyati ismuhul-Ustaz Hasan. Uhibbu darsal-lughatil-'Arabiyyah. (1) Aina madrasatuk? (2) Mata tadhhabu ilal-madrasah? (3) Kaifa tadhhabu ilal-madrasah? (4) Masmu mu'allimil-lughatil-'Arabiyyah? (5) Aina taqra'ul-kutub? (6) Aina yal'abut-tullab? (7) Kaifal-mal'ab? (8) Mad-darsul-ladhi tuhibbuh?",
+   "idea": [
+    {
+     "maksud": "Sekolah saya dekat dengan rumah",
+     "kata": [
+      "qaribah",
+      "dekat",
+      "rumah",
+      "bait",
+      "قَرِيبَةٌ",
+      "مِنْ",
+      "بَيْتِي",
+      "قريبة",
+      "بيتي"
+     ]
+    },
+    {
+     "maksud": "Saya pergi ke sekolah pada waktu pagi",
+     "kata": [
+      "sabah",
+      "pagi",
+      "الصَّبَاحِ",
+      "الصباح",
+      "صباح"
+     ]
+    },
+    {
+     "maksud": "Saya berjalan kaki",
+     "kata": [
+      "masyi",
+      "jalan",
+      "kaki",
+      "berjalan",
+      "أَذْهَبُ",
+      "مَشْيًا",
+      "أذهب",
+      "مشيا"
+     ]
+    },
+    {
+     "maksud": "Nama guru bahasa Arab ialah Ustaz Hasan",
+     "kata": [
+      "hasan",
+      "hassan",
+      "الْأُسْتَاذُ",
+      "حَسَنٌ",
+      "الأستاذ",
+      "أستاذ",
+      "حسن"
+     ]
+    },
+    {
+     "maksud": "Saya membaca buku di perpustakaan",
+     "kata": [
+      "maktabah",
+      "perpustakaan",
+      "الْمَكْتَبَةِ",
+      "المكتبة",
+      "مكتبة"
+     ]
+    },
+    {
+     "maksud": "Murid bermain di padang",
+     "kata": [
+      "malab",
+      "padang",
+      "الْمَلْعَبِ",
+      "الملعب",
+      "ملعب"
+     ]
+    },
+    {
+     "maksud": "Padang itu besar",
+     "kata": [
+      "kabir",
+      "besar",
+      "كَبِيرٌ",
+      "كبير"
+     ]
+    },
+    {
+     "maksud": "Pelajaran bahasa Arab",
+     "kata": [
+      "arab",
+      "arabiyyah",
+      "arabiah",
+      "دَرْسُ",
+      "اللُّغَةِ",
+      "الْعَرَبِيَّةِ",
+      "درس",
+      "اللغة",
+      "لغة",
+      "العربية",
+      "عربية"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "قَرِيبَةٌ مِنْ بَيْتِي",
+    "فِي الصَّبَاحِ",
+    "أَذْهَبُ مَشْيًا",
+    "الْأُسْتَاذُ حَسَنٌ",
+    "فِي الْمَكْتَبَةِ",
+    "فِي الْمَلْعَبِ",
+    "كَبِيرٌ",
+    "دَرْسُ اللُّغَةِ الْعَرَبِيَّةِ"
+   ],
+   "jawapanContohRumi": [
+    "dekat dengan rumah saya",
+    "pada waktu pagi",
+    "saya berjalan kaki",
+    "Ustaz Hasan",
+    "di perpustakaan",
+    "di padang",
+    "besar",
+    "pelajaran bahasa Arab"
+   ],
+   "id": "arab-d4"
+  },
+  {
+   "bahagian": "D",
+   "jenis": "huraian",
+   "bahasa": "arab",
+   "markah": 8,
+   "soalan": "اكْتُبْ بِالْعَرَبِيَّةِ: ارنب، کامبيڠ، اونتا، مونيت، هريماو، برواڠ، لبه، سموت.",
+   "rumi": "Uktub bil-'Arabiyyah: arnab, kambing, unta, monyet, harimau, beruang, lebah, semut.",
+   "idea": [
+    {
+     "maksud": "Arnab — أَرْنَبٌ",
+     "kata": [
+      "arnab",
+      "arnabun",
+      "أَرْنَبٌ",
+      "أرنب"
+     ]
+    },
+    {
+     "maksud": "Kambing — مَاعِزٌ",
+     "kata": [
+      "maiz",
+      "kambing",
+      "مَاعِزٌ",
+      "ماعز"
+     ]
+    },
+    {
+     "maksud": "Unta — جَمَلٌ",
+     "kata": [
+      "jamal",
+      "unta",
+      "جَمَلٌ",
+      "جمل"
+     ]
+    },
+    {
+     "maksud": "Monyet — قِرْدٌ",
+     "kata": [
+      "qird",
+      "monyet",
+      "قِرْدٌ",
+      "قرد"
+     ]
+    },
+    {
+     "maksud": "Harimau — نَمِرٌ",
+     "kata": [
+      "namir",
+      "harimau",
+      "نَمِرٌ",
+      "نمر"
+     ]
+    },
+    {
+     "maksud": "Beruang — دُبٌّ",
+     "kata": [
+      "dubb",
+      "dub",
+      "beruang",
+      "دُبٌّ",
+      "دب"
+     ]
+    },
+    {
+     "maksud": "Lebah — نَحْلَةٌ",
+     "kata": [
+      "nahlah",
+      "lebah",
+      "نَحْلَةٌ",
+      "نحلة"
+     ]
+    },
+    {
+     "maksud": "Semut — نَمْلَةٌ",
+     "kata": [
+      "namlah",
+      "semut",
+      "نَمْلَةٌ",
+      "نملة"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "أَرْنَبٌ، مَاعِزٌ، جَمَلٌ، قِرْدٌ، نَمِرٌ، دُبٌّ، نَحْلَةٌ، نَمْلَةٌ"
+   ],
+   "jawapanContohRumi": [
+    "arnab, ma'iz, jamal, qird, namir, dubb, nahlah, namlah"
+   ],
+   "id": "arab-d5"
+  },
+  {
+   "bahagian": "D",
+   "jenis": "huraian",
+   "bahasa": "arab",
+   "markah": 7,
+   "soalan": "اكْتُبْ بِالْعَرَبِيَّةِ: تيدور، باڠون، دودوق، برديري، برجالان، ممباچ، منوليس.",
+   "rumi": "Uktub bil-'Arabiyyah: tidur, bangun, duduk, berdiri, berjalan, membaca, menulis.",
+   "idea": [
+    {
+     "maksud": "Tidur — يَنَامُ",
+     "kata": [
+      "yanam",
+      "tidur",
+      "يَنَامُ",
+      "ينام"
+     ]
+    },
+    {
+     "maksud": "Bangun — يَسْتَيْقِظُ",
+     "kata": [
+      "yastaiqiz",
+      "bangun",
+      "istiqaz",
+      "يَسْتَيْقِظُ",
+      "يستيقظ"
+     ]
+    },
+    {
+     "maksud": "Duduk — يَجْلِسُ",
+     "kata": [
+      "yajlis",
+      "duduk",
+      "يَجْلِسُ",
+      "يجلس"
+     ]
+    },
+    {
+     "maksud": "Berdiri — يَقِفُ",
+     "kata": [
+      "yaqif",
+      "berdiri",
+      "يَقِفُ",
+      "يقف"
+     ]
+    },
+    {
+     "maksud": "Berjalan — يَمْشِي",
+     "kata": [
+      "yamshi",
+      "berjalan",
+      "jalan",
+      "يَمْشِي",
+      "يمشي"
+     ]
+    },
+    {
+     "maksud": "Membaca — يَقْرَأُ",
+     "kata": [
+      "yaqra",
+      "membaca",
+      "baca",
+      "يَقْرَأُ",
+      "يقرأ"
+     ]
+    },
+    {
+     "maksud": "Menulis — يَكْتُبُ",
+     "kata": [
+      "yaktub",
+      "menulis",
+      "tulis",
+      "يَكْتُبُ",
+      "يكتب"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "يَنَامُ، يَسْتَيْقِظُ، يَجْلِسُ، يَقِفُ، يَمْشِي، يَقْرَأُ، يَكْتُبُ"
+   ],
+   "jawapanContohRumi": [
+    "yanam, yastaiqiz, yajlis, yaqif, yamshi, yaqra', yaktub"
+   ],
+   "id": "arab-d6"
+  },
+  {
+   "bahagian": "D",
+   "jenis": "huraian",
+   "bahasa": "arab",
+   "markah": 7,
+   "soalan": "اكْتُبْ جَمْعَ هَذِهِ الْكَلِمَاتِ: بِنْتٌ، مَسْجِدٌ، شَجَرَةٌ، كُرْسِيٌّ، سَاعَةٌ، مُسْلِمٌ، صُورَةٌ.",
+   "rumi": "Uktub jam'a hadhihil-kalimat: bintun, masjidun, syajaratun, kursiyyun, sa'atun, muslimun, suratun.",
+   "idea": [
+    {
+     "maksud": "Jamak bagi بِنْتٌ — بَنَاتٌ (anak perempuan)",
+     "kata": [
+      "banat",
+      "بَنَاتٌ",
+      "بنات"
+     ]
+    },
+    {
+     "maksud": "Jamak bagi مَسْجِدٌ — مَسَاجِدُ",
+     "kata": [
+      "masajid",
+      "masjid",
+      "مَسَاجِدُ",
+      "مساجد"
+     ]
+    },
+    {
+     "maksud": "Jamak bagi شَجَرَةٌ — أَشْجَارٌ",
+     "kata": [
+      "asyjar",
+      "pokok",
+      "أَشْجَارٌ",
+      "أشجار"
+     ]
+    },
+    {
+     "maksud": "Jamak bagi كُرْسِيٌّ — كَرَاسِيُّ",
+     "kata": [
+      "karasi",
+      "kerusi",
+      "كَرَاسِيُّ",
+      "كراسي"
+     ]
+    },
+    {
+     "maksud": "Jamak bagi سَاعَةٌ — سَاعَاتٌ",
+     "kata": [
+      "saat",
+      "jam",
+      "سَاعَاتٌ",
+      "ساعات"
+     ]
+    },
+    {
+     "maksud": "Jamak bagi مُسْلِمٌ — مُسْلِمُونَ",
+     "kata": [
+      "muslimun",
+      "muslim",
+      "مُسْلِمُونَ",
+      "مسلمون"
+     ]
+    },
+    {
+     "maksud": "Jamak bagi صُورَةٌ — صُوَرٌ",
+     "kata": [
+      "suwar",
+      "gambar",
+      "صُوَرٌ",
+      "صور"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "بَنَاتٌ، مَسَاجِدُ، أَشْجَارٌ، كَرَاسِيُّ، سَاعَاتٌ، مُسْلِمُونَ، صُوَرٌ"
+   ],
+   "jawapanContohRumi": [
+    "banat, masajid, asyjar, karasi, sa'at, muslimun, suwar"
+   ],
+   "id": "arab-d7"
+  },
+  {
+   "bahagian": "D",
+   "jenis": "huraian",
+   "bahasa": "arab",
+   "markah": 8,
+   "soalan": "اكْتُبْ مَعْنَى هَذِهِ الْكَلِمَاتِ بِالْمَلَايُوِيَّةِ: الْمِصْبَاحُ، الثَّلَّاجَةُ، الْمِكْنَسَةُ، الْمِرْوَحَةُ، الْإِبْرِيقُ، الصَّحْنُ، الْكُوبُ، الْمِلْعَقَةُ.",
+   "rumi": "Uktub ma'na hadhihil-kalimat bil-Malayuwiyyah: al-misbah, ath-thallajah, al-miknasah, al-mirwahah, al-ibriq, as-sahn, al-kub, al-mil'aqah.",
+   "idea": [
+    {
+     "maksud": "Lampu",
+     "kata": [
+      "lampu",
+      "misbah",
+      "الْمِصْبَاحُ",
+      "المصباح",
+      "مصباح"
+     ]
+    },
+    {
+     "maksud": "Peti sejuk",
+     "kata": [
+      "sejuk",
+      "thallajah",
+      "الثَّلَّاجَةُ",
+      "الثلاجة",
+      "ثلاجة"
+     ]
+    },
+    {
+     "maksud": "Penyapu",
+     "kata": [
+      "asyjar",
+      "pokok",
+      "الْمِكْنَسَةُ",
+      "المكنسة",
+      "مكنسة"
+     ]
+    },
+    {
+     "maksud": "Kipas",
+     "kata": [
+      "kipas",
+      "mirwahah",
+      "الْمِرْوَحَةُ",
+      "المروحة",
+      "مروحة"
+     ]
+    },
+    {
+     "maksud": "Teko",
+     "kata": [
+      "teko",
+      "ibriq",
+      "الْإِبْرِيقُ",
+      "الإبريق",
+      "إبريق"
+     ]
+    },
+    {
+     "maksud": "Pinggan",
+     "kata": [
+      "pinggan",
+      "sahn",
+      "الصَّحْنُ",
+      "الصحن",
+      "صحن"
+     ]
+    },
+    {
+     "maksud": "Cawan",
+     "kata": [
+      "cawan",
+      "kub",
+      "الْكُوبُ",
+      "الكوب",
+      "كوب"
+     ]
+    },
+    {
+     "maksud": "Sudu",
+     "kata": [
+      "sudu",
+      "milaqah",
+      "الْمِلْعَقَةُ",
+      "الملعقة",
+      "ملعقة"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "الْمِصْبَاحُ — Lampu",
+    "الثَّلَّاجَةُ — Peti sejuk",
+    "الْمِكْنَسَةُ — Penyapu",
+    "الْمِرْوَحَةُ — Kipas",
+    "الْإِبْرِيقُ — Teko",
+    "الصَّحْنُ — Pinggan",
+    "الْكُوبُ — Cawan",
+    "الْمِلْعَقَةُ — Sudu"
+   ],
+   "jawapanContohRumi": [
+    "al-misbah — lampu",
+    "ath-thallajah — peti sejuk",
+    "al-miknasah — penyapu",
+    "al-mirwahah — kipas",
+    "al-ibriq — teko",
+    "as-sahn — pinggan",
+    "al-kub — cawan",
+    "al-mil'aqah — sudu"
+   ],
+   "id": "arab-d8"
+  },
+  {
+   "bahagian": "D",
+   "jenis": "huraian",
+   "bahasa": "arab",
+   "markah": 8,
+   "soalan": "اكْتُبْ بِالْعَرَبِيَّةِ: ١١، ١٢، ٣٠، ٤٠، ٥٠، ٦٠، ٧٠، ٩٠.",
+   "rumi": "Uktub bil-'Arabiyyah: 11, 12, 30, 40, 50, 60, 70, 90.",
+   "idea": [
+    {
+     "maksud": "Sebelas — أَحَدَ عَشَرَ",
+     "kata": [
+      "ahadasyar",
+      "ahada",
+      "sebelas",
+      "أَحَدَ",
+      "عَشَرَ",
+      "أحد",
+      "عشر"
+     ]
+    },
+    {
+     "maksud": "Dua belas — اِثْنَا عَشَرَ",
+     "kata": [
+      "itsnaasyar",
+      "ithnasyar",
+      "duabelas",
+      "اِثْنَا",
+      "عَشَرَ",
+      "اثنا",
+      "عشر"
+     ]
+    },
+    {
+     "maksud": "Tiga puluh — ثَلَاثُونَ",
+     "kata": [
+      "thalathun",
+      "tsalatsun",
+      "tigapuluh",
+      "ثَلَاثُونَ",
+      "ثلاثون"
+     ]
+    },
+    {
+     "maksud": "Empat puluh — أَرْبَعُونَ",
+     "kata": [
+      "arbaun",
+      "empatpuluh",
+      "أَرْبَعُونَ",
+      "أربعون"
+     ]
+    },
+    {
+     "maksud": "Lima puluh — خَمْسُونَ",
+     "kata": [
+      "khamsun",
+      "limapuluh",
+      "خَمْسُونَ",
+      "خمسون"
+     ]
+    },
+    {
+     "maksud": "Enam puluh — سِتُّونَ",
+     "kata": [
+      "sittun",
+      "situn",
+      "enampuluh",
+      "سِتُّونَ",
+      "ستون"
+     ]
+    },
+    {
+     "maksud": "Tujuh puluh — سَبْعُونَ",
+     "kata": [
+      "sabun",
+      "tujuhpuluh",
+      "سَبْعُونَ",
+      "سبعون"
+     ]
+    },
+    {
+     "maksud": "Sembilan puluh — تِسْعُونَ",
+     "kata": [
+      "tisun",
+      "sembilanpuluh",
+      "تِسْعُونَ",
+      "تسعون"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "أَحَدَ عَشَرَ، اِثْنَا عَشَرَ، ثَلَاثُونَ، أَرْبَعُونَ، خَمْسُونَ، سِتُّونَ، سَبْعُونَ، تِسْعُونَ"
+   ],
+   "jawapanContohRumi": [
+    "ahada 'asyar, ithna 'asyar, thalathun, arba'un, khamsun, sittun, sab'un, tis'un"
+   ],
+   "id": "arab-d9"
+  },
+  {
+   "bahagian": "D",
+   "jenis": "huraian",
+   "bahasa": "arab",
+   "markah": 7,
+   "soalan": "عَرِّفْ نَفْسَكَ. اذْكُرْ فِي جَوَابِكَ: الِاسْمَ، الْعُمْرَ، الصَّفَّ، الْمَدْرَسَةَ، الْبَيْتَ، الْهِوَايَةَ، وَالْأُمْنِيَةَ.",
+   "rumi": "'Arrif nafsak. Uzkur fi jawabik: al-ism, al-'umr, as-saff, al-madrasah, al-bait, al-hiwayah, wal-amniyyah.",
+   "idea": [
+    {
+     "maksud": "Nama sendiri — اسْمِي ...",
+     "kata": [
+      "ismi",
+      "nama",
+      "اسْمِي",
+      "عَبْدُ",
+      "الرَّحْمَنِ",
+      "اسمي",
+      "عبد",
+      "الرحمن",
+      "رحمن"
+     ]
+    },
+    {
+     "maksud": "Umur sendiri — عُمْرِي ... سَنَةً",
+     "kata": [
+      "umri",
+      "umur",
+      "عُمْرِي",
+      "إِحْدَى",
+      "عَشْرَةَ",
+      "سَنَةً",
+      "عمري",
+      "إحدى",
+      "عشرة",
+      "سنة"
+     ]
+    },
+    {
+     "maksud": "Kelas / darjah — الصَّفُّ ...",
+     "kata": [
+      "saff",
+      "kelas",
+      "darjah",
+      "أَنَا",
+      "الصَّفِّ",
+      "الْخَامِسِ",
+      "الصَّفُّ",
+      "أنا",
+      "الصف",
+      "صف",
+      "الخامس",
+      "خامس"
+     ]
+    },
+    {
+     "maksud": "Nama sekolah — مَدْرَسَتِي ...",
+     "kata": [
+      "madrasah",
+      "sekolah",
+      "مَدْرَسَتِي",
+      "مَدْرَسَةُ",
+      "الْإِيمَانِ",
+      "مدرستي",
+      "مدرسة",
+      "الإيمان",
+      "إيمان"
+     ]
+    },
+    {
+     "maksud": "Tempat tinggal — بَيْتِي / أَسْكُنُ فِي ...",
+     "kata": [
+      "bait",
+      "rumah",
+      "askun",
+      "tinggal",
+      "أَسْكُنُ",
+      "بَيْتٍ",
+      "قَرِيبٍ",
+      "مِنَ",
+      "الْمَسْجِدِ",
+      "بَيْتِي",
+      "فِي",
+      "أسكن",
+      "بيت",
+      "قريب",
+      "المسجد",
+      "مسجد",
+      "بيتي"
+     ]
+    },
+    {
+     "maksud": "Hobi — هِوَايَتِي ...",
+     "kata": [
+      "hiwayah",
+      "hobi",
+      "hiwayati",
+      "هِوَايَتِي",
+      "قِرَاءَةُ",
+      "الْكُتُبِ",
+      "هوايتي",
+      "قراءة",
+      "الكتب",
+      "كتب"
+     ]
+    },
+    {
+     "maksud": "Cita-cita — أُمْنِيَتِي ...",
+     "kata": [
+      "amniyyah",
+      "umniyati",
+      "cita",
+      "أُمْنِيَتِي",
+      "أَنْ",
+      "أَكُونَ",
+      "مُعَلِّمًا",
+      "أمنيتي",
+      "أن",
+      "أكون",
+      "معلما"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "اسْمِي عَبْدُ الرَّحْمَنِ",
+    "عُمْرِي إِحْدَى عَشْرَةَ سَنَةً",
+    "أَنَا فِي الصَّفِّ الْخَامِسِ",
+    "مَدْرَسَتِي مَدْرَسَةُ الْإِيمَانِ",
+    "أَسْكُنُ فِي بَيْتٍ قَرِيبٍ مِنَ الْمَسْجِدِ",
+    "هِوَايَتِي قِرَاءَةُ الْكُتُبِ",
+    "أُمْنِيَتِي أَنْ أَكُونَ مُعَلِّمًا"
+   ],
+   "jawapanContohRumi": [
+    "ismi Abdurrahman",
+    "'umri ihda 'asyrah sanah",
+    "ana fis-saffil-khamis",
+    "madrasati Madrasatul-Iman",
+    "askun fi baitin qaribin minal-masjid",
+    "hiwayati qira'atul-kutub",
+    "umniyati an akuna mu'alliman"
+   ],
+   "id": "arab-d10"
+  },
+  {
+   "bahagian": "D",
+   "jenis": "huraian",
+   "bahasa": "arab",
+   "markah": 7,
+   "soalan": "تَرْجِمْ هَذِهِ الْجُمَلَ إِلَى اللُّغَةِ الْمَلَايُوِيَّةِ:\n(١) أَشْرَبُ الْحَلِيبَ.\n(٢) آكُلُ الْأَرُزَّ مَعَ السَّمَكِ.\n(٣) أَقْرَأُ الْكِتَابَ فِي الْمَكْتَبَةِ.\n(٤) أَكْتُبُ الْوَاجِبَ فِي الْبَيْتِ.\n(٥) أَلْعَبُ الْكُرَةَ فِي الْمَلْعَبِ.\n(٦) أَنَامُ فِي غُرْفَةِ النَّوْمِ.\n(٧) أُصَلِّي فِي الْمَسْجِدِ مَعَ أَبِي.",
+   "rumi": "Tarjim hadhihil-jumal ilal-lughatil-Malayuwiyyah: (1) Asyrabul-halib. (2) Akulul-aruzza ma'as-samak. (3) Aqra'ul-kitaba fil-maktabah. (4) Aktubul-wajiba fil-bait. (5) Al'abul-kurata fil-mal'ab. (6) Anamu fi ghurfatir-naum. (7) Usalli fil-masjidi ma'a abi.",
+   "idea": [
+    {
+     "maksud": "Saya minum susu",
+     "kata": [
+      "minum",
+      "susu",
+      "halib",
+      "منوم",
+      "سوسو"
+     ]
+    },
+    {
+     "maksud": "Saya makan nasi bersama ikan",
+     "kata": [
+      "makan",
+      "nasi",
+      "ikan",
+      "samak",
+      "ماکن",
+      "ناسي",
+      "ايکن"
+     ]
+    },
+    {
+     "maksud": "Saya membaca buku di perpustakaan",
+     "kata": [
+      "baca",
+      "buku",
+      "perpustakaan",
+      "maktabah",
+      "ممباجا",
+      "بوکو",
+      "ڤرڤوستاکاءن"
+     ]
+    },
+    {
+     "maksud": "Saya menulis kerja rumah di rumah",
+     "kata": [
+      "tulis",
+      "kerja",
+      "rumah",
+      "tugasan",
+      "منوليس",
+      "کرجا",
+      "رومه"
+     ]
+    },
+    {
+     "maksud": "Saya bermain bola di padang",
+     "kata": [
+      "main",
+      "bola",
+      "padang",
+      "malab",
+      "برماءين",
+      "بولا",
+      "ڤادڠ"
+     ]
+    },
+    {
+     "maksud": "Saya tidur di bilik tidur",
+     "kata": [
+      "tidur",
+      "bilik",
+      "ghumrah",
+      "تيدور",
+      "بيليق"
+     ]
+    },
+    {
+     "maksud": "Saya bersolat di masjid bersama ayah saya",
+     "kata": [
+      "solat",
+      "masjid",
+      "ayah",
+      "ab",
+      "برصولة",
+      "مسجد",
+      "ايه"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "سَاي منوم سوسو",
+    "سَاي ماکن ناسي برسام ايکن",
+    "سَاي ممباجا بوکو د ڤرڤوستاکاءن",
+    "سَاي منوليس کرجا رومه د رومه",
+    "سَاي برماءين بولا د ڤادڠ",
+    "سَاي تيدور د بيليق تيدور",
+    "سَاي برصولة د مسجد برسام ايه سَاي"
+   ],
+   "jawapanContohRumi": [
+    "Saya minum susu.",
+    "Saya makan nasi bersama ikan.",
+    "Saya membaca buku di perpustakaan.",
+    "Saya menulis kerja rumah di rumah.",
+    "Saya bermain bola di padang.",
+    "Saya tidur di bilik tidur.",
+    "Saya bersolat di masjid bersama ayah saya."
+   ],
+   "id": "arab-d11"
+  },
+  {
+   "bahagian": "D",
+   "jenis": "huraian",
+   "bahasa": "arab",
+   "markah": 8,
+   "soalan": "اكْتُبْ بِالْعَرَبِيَّةِ: باڤو، سلوار ڤنجڠ، کاسوت، ستوکيڠ، توڤي، تودوڠ، سيليندڠ، ساروڠ تاغن.",
+   "rumi": "Uktub bil-'Arabiyyah: baju, seluar panjang, kasut, stoking, topi, tudung, selendang, sarung tangan.",
+   "idea": [
+    {
+     "maksud": "Baju — قَمِيصٌ",
+     "kata": [
+      "qamis",
+      "baju",
+      "قَمِيصٌ",
+      "قميص"
+     ]
+    },
+    {
+     "maksud": "Seluar panjang — بَنْطَلُونٌ",
+     "kata": [
+      "bantalun",
+      "seluar",
+      "بَنْطَلُونٌ",
+      "بنطلون"
+     ]
+    },
+    {
+     "maksud": "Kasut — حِذَاءٌ",
+     "kata": [
+      "hida",
+      "hidha",
+      "kasut",
+      "حِذَاءٌ",
+      "حذاء"
+     ]
+    },
+    {
+     "maksud": "Stoking — جَوْرَبٌ",
+     "kata": [
+      "jawrab",
+      "stoking",
+      "جَوْرَبٌ",
+      "جورب"
+     ]
+    },
+    {
+     "maksud": "Topi — قُبَّعَةٌ",
+     "kata": [
+      "qubbah",
+      "topi",
+      "قُبَّعَةٌ",
+      "قبعة"
+     ]
+    },
+    {
+     "maksud": "Tudung — حِجَابٌ",
+     "kata": [
+      "hijab",
+      "tudung",
+      "حِجَابٌ",
+      "حجاب"
+     ]
+    },
+    {
+     "maksud": "Selendang — وِشَاحٌ",
+     "kata": [
+      "wishah",
+      "selendang",
+      "وِشَاحٌ",
+      "وشاح"
+     ]
+    },
+    {
+     "maksud": "Sarung tangan — قُفَّازٌ",
+     "kata": [
+      "quffaz",
+      "sarung",
+      "tangan",
+      "قُفَّازٌ",
+      "قفاز"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "قَمِيصٌ، بَنْطَلُونٌ، حِذَاءٌ، جَوْرَبٌ، قُبَّعَةٌ، حِجَابٌ، وِشَاحٌ، قُفَّازٌ"
+   ],
+   "jawapanContohRumi": [
+    "qamis, bantalun, hidha', jawrab, qubbah, hijab, wisyah, quffaz"
+   ],
+   "id": "arab-d12"
+  },
+  {
+   "bahagian": "D",
+   "jenis": "huraian",
+   "bahasa": "arab",
+   "markah": 8,
+   "soalan": "اقْرَأِ الْقِطْعَةَ ثُمَّ أَجِبْ عَنِ الْأَسْئِلَةِ:\nذَهَبَتْ فَاطِمَةُ إِلَى السُّوقِ مَعَ أُمِّهَا فِي يَوْمِ الْأَحَدِ. اِشْتَرَتْ أُمُّهَا أَرُزًّا وَلَحْمًا وَسَمَكًا. اِشْتَرَتْ فَاطِمَةُ تُفَّاحًا وَمَوْزًا. الْمَوْزُ رَخِيصٌ وَالتُّفَّاحُ غَالِي. رَجَعَتْ فَاطِمَةُ إِلَى الْبَيْتِ وَهِيَ مَسْرُورَةٌ.\n(١) مَتَى ذَهَبَتْ فَاطِمَةُ إِلَى السُّوقِ؟\n(٢) مَعَ مَنْ ذَهَبَتْ فَاطِمَةُ؟\n(٣) أَيْنَ ذَهَبَتْ فَاطِمَةُ؟\n(٤) مَاذَا اشْتَرَتْ أُمُّهَا؟\n(٥) مَاذَا اشْتَرَتْ فَاطِمَةُ؟\n(٦) أَيُّ فَاكِهَةٍ رَخِيصَةٌ؟\n(٧) أَيُّ فَاكِهَةٍ غَالِيَةٌ؟\n(٨) كَيْفَ رَجَعَتْ فَاطِمَةُ إِلَى الْبَيْتِ؟",
+   "rumi": "Iqra'il-qit'ah thumma ajib 'anil-as'ilah: Dhahabat Fatimatu ilas-suqi ma'a ummiha fi yaumil-Ahad. Isytarat ummuha aruzzan wa lahman wa samakan. Isytarat Fatimatu tuffahan wa mauzan. Al-mauzu rakhisun wat-tuffahu ghali. Raja'at Fatimatu ilal-baiti wa hiya masrurah. (1) Mata dhahabat Fatimah ilas-suq? (2) Ma'a man dhahabat Fatimah? (3) Aina dhahabat Fatimah? (4) Madha isytarat ummuha? (5) Madha isytarat Fatimah? (6) Ayyu fakihah rakhisah? (7) Ayyu fakihah ghaliyah? (8) Kaifa raja'at Fatimah ilal-bait?",
+   "idea": [
+    {
+     "maksud": "Pada hari Ahad",
+     "kata": [
+      "ahad",
+      "had",
+      "فِي",
+      "يَوْمِ",
+      "الْأَحَدِ",
+      "يوم",
+      "الأحد",
+      "أحد"
+     ]
+    },
+    {
+     "maksud": "Bersama ibunya",
+     "kata": [
+      "umm",
+      "ibu",
+      "emak",
+      "مَعَ",
+      "أُمِّهَا",
+      "أمها"
+     ]
+    },
+    {
+     "maksud": "Ke pasar",
+     "kata": [
+      "suq",
+      "pasar",
+      "إِلَى",
+      "السُّوقِ",
+      "إلى",
+      "السوق",
+      "سوق"
+     ]
+    },
+    {
+     "maksud": "Ibunya membeli nasi, daging dan ikan",
+     "kata": [
+      "aruzz",
+      "nasi",
+      "beras",
+      "أَرُزًّا",
+      "وَلَحْمًا",
+      "وَسَمَكًا",
+      "أرزا",
+      "ولحما",
+      "وسمكا"
+     ]
+    },
+    {
+     "maksud": "Fatimah membeli epal dan pisang",
+     "kata": [
+      "tuffah",
+      "epal",
+      "تُفَّاحًا",
+      "وَمَوْزًا",
+      "تفاحا",
+      "وموزا"
+     ]
+    },
+    {
+     "maksud": "Pisang yang murah",
+     "kata": [
+      "mawz",
+      "pisang",
+      "الْمَوْزُ",
+      "الموز",
+      "موز"
+     ]
+    },
+    {
+     "maksud": "Epal yang mahal",
+     "kata": [
+      "tuffah",
+      "epal",
+      "التُّفَّاحُ",
+      "التفاح",
+      "تفاح"
+     ]
+    },
+    {
+     "maksud": "Dia pulang dengan gembira",
+     "kata": [
+      "masrurah",
+      "gembira",
+      "seronok",
+      "suka",
+      "رَجَعَتْ",
+      "وَهِيَ",
+      "مَسْرُورَةٌ",
+      "رجعت",
+      "وهي",
+      "مسرورة"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "فِي يَوْمِ الْأَحَدِ",
+    "مَعَ أُمِّهَا",
+    "إِلَى السُّوقِ",
+    "أَرُزًّا وَلَحْمًا وَسَمَكًا",
+    "تُفَّاحًا وَمَوْزًا",
+    "الْمَوْزُ",
+    "التُّفَّاحُ",
+    "رَجَعَتْ وَهِيَ مَسْرُورَةٌ"
+   ],
+   "jawapanContohRumi": [
+    "pada hari Ahad",
+    "bersama ibunya",
+    "ke pasar",
+    "nasi, daging dan ikan",
+    "epal dan pisang",
+    "pisang",
+    "epal",
+    "dia pulang dengan gembira"
+   ],
+   "id": "arab-d13"
+  },
+  {
+   "bahagian": "D",
+   "jenis": "huraian",
+   "bahasa": "arab",
+   "markah": 7,
+   "soalan": "اكْتُبْ ضِدَّ هَذِهِ الْكَلِمَاتِ: سَرِيعٌ، غَالِي، غَنِيٌّ، نَهَارٌ، فَوْقَ، أَمَامَ، قَبْلَ.",
+   "rumi": "Uktub didda hadhihil-kalimat: sari', ghali, ghaniy, nahar, fauqa, amama, qabla.",
+   "idea": [
+    {
+     "maksud": "Lambat — بَطِيءٌ",
+     "kata": [
+      "bati",
+      "batik",
+      "lambat",
+      "بَطِيءٌ",
+      "بطيء"
+     ]
+    },
+    {
+     "maksud": "Murah — رَخِيصٌ",
+     "kata": [
+      "rakhis",
+      "murah",
+      "رَخِيصٌ",
+      "رخيص"
+     ]
+    },
+    {
+     "maksud": "Miskin — فَقِيرٌ",
+     "kata": [
+      "faqir",
+      "miskin",
+      "فَقِيرٌ",
+      "فقير"
+     ]
+    },
+    {
+     "maksud": "Malam — لَيْلٌ",
+     "kata": [
+      "lail",
+      "malam",
+      "لَيْلٌ",
+      "ليل"
+     ]
+    },
+    {
+     "maksud": "Bawah — تَحْتَ",
+     "kata": [
+      "tahta",
+      "bawah",
+      "تَحْتَ",
+      "تحت"
+     ]
+    },
+    {
+     "maksud": "Belakang — خَلْفَ",
+     "kata": [
+      "khalfa",
+      "belakang",
+      "خَلْفَ",
+      "خلف"
+     ]
+    },
+    {
+     "maksud": "Selepas — بَعْدَ",
+     "kata": [
+      "bada",
+      "selepas",
+      "selepasnya",
+      "بَعْدَ",
+      "بعد"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "بَطِيءٌ، رَخِيصٌ، فَقِيرٌ، لَيْلٌ، تَحْتَ، خَلْفَ، بَعْدَ"
+   ],
+   "jawapanContohRumi": [
+    "bati', rakhis, faqir, lail, tahta, khalfa, ba'da"
+   ],
+   "id": "arab-d14"
+  },
+  {
+   "bahagian": "D",
+   "jenis": "huraian",
+   "bahasa": "arab",
+   "markah": 7,
+   "soalan": "اكْتُبْ جَمْعَ هَذِهِ الْكَلِمَاتِ: بَابٌ، نَافِذَةٌ، مُعَلِّمَةٌ، طَالِبَةٌ، حَدِيقَةٌ، قَمِيصٌ، زَهْرَةٌ.",
+   "rumi": "Uktub jam'a hadhihil-kalimat: babun, nafizatun, mu'allimatun, talibatun, hadiqatun, qamisun, zahratun.",
+   "idea": [
+    {
+     "maksud": "Jamak bagi بَابٌ — أَبْوَابٌ",
+     "kata": [
+      "abwab",
+      "pintu",
+      "أَبْوَابٌ",
+      "أبواب"
+     ]
+    },
+    {
+     "maksud": "Jamak bagi نَافِذَةٌ — نَوَافِذُ",
+     "kata": [
+      "nawafiz",
+      "tingkap",
+      "نَوَافِذُ",
+      "نوافذ"
+     ]
+    },
+    {
+     "maksud": "Jamak bagi مُعَلِّمَةٌ — مُعَلِّمَاتٌ",
+     "kata": [
+      "muallimat",
+      "guru",
+      "مُعَلِّمَاتٌ",
+      "معلمات"
+     ]
+    },
+    {
+     "maksud": "Jamak bagi طَالِبَةٌ — طَالِبَاتٌ",
+     "kata": [
+      "talibat",
+      "murid",
+      "طَالِبَاتٌ",
+      "طالبات"
+     ]
+    },
+    {
+     "maksud": "Jamak bagi حَدِيقَةٌ — حَدَائِقُ",
+     "kata": [
+      "hadaiq",
+      "taman",
+      "حَدَائِقُ",
+      "حدائق"
+     ]
+    },
+    {
+     "maksud": "Jamak bagi قَمِيصٌ — قُمْصَانٌ",
+     "kata": [
+      "qumsan",
+      "baju",
+      "قُمْصَانٌ",
+      "قمصان"
+     ]
+    },
+    {
+     "maksud": "Jamak bagi زَهْرَةٌ — أَزْهَارٌ",
+     "kata": [
+      "azhar",
+      "bunga",
+      "أَزْهَارٌ",
+      "أزهار"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "أَبْوَابٌ، نَوَافِذُ، مُعَلِّمَاتٌ، طَالِبَاتٌ، حَدَائِقُ، قُمْصَانٌ، أَزْهَارٌ"
+   ],
+   "jawapanContohRumi": [
+    "abwab, nawafiz, mu'allimat, talibat, hadaiq, qumsan, azhar"
+   ],
+   "id": "arab-d15"
+  },
+  {
+   "bahagian": "D",
+   "jenis": "huraian",
+   "bahasa": "arab",
+   "markah": 8,
+   "soalan": "تَرْجِمْ هَذِهِ الْجُمَلَ إِلَى اللُّغَةِ الْمَلَايُوِيَّةِ:\n(١) هَذَا كِتَابٌ جَدِيدٌ.\n(٢) هَذِهِ سَاعَةٌ جَمِيلَةٌ.\n(٣) ذَلِكَ مَسْجِدٌ كَبِيرٌ.\n(٤) تِلْكَ حَدِيقَةٌ وَاسِعَةٌ.\n(٥) هَذَا قَلَمِي.\n(٦) هَذِهِ حَقِيبَتِي.\n(٧) ذَلِكَ بَيْتُ جَدِّي.\n(٨) تِلْكَ مَدْرَسَتِي.",
+   "rumi": "Tarjim hadhihil-jumal ilal-lughatil-Malayuwiyyah: (1) Hadha kitabun jadid. (2) Hadhihi sa'atun jamilah. (3) Dhalika masjidun kabir. (4) Tilka hadiqatun wasi'ah. (5) Hadha qalami. (6) Hadhihi haqibati. (7) Dhalika baitu jaddi. (8) Tilka madrasati.",
+   "idea": [
+    {
+     "maksud": "Ini buku baharu",
+     "kata": [
+      "buku",
+      "kitab",
+      "baharu",
+      "baru",
+      "بوکو",
+      "بارو"
+     ]
+    },
+    {
+     "maksud": "Ini jam tangan yang cantik",
+     "kata": [
+      "jam",
+      "cantik",
+      "saah",
+      "تاغن",
+      "چنتيق",
+      "جم"
+     ]
+    },
+    {
+     "maksud": "Itu masjid yang besar",
+     "kata": [
+      "masjid",
+      "besar",
+      "مسجد",
+      "بسر"
+     ]
+    },
+    {
+     "maksud": "Itu taman yang luas",
+     "kata": [
+      "taman",
+      "luas",
+      "hadiqah",
+      "تامن",
+      "لواس"
+     ]
+    },
+    {
+     "maksud": "Ini pen saya",
+     "kata": [
+      "pen",
+      "qalam",
+      "ڤن"
+     ]
+    },
+    {
+     "maksud": "Ini beg saya",
+     "kata": [
+      "beg",
+      "haqibah",
+      "بيݢ"
+     ]
+    },
+    {
+     "maksud": "Itu rumah datuk saya",
+     "kata": [
+      "rumah",
+      "bait",
+      "datuk",
+      "رومه",
+      "داتوق"
+     ]
+    },
+    {
+     "maksud": "Itu sekolah saya",
+     "kata": [
+      "sekolah",
+      "madrasah",
+      "سکوله"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "اين بوکو بارو",
+    "اين جم تاغن يڠ چنتيق",
+    "ايتو مسجد يڠ بسر",
+    "ايتو تامن يڠ لواس",
+    "اين ڤن سَاي",
+    "اين بيݢ سَاي",
+    "ايتو رومه داتوق سَاي",
+    "ايتو سکوله سَاي"
+   ],
+   "jawapanContohRumi": [
+    "Ini buku baharu.",
+    "Ini jam tangan yang cantik.",
+    "Itu masjid yang besar.",
+    "Itu taman yang luas.",
+    "Ini pen saya.",
+    "Ini beg saya.",
+    "Itu rumah datuk saya.",
+    "Itu sekolah saya."
+   ],
+   "id": "arab-d16"
+  },
+  {
+   "bahagian": "D",
+   "jenis": "huraian",
+   "bahasa": "arab",
+   "markah": 8,
+   "soalan": "أَكْمِلِ الْجُمَلَ الْآتِيَةَ بِالْكَلِمَةِ الْمُنَاسِبَةِ:\n(١) أَذْهَبُ إِلَى ______ لِلتَّعَلُّمِ.\n(٢) أُصَلِّي الصَّلَاةَ فِي ______.\n(٣) أَشْتَرِي الْخُضْرَةَ فِي ______.\n(٤) تَنَامُ أُخْتِي فِي غُرْفَةِ ______.\n(٥) أَغْسِلُ يَدِي فِي ______.\n(٦) الطَّبِيبُ يَعْمَلُ فِي ______.\n(٧) أَقْرَأُ الْكِتَابَ فِي ______.\n(٨) تَطْبُخُ أُمِّي فِي ______.",
+   "rumi": "Akmilil-jumalal-atiyah bil-kalimatil-munasibah: (1) Adhhabu ila ______ lit-ta'allum. (2) Usallil-salata fi ______. (3) Asytaril-khudrata fi ______. (4) Tanamu ukhti fi ghurfatil-______. (5) Aghsilu yadi fi ______. (6) At-tabibu ya'malu fi ______. (7) Aqra'ul-kitaba fi ______. (8) Tatbukhul ummi fi ______.",
+   "idea": [
+    {
+     "maksud": "Sekolah — الْمَدْرَسَةِ",
+     "kata": [
+      "madrasah",
+      "sekolah",
+      "الْمَدْرَسَةِ",
+      "المدرسة",
+      "مدرسة"
+     ]
+    },
+    {
+     "maksud": "Masjid — الْمَسْجِدِ",
+     "kata": [
+      "masjid",
+      "الْمَسْجِدِ",
+      "المسجد",
+      "مسجد"
+     ]
+    },
+    {
+     "maksud": "Pasar — السُّوقِ",
+     "kata": [
+      "suq",
+      "pasar",
+      "السُّوقِ",
+      "السوق",
+      "سوق"
+     ]
+    },
+    {
+     "maksud": "Bilik tidur — النَّوْمِ",
+     "kata": [
+      "naum",
+      "tidur",
+      "النَّوْمِ",
+      "النوم",
+      "نوم"
+     ]
+    },
+    {
+     "maksud": "Bilik air — الْحَمَّامِ",
+     "kata": [
+      "hammam",
+      "air",
+      "الْحَمَّامِ",
+      "الحمام",
+      "حمام"
+     ]
+    },
+    {
+     "maksud": "Hospital — الْمُسْتَشْفَى",
+     "kata": [
+      "mustashfa",
+      "hospital",
+      "الْمُسْتَشْفَى",
+      "المستشفى",
+      "مستشفى"
+     ]
+    },
+    {
+     "maksud": "Perpustakaan — الْمَكْتَبَةِ",
+     "kata": [
+      "maktabah",
+      "perpustakaan",
+      "الْمَكْتَبَةِ",
+      "المكتبة",
+      "مكتبة"
+     ]
+    },
+    {
+     "maksud": "Dapur — الْمَطْبَخِ",
+     "kata": [
+      "matbakh",
+      "dapur",
+      "الْمَطْبَخِ",
+      "المطبخ",
+      "مطبخ"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "الْمَدْرَسَةِ",
+    "الْمَسْجِدِ",
+    "السُّوقِ",
+    "النَّوْمِ",
+    "الْحَمَّامِ",
+    "الْمُسْتَشْفَى",
+    "الْمَكْتَبَةِ",
+    "الْمَطْبَخِ"
+   ],
+   "jawapanContohRumi": [
+    "al-madrasah",
+    "al-masjid",
+    "as-suq",
+    "an-naum",
+    "al-hammam",
+    "al-mustashfa",
+    "al-maktabah",
+    "al-matbakh"
+   ],
+   "id": "arab-d17"
+  },
+  {
+   "bahagian": "D",
+   "jenis": "huraian",
+   "bahasa": "arab",
+   "markah": 7,
+   "soalan": "اكْتُبْ عَنْ يَوْمِكَ فِي الْمَدْرَسَةِ. اذْكُرْ: الصَّبَاحَ، الدَّرْسَ، الْكِتَابَ، الْقَلَمَ، الْأُسْتَاذَ، الْمَلْعَبَ، وَالرُّجُوعَ إِلَى الْبَيْتِ.",
+   "rumi": "Uktub 'an yaumika fil-madrasah. Uzkur: as-sabah, ad-dars, al-kitab, al-qalam, al-ustaz, al-mal'ab, war-ruju' ilal-bait.",
+   "idea": [
+    {
+     "maksud": "Pergi ke sekolah pada waktu pagi",
+     "kata": [
+      "pagi",
+      "sabah",
+      "sekolah",
+      "madrasah",
+      "اذْهَبُ",
+      "الْمَدْرَسَةِ",
+      "الصَّبَاحِ",
+      "اذهب",
+      "المدرسة",
+      "مدرسة",
+      "الصباح",
+      "صباح"
+     ]
+    },
+    {
+     "maksud": "Belajar pelajaran pada waktu pagi",
+     "kata": [
+      "belajar",
+      "darasa",
+      "pelajaran",
+      "أَتَعَلَّمُ",
+      "الدُّرُوسَ",
+      "أتعلم",
+      "الدروس",
+      "دروس"
+     ]
+    },
+    {
+     "maksud": "Membaca buku",
+     "kata": [
+      "baca",
+      "buku",
+      "kitab",
+      "أَقْرَأُ",
+      "الْكِتَابَ",
+      "أقرأ",
+      "الكتاب",
+      "كتاب"
+     ]
+    },
+    {
+     "maksud": "Menulis dengan pen",
+     "kata": [
+      "tulis",
+      "pen",
+      "qalam",
+      "أَكْتُبُ",
+      "بِالْقَلَمِ",
+      "أكتب",
+      "بالقلم"
+     ]
+    },
+    {
+     "maksud": "Mendengar nasihat guru",
+     "kata": [
+      "guru",
+      "muallim",
+      "ustaz",
+      "dengar",
+      "أَسْمَعُ",
+      "نَصِيحَةَ",
+      "الْأُسْتَاذِ",
+      "أسمع",
+      "نصيحة",
+      "الأستاذ",
+      "أستاذ"
+     ]
+    },
+    {
+     "maksud": "Bermain di padang sekolah",
+     "kata": [
+      "main",
+      "padang",
+      "malab",
+      "أَلْعَبُ",
+      "الْمَلْعَبِ",
+      "ألعب",
+      "الملعب",
+      "ملعب"
+     ]
+    },
+    {
+     "maksud": "Pulang ke rumah",
+     "kata": [
+      "pulang",
+      "rumah",
+      "bait",
+      "balik",
+      "أَرْجِعُ",
+      "الْبَيْتِ",
+      "أرجع",
+      "البيت",
+      "بيت"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "اذْهَبُ إِلَى الْمَدْرَسَةِ فِي الصَّبَاحِ",
+    "أَتَعَلَّمُ الدُّرُوسَ",
+    "أَقْرَأُ الْكِتَابَ",
+    "أَكْتُبُ بِالْقَلَمِ",
+    "أَسْمَعُ نَصِيحَةَ الْأُسْتَاذِ",
+    "أَلْعَبُ فِي الْمَلْعَبِ",
+    "أَرْجِعُ إِلَى الْبَيْتِ"
+   ],
+   "jawapanContohRumi": [
+    "adhhabu ilal-madrasati fis-sabah",
+    "ata'allamud-durus",
+    "aqra'ul-kitab",
+    "aktubu bil-qalam",
+    "asma'u nasihatal-ustaz",
+    "al'abu fil-mal'ab",
+    "arji'u ilal-bait"
+   ],
+   "id": "arab-d18"
+  },
+  {
+   "bahagian": "D",
+   "jenis": "huraian",
+   "bahasa": "arab",
+   "markah": 7,
+   "soalan": "اكْتُبْ مَعْنَى هَذِهِ الْأَفْعَالِ بِالْمَلَايُوِيَّةِ: يَذْهَبُ، يَرْجِعُ، يَلْعَبُ، يَأْكُلُ، يَشْرَبُ، يَسْمَعُ، يَنْظُرُ.",
+   "rumi": "Uktub ma'na hadhihil-af'al bil-Malayuwiyyah: yadhhabu, yarji'u, yal'abu, ya'kulu, yasyrabu, yasma'u, yanzuru.",
+   "idea": [
+    {
+     "maksud": "Pergi",
+     "kata": [
+      "pergi",
+      "yadhhab",
+      "يَذْهَبُ",
+      "ڤرݢي",
+      "يذهب"
+     ]
+    },
+    {
+     "maksud": "Pulang",
+     "kata": [
+      "pulang",
+      "balik",
+      "yarji",
+      "يَرْجِعُ",
+      "ڤولڠ",
+      "يرجع"
+     ]
+    },
+    {
+     "maksud": "Bermain",
+     "kata": [
+      "main",
+      "yalab",
+      "يَلْعَبُ",
+      "برماءين",
+      "يلعب"
+     ]
+    },
+    {
+     "maksud": "Makan",
+     "kata": [
+      "makan",
+      "yakul",
+      "يَأْكُلُ",
+      "ماکن",
+      "يأكل"
+     ]
+    },
+    {
+     "maksud": "Minum",
+     "kata": [
+      "minum",
+      "yasyrab",
+      "يَشْرَبُ",
+      "منوم",
+      "يشرب"
+     ]
+    },
+    {
+     "maksud": "Mendengar",
+     "kata": [
+      "dengar",
+      "yasma",
+      "يَسْمَعُ",
+      "مندڠر",
+      "يسمع"
+     ]
+    },
+    {
+     "maksud": "Melihat",
+     "kata": [
+      "lihat",
+      "memandang",
+      "yanzur",
+      "يَنْظُرُ",
+      "مليهت",
+      "ينظر"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "يَذْهَبُ — ڤرݢي",
+    "يَرْجِعُ — ڤولڠ",
+    "يَلْعَبُ — برماءين",
+    "يَأْكُلُ — ماکن",
+    "يَشْرَبُ — منوم",
+    "يَسْمَعُ — مندڠر",
+    "يَنْظُرُ — مليهت"
+   ],
+   "jawapanContohRumi": [
+    "yadhhabu — pergi",
+    "yarji'u — pulang",
+    "yal'abu — bermain",
+    "ya'kulu — makan",
+    "yasyrabu — minum",
+    "yasma'u — mendengar",
+    "yanzuru — melihat"
+   ],
+   "id": "arab-d19"
+  },
+  {
+   "bahagian": "D",
+   "jenis": "huraian",
+   "bahasa": "arab",
+   "markah": 8,
+   "soalan": "اكْتُبْ بِالْعَرَبِيَّةِ: کيجو، مينتيݢا، ݢولا، ݢارم، تيلور، کورما، مادو، تيه.",
+   "rumi": "Uktub bil-'Arabiyyah: keju, mentega, gula, garam, telur, kurma, madu, teh.",
+   "idea": [
+    {
+     "maksud": "Keju — جُبْنٌ",
+     "kata": [
+      "jubn",
+      "keju",
+      "جُبْنٌ",
+      "جبن"
+     ]
+    },
+    {
+     "maksud": "Mentega — زُبْدَةٌ",
+     "kata": [
+      "zubdah",
+      "mentega",
+      "زُبْدَةٌ",
+      "زبدة"
+     ]
+    },
+    {
+     "maksud": "Gula — سُكَّرٌ",
+     "kata": [
+      "sukkar",
+      "gula",
+      "سُكَّرٌ",
+      "سكر"
+     ]
+    },
+    {
+     "maksud": "Garam — مِلْحٌ",
+     "kata": [
+      "milh",
+      "garam",
+      "مِلْحٌ",
+      "ملح"
+     ]
+    },
+    {
+     "maksud": "Telur — بَيْضٌ",
+     "kata": [
+      "bayd",
+      "telur",
+      "بَيْضٌ",
+      "بيض"
+     ]
+    },
+    {
+     "maksud": "Kurma — تَمْرٌ",
+     "kata": [
+      "tamr",
+      "kurma",
+      "تَمْرٌ",
+      "تمر"
+     ]
+    },
+    {
+     "maksud": "Madu — عَسَلٌ",
+     "kata": [
+      "asal",
+      "madu",
+      "عَسَلٌ",
+      "عسل"
+     ]
+    },
+    {
+     "maksud": "Teh — شَايٌ",
+     "kata": [
+      "syay",
+      "teh",
+      "shay",
+      "شَايٌ",
+      "شاي"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "جُبْنٌ، زُبْدَةٌ، سُكَّرٌ، مِلْحٌ، بَيْضٌ، تَمْرٌ، عَسَلٌ، شَايٌ"
+   ],
+   "jawapanContohRumi": [
+    "jubn, zubdah, sukkar, milh, bayd, tamr, 'asal, syay"
+   ],
+   "id": "arab-d20"
+  }
+ ]
+}

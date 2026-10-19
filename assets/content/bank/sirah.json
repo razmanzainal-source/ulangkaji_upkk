@@ -1,0 +1,6589 @@
+{
+ "id": "sirah",
+ "versi": 1,
+ "bilangan": 105,
+ "soalan": [
+  {
+   "bahagian": "A",
+   "jenis": "bulat",
+   "soalan": "بولتکن جواڤن يڠ بتول.",
+   "rumi": "Bulatkan jawapan yang betul.",
+   "markah": 4,
+   "item": [
+    {
+     "teks": "نبي محمد دلا هيرکن ڤد هاري",
+     "rumi": "Nabi Muhammad dilahirkan pada hari",
+     "pilihan": [
+      {
+       "teks": "اثنين",
+       "rumi": "Isnin"
+      },
+      {
+       "teks": "جمعة",
+       "rumi": "Jumaat"
+      }
+     ],
+     "jawapan": 0
+    },
+    {
+     "teks": "نبي محمد دلا هيرکن دالم بولن",
+     "rumi": "Nabi Muhammad dilahirkan dalam bulan",
+     "pilihan": [
+      {
+       "teks": "رمضان",
+       "rumi": "Ramadan"
+      },
+      {
+       "teks": "ربيع الأول",
+       "rumi": "Rabiulawal"
+      }
+     ],
+     "jawapan": 1
+    },
+    {
+     "teks": "تمڤت کلاهيرن نبي محمد اياله",
+     "rumi": "Tempat kelahiran Nabi Muhammad ialah",
+     "pilihan": [
+      {
+       "teks": "مدينة",
+       "rumi": "Madinah"
+      },
+      {
+       "teks": "مکه",
+       "rumi": "Mekah"
+      }
+     ],
+     "jawapan": 1
+    },
+    {
+     "teks": "نبي محمد برعومور ______ کتيک ايبو بکيندا وفاة.",
+     "rumi": "Nabi Muhammad berumur ______ ketika ibu baginda wafat.",
+     "pilihan": [
+      {
+       "teks": "انم تاهون",
+       "rumi": "enam tahun"
+      },
+      {
+       "teks": "تيݢ تاهون",
+       "rumi": "tiga tahun"
+      }
+     ],
+     "jawapan": 0
+    }
+   ],
+   "id": "sirah-a1"
+  },
+  {
+   "bahagian": "A",
+   "jenis": "bulat",
+   "soalan": "بولتکن جواڤن يڠ بتول.",
+   "rumi": "Bulatkan jawapan yang betul.",
+   "markah": 4,
+   "item": [
+    {
+     "teks": "نام باف نبي محمد اياله",
+     "rumi": "Nama bapa Nabi Muhammad ialah",
+     "pilihan": [
+      {
+       "teks": "عبد الله",
+       "rumi": "Abdullah"
+      },
+      {
+       "teks": "عبد المطلب",
+       "rumi": "Abdul Muttalib"
+      }
+     ],
+     "jawapan": 0
+    },
+    {
+     "teks": "نام ايبو نبي محمد اياله",
+     "rumi": "Nama ibu Nabi Muhammad ialah",
+     "pilihan": [
+      {
+       "teks": "خديجة",
+       "rumi": "Khadijah"
+      },
+      {
+       "teks": "آمنة",
+       "rumi": "Aminah"
+      }
+     ],
+     "jawapan": 1
+    },
+    {
+     "teks": "نام داتوق نبي محمد اياله",
+     "rumi": "Nama datuk Nabi Muhammad ialah",
+     "pilihan": [
+      {
+       "teks": "ابو طالب",
+       "rumi": "Abu Talib"
+      },
+      {
+       "teks": "عبد المطلب",
+       "rumi": "Abdul Muttalib"
+      }
+     ],
+     "jawapan": 1
+    },
+    {
+     "teks": "نبي محمد دجاݢ اوليه باف ساوداراڽ يڠ برنام",
+     "rumi": "Nabi Muhammad dijaga oleh bapa saudaranya yang bernama",
+     "pilihan": [
+      {
+       "teks": "ابو طالب",
+       "rumi": "Abu Talib"
+      },
+      {
+       "teks": "عبد الله",
+       "rumi": "Abdullah"
+      }
+     ],
+     "jawapan": 0
+    }
+   ],
+   "id": "sirah-a2"
+  },
+  {
+   "bahagian": "A",
+   "jenis": "bulat",
+   "soalan": "بولتکن جواڤن يڠ بتول.",
+   "rumi": "Bulatkan jawapan yang betul.",
+   "markah": 3,
+   "item": [
+    {
+     "teks": "ايبو سوسو نبي محمد اياله",
+     "rumi": "Ibu susu Nabi Muhammad ialah",
+     "pilihan": [
+      {
+       "teks": "حليمة السعدية",
+       "rumi": "Halimah as-Saadiah"
+      },
+      {
+       "teks": "آمنة",
+       "rumi": "Aminah"
+      }
+     ],
+     "jawapan": 0
+    },
+    {
+     "teks": "سلفس ايبو بکيندا وفاة، نبي محمد دجاݢ اوليه",
+     "rumi": "Selepas ibu baginda wafat, Nabi Muhammad dijaga oleh",
+     "pilihan": [
+      {
+       "teks": "ايبو ساودارا بکيندا",
+       "rumi": "ibu saudara baginda"
+      },
+      {
+       "teks": "داتوق بکيندا",
+       "rumi": "datuk baginda"
+      }
+     ],
+     "jawapan": 1
+    },
+    {
+     "teks": "سلفس داتوق بکيندا وفاة، نبي محمد دجاݢ اوليه",
+     "rumi": "Selepas datuk baginda wafat, Nabi Muhammad dijaga oleh",
+     "pilihan": [
+      {
+       "teks": "باف ساوداراڽ ابو طالب",
+       "rumi": "bapa saudaranya Abu Talib"
+      },
+      {
+       "teks": "ايبو سوسوڽ حليمة",
+       "rumi": "ibu susunya Halimah"
+      }
+     ],
+     "jawapan": 0
+    }
+   ],
+   "id": "sirah-a3"
+  },
+  {
+   "bahagian": "A",
+   "jenis": "bulat",
+   "soalan": "بولتکن جواڤن يڠ بتول.",
+   "rumi": "Bulatkan jawapan yang betul.",
+   "markah": 4,
+   "item": [
+    {
+     "teks": "ݢلرن يڠ دبريکن کڤد نبي محمد کران کجوجوراڽ اياله",
+     "rumi": "Gelaran yang diberikan kepada Nabi Muhammad kerana kejujurannya ialah",
+     "pilihan": [
+      {
+       "teks": "الأمين",
+       "rumi": "Al-Amin"
+      },
+      {
+       "teks": "الصديق",
+       "rumi": "As-Siddiq"
+      }
+     ],
+     "jawapan": 0
+    },
+    {
+     "teks": "مقصود ݢلرن الأمين اياله",
+     "rumi": "Maksud gelaran Al-Amin ialah",
+     "pilihan": [
+      {
+       "teks": "يڠ ڤنداي",
+       "rumi": "yang pandai"
+      },
+      {
+       "teks": "يڠ ڤرچاي",
+       "rumi": "yang dipercayai"
+      }
+     ],
+     "jawapan": 1
+    },
+    {
+     "teks": "نبي محمد بکرجا سباݢاي ______ کتيک کوچيل.",
+     "rumi": "Nabi Muhammad bekerja sebagai ______ ketika kecil.",
+     "pilihan": [
+      {
+       "teks": "ڤڠݢمبال کبيڠ",
+       "rumi": "penggembala kambing"
+      },
+      {
+       "teks": "نلاءن ايکن",
+       "rumi": "nelayan ikan"
+      }
+     ],
+     "jawapan": 0
+    },
+    {
+     "teks": "مودال ڤرنياݢاءن نبي محمد براصل داري",
+     "rumi": "Modal perniagaan Nabi Muhammad berasal daripada",
+     "pilihan": [
+      {
+       "teks": "ابو بکر",
+       "rumi": "Abu Bakar"
+      },
+      {
+       "teks": "خديجة",
+       "rumi": "Khadijah"
+      }
+     ],
+     "jawapan": 1
+    }
+   ],
+   "id": "sirah-a4"
+  },
+  {
+   "bahagian": "A",
+   "jenis": "bulat",
+   "soalan": "بولتکن جواڤن يڠ بتول.",
+   "rumi": "Bulatkan jawapan yang betul.",
+   "markah": 3,
+   "item": [
+    {
+     "teks": "نبي محمد برکاهوين دڠن سيتي خديجة کتيک برعومور",
+     "rumi": "Nabi Muhammad berkahwin dengan Siti Khadijah ketika berumur",
+     "pilihan": [
+      {
+       "teks": "دوا ڤولوه ليما تاهون",
+       "rumi": "dua puluh lima tahun"
+      },
+      {
+       "teks": "امڤت ڤولوه تاهون",
+       "rumi": "empat puluh tahun"
+      }
+     ],
+     "jawapan": 0
+    },
+    {
+     "teks": "عومور سيتي خديجة کتيک برکاهوين دڠن نبي محمد اياله",
+     "rumi": "Umur Siti Khadijah ketika berkahwin dengan Nabi Muhammad ialah",
+     "pilihan": [
+      {
+       "teks": "انم ڤولوه تيݢ تاهون",
+       "rumi": "enam puluh tiga tahun"
+      },
+      {
+       "teks": "امڤت ڤولوه تاهون",
+       "rumi": "empat puluh tahun"
+      }
+     ],
+     "jawapan": 1
+    },
+    {
+     "teks": "نبي محمد ڤرتام کالي منريم وهيو ددالم",
+     "rumi": "Nabi Muhammad pertama kali menerima wahyu di dalam",
+     "pilihan": [
+      {
+       "teks": "ݢوا حراء",
+       "rumi": "Gua Hira"
+      },
+      {
+       "teks": "ݢوا ثور",
+       "rumi": "Gua Thur"
+      }
+     ],
+     "jawapan": 0
+    }
+   ],
+   "id": "sirah-a5"
+  },
+  {
+   "bahagian": "A",
+   "jenis": "bulat",
+   "soalan": "بولتکن جواڤن يڠ بتول.",
+   "rumi": "Bulatkan jawapan yang betul.",
+   "markah": 4,
+   "item": [
+    {
+     "teks": "نبي محمد منريم وهيو يڠ ڤرتام کتيک برعومور",
+     "rumi": "Nabi Muhammad menerima wahyu yang pertama ketika berumur",
+     "pilihan": [
+      {
+       "teks": "امڤت ڤولوه تاهون",
+       "rumi": "empat puluh tahun"
+      },
+      {
+       "teks": "انم ڤولوه تيݢ تاهون",
+       "rumi": "enam puluh tiga tahun"
+      }
+     ],
+     "jawapan": 0
+    },
+    {
+     "teks": "ملايکة يڠ مڠمباکن وهيو کڤد نبي محمد اياله",
+     "rumi": "Malaikat yang menyampaikan wahyu kepada Nabi Muhammad ialah",
+     "pilihan": [
+      {
+       "teks": "ميكائيل",
+       "rumi": "Mikail"
+      },
+      {
+       "teks": "جبريل",
+       "rumi": "Jibril"
+      }
+     ],
+     "jawapan": 1
+    },
+    {
+     "teks": "سورة يڠ ڤرتام دتورونکن کڤد نبي محمد اياله",
+     "rumi": "Surah yang pertama diturunkan kepada Nabi Muhammad ialah",
+     "pilihan": [
+      {
+       "teks": "العلق",
+       "rumi": "Al-Alaq"
+      },
+      {
+       "teks": "الفاتحة",
+       "rumi": "Al-Fatihah"
+      }
+     ],
+     "jawapan": 0
+    },
+    {
+     "teks": "اية ڤرتام دالم سورة العلق اياله",
+     "rumi": "Ayat pertama dalam surah Al-Alaq ialah",
+     "pilihan": [
+      {
+       "teks": "الحمد لله رب العالمين",
+       "rumi": "Alhamdulillahi rabbil alamin"
+      },
+      {
+       "teks": "إقرأ باسم ربك",
+       "rumi": "Iqra' bismi rabbik"
+      }
+     ],
+     "jawapan": 1
+    }
+   ],
+   "id": "sirah-a6"
+  },
+  {
+   "bahagian": "A",
+   "jenis": "bulat",
+   "soalan": "بولتکن جواڤن يڠ بتول.",
+   "rumi": "Bulatkan jawapan yang betul.",
+   "markah": 3,
+   "item": [
+    {
+     "teks": "نبي محمد بردعوة سچارا سوليت سلاما ______ تاهون.",
+     "rumi": "Nabi Muhammad berdakwah secara sulit selama ______ tahun.",
+     "pilihan": [
+      {
+       "teks": "تيݢ",
+       "rumi": "tiga"
+      },
+      {
+       "teks": "سڤولوه",
+       "rumi": "sepuluh"
+      }
+     ],
+     "jawapan": 0
+    },
+    {
+     "teks": "اورڠ ڤرتام يڠ منريم اسلام داري کالڠن ڤرمڤوان اياله",
+     "rumi": "Orang pertama yang menerima Islam daripada kalangan perempuan ialah",
+     "pilihan": [
+      {
+       "teks": "عائشة",
+       "rumi": "Aisyah"
+      },
+      {
+       "teks": "خديجة",
+       "rumi": "Khadijah"
+      }
+     ],
+     "jawapan": 1
+    },
+    {
+     "teks": "نبي محمد مڠسوروهکن بهاݢين ڤڠيکوتڽ برهجرة ک",
+     "rumi": "Nabi Muhammad menyuruh sebahagian pengikutnya berhijrah ke",
+     "pilihan": [
+      {
+       "teks": "حبشة",
+       "rumi": "Habsyah"
+      },
+      {
+       "teks": "مدينة",
+       "rumi": "Madinah"
+      }
+     ],
+     "jawapan": 0
+    }
+   ],
+   "id": "sirah-a7"
+  },
+  {
+   "bahagian": "A",
+   "jenis": "bulat",
+   "soalan": "بولتکن جواڤن يڠ بتول.",
+   "rumi": "Bulatkan jawapan yang betul.",
+   "markah": 3,
+   "item": [
+    {
+     "teks": "ڤريستيوا إسراء دان معراج برلاکو دالم تاهون ک______ کنبيان.",
+     "rumi": "Peristiwa Isra dan Mikraj berlaku dalam tahun ke-______ kenabian.",
+     "pilihan": [
+      {
+       "teks": "سڤولوه",
+       "rumi": "sepuluh"
+      },
+      {
+       "teks": "ليما",
+       "rumi": "lima"
+      }
+     ],
+     "jawapan": 0
+    },
+    {
+     "teks": "دالم ڤريستيوا معراج، نبي محمد منريم ڤرينته",
+     "rumi": "Dalam peristiwa Mikraj, Nabi Muhammad menerima perintah",
+     "pilihan": [
+      {
+       "teks": "زکاة",
+       "rumi": "zakat"
+      },
+      {
+       "teks": "صلاة ليما وقتو",
+       "rumi": "solat lima waktu"
+      }
+     ],
+     "jawapan": 1
+    },
+    {
+     "teks": "بيعت عقبة دلاکوکن اوليه نبي محمد دڠن ڤندودوق",
+     "rumi": "Bai'ah Aqabah dilakukan oleh Nabi Muhammad dengan penduduk",
+     "pilihan": [
+      {
+       "teks": "يثرب",
+       "rumi": "Yathrib"
+      },
+      {
+       "teks": "حبشة",
+       "rumi": "Habsyah"
+      }
+     ],
+     "jawapan": 0
+    }
+   ],
+   "id": "sirah-a8"
+  },
+  {
+   "bahagian": "A",
+   "jenis": "suai",
+   "soalan": "سوايکن (أ) دڠن (ب).",
+   "rumi": "Suaikan (A) dengan (B).",
+   "markah": 4,
+   "pasangan": [
+    {
+     "kiri": "عبد الله",
+     "kanan": "باف نبي محمد",
+     "kiriRumi": "Abdullah",
+     "kananRumi": "Bapa Nabi Muhammad"
+    },
+    {
+     "kiri": "آمنة",
+     "kanan": "ايبو نبي محمد",
+     "kiriRumi": "Aminah",
+     "kananRumi": "Ibu Nabi Muhammad"
+    },
+    {
+     "kiri": "حليمة السعدية",
+     "kanan": "ايبو سوسو نبي محمد",
+     "kiriRumi": "Halimah as-Saadiah",
+     "kananRumi": "Ibu susu Nabi Muhammad"
+    },
+    {
+     "kiri": "عبد المطلب",
+     "kanan": "داتوق نبي محمد",
+     "kiriRumi": "Abdul Muttalib",
+     "kananRumi": "Datuk Nabi Muhammad"
+    }
+   ],
+   "id": "sirah-a9"
+  },
+  {
+   "bahagian": "A",
+   "jenis": "suai",
+   "soalan": "سوايکن (أ) دڠن (ب).",
+   "rumi": "Suaikan (A) dengan (B).",
+   "markah": 4,
+   "pasangan": [
+    {
+     "kiri": "ݢوا حراء",
+     "kanan": "تمڤت نبي محمد منريم وهيو ڤرتام",
+     "kiriRumi": "Gua Hira",
+     "kananRumi": "Tempat Nabi Muhammad menerima wahyu pertama"
+    },
+    {
+     "kiri": "ݢوا ثور",
+     "kanan": "تمڤت ڤرسيمڤنن کتيک هجرة",
+     "kiriRumi": "Gua Thur",
+     "kananRumi": "Tempat persembunyian ketika hijrah"
+    },
+    {
+     "kiri": "مسجيد قباء",
+     "kanan": "مسجيد ڤرتام يڠ دبينا",
+     "kiriRumi": "Masjid Quba",
+     "kananRumi": "Masjid pertama yang dibina"
+    },
+    {
+     "kiri": "مسجيد نبوي",
+     "kanan": "مسجيد يڠ دبينا د مدينة",
+     "kiriRumi": "Masjid Nabawi",
+     "kananRumi": "Masjid yang dibina di Madinah"
+    }
+   ],
+   "id": "sirah-a10"
+  },
+  {
+   "bahagian": "A",
+   "jenis": "suai",
+   "soalan": "سوايکن (أ) دڠن (ب).",
+   "rumi": "Suaikan (A) dengan (B).",
+   "markah": 3,
+   "pasangan": [
+    {
+     "kiri": "ڤرڠ بدر",
+     "kanan": "ڤرڠ ڤرتام اورڠ اسلام دڠن قريش",
+     "kiriRumi": "Perang Badar",
+     "kananRumi": "Perang pertama orang Islam dengan Quraisy"
+    },
+    {
+     "kiri": "ڤرڠ أحد",
+     "kanan": "ڤرڠ يڠ مڽببکن حمزة شاهيم",
+     "kiriRumi": "Perang Uhud",
+     "kananRumi": "Perang yang menyebabkan Hamzah syahid"
+    },
+    {
+     "kiri": "ڤرڠ خندق",
+     "kanan": "ڤرڠ يڠ مڠݢالي ڤاريت د سکيتر مدينة",
+     "kiriRumi": "Perang Khandaq",
+     "kananRumi": "Perang yang menggali parit di sekitar Madinah"
+    }
+   ],
+   "id": "sirah-a11"
+  },
+  {
+   "bahagian": "A",
+   "jenis": "suai",
+   "soalan": "سوايکن (أ) دڠن (ب).",
+   "rumi": "Suaikan (A) dengan (B).",
+   "markah": 4,
+   "pasangan": [
+    {
+     "kiri": "صدق",
+     "kanan": "بنر دالم ڤرکاتاءن دان ڤربواتن",
+     "kiriRumi": "Siddiq",
+     "kananRumi": "Benar dalam perkataan dan perbuatan"
+    },
+    {
+     "kiri": "أمانة",
+     "kanan": "بوليه ڤرچاي",
+     "kiriRumi": "Amanah",
+     "kananRumi": "Boleh dipercayai"
+    },
+    {
+     "kiri": "تبليغ",
+     "kanan": "مڠمباکن ڤرينته الله",
+     "kiriRumi": "Tabligh",
+     "kananRumi": "Menyampaikan perintah Allah"
+    },
+    {
+     "kiri": "فطانة",
+     "kanan": "چرديک دان بيجقسان",
+     "kiriRumi": "Fatanah",
+     "kananRumi": "Cerdik dan bijaksana"
+    }
+   ],
+   "id": "sirah-a12"
+  },
+  {
+   "bahagian": "A",
+   "jenis": "suai",
+   "soalan": "سوايکن (أ) دڠن (ب).",
+   "rumi": "Suaikan (A) dengan (B).",
+   "markah": 4,
+   "pasangan": [
+    {
+     "kiri": "ابو بکر الصديق",
+     "kanan": "صحابة يڠ مڠيريڠي نبي محمد کتيک هجرة",
+     "kiriRumi": "Abu Bakar as-Siddiq",
+     "kananRumi": "Sahabat yang menemani Nabi Muhammad ketika hijrah"
+    },
+    {
+     "kiri": "سلمان الفارسي",
+     "kanan": "ڤنجنترا ڤمبواءن ڤاريت دالم ڤرڠ خندق",
+     "kiriRumi": "Salman al-Farisi",
+     "kananRumi": "Pencadang pembinaan parit dalam Perang Khandaq"
+    },
+    {
+     "kiri": "سيدتينا خديجة",
+     "kanan": "ايستري ڤرتام نبي محمد",
+     "kiriRumi": "Siti Khadijah",
+     "kananRumi": "Isteri pertama Nabi Muhammad"
+    },
+    {
+     "kiri": "ابو طالب",
+     "kanan": "باف ساودارا نبي محمد",
+     "kiriRumi": "Abu Talib",
+     "kananRumi": "Bapa saudara Nabi Muhammad"
+    }
+   ],
+   "id": "sirah-a13"
+  },
+  {
+   "bahagian": "A",
+   "jenis": "betul_salah",
+   "soalan": "تنداکن (✓) ڤد ڤرپاتاءن يڠ بتول دان (✗) ڤد ڤرپاتاءن يڠ ساله.",
+   "rumi": "Tandakan (✓) pada pernyataan yang betul dan (✗) pada pernyataan yang salah.",
+   "markah": 4,
+   "item": [
+    {
+     "teks": "نبي محمد دلا هيرکن د مکه.",
+     "rumi": "Nabi Muhammad dilahirkan di Mekah.",
+     "betul": true,
+     "jawapan": -1
+    },
+    {
+     "teks": "باف نبي محمد برنام عبد المطلب.",
+     "rumi": "Bapa Nabi Muhammad bernama Abdul Muttalib.",
+     "betul": false,
+     "jawapan": -1
+    },
+    {
+     "teks": "نبي محمد دلا هيرکن ڤد هاري اثنين.",
+     "rumi": "Nabi Muhammad dilahirkan pada hari Isnin.",
+     "betul": true,
+     "jawapan": -1
+    },
+    {
+     "teks": "نبي محمد دلا هيرکن دالم بولن رمضان.",
+     "rumi": "Nabi Muhammad dilahirkan dalam bulan Ramadan.",
+     "betul": false,
+     "jawapan": -1
+    }
+   ],
+   "id": "sirah-a14"
+  },
+  {
+   "bahagian": "A",
+   "jenis": "betul_salah",
+   "soalan": "تنداکن (✓) ڤد ڤرپاتاءن يڠ بتول دان (✗) ڤد ڤرپاتاءن يڠ ساله.",
+   "rumi": "Tandakan (✓) pada pernyataan yang betul dan (✗) pada pernyataan yang salah.",
+   "markah": 4,
+   "item": [
+    {
+     "teks": "نبي محمد دسوسوءي اوليه حليمة السعدية.",
+     "rumi": "Nabi Muhammad disusui oleh Halimah as-Saadiah.",
+     "betul": true,
+     "jawapan": -1
+    },
+    {
+     "teks": "ايبو نبي محمد وفاة کتيک بکيندا برعومور انم تاهون.",
+     "rumi": "Ibu Nabi Muhammad wafat ketika baginda berumur enam tahun.",
+     "betul": true,
+     "jawapan": -1
+    },
+    {
+     "teks": "نبي محمد دجاݢ اوليه ابو جهل سلفس داتوق بکيندا وفاة.",
+     "rumi": "Nabi Muhammad dijaga oleh Abu Jahal selepas datuk baginda wafat.",
+     "betul": false,
+     "jawapan": -1
+    },
+    {
+     "teks": "نبي محمد مولا برداݢڠ کتيک برعومور دوا بلاس تاهون.",
+     "rumi": "Nabi Muhammad mula berdagang ketika berumur dua belas tahun.",
+     "betul": true,
+     "jawapan": -1
+    }
+   ],
+   "id": "sirah-a15"
+  },
+  {
+   "bahagian": "A",
+   "jenis": "betul_salah",
+   "soalan": "تنداکن (✓) ڤد ڤرپاتاءن يڠ بتول دان (✗) ڤد ڤرپاتاءن يڠ ساله.",
+   "rumi": "Tandakan (✓) pada pernyataan yang betul dan (✗) pada pernyataan yang salah.",
+   "markah": 4,
+   "item": [
+    {
+     "teks": "نبي محمد منريم وهيو ڤرتام د ݢوا حراء.",
+     "rumi": "Nabi Muhammad menerima wahyu pertama di Gua Hira.",
+     "betul": true,
+     "jawapan": -1
+    },
+    {
+     "teks": "نبي محمد منريم وهيو ڤرتام کتيک برعومور تيݢ ڤولوه تاهون.",
+     "rumi": "Nabi Muhammad menerima wahyu pertama ketika berumur tiga puluh tahun.",
+     "betul": false,
+     "jawapan": -1
+    },
+    {
+     "teks": "ملايکة جبريل مڠمباکن سورة العلق کڤد نبي محمد.",
+     "rumi": "Malaikat Jibril menyampaikan surah Al-Alaq kepada Nabi Muhammad.",
+     "betul": true,
+     "jawapan": -1
+    },
+    {
+     "teks": "نبي محمد بردعوة سچارا تربوک سبلوم بردعوة سچارا سوليت.",
+     "rumi": "Nabi Muhammad berdakwah secara terbuka sebelum berdakwah secara sulit.",
+     "betul": false,
+     "jawapan": -1
+    }
+   ],
+   "id": "sirah-a16"
+  },
+  {
+   "bahagian": "A",
+   "jenis": "betul_salah",
+   "soalan": "تنداکن (✓) ڤد ڤرپاتاءن يڠ بتول دان (✗) ڤد ڤرپاتاءن يڠ ساله.",
+   "rumi": "Tandakan (✓) pada pernyataan yang betul dan (✗) pada pernyataan yang salah.",
+   "markah": 3,
+   "item": [
+    {
+     "teks": "نبي محمد برهجرة ک مدينة برسام ابو بکر الصديق.",
+     "rumi": "Nabi Muhammad berhijrah ke Madinah bersama Abu Bakar as-Siddiq.",
+     "betul": true,
+     "jawapan": -1
+    },
+    {
+     "teks": "مسجيد قباء اداله مسجيد يڠ ڤرتام دبينا اوليه نبي محمد.",
+     "rumi": "Masjid Quba ialah masjid yang pertama dibina oleh Nabi Muhammad.",
+     "betul": true,
+     "jawapan": -1
+    },
+    {
+     "teks": "ڤياݢم مدينة مڠاندوڠي ڤرجنجين انتارا اورڠ اسلام سهاج.",
+     "rumi": "Piagam Madinah mengandungi perjanjian antara orang Islam sahaja.",
+     "betul": false,
+     "jawapan": -1
+    }
+   ],
+   "id": "sirah-a17"
+  },
+  {
+   "bahagian": "A",
+   "jenis": "tempat_kosong",
+   "soalan": "ايسي تمڤت کوسوڠ دڠن ڤرکاتاءن يڠ دبري.",
+   "rumi": "Isi tempat kosong dengan perkataan yang diberi.",
+   "markah": 4,
+   "bank": [
+    "اثنين",
+    "ربيع الأول",
+    "مکه",
+    "ݢاجه"
+   ],
+   "bankRumi": [
+    "Isnin",
+    "Rabiulawal",
+    "Mekah",
+    "Gajah"
+   ],
+   "item": [
+    {
+     "teks": "نبي محمد دلا هيرکن ڤد هاري ____.",
+     "rumi": "Nabi Muhammad dilahirkan pada hari ____.",
+     "jawapan": -1
+    },
+    {
+     "teks": "نبي محمد دلا هيرکن دالم بولن ____.",
+     "rumi": "Nabi Muhammad dilahirkan dalam bulan ____.",
+     "jawapan": -1
+    },
+    {
+     "teks": "نبي محمد دلا هيرکن د ____.",
+     "rumi": "Nabi Muhammad dilahirkan di ____.",
+     "jawapan": -1
+    },
+    {
+     "teks": "تاهون کلاهيرن نبي محمد دکنالي سباݢاي تاهون ____.",
+     "rumi": "Tahun kelahiran Nabi Muhammad dikenali sebagai tahun ____.",
+     "jawapan": -1
+    }
+   ],
+   "id": "sirah-a18"
+  },
+  {
+   "bahagian": "A",
+   "jenis": "tempat_kosong",
+   "soalan": "ايسي تمڤت کوسوڠ دڠن ڤرکاتاءن يڠ دبري.",
+   "rumi": "Isi tempat kosong dengan perkataan yang diberi.",
+   "markah": 4,
+   "bank": [
+    "عبد الله",
+    "آمنة",
+    "عبد المطلب",
+    "ابو طالب"
+   ],
+   "bankRumi": [
+    "Abdullah",
+    "Aminah",
+    "Abdul Muttalib",
+    "Abu Talib"
+   ],
+   "item": [
+    {
+     "teks": "باف نبي محمد برنام ____.",
+     "rumi": "Bapa Nabi Muhammad bernama ____.",
+     "jawapan": -1
+    },
+    {
+     "teks": "ايبو نبي محمد برنام ____.",
+     "rumi": "Ibu Nabi Muhammad bernama ____.",
+     "jawapan": -1
+    },
+    {
+     "teks": "داتوق نبي محمد برنام ____.",
+     "rumi": "Datuk Nabi Muhammad bernama ____.",
+     "jawapan": -1
+    },
+    {
+     "teks": "نبي محمد دجاݢ اوليه باف ساوداراڽ ____ سلفس داتوق بکيندا وفاة.",
+     "rumi": "Nabi Muhammad dijaga oleh bapa saudaranya ____ selepas datuk baginda wafat.",
+     "jawapan": -1
+    }
+   ],
+   "id": "sirah-a19"
+  },
+  {
+   "bahagian": "A",
+   "jenis": "tempat_kosong",
+   "soalan": "ايسي تمڤت کوسوڠ دڠن ڤرکاتاءن يڠ دبري.",
+   "rumi": "Isi tempat kosong dengan perkataan yang diberi.",
+   "markah": 4,
+   "bank": [
+    "حليمة السعدية",
+    "خديجة",
+    "جبريل",
+    "حراء"
+   ],
+   "bankRumi": [
+    "Halimah as-Saadiah",
+    "Khadijah",
+    "Jibril",
+    "Hira"
+   ],
+   "item": [
+    {
+     "teks": "ايبو سوسو نبي محمد اياله ____.",
+     "rumi": "Ibu susu Nabi Muhammad ialah ____.",
+     "jawapan": -1
+    },
+    {
+     "teks": "نبي محمد برکاهوين دڠن سيدتينا ____.",
+     "rumi": "Nabi Muhammad berkahwin dengan Siti ____.",
+     "jawapan": -1
+    },
+    {
+     "teks": "ملايکة ____ مڠمباکن وهيو کڤد نبي محمد.",
+     "rumi": "Malaikat ____ menyampaikan wahyu kepada Nabi Muhammad.",
+     "jawapan": -1
+    },
+    {
+     "teks": "نبي محمد منريم وهيو ڤرتام د ݢوا ____.",
+     "rumi": "Nabi Muhammad menerima wahyu pertama di Gua ____.",
+     "jawapan": -1
+    }
+   ],
+   "id": "sirah-a20"
+  },
+  {
+   "bahagian": "A",
+   "jenis": "tempat_kosong",
+   "soalan": "ايسي تمڤت کوسوڠ دڠن ڤرکاتاءن يڠ دبري.",
+   "rumi": "Isi tempat kosong dengan perkataan yang diberi.",
+   "markah": 3,
+   "bank": [
+    "هجرة",
+    "قباء",
+    "مدينة"
+   ],
+   "bankRumi": [
+    "hijrah",
+    "Quba",
+    "Madinah"
+   ],
+   "item": [
+    {
+     "teks": "نبي محمد مڠسوروهکن بهاݢين ڤڠيکوتڽ بر____ ک حبشة.",
+     "rumi": "Nabi Muhammad menyuruh sebahagian pengikutnya ber____ ke Habsyah.",
+     "jawapan": -1
+    },
+    {
+     "teks": "مسجيد ____ اداله مسجيد يڠ ڤرتام دبينا اوليه نبي محمد.",
+     "rumi": "Masjid ____ ialah masjid yang pertama dibina oleh Nabi Muhammad.",
+     "jawapan": -1
+    },
+    {
+     "teks": "نبي محمد برهجرة ک ____ برسام ابو بکر الصديق.",
+     "rumi": "Nabi Muhammad berhijrah ke ____ bersama Abu Bakar as-Siddiq.",
+     "jawapan": -1
+    }
+   ],
+   "id": "sirah-a21"
+  },
+  {
+   "bahagian": "A",
+   "jenis": "tempat_kosong",
+   "soalan": "ايسي تمڤت کوسوڠ دڠن ڤرکاتاءن يڠ دبري.",
+   "rumi": "Isi tempat kosong dengan perkataan yang diberi.",
+   "markah": 4,
+   "bank": [
+    "بدر",
+    "أحد",
+    "خندق",
+    "حديبية"
+   ],
+   "bankRumi": [
+    "Badar",
+    "Uhud",
+    "Khandaq",
+    "Hudaibiyah"
+   ],
+   "item": [
+    {
+     "teks": "دالم ڤرڠ ____، اورڠ اسلام مڠالامي کمنڠن.",
+     "rumi": "Dalam Perang ____, orang Islam mengalami kemenangan.",
+     "jawapan": -1
+    },
+    {
+     "teks": "سايدينا حمزة بن عبد المطلب شاهيم دالم ڤرڠ ____.",
+     "rumi": "Saidina Hamzah bin Abdul Muttalib syahid dalam Perang ____.",
+     "jawapan": -1
+    },
+    {
+     "teks": "دالم ڤرڠ ____، اورڠ اسلام مڠݢالي ڤاريت د سکيتر مدينة.",
+     "rumi": "Dalam Perang ____, orang Islam menggali parit di sekitar Madinah.",
+     "jawapan": -1
+    },
+    {
+     "teks": "ڤرجنجين ____ مڠاندوڠي ݢنچتن سنجات سلاما سڤولوه تاهون.",
+     "rumi": "Perjanjian ____ mengandungi gencatan senjata selama sepuluh tahun.",
+     "jawapan": -1
+    }
+   ],
+   "id": "sirah-a22"
+  },
+  {
+   "bahagian": "A",
+   "jenis": "tempat_kosong",
+   "soalan": "ايسي تمڤت کوسوڠ دڠن ڤرکاتاءن يڠ دبري.",
+   "rumi": "Isi tempat kosong dengan perkataan yang diberi.",
+   "markah": 4,
+   "bank": [
+    "وداع",
+    "مدينة",
+    "انم ڤولوه تيݢ",
+    "قريش"
+   ],
+   "bankRumi": [
+    "Wida'",
+    "Madinah",
+    "enam puluh tiga",
+    "Quraisy"
+   ],
+   "item": [
+    {
+     "teks": "نبي محمد مڠرجاکن حاجي ____ ڤد تاهون کسڤولوه هجرة.",
+     "rumi": "Nabi Muhammad mengerjakan haji ____ pada tahun kesepuluh hijrah.",
+     "jawapan": -1
+    },
+    {
+     "teks": "نبي محمد تله وفاة د ____.",
+     "rumi": "Nabi Muhammad telah wafat di ____.",
+     "jawapan": -1
+    },
+    {
+     "teks": "عومور نبي محمد کتيک وفاة اياله ____ تاهون.",
+     "rumi": "Umur Nabi Muhammad ketika wafat ialah ____ tahun.",
+     "jawapan": -1
+    },
+    {
+     "teks": "سلفس ڤمبوکاءن مکه، نبي محمد مماعفکن اورڠ ____.",
+     "rumi": "Selepas pembukaan Mekah, Nabi Muhammad memaafkan orang ____.",
+     "jawapan": -1
+    }
+   ],
+   "id": "sirah-a23"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "نبي محمد دلا هيرکن ڤد هاري ______.",
+   "rumi": "Nabi Muhammad dilahirkan pada hari ______.",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "سبت",
+       "rumi": "Sabtu"
+      },
+      {
+       "teks": "أحد",
+       "rumi": "Ahad"
+      },
+      {
+       "teks": "اثنين",
+       "rumi": "Isnin"
+      },
+      {
+       "teks": "خميس",
+       "rumi": "Khamis"
+      }
+     ],
+     "jawapan": 2
+    }
+   ],
+   "id": "sirah-b1"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "نبي محمد دلا هيرکن دالم بولن ______.",
+   "rumi": "Nabi Muhammad dilahirkan dalam bulan ______.",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "ربيع الأول",
+       "rumi": "Rabiulawal"
+      },
+      {
+       "teks": "رمضان",
+       "rumi": "Ramadan"
+      },
+      {
+       "teks": "شوال",
+       "rumi": "Syawal"
+      },
+      {
+       "teks": "رجب",
+       "rumi": "Rejab"
+      }
+     ],
+     "jawapan": 0
+    }
+   ],
+   "id": "sirah-b2"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "نبي محمد دلا هيرکن د ______.",
+   "rumi": "Nabi Muhammad dilahirkan di ______.",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "مدينة",
+       "rumi": "Madinah"
+      },
+      {
+       "teks": "طائف",
+       "rumi": "Taif"
+      },
+      {
+       "teks": "يثرب",
+       "rumi": "Yathrib"
+      },
+      {
+       "teks": "مکه",
+       "rumi": "Mekah"
+      }
+     ],
+     "jawapan": 3
+    }
+   ],
+   "id": "sirah-b3"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "تاهون کلاهيرن نبي محمد دکنالي سباݢاي تاهون ______.",
+   "rumi": "Tahun kelahiran Nabi Muhammad dikenali sebagai tahun ______.",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "اونتا",
+       "rumi": "Unta"
+      },
+      {
+       "teks": "ݢاجه",
+       "rumi": "Gajah"
+      },
+      {
+       "teks": "هاريماو",
+       "rumi": "Harimau"
+      },
+      {
+       "teks": "کبي",
+       "rumi": "Kambing"
+      }
+     ],
+     "jawapan": 1
+    }
+   ],
+   "id": "sirah-b4"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "نام باف نبي محمد اياله ______.",
+   "rumi": "Nama bapa Nabi Muhammad ialah ______.",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "عبد الله",
+       "rumi": "Abdullah"
+      },
+      {
+       "teks": "عبد المطلب",
+       "rumi": "Abdul Muttalib"
+      },
+      {
+       "teks": "ابو طالب",
+       "rumi": "Abu Talib"
+      },
+      {
+       "teks": "حمزة",
+       "rumi": "Hamzah"
+      }
+     ],
+     "jawapan": 0
+    }
+   ],
+   "id": "sirah-b5"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "نام ايبو نبي محمد اياله ______.",
+   "rumi": "Nama ibu Nabi Muhammad ialah ______.",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "خديجة",
+       "rumi": "Khadijah"
+      },
+      {
+       "teks": "حليمة السعدية",
+       "rumi": "Halimah as-Saadiah"
+      },
+      {
+       "teks": "آمنة",
+       "rumi": "Aminah"
+      },
+      {
+       "teks": "فاطمة",
+       "rumi": "Fatimah"
+      }
+     ],
+     "jawapan": 2
+    }
+   ],
+   "id": "sirah-b6"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "نام داتوق نبي محمد اياله ______.",
+   "rumi": "Nama datuk Nabi Muhammad ialah ______.",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "ابو طالب",
+       "rumi": "Abu Talib"
+      },
+      {
+       "teks": "عبد المطلب",
+       "rumi": "Abdul Muttalib"
+      },
+      {
+       "teks": "عبد الله",
+       "rumi": "Abdullah"
+      },
+      {
+       "teks": "ابو لهب",
+       "rumi": "Abu Lahab"
+      }
+     ],
+     "jawapan": 1
+    }
+   ],
+   "id": "sirah-b7"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "ايبو سوسو نبي محمد اياله ______.",
+   "rumi": "Ibu susu Nabi Muhammad ialah ______.",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "آمنة",
+       "rumi": "Aminah"
+      },
+      {
+       "teks": "فاطمة",
+       "rumi": "Fatimah"
+      },
+      {
+       "teks": "خديجة",
+       "rumi": "Khadijah"
+      },
+      {
+       "teks": "حليمة السعدية",
+       "rumi": "Halimah as-Saadiah"
+      }
+     ],
+     "jawapan": 3
+    }
+   ],
+   "id": "sirah-b8"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "نبي محمد دجاݢ اوليه ______ سلفس داتوق بکيندا وفاة.",
+   "rumi": "Nabi Muhammad dijaga oleh ______ selepas datuk baginda wafat.",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "عبد الله",
+       "rumi": "Abdullah"
+      },
+      {
+       "teks": "ابو طالب",
+       "rumi": "Abu Talib"
+      },
+      {
+       "teks": "عبد المطلب",
+       "rumi": "Abdul Muttalib"
+      },
+      {
+       "teks": "ابو بکر",
+       "rumi": "Abu Bakar"
+      }
+     ],
+     "jawapan": 1
+    }
+   ],
+   "id": "sirah-b9"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "ايبو نبي محمد وفاة کتيک بکيندا برعومور ______.",
+   "rumi": "Ibu Nabi Muhammad wafat ketika baginda berumur ______.",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "انم تاهون",
+       "rumi": "enam tahun"
+      },
+      {
+       "teks": "لڤن تاهون",
+       "rumi": "lapan tahun"
+      },
+      {
+       "teks": "دوا بلاس تاهون",
+       "rumi": "dua belas tahun"
+      },
+      {
+       "teks": "امڤت ڤولوه تاهون",
+       "rumi": "empat puluh tahun"
+      }
+     ],
+     "jawapan": 0
+    }
+   ],
+   "id": "sirah-b10"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "نبي محمد برعومور ______ کتيک داتوق بکيندا وفاة.",
+   "rumi": "Nabi Muhammad berumur ______ ketika datuk baginda wafat.",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "تيݢ تاهون",
+       "rumi": "tiga tahun"
+      },
+      {
+       "teks": "انم تاهون",
+       "rumi": "enam tahun"
+      },
+      {
+       "teks": "لڤن تاهون",
+       "rumi": "lapan tahun"
+      },
+      {
+       "teks": "سڤولوه تاهون",
+       "rumi": "sepuluh tahun"
+      }
+     ],
+     "jawapan": 2
+    }
+   ],
+   "id": "sirah-b11"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "ݢلرن نبي محمد يڠ برمقصود «يڠ ڤرچاي» اياله ______.",
+   "rumi": "Gelaran Nabi Muhammad yang bermaksud «yang dipercayai» ialah ______.",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "الصديق",
+       "rumi": "As-Siddiq"
+      },
+      {
+       "teks": "الفاروق",
+       "rumi": "Al-Faruq"
+      },
+      {
+       "teks": "ذو النورين",
+       "rumi": "Zun Nurain"
+      },
+      {
+       "teks": "الأمين",
+       "rumi": "Al-Amin"
+      }
+     ],
+     "jawapan": 3
+    }
+   ],
+   "id": "sirah-b12"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "نبي محمد بکرجا سباݢاي ______ کتيک کوچيل.",
+   "rumi": "Nabi Muhammad bekerja sebagai ______ ketika kecil.",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "ڤڠݢمبال کبيڠ",
+       "rumi": "penggembala kambing"
+      },
+      {
+       "teks": "ڤنداي بسي",
+       "rumi": "pandai besi"
+      },
+      {
+       "teks": "نلاءن ايکن",
+       "rumi": "nelayan ikan"
+      },
+      {
+       "teks": "ڤتاني ڤادي",
+       "rumi": "petani padi"
+      }
+     ],
+     "jawapan": 0
+    }
+   ],
+   "id": "sirah-b13"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "نبي محمد مولا برداݢڠ کتيک برعومور ______.",
+   "rumi": "Nabi Muhammad mula berdagang ketika berumur ______.",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "سڤولوه تاهون",
+       "rumi": "sepuluh tahun"
+      },
+      {
+       "teks": "دوا بلاس تاهون",
+       "rumi": "dua belas tahun"
+      },
+      {
+       "teks": "لڤن تاهون",
+       "rumi": "lapan tahun"
+      },
+      {
+       "teks": "دوا ڤولوه تاهون",
+       "rumi": "dua puluh tahun"
+      }
+     ],
+     "jawapan": 1
+    }
+   ],
+   "id": "sirah-b14"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "نبي محمد برکاهوين دڠن سيدتينا خديجة کتيک برعومور ______.",
+   "rumi": "Nabi Muhammad berkahwin dengan Siti Khadijah ketika berumur ______.",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "دوا ڤولوه تاهون",
+       "rumi": "dua puluh tahun"
+      },
+      {
+       "teks": "تيݢ ڤولوه تاهون",
+       "rumi": "tiga puluh tahun"
+      },
+      {
+       "teks": "امڤت ڤولوه تاهون",
+       "rumi": "empat puluh tahun"
+      },
+      {
+       "teks": "دوا ڤولوه ليما تاهون",
+       "rumi": "dua puluh lima tahun"
+      }
+     ],
+     "jawapan": 3
+    }
+   ],
+   "id": "sirah-b15"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "عومور سيدتينا خديجة کتيک برکاهوين دڠن نبي محمد اياله ______.",
+   "rumi": "Umur Siti Khadijah ketika berkahwin dengan Nabi Muhammad ialah ______.",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "دوا ڤولوه ليما تاهون",
+       "rumi": "dua puluh lima tahun"
+      },
+      {
+       "teks": "تيݢ ڤولوه تاهون",
+       "rumi": "tiga puluh tahun"
+      },
+      {
+       "teks": "امڤت ڤولوه تاهون",
+       "rumi": "empat puluh tahun"
+      },
+      {
+       "teks": "انم ڤولوه تاهون",
+       "rumi": "enam puluh tahun"
+      }
+     ],
+     "jawapan": 2
+    }
+   ],
+   "id": "sirah-b16"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "سيدتينا خديجة اداله ______ ڤرتام نبي محمد.",
+   "rumi": "Siti Khadijah ialah ______ pertama Nabi Muhammad.",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "ايستري",
+       "rumi": "isteri"
+      },
+      {
+       "teks": "ايبو سوسو",
+       "rumi": "ibu susu"
+      },
+      {
+       "teks": "ڤڠاسوه",
+       "rumi": "pengasuh"
+      },
+      {
+       "teks": "ڤمبنتو",
+       "rumi": "pembantu"
+      }
+     ],
+     "jawapan": 0
+    }
+   ],
+   "id": "sirah-b17"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "نبي محمد مڽلسايکن ڤرسليسيحن حجر أسود کتيک برعومور ______.",
+   "rumi": "Nabi Muhammad menyelesaikan perselisihan Hajar Aswad ketika berumur ______.",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "دوا ڤولوه تاهون",
+       "rumi": "dua puluh tahun"
+      },
+      {
+       "teks": "تيݢ ڤولوه ليما تاهون",
+       "rumi": "tiga puluh lima tahun"
+      },
+      {
+       "teks": "امڤت ڤولوه تاهون",
+       "rumi": "empat puluh tahun"
+      },
+      {
+       "teks": "انم ڤولوه تاهون",
+       "rumi": "enam puluh tahun"
+      }
+     ],
+     "jawapan": 1
+    }
+   ],
+   "id": "sirah-b18"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "حجر أسود برمقصود ______.",
+   "rumi": "Hajar Aswad bermaksud ______.",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "ڤينتو کعبة",
+       "rumi": "pintu Kaabah"
+      },
+      {
+       "teks": "دينديڠ کعبة",
+       "rumi": "dinding Kaabah"
+      },
+      {
+       "teks": "باتو هيتم",
+       "rumi": "batu hitam"
+      },
+      {
+       "teks": "اير زمزم",
+       "rumi": "air zamzam"
+      }
+     ],
+     "jawapan": 2
+    }
+   ],
+   "id": "sirah-b19"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "نبي محمد منريم وهيو ڤرتام د دالم ݢوا ______.",
+   "rumi": "Nabi Muhammad menerima wahyu pertama di dalam Gua ______.",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "ثور",
+       "rumi": "Thur"
+      },
+      {
+       "teks": "کهف",
+       "rumi": "Kahfi"
+      },
+      {
+       "teks": "قباء",
+       "rumi": "Quba"
+      },
+      {
+       "teks": "حراء",
+       "rumi": "Hira"
+      }
+     ],
+     "jawapan": 3
+    }
+   ],
+   "id": "sirah-b20"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "نبي محمد منريم وهيو ڤرتام کتيک برعومور ______.",
+   "rumi": "Nabi Muhammad menerima wahyu pertama ketika berumur ______.",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "دوا ڤولوه ليما تاهون",
+       "rumi": "dua puluh lima tahun"
+      },
+      {
+       "teks": "امڤت ڤولوه تاهون",
+       "rumi": "empat puluh tahun"
+      },
+      {
+       "teks": "تيݢ ڤولوه تاهون",
+       "rumi": "tiga puluh tahun"
+      },
+      {
+       "teks": "انم ڤولوه تيݢ تاهون",
+       "rumi": "enam puluh tiga tahun"
+      }
+     ],
+     "jawapan": 1
+    }
+   ],
+   "id": "sirah-b21"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "ملايکة يڠ مڠمباکن وهيو کڤد نبي محمد اياله ______.",
+   "rumi": "Malaikat yang menyampaikan wahyu kepada Nabi Muhammad ialah ______.",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "جبريل",
+       "rumi": "Jibril"
+      },
+      {
+       "teks": "ميكائيل",
+       "rumi": "Mikail"
+      },
+      {
+       "teks": "إسرافيل",
+       "rumi": "Israfil"
+      },
+      {
+       "teks": "عزرائيل",
+       "rumi": "Izrail"
+      }
+     ],
+     "jawapan": 0
+    }
+   ],
+   "id": "sirah-b22"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "سورة يڠ ڤرتام دتورونکن کڤد نبي محمد اياله ______.",
+   "rumi": "Surah yang pertama diturunkan kepada Nabi Muhammad ialah ______.",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "الفاتحة",
+       "rumi": "Al-Fatihah"
+      },
+      {
+       "teks": "الناس",
+       "rumi": "An-Nas"
+      },
+      {
+       "teks": "البقرة",
+       "rumi": "Al-Baqarah"
+      },
+      {
+       "teks": "العلق",
+       "rumi": "Al-Alaq"
+      }
+     ],
+     "jawapan": 3
+    }
+   ],
+   "id": "sirah-b23"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "اية ڤرتام دالم سورة العلق اياله ______.",
+   "rumi": "Ayat pertama dalam surah Al-Alaq ialah ______.",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "الحمد لله رب العالمين",
+       "rumi": "Alhamdulillahi rabbil alamin"
+      },
+      {
+       "teks": "قل هو الله أحد",
+       "rumi": "Qul huwallahu ahad"
+      },
+      {
+       "teks": "إقرأ باسم ربك",
+       "rumi": "Iqra' bismi rabbik"
+      },
+      {
+       "teks": "إن الله مع الصابرين",
+       "rumi": "Innallaha ma'as-sabirin"
+      }
+     ],
+     "jawapan": 2
+    }
+   ],
+   "id": "sirah-b24"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "نبي محمد بردعوة سچارا ______ سلاما تيݢ تاهون.",
+   "rumi": "Nabi Muhammad berdakwah secara ______ selama tiga tahun.",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "تربوک",
+       "rumi": "terbuka"
+      },
+      {
+       "teks": "سوليت",
+       "rumi": "sulit"
+      },
+      {
+       "teks": "سريڠ",
+       "rumi": "sering"
+      },
+      {
+       "teks": "لنتڠ",
+       "rumi": "lantang"
+      }
+     ],
+     "jawapan": 1
+    }
+   ],
+   "id": "sirah-b25"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "اورڠ ڤرتام يڠ منريم اسلام اياله ______.",
+   "rumi": "Orang pertama yang menerima Islam ialah ______.",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "خديجة بنت خويلد",
+       "rumi": "Khadijah binti Khuwailid"
+      },
+      {
+       "teks": "عائشة بنت ابو بکر",
+       "rumi": "Aisyah binti Abu Bakar"
+      },
+      {
+       "teks": "فاطمة بنت محمد",
+       "rumi": "Fatimah binti Muhammad"
+      },
+      {
+       "teks": "حفصة بنت عمر",
+       "rumi": "Hafsah binti Umar"
+      }
+     ],
+     "jawapan": 0
+    }
+   ],
+   "id": "sirah-b26"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "کاءوم يڠ مننتڠ دعوة نبي محمد د مکه اياله کاءوم ______.",
+   "rumi": "Kaum yang menentang dakwah Nabi Muhammad di Mekah ialah kaum ______.",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "اوس",
+       "rumi": "Aus"
+      },
+      {
+       "teks": "خزرج",
+       "rumi": "Khazraj"
+      },
+      {
+       "teks": "قريش",
+       "rumi": "Quraisy"
+      },
+      {
+       "teks": "يهود",
+       "rumi": "Yahudi"
+      }
+     ],
+     "jawapan": 2
+    }
+   ],
+   "id": "sirah-b27"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "نبي محمد مڠسوروهکن بهاݢين ڤڠيکوتڽ برهجرة ک ______.",
+   "rumi": "Nabi Muhammad menyuruh sebahagian pengikutnya berhijrah ke ______.",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "طائف",
+       "rumi": "Taif"
+      },
+      {
+       "teks": "شام",
+       "rumi": "Syam"
+      },
+      {
+       "teks": "يمن",
+       "rumi": "Yaman"
+      },
+      {
+       "teks": "حبشة",
+       "rumi": "Habsyah"
+      }
+     ],
+     "jawapan": 3
+    }
+   ],
+   "id": "sirah-b28"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "راج يڠ مڽمبوت اورڠ اسلام د حبشة برنام ______.",
+   "rumi": "Raja yang menyambut orang Islam di Habsyah bernama ______.",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "هرقل",
+       "rumi": "Hercules"
+      },
+      {
+       "teks": "کسرى",
+       "rumi": "Kisra"
+      },
+      {
+       "teks": "نجاشي",
+       "rumi": "Najasyi"
+      },
+      {
+       "teks": "فرعون",
+       "rumi": "Firaun"
+      }
+     ],
+     "jawapan": 2
+    }
+   ],
+   "id": "sirah-b29"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "ڤريستيوا إسراء دان معراج برلاکو دالم تاهون ک______ کنبيان.",
+   "rumi": "Peristiwa Isra dan Mikraj berlaku dalam tahun ke-______ kenabian.",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "سڤولوه",
+       "rumi": "sepuluh"
+      },
+      {
+       "teks": "ليما",
+       "rumi": "lima"
+      },
+      {
+       "teks": "لڤن",
+       "rumi": "lapan"
+      },
+      {
+       "teks": "دوا بلاس",
+       "rumi": "dua belas"
+      }
+     ],
+     "jawapan": 0
+    }
+   ],
+   "id": "sirah-b30"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "دالم ڤريستيوا معراج، نبي محمد منريم ڤرينته ______.",
+   "rumi": "Dalam peristiwa Mikraj, Nabi Muhammad menerima perintah ______.",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "ڤواس رمضان",
+       "rumi": "puasa Ramadan"
+      },
+      {
+       "teks": "صلاة ليما وقتو",
+       "rumi": "solat lima waktu"
+      },
+      {
+       "teks": "زکاة",
+       "rumi": "zakat"
+      },
+      {
+       "teks": "حج",
+       "rumi": "haji"
+      }
+     ],
+     "jawapan": 1
+    }
+   ],
+   "id": "sirah-b31"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "بيعت عقبة دلاکوکن اوليه نبي محمد دڠن ڤندودوق ______.",
+   "rumi": "Bai'ah Aqabah dilakukan oleh Nabi Muhammad dengan penduduk ______.",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "حبشة",
+       "rumi": "Habsyah"
+      },
+      {
+       "teks": "طائف",
+       "rumi": "Taif"
+      },
+      {
+       "teks": "شام",
+       "rumi": "Syam"
+      },
+      {
+       "teks": "يثرب",
+       "rumi": "Yathrib"
+      }
+     ],
+     "jawapan": 3
+    }
+   ],
+   "id": "sirah-b32"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "نبي محمد برهجرة ک مدينة برسام ______.",
+   "rumi": "Nabi Muhammad berhijrah ke Madinah bersama ______.",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "عمر بن الخطاب",
+       "rumi": "Umar bin al-Khattab"
+      },
+      {
+       "teks": "ابو بکر الصديق",
+       "rumi": "Abu Bakar as-Siddiq"
+      },
+      {
+       "teks": "عثمان بن عفان",
+       "rumi": "Uthman bin Affan"
+      },
+      {
+       "teks": "علي بن ابي طالب",
+       "rumi": "Ali bin Abi Talib"
+      }
+     ],
+     "jawapan": 1
+    }
+   ],
+   "id": "sirah-b33"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "نبي محمد برسيمڤن د ݢوا ______ کتيک برهجرة.",
+   "rumi": "Nabi Muhammad bersembunyi di Gua ______ ketika berhijrah.",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "حراء",
+       "rumi": "Hira"
+      },
+      {
+       "teks": "کهف",
+       "rumi": "Kahfi"
+      },
+      {
+       "teks": "ثور",
+       "rumi": "Thur"
+      },
+      {
+       "teks": "قباء",
+       "rumi": "Quba"
+      }
+     ],
+     "jawapan": 2
+    }
+   ],
+   "id": "sirah-b34"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "مسجيد ڤرتام يڠ دبينا اوليه نبي محمد اياله مسجيد ______.",
+   "rumi": "Masjid pertama yang dibina oleh Nabi Muhammad ialah Masjid ______.",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "قباء",
+       "rumi": "Quba"
+      },
+      {
+       "teks": "نبوي",
+       "rumi": "Nabawi"
+      },
+      {
+       "teks": "أقصى",
+       "rumi": "Aqsa"
+      },
+      {
+       "teks": "حرام",
+       "rumi": "Haram"
+      }
+     ],
+     "jawapan": 0
+    }
+   ],
+   "id": "sirah-b35"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "نبي محمد ممبينا مسجيد ______ د مدينة.",
+   "rumi": "Nabi Muhammad membina Masjid ______ di Madinah.",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "قباء",
+       "rumi": "Quba"
+      },
+      {
+       "teks": "أقصى",
+       "rumi": "Aqsa"
+      },
+      {
+       "teks": "حرام",
+       "rumi": "Haram"
+      },
+      {
+       "teks": "نبوي",
+       "rumi": "Nabawi"
+      }
+     ],
+     "jawapan": 3
+    }
+   ],
+   "id": "sirah-b36"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "ڤياݢم مدينة دبوات اونتوق مڠاتور هوبوڠن اورڠ اسلام د مدينة دڠن ______.",
+   "rumi": "Piagam Madinah dibuat untuk mengatur hubungan orang Islam di Madinah dengan ______.",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "قريش",
+       "rumi": "Quraisy"
+      },
+      {
+       "teks": "فارس",
+       "rumi": "Parsi"
+      },
+      {
+       "teks": "يهود",
+       "rumi": "Yahudi"
+      },
+      {
+       "teks": "روم",
+       "rumi": "Rom"
+      }
+     ],
+     "jawapan": 2
+    }
+   ],
+   "id": "sirah-b37"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "ڤرڠ ______ اداله ڤرڠ ڤرتام انتارا اورڠ اسلام دان قريش.",
+   "rumi": "Perang ______ ialah perang pertama antara orang Islam dan Quraisy.",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "أحد",
+       "rumi": "Uhud"
+      },
+      {
+       "teks": "بدر",
+       "rumi": "Badar"
+      },
+      {
+       "teks": "خندق",
+       "rumi": "Khandaq"
+      },
+      {
+       "teks": "تبوك",
+       "rumi": "Tabuk"
+      }
+     ],
+     "jawapan": 1
+    }
+   ],
+   "id": "sirah-b38"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "بيلاڠن تنتيرا اورڠ اسلام دالم ڤرڠ بدر اياله ______.",
+   "rumi": "Bilangan tentera orang Islam dalam Perang Badar ialah ______.",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "ساتوس تيݢ بلاس",
+       "rumi": "seratus tiga belas"
+      },
+      {
+       "teks": "تيݢ ڤولوه تيݢ",
+       "rumi": "tiga puluh tiga"
+      },
+      {
+       "teks": "سربو",
+       "rumi": "seribu"
+      },
+      {
+       "teks": "تيݢ راتوس تيݢ بلاس",
+       "rumi": "tiga ratus tiga belas"
+      }
+     ],
+     "jawapan": 3
+    }
+   ],
+   "id": "sirah-b39"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "سايدينا حمزة بن عبد المطلب شاهيم دالم ڤرڠ ______.",
+   "rumi": "Saidina Hamzah bin Abdul Muttalib syahid dalam Perang ______.",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "أحد",
+       "rumi": "Uhud"
+      },
+      {
+       "teks": "بدر",
+       "rumi": "Badar"
+      },
+      {
+       "teks": "خندق",
+       "rumi": "Khandaq"
+      },
+      {
+       "teks": "حنين",
+       "rumi": "Hunain"
+      }
+     ],
+     "jawapan": 0
+    }
+   ],
+   "id": "sirah-b40"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "ڤرڠ خندق دکنالي جوݢ سباݢاي ڤرڠ ______.",
+   "rumi": "Perang Khandaq dikenali juga sebagai Perang ______.",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "بدر",
+       "rumi": "Badar"
+      },
+      {
+       "teks": "أحد",
+       "rumi": "Uhud"
+      },
+      {
+       "teks": "احزاب",
+       "rumi": "Ahzab"
+      },
+      {
+       "teks": "فتح مکه",
+       "rumi": "Fathu Makkah"
+      }
+     ],
+     "jawapan": 2
+    }
+   ],
+   "id": "sirah-b41"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "ڤنجنترا ڤمبواءن ڤاريت دالم ڤرڠ خندق اياله ______.",
+   "rumi": "Pencadang pembinaan parit dalam Perang Khandaq ialah ______.",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "بلال بن رباح",
+       "rumi": "Bilal bin Rabah"
+      },
+      {
+       "teks": "سلمان الفارسي",
+       "rumi": "Salman al-Farisi"
+      },
+      {
+       "teks": "خالد بن الوليد",
+       "rumi": "Khalid bin al-Walid"
+      },
+      {
+       "teks": "مصعب بن عمير",
+       "rumi": "Mus'ab bin Umair"
+      }
+     ],
+     "jawapan": 1
+    }
+   ],
+   "id": "sirah-b42"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "ڤرجنجين ______ مڠاندوڠي ݢنچتن سنجات سلاما سڤولوه تاهون.",
+   "rumi": "Perjanjian ______ mengandungi gencatan senjata selama sepuluh tahun.",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "حديبية",
+       "rumi": "Hudaibiyah"
+      },
+      {
+       "teks": "تبوك",
+       "rumi": "Tabuk"
+      },
+      {
+       "teks": "أحد",
+       "rumi": "Uhud"
+      },
+      {
+       "teks": "بدر",
+       "rumi": "Badar"
+      }
+     ],
+     "jawapan": 0
+    }
+   ],
+   "id": "sirah-b43"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "ڤمبوکاءن مکه دکنالي سباݢاي ______.",
+   "rumi": "Pembukaan Mekah dikenali sebagai ______.",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "بدر",
+       "rumi": "Badar"
+      },
+      {
+       "teks": "خيبر",
+       "rumi": "Khaibar"
+      },
+      {
+       "teks": "حنين",
+       "rumi": "Hunain"
+      },
+      {
+       "teks": "فتح مکه",
+       "rumi": "Fathu Makkah"
+      }
+     ],
+     "jawapan": 3
+    }
+   ],
+   "id": "sirah-b44"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "نبي محمد مڠرجاکن حاجي ______ ڤد تاهون کسڤولوه هجرة.",
+   "rumi": "Nabi Muhammad mengerjakan haji ______ pada tahun kesepuluh hijrah.",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "افراض",
+       "rumi": "Ifrad"
+      },
+      {
+       "teks": "وداع",
+       "rumi": "Wida'"
+      },
+      {
+       "teks": "قران",
+       "rumi": "Qiran"
+      },
+      {
+       "teks": "تمتع",
+       "rumi": "Tamattu'"
+      }
+     ],
+     "jawapan": 1
+    }
+   ],
+   "id": "sirah-b45"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "نبي محمد تله وفاة د ______.",
+   "rumi": "Nabi Muhammad telah wafat di ______.",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "مکه",
+       "rumi": "Mekah"
+      },
+      {
+       "teks": "طائف",
+       "rumi": "Taif"
+      },
+      {
+       "teks": "مدينة",
+       "rumi": "Madinah"
+      },
+      {
+       "teks": "قباء",
+       "rumi": "Quba"
+      }
+     ],
+     "jawapan": 2
+    }
+   ],
+   "id": "sirah-b46"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "عومور نبي محمد کتيک وفاة اياله ______ تاهون.",
+   "rumi": "Umur Nabi Muhammad ketika wafat ialah ______ tahun.",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "ليما ڤولوه",
+       "rumi": "lima puluh"
+      },
+      {
+       "teks": "انم ڤولوه",
+       "rumi": "enam puluh"
+      },
+      {
+       "teks": "لڤن ڤولوه",
+       "rumi": "lapan puluh"
+      },
+      {
+       "teks": "انم ڤولوه تيݢ",
+       "rumi": "enam puluh tiga"
+      }
+     ],
+     "jawapan": 3
+    }
+   ],
+   "id": "sirah-b47"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "صيفت نبي محمد يڠ برمقصود «بوليه ڤرچاي» اياله ______.",
+   "rumi": "Sifat Nabi Muhammad yang bermaksud «boleh dipercayai» ialah ______.",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "أمانة",
+       "rumi": "Amanah"
+      },
+      {
+       "teks": "صدق",
+       "rumi": "Siddiq"
+      },
+      {
+       "teks": "تبليغ",
+       "rumi": "Tabligh"
+      },
+      {
+       "teks": "فطانة",
+       "rumi": "Fatanah"
+      }
+     ],
+     "jawapan": 0
+    }
+   ],
+   "id": "sirah-b48"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "صيفت نبي محمد يڠ برمقصود «بنر» اياله ______.",
+   "rumi": "Sifat Nabi Muhammad yang bermaksud «benar» ialah ______.",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "أمانة",
+       "rumi": "Amanah"
+      },
+      {
+       "teks": "تبليغ",
+       "rumi": "Tabligh"
+      },
+      {
+       "teks": "صدق",
+       "rumi": "Siddiq"
+      },
+      {
+       "teks": "فطانة",
+       "rumi": "Fatanah"
+      }
+     ],
+     "jawapan": 2
+    }
+   ],
+   "id": "sirah-b49"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "انتارا اخلاق نبي محمد، بکيندا سلاولو ______ کڤد اورڠ يڠ مڽکيت بکيندا.",
+   "rumi": "Antara akhlak Nabi Muhammad, baginda selalu ______ kepada orang yang menyakiti baginda.",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "مڠوتوق",
+       "rumi": "mengutuk"
+      },
+      {
+       "teks": "مماعفکن",
+       "rumi": "memaafkan"
+      },
+      {
+       "teks": "مڠهينا",
+       "rumi": "menghina"
+      },
+      {
+       "teks": "مڠوسير",
+       "rumi": "mengusir"
+      }
+     ],
+     "jawapan": 1
+    }
+   ],
+   "id": "sirah-b50"
+  },
+  {
+   "bahagian": "C",
+   "jenis": "tulis",
+   "soalan": "ڽاتاکن سمبيلن ڤريستيوا ڤنتيڠ دالم هيدوڤ نبي محمد سبلوم کراسولن.",
+   "rumi": "Nyatakan sembilan peristiwa penting dalam hidup Nabi Muhammad sebelum kerasulan.",
+   "markah": 9,
+   "idea": [
+    {
+     "maksud": "Dilahirkan di Makkah pada 12 Rabiulawal Tahun Gajah",
+     "kata": [
+      "lahir",
+      "dilahirkan",
+      "kelahiran",
+      "makkah",
+      "مکه",
+      "کلاهيرن",
+      "ديلاهيرکن",
+      "ربيع",
+      "الأول",
+      "ݢاجه",
+      "١٢",
+      "أول"
+     ]
+    },
+    {
+     "maksud": "Disusui oleh Halimah as-Sa'diyah",
+     "kata": [
+      "halimah",
+      "susuan",
+      "disusui",
+      "حليمه",
+      "سوسوان",
+      "ديسوسوي",
+      "السعدية",
+      "سعدية"
+     ]
+    },
+    {
+     "maksud": "Ibu baginda Aminah wafat",
+     "kata": [
+      "aminah",
+      "ibu",
+      "امينة",
+      "ايبو",
+      "وفات",
+      "ايبوڽ",
+      "انم"
+     ]
+    },
+    {
+     "maksud": "Datuk baginda Abdul Muttalib wafat",
+     "kata": [
+      "abdul muttalib",
+      "muttalib",
+      "datuk",
+      "عبد المطلب",
+      "داتوق",
+      "داتوقڽ",
+      "عبد",
+      "المطلب",
+      "لاڤن",
+      "مطلب"
+     ]
+    },
+    {
+     "maksud": "Dibela oleh bapa saudaranya Abu Talib",
+     "kata": [
+      "abu talib",
+      "bapa saudara",
+      "ابو طالب",
+      "باڤ ساودارا",
+      "دبلا",
+      "ابو",
+      "طالب"
+     ]
+    },
+    {
+     "maksud": "Mengembala kambing untuk penduduk Makkah",
+     "kata": [
+      "kambing",
+      "embala",
+      "کمبيڠ",
+      "مڠمبالا",
+      "ڤندودوق"
+     ]
+    },
+    {
+     "maksud": "Berniaga ke Syam bersama bapa saudaranya",
+     "kata": [
+      "syam",
+      "berniaga",
+      "شام",
+      "برنيݢا",
+      "برسام"
+     ]
+    },
+    {
+     "maksud": "Ikut membaiki semula Kaabah",
+     "kata": [
+      "kaabah",
+      "baiki",
+      "کعبة",
+      "باايکي",
+      "ايکوت",
+      "ممباايکي",
+      "سمالا"
+     ]
+    },
+    {
+     "maksud": "Berkahwin dengan Siti Khadijah",
+     "kata": [
+      "khadijah",
+      "berkahwin",
+      "kahwin",
+      "خديجة",
+      "برکاهوين",
+      "سيتي"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "١. ديلاهيرکن دي مکة ڤد ١٢ ربيع الأول تاهون ݢاجه.",
+    "٢. ديسوسوي اوليه حليمه السعدية.",
+    "٣. ايبوڽ امينة وفات کتيک اومور انم تاهون.",
+    "٤. داتوقڽ عبد المطلب وفات کتيک اومور لاڤن تاهون.",
+    "٥. دبلا اوليه باڤ ساوداراڽ ابو طالب.",
+    "٦. مڠمبالا کمبيڠ اونتوق ڤندودوق مکة.",
+    "٧. برنيݢا ک شام برسام باڤ ساوداراڽ.",
+    "٨. ايکوت ممباايکي سمالا کعبة.",
+    "٩. برکاهوين دڠن سيتي خديجة."
+   ],
+   "jawapanContohRumi": [
+    "1. Dilahirkan di Makkah pada 12 Rabiulawal Tahun Gajah.",
+    "2. Disusui oleh Halimah as-Sa'diyah.",
+    "3. Ibunya Aminah wafat ketika berumur enam tahun.",
+    "4. Datuknya Abdul Muttalib wafat ketika berumur lapan tahun.",
+    "5. Dibela oleh bapa saudaranya Abu Talib.",
+    "6. Mengembala kambing untuk penduduk Makkah.",
+    "7. Berniaga ke Syam bersama bapa saudaranya.",
+    "8. Ikut membaiki semula Kaabah.",
+    "9. Berkahwin dengan Siti Khadijah."
+   ],
+   "id": "sirah-c1"
+  },
+  {
+   "bahagian": "C",
+   "jenis": "tulis",
+   "soalan": "سياڤاکه نام ڤد اورڠ-اورڠ برايکوت دالم ريوايةت هيدوڤ نبي محمد: (i) ايبو (ii) باڤ (iii) داتوق (iv) ايبو سوسوان (v) ايبو سوسوان يڠ ڤرتام (vi) باڤ ساودارا يڠ ممبلا؟",
+   "rumi": "Siapakah nama bagi orang-orang berikut dalam riwayat hidup Nabi Muhammad: (i) ibu (ii) bapa (iii) datuk (iv) ibu susuan (v) ibu susuan yang pertama (vi) bapa saudara yang membela?",
+   "markah": 6,
+   "idea": [
+    {
+     "maksud": "Aminah binti Wahab — ibu baginda",
+     "kata": [
+      "aminah",
+      "امينة بنت وهب",
+      "ايبو",
+      "امينة",
+      "بنت",
+      "وهب"
+     ]
+    },
+    {
+     "maksud": "Abdullah bin Abdul Muttalib — bapa baginda",
+     "kata": [
+      "abdullah",
+      "bapa",
+      "عبد الله",
+      "باڤ",
+      "الله",
+      "بن"
+     ]
+    },
+    {
+     "maksud": "Abdul Muttalib — datuk baginda",
+     "kata": [
+      "muttalib",
+      "abdul muttalib",
+      "datuk",
+      "عبد المطلب",
+      "داتوق"
+     ]
+    },
+    {
+     "maksud": "Halimah as-Sa'diyah — ibu susuan baginda",
+     "kata": [
+      "halimah",
+      "saadiah",
+      "susuan",
+      "حليمه السعدية",
+      "سوسوان",
+      "حليمه",
+      "السعدية",
+      "سعدية"
+     ]
+    },
+    {
+     "maksud": "Thuwaibah — ibu susuan yang pertama",
+     "kata": [
+      "thuwaibah",
+      "ثويبة",
+      "ڤرتام"
+     ]
+    },
+    {
+     "maksud": "Abu Talib — bapa saudara yang membela baginda",
+     "kata": [
+      "abu talib",
+      "bapa saudara",
+      "ابو طالب",
+      "باڤ ساودارا",
+      "ابو",
+      "طالب"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "(i) امينة بنت وهب",
+    "(ii) عبد الله بن عبد المطلب",
+    "(iii) عبد المطلب",
+    "(iv) حليمه السعدية",
+    "(v) ثويبة",
+    "(vi) ابو طالب"
+   ],
+   "jawapanContohRumi": [
+    "(i) Aminah binti Wahab",
+    "(ii) Abdullah bin Abdul Muttalib",
+    "(iii) Abdul Muttalib",
+    "(iv) Halimah as-Sa'diyah",
+    "(v) Thuwaibah",
+    "(vi) Abu Talib"
+   ],
+   "id": "sirah-c2"
+  },
+  {
+   "bahagian": "C",
+   "jenis": "tulis",
+   "soalan": "ڽاتاکن توجوه اورڠ يڠ ڤرتام ماسوق اسلام.",
+   "rumi": "Nyatakan tujuh orang yang pertama masuk Islam.",
+   "markah": 7,
+   "idea": [
+    {
+     "maksud": "Siti Khadijah",
+     "kata": [
+      "khadijah",
+      "خديجة",
+      "سيتي"
+     ]
+    },
+    {
+     "maksud": "Abu Bakar as-Siddiq",
+     "kata": [
+      "abu bakar",
+      "siddiq",
+      "ابو بکر",
+      "صديق",
+      "ابو",
+      "بکر",
+      "الصديق"
+     ]
+    },
+    {
+     "maksud": "Ali bin Abi Talib",
+     "kata": [
+      "ali",
+      "علي",
+      "ابي",
+      "طالب"
+     ]
+    },
+    {
+     "maksud": "Zaid bin Harithah",
+     "kata": [
+      "zaid",
+      "harithah",
+      "زيد",
+      "حارثة"
+     ]
+    },
+    {
+     "maksud": "Uthman bin Affan",
+     "kata": [
+      "uthman",
+      "affan",
+      "عثمان",
+      "عفان"
+     ]
+    },
+    {
+     "maksud": "Bilal bin Rabah",
+     "kata": [
+      "bilal",
+      "rabah",
+      "بلال",
+      "رباح"
+     ]
+    },
+    {
+     "maksud": "Ammar bin Yasir",
+     "kata": [
+      "ammar",
+      "yasir",
+      "عمار",
+      "ياسر"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "١. سيتي خديجة",
+    "٢. ابو بکر الصديق",
+    "٣. علي بن ابي طالب",
+    "٤. زيد بن حارثة",
+    "٥. عثمان بن عفان",
+    "٦. بلال بن رباح",
+    "٧. عمار بن ياسر"
+   ],
+   "jawapanContohRumi": [
+    "1. Siti Khadijah",
+    "2. Abu Bakar as-Siddiq",
+    "3. Ali bin Abi Talib",
+    "4. Zaid bin Harithah",
+    "5. Uthman bin Affan",
+    "6. Bilal bin Rabah",
+    "7. Ammar bin Yasir"
+   ],
+   "id": "sirah-c3"
+  },
+  {
+   "bahagian": "C",
+   "jenis": "tulis",
+   "soalan": "ڽاتاکن سمبيلن بنتوق تنتڠن کأوم قريش ترهادڤ داکوه نبي محمد.",
+   "rumi": "Nyatakan sembilan bentuk tentangan kaum Quraisy terhadap dakwah Nabi Muhammad.",
+   "markah": 9,
+   "idea": [
+    {
+     "maksud": "Memperlekeh dan mengejek Nabi",
+     "kata": [
+      "perlekeh",
+      "memperlekeh",
+      "ejek",
+      "mengejek",
+      "ڤرليکه",
+      "ايجيک",
+      "ممڤرليکه",
+      "مڠيجيک"
+     ]
+    },
+    {
+     "maksud": "Menuduh Nabi sebagai penyair dan tukang sihir",
+     "kata": [
+      "penyair",
+      "sihir",
+      "tuduh",
+      "ڽاءير",
+      "سيهير",
+      "مڠتوده",
+      "ڤڽاءير",
+      "توکڠ"
+     ]
+    },
+    {
+     "maksud": "Menawarkan harta, pangkat dan jawatan",
+     "kata": [
+      "harta",
+      "pangkat",
+      "jawatan",
+      "هرتا",
+      "ڤڠکت",
+      "جاواتن",
+      "مناوارکن",
+      "هرتا،"
+     ]
+    },
+    {
+     "maksud": "Memujuk Abu Talib supaya menghalang Nabi",
+     "kata": [
+      "pujuk",
+      "memujuk",
+      "abu talib",
+      "ڤوجوق",
+      "ابو طالب",
+      "ممڤوجوق",
+      "سوڤاي"
+     ]
+    },
+    {
+     "maksud": "Menyeksa orang Islam yang lemah",
+     "kata": [
+      "seksa",
+      "menyeksa",
+      "bilal",
+      "yasir",
+      "سيکسا",
+      "مڽيکسا",
+      "لمه",
+      "ڤرتي",
+      "بلال",
+      "کلوارݢ",
+      "ياسر",
+      "اسلام"
+     ]
+    },
+    {
+     "maksud": "Memboikot Bani Hasyim di lembah Abu Talib",
+     "kata": [
+      "boikot",
+      "memboikot",
+      "hasyim",
+      "بويکوت",
+      "ممبويکوت",
+      "هاشيم",
+      "بني",
+      "لمبه"
+     ]
+    },
+    {
+     "maksud": "Melontar najis ke atas Nabi ketika baginda bersolat",
+     "kata": [
+      "najis",
+      "melontar",
+      "نجس",
+      "لونتر",
+      "ملاونتر",
+      "کأتس",
+      "برسولات",
+      "بݢيندا"
+     ]
+    },
+    {
+     "maksud": "Merancang untuk membunuh Nabi",
+     "kata": [
+      "bunuh",
+      "membunuh",
+      "قتل",
+      "ممبونوه",
+      "مرانچڠ"
+     ]
+    },
+    {
+     "maksud": "Menghalang orang luar daripada mendengar dakwah Nabi",
+     "kata": [
+      "halang",
+      "مڠهالڠ",
+      "داکوه",
+      "لوار",
+      "مندڠر"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "١. ممڤرليکه دان مڠيجيک نبي.",
+    "٢. مڠتوده نبي سباݢاي ڤڽاءير دان توکڠ سيهير.",
+    "٣. مناوارکن هرتا، ڤڠکت دان جاواتن کڤد نبي.",
+    "٤. ممڤوجوق ابو طالب سوڤاي مڠهالڠ نبي.",
+    "٥. مڽيکسا اورڠ اسلام يڠ لمه ڤرتي بلال دان کلوارݢ ياسر.",
+    "٦. ممبويکوت بني هاشيم د لمبه ابو طالب.",
+    "٧. ملاونتر نجس کأتس نبي کتيک بݢيندا برسولات.",
+    "٨. مرانچڠ اونتوق ممبونوه نبي.",
+    "٩. مڠهالڠ اورڠ لوار درڤد مندڠر داکوه نبي."
+   ],
+   "jawapanContohRumi": [
+    "1. Memperlekeh dan mengejek Nabi.",
+    "2. Menuduh Nabi sebagai penyair dan tukang sihir.",
+    "3. Menawarkan harta, pangkat dan jawatan kepada Nabi.",
+    "4. Memujuk Abu Talib supaya menghalang Nabi.",
+    "5. Menyeksa orang Islam yang lemah seperti Bilal dan keluarga Yasir.",
+    "6. Memboikot Bani Hasyim di lembah Abu Talib.",
+    "7. Melontar najis ke atas Nabi ketika baginda bersolat.",
+    "8. Merancang untuk membunuh Nabi.",
+    "9. Menghalang orang luar daripada mendengar dakwah Nabi."
+   ],
+   "id": "sirah-c4"
+  },
+  {
+   "bahagian": "C",
+   "jenis": "tulis",
+   "soalan": "ڽاتاکن انم چارا نبي محمد مڠهادڤي تنتڠن کأوم قريش.",
+   "rumi": "Nyatakan enam cara Nabi Muhammad menghadapi tentangan kaum Quraisy.",
+   "markah": 6,
+   "idea": [
+    {
+     "maksud": "Bersabar dan tidak membalas kejahatan",
+     "kata": [
+      "sabar",
+      "bersabar",
+      "balas",
+      "صبر",
+      "برصبر",
+      "ممبالس",
+      "کجاهاتن",
+      "تيدق"
+     ]
+    },
+    {
+     "maksud": "Berdoa dan bertawakal kepada Allah",
+     "kata": [
+      "doa",
+      "berdoa",
+      "tawakal",
+      "دوءا",
+      "بردوءا",
+      "توکل",
+      "برتوکل",
+      "کفد",
+      "الله"
+     ]
+    },
+    {
+     "maksud": "Berdakwah secara sulit pada peringkat awal",
+     "kata": [
+      "sulit",
+      "peringkat awal",
+      "سوليت",
+      "داکوه",
+      "برداکوه",
+      "ڤرينݢکت",
+      "اول"
+     ]
+    },
+    {
+     "maksud": "Berhijrah ke Habsyah",
+     "kata": [
+      "habsyah",
+      "hijrah",
+      "نجاشي",
+      "هبشة",
+      "هجره"
+     ]
+    },
+    {
+     "maksud": "Berhijrah ke Madinah",
+     "kata": [
+      "madinah",
+      "yathrib",
+      "مدينه",
+      "يثرب"
+     ]
+    },
+    {
+     "maksud": "Berakhlak mulia dan lemah lembut terhadap penentang",
+     "kata": [
+      "akhlak",
+      "lemah lembut",
+      "اخلاق",
+      "لمه ليمبوت",
+      "براخلاق",
+      "موليا",
+      "لمه",
+      "ليمبوت",
+      "ترهادڤ",
+      "ڤننتڠ"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "١. برصبر دان تيدق ممبالس کجاهاتن.",
+    "٢. بردوءا دان برتوکل کفد الله.",
+    "٣. برداکوه سچارا سوليت ڤد ڤرينݢکت اول.",
+    "٤. برهجره ک هبشة.",
+    "٥. برهجره ک مدينه.",
+    "٦. براخلاق موليا دان لمه ليمبوت ترهادڤ ڤننتڠ."
+   ],
+   "jawapanContohRumi": [
+    "1. Bersabar dan tidak membalas kejahatan.",
+    "2. Berdoa dan bertawakal kepada Allah.",
+    "3. Berdakwah secara sulit pada peringkat awal.",
+    "4. Berhijrah ke Habsyah.",
+    "5. Berhijrah ke Madinah.",
+    "6. Berakhlak mulia dan lemah lembut terhadap penentang."
+   ],
+   "id": "sirah-c5"
+  },
+  {
+   "bahagian": "C",
+   "jenis": "tulis",
+   "soalan": "برايکن انم سبب کأوم قريش منولق داکوه نبي محمد.",
+   "rumi": "Berikan enam sebab kaum Quraisy menolak dakwah Nabi Muhammad.",
+   "markah": 6,
+   "idea": [
+    {
+     "maksud": "Takut kehilangan kedudukan dan pengaruh",
+     "kata": [
+      "kedudukan",
+      "pangkat",
+      "pengaruh",
+      "کدودوکن",
+      "ڤڠاروه"
+     ]
+    },
+    {
+     "maksud": "Terlalu sayang kepada agama nenek moyang",
+     "kata": [
+      "nenek moyang",
+      "agama",
+      "ننيق موياڠ",
+      "اݢام",
+      "ترلالو",
+      "سايڠ",
+      "ننيق",
+      "موياڠ"
+     ]
+    },
+    {
+     "maksud": "Takut kehilangan harta dan perniagaan",
+     "kata": [
+      "harta",
+      "perniagaan",
+      "هرتا",
+      "ڤرنيݢاءن"
+     ]
+    },
+    {
+     "maksud": "Dengki dan hasad kepada Nabi",
+     "kata": [
+      "dengki",
+      "hasad",
+      "iri hati",
+      "دڠکي",
+      "حسد",
+      "نبي"
+     ]
+    },
+    {
+     "maksud": "Takut umat Islam menjadi kuat",
+     "kata": [
+      "kuat",
+      "کواس",
+      "تاکوت",
+      "امت",
+      "منجادي",
+      "اسلام"
+     ]
+    },
+    {
+     "maksud": "Dipengaruhi oleh pemimpin yang menentang seperti Abu Jahal dan Abu Lahab",
+     "kata": [
+      "abu jahal",
+      "abu lahab",
+      "ابو جهل",
+      "ابو لهب",
+      "دڤڠاروهي",
+      "اوليه",
+      "ڤميمڤين",
+      "مننتڠ",
+      "ڤرتي",
+      "ابو",
+      "جهل",
+      "لهب"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "١. تاکوت کهيلاڠن کدودوکن دان ڤڠاروه.",
+    "٢. ترلالو سايڠ کفد اݢام ننيق موياڠ.",
+    "٣. تاکوت کهيلاڠن هرتا دان ڤرنيݢاءن.",
+    "٤. دڠکي دان حسد کفد نبي.",
+    "٥. تاکوت امت اسلام منجادي کواس.",
+    "٦. دڤڠاروهي اوليه ڤميمڤين يڠ مننتڠ ڤرتي ابو جهل دان ابو لهب."
+   ],
+   "jawapanContohRumi": [
+    "1. Takut kehilangan kedudukan dan pengaruh.",
+    "2. Terlalu sayang kepada agama nenek moyang.",
+    "3. Takut kehilangan harta dan perniagaan.",
+    "4. Dengki dan hasad kepada Nabi.",
+    "5. Takut umat Islam menjadi kuat.",
+    "6. Dipengaruhi oleh pemimpin yang menentang seperti Abu Jahal dan Abu Lahab."
+   ],
+   "id": "sirah-c6"
+  },
+  {
+   "bahagian": "C",
+   "jenis": "tulis",
+   "soalan": "برايکن لاڤن حكمه ڤريستيوا إسراء دان معراج.",
+   "rumi": "Berikan lapan hikmah peristiwa Isra' dan Mikraj.",
+   "markah": 8,
+   "idea": [
+    {
+     "maksud": "Perintah solat lima waktu kepada umat Islam",
+     "kata": [
+      "solat",
+      "lima waktu",
+      "صلوة",
+      "سولات",
+      "ڤرينته",
+      "ليم",
+      "وقتو"
+     ]
+    },
+    {
+     "maksud": "Menguatkan iman Nabi selepas tahun duka",
+     "kata": [
+      "iman",
+      "kuat",
+      "tahun duka",
+      "ايمان",
+      "مڠواتکن",
+      "سلڤس",
+      "تاهون",
+      "دوک"
+     ]
+    },
+    {
+     "maksud": "Menghiburkan Nabi yang bersedih",
+     "kata": [
+      "hibur",
+      "menghiburkan",
+      "هيبور",
+      "مڠهيبورکن",
+      "برسديه"
+     ]
+    },
+    {
+     "maksud": "Ujian keimanan kepada umat Islam",
+     "kata": [
+      "ujian",
+      "percaya",
+      "اوجين",
+      "ڤرچاي",
+      "کأيمانن"
+     ]
+    },
+    {
+     "maksud": "Bukti kekuasaan Allah",
+     "kata": [
+      "kekuasaan",
+      "kudrat",
+      "کواس",
+      "قدرة",
+      "بوکتي",
+      "ککواساءن",
+      "الله"
+     ]
+    },
+    {
+     "maksud": "Nabi bertemu para nabi dan rasul",
+     "kata": [
+      "bertemu",
+      "nabi",
+      "برتمو",
+      "نبي",
+      "ڤارا",
+      "رسول"
+     ]
+    },
+    {
+     "maksud": "Menunjukkan kemuliaan Nabi Muhammad",
+     "kata": [
+      "kemuliaan",
+      "kamuliaan",
+      "موليا",
+      "کمولياءن",
+      "منونجوقکن",
+      "محمد"
+     ]
+    },
+    {
+     "maksud": "Solat menjadi tiang agama Islam",
+     "kata": [
+      "tiang agama",
+      "تيڠ اݢام",
+      "سولات",
+      "منجادي",
+      "تيڠ",
+      "اݢام"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "١. ڤرينته سولات ليم وقتو کڤد امت اسلام.",
+    "٢. مڠواتکن ايمان نبي سلڤس تاهون دوک.",
+    "٣. مڠهيبورکن نبي يڠ برسديه.",
+    "٤. اوجين کأيمانن کڤد امت اسلام.",
+    "٥. بوکتي ککواساءن الله.",
+    "٦. نبي برتمو دڠن ڤارا نبي دان رسول.",
+    "٧. منونجوقکن کمولياءن نبي محمد.",
+    "٨. سولات منجادي تيڠ اݢام اسلام."
+   ],
+   "jawapanContohRumi": [
+    "1. Perintah solat lima waktu kepada umat Islam.",
+    "2. Menguatkan iman Nabi selepas tahun duka.",
+    "3. Menghiburkan Nabi yang bersedih.",
+    "4. Ujian keimanan kepada umat Islam.",
+    "5. Bukti kekuasaan Allah.",
+    "6. Nabi bertemu dengan para nabi dan rasul.",
+    "7. Menunjukkan kemuliaan Nabi Muhammad.",
+    "8. Solat menjadi tiang agama Islam."
+   ],
+   "id": "sirah-c7"
+  },
+  {
+   "bahagian": "C",
+   "jenis": "tulis",
+   "soalan": "ڽاتاکن انم سبب نبي محمد برهجره ک مدينه.",
+   "rumi": "Nyatakan enam sebab Nabi Muhammad berhijrah ke Madinah.",
+   "markah": 6,
+   "idea": [
+    {
+     "maksud": "Perintah daripada Allah",
+     "kata": [
+      "perintah",
+      "allah",
+      "ڤرينته",
+      "الله"
+     ]
+    },
+    {
+     "maksud": "Tentangan kaum Quraisy semakin hebat",
+     "kata": [
+      "tentangan",
+      "quraisy",
+      "تنتڠن",
+      "قريش",
+      "کأوم",
+      "سماکين",
+      "هبيت"
+     ]
+    },
+    {
+     "maksud": "Ada Bai'ah Aqabah daripada penduduk Madinah",
+     "kata": [
+      "bai'ah",
+      "aqabah",
+      "بيعة",
+      "عقبة",
+      "اداڽ",
+      "بايعة"
+     ]
+    },
+    {
+     "maksud": "Penduduk Madinah bersedia melindungi Islam",
+     "kata": [
+      "madinah",
+      "melindungi",
+      "مدينه",
+      "مليندوڠي",
+      "برسديا"
+     ]
+    },
+    {
+     "maksud": "Menyelamatkan dakwah Islam",
+     "kata": [
+      "selamat",
+      "dakwah",
+      "سلمات",
+      "داکوه",
+      "مڽلامتکن"
+     ]
+    },
+    {
+     "maksud": "Hendak menegakkan negara Islam di Madinah",
+     "kata": [
+      "negara",
+      "menegakkan",
+      "نݢارا",
+      "منݢقکن",
+      "هندق"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "١. ڤرينته درڤد الله.",
+    "٢. تنتڠن کأوم قريش سماکين هبيت.",
+    "٣. اداڽ بايعة عقبة درڤد ڤندودوق مدينه.",
+    "٤. ڤندودوق مدينه برسديا مليندوڠي اسلام.",
+    "٥. مڽلامتکن داکوه اسلام.",
+    "٦. هندق منݢقکن نݢارا اسلام د مدينه."
+   ],
+   "jawapanContohRumi": [
+    "1. Perintah daripada Allah.",
+    "2. Tentangan kaum Quraisy semakin hebat.",
+    "3. Adanya Bai'ah Aqabah daripada penduduk Madinah.",
+    "4. Penduduk Madinah bersedia melindungi Islam.",
+    "5. Menyelamatkan dakwah Islam.",
+    "6. Hendak menegakkan negara Islam di Madinah."
+   ],
+   "id": "sirah-c8"
+  },
+  {
+   "bahagian": "C",
+   "jenis": "tulis",
+   "soalan": "ڽاتاکن توجوه ڤريستيوا دالم ڤرجالنن هجره نبي محمد ک مدينه.",
+   "rumi": "Nyatakan tujuh peristiwa dalam perjalanan hijrah Nabi Muhammad ke Madinah.",
+   "markah": 7,
+   "idea": [
+    {
+     "maksud": "Ali tidur di tempat tidur Nabi",
+     "kata": [
+      "ali",
+      "tempat tidur",
+      "علي",
+      "تمڤت تيدور",
+      "تيدور",
+      "تمڤت"
+     ]
+    },
+    {
+     "maksud": "Nabi keluar pada waktu malam bersama Abu Bakar",
+     "kata": [
+      "abu bakar",
+      "malam",
+      "ابو بکر",
+      "مالام",
+      "کلوار",
+      "وقتو",
+      "برسام",
+      "ابو",
+      "بکر"
+     ]
+    },
+    {
+     "maksud": "Bersembunyi di Gua Thur selama tiga hari",
+     "kata": [
+      "gua thur",
+      "thur",
+      "ݢوا ثور",
+      "ثور",
+      "برسمبونيي",
+      "سلاما",
+      "تيݢ",
+      "هاري"
+     ]
+    },
+    {
+     "maksud": "Laba-laba membuat sarang di pintu gua",
+     "kata": [
+      "laba-laba",
+      "sarang",
+      "لاب-لاب",
+      "سارڠ",
+      "لاب",
+      "ممبوات",
+      "ڤينتو"
+     ]
+    },
+    {
+     "maksud": "Perjalanan menggunakan unta Qaswa",
+     "kata": [
+      "qaswa",
+      "unta",
+      "قصواء",
+      "اونتا",
+      "ڤرجالنن",
+      "مڠݢوناکن"
+     ]
+    },
+    {
+     "maksud": "Sampai di Quba dan membina Masjid Quba",
+     "kata": [
+      "quba",
+      "masjid",
+      "قباء",
+      "مسجد",
+      "سماڤاي",
+      "ممبينا"
+     ]
+    },
+    {
+     "maksud": "Disambut oleh penduduk Madinah",
+     "kata": [
+      "madinah",
+      "sambut",
+      "مدينه",
+      "سمبوت",
+      "دسمبوت",
+      "اوليه",
+      "ڤندودوق"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "١. علي تيدور د تمڤت تيدور نبي.",
+    "٢. نبي کلوار ڤد وقتو مالام برسام ابو بکر.",
+    "٣. برسمبونيي د ݢوا ثور سلاما تيݢ هاري.",
+    "٤. لاب-لاب ممبوات سارڠ د ڤينتو ݢوا.",
+    "٥. ڤرجالنن مڠݢوناکن اونتا قصواء.",
+    "٦. سماڤاي د قباء دان ممبينا مسجد قباء.",
+    "٧. دسمبوت اوليه ڤندودوق مدينه."
+   ],
+   "jawapanContohRumi": [
+    "1. Ali tidur di tempat tidur Nabi.",
+    "2. Nabi keluar pada waktu malam bersama Abu Bakar.",
+    "3. Bersembunyi di Gua Thur selama tiga hari.",
+    "4. Laba-laba membuat sarang di pintu gua.",
+    "5. Perjalanan menggunakan unta Qaswa.",
+    "6. Sampai di Quba dan membina Masjid Quba.",
+    "7. Disambut oleh penduduk Madinah."
+   ],
+   "id": "sirah-c9"
+  },
+  {
+   "bahagian": "C",
+   "jenis": "tulis",
+   "soalan": "سنارايکن لاڤن کاندوڠن ڤياݢم مدينه.",
+   "rumi": "Senaraikan lapan kandungan Piagam Madinah.",
+   "markah": 8,
+   "idea": [
+    {
+     "maksud": "Nabi Muhammad sebagai pemimpin tertinggi",
+     "kata": [
+      "pemimpin",
+      "نبي",
+      "ڤميمڤين",
+      "ترتيڠݢي"
+     ]
+    },
+    {
+     "maksud": "Kebebasan beragama bagi semua penduduk",
+     "kata": [
+      "agama",
+      "bebas",
+      "اݢام",
+      "بياس",
+      "کبيباسن",
+      "براݢام",
+      "باݢي"
+     ]
+    },
+    {
+     "maksud": "Semua penduduk Madinah dianggap satu umat",
+     "kata": [
+      "umat",
+      "satu",
+      "امت",
+      "ساتو",
+      "دأڠݢڤ"
+     ]
+    },
+    {
+     "maksud": "Kerjasama mempertahankan Madinah daripada musuh",
+     "kata": [
+      "musuh",
+      "pertahankan",
+      "موسوه",
+      "ڤرتاهانکن",
+      "کرجاسام",
+      "ممڤرتاهانکن"
+     ]
+    },
+    {
+     "maksud": "Pertikaian dirujuk kepada Nabi Muhammad",
+     "kata": [
+      "pertikaian",
+      "rujuk",
+      "ڤرتيکاين",
+      "روجوق",
+      "دروجوق",
+      "کفد"
+     ]
+    },
+    {
+     "maksud": "Tidak dibenarkan memberi perlindungan kepada musuh",
+     "kata": [
+      "perlindungan",
+      "ڤرليندوڠن",
+      "موسوه",
+      "دبينرکن",
+      "ممبري",
+      "تيدق"
+     ]
+    },
+    {
+     "maksud": "Orang Yahudi yang setia diberi hak yang sama",
+     "kata": [
+      "yahudi",
+      "hak",
+      "يهود",
+      "حق",
+      "اورڠ",
+      "ستيا",
+      "دبري",
+      "سام"
+     ]
+    },
+    {
+     "maksud": "Setiap kabilah bertanggungjawab menjaga keselamatan ahlinya",
+     "kata": [
+      "kabilah",
+      "tanggungjawab",
+      "قبيله",
+      "تڠݢوڠجواب",
+      "ستياڤ",
+      "برتڠݢوڠجواب",
+      "منجاݢ",
+      "کسلامتن",
+      "اهلڽ"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "١. نبي محمد سباݢاي ڤميمڤين ترتيڠݢي.",
+    "٢. کبيباسن براݢام باݢي سموا ڤندودوق.",
+    "٣. سموا ڤندودوق مدينه دأڠݢڤ ساتو امت.",
+    "٤. کرجاسام ممڤرتاهانکن مدينه درڤد موسوه.",
+    "٥. ڤرتيکاين دروجوق کفد نبي محمد.",
+    "٦. تيدق دبينرکن ممبري ڤرليندوڠن کڤد موسوه.",
+    "٧. اورڠ يهود يڠ ستيا دبري حق يڠ سام.",
+    "٨. ستياڤ قبيله برتڠݢوڠجواب منجاݢ کسلامتن اهلڽ."
+   ],
+   "jawapanContohRumi": [
+    "1. Nabi Muhammad sebagai pemimpin tertinggi.",
+    "2. Kebebasan beragama bagi semua penduduk.",
+    "3. Semua penduduk Madinah dianggap satu umat.",
+    "4. Kerjasama mempertahankan Madinah daripada musuh.",
+    "5. Pertikaian dirujuk kepada Nabi Muhammad.",
+    "6. Tidak dibenarkan memberi perlindungan kepada musuh.",
+    "7. Orang Yahudi yang setia diberi hak yang sama.",
+    "8. Setiap kabilah bertanggungjawab menjaga keselamatan ahlinya."
+   ],
+   "id": "sirah-c10"
+  },
+  {
+   "bahagian": "C",
+   "jenis": "tulis",
+   "soalan": "برايکن انم کڤنتيڠن ڤياݢم مدينه.",
+   "rumi": "Berikan enam kepentingan Piagam Madinah.",
+   "markah": 6,
+   "idea": [
+    {
+     "maksud": "Mewujudkan perpaduan penduduk Madinah",
+     "kata": [
+      "perpaduan",
+      "ڤرڤادوان",
+      "مأووجودکن",
+      "ڤندودوق",
+      "مدينه"
+     ]
+    },
+    {
+     "maksud": "Menjamin keamanan dan kesejahteraan",
+     "kata": [
+      "aman",
+      "sejahtera",
+      "امان",
+      "سجاهترا",
+      "منجامين",
+      "کأامانن",
+      "کسجاهتراءن"
+     ]
+    },
+    {
+     "maksud": "Memberi kebebasan beragama",
+     "kata": [
+      "agama",
+      "bebas",
+      "اݢام",
+      "بياس",
+      "ممبري",
+      "کبيباسن",
+      "براݢام"
+     ]
+    },
+    {
+     "maksud": "Menyelesaikan pertikaian dengan adil",
+     "kata": [
+      "adil",
+      "pertikaian",
+      "عادل",
+      "ڤرتيکاين",
+      "مڽلسايکن"
+     ]
+    },
+    {
+     "maksud": "Mengukuhkan kedudukan umat Islam",
+     "kata": [
+      "kukuh",
+      "umat islam",
+      "کوکوه",
+      "امت اسلام",
+      "مڠوکوهکن",
+      "کدودوکن",
+      "امت",
+      "اسلام"
+     ]
+    },
+    {
+     "maksud": "Menjadi contoh pemerintahan yang adil kepada negara lain",
+     "kata": [
+      "pemerintahan",
+      "contoh",
+      "ڤمرينتهن",
+      "چونتو",
+      "منجادي",
+      "نݢارا",
+      "لاءين"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "١. مأووجودکن ڤرڤادوان ڤندودوق مدينه.",
+    "٢. منجامين کأامانن دان کسجاهتراءن.",
+    "٣. ممبري کبيباسن براݢام.",
+    "٤. مڽلسايکن ڤرتيکاين دڠن عادل.",
+    "٥. مڠوکوهکن کدودوکن امت اسلام.",
+    "٦. منجادي چونتو ڤمرينتهن يڠ عادل کڤد نݢارا لاءين."
+   ],
+   "jawapanContohRumi": [
+    "1. Mewujudkan perpaduan penduduk Madinah.",
+    "2. Menjamin keamanan dan kesejahteraan.",
+    "3. Memberi kebebasan beragama.",
+    "4. Menyelesaikan pertikaian dengan adil.",
+    "5. Mengukuhkan kedudukan umat Islam.",
+    "6. Menjadi contoh pemerintahan yang adil kepada negara lain."
+   ],
+   "id": "sirah-c11"
+  },
+  {
+   "bahagian": "C",
+   "jenis": "tulis",
+   "soalan": "برايکن توجوه سبب کمنأڠن امت اسلام دالم ڤرڠ بدر.",
+   "rumi": "Berikan tujuh sebab kemenangan umat Islam dalam Perang Badar.",
+   "markah": 7,
+   "idea": [
+    {
+     "maksud": "Pertolongan dan bantuan Allah",
+     "kata": [
+      "pertolongan",
+      "allah",
+      "ڤرتولوڠن",
+      "الله",
+      "بنتوان"
+     ]
+    },
+    {
+     "maksud": "Kesatuan dan semangat juang yang tinggi",
+     "kata": [
+      "semangat",
+      "juang",
+      "سمأڠت",
+      "جواڠ",
+      "کساتوان",
+      "سماڠت",
+      "تيڠݢي"
+     ]
+    },
+    {
+     "maksud": "Strategi Nabi menguasai sumber air",
+     "kata": [
+      "strategi",
+      "air",
+      "ستراتيجي",
+      "اءير",
+      "مڠواساءي",
+      "سومبر"
+     ]
+    },
+    {
+     "maksud": "Kepatuhan sahabat kepada Nabi",
+     "kata": [
+      "patuh",
+      "taat",
+      "ڤاتوه",
+      "تاعت",
+      "کڤاتوهن"
+     ]
+    },
+    {
+     "maksud": "Doa Nabi kepada Allah",
+     "kata": [
+      "doa",
+      "دوءا"
+     ]
+    },
+    {
+     "maksud": "Musyawarah Nabi bersama para sahabat",
+     "kata": [
+      "musyawarah",
+      "mesyuarat",
+      "مشاورت",
+      "مشوارت",
+      "برسام",
+      "ڤارا"
+     ]
+    },
+    {
+     "maksud": "Keberanian Saidina Hamzah dan Saidina Ali",
+     "kata": [
+      "hamzah",
+      "ali",
+      "حمزة",
+      "علي",
+      "کبرانين",
+      "سيدنا"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "١. ڤرتولوڠن دان بنتوان الله.",
+    "٢. کساتوان دان سماڠت جواڠ يڠ تيڠݢي.",
+    "٣. ستراتيجي نبي مڠواساءي سومبر اءير.",
+    "٤. کڤاتوهن صحابة کفد نبي.",
+    "٥. دوءا نبي کفد الله.",
+    "٦. مشاورت نبي برسام ڤارا صحابة.",
+    "٧. کبرانين سيدنا حمزة دان سيدنا علي."
+   ],
+   "jawapanContohRumi": [
+    "1. Pertolongan dan bantuan Allah.",
+    "2. Kesatuan dan semangat juang yang tinggi.",
+    "3. Strategi Nabi menguasai sumber air.",
+    "4. Kepatuhan sahabat kepada Nabi.",
+    "5. Doa Nabi kepada Allah.",
+    "6. Musyawarah Nabi bersama para sahabat.",
+    "7. Keberanian Saidina Hamzah dan Saidina Ali."
+   ],
+   "id": "sirah-c12"
+  },
+  {
+   "bahagian": "C",
+   "jenis": "tulis",
+   "soalan": "برايکن لاڤن ڤڠاجرن درڤد ڤرڠ احد.",
+   "rumi": "Berikan lapan pengajaran daripada Perang Uhud.",
+   "markah": 8,
+   "idea": [
+    {
+     "maksud": "Wajib patuh kepada perintah pemimpin",
+     "kata": [
+      "patuh",
+      "pemimpin",
+      "ڤاتوه",
+      "ڤميمڤين",
+      "واجب",
+      "ڤرينته"
+     ]
+    },
+    {
+     "maksud": "Jangan tamak kepada harta dunia",
+     "kata": [
+      "tamak",
+      "harta",
+      "تامق",
+      "هرتا",
+      "دنيا"
+     ]
+    },
+    {
+     "maksud": "Sabar menghadapi ujian Allah",
+     "kata": [
+      "sabar",
+      "ujian",
+      "صبر",
+      "اوجين",
+      "مڠهادڤي",
+      "الله"
+     ]
+    },
+    {
+     "maksud": "Perjuangan memerlukan pengorbanan",
+     "kata": [
+      "korban",
+      "pengorbanan",
+      "قربان",
+      "ڤڠوربانن",
+      "ممرلوکن"
+     ]
+    },
+    {
+     "maksud": "Perpaduan penting untuk kejayaan",
+     "kata": [
+      "perpaduan",
+      "ڤرڤادوان",
+      "ساتوڤادو",
+      "ڤنتيڠ"
+     ]
+    },
+    {
+     "maksud": "Jangan mudah terpedaya dengan tipu daya musuh",
+     "kata": [
+      "tipu daya",
+      "musuh",
+      "تيڤو داي",
+      "موسوه",
+      "موده",
+      "ترڤداي",
+      "تيڤو",
+      "داي"
+     ]
+    },
+    {
+     "maksud": "Disiplin menjamin kejayaan dalam perjuangan",
+     "kata": [
+      "disiplin",
+      "ديسيڤلين",
+      "منجامين"
+     ]
+    },
+    {
+     "maksud": "Jangan bongkak selepas mencapai kejayaan",
+     "kata": [
+      "bongkak",
+      "بوڠق",
+      "کجاياءن",
+      "سلڤس",
+      "منچاڤاي"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "١. واجب ڤاتوه کفد ڤرينته ڤميمڤين.",
+    "٢. جاڠن تامق کفد هرتا دنيا.",
+    "٣. صبر مڠهادڤي اوجين الله.",
+    "٤. ڤرجواڠن ممرلوکن ڤڠوربانن.",
+    "٥. ڤرڤادوان ڤنتيڠ اونتوق کجاياءن.",
+    "٦. جاڠن موده ترڤداي دڠن تيڤو داي موسوه.",
+    "٧. ديسيڤلين منجامين کجاياءن دالم ڤرجواڠن.",
+    "٨. جاڠن بوڠق سلڤس منچاڤاي کجاياءن."
+   ],
+   "jawapanContohRumi": [
+    "1. Wajib patuh kepada perintah pemimpin.",
+    "2. Jangan tamak kepada harta dunia.",
+    "3. Sabar menghadapi ujian Allah.",
+    "4. Perjuangan memerlukan pengorbanan.",
+    "5. Perpaduan penting untuk kejayaan.",
+    "6. Jangan mudah terpedaya dengan tipu daya musuh.",
+    "7. Disiplin menjamin kejayaan dalam perjuangan.",
+    "8. Jangan bongkak selepas mencapai kejayaan."
+   ],
+   "id": "sirah-c13"
+  },
+  {
+   "bahagian": "C",
+   "jenis": "tulis",
+   "soalan": "سنارايکن لاڤن ايسي ڤرجنجين هدايبه.",
+   "rumi": "Senaraikan lapan isi Perjanjian Hudaibiyah.",
+   "markah": 8,
+   "idea": [
+    {
+     "maksud": "Genjatan senjata selama sepuluh tahun",
+     "kata": [
+      "genjatan senjata",
+      "sepuluh tahun",
+      "ݢنجاتن سنجات",
+      "سڤولوه تاهون",
+      "ݢنجاتن",
+      "سنجات",
+      "سڤولوه"
+     ]
+    },
+    {
+     "maksud": "Umat Islam boleh mengerjakan umrah tahun berikutnya",
+     "kata": [
+      "umrah",
+      "عمرة",
+      "امرة",
+      "امت",
+      "مڠرجاءکن",
+      "برايکوتڽ",
+      "بوليه"
+     ]
+    },
+    {
+     "maksud": "Kabilah Arab bebas memilih pihak masing-masing",
+     "kata": [
+      "kabilah",
+      "bebas",
+      "قبيله",
+      "بياس",
+      "عرب",
+      "مميليه",
+      "ڤيهق",
+      "ماسيڠ"
+     ]
+    },
+    {
+     "maksud": "Orang yang masuk Islam tanpa izin penjaga dihantar balik",
+     "kata": [
+      "masuk islam",
+      "hantar balik",
+      "ماسوق اسلام",
+      "هانتر باليق",
+      "اورڠ",
+      "ماسوق",
+      "تنڤا",
+      "ايزين",
+      "ڤنجاݢ",
+      "ديهانتر",
+      "باليق"
+     ]
+    },
+    {
+     "maksud": "Tiada peperangan selama tempoh perjanjian",
+     "kata": [
+      "peperangan",
+      "damai",
+      "ڤڤرڠن",
+      "داماي",
+      "تياد",
+      "تيمڤوه",
+      "ڤرجنجين"
+     ]
+    },
+    {
+     "maksud": "Quraisy mengiktiraf kerajaan Islam Madinah",
+     "kata": [
+      "iktiraf",
+      "قريش",
+      "إعتراف",
+      "مڠإعتراف",
+      "کرجاءن",
+      "مدينه"
+     ]
+    },
+    {
+     "maksud": "Nabi menerima wahyu Surah al-Fath tentang kemenangan",
+     "kata": [
+      "al-fath",
+      "الفتح",
+      "وحي",
+      "منريما",
+      "سورة",
+      "تنتڠ",
+      "کمنأڠن",
+      "فتح"
+     ]
+    },
+    {
+     "maksud": "Sahabat berasa sedih tetapi tetap taat kepada Nabi",
+     "kata": [
+      "sedih",
+      "taat",
+      "سيديه",
+      "تاعت",
+      "صحابة",
+      "براسا",
+      "تتاڤي",
+      "تتاڤ",
+      "کفد"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "١. ݢنجاتن سنجات سلاما سڤولوه تاهون.",
+    "٢. امت اسلام بوليه مڠرجاءکن عمرة ڤد تاهون برايکوتڽ.",
+    "٣. قبيله عرب بياس مميليه ڤيهق ماسيڠ-ماسيڠ.",
+    "٤. اورڠ يڠ ماسوق اسلام تنڤا ايزين ڤنجاݢ ديهانتر باليق.",
+    "٥. تياد ڤڤرڠن سلاما تيمڤوه ڤرجنجين.",
+    "٦. قريش مڠإعتراف کرجاءن اسلام مدينه.",
+    "٧. نبي منريما وحي سورة الفتح تنتڠ کمنأڠن.",
+    "٨. صحابة براسا سيديه تتاڤي تتاڤ تاعت کفد نبي."
+   ],
+   "jawapanContohRumi": [
+    "1. Genjatan senjata selama sepuluh tahun.",
+    "2. Umat Islam boleh mengerjakan umrah pada tahun berikutnya.",
+    "3. Kabilah Arab bebas memilih pihak masing-masing.",
+    "4. Orang yang masuk Islam tanpa izin penjaga dihantar balik.",
+    "5. Tiada peperangan selama tempoh perjanjian.",
+    "6. Quraisy mengiktiraf kerajaan Islam Madinah.",
+    "7. Nabi menerima wahyu Surah al-Fath tentang kemenangan.",
+    "8. Sahabat berasa sedih tetapi tetap taat kepada Nabi."
+   ],
+   "id": "sirah-c14"
+  },
+  {
+   "bahagian": "C",
+   "jenis": "tulis",
+   "soalan": "برايکن انم حكمه ڤرجنجين هدايبه.",
+   "rumi": "Berikan enam hikmah Perjanjian Hudaibiyah.",
+   "markah": 6,
+   "idea": [
+    {
+     "maksud": "Dakwah Islam dapat disebarkan dengan aman",
+     "kata": [
+      "dakwah",
+      "sebar",
+      "داکوه",
+      "سبار",
+      "داڤت",
+      "دسبارکن",
+      "امان"
+     ]
+    },
+    {
+     "maksud": "Umat Islam diiktiraf sebagai satu kuasa",
+     "kata": [
+      "iktiraf",
+      "kuasa",
+      "إعتراف",
+      "کواس",
+      "امت",
+      "دإعتراف",
+      "ساتو"
+     ]
+    },
+    {
+     "maksud": "Membuka jalan pembukaan Mekah",
+     "kata": [
+      "mekah",
+      "مکة",
+      "ڤمبوکاءن",
+      "ممبوک"
+     ]
+    },
+    {
+     "maksud": "Ramai orang masuk Islam",
+     "kata": [
+      "masuk islam",
+      "ramai",
+      "ماسوق اسلام",
+      "راماي",
+      "اورڠ",
+      "ماسوق"
+     ]
+    },
+    {
+     "maksud": "Mengukuhkan keimanan para sahabat",
+     "kata": [
+      "iman",
+      "sahabat",
+      "ايمان",
+      "صحابة",
+      "مڠوکوهکن",
+      "کأيمانن",
+      "ڤارا"
+     ]
+    },
+    {
+     "maksud": "Menjadi asas kepada perjanjian damai dengan kabilah lain",
+     "kata": [
+      "asas",
+      "perjanjian damai",
+      "اساس",
+      "ڤرجنجين داماي",
+      "منجادي",
+      "ڤرجنجين",
+      "داماي",
+      "قبيله",
+      "لاءين"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "١. داکوه اسلام داڤت دسبارکن دڠن امان.",
+    "٢. امت اسلام دإعتراف سباݢاي ساتو کواس.",
+    "٣. ممبوک ڤمبوکاءن مکة.",
+    "٤. راماي اورڠ ماسوق اسلام.",
+    "٥. مڠوکوهکن کأيمانن ڤارا صحابة.",
+    "٦. منجادي اساس کڤد ڤرجنجين داماي دڠن قبيله لاءين."
+   ],
+   "jawapanContohRumi": [
+    "1. Dakwah Islam dapat disebarkan dengan aman.",
+    "2. Umat Islam diiktiraf sebagai satu kuasa.",
+    "3. Membuka jalan pembukaan Mekah.",
+    "4. Ramai orang masuk Islam.",
+    "5. Mengukuhkan keimanan para sahabat.",
+    "6. Menjadi asas kepada perjanjian damai dengan kabilah lain."
+   ],
+   "id": "sirah-c15"
+  },
+  {
+   "bahagian": "C",
+   "jenis": "tulis",
+   "soalan": "ڽاتاکن توجوه ڤريستيوا کتيک ڤمبوکاءن مکة.",
+   "rumi": "Nyatakan tujuh peristiwa ketika pembukaan Mekah.",
+   "markah": 7,
+   "idea": [
+    {
+     "maksud": "Quraisy melanggar Perjanjian Hudaibiyah",
+     "kata": [
+      "hudaibiyah",
+      "langgar",
+      "هدايبه",
+      "لاڠݢر",
+      "قريش",
+      "ملاڠݢر",
+      "ڤرجنجين"
+     ]
+    },
+    {
+     "maksud": "Tentera Islam seramai sepuluh ribu orang",
+     "kata": [
+      "sepuluh ribu",
+      "tentera",
+      "سڤولوه ريبو",
+      "تنتيرا",
+      "سراماي",
+      "سڤولوه",
+      "ريبو",
+      "اورڠ"
+     ]
+    },
+    {
+     "maksud": "Nabi mengampunkan penduduk Mekah",
+     "kata": [
+      "ampun",
+      "مڠامڤونکن",
+      "عفو"
+     ]
+    },
+    {
+     "maksud": "Berhala di Kaabah dimusnahkan",
+     "kata": [
+      "berhala",
+      "kaabah",
+      "برهالا",
+      "کعبة",
+      "ديموسنهکن"
+     ]
+    },
+    {
+     "maksud": "Penduduk Mekah masuk Islam",
+     "kata": [
+      "masuk islam",
+      "ماسوق اسلام",
+      "مکة",
+      "ماسوق"
+     ]
+    },
+    {
+     "maksud": "Nabi tawaduk menundukkan kepala ketika menaiki unta Qaswa",
+     "kata": [
+      "qaswa",
+      "tawaduk",
+      "قصواء",
+      "تواضع",
+      "منوندوقکن",
+      "کڤالا",
+      "مناءيکي",
+      "اونتا"
+     ]
+    },
+    {
+     "maksud": "Bilal melaungkan azan di atas Kaabah",
+     "kata": [
+      "bilal",
+      "azan",
+      "بلال",
+      "اذان",
+      "ملاونݢکن",
+      "أتس"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "١. قريش ملاڠݢر ڤرجنجين هدايبه.",
+    "٢. تنتيرا اسلام سراماي سڤولوه ريبو اورڠ.",
+    "٣. نبي مڠامڤونکن ڤندودوق مکة.",
+    "٤. برهالا د کعبة ديموسنهکن.",
+    "٥. ڤندودوق مکة ماسوق اسلام.",
+    "٦. نبي تواضع منوندوقکن کڤالا کتيک مناءيکي اونتا قصواء.",
+    "٧. بلال ملاونݢکن اذان د أتس کعبة."
+   ],
+   "jawapanContohRumi": [
+    "1. Quraisy melanggar Perjanjian Hudaibiyah.",
+    "2. Tentera Islam seramai sepuluh ribu orang.",
+    "3. Nabi mengampunkan penduduk Mekah.",
+    "4. Berhala di Kaabah dimusnahkan.",
+    "5. Penduduk Mekah masuk Islam.",
+    "6. Nabi tawaduk menundukkan kepala ketika menaiki unta Qaswa.",
+    "7. Bilal melaungkan azan di atas Kaabah."
+   ],
+   "id": "sirah-c16"
+  },
+  {
+   "bahagian": "C",
+   "jenis": "tulis",
+   "soalan": "سنارايکن توجوه ايسي خطبة حاجي وداع.",
+   "rumi": "Senaraikan tujuh isi khutbah Haji Wida'.",
+   "markah": 7,
+   "idea": [
+    {
+     "maksud": "Menegaskan keesaan Allah",
+     "kata": [
+      "keesaan",
+      "tauhid",
+      "کأإساءن",
+      "توحيد",
+      "منݢسکن",
+      "الله"
+     ]
+    },
+    {
+     "maksud": "Menghapuskan amalan jahiliah",
+     "kata": [
+      "jahiliah",
+      "جاهلية",
+      "مڠهاڤوسکن"
+     ]
+    },
+    {
+     "maksud": "Semua manusia sama taraf",
+     "kata": [
+      "sama taraf",
+      "سام تراف",
+      "سکسام",
+      "منوسيا",
+      "سام",
+      "تراف",
+      "سموا"
+     ]
+    },
+    {
+     "maksud": "Menjaga hak dan maruah wanita",
+     "kata": [
+      "wanita",
+      "hak",
+      "وانيتا",
+      "حق",
+      "منجاݢ",
+      "مارواه"
+     ]
+    },
+    {
+     "maksud": "Tidak boleh menumpahkan darah sesama Islam",
+     "kata": [
+      "darah",
+      "دم",
+      "داره",
+      "منومڤهکن",
+      "سسام",
+      "تيدق",
+      "بوليه",
+      "اسلام"
+     ]
+    },
+    {
+     "maksud": "Berpegang kepada Al-Quran dan Sunnah",
+     "kata": [
+      "quran",
+      "sunnah",
+      "قرءان",
+      "سنة",
+      "برڤيݢڠ",
+      "کفد",
+      "القرءان",
+      "السنة"
+     ]
+    },
+    {
+     "maksud": "Menghapuskan amalan riba",
+     "kata": [
+      "riba",
+      "ربا",
+      "مڠهاڤوسکن"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "١. منݢسکن کأإساءن الله.",
+    "٢. مڠهاڤوسکن عملن جاهلية.",
+    "٣. سموا منوسيا سام تراف.",
+    "٤. منجاݢ حق دان مارواه وانيتا.",
+    "٥. تيدق بوليه منومڤهکن داره سسام اسلام.",
+    "٦. برڤيݢڠ کفد القرءان دان السنة.",
+    "٧. مڠهاڤوسکن عملن ربا."
+   ],
+   "jawapanContohRumi": [
+    "1. Menegaskan keesaan Allah.",
+    "2. Menghapuskan amalan jahiliah.",
+    "3. Semua manusia sama taraf.",
+    "4. Menjaga hak dan maruah wanita.",
+    "5. Tidak boleh menumpahkan darah sesama Islam.",
+    "6. Berpegang kepada Al-Quran dan Sunnah.",
+    "7. Menghapuskan amalan riba."
+   ],
+   "id": "sirah-c17"
+  },
+  {
+   "bahagian": "C",
+   "jenis": "tulis",
+   "soalan": "ڽاتاکن سمبيلن اخلاق موليا نبي محمد.",
+   "rumi": "Nyatakan sembilan akhlak mulia Nabi Muhammad.",
+   "markah": 9,
+   "idea": [
+    {
+     "maksud": "Sidiq — sentiasa benar",
+     "kata": [
+      "sidiq",
+      "benar",
+      "صدق",
+      "بينر",
+      "صديق",
+      "سنتياس"
+     ]
+    },
+    {
+     "maksud": "Amanah — boleh dipercayai",
+     "kata": [
+      "amanah",
+      "dipercayai",
+      "امانة",
+      "دڤرچاي",
+      "بوليه"
+     ]
+    },
+    {
+     "maksud": "Tabligh — menyampaikan",
+     "kata": [
+      "tabligh",
+      "sampai",
+      "تبليغ",
+      "سمڤاي",
+      "مڽمڤايکن"
+     ]
+    },
+    {
+     "maksud": "Fatanah — bijaksana",
+     "kata": [
+      "fatanah",
+      "bijaksana",
+      "فطانة",
+      "بيجقسانا"
+     ]
+    },
+    {
+     "maksud": "Pemaaf",
+     "kata": [
+      "pemaaf",
+      "maaf",
+      "ڤماءف",
+      "معاف",
+      "مماءفکن",
+      "کسالهن"
+     ]
+    },
+    {
+     "maksud": "Penyayang",
+     "kata": [
+      "penyayang",
+      "sayang",
+      "ڤڽايڠ",
+      "سايڠ",
+      "کلوارݢ",
+      "کانق"
+     ]
+    },
+    {
+     "maksud": "Sabar menghadapi tentangan",
+     "kata": [
+      "sabar",
+      "صبر",
+      "برصبر",
+      "مڠهادڤي",
+      "تنتڠن",
+      "اوجين"
+     ]
+    },
+    {
+     "maksud": "Pemurah dan dermawan",
+     "kata": [
+      "pemurah",
+      "dermawan",
+      "ڤموراه",
+      "درموان",
+      "سوكا",
+      "ممبري",
+      "سدقه"
+     ]
+    },
+    {
+     "maksud": "Adil kepada semua orang",
+     "kata": [
+      "adil",
+      "عادل",
+      "کأديلن",
+      "کفد",
+      "تنڤا",
+      "مڠيرا",
+      "ڤڠکت",
+      "سموا"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "١. صديق — سنتياس بينر.",
+    "٢. امانة — بوليه دڤرچاي.",
+    "٣. تبليغ — مڽمڤايکن.",
+    "٤. فطانة — بيجقسانا.",
+    "٥. ڤماءف — مماءفکن کسالهن اورڠ.",
+    "٦. ڤڽايڠ — سايڠ اکن کلوارݢ دان کانق-کانق.",
+    "٧. صبر مڠهادڤي تنتڠن دان اوجين.",
+    "٨. ڤموراه دان درموان — سوكا ممبري سدقه.",
+    "٩. عادل کفد سموا اورڠ تنڤا مڠيرا ڤڠکت."
+   ],
+   "jawapanContohRumi": [
+    "1. Sidiq — sentiasa benar.",
+    "2. Amanah — boleh dipercayai.",
+    "3. Tabligh — menyampaikan.",
+    "4. Fatanah — bijaksana.",
+    "5. Pemaaf — memaafkan kesalahan orang.",
+    "6. Penyayang — sayang akan keluarga dan kanak-kanak.",
+    "7. Sabar menghadapi tentangan dan ujian.",
+    "8. Pemurah dan dermawan — suka memberi sedekah.",
+    "9. Adil kepada semua orang tanpa mengira pangkat."
+   ],
+   "id": "sirah-c18"
+  },
+  {
+   "bahagian": "C",
+   "jenis": "tulis",
+   "soalan": "ڽاتاکن انم ڤريستيوا دالم ڤرڠ خندق.",
+   "rumi": "Nyatakan enam peristiwa dalam Perang Khandaq.",
+   "markah": 6,
+   "idea": [
+    {
+     "maksud": "Musuh bergabung menyerang Madinah",
+     "kata": [
+      "gabung",
+      "musuh",
+      "ݢابوڠ",
+      "موسوه",
+      "برݢابوڠ",
+      "منارڠ"
+     ]
+    },
+    {
+     "maksud": "Salman al-Farisi mencadangkan menggali parit",
+     "kata": [
+      "salman",
+      "parit",
+      "سلمان",
+      "ڤاريت",
+      "الفارسي",
+      "منچادڠکن",
+      "فارسي"
+     ]
+    },
+    {
+     "maksud": "Umat Islam menggali parit di sekeliling Madinah",
+     "kata": [
+      "parit",
+      "gali",
+      "ڤاريت",
+      "ݢالي",
+      "سکيليليڠ"
+     ]
+    },
+    {
+     "maksud": "Musuh gagal menyeberangi parit",
+     "kata": [
+      "gagal",
+      "seberang",
+      "ݢاݢل",
+      "سبريڠ",
+      "منيبرڠ"
+     ]
+    },
+    {
+     "maksud": "Angin kencang memporak-perandakan tentera musuh",
+     "kata": [
+      "angin",
+      "ribut",
+      "اڠين",
+      "ريبوت",
+      "کنچڠ",
+      "ممڤورق",
+      "ڤراندکن",
+      "تنتيرا"
+     ]
+    },
+    {
+     "maksud": "Umat Islam memperoleh kemenangan tanpa peperangan besar",
+     "kata": [
+      "kemenangan",
+      "کمنأڠن",
+      "برجاي",
+      "ممڤراوليه",
+      "تنڤا",
+      "ڤڤرڠن",
+      "بسر"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "١. موسوه برݢابوڠ منارڠ مدينه.",
+    "٢. سلمان الفارسي منچادڠکن مڠݢالي ڤاريت.",
+    "٣. امت اسلام مڠݢالي ڤاريت د سکيليليڠ مدينه.",
+    "٤. موسوه ݢاݢل منيبرڠ ڤاريت.",
+    "٥. اڠين کنچڠ ممڤورق-ڤراندکن تنتيرا موسوه.",
+    "٦. امت اسلام ممڤراوليه کمنأڠن تنڤا ڤڤرڠن بسر."
+   ],
+   "jawapanContohRumi": [
+    "1. Musuh bergabung menyerang Madinah.",
+    "2. Salman al-Farisi mencadangkan menggali parit.",
+    "3. Umat Islam menggali parit di sekeliling Madinah.",
+    "4. Musuh gagal menyeberangi parit.",
+    "5. Angin kencang memporak-perandakan tentera musuh.",
+    "6. Umat Islam memperoleh kemenangan tanpa peperangan besar."
+   ],
+   "id": "sirah-c19"
+  },
+  {
+   "bahagian": "C",
+   "jenis": "tulis",
+   "soalan": "برايکن انم ڤرکارا يڠ دلاکوکن نبي محمد سلڤس تيبا د مدينه.",
+   "rumi": "Berikan enam perkara yang dilakukan Nabi Muhammad selepas tiba di Madinah.",
+   "markah": 6,
+   "idea": [
+    {
+     "maksud": "Membina Masjid Nabawi",
+     "kata": [
+      "masjid nabawi",
+      "مسجد نبوي",
+      "مسجد",
+      "نبوي"
+     ]
+    },
+    {
+     "maksud": "Mempersaudarakan Muhajirin dan Ansar",
+     "kata": [
+      "muhajirin",
+      "ansar",
+      "مهاجرين",
+      "انصار",
+      "ممڤرساوداراکن"
+     ]
+    },
+    {
+     "maksud": "Menyusun Piagam Madinah",
+     "kata": [
+      "piagam",
+      "ڤياݢم",
+      "مدينه",
+      "مڽوسون"
+     ]
+    },
+    {
+     "maksud": "Membina pasar untuk umat Islam",
+     "kata": [
+      "pasar",
+      "ڤاسر",
+      "امت",
+      "اسلام"
+     ]
+    },
+    {
+     "maksud": "Mengadakan hubungan baik dengan penduduk Madinah",
+     "kata": [
+      "hubungan",
+      "هوبوڠن",
+      "مدينه",
+      "مڠاداکن",
+      "بايق",
+      "ڤندودوق"
+     ]
+    },
+    {
+     "maksud": "Melantik pegawai untuk menjaga keamanan dan mengutip zakat",
+     "kata": [
+      "pegawai",
+      "zakat",
+      "ڤݢاواي",
+      "زکاة",
+      "ملاينتيق",
+      "منجاݢ",
+      "کأامانن",
+      "مڠوتيڤ"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "١. ممبينا مسجد نبوي.",
+    "٢. ممڤرساوداراکن مهاجرين دان انصار.",
+    "٣. مڽوسون ڤياݢم مدينه.",
+    "٤. ممبينا ڤاسر اونتوق امت اسلام.",
+    "٥. مڠاداکن هوبوڠن بايق دڠن ڤندودوق مدينه.",
+    "٦. ملاينتيق ڤݢاواي اونتوق منجاݢ کأامانن دان مڠوتيڤ زکاة."
+   ],
+   "jawapanContohRumi": [
+    "1. Membina Masjid Nabawi.",
+    "2. Mempersaudarakan Muhajirin dan Ansar.",
+    "3. Menyusun Piagam Madinah.",
+    "4. Membina pasar untuk umat Islam.",
+    "5. Mengadakan hubungan baik dengan penduduk Madinah.",
+    "6. Melantik pegawai untuk menjaga keamanan dan mengutip zakat."
+   ],
+   "id": "sirah-c20"
+  },
+  {
+   "bahagian": "D",
+   "jenis": "huraian",
+   "soalan": "هوارايکن سڤولوه ڤريستيوا ڤنتيڠ دالم هيدوڤ نبي محمد سبلوم کراسولن.",
+   "rumi": "Huraikan sepuluh peristiwa penting dalam hidup Nabi Muhammad sebelum kerasulan.",
+   "markah": 10,
+   "idea": [
+    {
+     "maksud": "Dilahirkan di Makkah pada 12 Rabiulawal Tahun Gajah",
+     "kata": [
+      "lahir",
+      "makkah",
+      "کلاهيرن",
+      "ديلاهيرکن",
+      "مکة",
+      "ربيع",
+      "الأول",
+      "ݢاجه",
+      "١٢",
+      "أول"
+     ]
+    },
+    {
+     "maksud": "Ayah baginda Abdullah wafat sebelum baginda lahir",
+     "kata": [
+      "abdullah",
+      "ayah",
+      "عبد الله",
+      "ايه",
+      "ايهڽ",
+      "سبلوم",
+      "لاهير",
+      "الله",
+      "بݢيندا"
+     ]
+    },
+    {
+     "maksud": "Disusui oleh Thuwaibah kemudian Halimah as-Sa'diyah",
+     "kata": [
+      "thuwaibah",
+      "halimah",
+      "ثويبة",
+      "حليمه",
+      "ديسوسوي",
+      "السعدية",
+      "سعدية"
+     ]
+    },
+    {
+     "maksud": "Ibu baginda Aminah wafat ketika baginda berumur enam tahun",
+     "kata": [
+      "aminah",
+      "ibu",
+      "امينة",
+      "ايبو",
+      "وفات",
+      "ايبوڽ",
+      "انم"
+     ]
+    },
+    {
+     "maksud": "Datuk baginda Abdul Muttalib wafat ketika baginda berumur lapan tahun",
+     "kata": [
+      "muttalib",
+      "datuk",
+      "عبد المطلب",
+      "داتوق",
+      "داتوقڽ",
+      "المطلب",
+      "لاڤن",
+      "مطلب"
+     ]
+    },
+    {
+     "maksud": "Dibela oleh bapa saudaranya Abu Talib",
+     "kata": [
+      "abu talib",
+      "bapa saudara",
+      "ابو طالب",
+      "باڤ ساودارا",
+      "دبلا",
+      "ابو",
+      "طالب"
+     ]
+    },
+    {
+     "maksud": "Pernah mengembala kambing untuk penduduk Makkah",
+     "kata": [
+      "kambing",
+      "embala",
+      "کمبيڠ",
+      "مڠمبالا",
+      "ڤرنه",
+      "ڤندودوق"
+     ]
+    },
+    {
+     "maksud": "Berniaga ke Syam bersama bapa saudaranya",
+     "kata": [
+      "syam",
+      "berniaga",
+      "شام",
+      "برنيݢا",
+      "برسام"
+     ]
+    },
+    {
+     "maksud": "Berkahwin dengan Siti Khadijah ketika berumur dua puluh lima tahun",
+     "kata": [
+      "khadijah",
+      "kahwin",
+      "خديجة",
+      "برکاهوين",
+      "سيتي",
+      "٢٥"
+     ]
+    },
+    {
+     "maksud": "Menerima wahyu pertama di Gua Hira' ketika berumur empat puluh tahun",
+     "kata": [
+      "wahyu",
+      "gua hira",
+      "وحي",
+      "ݢوا حراء",
+      "منريما",
+      "ڤرتام",
+      "ݢوا",
+      "حراء",
+      "١٠",
+      "٤٠"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "١. ديلاهيرکن دي مکة ڤد ١٢ ربيع الأول تاهون ݢاجه.",
+    "٢. ايهڽ عبد الله وفات سبلوم بݢيندا لاهير.",
+    "٣. ديسوسوي اوليه ثويبة کمودين حليمه السعدية.",
+    "٤. ايبوڽ امينة وفات کتيک أومور انم تاهون.",
+    "٥. داتوقڽ عبد المطلب وفات کتيک أومور لاڤن تاهون.",
+    "٦. دبلا اوليه باڤ ساوداراڽ ابو طالب.",
+    "٧. ڤرنه مڠمبالا کمبيڠ اونتوق ڤندودوق مکة.",
+    "٨. برنيݢا ک شام برسام باڤ ساوداراڽ.",
+    "٩. برکاهوين دڠن سيتي خديجة کتيک أومور ٢٥ تاهون.",
+    "١٠. منريما وحي ڤرتام د ݢوا حراء کتيک أومور ٤٠ تاهون."
+   ],
+   "jawapanContohRumi": [
+    "1. Dilahirkan di Makkah pada 12 Rabiulawal Tahun Gajah.",
+    "2. Ayahnya Abdullah wafat sebelum baginda lahir.",
+    "3. Disusui oleh Thuwaibah kemudian Halimah as-Sa'diyah.",
+    "4. Ibunya Aminah wafat ketika baginda berumur enam tahun.",
+    "5. Datuknya Abdul Muttalib wafat ketika baginda berumur lapan tahun.",
+    "6. Dibela oleh bapa saudaranya Abu Talib.",
+    "7. Pernah mengembala kambing untuk penduduk Makkah.",
+    "8. Berniaga ke Syam bersama bapa saudaranya.",
+    "9. Berkahwin dengan Siti Khadijah ketika berumur dua puluh lima tahun.",
+    "10. Menerima wahyu pertama di Gua Hira' ketika berumur empat puluh tahun."
+   ],
+   "id": "sirah-d1"
+  },
+  {
+   "bahagian": "D",
+   "jenis": "huraian",
+   "soalan": "هوارايکن سڤولوه بنتوق تنتڠن کأوم قريش ترهادڤ داکوه نبي محمد.",
+   "rumi": "Huraikan sepuluh bentuk tentangan kaum Quraisy terhadap dakwah Nabi Muhammad.",
+   "markah": 10,
+   "idea": [
+    {
+     "maksud": "Memperlekeh dan mengejek Nabi",
+     "kata": [
+      "perlekeh",
+      "ejek",
+      "ڤرليکه",
+      "ايجيک",
+      "ممڤرليکه",
+      "مڠيجيک",
+      "محمد"
+     ]
+    },
+    {
+     "maksud": "Menuduh Nabi sebagai penyair dan tukang sihir",
+     "kata": [
+      "penyair",
+      "sihir",
+      "ڽاءير",
+      "سيهير",
+      "مڠتوده",
+      "ڤڽاءير",
+      "توکڠ"
+     ]
+    },
+    {
+     "maksud": "Menawarkan harta dan jawatan kepada Nabi",
+     "kata": [
+      "harta",
+      "jawatan",
+      "هرتا",
+      "جاواتن",
+      "مناوارکن"
+     ]
+    },
+    {
+     "maksud": "Memujuk Abu Talib supaya menghalang Nabi",
+     "kata": [
+      "pujuk",
+      "abu talib",
+      "ڤوجوق",
+      "ابو طالب",
+      "ممڤوجوق",
+      "سوڤاي"
+     ]
+    },
+    {
+     "maksud": "Menyeksa orang Islam yang lemah seperti Bilal dan keluarga Yasir",
+     "kata": [
+      "seksa",
+      "bilal",
+      "yasir",
+      "سيکسا",
+      "بلال",
+      "لمه",
+      "ڤرتي",
+      "اسلام"
+     ]
+    },
+    {
+     "maksud": "Memboikot Bani Hasyim di lembah Abu Talib",
+     "kata": [
+      "boikot",
+      "hasyim",
+      "بويکوت",
+      "هاشيم",
+      "ممبويکوت",
+      "بني",
+      "لمبه"
+     ]
+    },
+    {
+     "maksud": "Melontar najis ke atas Nabi ketika baginda bersolat",
+     "kata": [
+      "najis",
+      "lontar",
+      "نجس",
+      "لونتر",
+      "ملاونتر",
+      "کأتس",
+      "برسولات",
+      "بݢيندا"
+     ]
+    },
+    {
+     "maksud": "Merancang untuk membunuh Nabi",
+     "kata": [
+      "bunuh",
+      "قتل",
+      "ممبونوه",
+      "مرانچڠ"
+     ]
+    },
+    {
+     "maksud": "Menghalang orang luar daripada mendengar dakwah Nabi",
+     "kata": [
+      "halang",
+      "مڠهالڠ",
+      "داکوه",
+      "لوار",
+      "مندڠر"
+     ]
+    },
+    {
+     "maksud": "Menyeksa keluarga Yasir sehingga Sumayyah syahid",
+     "kata": [
+      "sumayyah",
+      "syahid",
+      "سمية",
+      "شهيد",
+      "هيڠݢا",
+      "١٠"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "١. ممڤرليکه دان مڠيجيک نبي محمد.",
+    "٢. مڠتوده نبي سباݢاي ڤڽاءير دان توکڠ سيهير.",
+    "٣. مناوارکن هرتا دان جاواتن کڤد نبي.",
+    "٤. ممڤوجوق ابو طالب سوڤاي مڠهالڠ نبي.",
+    "٥. مڽيکسا اورڠ اسلام يڠ لمه ڤرتي بلال دان کلوارݢ ياسر.",
+    "٦. ممبويکوت بني هاشيم د لمبه ابو طالب.",
+    "٧. ملاونتر نجس کأتس نبي کتيک بݢيندا برسولات.",
+    "٨. مرانچڠ اونتوق ممبونوه نبي.",
+    "٩. مڠهالڠ اورڠ لوار درڤد مندڠر داکوه نبي.",
+    "١٠. مڽيکسا کلوارݢ ياسر هيڠݢا سمية شهيد."
+   ],
+   "jawapanContohRumi": [
+    "1. Memperlekeh dan mengejek Nabi Muhammad.",
+    "2. Menuduh Nabi sebagai penyair dan tukang sihir.",
+    "3. Menawarkan harta dan jawatan kepada Nabi.",
+    "4. Memujuk Abu Talib supaya menghalang Nabi.",
+    "5. Menyeksa orang Islam yang lemah seperti Bilal dan keluarga Yasir.",
+    "6. Memboikot Bani Hasyim di lembah Abu Talib.",
+    "7. Melontar najis ke atas Nabi ketika baginda bersolat.",
+    "8. Merancang untuk membunuh Nabi.",
+    "9. Menghalang orang luar daripada mendengar dakwah Nabi.",
+    "10. Menyeksa keluarga Yasir sehingga Sumayyah syahid."
+   ],
+   "id": "sirah-d2"
+  },
+  {
+   "bahagian": "D",
+   "jenis": "huraian",
+   "soalan": "هوارايکن سڤولوه ايسي ڤياݢم مدينه.",
+   "rumi": "Huraikan sepuluh isi Piagam Madinah.",
+   "markah": 10,
+   "idea": [
+    {
+     "maksud": "Nabi Muhammad sebagai pemimpin tertinggi Madinah",
+     "kata": [
+      "pemimpin",
+      "ڤميمڤين",
+      "ترتيڠݢي"
+     ]
+    },
+    {
+     "maksud": "Semua penduduk Madinah bebas mengamalkan agama masing-masing",
+     "kata": [
+      "bebas",
+      "agama",
+      "بياس",
+      "اݢام",
+      "مڠمالکن",
+      "ماسيڠ"
+     ]
+    },
+    {
+     "maksud": "Orang Islam dan Yahudi bekerjasama mempertahankan Madinah",
+     "kata": [
+      "yahudi",
+      "kerjasama",
+      "يهود",
+      "کرجاسام",
+      "ممڤرتاهانکن",
+      "اسلام"
+     ]
+    },
+    {
+     "maksud": "Setiap kabilah bertanggungjawab menjaga keselamatan ahlinya",
+     "kata": [
+      "kabilah",
+      "tanggungjawab",
+      "قبيله",
+      "تڠݢوڠجواب",
+      "ستياڤ",
+      "برتڠݢوڠجواب",
+      "منجاݢ",
+      "کسلامتن",
+      "اهلڽ"
+     ]
+    },
+    {
+     "maksud": "Tidak boleh berlaku kezaliman sesama penduduk",
+     "kata": [
+      "zalim",
+      "kezaliman",
+      "ظالم",
+      "کزاليمن",
+      "برلاکو",
+      "سسام",
+      "بوليه"
+     ]
+    },
+    {
+     "maksud": "Pertikaian hendaklah dirujuk kepada Nabi Muhammad",
+     "kata": [
+      "pertikaian",
+      "rujuk",
+      "ڤرتيکاين",
+      "روجوق",
+      "هندقله",
+      "دروجوق",
+      "کفد"
+     ]
+    },
+    {
+     "maksud": "Tidak dibenarkan memberi perlindungan kepada musuh",
+     "kata": [
+      "perlindungan",
+      "musuh",
+      "ڤرليندوڠن",
+      "موسوه",
+      "دبينرکن",
+      "ممبري"
+     ]
+    },
+    {
+     "maksud": "Semua penduduk Madinah dianggap satu umat",
+     "kata": [
+      "umat",
+      "امت",
+      "ساتو",
+      "دأڠݢڤ"
+     ]
+    },
+    {
+     "maksud": "Orang Yahudi yang setia diberi hak yang sama",
+     "kata": [
+      "hak",
+      "setia",
+      "حق",
+      "ستيا",
+      "دبري",
+      "سام"
+     ]
+    },
+    {
+     "maksud": "Keamanan dan kesejahteraan Madinah terjamin",
+     "kata": [
+      "aman",
+      "sejahtera",
+      "امان",
+      "سجاهترا",
+      "کأامانن",
+      "کسجاهتراءن",
+      "ترجامين",
+      "١٠"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "١. نبي محمد سباݢاي ڤميمڤين ترتيڠݢي مدينه.",
+    "٢. سموا ڤندودوق مدينه بياس مڠمالکن اݢام ماسيڠ-ماسيڠ.",
+    "٣. اورڠ اسلام دان يهود کرجاسام ممڤرتاهانکن مدينه.",
+    "٤. ستياڤ قبيله برتڠݢوڠجواب منجاݢ کسلامتن اهلڽ.",
+    "٥. تيدق بوليه برلاکو کزاليمن سسام ڤندودوق.",
+    "٦. ڤرتيکاين هندقله دروجوق کفد نبي محمد.",
+    "٧. تيدق دبينرکن ممبري ڤرليندوڠن کڤد موسوه.",
+    "٨. سموا ڤندودوق مدينه دأڠݢڤ ساتو امت.",
+    "٩. اورڠ يهود يڠ ستيا دبري حق يڠ سام.",
+    "١٠. کأامانن دان کسجاهتراءن مدينه ترجامين."
+   ],
+   "jawapanContohRumi": [
+    "1. Nabi Muhammad sebagai pemimpin tertinggi Madinah.",
+    "2. Semua penduduk Madinah bebas mengamalkan agama masing-masing.",
+    "3. Orang Islam dan Yahudi bekerjasama mempertahankan Madinah.",
+    "4. Setiap kabilah bertanggungjawab menjaga keselamatan ahlinya.",
+    "5. Tidak boleh berlaku kezaliman sesama penduduk.",
+    "6. Pertikaian hendaklah dirujuk kepada Nabi Muhammad.",
+    "7. Tidak dibenarkan memberi perlindungan kepada musuh.",
+    "8. Semua penduduk Madinah dianggap satu umat.",
+    "9. Orang Yahudi yang setia diberi hak yang sama.",
+    "10. Keamanan dan kesejahteraan Madinah terjamin."
+   ],
+   "id": "sirah-d3"
+  },
+  {
+   "bahagian": "D",
+   "jenis": "huraian",
+   "soalan": "هوارايکن سڤولوه حكمه هجره نبي محمد ک مدينه.",
+   "rumi": "Huraikan sepuluh hikmah hijrah Nabi Muhammad ke Madinah.",
+   "markah": 10,
+   "idea": [
+    {
+     "maksud": "Menyelamatkan dakwah Islam daripada ancaman Quraisy",
+     "kata": [
+      "selamat",
+      "سلمات",
+      "داکوه",
+      "مڽلامتکن",
+      "انچامن",
+      "قريش"
+     ]
+    },
+    {
+     "maksud": "Islam tersebar dengan lebih luas",
+     "kata": [
+      "sebar",
+      "سبار",
+      "لواي",
+      "ترسبار",
+      "لبيه"
+     ]
+    },
+    {
+     "maksud": "Terbentuknya negara Islam yang pertama",
+     "kata": [
+      "negara",
+      "نݢارا",
+      "تربنتوق",
+      "تربنتوقڽ",
+      "ڤرتام"
+     ]
+    },
+    {
+     "maksud": "Perpaduan antara Muhajirin dan Ansar",
+     "kata": [
+      "muhajirin",
+      "ansar",
+      "مهاجرين",
+      "انصار",
+      "ڤرڤادوان",
+      "انتارا"
+     ]
+    },
+    {
+     "maksud": "Masjid Nabawi menjadi pusat ibadah dan pentadbiran",
+     "kata": [
+      "masjid nabawi",
+      "مسجد نبوي",
+      "ڤوست",
+      "مسجد",
+      "نبوي",
+      "عبادت",
+      "ڤنتدبيرن"
+     ]
+    },
+    {
+     "maksud": "Lahirnya Piagam Madinah",
+     "kata": [
+      "piagam",
+      "ڤياݢم",
+      "مدينه",
+      "لاهيرڽ"
+     ]
+    },
+    {
+     "maksud": "Ekonomi umat Islam semakin maju",
+     "kata": [
+      "ekonomi",
+      "ايكونومي",
+      "ماجو",
+      "سماکين"
+     ]
+    },
+    {
+     "maksud": "Umat Islam menjadi kuat dan disegani",
+     "kata": [
+      "kuat",
+      "disegani",
+      "کواس",
+      "دسݢاني"
+     ]
+    },
+    {
+     "maksud": "Bermulanya kalendar Hijrah",
+     "kata": [
+      "kalendar",
+      "hijrah",
+      "کاليندر",
+      "هجره",
+      "برمولاڽ"
+     ]
+    },
+    {
+     "maksud": "Nabi dapat berdakwah dengan bebas",
+     "kata": [
+      "bebas",
+      "dakwah",
+      "بياس",
+      "داکوه",
+      "داڤت",
+      "برداکوه",
+      "١٠",
+      "نبي"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "١. مڽلامتکن داکوه اسلام درڤد انچامن قريش.",
+    "٢. اسلام ترسبار دڠن لبيه لواي.",
+    "٣. تربنتوقڽ نݢارا اسلام يڠ ڤرتام.",
+    "٤. ڤرڤادوان انتارا مهاجرين دان انصار.",
+    "٥. مسجد نبوي منجادي ڤوست عبادت دان ڤنتدبيرن.",
+    "٦. لاهيرڽ ڤياݢم مدينه.",
+    "٧. ايكونومي امت اسلام سماکين ماجو.",
+    "٨. امت اسلام منجادي کواس دان دسݢاني.",
+    "٩. برمولاڽ کاليندر هجره.",
+    "١٠. نبي داڤت برداکوه دڠن بياس."
+   ],
+   "jawapanContohRumi": [
+    "1. Menyelamatkan dakwah Islam daripada ancaman Quraisy.",
+    "2. Islam tersebar dengan lebih luas.",
+    "3. Terbentuknya negara Islam yang pertama.",
+    "4. Perpaduan antara Muhajirin dan Ansar.",
+    "5. Masjid Nabawi menjadi pusat ibadah dan pentadbiran.",
+    "6. Lahirnya Piagam Madinah.",
+    "7. Ekonomi umat Islam semakin maju.",
+    "8. Umat Islam menjadi kuat dan disegani.",
+    "9. Bermulanya kalendar Hijrah.",
+    "10. Nabi dapat berdakwah dengan bebas."
+   ],
+   "id": "sirah-d4"
+  },
+  {
+   "bahagian": "D",
+   "jenis": "huraian",
+   "soalan": "هوارايکن سڤولوه ڤريستيوا کتيک ڤمبوکاءن مکة.",
+   "rumi": "Huraikan sepuluh peristiwa ketika pembukaan Mekah.",
+   "markah": 10,
+   "idea": [
+    {
+     "maksud": "Quraisy melanggar Perjanjian Hudaibiyah",
+     "kata": [
+      "langgar",
+      "hudaibiyah",
+      "لاڠݢر",
+      "هدايبه",
+      "قريش",
+      "ملاڠݢر",
+      "ڤرجنجين"
+     ]
+    },
+    {
+     "maksud": "Nabi merancang secara rahsia",
+     "kata": [
+      "rahsia",
+      "راسيا",
+      "مرانچڠ"
+     ]
+    },
+    {
+     "maksud": "Tentera Islam seramai sepuluh ribu orang",
+     "kata": [
+      "sepuluh ribu",
+      "سڤولوه ريبو",
+      "تنتيرا",
+      "سراماي",
+      "سڤولوه",
+      "ريبو",
+      "اورڠ"
+     ]
+    },
+    {
+     "maksud": "Nabi mengarahkan tentera menyalakan api",
+     "kata": [
+      "api",
+      "nyala",
+      "اءيڤ",
+      "مڽالاکن",
+      "مڠاراهکن"
+     ]
+    },
+    {
+     "maksud": "Penduduk Mekah menyerah kalah tanpa perlawanan besar",
+     "kata": [
+      "menyerah",
+      "مڽراه",
+      "ڤرلاونن",
+      "کاله",
+      "تنڤا",
+      "بسر"
+     ]
+    },
+    {
+     "maksud": "Nabi mengampunkan semua penduduk Mekah",
+     "kata": [
+      "ampun",
+      "عفو",
+      "مڠامڤونکن",
+      "سموا"
+     ]
+    },
+    {
+     "maksud": "Berhala di sekeliling Kaabah dimusnahkan",
+     "kata": [
+      "berhala",
+      "musnah",
+      "برهالا",
+      "موسنه",
+      "سکيليليڠ",
+      "کعبة",
+      "ديموسنهکن"
+     ]
+    },
+    {
+     "maksud": "Nabi mengisytiharkan keamanan di Mekah",
+     "kata": [
+      "aman",
+      "isytihar",
+      "امان",
+      "إستيهار",
+      "مڠإستيهارکن",
+      "کأامانن"
+     ]
+    },
+    {
+     "maksud": "Umat Islam berjaya menguasai Mekah",
+     "kata": [
+      "kuasai",
+      "berjaya",
+      "کواساي",
+      "برجاي",
+      "امت",
+      "مڠواساءي"
+     ]
+    },
+    {
+     "maksud": "Islam menjadi kuat dan bertambah pengikut",
+     "kata": [
+      "pengikut",
+      "kuat",
+      "ڤڠيکوت",
+      "کواس",
+      "منجادي",
+      "برتامبه",
+      "١٠"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "١. قريش ملاڠݢر ڤرجنجين هدايبه.",
+    "٢. نبي مرانچڠ سچارا راسيا.",
+    "٣. تنتيرا اسلام سراماي سڤولوه ريبو اورڠ.",
+    "٤. نبي مڠاراهکن تنتيرا مڽالاکن اءيڤ.",
+    "٥. ڤندودوق مکة مڽراه کاله تنڤا ڤرلاونن بسر.",
+    "٦. نبي مڠامڤونکن سموا ڤندودوق مکة.",
+    "٧. برهالا د سکيليليڠ کعبة ديموسنهکن.",
+    "٨. نبي مڠإستيهارکن کأامانن د مکة.",
+    "٩. امت اسلام برجاي مڠواساءي مکة.",
+    "١٠. اسلام منجادي کواس دان برتامبه ڤڠيکوت."
+   ],
+   "jawapanContohRumi": [
+    "1. Quraisy melanggar Perjanjian Hudaibiyah.",
+    "2. Nabi merancang secara rahsia.",
+    "3. Tentera Islam seramai sepuluh ribu orang.",
+    "4. Nabi mengarahkan tentera menyalakan api.",
+    "5. Penduduk Mekah menyerah kalah tanpa perlawanan besar.",
+    "6. Nabi mengampunkan semua penduduk Mekah.",
+    "7. Berhala di sekeliling Kaabah dimusnahkan.",
+    "8. Nabi mengisytiharkan keamanan di Mekah.",
+    "9. Umat Islam berjaya menguasai Mekah.",
+    "10. Islam menjadi kuat dan bertambah pengikut."
+   ],
+   "id": "sirah-d5"
+  },
+  {
+   "bahagian": "D",
+   "jenis": "huraian",
+   "soalan": "هوارايکن سڤولوه سبب کمنأڠن امت اسلام دالم ڤرڠ بدر.",
+   "rumi": "Huraikan sepuluh sebab kemenangan umat Islam dalam Perang Badar.",
+   "markah": 10,
+   "idea": [
+    {
+     "maksud": "Pertolongan dan bantuan Allah",
+     "kata": [
+      "pertolongan",
+      "bantuan",
+      "ڤرتولوڠن",
+      "بنتوان"
+     ]
+    },
+    {
+     "maksud": "Kesatuan dan semangat juang yang tinggi",
+     "kata": [
+      "semangat",
+      "kesatuan",
+      "سمأڠت",
+      "کساتوان",
+      "سماڠت",
+      "جواڠ",
+      "تيڠݢي"
+     ]
+    },
+    {
+     "maksud": "Strategi Nabi menguasai sumber air",
+     "kata": [
+      "strategi",
+      "air",
+      "ستراتيجي",
+      "اءير",
+      "مڠواساءي",
+      "سومبر"
+     ]
+    },
+    {
+     "maksud": "Musyawarah Nabi bersama para sahabat",
+     "kata": [
+      "musyawarah",
+      "mesyuarat",
+      "مشاورت",
+      "مشوارت",
+      "برسام"
+     ]
+    },
+    {
+     "maksud": "Doa Nabi kepada Allah dengan tawaduk",
+     "kata": [
+      "doa",
+      "تواضع",
+      "دوءا"
+     ]
+    },
+    {
+     "maksud": "Keberanian Saidina Hamzah dan Saidina Ali",
+     "kata": [
+      "hamzah",
+      "ali",
+      "حمزة",
+      "علي",
+      "کبرانين",
+      "سيدنا"
+     ]
+    },
+    {
+     "maksud": "Kepatuhan para sahabat kepada pimpinan Nabi",
+     "kata": [
+      "patuh",
+      "ڤاتوه",
+      "صحابة",
+      "کڤاتوهن",
+      "ڤيمڤينن"
+     ]
+    },
+    {
+     "maksud": "Tentera Quraisy bersikap sombong dan bongkak",
+     "kata": [
+      "sombong",
+      "bongkak",
+      "سومبوڠ",
+      "بوڠق",
+      "قريش",
+      "برسيڤت"
+     ]
+    },
+    {
+     "maksud": "Bilangan tentera Islam sedikit tetapi bersemangat",
+     "kata": [
+      "sedikit",
+      "سيديقيت",
+      "برسماڠت",
+      "بيلڠن",
+      "تتاڤي"
+     ]
+    },
+    {
+     "maksud": "Berita kemenangan menguatkan iman umat Islam",
+     "kata": [
+      "iman",
+      "ايمان",
+      "مڠواتکن",
+      "بريت",
+      "کمنأڠن",
+      "امت",
+      "١٠"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "١. ڤرتولوڠن دان بنتوان الله.",
+    "٢. کساتوان دان سماڠت جواڠ يڠ تيڠݢي.",
+    "٣. ستراتيجي نبي مڠواساءي سومبر اءير.",
+    "٤. مشاورت نبي برسام ڤارا صحابة.",
+    "٥. دوءا نبي کفد الله دڠن تواضع.",
+    "٦. کبرانين سيدنا حمزة دان سيدنا علي.",
+    "٧. کڤاتوهن ڤارا صحابة کفد ڤيمڤينن نبي.",
+    "٨. تنتيرا قريش برسيڤت سومبوڠ دان بوڠق.",
+    "٩. بيلڠن تنتيرا اسلام سيديقيت تتاڤي برسماڠت.",
+    "١٠. بريت کمنأڠن مڠواتکن ايمان امت اسلام."
+   ],
+   "jawapanContohRumi": [
+    "1. Pertolongan dan bantuan Allah.",
+    "2. Kesatuan dan semangat juang yang tinggi.",
+    "3. Strategi Nabi menguasai sumber air.",
+    "4. Musyawarah Nabi bersama para sahabat.",
+    "5. Doa Nabi kepada Allah dengan tawaduk.",
+    "6. Keberanian Saidina Hamzah dan Saidina Ali.",
+    "7. Kepatuhan para sahabat kepada pimpinan Nabi.",
+    "8. Tentera Quraisy bersikap sombong dan bongkak.",
+    "9. Bilangan tentera Islam sedikit tetapi bersemangat.",
+    "10. Berita kemenangan menguatkan iman umat Islam."
+   ],
+   "id": "sirah-d6"
+  },
+  {
+   "bahagian": "D",
+   "jenis": "huraian",
+   "soalan": "هوارايکن سڤولوه ڤڠاجرن درڤد ڤرڠ احد.",
+   "rumi": "Huraikan sepuluh pengajaran daripada Perang Uhud.",
+   "markah": 10,
+   "idea": [
+    {
+     "maksud": "Umat Islam wajib patuh kepada perintah pemimpin",
+     "kata": [
+      "patuh",
+      "pemimpin",
+      "ڤاتوه",
+      "ڤميمڤين",
+      "امت",
+      "واجب",
+      "ڤرينته",
+      "اسلام"
+     ]
+    },
+    {
+     "maksud": "Ketidakpatuhan pemanah menyebabkan kekalahan",
+     "kata": [
+      "pemanah",
+      "kalah",
+      "ڤمانه",
+      "ککلاهن",
+      "کتيادقڤاتوهن",
+      "مڠبابکن"
+     ]
+    },
+    {
+     "maksud": "Jangan tamak kepada harta dan ganjaran dunia",
+     "kata": [
+      "tamak",
+      "تامق",
+      "ݢنجرن",
+      "جاڠن",
+      "هرتا",
+      "دنيا"
+     ]
+    },
+    {
+     "maksud": "Sabar dan tabah menghadapi ujian Allah",
+     "kata": [
+      "sabar",
+      "tabah",
+      "صبر",
+      "تاباه",
+      "مڠهادڤي",
+      "اوجين"
+     ]
+    },
+    {
+     "maksud": "Perjuangan memerlukan pengorbanan yang besar",
+     "kata": [
+      "korban",
+      "قربان",
+      "ڤڠوربانن",
+      "ڤرجواڠن",
+      "ممرلوکن",
+      "بسر"
+     ]
+    },
+    {
+     "maksud": "Saidina Hamzah syahid dalam Perang Uhud",
+     "kata": [
+      "hamzah",
+      "syahid",
+      "حمزة",
+      "شهيد",
+      "سيدنا"
+     ]
+    },
+    {
+     "maksud": "Nabi sendiri cedera dalam Perang Uhud",
+     "kata": [
+      "cedera",
+      "چدرا",
+      "نبي",
+      "سنديري"
+     ]
+    },
+    {
+     "maksud": "Musuh menggunakan tipu daya",
+     "kata": [
+      "tipu daya",
+      "تيڤو داي",
+      "موسوه",
+      "مڠݢوناکن",
+      "تيڤو",
+      "داي"
+     ]
+    },
+    {
+     "maksud": "Perpaduan dan disiplin sangat penting",
+     "kata": [
+      "perpaduan",
+      "disiplin",
+      "ڤرڤادوان",
+      "ديسيڤلين",
+      "ساڠت",
+      "ڤنتيڠ"
+     ]
+    },
+    {
+     "maksud": "Allah menguji keimanan hamba-Nya",
+     "kata": [
+      "ujian",
+      "اوجين",
+      "مڠوجي",
+      "کأيمانن",
+      "هامباڽ",
+      "١٠"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "١. امت اسلام واجب ڤاتوه کفد ڤرينته ڤميمڤين.",
+    "٢. کتيادقڤاتوهن ڤمانه مڠبابکن ککلاهن.",
+    "٣. جاڠن تامق کفد هرتا دان ݢنجرن دنيا.",
+    "٤. صبر دان تاباه مڠهادڤي اوجين الله.",
+    "٥. ڤرجواڠن ممرلوکن ڤڠوربانن يڠ بسر.",
+    "٦. سيدنا حمزة شهيد دالم ڤرڠ احد.",
+    "٧. نبي سنديري چدرا دالم ڤرڠ احد.",
+    "٨. موسوه مڠݢوناکن تيڤو داي.",
+    "٩. ڤرڤادوان دان ديسيڤلين ساڠت ڤنتيڠ.",
+    "١٠. الله مڠوجي کأيمانن هامباڽ."
+   ],
+   "jawapanContohRumi": [
+    "1. Umat Islam wajib patuh kepada perintah pemimpin.",
+    "2. Ketidakpatuhan pemanah menyebabkan kekalahan.",
+    "3. Jangan tamak kepada harta dan ganjaran dunia.",
+    "4. Sabar dan tabah menghadapi ujian Allah.",
+    "5. Perjuangan memerlukan pengorbanan yang besar.",
+    "6. Saidina Hamzah syahid dalam Perang Uhud.",
+    "7. Nabi sendiri cedera dalam Perang Uhud.",
+    "8. Musuh menggunakan tipu daya.",
+    "9. Perpaduan dan disiplin sangat penting.",
+    "10. Allah menguji keimanan hamba-Nya."
+   ],
+   "id": "sirah-d7"
+  },
+  {
+   "bahagian": "D",
+   "jenis": "huraian",
+   "soalan": "هوارايکن سڤولوه ايسي ڤرجنجين هدايبه.",
+   "rumi": "Huraikan sepuluh isi Perjanjian Hudaibiyah.",
+   "markah": 10,
+   "idea": [
+    {
+     "maksud": "Genjatan senjata selama sepuluh tahun",
+     "kata": [
+      "genjatan senjata",
+      "ݢنجاتن سنجات",
+      "سڤولوه تاهون",
+      "ݢنجاتن",
+      "سنجات",
+      "سلاما",
+      "سڤولوه"
+     ]
+    },
+    {
+     "maksud": "Umat Islam boleh mengerjakan umrah pada tahun berikutnya",
+     "kata": [
+      "umrah",
+      "عمرة",
+      "امرة",
+      "مڠرجاءکن",
+      "برايکوتڽ",
+      "بوليه"
+     ]
+    },
+    {
+     "maksud": "Quraisy mengiktiraf kerajaan Islam Madinah",
+     "kata": [
+      "iktiraf",
+      "إعتراف",
+      "کرجاءن",
+      "قريش",
+      "مڠإعتراف",
+      "مدينه"
+     ]
+    },
+    {
+     "maksud": "Dakwah Islam dapat disebarkan dengan aman",
+     "kata": [
+      "dakwah",
+      "sebar",
+      "داکوه",
+      "سبار",
+      "داڤت",
+      "دسبارکن",
+      "امان"
+     ]
+    },
+    {
+     "maksud": "Kabilah Arab bebas memilih pihak masing-masing",
+     "kata": [
+      "kabilah",
+      "قبيله",
+      "مميليه",
+      "عرب",
+      "بياس",
+      "ڤيهق",
+      "ماسيڠ"
+     ]
+    },
+    {
+     "maksud": "Orang yang masuk Islam tanpa izin penjaga dihantar balik",
+     "kata": [
+      "masuk islam",
+      "hantar balik",
+      "ماسوق اسلام",
+      "هانتر باليق",
+      "اورڠ",
+      "ماسوق",
+      "تنڤا",
+      "ايزين",
+      "ڤنجاݢ",
+      "ديهانتر",
+      "باليق"
+     ]
+    },
+    {
+     "maksud": "Nabi menerima wahyu Surah al-Fath tentang kemenangan",
+     "kata": [
+      "al-fath",
+      "الفتح",
+      "وحي",
+      "منريما",
+      "سورة",
+      "تنتڠ",
+      "کمنأڠن",
+      "فتح"
+     ]
+    },
+    {
+     "maksud": "Sahabat berasa sedih tetapi tetap taat kepada Nabi",
+     "kata": [
+      "sedih",
+      "taat",
+      "سيديه",
+      "تاعت",
+      "صحابة",
+      "براسا",
+      "تتاڤي",
+      "تتاڤ",
+      "کفد"
+     ]
+    },
+    {
+     "maksud": "Umat Islam bertambah ramai selepas perjanjian",
+     "kata": [
+      "ramai",
+      "راماي",
+      "برتامبه",
+      "سلڤس"
+     ]
+    },
+    {
+     "maksud": "Perjanjian menjadi jalan menuju pembukaan Mekah",
+     "kata": [
+      "mekah",
+      "مکة",
+      "ڤمبوکاءن",
+      "منجادي",
+      "جالن",
+      "منوجو",
+      "١٠"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "١. ݢنجاتن سنجات سلاما سڤولوه تاهون.",
+    "٢. امت اسلام بوليه مڠرجاءکن عمرة ڤد تاهون برايکوتڽ.",
+    "٣. قريش مڠإعتراف کرجاءن اسلام مدينه.",
+    "٤. داکوه اسلام داڤت دسبارکن دڠن امان.",
+    "٥. قبيله عرب بياس مميليه ڤيهق ماسيڠ-ماسيڠ.",
+    "٦. اورڠ يڠ ماسوق اسلام تنڤا ايزين ڤنجاݢ ديهانتر باليق.",
+    "٧. نبي منريما وحي سورة الفتح تنتڠ کمنأڠن.",
+    "٨. صحابة براسا سيديه تتاڤي تتاڤ تاعت کفد نبي.",
+    "٩. امت اسلام برتامبه راماي سلڤس ڤرجنجين.",
+    "١٠. ڤرجنجين منجادي جالن منوجو ڤمبوکاءن مکة."
+   ],
+   "jawapanContohRumi": [
+    "1. Genjatan senjata selama sepuluh tahun.",
+    "2. Umat Islam boleh mengerjakan umrah pada tahun berikutnya.",
+    "3. Quraisy mengiktiraf kerajaan Islam Madinah.",
+    "4. Dakwah Islam dapat disebarkan dengan aman.",
+    "5. Kabilah Arab bebas memilih pihak masing-masing.",
+    "6. Orang yang masuk Islam tanpa izin penjaga dihantar balik.",
+    "7. Nabi menerima wahyu Surah al-Fath tentang kemenangan.",
+    "8. Sahabat berasa sedih tetapi tetap taat kepada Nabi.",
+    "9. Umat Islam bertambah ramai selepas perjanjian.",
+    "10. Perjanjian menjadi jalan menuju pembukaan Mekah."
+   ],
+   "id": "sirah-d8"
+  },
+  {
+   "bahagian": "D",
+   "jenis": "huraian",
+   "soalan": "هوارايکن سڤولوه ايسي خطبة حاجي وداع.",
+   "rumi": "Huraikan sepuluh isi khutbah Haji Wida'.",
+   "markah": 10,
+   "idea": [
+    {
+     "maksud": "Menegaskan keesaan Allah",
+     "kata": [
+      "keesaan",
+      "tauhid",
+      "کأإساءن",
+      "توحيد",
+      "منݢسکن",
+      "الله"
+     ]
+    },
+    {
+     "maksud": "Menghapuskan amalan jahiliah",
+     "kata": [
+      "jahiliah",
+      "جاهلية",
+      "مڠهاڤوسکن"
+     ]
+    },
+    {
+     "maksud": "Menekankan kesatuan umat Islam",
+     "kata": [
+      "kesatuan",
+      "کساتوان",
+      "امت اسلام",
+      "منيکنکن"
+     ]
+    },
+    {
+     "maksud": "Semua manusia sama taraf, yang mulia ialah yang bertakwa",
+     "kata": [
+      "takwa",
+      "sama taraf",
+      "تقوى",
+      "سام تراف",
+      "منوسيا",
+      "سام",
+      "تراف،",
+      "موليا",
+      "ايله",
+      "برتقوى",
+      "سموا"
+     ]
+    },
+    {
+     "maksud": "Menjaga hak dan maruah kaum wanita",
+     "kata": [
+      "wanita",
+      "maruah",
+      "وانيتا",
+      "مارواه",
+      "کأوم",
+      "حق"
+     ]
+    },
+    {
+     "maksud": "Tidak boleh menumpahkan darah sesama Islam",
+     "kata": [
+      "darah",
+      "داره",
+      "منومڤهکن",
+      "سسام",
+      "بوليه"
+     ]
+    },
+    {
+     "maksud": "Menjaga harta dan amanah",
+     "kata": [
+      "amanah",
+      "harta",
+      "امانة",
+      "هرتا"
+     ]
+    },
+    {
+     "maksud": "Menghapuskan amalan riba",
+     "kata": [
+      "riba",
+      "ربا",
+      "مڠهاڤوسکن"
+     ]
+    },
+    {
+     "maksud": "Berpegang kepada Al-Quran dan Sunnah",
+     "kata": [
+      "quran",
+      "sunnah",
+      "قرءان",
+      "سنة",
+      "برڤيݢڠ",
+      "القرءان",
+      "السنة"
+     ]
+    },
+    {
+     "maksud": "Menyampaikan pesanan kepada umat yang tidak hadir",
+     "kata": [
+      "sampai",
+      "pesanan",
+      "سمڤاي",
+      "ڤسان",
+      "مڽمڤايکن",
+      "هادير",
+      "١٠"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "١. منݢسکن کأإساءن الله.",
+    "٢. مڠهاڤوسکن عملن جاهلية.",
+    "٣. منيکنکن کساتوان امت اسلام.",
+    "٤. سموا منوسيا سام تراف، يڠ موليا ايله يڠ برتقوى.",
+    "٥. منجاݢ حق دان مارواه کأوم وانيتا.",
+    "٦. تيدق بوليه منومڤهکن داره سسام اسلام.",
+    "٧. منجاݢ هرتا دان امانة.",
+    "٨. مڠهاڤوسکن عملن ربا.",
+    "٩. برڤيݢڠ کفد القرءان دان السنة.",
+    "١٠. مڽمڤايکن ڤسان کفد امت يڠ تيدق هادير."
+   ],
+   "jawapanContohRumi": [
+    "1. Menegaskan keesaan Allah.",
+    "2. Menghapuskan amalan jahiliah.",
+    "3. Menekankan kesatuan umat Islam.",
+    "4. Semua manusia sama taraf, yang mulia ialah yang bertakwa.",
+    "5. Menjaga hak dan maruah kaum wanita.",
+    "6. Tidak boleh menumpahkan darah sesama Islam.",
+    "7. Menjaga harta dan amanah.",
+    "8. Menghapuskan amalan riba.",
+    "9. Berpegang kepada Al-Quran dan Sunnah.",
+    "10. Menyampaikan pesanan kepada umat yang tidak hadir."
+   ],
+   "id": "sirah-d9"
+  },
+  {
+   "bahagian": "D",
+   "jenis": "huraian",
+   "soalan": "هوارايکن سڤولوه اخلاق موليا نبي محمد.",
+   "rumi": "Huraikan sepuluh akhlak mulia Nabi Muhammad.",
+   "markah": 10,
+   "idea": [
+    {
+     "maksud": "Sidiq — sentiasa berkata benar",
+     "kata": [
+      "sidiq",
+      "benar",
+      "صدق",
+      "بينر",
+      "صديق",
+      "سنتياس",
+      "برکات"
+     ]
+    },
+    {
+     "maksud": "Amanah — boleh dipercayai",
+     "kata": [
+      "amanah",
+      "dipercayai",
+      "امانة",
+      "دڤرچاي",
+      "بوليه"
+     ]
+    },
+    {
+     "maksud": "Tabligh — menyampaikan wahyu Allah",
+     "kata": [
+      "tabligh",
+      "تبليغ",
+      "مڽمڤايکن",
+      "وحي",
+      "الله"
+     ]
+    },
+    {
+     "maksud": "Fatanah — bijaksana dalam setiap tindakan",
+     "kata": [
+      "fatanah",
+      "bijaksana",
+      "فطانة",
+      "بيجقسانا",
+      "ستياڤ",
+      "تينداکن"
+     ]
+    },
+    {
+     "maksud": "Pemaaf kepada orang yang melakukan kesalahan",
+     "kata": [
+      "pemaaf",
+      "معاف",
+      "ڤماءف",
+      "ملاکوکن",
+      "کسالهن"
+     ]
+    },
+    {
+     "maksud": "Penyayang kepada kanak-kanak dan keluarga",
+     "kata": [
+      "penyayang",
+      "sayang",
+      "ڤڽايڠ",
+      "سايڠ",
+      "کانق",
+      "کلوارݢ"
+     ]
+    },
+    {
+     "maksud": "Sabar menghadapi tentangan dan ujian",
+     "kata": [
+      "sabar",
+      "صبر",
+      "برصبر",
+      "مڠهادڤي",
+      "تنتڠن",
+      "اوجين"
+     ]
+    },
+    {
+     "maksud": "Tawaduk dan tidak sombong",
+     "kata": [
+      "tawaduk",
+      "تواضع",
+      "سومبوڠ",
+      "تيدق"
+     ]
+    },
+    {
+     "maksud": "Pemurah dan dermawan",
+     "kata": [
+      "pemurah",
+      "dermawan",
+      "ڤموراه",
+      "درموان"
+     ]
+    },
+    {
+     "maksud": "Adil kepada semua orang tanpa mengira pangkat",
+     "kata": [
+      "adil",
+      "عادل",
+      "کأديلن",
+      "تنڤا",
+      "مڠيرا",
+      "ڤڠکت",
+      "١٠",
+      "سموا"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "١. صديق — سنتياس برکات بينر.",
+    "٢. امانة — بوليه دڤرچاي.",
+    "٣. تبليغ — مڽمڤايکن وحي الله.",
+    "٤. فطانة — بيجقسانا دالم ستياڤ تينداکن.",
+    "٥. ڤماءف کفد اورڠ يڠ ملاکوکن کسالهن.",
+    "٦. ڤڽايڠ کفد کانق-کانق دان کلوارݢ.",
+    "٧. صبر مڠهادڤي تنتڠن دان اوجين.",
+    "٨. تواضع دان تيدق سومبوڠ.",
+    "٩. ڤموراه دان درموان.",
+    "١٠. عادل کفد سموا اورڠ تنڤا مڠيرا ڤڠکت."
+   ],
+   "jawapanContohRumi": [
+    "1. Sidiq — sentiasa berkata benar.",
+    "2. Amanah — boleh dipercayai.",
+    "3. Tabligh — menyampaikan wahyu Allah.",
+    "4. Fatanah — bijaksana dalam setiap tindakan.",
+    "5. Pemaaf kepada orang yang melakukan kesalahan.",
+    "6. Penyayang kepada kanak-kanak dan keluarga.",
+    "7. Sabar menghadapi tentangan dan ujian.",
+    "8. Tawaduk dan tidak sombong.",
+    "9. Pemurah dan dermawan.",
+    "10. Adil kepada semua orang tanpa mengira pangkat."
+   ],
+   "id": "sirah-d10"
+  },
+  {
+   "bahagian": "D",
+   "jenis": "huraian",
+   "soalan": "هوارايکن سڤولوه ڤريستيوا دالم ڤريستيوا إسراء دان معراج.",
+   "rumi": "Huraikan sepuluh peristiwa dalam peristiwa Isra' dan Mikraj.",
+   "markah": 10,
+   "idea": [
+    {
+     "maksud": "Berlaku pada 27 Rajab",
+     "kata": [
+      "rajab",
+      "رجب",
+      "٢٧",
+      "برلاکو"
+     ]
+    },
+    {
+     "maksud": "Nabi dibawa dari Masjidil Haram ke Masjidil Aqsa",
+     "kata": [
+      "masjidil haram",
+      "مسجد الحرام",
+      "مسجد الأقصى",
+      "دباوا",
+      "الحرام",
+      "حرام"
+     ]
+    },
+    {
+     "maksud": "Nabi menunggang Buraq",
+     "kata": [
+      "buraq",
+      "براق",
+      "منوڠݢڠ"
+     ]
+    },
+    {
+     "maksud": "Nabi menjadi imam solat para nabi di Masjidil Aqsa",
+     "kata": [
+      "imam",
+      "امام",
+      "برسولات"
+     ]
+    },
+    {
+     "maksud": "Nabi diangkat ke langit",
+     "kata": [
+      "langit",
+      "diangkat",
+      "لاڠيت",
+      "دأڠکت"
+     ]
+    },
+    {
+     "maksud": "Nabi bertemu para nabi dan rasul",
+     "kata": [
+      "nabi",
+      "bertemu",
+      "نبي",
+      "برتمو",
+      "رسول"
+     ]
+    },
+    {
+     "maksud": "Nabi sampai ke Sidratul Muntaha",
+     "kata": [
+      "sidratul muntaha",
+      "سدرة المنتهى",
+      "سماڤاي",
+      "سدرة",
+      "المنتهى",
+      "منتهى"
+     ]
+    },
+    {
+     "maksud": "Nabi menerima perintah solat lima waktu",
+     "kata": [
+      "solat",
+      "lima waktu",
+      "صلوة",
+      "سولات",
+      "منريما",
+      "ڤرينته",
+      "ليم",
+      "وقتو"
+     ]
+    },
+    {
+     "maksud": "Abu Bakar mempercayai peristiwa itu",
+     "kata": [
+      "abu bakar",
+      "percaya",
+      "ابو بکر",
+      "ممرچايي",
+      "ابو",
+      "بکر",
+      "ڤريستيوا",
+      "ايتو"
+     ]
+    },
+    {
+     "maksud": "Umat Islam yang ragu-ragu menjadi murtad",
+     "kata": [
+      "murtad",
+      "ragu",
+      "مرتد",
+      "راݢو",
+      "امت",
+      "١٠",
+      "اسلام"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "١. برلاکو ڤد ٢٧ رجب.",
+    "٢. نبي دباوا دري مسجد الحرام ک مسجد الأقصى.",
+    "٣. نبي منوڠݢڠ براق.",
+    "٤. نبي برسولات منجادي امام ڤارا نبي د مسجد الأقصى.",
+    "٥. نبي دأڠکت ک لاڠيت.",
+    "٦. نبي برتمو ڤارا نبي دان رسول.",
+    "٧. نبي سماڤاي ک سدرة المنتهى.",
+    "٨. نبي منريما ڤرينته سولات ليم وقتو.",
+    "٩. ابو بکر ممرچايي ڤريستيوا ايتو.",
+    "١٠. امت اسلام يڠ راݢو-راݢو منجادي مرتد."
+   ],
+   "jawapanContohRumi": [
+    "1. Berlaku pada 27 Rajab.",
+    "2. Nabi dibawa dari Masjidil Haram ke Masjidil Aqsa.",
+    "3. Nabi menunggang Buraq.",
+    "4. Nabi menjadi imam solat para nabi di Masjidil Aqsa.",
+    "5. Nabi diangkat ke langit.",
+    "6. Nabi bertemu para nabi dan rasul.",
+    "7. Nabi sampai ke Sidratul Muntaha.",
+    "8. Nabi menerima perintah solat lima waktu.",
+    "9. Abu Bakar mempercayai peristiwa itu.",
+    "10. Umat Islam yang ragu-ragu menjadi murtad."
+   ],
+   "id": "sirah-d11"
+  },
+  {
+   "bahagian": "D",
+   "jenis": "huraian",
+   "soalan": "هوارايکن سڤولوه ڤريستيوا برکايتن کوفاتن نبي محمد.",
+   "rumi": "Huraikan sepuluh peristiwa berkaitan kewafatan Nabi Muhammad.",
+   "markah": 10,
+   "idea": [
+    {
+     "maksud": "Baginda wafat pada 12 Rabiulawal tahun 11 Hijrah",
+     "kata": [
+      "rabiulawal",
+      "hijrah",
+      "ربيع الأول",
+      "هجره",
+      "ربيع",
+      "الأول",
+      "١٢",
+      "أول",
+      "١١"
+     ]
+    },
+    {
+     "maksud": "Baginda wafat ketika berumur 63 tahun",
+     "kata": [
+      "63",
+      "enam puluh tiga",
+      "٦٣",
+      "انم ڤولوه تيݢ",
+      "أومور"
+     ]
+    },
+    {
+     "maksud": "Baginda wafat di Madinah",
+     "kata": [
+      "madinah",
+      "مدينه",
+      "وفات"
+     ]
+    },
+    {
+     "maksud": "Baginda wafat di rumah Saidatina Aisyah",
+     "kata": [
+      "aisyah",
+      "rumah",
+      "عائشة",
+      "رومه"
+     ]
+    },
+    {
+     "maksud": "Baginda sakit selama beberapa hari sebelum wafat",
+     "kata": [
+      "sakit",
+      "ساکيت",
+      "ببراڤ هاري",
+      "سلاما",
+      "ببراڤ",
+      "هاري",
+      "سبلوم"
+     ]
+    },
+    {
+     "maksud": "Baginda berpesan supaya berpegang kepada Al-Quran dan Sunnah",
+     "kata": [
+      "quran",
+      "sunnah",
+      "قرءان",
+      "سنة",
+      "برڤسان",
+      "سوڤاي",
+      "برڤيݢڠ",
+      "کفد",
+      "القرءان",
+      "السنة"
+     ]
+    },
+    {
+     "maksud": "Saidina Abu Bakar menenangkan umat Islam",
+     "kata": [
+      "abu bakar",
+      "ابو بکر",
+      "مننڠکن",
+      "سيدنا",
+      "ابو",
+      "بکر"
+     ]
+    },
+    {
+     "maksud": "Umat Islam bersedih dengan pemergian baginda",
+     "kata": [
+      "sedih",
+      "سيديه",
+      "برسديه",
+      "ڤمرݢين"
+     ]
+    },
+    {
+     "maksud": "Baginda dimakamkan di rumah Saidatina Aisyah",
+     "kata": [
+      "makam",
+      "مقام",
+      "ديمقامکن"
+     ]
+    },
+    {
+     "maksud": "Baginda meninggalkan umat Islam yang kuat imannya",
+     "kata": [
+      "iman",
+      "ايمان",
+      "منيڠݢالکن",
+      "کواس",
+      "ايمانڽ",
+      "١٠"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "١. بݢيندا وفات ڤد ١٢ ربيع الأول تاهون ١١ هجره.",
+    "٢. بݢيندا وفات کتيک أومور ٦٣ تاهون.",
+    "٣. بݢيندا وفات د مدينه.",
+    "٤. بݢيندا وفات د رومه سيدتنا عائشة.",
+    "٥. بݢيندا ساکيت سلاما ببراڤ هاري سبلوم وفات.",
+    "٦. بݢيندا برڤسان سوڤاي برڤيݢڠ کفد القرءان دان السنة.",
+    "٧. سيدنا ابو بکر مننڠکن امت اسلام.",
+    "٨. امت اسلام برسديه دڠن ڤمرݢين بݢيندا.",
+    "٩. بݢيندا ديمقامکن د رومه سيدتنا عائشة.",
+    "١٠. بݢيندا منيڠݢالکن امت اسلام يڠ کواس ايمانڽ."
+   ],
+   "jawapanContohRumi": [
+    "1. Baginda wafat pada 12 Rabiulawal tahun 11 Hijrah.",
+    "2. Baginda wafat ketika berumur 63 tahun.",
+    "3. Baginda wafat di Madinah.",
+    "4. Baginda wafat di rumah Saidatina Aisyah.",
+    "5. Baginda sakit selama beberapa hari sebelum wafat.",
+    "6. Baginda berpesan supaya berpegang kepada Al-Quran dan Sunnah.",
+    "7. Saidina Abu Bakar menenangkan umat Islam.",
+    "8. Umat Islam bersedih dengan pemergian baginda.",
+    "9. Baginda dimakamkan di rumah Saidatina Aisyah.",
+    "10. Baginda meninggalkan umat Islam yang kuat imannya."
+   ],
+   "id": "sirah-d12"
+  }
+ ]
+}

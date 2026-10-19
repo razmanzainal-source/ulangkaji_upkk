@@ -1,0 +1,143 @@
+name: ulangkaji_upkk
+description: "Aplikasi ulang kaji UPKK (Ujian Penilaian Kelas Al-Quran dan Fardu Ain) — 6 subjek bertulis, berfungsi tanpa Internet."
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number is used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+# In Windows, build-name is used as the major, minor, and patch parts
+# of the product and file versions while build-number is used as the build suffix.
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.13.5
+
+# Dependencies specify other packages that your package needs in order to work.
+# To automatically upgrade your package dependencies to the latest versions
+# consider running `flutter pub upgrade --major-versions`. Alternatively,
+# dependencies can be manually updated by changing the version numbers below to
+# the latest version available on pub.dev. To see which dependencies have newer
+# versions available, run `flutter pub outdated`.
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^1.0.8
+  flutter_tts: ^4.2.5
+  shared_preferences: ^2.5.6
+  audioplayers: ^6.8.1
+  # Membuka pautan sumber rasmi (DSKP, KPM, Lembaga Peperiksaan) dalam pelayar.
+  # App tetap berfungsi sepenuhnya tanpa Internet — pautan hanya dibuka apabila
+  # ibu bapa atau guru mengetiknya sendiri.
+  url_launcher: ^6.3.1
+  gal: ^2.3.3
+  web: ^1.1.1
+  share_plus: ^13.3.1
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  # Ujian hujung-ke-hujung pada emulator/peranti sebenar.
+  integration_test:
+    sdk: flutter
+  # Platform audio diuji dengan pelaksanaan palsu — lihat
+  # `test/bantuan/audio_palsu.dart`.
+  audioplayers_platform_interface: ^7.0.0
+
+  # Untuk ujian: memalsukan pelayar (UrlLauncherPlatform) tanpa peranti.
+  url_launcher_platform_interface: ^2.3.2
+
+  # The "flutter_lints" package below contains a set of recommended lints to
+  # encourage good coding practices. The lint set provided by the package is
+  # activated in the `analysis_options.yaml` file located at the root of your
+  # package. See that file for information about deactivating specific lint
+  # rules and activating additional ones.
+  flutter_lints: ^6.0.0
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter packages.
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  fonts:
+    # Fon Jawi/Arab untuk seluruh app.
+    #
+    # Fon sistem telefon tidak seragam: Android dan iOS memilih fon Arab yang
+    # berbeza, dan sesetengahnya tidak mempunyai huruf Jawi khas (چ ݢ ڠ ڤ ۏ ڽ)
+    # sehingga ayat Jawi bertukar menjadi petak kosong. Noto Naskh Arabic
+    # dibundelkan supaya Jawi kelihatan sama pada setiap peranti.
+    - family: Jawi
+      fonts:
+        - asset: assets/fon/NotoNaskhArabic-Regular.ttf
+        - asset: assets/fon/NotoNaskhArabic-Bold.ttf
+          weight: 700
+
+  assets:
+    - assets/content/
+    # Bank soalan berada dalam subfolder, dan Flutter **tidak** menuruni
+    # subfolder — folder bank mesti disenaraikan sendiri.
+    - assets/content/bank/
+    # Imbasan kertas sebenar didaftarkan SATU-SATU mengikut folder: Flutter
+    # hanya membaca fail pada aras yang dinyatakan (tidak menuruni subfolder),
+    # jadi "- assets/kertas/" sahaja akan meninggalkan semua muka surat.
+    - assets/kertas/adab-2024/
+    - assets/kertas/adab-2025/
+    - assets/kertas/akidah-2024/
+    - assets/kertas/akidah-2025/
+    - assets/kertas/arab-2024/
+    - assets/kertas/arab-2025/
+    - assets/kertas/ibadah-2024/
+    - assets/kertas/ibadah-2025/
+    - assets/kertas/jawi-2024/
+    - assets/kertas/jawi-2025/
+    - assets/kertas/sirah-2024/
+    - assets/kertas/sirah-2025/
+    - assets/gambar/
+    # Rakaman suara (sapaan, soalan, maklum balas keputusan). Ia berada dalam
+    # folder sendiri; Flutter tidak menuruni subfolder, jadi folder itu mesti
+    # disenaraikan sendiri.
+    - assets/bunyi/suara/
+    # Bunyi kesan jawapan betul/salah berada dalam folder sendiri.
+    - assets/bunyi/kesan/
+
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/to/resolution-aware-images
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/to/asset-from-package
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/to/font-from-package

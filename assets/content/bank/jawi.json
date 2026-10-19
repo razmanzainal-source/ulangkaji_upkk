@@ -1,0 +1,5109 @@
+{
+ "id": "jawi",
+ "versi": 1,
+ "bilangan": 112,
+ "soalan": [
+  {
+   "bahagian": "A",
+   "jenis": "tempat_kosong",
+   "soalan": "توليس حروف توغکل مڠيکوت اوروتن يڠ بتول.",
+   "rumi": "Tulis huruf tunggal mengikut urutan yang betul.",
+   "markah": 3,
+   "bank": [
+    "ت",
+    "ذ",
+    "ض"
+   ],
+   "bankRumi": [
+    "ta",
+    "dzal",
+    "dhod"
+   ],
+   "item": [
+    {
+     "teks": "ا  ب  ____  ث",
+     "rumi": "alif  ba  ____  tha",
+     "jawapan": -1
+    },
+    {
+     "teks": "خ  د  ____  ر",
+     "rumi": "kha  dal  ____  ra",
+     "jawapan": -1
+    },
+    {
+     "teks": "ش  ص  ____  ط",
+     "rumi": "syin  sod  ____  tho",
+     "jawapan": -1
+    }
+   ],
+   "id": "jawi-a1"
+  },
+  {
+   "bahagian": "A",
+   "jenis": "tempat_kosong",
+   "soalan": "توليس حروف توغکل مڠيکوت اوروتن يڠ بتول.",
+   "rumi": "Tulis huruf tunggal mengikut urutan yang betul.",
+   "markah": 3,
+   "bank": [
+    "خ",
+    "ش",
+    "ف"
+   ],
+   "bankRumi": [
+    "kha",
+    "syin",
+    "fa"
+   ],
+   "item": [
+    {
+     "teks": "ج  ح  ____  د",
+     "rumi": "jim  ha  ____  dal",
+     "jawapan": -1
+    },
+    {
+     "teks": "ز  س  ____  ص",
+     "rumi": "zai  sin  ____  sod",
+     "jawapan": -1
+    },
+    {
+     "teks": "ع  غ  ____  ق",
+     "rumi": "ain  ghain  ____  qaf",
+     "jawapan": -1
+    }
+   ],
+   "id": "jawi-a2"
+  },
+  {
+   "bahagian": "A",
+   "jenis": "tempat_kosong",
+   "soalan": "توليس حروف توغکل مڠيکوت اوروتن يڠ بتول.",
+   "rumi": "Tulis huruf tunggal mengikut urutan yang betul.",
+   "markah": 3,
+   "bank": [
+    "ج",
+    "ر",
+    "ظ"
+   ],
+   "bankRumi": [
+    "jim",
+    "ra",
+    "zho"
+   ],
+   "item": [
+    {
+     "teks": "ت  ث  ____  ح",
+     "rumi": "ta  tha  ____  ha",
+     "jawapan": -1
+    },
+    {
+     "teks": "د  ذ  ____  ز",
+     "rumi": "dal  dzal  ____  zai",
+     "jawapan": -1
+    },
+    {
+     "teks": "ض  ط  ____  ع",
+     "rumi": "dhod  tho  ____  ain",
+     "jawapan": -1
+    }
+   ],
+   "id": "jawi-a3"
+  },
+  {
+   "bahagian": "A",
+   "jenis": "tempat_kosong",
+   "soalan": "توليس حروف توغکل مڠيکوت اوروتن يڠ بتول.",
+   "rumi": "Tulis huruf tunggal mengikut urutan yang betul.",
+   "markah": 3,
+   "bank": [
+    "ث",
+    "ز",
+    "ع"
+   ],
+   "bankRumi": [
+    "tha",
+    "zai",
+    "ain"
+   ],
+   "item": [
+    {
+     "teks": "ب  ت  ____  ج",
+     "rumi": "ba  ta  ____  jim",
+     "jawapan": -1
+    },
+    {
+     "teks": "ر  ____  س  ش",
+     "rumi": "ra  ____  sin  syin",
+     "jawapan": -1
+    },
+    {
+     "teks": "ط  ظ  ____  غ",
+     "rumi": "tho  zho  ____  ghain",
+     "jawapan": -1
+    }
+   ],
+   "id": "jawi-a4"
+  },
+  {
+   "bahagian": "A",
+   "jenis": "tempat_kosong",
+   "soalan": "توليس حروف توغکل مڠيکوت اوروتن يڠ بتول.",
+   "rumi": "Tulis huruf tunggal mengikut urutan yang betul.",
+   "markah": 3,
+   "bank": [
+    "ذ",
+    "ق",
+    "ه"
+   ],
+   "bankRumi": [
+    "dzal",
+    "qaf",
+    "ha"
+   ],
+   "item": [
+    {
+     "teks": "ح  خ  د  ____",
+     "rumi": "ha  kha  dal  ____",
+     "jawapan": -1
+    },
+    {
+     "teks": "ف  ____  ک  ل",
+     "rumi": "fa  ____  kaf  lam",
+     "jawapan": -1
+    },
+    {
+     "teks": "ن  و  ____  ي",
+     "rumi": "nun  wau  ____  ya",
+     "jawapan": -1
+    }
+   ],
+   "id": "jawi-a5"
+  },
+  {
+   "bahagian": "A",
+   "jenis": "tempat_kosong",
+   "soalan": "توليس حروف توغکل مڠيکوت اوروتن يڠ بتول.",
+   "rumi": "Tulis huruf tunggal mengikut urutan yang betul.",
+   "markah": 3,
+   "bank": [
+    "ب",
+    "د",
+    "و"
+   ],
+   "bankRumi": [
+    "ba",
+    "dal",
+    "wau"
+   ],
+   "item": [
+    {
+     "teks": "ا  ____  ت  ث",
+     "rumi": "alif  ____  ta  tha",
+     "jawapan": -1
+    },
+    {
+     "teks": "خ  ____  ذ  ر",
+     "rumi": "kha  ____  dzal  ra",
+     "jawapan": -1
+    },
+    {
+     "teks": "م  ن  ____  ه",
+     "rumi": "mim  nun  ____  ha",
+     "jawapan": -1
+    }
+   ],
+   "id": "jawi-a6"
+  },
+  {
+   "bahagian": "A",
+   "jenis": "bulat",
+   "soalan": "سامبوڠکن حروف ٢ برايکوت منجادي ساتو ڤرکاتاءن.",
+   "rumi": "Sambungkan huruf berangkai menjadi satu perkataan.",
+   "markah": 2,
+   "item": [
+    {
+     "teks": "ب + و + ک + و",
+     "rumi": "b + u + k + u",
+     "pilihan": [
+      {
+       "teks": "بوکو",
+       "rumi": "buku"
+      },
+      {
+       "teks": "بکو",
+       "rumi": "buku"
+      }
+     ],
+     "jawapan": 0
+    },
+    {
+     "teks": "س + و + س + و",
+     "rumi": "s + u + s + u",
+     "pilihan": [
+      {
+       "teks": "سسو",
+       "rumi": "susu"
+      },
+      {
+       "teks": "سوسو",
+       "rumi": "susu"
+      }
+     ],
+     "jawapan": 1
+    }
+   ],
+   "id": "jawi-a7"
+  },
+  {
+   "bahagian": "A",
+   "jenis": "bulat",
+   "soalan": "سامبوڠکن حروف ٢ برايکوت منجادي ساتو ڤرکاتاءن.",
+   "rumi": "Sambungkan huruf berangkai menjadi satu perkataan.",
+   "markah": 2,
+   "item": [
+    {
+     "teks": "ن + ا + س + ي",
+     "rumi": "n + a + s + i",
+     "pilihan": [
+      {
+       "teks": "ناسي",
+       "rumi": "nasi"
+      },
+      {
+       "teks": "نسي",
+       "rumi": "nasi"
+      }
+     ],
+     "jawapan": 0
+    },
+    {
+     "teks": "ر + و + ت + ي",
+     "rumi": "r + o + t + i",
+     "pilihan": [
+      {
+       "teks": "رتي",
+       "rumi": "roti"
+      },
+      {
+       "teks": "روتي",
+       "rumi": "roti"
+      }
+     ],
+     "jawapan": 1
+    }
+   ],
+   "id": "jawi-a8"
+  },
+  {
+   "bahagian": "A",
+   "jenis": "bulat",
+   "soalan": "سامبوڠکن حروف ٢ برايکوت منجادي ساتو ڤرکاتاءن.",
+   "rumi": "Sambungkan huruf berangkai menjadi satu perkataan.",
+   "markah": 2,
+   "item": [
+    {
+     "teks": "ب + و + ل + ا",
+     "rumi": "b + o + l + a",
+     "pilihan": [
+      {
+       "teks": "بولا",
+       "rumi": "bola"
+      },
+      {
+       "teks": "بلا",
+       "rumi": "bola"
+      }
+     ],
+     "jawapan": 0
+    },
+    {
+     "teks": "م + ي + ج + ا",
+     "rumi": "m + e + j + a",
+     "pilihan": [
+      {
+       "teks": "ميجا",
+       "rumi": "meja"
+      },
+      {
+       "teks": "مجا",
+       "rumi": "meja"
+      }
+     ],
+     "jawapan": 0
+    }
+   ],
+   "id": "jawi-a9"
+  },
+  {
+   "bahagian": "A",
+   "jenis": "bulat",
+   "soalan": "سامبوڠکن حروف ٢ برايکوت منجادي ساتو ڤرکاتاءن.",
+   "rumi": "Sambungkan huruf berangkai menjadi satu perkataan.",
+   "markah": 2,
+   "item": [
+    {
+     "teks": "ݢ + ي + ݢ + ي",
+     "rumi": "g + i + g + i",
+     "pilihan": [
+      {
+       "teks": "ݢݢي",
+       "rumi": "gigi"
+      },
+      {
+       "teks": "ݢيݢي",
+       "rumi": "gigi"
+      }
+     ],
+     "jawapan": 1
+    },
+    {
+     "teks": "ب + ا + ت + و",
+     "rumi": "b + a + t + u",
+     "pilihan": [
+      {
+       "teks": "باتو",
+       "rumi": "batu"
+      },
+      {
+       "teks": "بتو",
+       "rumi": "batu"
+      }
+     ],
+     "jawapan": 0
+    }
+   ],
+   "id": "jawi-a10"
+  },
+  {
+   "bahagian": "A",
+   "jenis": "bulat",
+   "soalan": "حروف يڠ بوليه دسامبوڠ کڤد حروف سلفسڽ اياله ____.",
+   "rumi": "Huruf yang boleh disambung kepada huruf selepasnya ialah ____.",
+   "markah": 2,
+   "item": [
+    {
+     "teks": "حروف يڠ بوليه دسامبوڠ کڤد حروف سلفسڽ اياله ____.",
+     "rumi": "Huruf yang boleh disambung kepada huruf selepasnya ialah ____.",
+     "pilihan": [
+      {
+       "teks": "ب",
+       "rumi": "ba"
+      },
+      {
+       "teks": "د",
+       "rumi": "dal"
+      }
+     ],
+     "jawapan": 0
+    },
+    {
+     "teks": "حروف يڠ بوليه دسامبوڠ کڤد حروف سلفسڽ اياله ____.",
+     "rumi": "Huruf yang boleh disambung kepada huruf selepasnya ialah ____.",
+     "pilihan": [
+      {
+       "teks": "ر",
+       "rumi": "ra"
+      },
+      {
+       "teks": "ت",
+       "rumi": "ta"
+      }
+     ],
+     "jawapan": 1
+    }
+   ],
+   "id": "jawi-a11"
+  },
+  {
+   "bahagian": "A",
+   "jenis": "bulat",
+   "soalan": "حروف يڠ بوليه دسامبوڠ کڤد حروف سلفسڽ اياله ____.",
+   "rumi": "Huruf yang boleh disambung kepada huruf selepasnya ialah ____.",
+   "markah": 2,
+   "item": [
+    {
+     "teks": "حروف يڠ بوليه دسامبوڠ کڤد حروف سلفسڽ اياله ____.",
+     "rumi": "Huruf yang boleh disambung kepada huruf selepasnya ialah ____.",
+     "pilihan": [
+      {
+       "teks": "م",
+       "rumi": "mim"
+      },
+      {
+       "teks": "و",
+       "rumi": "wau"
+      }
+     ],
+     "jawapan": 0
+    },
+    {
+     "teks": "حروف يڠ بوليه دسامبوڠ کڤد حروف سلفسڽ اياله ____.",
+     "rumi": "Huruf yang boleh disambung kepada huruf selepasnya ialah ____.",
+     "pilihan": [
+      {
+       "teks": "ا",
+       "rumi": "alif"
+      },
+      {
+       "teks": "ن",
+       "rumi": "nun"
+      }
+     ],
+     "jawapan": 1
+    }
+   ],
+   "id": "jawi-a12"
+  },
+  {
+   "bahagian": "A",
+   "jenis": "bulat",
+   "soalan": "حروف يڠ بوليه دسامبوڠ کڤد حروف سلفسڽ اياله ____.",
+   "rumi": "Huruf yang boleh disambung kepada huruf selepasnya ialah ____.",
+   "markah": 2,
+   "item": [
+    {
+     "teks": "حروف يڠ بوليه دسامبوڠ کڤد حروف سلفسڽ اياله ____.",
+     "rumi": "Huruf yang boleh disambung kepada huruf selepasnya ialah ____.",
+     "pilihan": [
+      {
+       "teks": "س",
+       "rumi": "sin"
+      },
+      {
+       "teks": "ز",
+       "rumi": "zai"
+      }
+     ],
+     "jawapan": 0
+    },
+    {
+     "teks": "حروف يڠ بوليه دسامبوڠ کڤد حروف سلفسڽ اياله ____.",
+     "rumi": "Huruf yang boleh disambung kepada huruf selepasnya ialah ____.",
+     "pilihan": [
+      {
+       "teks": "ذ",
+       "rumi": "dzal"
+      },
+      {
+       "teks": "ج",
+       "rumi": "jim"
+      }
+     ],
+     "jawapan": 1
+    }
+   ],
+   "id": "jawi-a13"
+  },
+  {
+   "bahagian": "A",
+   "jenis": "bulat",
+   "soalan": "حروف يڠ بوليه دسامبوڠ کڤد حروف سلفسڽ اياله ____.",
+   "rumi": "Huruf yang boleh disambung kepada huruf selepasnya ialah ____.",
+   "markah": 2,
+   "item": [
+    {
+     "teks": "حروف يڠ بوليه دسامبوڠ کڤد حروف سلفسڽ اياله ____.",
+     "rumi": "Huruf yang boleh disambung kepada huruf selepasnya ialah ____.",
+     "pilihan": [
+      {
+       "teks": "ل",
+       "rumi": "lam"
+      },
+      {
+       "teks": "ز",
+       "rumi": "zai"
+      }
+     ],
+     "jawapan": 0
+    },
+    {
+     "teks": "حروف يڠ بوليه دسامبوڠ کڤد حروف سلفسڽ اياله ____.",
+     "rumi": "Huruf yang boleh disambung kepada huruf selepasnya ialah ____.",
+     "pilihan": [
+      {
+       "teks": "د",
+       "rumi": "dal"
+      },
+      {
+       "teks": "ي",
+       "rumi": "ya"
+      }
+     ],
+     "jawapan": 1
+    }
+   ],
+   "id": "jawi-a14"
+  },
+  {
+   "bahagian": "A",
+   "jenis": "tulis",
+   "soalan": "توليس ڤرکاتاءن برايکوت دالم توليسن جاوي.",
+   "rumi": "Tulis perkataan berikut dalam tulisan Jawi. mata, hidung, mulut.",
+   "markah": 3,
+   "item": [
+    {
+     "teks": "مات",
+     "rumi": "mata"
+    },
+    {
+     "teks": "هيدوڠ",
+     "rumi": "hidung"
+    },
+    {
+     "teks": "مولوت",
+     "rumi": "mulut"
+    }
+   ],
+   "idea": [
+    {
+     "maksud": "Mata — مات",
+     "kata": [
+      "mata",
+      "مات"
+     ]
+    },
+    {
+     "maksud": "Hidung — هيدوڠ",
+     "kata": [
+      "hidung",
+      "هيدوڠ"
+     ]
+    },
+    {
+     "maksud": "Mulut — مولوت",
+     "kata": [
+      "mulut",
+      "مولوت"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "مات، هيدوڠ، مولوت"
+   ],
+   "jawapanContohRumi": [
+    "mata, hidung, mulut"
+   ],
+   "id": "jawi-a15"
+  },
+  {
+   "bahagian": "A",
+   "jenis": "tulis",
+   "soalan": "توليس ڤرکاتاءن برايکوت دالم توليسن جاوي.",
+   "rumi": "Tulis perkataan berikut dalam tulisan Jawi. epal, pisang, durian.",
+   "markah": 3,
+   "item": [
+    {
+     "teks": "ايڤل",
+     "rumi": "epal"
+    },
+    {
+     "teks": "ڤيسڠ",
+     "rumi": "pisang"
+    },
+    {
+     "teks": "دورين",
+     "rumi": "durian"
+    }
+   ],
+   "idea": [
+    {
+     "maksud": "Epal — ايڤل",
+     "kata": [
+      "epal",
+      "ايڤل"
+     ]
+    },
+    {
+     "maksud": "Pisang — ڤيسڠ",
+     "kata": [
+      "pisang",
+      "ڤيسڠ"
+     ]
+    },
+    {
+     "maksud": "Durian — دورين",
+     "kata": [
+      "durian",
+      "دورين"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "ايڤل، ڤيسڠ، دورين"
+   ],
+   "jawapanContohRumi": [
+    "epal, pisang, durian"
+   ],
+   "id": "jawi-a16"
+  },
+  {
+   "bahagian": "A",
+   "jenis": "tulis",
+   "soalan": "توليس ڤرکاتاءن برايکوت دالم توليسن جاوي.",
+   "rumi": "Tulis perkataan berikut dalam tulisan Jawi. itik, kambing, ular.",
+   "markah": 3,
+   "item": [
+    {
+     "teks": "ايتيق",
+     "rumi": "itik"
+    },
+    {
+     "teks": "کمبيڠ",
+     "rumi": "kambing"
+    },
+    {
+     "teks": "اولر",
+     "rumi": "ular"
+    }
+   ],
+   "idea": [
+    {
+     "maksud": "Itik — ايتيق",
+     "kata": [
+      "itik",
+      "ايتيق"
+     ]
+    },
+    {
+     "maksud": "Kambing — کمبيڠ",
+     "kata": [
+      "kambing",
+      "کمبيڠ"
+     ]
+    },
+    {
+     "maksud": "Ular — اولر",
+     "kata": [
+      "ular",
+      "اولر"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "ايتيق، کمبيڠ، اولر"
+   ],
+   "jawapanContohRumi": [
+    "itik, kambing, ular"
+   ],
+   "id": "jawi-a17"
+  },
+  {
+   "bahagian": "A",
+   "jenis": "tulis",
+   "soalan": "توليس ڤرکاتاءن برايکوت دالم توليسن جاوي.",
+   "rumi": "Tulis perkataan berikut dalam tulisan Jawi. putih, merah, biru.",
+   "markah": 3,
+   "item": [
+    {
+     "teks": "ڤوتيه",
+     "rumi": "putih"
+    },
+    {
+     "teks": "ميره",
+     "rumi": "merah"
+    },
+    {
+     "teks": "بيرو",
+     "rumi": "biru"
+    }
+   ],
+   "idea": [
+    {
+     "maksud": "Putih — ڤوتيه",
+     "kata": [
+      "putih",
+      "ڤوتيه"
+     ]
+    },
+    {
+     "maksud": "Merah — ميره",
+     "kata": [
+      "merah",
+      "ميره"
+     ]
+    },
+    {
+     "maksud": "Biru — بيرو",
+     "kata": [
+      "biru",
+      "بيرو"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "ڤوتيه، ميره، بيرو"
+   ],
+   "jawapanContohRumi": [
+    "putih, merah, biru"
+   ],
+   "id": "jawi-a18"
+  },
+  {
+   "bahagian": "A",
+   "jenis": "tulis",
+   "soalan": "توليس ڤرکاتاءن برايکوت دالم توليسن جاوي.",
+   "rumi": "Tulis perkataan berikut dalam tulisan Jawi. makan, minum, tidur.",
+   "markah": 3,
+   "item": [
+    {
+     "teks": "ماکن",
+     "rumi": "makan"
+    },
+    {
+     "teks": "مينوم",
+     "rumi": "minum"
+    },
+    {
+     "teks": "تيدور",
+     "rumi": "tidur"
+    }
+   ],
+   "idea": [
+    {
+     "maksud": "Makan — ماکن",
+     "kata": [
+      "makan",
+      "ماکن"
+     ]
+    },
+    {
+     "maksud": "Minum — مينوم",
+     "kata": [
+      "minum",
+      "مينوم"
+     ]
+    },
+    {
+     "maksud": "Tidur — تيدور",
+     "kata": [
+      "tidur",
+      "تيدور"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "ماکن، مينوم، تيدور"
+   ],
+   "jawapanContohRumi": [
+    "makan, minum, tidur"
+   ],
+   "id": "jawi-a19"
+  },
+  {
+   "bahagian": "A",
+   "jenis": "tulis",
+   "soalan": "توليس ڤرکاتاءن برايکوت دالم توليسن جاوي.",
+   "rumi": "Tulis perkataan berikut dalam tulisan Jawi. meja, kerusi, cawan.",
+   "markah": 3,
+   "item": [
+    {
+     "teks": "ميجا",
+     "rumi": "meja"
+    },
+    {
+     "teks": "کروسي",
+     "rumi": "kerusi"
+    },
+    {
+     "teks": "چاون",
+     "rumi": "cawan"
+    }
+   ],
+   "idea": [
+    {
+     "maksud": "Meja — ميجا",
+     "kata": [
+      "meja",
+      "ميجا"
+     ]
+    },
+    {
+     "maksud": "Kerusi — کروسي",
+     "kata": [
+      "kerusi",
+      "کروسي"
+     ]
+    },
+    {
+     "maksud": "Cawan — چاون",
+     "kata": [
+      "cawan",
+      "چاون"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "ميجا، کروسي، چاون"
+   ],
+   "jawapanContohRumi": [
+    "meja, kerusi, cawan"
+   ],
+   "id": "jawi-a20"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "انتارا حروف برايکوت، يڠ ماناکه تيدق بوليه دسامبوڠ کڤد حروف سلفسڽ؟",
+   "rumi": "Antara huruf berikut, yang manakah tidak boleh disambung kepada huruf selepasnya?",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "ب",
+       "rumi": "ba"
+      },
+      {
+       "teks": "ت",
+       "rumi": "ta"
+      },
+      {
+       "teks": "ر",
+       "rumi": "ra"
+      },
+      {
+       "teks": "م",
+       "rumi": "ma"
+      }
+     ],
+     "jawapan": 2
+    }
+   ],
+   "id": "jawi-b1"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "انتارا حروف برايکوت، يڠ ماناکه بوليه دسامبوڠ کڤد حروف سلفسڽ؟",
+   "rumi": "Antara huruf berikut, yang manakah boleh disambung kepada huruf selepasnya?",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "ا",
+       "rumi": "alif"
+      },
+      {
+       "teks": "د",
+       "rumi": "dal"
+      },
+      {
+       "teks": "و",
+       "rumi": "wau"
+      },
+      {
+       "teks": "ب",
+       "rumi": "ba"
+      }
+     ],
+     "jawapan": 3
+    }
+   ],
+   "id": "jawi-b2"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "حروف ا، د، ر دان و تيدق بوليه ____ کڤد حروف سلفسڽ.",
+   "rumi": "Huruf alif, dal, ra dan wau tidak boleh ____ kepada huruf selepasnya.",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "دسامبوڠ",
+       "rumi": "disambung"
+      },
+      {
+       "teks": "دچمڤور",
+       "rumi": "dicampur"
+      },
+      {
+       "teks": "دسوسون",
+       "rumi": "disusun"
+      },
+      {
+       "teks": "دباليك",
+       "rumi": "dibalik"
+      }
+     ],
+     "jawapan": 0
+    }
+   ],
+   "id": "jawi-b3"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "سامبوڠکن حروف م + ا + ک + ن. بيدڠ يڠ بتول اياله ____.",
+   "rumi": "Sambungkan huruf m + a + k + n. Bidang yang betul ialah ____.",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "مکان",
+       "rumi": "makan"
+      },
+      {
+       "teks": "ماکن",
+       "rumi": "makan"
+      },
+      {
+       "teks": "ماکان",
+       "rumi": "makan"
+      },
+      {
+       "teks": "ماچن",
+       "rumi": "makan"
+      }
+     ],
+     "jawapan": 1
+    }
+   ],
+   "id": "jawi-b4"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "سامبوڠکن حروف ب + و + ک + و. بيدڠ يڠ بتول اياله ____.",
+   "rumi": "Sambungkan huruf b + u + k + u. Bidang yang betul ialah ____.",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "بوکو",
+       "rumi": "buku"
+      },
+      {
+       "teks": "بکو",
+       "rumi": "buku"
+      },
+      {
+       "teks": "بواکو",
+       "rumi": "buku"
+      },
+      {
+       "teks": "بوکوا",
+       "rumi": "buku"
+      }
+     ],
+     "jawapan": 0
+    }
+   ],
+   "id": "jawi-b5"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "حروف يڠ دݢوناکن اونتوق بونيي «ng» اياله ____.",
+   "rumi": "Huruf yang digunakan untuk bunyi «ng» ialah ____.",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "ن",
+       "rumi": "nun"
+      },
+      {
+       "teks": "ڠ",
+       "rumi": "nga"
+      },
+      {
+       "teks": "ڽ",
+       "rumi": "nya"
+      },
+      {
+       "teks": "ݢ",
+       "rumi": "ga"
+      }
+     ],
+     "jawapan": 1
+    }
+   ],
+   "id": "jawi-b6"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "حروف يڠ دݢوناکن اونتوق بونيي «ny» اياله ____.",
+   "rumi": "Huruf yang digunakan untuk bunyi «ny» ialah ____.",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "ڽ",
+       "rumi": "nya"
+      },
+      {
+       "teks": "ڠ",
+       "rumi": "nga"
+      },
+      {
+       "teks": "ن",
+       "rumi": "nun"
+      },
+      {
+       "teks": "ي",
+       "rumi": "ya"
+      }
+     ],
+     "jawapan": 0
+    }
+   ],
+   "id": "jawi-b7"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "حروف يڠ دݢوناکن اونتوق بونيي «c» اياله ____.",
+   "rumi": "Huruf yang digunakan untuk bunyi «c» ialah ____.",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "ج",
+       "rumi": "ja"
+      },
+      {
+       "teks": "ث",
+       "rumi": "tha"
+      },
+      {
+       "teks": "چ",
+       "rumi": "ca"
+      },
+      {
+       "teks": "ݢ",
+       "rumi": "ga"
+      }
+     ],
+     "jawapan": 2
+    }
+   ],
+   "id": "jawi-b8"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "حروف يڠ دݢوناکن اونتوق بونيي «v» اياله ____.",
+   "rumi": "Huruf yang digunakan untuk bunyi «v» ialah ____.",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "و",
+       "rumi": "wau"
+      },
+      {
+       "teks": "ۏ",
+       "rumi": "va"
+      },
+      {
+       "teks": "ڤ",
+       "rumi": "pa"
+      },
+      {
+       "teks": "ف",
+       "rumi": "fa"
+      }
+     ],
+     "jawapan": 1
+    }
+   ],
+   "id": "jawi-b9"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "حروف يڠ دݢوناکن اونتوق بونيي «g» اياله ____.",
+   "rumi": "Huruf yang digunakan untuk bunyi «g» ialah ____.",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "ک",
+       "rumi": "kaf"
+      },
+      {
+       "teks": "ق",
+       "rumi": "qaf"
+      },
+      {
+       "teks": "ݢ",
+       "rumi": "ga"
+      },
+      {
+       "teks": "ج",
+       "rumi": "ja"
+      }
+     ],
+     "jawapan": 2
+    }
+   ],
+   "id": "jawi-b10"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "حروف يڠ دݢوناکن اونتوق بونيي «p» اياله ____.",
+   "rumi": "Huruf yang digunakan untuk bunyi «p» ialah ____.",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "ف",
+       "rumi": "fa"
+      },
+      {
+       "teks": "ڤ",
+       "rumi": "pa"
+      },
+      {
+       "teks": "ب",
+       "rumi": "ba"
+      },
+      {
+       "teks": "ݢ",
+       "rumi": "ga"
+      }
+     ],
+     "jawapan": 1
+    }
+   ],
+   "id": "jawi-b11"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "انتارا ڤرکاتاءن برايکوت، يڠ ماناکه مڠاندوڠي حروف چ؟",
+   "rumi": "Antara perkataan berikut, yang manakah mengandungi huruf ca?",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "باڤ",
+       "rumi": "bapa"
+      },
+      {
+       "teks": "بوکو",
+       "rumi": "buku"
+      },
+      {
+       "teks": "باچ",
+       "rumi": "baca"
+      },
+      {
+       "teks": "ݢورو",
+       "rumi": "guru"
+      }
+     ],
+     "jawapan": 2
+    }
+   ],
+   "id": "jawi-b12"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "انتارا ڤرکاتاءن برايکوت، يڠ ماناکه مڠاندوڠي حروف ڽ؟",
+   "rumi": "Antara perkataan berikut, yang manakah mengandungi huruf nya?",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "موڽيت",
+       "rumi": "monyet"
+      },
+      {
+       "teks": "مونيت",
+       "rumi": "munit"
+      },
+      {
+       "teks": "مومي",
+       "rumi": "mumi"
+      },
+      {
+       "teks": "ݢوني",
+       "rumi": "guni"
+      }
+     ],
+     "jawapan": 0
+    }
+   ],
+   "id": "jawi-b13"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "کيت مليهت ____ د لڠيت ڤد وقتو مالم.",
+   "rumi": "Kita melihat ____ di langit pada waktu malam.",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "بيتڠ",
+       "rumi": "bintang"
+      },
+      {
+       "teks": "بينتڠ",
+       "rumi": "bintang"
+      },
+      {
+       "teks": "بينتن",
+       "rumi": "bintang"
+      },
+      {
+       "teks": "بينتاڠ",
+       "rumi": "bintang"
+      }
+     ],
+     "jawapan": 1
+    }
+   ],
+   "id": "jawi-b14"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "____ اد د دالم اکواريوم.",
+   "rumi": "____ ada di dalam akuarium.",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "اکن",
+       "rumi": "ikan"
+      },
+      {
+       "teks": "ايكت",
+       "rumi": "ikan"
+      },
+      {
+       "teks": "ايکن",
+       "rumi": "ikan"
+      },
+      {
+       "teks": "ايکو",
+       "rumi": "ikan"
+      }
+     ],
+     "jawapan": 2
+    }
+   ],
+   "id": "jawi-b15"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "کاکق مڠݢوناکن ____ اونتوق منوليس.",
+   "rumi": "Kakak menggunakan ____ untuk menulis.",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "ڤينسيل",
+       "rumi": "pensel"
+      },
+      {
+       "teks": "ڤنسيل",
+       "rumi": "pensel"
+      },
+      {
+       "teks": "فينسيل",
+       "rumi": "pensel"
+      },
+      {
+       "teks": "ڤينسيله",
+       "rumi": "pensel"
+      }
+     ],
+     "jawapan": 0
+    }
+   ],
+   "id": "jawi-b16"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "____ اداله هيوان يڠ مماکن داءون.",
+   "rumi": "____ ialah haiwan yang memakan daun.",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "اولط",
+       "rumi": "ulat"
+      },
+      {
+       "teks": "اولث",
+       "rumi": "ulat"
+      },
+      {
+       "teks": "اولت",
+       "rumi": "ulat"
+      },
+      {
+       "teks": "اوله",
+       "rumi": "ulat"
+      }
+     ],
+     "jawapan": 2
+    }
+   ],
+   "id": "jawi-b17"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "ساي مينوم ____ ڤد وقتو ڤاݢي.",
+   "rumi": "Saya minum ____ pada waktu pagi.",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "سوسو",
+       "rumi": "susu"
+      },
+      {
+       "teks": "سسو",
+       "rumi": "susu"
+      },
+      {
+       "teks": "سوسوو",
+       "rumi": "susu"
+      },
+      {
+       "teks": "شوسو",
+       "rumi": "susu"
+      }
+     ],
+     "jawapan": 0
+    }
+   ],
+   "id": "jawi-b18"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "____ اداله هيوان يڠ مڠيک.",
+   "rumi": "____ ialah haiwan yang mengiau.",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "کوجيڠ",
+       "rumi": "kucing"
+      },
+      {
+       "teks": "کوسيڠ",
+       "rumi": "kucing"
+      },
+      {
+       "teks": "کوچيڠ",
+       "rumi": "kucing"
+      },
+      {
+       "teks": "کوچڠ",
+       "rumi": "kucing"
+      }
+     ],
+     "jawapan": 2
+    }
+   ],
+   "id": "jawi-b19"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "داءون ڤوکوق يڠ سيݢر بروارنا ____.",
+   "rumi": "Daun pokok yang segar berwarna ____.",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "هيجاو",
+       "rumi": "hijau"
+      },
+      {
+       "teks": "هيجو",
+       "rumi": "hijau"
+      },
+      {
+       "teks": "هيجا",
+       "rumi": "hijau"
+      },
+      {
+       "teks": "هيجاوو",
+       "rumi": "hijau"
+      }
+     ],
+     "jawapan": 0
+    }
+   ],
+   "id": "jawi-b20"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "ورنا سوسو اداله ____.",
+   "rumi": "Warna susu ialah ____.",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "ڤوتي",
+       "rumi": "putih"
+      },
+      {
+       "teks": "ڤوته",
+       "rumi": "putih"
+      },
+      {
+       "teks": "ڤوتيه",
+       "rumi": "putih"
+      },
+      {
+       "teks": "فيوتيه",
+       "rumi": "putih"
+      }
+     ],
+     "jawapan": 2
+    }
+   ],
+   "id": "jawi-b21"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "____ مڠاجر موريد د دالم کلس.",
+   "rumi": "____ mengajar murid di dalam kelas.",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "کورو",
+       "rumi": "guru"
+      },
+      {
+       "teks": "ݢرو",
+       "rumi": "guru"
+      },
+      {
+       "teks": "ݢورور",
+       "rumi": "guru"
+      },
+      {
+       "teks": "ݢورو",
+       "rumi": "guru"
+      }
+     ],
+     "jawapan": 3
+    }
+   ],
+   "id": "jawi-b22"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "____ اداله تيمڤت کيت منيمبا علمو.",
+   "rumi": "____ ialah tempat kita menimba ilmu.",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "سکولا",
+       "rumi": "sekolah"
+      },
+      {
+       "teks": "سکوله",
+       "rumi": "sekolah"
+      },
+      {
+       "teks": "سکولح",
+       "rumi": "sekolah"
+      },
+      {
+       "teks": "سکولاه",
+       "rumi": "sekolah"
+      }
+     ],
+     "jawapan": 1
+    }
+   ],
+   "id": "jawi-b23"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "تندا باچ يڠ دݢوناکن ڤد اخير ايڠت سوءال اياله ____.",
+   "rumi": "Tanda baca yang digunakan pada akhir ayat soal ialah ____.",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "نوقته",
+       "rumi": "noktah"
+      },
+      {
+       "teks": "کومه",
+       "rumi": "koma"
+      },
+      {
+       "teks": "تندا سوءال",
+       "rumi": "tanda soal"
+      },
+      {
+       "teks": "تندا سرو",
+       "rumi": "tanda seru"
+      }
+     ],
+     "jawapan": 2
+    }
+   ],
+   "id": "jawi-b24"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "تندا باچ «.» ديسبوت ____.",
+   "rumi": "Tanda baca «.» disebut ____.",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "نوقته",
+       "rumi": "noktah"
+      },
+      {
+       "teks": "کومه",
+       "rumi": "koma"
+      },
+      {
+       "teks": "تندا سوءال",
+       "rumi": "tanda soal"
+      },
+      {
+       "teks": "تيتيق دوا",
+       "rumi": "titik dua"
+      }
+     ],
+     "jawapan": 0
+    }
+   ],
+   "id": "jawi-b25"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "تندا باچ «،» ديسبوت ____.",
+   "rumi": "Tanda baca «،» disebut ____.",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "تندا سرو",
+       "rumi": "tanda seru"
+      },
+      {
+       "teks": "نوقته",
+       "rumi": "noktah"
+      },
+      {
+       "teks": "کومه",
+       "rumi": "koma"
+      },
+      {
+       "teks": "تيتيق دوا",
+       "rumi": "titik dua"
+      }
+     ],
+     "jawapan": 2
+    }
+   ],
+   "id": "jawi-b26"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "تندا باچ يڠ دݢوناکن اونتوق منونجوقکن ڤراساءن کوت اياله ____.",
+   "rumi": "Tanda baca yang digunakan untuk menunjukkan perasaan kuat ialah ____.",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "تندا سوءال",
+       "rumi": "tanda soal"
+      },
+      {
+       "teks": "کومه",
+       "rumi": "koma"
+      },
+      {
+       "teks": "نوقته",
+       "rumi": "noktah"
+      },
+      {
+       "teks": "تندا سرو",
+       "rumi": "tanda seru"
+      }
+     ],
+     "jawapan": 3
+    }
+   ],
+   "id": "jawi-b27"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "انم دالم اڠک جاوي دتوليس ____.",
+   "rumi": "Enam dalam angka Jawi ditulis ____.",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "٤",
+       "rumi": "empat"
+      },
+      {
+       "teks": "٩",
+       "rumi": "sembilan"
+      },
+      {
+       "teks": "٦",
+       "rumi": "enam"
+      },
+      {
+       "teks": "٣",
+       "rumi": "tiga"
+      }
+     ],
+     "jawapan": 2
+    }
+   ],
+   "id": "jawi-b28"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "اڠک جاوي ٩ دباچ ____.",
+   "rumi": "Angka Jawi ٩ dibaca ____.",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "توجوه",
+       "rumi": "tujuh"
+      },
+      {
+       "teks": "لاڤن",
+       "rumi": "lapan"
+      },
+      {
+       "teks": "انم",
+       "rumi": "enam"
+      },
+      {
+       "teks": "سمبيلن",
+       "rumi": "sembilan"
+      }
+     ],
+     "jawapan": 3
+    }
+   ],
+   "id": "jawi-b29"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "اڠک جاوي ٣ دباچ ____.",
+   "rumi": "Angka Jawi ٣ dibaca ____.",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "تيݢ",
+       "rumi": "tiga"
+      },
+      {
+       "teks": "دوا",
+       "rumi": "dua"
+      },
+      {
+       "teks": "امڤت",
+       "rumi": "empat"
+      },
+      {
+       "teks": "ليم",
+       "rumi": "lima"
+      }
+     ],
+     "jawapan": 0
+    }
+   ],
+   "id": "jawi-b30"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "اڠک جاوي ٢٥ دالم اڠک رومي اياله ____.",
+   "rumi": "Angka Jawi ٢٥ dalam angka Rumi ialah ____.",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "205",
+       "rumi": "205"
+      },
+      {
+       "teks": "52",
+       "rumi": "52"
+      },
+      {
+       "teks": "25",
+       "rumi": "25"
+      },
+      {
+       "teks": "22",
+       "rumi": "22"
+      }
+     ],
+     "jawapan": 2
+    }
+   ],
+   "id": "jawi-b31"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "تاهون ٢٠٢٤ دالم اڠک رومي اياله ____.",
+   "rumi": "Tahun ٢٠٢٤ dalam angka Rumi ialah ____.",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "2042",
+       "rumi": "2042"
+      },
+      {
+       "teks": "2204",
+       "rumi": "2204"
+      },
+      {
+       "teks": "2024",
+       "rumi": "2024"
+      },
+      {
+       "teks": "2004",
+       "rumi": "2004"
+      }
+     ],
+     "jawapan": 2
+    }
+   ],
+   "id": "jawi-b32"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "ڤرکاتاءن «کتاب» اداله کات ڤينجم درڤد بهاس ____.",
+   "rumi": "Perkataan «kitab» ialah kata pinjaman daripada bahasa ____.",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "ايڠݢريس",
+       "rumi": "Inggeris"
+      },
+      {
+       "teks": "عرب",
+       "rumi": "Arab"
+      },
+      {
+       "teks": "جاوي",
+       "rumi": "Jawi"
+      },
+      {
+       "teks": "ملايو",
+       "rumi": "Melayu"
+      }
+     ],
+     "jawapan": 1
+    }
+   ],
+   "id": "jawi-b33"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "انتارا ڤرکاتاءن برايکوت، يڠ ماناکه کات ڤينجم درڤد بهاس عرب؟",
+   "rumi": "Antara perkataan berikut, yang manakah kata pinjaman daripada bahasa Arab?",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "تيليۏيشن",
+       "rumi": "televisyen"
+      },
+      {
+       "teks": "باسيکل",
+       "rumi": "basikal"
+      },
+      {
+       "teks": "مسجد",
+       "rumi": "masjid"
+      },
+      {
+       "teks": "هوتيل",
+       "rumi": "hotel"
+      }
+     ],
+     "jawapan": 2
+    }
+   ],
+   "id": "jawi-b34"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "ڤرکاتاءن «علمو» اداله کات ڤينجم درڤد بهاس ____.",
+   "rumi": "Perkataan «ilmu» ialah kata pinjaman daripada bahasa ____.",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "عرب",
+       "rumi": "Arab"
+      },
+      {
+       "teks": "ايڠݢريس",
+       "rumi": "Inggeris"
+      },
+      {
+       "teks": "چينا",
+       "rumi": "Cina"
+      },
+      {
+       "teks": "جاوي",
+       "rumi": "Jawi"
+      }
+     ],
+     "jawapan": 0
+    }
+   ],
+   "id": "jawi-b35"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "انتارا ڤرکاتاءن برايکوت، يڠ ماناکه کات ڤينجم درڤد بهاس عرب؟",
+   "rumi": "Antara perkataan berikut, yang manakah kata pinjaman daripada bahasa Arab?",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "موتور",
+       "rumi": "motor"
+      },
+      {
+       "teks": "کاميرا",
+       "rumi": "kamera"
+      },
+      {
+       "teks": "تيکيت",
+       "rumi": "tiket"
+      },
+      {
+       "teks": "دنيا",
+       "rumi": "dunia"
+      }
+     ],
+     "jawapan": 3
+    }
+   ],
+   "id": "jawi-b36"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "ڤرکاتاءن «صبر» اداله کات ڤينجم درڤد بهاس ____.",
+   "rumi": "Perkataan «sabar» ialah kata pinjaman daripada bahasa ____.",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "ايڠݢريس",
+       "rumi": "Inggeris"
+      },
+      {
+       "teks": "عرب",
+       "rumi": "Arab"
+      },
+      {
+       "teks": "ملايو",
+       "rumi": "Melayu"
+      },
+      {
+       "teks": "چينا",
+       "rumi": "Cina"
+      }
+     ],
+     "jawapan": 1
+    }
+   ],
+   "id": "jawi-b37"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "انتارا ڤرکاتاءن برايکوت، يڠ ماناکه کات ڤينجم درڤد بهاس عرب؟",
+   "rumi": "Antara perkataan berikut, yang manakah kata pinjaman daripada bahasa Arab?",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "اخلاق",
+       "rumi": "akhlak"
+      },
+      {
+       "teks": "تيکيت",
+       "rumi": "tiket"
+      },
+      {
+       "teks": "سينما",
+       "rumi": "sinema"
+      },
+      {
+       "teks": "موتور",
+       "rumi": "motor"
+      }
+     ],
+     "jawapan": 0
+    }
+   ],
+   "id": "jawi-b38"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "ڤرکاتاءن «تيليۏيشن» اداله کات ڤينجم درڤد بهاس ____.",
+   "rumi": "Perkataan «televisyen» ialah kata pinjaman daripada bahasa ____.",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "عرب",
+       "rumi": "Arab"
+      },
+      {
+       "teks": "ايڠݢريس",
+       "rumi": "Inggeris"
+      },
+      {
+       "teks": "جاوي",
+       "rumi": "Jawi"
+      },
+      {
+       "teks": "ملايو",
+       "rumi": "Melayu"
+      }
+     ],
+     "jawapan": 1
+    }
+   ],
+   "id": "jawi-b39"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "انتارا ڤرکاتاءن برايکوت، يڠ ماناکه کات ڤينجم درڤد بهاس ايڠݢريس؟",
+   "rumi": "Antara perkataan berikut, yang manakah kata pinjaman daripada bahasa Inggeris?",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "باسيکل",
+       "rumi": "basikal"
+      },
+      {
+       "teks": "مسجد",
+       "rumi": "masjid"
+      },
+      {
+       "teks": "کتاب",
+       "rumi": "kitab"
+      },
+      {
+       "teks": "صبر",
+       "rumi": "sabar"
+      }
+     ],
+     "jawapan": 0
+    }
+   ],
+   "id": "jawi-b40"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "ڤرکاتاءن «ديسيڤلين» اداله کات ڤينجم درڤد بهاس ____.",
+   "rumi": "Perkataan «disiplin» ialah kata pinjaman daripada bahasa ____.",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "عرب",
+       "rumi": "Arab"
+      },
+      {
+       "teks": "ملايو",
+       "rumi": "Melayu"
+      },
+      {
+       "teks": "ايڠݢريس",
+       "rumi": "Inggeris"
+      },
+      {
+       "teks": "جاوي",
+       "rumi": "Jawi"
+      }
+     ],
+     "jawapan": 2
+    }
+   ],
+   "id": "jawi-b41"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "انتارا ڤرکاتاءن برايکوت، يڠ ماناکه کات ڤينجم درڤد بهاس ايڠݢريس؟",
+   "rumi": "Antara perkataan berikut, yang manakah kata pinjaman daripada bahasa Inggeris?",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "دنيا",
+       "rumi": "dunia"
+      },
+      {
+       "teks": "اخلاق",
+       "rumi": "akhlak"
+      },
+      {
+       "teks": "علمو",
+       "rumi": "ilmu"
+      },
+      {
+       "teks": "موتور",
+       "rumi": "motor"
+      }
+     ],
+     "jawapan": 3
+    }
+   ],
+   "id": "jawi-b42"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "خط يڠ ڤاليڠ سسواي اونتوق منوليس القرءان اداله ____.",
+   "rumi": "Khat yang paling sesuai untuk menulis Al-Quran ialah ____.",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "ثلث",
+       "rumi": "thuluth"
+      },
+      {
+       "teks": "نسخ",
+       "rumi": "nasakh"
+      },
+      {
+       "teks": "کوفي",
+       "rumi": "kufi"
+      },
+      {
+       "teks": "ديواني",
+       "rumi": "diwani"
+      }
+     ],
+     "jawapan": 1
+    }
+   ],
+   "id": "jawi-b43"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "خط يڠ ڤاليڠ توا دان برسودوت سودوت اياله ____.",
+   "rumi": "Khat yang paling tua dan bersudut-sudut ialah ____.",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "کوفي",
+       "rumi": "kufi"
+      },
+      {
+       "teks": "نسخ",
+       "rumi": "nasakh"
+      },
+      {
+       "teks": "رقعة",
+       "rumi": "riq'ah"
+      },
+      {
+       "teks": "فارسي",
+       "rumi": "farisi"
+      }
+     ],
+     "jawapan": 0
+    }
+   ],
+   "id": "jawi-b44"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "خط يڠ دݢوناکن ڤد ڤرنکڤن راسمي دان ڤد تاج مبنڠونن اياله ____.",
+   "rumi": "Khat yang digunakan pada perhiasan rasmi dan pada mercu bangunan ialah ____.",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "نسخ",
+       "rumi": "nasakh"
+      },
+      {
+       "teks": "رقعة",
+       "rumi": "riq'ah"
+      },
+      {
+       "teks": "کوفي",
+       "rumi": "kufi"
+      },
+      {
+       "teks": "ثلث",
+       "rumi": "thuluth"
+      }
+     ],
+     "jawapan": 3
+    }
+   ],
+   "id": "jawi-b45"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "خط يڠ مڠالير دان سوكر دباچ اياله ____.",
+   "rumi": "Khat yang mengalir dan sukar dibaca ialah ____.",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "کوفي",
+       "rumi": "kufi"
+      },
+      {
+       "teks": "ديواني",
+       "rumi": "diwani"
+      },
+      {
+       "teks": "نسخ",
+       "rumi": "nasakh"
+      },
+      {
+       "teks": "ثلث",
+       "rumi": "thuluth"
+      }
+     ],
+     "jawapan": 1
+    }
+   ],
+   "id": "jawi-b46"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "خط يڠ کچيل دان سنت دتوليس اياله ____.",
+   "rumi": "Khat yang kecil dan senang ditulis ialah ____.",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "ثلث",
+       "rumi": "thuluth"
+      },
+      {
+       "teks": "کوفي",
+       "rumi": "kufi"
+      },
+      {
+       "teks": "رقعة",
+       "rumi": "riq'ah"
+      },
+      {
+       "teks": "ديواني",
+       "rumi": "diwani"
+      }
+     ],
+     "jawapan": 2
+    }
+   ],
+   "id": "jawi-b47"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "الت يڠ ڤاليڠ اوتام اونتوق منوليس خط اداله ____.",
+   "rumi": "Alat yang paling utama untuk menulis khat ialah ____.",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "قلم",
+       "rumi": "kalam"
+      },
+      {
+       "teks": "ڤمادم",
+       "rumi": "pemadam"
+      },
+      {
+       "teks": "کرتس",
+       "rumi": "kertas"
+      },
+      {
+       "teks": "ڤمباريس",
+       "rumi": "pembaris"
+      }
+     ],
+     "jawapan": 0
+    }
+   ],
+   "id": "jawi-b48"
+  },
+  {
+   "bahagian": "B",
+   "jenis": "objektif",
+   "soalan": "الت يڠ دݢوناکن اونتوق مموهڤ توليسن خط يڠ ساله اداله ____.",
+   "rumi": "Alat yang digunakan untuk memadam tulisan khat yang salah ialah ____.",
+   "markah": 1,
+   "item": [
+    {
+     "teks": "",
+     "rumi": "",
+     "pilihan": [
+      {
+       "teks": "کرتس",
+       "rumi": "kertas"
+      },
+      {
+       "teks": "قلم",
+       "rumi": "kalam"
+      },
+      {
+       "teks": "ڤمباريس",
+       "rumi": "pembaris"
+      },
+      {
+       "teks": "ڤمادم",
+       "rumi": "pemadam"
+      }
+     ],
+     "jawapan": 3
+    }
+   ],
+   "id": "jawi-b49"
+  },
+  {
+   "bahagian": "C",
+   "jenis": "tulis",
+   "markah": 5,
+   "soalan": "جاويکن ڤرکاتاءن برايکوت تنتڠ سکوله.",
+   "rumi": "Jawikan perkataan berikut tentang sekolah: sekolah, guru, murid, kelas, buku.",
+   "idea": [
+    {
+     "maksud": "Sekolah — سکوله",
+     "kata": [
+      "sekolah",
+      "سکوله"
+     ]
+    },
+    {
+     "maksud": "Guru — ݢورو",
+     "kata": [
+      "guru",
+      "ݢورو"
+     ]
+    },
+    {
+     "maksud": "Murid — موريد",
+     "kata": [
+      "murid",
+      "موريد"
+     ]
+    },
+    {
+     "maksud": "Kelas — کلس",
+     "kata": [
+      "kelas",
+      "کلس"
+     ]
+    },
+    {
+     "maksud": "Buku — بوکو",
+     "kata": [
+      "buku",
+      "بوکو"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "سکوله، ݢورو، موريد، کلس، بوکو"
+   ],
+   "jawapanContohRumi": [
+    "sekolah, guru, murid, kelas, buku"
+   ],
+   "id": "jawi-c1"
+  },
+  {
+   "bahagian": "C",
+   "jenis": "tulis",
+   "markah": 5,
+   "soalan": "جاويکن ڤرکاتاءن برايکوت تنتڠ رومه.",
+   "rumi": "Jawikan perkataan berikut tentang rumah: rumah, dapur, bilik, pintu, tingkap.",
+   "idea": [
+    {
+     "maksud": "Rumah — رومه",
+     "kata": [
+      "rumah",
+      "رومه"
+     ]
+    },
+    {
+     "maksud": "Dapur — داڤور",
+     "kata": [
+      "dapur",
+      "داڤور"
+     ]
+    },
+    {
+     "maksud": "Bilik — بيليق",
+     "kata": [
+      "bilik",
+      "بيليق"
+     ]
+    },
+    {
+     "maksud": "Pintu — ڤينتو",
+     "kata": [
+      "pintu",
+      "ڤينتو"
+     ]
+    },
+    {
+     "maksud": "Tingkap — تيڠکڤ",
+     "kata": [
+      "tingkap",
+      "تيڠکڤ"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "رومه، داڤور، بيليق، ڤينتو، تيڠکڤ"
+   ],
+   "jawapanContohRumi": [
+    "rumah, dapur, bilik, pintu, tingkap"
+   ],
+   "id": "jawi-c2"
+  },
+  {
+   "bahagian": "C",
+   "jenis": "tulis",
+   "markah": 5,
+   "soalan": "جاويکن ڤرکاتاءن برايکوت تنتڠ کلوارݢ.",
+   "rumi": "Jawikan perkataan berikut tentang keluarga: keluarga, ibu, ayah, adik, datuk.",
+   "idea": [
+    {
+     "maksud": "Keluarga — کلوارݢ",
+     "kata": [
+      "keluarga",
+      "کلوارݢ"
+     ]
+    },
+    {
+     "maksud": "Ibu — ايبو",
+     "kata": [
+      "ibu",
+      "ايبو"
+     ]
+    },
+    {
+     "maksud": "Ayah — ايه",
+     "kata": [
+      "ayah",
+      "ايه"
+     ]
+    },
+    {
+     "maksud": "Adik — اديق",
+     "kata": [
+      "adik",
+      "اديق"
+     ]
+    },
+    {
+     "maksud": "Datuk — داتوق",
+     "kata": [
+      "datuk",
+      "داتوق"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "کلوارݢ، ايبو، ايه، اديق، داتوق"
+   ],
+   "jawapanContohRumi": [
+    "keluarga, ibu, ayah, adik, datuk"
+   ],
+   "id": "jawi-c3"
+  },
+  {
+   "bahagian": "C",
+   "jenis": "tulis",
+   "markah": 5,
+   "soalan": "جاويکن ڤرکاتاءن برايکوت تنتڠ حيوان.",
+   "rumi": "Jawikan perkataan berikut tentang haiwan: kucing, ayam, ikan, burung, lembu.",
+   "idea": [
+    {
+     "maksud": "Kucing — کوچيڠ",
+     "kata": [
+      "kucing",
+      "کوچيڠ"
+     ]
+    },
+    {
+     "maksud": "Ayam — ايم",
+     "kata": [
+      "ayam",
+      "ايم"
+     ]
+    },
+    {
+     "maksud": "Ikan — ايکن",
+     "kata": [
+      "ikan",
+      "ايکن"
+     ]
+    },
+    {
+     "maksud": "Burung — بوروڠ",
+     "kata": [
+      "burung",
+      "بوروڠ"
+     ]
+    },
+    {
+     "maksud": "Lembu — لمبو",
+     "kata": [
+      "lembu",
+      "لمبو"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "کوچيڠ، ايم، ايکن، بوروڠ، لمبو"
+   ],
+   "jawapanContohRumi": [
+    "kucing, ayam, ikan, burung, lembu"
+   ],
+   "id": "jawi-c4"
+  },
+  {
+   "bahagian": "C",
+   "jenis": "tulis",
+   "markah": 5,
+   "soalan": "جاويکن ڤرکاتاءن برايکوت تنتڠ ورنا.",
+   "rumi": "Jawikan perkataan berikut tentang warna: merah, biru, hijau, kuning, hitam.",
+   "idea": [
+    {
+     "maksud": "Merah — ميره",
+     "kata": [
+      "merah",
+      "ميره"
+     ]
+    },
+    {
+     "maksud": "Biru — بيرو",
+     "kata": [
+      "biru",
+      "بيرو"
+     ]
+    },
+    {
+     "maksud": "Hijau — هيجاو",
+     "kata": [
+      "hijau",
+      "هيجاو"
+     ]
+    },
+    {
+     "maksud": "Kuning — کونيڠ",
+     "kata": [
+      "kuning",
+      "کونيڠ"
+     ]
+    },
+    {
+     "maksud": "Hitam — هيتم",
+     "kata": [
+      "hitam",
+      "هيتم"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "ميره، بيرو، هيجاو، کونيڠ، هيتم"
+   ],
+   "jawapanContohRumi": [
+    "merah, biru, hijau, kuning, hitam"
+   ],
+   "id": "jawi-c5"
+  },
+  {
+   "bahagian": "C",
+   "jenis": "tulis",
+   "markah": 5,
+   "soalan": "جاويکن ڤرکاتاءن برايکوت تنتڠ وقت.",
+   "rumi": "Jawikan perkataan berikut tentang waktu: pagi, petang, malam, hari, minggu.",
+   "idea": [
+    {
+     "maksud": "Pagi — ڤاݢي",
+     "kata": [
+      "pagi",
+      "ڤاݢي"
+     ]
+    },
+    {
+     "maksud": "Petang — ڤتڠ",
+     "kata": [
+      "petang",
+      "ڤتڠ"
+     ]
+    },
+    {
+     "maksud": "Malam — مالم",
+     "kata": [
+      "malam",
+      "مالم"
+     ]
+    },
+    {
+     "maksud": "Hari — هاري",
+     "kata": [
+      "hari",
+      "هاري"
+     ]
+    },
+    {
+     "maksud": "Minggu — ميڠݢو",
+     "kata": [
+      "minggu",
+      "ميڠݢو"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "ڤاݢي، ڤتڠ، مالم، هاري، ميڠݢو"
+   ],
+   "jawapanContohRumi": [
+    "pagi, petang, malam, hari, minggu"
+   ],
+   "id": "jawi-c6"
+  },
+  {
+   "bahagian": "C",
+   "jenis": "tulis",
+   "markah": 5,
+   "soalan": "جاويکن کات کرجا برايکوت.",
+   "rumi": "Jawikan kata kerja berikut: membaca, menulis, mendengar, melihat, bermain.",
+   "idea": [
+    {
+     "maksud": "Membaca — ممباچ",
+     "kata": [
+      "membaca",
+      "ممباچ"
+     ]
+    },
+    {
+     "maksud": "Menulis — منوليس",
+     "kata": [
+      "menulis",
+      "منوليس"
+     ]
+    },
+    {
+     "maksud": "Mendengar — مندڠر",
+     "kata": [
+      "mendengar",
+      "مندڠر"
+     ]
+    },
+    {
+     "maksud": "Melihat — مليهت",
+     "kata": [
+      "melihat",
+      "مليهت"
+     ]
+    },
+    {
+     "maksud": "Bermain — برماءين",
+     "kata": [
+      "bermain",
+      "برماءين"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "ممباچ، منوليس، مندڠر، مليهت، برماءين"
+   ],
+   "jawapanContohRumi": [
+    "membaca, menulis, mendengar, melihat, bermain"
+   ],
+   "id": "jawi-c7"
+  },
+  {
+   "bahagian": "C",
+   "jenis": "tulis",
+   "markah": 5,
+   "soalan": "توليس ڤرکاتاءن جاوي باݢي انگک برايکوت: ٣ ، ٥ ، ١٠ ، ١٢ ، ٢٠.",
+   "rumi": "Tulis perkataan Jawi bagi angka berikut: 3, 5, 10, 12, 20.",
+   "idea": [
+    {
+     "maksud": "Tiga — تيݢ",
+     "kata": [
+      "tiga",
+      "3",
+      "تيݢ"
+     ]
+    },
+    {
+     "maksud": "Lima — ليم",
+     "kata": [
+      "lima",
+      "5",
+      "ليم"
+     ]
+    },
+    {
+     "maksud": "Sepuluh — سڤولوه",
+     "kata": [
+      "sepuluh",
+      "10",
+      "سڤولوه"
+     ]
+    },
+    {
+     "maksud": "Dua belas — دوا بلاس",
+     "kata": [
+      "dua belas",
+      "12",
+      "duabelas",
+      "دوا بلاس",
+      "بلاس",
+      "دوا"
+     ]
+    },
+    {
+     "maksud": "Dua puluh — دوا ڤولوه",
+     "kata": [
+      "dua puluh",
+      "20",
+      "duapuluh",
+      "دوا ڤولوه",
+      "ڤولوه",
+      "دوا"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "تيݢ، ليم، سڤولوه، دوا بلاس، دوا ڤولوه"
+   ],
+   "jawapanContohRumi": [
+    "tiga, lima, sepuluh, dua belas, dua puluh"
+   ],
+   "id": "jawi-c8"
+  },
+  {
+   "bahagian": "C",
+   "jenis": "suai",
+   "markah": 5,
+   "soalan": "ڤادانکن انگک دڠن ڤرکاتاءن يڠ بتول.",
+   "rumi": "Padankan angka dengan perkataan yang betul.",
+   "pasangan": [
+    {
+     "kiri": "١٢",
+     "kiriRumi": "12",
+     "kanan": "دوا بلاس",
+     "kananRumi": "dua belas"
+    },
+    {
+     "kiri": "٢٥",
+     "kiriRumi": "25",
+     "kanan": "دوا ڤولوه ليم",
+     "kananRumi": "dua puluh lima"
+    },
+    {
+     "kiri": "٤٠",
+     "kiriRumi": "40",
+     "kanan": "امڤت ڤولوه",
+     "kananRumi": "empat puluh"
+    },
+    {
+     "kiri": "٧",
+     "kiriRumi": "7",
+     "kanan": "توجوه",
+     "kananRumi": "tujuh"
+    },
+    {
+     "kiri": "١٠٠",
+     "kiriRumi": "100",
+     "kanan": "سيراتوس",
+     "kananRumi": "seratus"
+    }
+   ],
+   "id": "jawi-c9"
+  },
+  {
+   "bahagian": "C",
+   "jenis": "suai",
+   "markah": 5,
+   "soalan": "ڤادانکن ڤرکاتاءن دڠن لاون کاتاڽ.",
+   "rumi": "Padankan perkataan dengan lawan katanya.",
+   "pasangan": [
+    {
+     "kiri": "بسر",
+     "kiriRumi": "besar",
+     "kanan": "کچيل",
+     "kananRumi": "kecil"
+    },
+    {
+     "kiri": "تيڠݢي",
+     "kiriRumi": "tinggi",
+     "kanan": "رنده",
+     "kananRumi": "rendah"
+    },
+    {
+     "kiri": "ڤنجڠ",
+     "kiriRumi": "panjang",
+     "kanan": "ڤينديق",
+     "kananRumi": "pendek"
+    },
+    {
+     "kiri": "بارو",
+     "kiriRumi": "baru",
+     "kanan": "لام",
+     "kananRumi": "lama"
+    },
+    {
+     "kiri": "بنر",
+     "kiriRumi": "benar",
+     "kanan": "ساله",
+     "kananRumi": "salah"
+    }
+   ],
+   "id": "jawi-c10"
+  },
+  {
+   "bahagian": "C",
+   "jenis": "tulis",
+   "markah": 5,
+   "soalan": "جاويکن کات ڤينجم بهاس ايڠݢريس برايکوت.",
+   "rumi": "Jawikan kata pinjaman bahasa Inggeris berikut: bas, tiket, telefon, televisyen, motosikal.",
+   "idea": [
+    {
+     "maksud": "Bas — بس",
+     "kata": [
+      "bas",
+      "بس"
+     ]
+    },
+    {
+     "maksud": "Tiket — تيکيت",
+     "kata": [
+      "tiket",
+      "تيکيت"
+     ]
+    },
+    {
+     "maksud": "Telefon — تيليفون",
+     "kata": [
+      "telefon",
+      "تيليفون"
+     ]
+    },
+    {
+     "maksud": "Televisyen — تيليۏيشن",
+     "kata": [
+      "televisyen",
+      "تيليۏيشن"
+     ]
+    },
+    {
+     "maksud": "Motosikal — موتوسيکل",
+     "kata": [
+      "motosikal",
+      "موتوسيکل"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "بس، تيکيت، تيليفون، تيليۏيشن، موتوسيکل"
+   ],
+   "jawapanContohRumi": [
+    "bas, tiket, telefon, televisyen, motosikal"
+   ],
+   "id": "jawi-c11"
+  },
+  {
+   "bahagian": "C",
+   "jenis": "tempat_kosong",
+   "markah": 5,
+   "soalan": "ايسي تمڤت کوسوڠ دڠن تندا باچ يڠ بتول.",
+   "rumi": "Isi tempat kosong dengan tanda baca yang betul.",
+   "bank": [
+    "؟",
+    "،",
+    "!",
+    ".",
+    ":"
+   ],
+   "bankRumi": [
+    "?",
+    ",",
+    "!",
+    ".",
+    ":"
+   ],
+   "item": [
+    {
+     "teks": "سيافاکه نام کامو ____",
+     "rumi": "Siapakah nama kamu ____"
+    },
+    {
+     "teks": "ساي ممبلي ناسي ____ ايکن دان سايور د ڤاسر",
+     "rumi": "Saya membeli nasi ____ ikan dan sayur di pasar"
+    },
+    {
+     "teks": "هاتي-هاتي د جالن راي ____",
+     "rumi": "Hati-hati di jalan raya ____"
+    },
+    {
+     "teks": "کامي موريک تاهون ليم ____",
+     "rumi": "Kami murid tahun lima ____"
+    },
+    {
+     "teks": "اينله رومه ساي ____ ليم بيليق دان ساتو داڤور",
+     "rumi": "Inilah rumah saya ____ lima bilik dan satu dapur"
+    }
+   ],
+   "id": "jawi-c12"
+  },
+  {
+   "bahagian": "C",
+   "jenis": "tempat_kosong",
+   "markah": 5,
+   "soalan": "ايسي تمڤت کوسوڠ دڠن تندا باچ يڠ سسواي.",
+   "rumi": "Isi tempat kosong dengan tanda baca yang sesuai.",
+   "bank": [
+    "،",
+    "؟",
+    "!",
+    ".",
+    ":"
+   ],
+   "bankRumi": [
+    ",",
+    "?",
+    "!",
+    ".",
+    ":"
+   ],
+   "item": [
+    {
+     "teks": "واه ____ بسرڽ ايکن اين",
+     "rumi": "Wah ____ besarnya ikan ini"
+    },
+    {
+     "teks": "بيلا کامو اکن باليق ک کامڤوڠ ____",
+     "rumi": "Bila kamu akan balik ke kampung ____"
+    },
+    {
+     "teks": "جاڠن ماءين د تڠه جالن راي ____",
+     "rumi": "Jangan main di tengah jalan raya ____"
+    },
+    {
+     "teks": "ايه ساي بکرجا سباݢاي ݢورو ____",
+     "rumi": "Ayah saya bekerja sebagai guru ____"
+    },
+    {
+     "teks": "اينله ݢورو کلس ساي ____ اوستاذ احمد",
+     "rumi": "Inilah guru kelas saya ____ Ustaz Ahmad"
+    }
+   ],
+   "id": "jawi-c13"
+  },
+  {
+   "bahagian": "C",
+   "jenis": "tulis",
+   "markah": 5,
+   "soalan": "نياتاکن جنيس خط يڠ دماقصودکن: (i) خط يڠ ڤاليڠ ڤوڤولر دالم چتاکن القرءان (ii) خط يڠ دݢوناکن اونتوق تاجوق يڠ بسر (iii) خط يڠ چڤت دان ڤينديق (iv) خط يڠ لوروس دان برداسرکن سودوت (v) خط سني دري نݢارا ڤارسي.",
+   "rumi": "Nyatakan jenis khat yang dimaksudkan: (i) khat paling popular dalam cetakan Al-Quran (ii) khat untuk tajuk yang besar (iii) khat yang cepat dan pendek (iv) khat yang lurus dan berdasarkan sudut (v) khat seni dari negara Parsi.",
+   "idea": [
+    {
+     "maksud": "Nasakh — ناسخ",
+     "kata": [
+      "nasakh",
+      "naskh",
+      "ناسخ"
+     ]
+    },
+    {
+     "maksud": "Thuluth — ثلث",
+     "kata": [
+      "thuluth",
+      "tsuluth",
+      "ثلث"
+     ]
+    },
+    {
+     "maksud": "Riq'ah — رقعة",
+     "kata": [
+      "riq'ah",
+      "riqah",
+      "riqaa",
+      "رقعة"
+     ]
+    },
+    {
+     "maksud": "Kufi — کوفي",
+     "kata": [
+      "kufi",
+      "کوفي"
+     ]
+    },
+    {
+     "maksud": "Farisi — فارسي",
+     "kata": [
+      "farisi",
+      "farsi",
+      "faris",
+      "فارسي"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "ناسخ، ثلث، رقعة، کوفي، فارسي"
+   ],
+   "jawapanContohRumi": [
+    "nasakh, thuluth, riq'ah, kufi, farisi"
+   ],
+   "id": "jawi-c14"
+  },
+  {
+   "bahagian": "C",
+   "jenis": "tulis",
+   "markah": 5,
+   "soalan": "ناماکن الت خط برايکوت: (i) ڤين يڠ دݢوناکن اونتوق منوليس خط (ii) چاءير هيتم اونتوق منوليس (iii) تمڤت مڠيسي داکوت (iv) باهن تمڤت منوليس (v) الت اونتوق مڠهاڤوس تليسن يڠ ساله.",
+   "rumi": "Namakan alat khat berikut: (i) pen yang digunakan untuk menulis khat (ii) cecair hitam untuk menulis (iii) tempat mengisi dakwat (iv) bahan tempat menulis (v) alat untuk menghapuskan tulisan yang salah.",
+   "idea": [
+    {
+     "maksud": "Qalam — قلم",
+     "kata": [
+      "qalam",
+      "kalam",
+      "pen",
+      "قلم"
+     ]
+    },
+    {
+     "maksud": "Dakwat — داکوت",
+     "kata": [
+      "dakwat",
+      "داکوت"
+     ]
+    },
+    {
+     "maksud": "Bekas dakwat — بکس داکوت",
+     "kata": [
+      "bekas dakwat",
+      "bekas",
+      "بکس داکوت",
+      "بکس",
+      "داکوت"
+     ]
+    },
+    {
+     "maksud": "Kertas — کرتس",
+     "kata": [
+      "kertas",
+      "کرتس"
+     ]
+    },
+    {
+     "maksud": "Pemadam — ڤمادم",
+     "kata": [
+      "pemadam",
+      "getah",
+      "ڤمادم"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "قلم، داکوت، بکس داکوت، کرتس، ڤمادم"
+   ],
+   "jawapanContohRumi": [
+    "qalam, dakwat, bekas dakwat, kertas, pemadam"
+   ],
+   "id": "jawi-c15"
+  },
+  {
+   "bahagian": "D",
+   "jenis": "tulis",
+   "markah": 8,
+   "soalan": "جاويکن ڤرکاتاءن برايکوت تنتڠ سکوله دان الت توليس.",
+   "rumi": "Jawikan perkataan berikut tentang sekolah dan alat tulis: murid, sekolah, guru, kelas, buku, pensel, kertas, pemadam.",
+   "idea": [
+    {
+     "maksud": "Murid — موريد",
+     "kata": [
+      "murid",
+      "موريد"
+     ]
+    },
+    {
+     "maksud": "Sekolah — سکوله",
+     "kata": [
+      "sekolah",
+      "سکوله"
+     ]
+    },
+    {
+     "maksud": "Guru — ݢورو",
+     "kata": [
+      "guru",
+      "ݢورو"
+     ]
+    },
+    {
+     "maksud": "Kelas — کلس",
+     "kata": [
+      "kelas",
+      "کلس"
+     ]
+    },
+    {
+     "maksud": "Buku — بوکو",
+     "kata": [
+      "buku",
+      "بوکو"
+     ]
+    },
+    {
+     "maksud": "Pensel — ڤينسيل",
+     "kata": [
+      "pensel",
+      "ڤينسيل"
+     ]
+    },
+    {
+     "maksud": "Kertas — کرتس",
+     "kata": [
+      "kertas",
+      "کرتس"
+     ]
+    },
+    {
+     "maksud": "Pemadam — ڤمادم",
+     "kata": [
+      "pemadam",
+      "ڤمادم"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "موريد، سکوله، ݢورو، کلس، بوکو، ڤينسيل، کرتس، ڤمادم"
+   ],
+   "jawapanContohRumi": [
+    "murid, sekolah, guru, kelas, buku, pensel, kertas, pemadam"
+   ],
+   "id": "jawi-d1"
+  },
+  {
+   "bahagian": "D",
+   "jenis": "tulis",
+   "markah": 8,
+   "soalan": "جاويکن ڤرکاتاءن برايکوت تنتڠ اهلي کلوارݢ.",
+   "rumi": "Jawikan perkataan berikut tentang ahli keluarga: keluarga, ibu, ayah, abang, kakak, adik, datuk, nenek.",
+   "idea": [
+    {
+     "maksud": "Keluarga — کلوارݢ",
+     "kata": [
+      "keluarga",
+      "کلوارݢ"
+     ]
+    },
+    {
+     "maksud": "Ibu — ايبو",
+     "kata": [
+      "ibu",
+      "ايبو"
+     ]
+    },
+    {
+     "maksud": "Ayah — ايه",
+     "kata": [
+      "ayah",
+      "ايه"
+     ]
+    },
+    {
+     "maksud": "Abang — ابڠ",
+     "kata": [
+      "abang",
+      "ابڠ"
+     ]
+    },
+    {
+     "maksud": "Kakak — کاکق",
+     "kata": [
+      "kakak",
+      "کاکق"
+     ]
+    },
+    {
+     "maksud": "Adik — اديق",
+     "kata": [
+      "adik",
+      "اديق"
+     ]
+    },
+    {
+     "maksud": "Datuk — داتوق",
+     "kata": [
+      "datuk",
+      "داتوق"
+     ]
+    },
+    {
+     "maksud": "Nenek — نينيک",
+     "kata": [
+      "nenek",
+      "نينيک"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "کلوارݢ، ايبو، ايه، ابڠ، کاکق، اديق، داتوق، نينيک"
+   ],
+   "jawapanContohRumi": [
+    "keluarga, ibu, ayah, abang, kakak, adik, datuk, nenek"
+   ],
+   "id": "jawi-d2"
+  },
+  {
+   "bahagian": "D",
+   "jenis": "tulis",
+   "markah": 8,
+   "soalan": "جاويکن ڤرکاتاءن برايکوت تنتڠ بيناتڠ.",
+   "rumi": "Jawikan perkataan berikut tentang binatang: kucing, ayam, ikan, burung, lembu, kambing, gajah, harimau.",
+   "idea": [
+    {
+     "maksud": "Kucing — کوچيڠ",
+     "kata": [
+      "kucing",
+      "کوچيڠ"
+     ]
+    },
+    {
+     "maksud": "Ayam — ايم",
+     "kata": [
+      "ayam",
+      "ايم"
+     ]
+    },
+    {
+     "maksud": "Ikan — ايکن",
+     "kata": [
+      "ikan",
+      "ايکن"
+     ]
+    },
+    {
+     "maksud": "Burung — بوروڠ",
+     "kata": [
+      "burung",
+      "بوروڠ"
+     ]
+    },
+    {
+     "maksud": "Lembu — لمبو",
+     "kata": [
+      "lembu",
+      "لمبو"
+     ]
+    },
+    {
+     "maksud": "Kambing — کامبيڠ",
+     "kata": [
+      "kambing",
+      "کامبيڠ"
+     ]
+    },
+    {
+     "maksud": "Gajah — ݢاجه",
+     "kata": [
+      "gajah",
+      "ݢاجه"
+     ]
+    },
+    {
+     "maksud": "Harimau — هريماو",
+     "kata": [
+      "harimau",
+      "هريماو"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "کوچيڠ، ايم، ايکن، بوروڠ، لمبو، کامبيڠ، ݢاجه، هريماو"
+   ],
+   "jawapanContohRumi": [
+    "kucing, ayam, ikan, burung, lembu, kambing, gajah, harimau"
+   ],
+   "id": "jawi-d3"
+  },
+  {
+   "bahagian": "D",
+   "jenis": "tulis",
+   "markah": 8,
+   "soalan": "جاويکن ڤرکاتاءن برايکوت تنتڠ ورنا دان بنتوق.",
+   "rumi": "Jawikan perkataan berikut tentang warna dan bentuk: merah, biru, hijau, kuning, hitam, putih, bulat, segi empat.",
+   "idea": [
+    {
+     "maksud": "Merah — ميره",
+     "kata": [
+      "merah",
+      "ميره"
+     ]
+    },
+    {
+     "maksud": "Biru — بيرو",
+     "kata": [
+      "biru",
+      "بيرو"
+     ]
+    },
+    {
+     "maksud": "Hijau — هيجاو",
+     "kata": [
+      "hijau",
+      "هيجاو"
+     ]
+    },
+    {
+     "maksud": "Kuning — کونيڠ",
+     "kata": [
+      "kuning",
+      "کونيڠ"
+     ]
+    },
+    {
+     "maksud": "Hitam — هيتم",
+     "kata": [
+      "hitam",
+      "هيتم"
+     ]
+    },
+    {
+     "maksud": "Putih — ڤوتيه",
+     "kata": [
+      "putih",
+      "ڤوتيه"
+     ]
+    },
+    {
+     "maksud": "Bulat — بولت",
+     "kata": [
+      "bulat",
+      "بولت"
+     ]
+    },
+    {
+     "maksud": "Segi empat — سݢي امڤت",
+     "kata": [
+      "segi empat",
+      "segi",
+      "سݢي امڤت",
+      "سݢي",
+      "امڤت"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "ميره، بيرو، هيجاو، کونيڠ، هيتم، ڤوتيه، بولت، سݢي امڤت"
+   ],
+   "jawapanContohRumi": [
+    "merah, biru, hijau, kuning, hitam, putih, bulat, segi empat"
+   ],
+   "id": "jawi-d4"
+  },
+  {
+   "bahagian": "D",
+   "jenis": "tulis",
+   "markah": 7,
+   "soalan": "جاويکن ڤرکاتاءن برايکوت تنتڠ ماکنن دان مينومن.",
+   "rumi": "Jawikan perkataan berikut tentang makanan dan minuman: nasi, air, susu, roti, telur, sayur, buah.",
+   "idea": [
+    {
+     "maksud": "Nasi — ناسي",
+     "kata": [
+      "nasi",
+      "ناسي"
+     ]
+    },
+    {
+     "maksud": "Air — اير",
+     "kata": [
+      "air",
+      "اير"
+     ]
+    },
+    {
+     "maksud": "Susu — سوسو",
+     "kata": [
+      "susu",
+      "سوسو"
+     ]
+    },
+    {
+     "maksud": "Roti — روتي",
+     "kata": [
+      "roti",
+      "روتي"
+     ]
+    },
+    {
+     "maksud": "Telur — تلور",
+     "kata": [
+      "telur",
+      "تلور"
+     ]
+    },
+    {
+     "maksud": "Sayur — سايور",
+     "kata": [
+      "sayur",
+      "سايور"
+     ]
+    },
+    {
+     "maksud": "Buah — بواه",
+     "kata": [
+      "buah",
+      "بواه"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "ناسي، اير، سوسو، روتي، تلور، سايور، بواه"
+   ],
+   "jawapanContohRumi": [
+    "nasi, air, susu, roti, telur, sayur, buah"
+   ],
+   "id": "jawi-d5"
+  },
+  {
+   "bahagian": "D",
+   "jenis": "tulis",
+   "markah": 6,
+   "soalan": "توكر انگک برايکوت ک ڤرکاتاءن جاوي: ٤ ، ٧ ، ١٥ ، ٤٠ ، ٦٠ ، ١٠٠.",
+   "rumi": "Tukar angka berikut kepada perkataan Jawi: 4, 7, 15, 40, 60, 100.",
+   "idea": [
+    {
+     "maksud": "Empat — امڤت",
+     "kata": [
+      "empat",
+      "4",
+      "امڤت"
+     ]
+    },
+    {
+     "maksud": "Tujuh — توجوه",
+     "kata": [
+      "tujuh",
+      "7",
+      "توجوه"
+     ]
+    },
+    {
+     "maksud": "Lima belas — ليما بلاس",
+     "kata": [
+      "lima belas",
+      "15",
+      "ليما بلاس",
+      "ليما",
+      "بلاس"
+     ]
+    },
+    {
+     "maksud": "Empat puluh — امڤت ڤولوه",
+     "kata": [
+      "empat puluh",
+      "40",
+      "امڤت ڤولوه",
+      "امڤت",
+      "ڤولوه"
+     ]
+    },
+    {
+     "maksud": "Enam puluh — انم ڤولوه",
+     "kata": [
+      "enam puluh",
+      "60",
+      "انم ڤولوه",
+      "انم",
+      "ڤولوه"
+     ]
+    },
+    {
+     "maksud": "Seratus — سيراتوس",
+     "kata": [
+      "seratus",
+      "100",
+      "سيراتوس"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "امڤت، توجوه، ليما بلاس، امڤت ڤولوه، انم ڤولوه، سيراتوس"
+   ],
+   "jawapanContohRumi": [
+    "empat, tujuh, lima belas, empat puluh, enam puluh, seratus"
+   ],
+   "id": "jawi-d6"
+  },
+  {
+   "bahagian": "D",
+   "jenis": "tulis",
+   "markah": 6,
+   "soalan": "توكر ڤرکاتاءن برايکوت ک انگک جاوي: دوا، ليم، لاڤن، دوا بلاس، تيݢ ڤولوه، سيراتوس.",
+   "rumi": "Tukar perkataan berikut kepada angka Jawi: dua, lima, lapan, dua belas, tiga puluh, seratus.",
+   "idea": [
+    {
+     "maksud": "Dua — ٢",
+     "kata": [
+      "dua",
+      "2",
+      "٢"
+     ]
+    },
+    {
+     "maksud": "Lima — ٥",
+     "kata": [
+      "lima",
+      "5",
+      "٥"
+     ]
+    },
+    {
+     "maksud": "Lapan — ٨",
+     "kata": [
+      "lapan",
+      "8",
+      "٨"
+     ]
+    },
+    {
+     "maksud": "Dua belas — ١٢",
+     "kata": [
+      "dua belas",
+      "12",
+      "duabelas",
+      "١٢"
+     ]
+    },
+    {
+     "maksud": "Tiga puluh — ٣٠",
+     "kata": [
+      "tiga puluh",
+      "30",
+      "tigapuluh",
+      "٣٠"
+     ]
+    },
+    {
+     "maksud": "Seratus — ١٠٠",
+     "kata": [
+      "seratus",
+      "100",
+      "١٠٠"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "٢، ٥، ٨، ١٢، ٣٠، ١٠٠"
+   ],
+   "jawapanContohRumi": [
+    "dua, lima, lapan, dua belas, tiga puluh, seratus"
+   ],
+   "id": "jawi-d7"
+  },
+  {
+   "bahagian": "D",
+   "jenis": "tulis",
+   "markah": 8,
+   "soalan": "جاويکن ڤرکاتاءن برايکوت تنتڠ تمڤت دان عالم.",
+   "rumi": "Jawikan perkataan berikut tentang tempat dan alam: jalan, sungai, gunung, laut, pantai, hutan, pokok, bunga.",
+   "idea": [
+    {
+     "maksud": "Jalan — جالن",
+     "kata": [
+      "jalan",
+      "جالن"
+     ]
+    },
+    {
+     "maksud": "Sungai — سوڠاي",
+     "kata": [
+      "sungai",
+      "سوڠاي"
+     ]
+    },
+    {
+     "maksud": "Gunung — ݢونوڠ",
+     "kata": [
+      "gunung",
+      "ݢونوڠ"
+     ]
+    },
+    {
+     "maksud": "Laut — لاءوت",
+     "kata": [
+      "laut",
+      "لاءوت"
+     ]
+    },
+    {
+     "maksud": "Pantai — ڤنتاي",
+     "kata": [
+      "pantai",
+      "ڤنتاي"
+     ]
+    },
+    {
+     "maksud": "Hutan — هوتن",
+     "kata": [
+      "hutan",
+      "هوتن"
+     ]
+    },
+    {
+     "maksud": "Pokok — ڤوکوق",
+     "kata": [
+      "pokok",
+      "ڤوکوق"
+     ]
+    },
+    {
+     "maksud": "Bunga — بوڠا",
+     "kata": [
+      "bunga",
+      "بوڠا"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "جالن، سوڠاي، ݢونوڠ، لاءوت، ڤنتاي، هوتن، ڤوکوق، بوڠا"
+   ],
+   "jawapanContohRumi": [
+    "jalan, sungai, gunung, laut, pantai, hutan, pokok, bunga"
+   ],
+   "id": "jawi-d8"
+  },
+  {
+   "bahagian": "D",
+   "jenis": "tulis",
+   "markah": 8,
+   "soalan": "جاويکن ڤرکاتاءن کرجا برايکوت.",
+   "rumi": "Jawikan perkataan kerja berikut: membaca, menulis, mendengar, melihat, berjalan, berlari, makan, minum.",
+   "idea": [
+    {
+     "maksud": "Membaca — ممباچ",
+     "kata": [
+      "membaca",
+      "ممباچ"
+     ]
+    },
+    {
+     "maksud": "Menulis — منوليس",
+     "kata": [
+      "menulis",
+      "منوليس"
+     ]
+    },
+    {
+     "maksud": "Mendengar — مندڠر",
+     "kata": [
+      "mendengar",
+      "مندڠر"
+     ]
+    },
+    {
+     "maksud": "Melihat — مليهت",
+     "kata": [
+      "melihat",
+      "مليهت"
+     ]
+    },
+    {
+     "maksud": "Berjalan — برجالان",
+     "kata": [
+      "berjalan",
+      "برجالان"
+     ]
+    },
+    {
+     "maksud": "Berlari — برلاري",
+     "kata": [
+      "berlari",
+      "برلاري"
+     ]
+    },
+    {
+     "maksud": "Makan — ماکن",
+     "kata": [
+      "makan",
+      "ماکن"
+     ]
+    },
+    {
+     "maksud": "Minum — مينوم",
+     "kata": [
+      "minum",
+      "مينوم"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "ممباچ، منوليس، مندڠر، مليهت، برجالان، برلاري، ماکن، مينوم"
+   ],
+   "jawapanContohRumi": [
+    "membaca, menulis, mendengar, melihat, berjalan, berlari, makan, minum"
+   ],
+   "id": "jawi-d9"
+  },
+  {
+   "bahagian": "D",
+   "jenis": "tulis",
+   "markah": 6,
+   "soalan": "جاويکن ڤرکاتاءن برايکوت تنتڠ ماس.",
+   "rumi": "Jawikan perkataan berikut tentang masa: pagi, petang, malam, hari, minggu, bulan.",
+   "idea": [
+    {
+     "maksud": "Pagi — ڤاݢي",
+     "kata": [
+      "pagi",
+      "ڤاݢي"
+     ]
+    },
+    {
+     "maksud": "Petang — ڤتڠ",
+     "kata": [
+      "petang",
+      "ڤتڠ"
+     ]
+    },
+    {
+     "maksud": "Malam — مالم",
+     "kata": [
+      "malam",
+      "مالم"
+     ]
+    },
+    {
+     "maksud": "Hari — هاري",
+     "kata": [
+      "hari",
+      "هاري"
+     ]
+    },
+    {
+     "maksud": "Minggu — ميڠݢو",
+     "kata": [
+      "minggu",
+      "ميڠݢو"
+     ]
+    },
+    {
+     "maksud": "Bulan — بولن",
+     "kata": [
+      "bulan",
+      "بولن"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "ڤاݢي، ڤتڠ، مالم، هاري، ميڠݢو، بولن"
+   ],
+   "jawapanContohRumi": [
+    "pagi, petang, malam, hari, minggu, bulan"
+   ],
+   "id": "jawi-d10"
+  },
+  {
+   "bahagian": "D",
+   "jenis": "tulis",
+   "markah": 6,
+   "soalan": "جاويکن کات ڤينجم دري بهاس ايڠݢريس برايکوت.",
+   "rumi": "Jawikan kata pinjaman dari bahasa Inggeris berikut: bas, tiket, telefon, televisyen, motosikal, komputer.",
+   "idea": [
+    {
+     "maksud": "Bas — بس",
+     "kata": [
+      "bas",
+      "بس"
+     ]
+    },
+    {
+     "maksud": "Tiket — تيکيت",
+     "kata": [
+      "tiket",
+      "تيکيت"
+     ]
+    },
+    {
+     "maksud": "Telefon — تيليفون",
+     "kata": [
+      "telefon",
+      "تيليفون"
+     ]
+    },
+    {
+     "maksud": "Televisyen — تيليۏيشن",
+     "kata": [
+      "televisyen",
+      "تيليۏيشن"
+     ]
+    },
+    {
+     "maksud": "Motosikal — موتوسيکل",
+     "kata": [
+      "motosikal",
+      "موتوسيکل"
+     ]
+    },
+    {
+     "maksud": "Komputer — کومڤوتر",
+     "kata": [
+      "komputer",
+      "کومڤوتر"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "بس، تيکيت، تيليفون، تيليۏيشن، موتوسيکل، کومڤوتر"
+   ],
+   "jawapanContohRumi": [
+    "bas, tiket, telefon, televisyen, motosikal, komputer"
+   ],
+   "id": "jawi-d11"
+  },
+  {
+   "bahagian": "D",
+   "jenis": "tulis",
+   "markah": 6,
+   "soalan": "جاويکن کات ڤينجم بهاس عرب برايکوت.",
+   "rumi": "Jawikan kata pinjaman bahasa Arab berikut: kitab, dunia, sabar, adil, fikir, ikhlas.",
+   "idea": [
+    {
+     "maksud": "Kitab — کتاب",
+     "kata": [
+      "kitab",
+      "کتاب"
+     ]
+    },
+    {
+     "maksud": "Dunia — دنيا",
+     "kata": [
+      "dunia",
+      "دنيا"
+     ]
+    },
+    {
+     "maksud": "Sabar — صبر",
+     "kata": [
+      "sabar",
+      "صبر"
+     ]
+    },
+    {
+     "maksud": "Adil — عادل",
+     "kata": [
+      "adil",
+      "عادل"
+     ]
+    },
+    {
+     "maksud": "Fikir — فيکير",
+     "kata": [
+      "fikir",
+      "فيکير"
+     ]
+    },
+    {
+     "maksud": "Ikhlas — اخلاص",
+     "kata": [
+      "ikhlas",
+      "اخلاص"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "کتاب، دنيا، صبر، عادل، فيکير، اخلاص"
+   ],
+   "jawapanContohRumi": [
+    "kitab, dunia, sabar, adil, fikir, ikhlas"
+   ],
+   "id": "jawi-d12"
+  },
+  {
+   "bahagian": "D",
+   "jenis": "tulis",
+   "markah": 6,
+   "soalan": "سنارايکن اينم جنيس خط يڠ کامو ڤلاجري.",
+   "rumi": "Senaraikan enam jenis khat yang kamu pelajari.",
+   "idea": [
+    {
+     "maksud": "Nasakh — ناسخ",
+     "kata": [
+      "nasakh",
+      "naskh",
+      "ناسخ"
+     ]
+    },
+    {
+     "maksud": "Thuluth — ثلث",
+     "kata": [
+      "thuluth",
+      "tsuluth",
+      "ثلث"
+     ]
+    },
+    {
+     "maksud": "Riq'ah — رقعة",
+     "kata": [
+      "riq'ah",
+      "riqah",
+      "رقعة"
+     ]
+    },
+    {
+     "maksud": "Diwani — ديواني",
+     "kata": [
+      "diwani",
+      "ديواني"
+     ]
+    },
+    {
+     "maksud": "Kufi — کوفي",
+     "kata": [
+      "kufi",
+      "کوفي"
+     ]
+    },
+    {
+     "maksud": "Farisi — فارسي",
+     "kata": [
+      "farisi",
+      "farsi",
+      "faris",
+      "فارسي"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "ناسخ، ثلث، رقعة، ديواني، کوفي، فارسي"
+   ],
+   "jawapanContohRumi": [
+    "nasakh, thuluth, riq'ah, diwani, kufi, farisi"
+   ],
+   "id": "jawi-d13"
+  },
+  {
+   "bahagian": "D",
+   "jenis": "tulis",
+   "markah": 5,
+   "soalan": "سنارايکن ليم الت خط يڠ کامو کتاهوءي.",
+   "rumi": "Senaraikan lima alat khat yang kamu ketahui.",
+   "idea": [
+    {
+     "maksud": "Qalam — قلم",
+     "kata": [
+      "qalam",
+      "kalam",
+      "pen",
+      "قلم"
+     ]
+    },
+    {
+     "maksud": "Dakwat — داکوت",
+     "kata": [
+      "dakwat",
+      "داکوت"
+     ]
+    },
+    {
+     "maksud": "Kertas — کرتس",
+     "kata": [
+      "kertas",
+      "کرتس"
+     ]
+    },
+    {
+     "maksud": "Pemadam — ڤمادم",
+     "kata": [
+      "pemadam",
+      "getah",
+      "ڤمادم"
+     ]
+    },
+    {
+     "maksud": "Bekas dakwat — بکس داکوت",
+     "kata": [
+      "bekas dakwat",
+      "bekas",
+      "بکس داکوت",
+      "بکس",
+      "داکوت"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "قلم، داکوت، کرتس، ڤمادم، بکس داکوت"
+   ],
+   "jawapanContohRumi": [
+    "qalam, dakwat, kertas, pemadam, bekas dakwat"
+   ],
+   "id": "jawi-d14"
+  },
+  {
+   "bahagian": "D",
+   "jenis": "tulis",
+   "markah": 5,
+   "soalan": "توليس تندا باچ يڠ بتول باݢي ايات برايکوت: (i) دمان کامو تيڠݢل (ii) هاتي-هاتي د جالن راي (iii) کامي موريک تاهون ليم (iv) اينله ݢورو کلس ساي اوستاذ احمد (v) احمد ساي دان علي ݢي ک سکوله.",
+   "rumi": "Tulis tanda baca yang betul bagi ayat berikut: (i) Di mana kamu tinggal (ii) Hati-hati di jalan raya (iii) Kami murid tahun lima (iv) Inilah guru kelas saya Ustaz Ahmad (v) Ahmad saya dan Ali pergi ke sekolah.",
+   "idea": [
+    {
+     "maksud": "Tanda soal — ؟",
+     "kata": [
+      "?",
+      "؟",
+      "tanda soal"
+     ]
+    },
+    {
+     "maksud": "Tanda seru — !",
+     "kata": [
+      "!",
+      "tanda seru"
+     ]
+    },
+    {
+     "maksud": "Noktah — .",
+     "kata": [
+      ".",
+      "noktah",
+      "titik"
+     ]
+    },
+    {
+     "maksud": "Tanda nisbah — :",
+     "kata": [
+      ":",
+      "nisbah",
+      "kolon"
+     ]
+    },
+    {
+     "maksud": "Koma — ،",
+     "kata": [
+      ",",
+      "،",
+      "koma"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "؟، !، .، :، ،"
+   ],
+   "jawapanContohRumi": [
+    "?, !, ., :, ,"
+   ],
+   "id": "jawi-d15"
+  },
+  {
+   "bahagian": "D",
+   "jenis": "tulis",
+   "markah": 5,
+   "soalan": "توليس تندا باچ يڠ سسواي ڤد اخير ايات-ايات برايکوت: (i) بيلا کامو اکن داتڠ (ii) وا تيڠݢيڽ ݢونوڠ ايتو (iii) سلامت داتڠ ک کامڤوڠ ساي (iv) ايبو ساي سدڠ ماسق د داڤور (v) اينله بارڠ يڠ ڤرلو دبلي ڤين دان بوکو.",
+   "rumi": "Tulis tanda baca yang sesuai pada akhir ayat-ayat berikut: (i) Bila kamu akan datang (ii) Wah tingginya gunung itu (iii) Selamat datang ke kampung saya (iv) Ibu saya sedang masak di dapur (v) Inilah barang yang perlu dibeli pen dan buku.",
+   "idea": [
+    {
+     "maksud": "Tanda soal — ؟",
+     "kata": [
+      "?",
+      "؟"
+     ]
+    },
+    {
+     "maksud": "Koma — ،",
+     "kata": [
+      ",",
+      "،"
+     ]
+    },
+    {
+     "maksud": "Tanda seru — !",
+     "kata": [
+      "!",
+      "tanda seru"
+     ]
+    },
+    {
+     "maksud": "Noktah — .",
+     "kata": [
+      ".",
+      "titik"
+     ]
+    },
+    {
+     "maksud": "Tanda nisbah — :",
+     "kata": [
+      ":",
+      "kolon"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "؟، ،، !، .، :"
+   ],
+   "jawapanContohRumi": [
+    "?, ,, !, ., :"
+   ],
+   "id": "jawi-d16"
+  },
+  {
+   "bahagian": "D",
+   "jenis": "tulis",
+   "markah": 6,
+   "soalan": "توليس ڤرکاتاءن جاوي باݢي انگک برايکوت: ١١ ، ١٣ ، ٢١ ، ٣٢ ، ٤٥ ، ٥٠.",
+   "rumi": "Tulis perkataan Jawi bagi angka berikut: 11, 13, 21, 32, 45, 50.",
+   "idea": [
+    {
+     "maksud": "Sebelas — سبلس",
+     "kata": [
+      "sebelas",
+      "11",
+      "سبلس"
+     ]
+    },
+    {
+     "maksud": "Tiga belas — تيݢ بلاس",
+     "kata": [
+      "tiga belas",
+      "13",
+      "تيݢ بلاس",
+      "بلاس",
+      "تيݢ"
+     ]
+    },
+    {
+     "maksud": "Dua puluh satu — دوا ڤولوه ساتو",
+     "kata": [
+      "dua puluh satu",
+      "21",
+      "دوا ڤولوه ساتو",
+      "ساتو",
+      "دوا",
+      "ڤولوه"
+     ]
+    },
+    {
+     "maksud": "Tiga puluh dua — تيݢ ڤولوه دوا",
+     "kata": [
+      "tiga puluh dua",
+      "32",
+      "تيݢ ڤولوه دوا",
+      "تيݢ",
+      "ڤولوه",
+      "دوا"
+     ]
+    },
+    {
+     "maksud": "Empat puluh lima — امڤت ڤولوه ليم",
+     "kata": [
+      "empat puluh lima",
+      "45",
+      "امڤت ڤولوه ليم",
+      "امڤت",
+      "ڤولوه",
+      "ليم"
+     ]
+    },
+    {
+     "maksud": "Lima puluh — ليم ڤولوه",
+     "kata": [
+      "lima puluh",
+      "50",
+      "ليم ڤولوه",
+      "ليم",
+      "ڤولوه"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "سبلس، تيݢ بلاس، دوا ڤولوه ساتو، تيݢ ڤولوه دوا، امڤت ڤولوه ليم، ليم ڤولوه"
+   ],
+   "jawapanContohRumi": [
+    "sebelas, tiga belas, dua puluh satu, tiga puluh dua, empat puluh lima, lima puluh"
+   ],
+   "id": "jawi-d17"
+  },
+  {
+   "bahagian": "D",
+   "jenis": "tulis",
+   "markah": 6,
+   "soalan": "توليس انگک جاوي باݢي ڤرکاتاءن برايکوت: سبلس، تيݢ بلاس، دوا ڤولوه ساتو، تيݢ ڤولوه دوا، امڤت ڤولوه ليم، ليم ڤولوه.",
+   "rumi": "Tulis angka Jawi bagi perkataan berikut: sebelas, tiga belas, dua puluh satu, tiga puluh dua, empat puluh lima, lima puluh.",
+   "idea": [
+    {
+     "maksud": "Sebelas — ١١",
+     "kata": [
+      "sebelas",
+      "11",
+      "١١"
+     ]
+    },
+    {
+     "maksud": "Tiga belas — ١٣",
+     "kata": [
+      "tiga belas",
+      "13",
+      "١٣"
+     ]
+    },
+    {
+     "maksud": "Dua puluh satu — ٢١",
+     "kata": [
+      "dua puluh satu",
+      "21",
+      "٢١"
+     ]
+    },
+    {
+     "maksud": "Tiga puluh dua — ٣٢",
+     "kata": [
+      "tiga puluh dua",
+      "32",
+      "٣٢"
+     ]
+    },
+    {
+     "maksud": "Empat puluh lima — ٤٥",
+     "kata": [
+      "empat puluh lima",
+      "45",
+      "٤٥"
+     ]
+    },
+    {
+     "maksud": "Lima puluh — ٥٠",
+     "kata": [
+      "lima puluh",
+      "50",
+      "٥٠"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "١١، ١٣، ٢١، ٣٢، ٤٥، ٥٠"
+   ],
+   "jawapanContohRumi": [
+    "11, 13, 21, 32, 45, 50"
+   ],
+   "id": "jawi-d18"
+  },
+  {
+   "bahagian": "D",
+   "jenis": "tulis",
+   "markah": 5,
+   "soalan": "ناماکن الت خط باݢي ڤڠݢوناکن برايکوت: (i) مڠهاڤوس تليسن يڠ ساله (ii) منوليس خط (iii) مڠوکور ݢاريس لوروس (iv) مڠساڤ ورنا (v) مڠيڠݢکن داکوت.",
+   "rumi": "Namakan alat khat bagi penggunaan berikut: (i) menghapuskan tulisan yang salah (ii) menulis khat (iii) mengukur garis lurus (iv) menyapu warna (v) menyimpan dakwat.",
+   "idea": [
+    {
+     "maksud": "Pemadam — ڤمادم",
+     "kata": [
+      "pemadam",
+      "getah",
+      "ڤمادم"
+     ]
+    },
+    {
+     "maksud": "Qalam — قلم",
+     "kata": [
+      "qalam",
+      "kalam",
+      "pen",
+      "قلم"
+     ]
+    },
+    {
+     "maksud": "Pembaris — ڤمباريس",
+     "kata": [
+      "pembaris",
+      "ڤمباريس"
+     ]
+    },
+    {
+     "maksud": "Berus — بروس",
+     "kata": [
+      "berus",
+      "بروس"
+     ]
+    },
+    {
+     "maksud": "Bekas dakwat — بکس داکوت",
+     "kata": [
+      "bekas dakwat",
+      "bekas",
+      "بکس داکوت",
+      "بکس",
+      "داکوت"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "ڤمادم، قلم، ڤمباريس، بروس، بکس داکوت"
+   ],
+   "jawapanContohRumi": [
+    "pemadam, qalam, pembaris, berus, bekas dakwat"
+   ],
+   "id": "jawi-d19"
+  },
+  {
+   "bahagian": "D",
+   "jenis": "tulis",
+   "markah": 6,
+   "soalan": "جاويکن کات ڤينجم دري بهاس عرب برايکوت.",
+   "rumi": "Jawikan kata pinjaman dari bahasa Arab berikut: ilmu, amal, zalim, insaf, nikmat, hikmat.",
+   "idea": [
+    {
+     "maksud": "Ilmu — علمو",
+     "kata": [
+      "ilmu",
+      "علمو"
+     ]
+    },
+    {
+     "maksud": "Amal — عمل",
+     "kata": [
+      "amal",
+      "عمل"
+     ]
+    },
+    {
+     "maksud": "Zalim — ظالم",
+     "kata": [
+      "zalim",
+      "ظالم"
+     ]
+    },
+    {
+     "maksud": "Insaf — انصاف",
+     "kata": [
+      "insaf",
+      "انصاف"
+     ]
+    },
+    {
+     "maksud": "Nikmat — نعمة",
+     "kata": [
+      "nikmat",
+      "نعمة"
+     ]
+    },
+    {
+     "maksud": "Hikmat — حكمة",
+     "kata": [
+      "hikmat",
+      "حكمة"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "علمو، عمل، ظالم، انصاف، نعمة، حكمة"
+   ],
+   "jawapanContohRumi": [
+    "ilmu, amal, zalim, insaf, nikmat, hikmat"
+   ],
+   "id": "jawi-d20"
+  },
+  {
+   "bahagian": "D",
+   "jenis": "tulis",
+   "markah": 5,
+   "soalan": "جاويکن ڤرکاتاءن ڤينجم ايڠݢريس برايکوت.",
+   "rumi": "Jawikan perkataan pinjaman Inggeris berikut: bas, tiket, telefon, kamera, komputer.",
+   "idea": [
+    {
+     "maksud": "Bas — بس",
+     "kata": [
+      "bas",
+      "بس"
+     ]
+    },
+    {
+     "maksud": "Tiket — تيکيت",
+     "kata": [
+      "tiket",
+      "تيکيت"
+     ]
+    },
+    {
+     "maksud": "Telefon — تيليفون",
+     "kata": [
+      "telefon",
+      "تيليفون"
+     ]
+    },
+    {
+     "maksud": "Kamera — کاميرا",
+     "kata": [
+      "kamera",
+      "کاميرا"
+     ]
+    },
+    {
+     "maksud": "Komputer — کومڤوتر",
+     "kata": [
+      "komputer",
+      "کومڤوتر"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "بس، تيکيت، تيليفون، کاميرا، کومڤوتر"
+   ],
+   "jawapanContohRumi": [
+    "bas, tiket, telefon, kamera, komputer"
+   ],
+   "id": "jawi-d21"
+  },
+  {
+   "bahagian": "D",
+   "jenis": "tulis",
+   "markah": 5,
+   "soalan": "توليس تندا باچ باݢي ايات برايکوت: (i) دمان ايبو کامو تيڠݢل (ii) احمد داتڠله ک سيني سبنتار (iii) ساي هندق منوليس سورت ک ݢورو ساي (iv) اينله کاون-کاون ساي علي دان ابو (v) احمد ݢورو ساي ݢي ک سکوله.",
+   "rumi": "Tulis tanda baca bagi ayat berikut: (i) Di mana ibu kamu tinggal (ii) Ahmad datanglah ke sini sebentar (iii) Saya hendak menulis surat kepada guru saya (iv) Inilah kawan-kawan saya Ali dan Abu (v) Ahmad guru saya pergi ke sekolah.",
+   "idea": [
+    {
+     "maksud": "Tanda soal — ؟",
+     "kata": [
+      "?",
+      "؟"
+     ]
+    },
+    {
+     "maksud": "Tanda seru — !",
+     "kata": [
+      "!",
+      "tanda seru"
+     ]
+    },
+    {
+     "maksud": "Noktah — .",
+     "kata": [
+      ".",
+      "titik"
+     ]
+    },
+    {
+     "maksud": "Tanda nisbah — :",
+     "kata": [
+      ":",
+      "kolon"
+     ]
+    },
+    {
+     "maksud": "Koma — ،",
+     "kata": [
+      ",",
+      "،",
+      "koma"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "؟، !، .، :، ،"
+   ],
+   "jawapanContohRumi": [
+    "?, !, ., :, ,"
+   ],
+   "id": "jawi-d22"
+  },
+  {
+   "bahagian": "D",
+   "jenis": "tulis",
+   "markah": 8,
+   "soalan": "جاويکن ڤرکاتاءن برايکوت تنتڠ ڤرابوت رومه.",
+   "rumi": "Jawikan perkataan berikut tentang perabot rumah: kerusi, meja, pintu, tingkap, dinding, lantai, bumbung, tangga.",
+   "idea": [
+    {
+     "maksud": "Kerusi — کروسي",
+     "kata": [
+      "kerusi",
+      "کروسي"
+     ]
+    },
+    {
+     "maksud": "Meja — ميجا",
+     "kata": [
+      "meja",
+      "ميجا"
+     ]
+    },
+    {
+     "maksud": "Pintu — ڤينتو",
+     "kata": [
+      "pintu",
+      "ڤينتو"
+     ]
+    },
+    {
+     "maksud": "Tingkap — تيڠکڤ",
+     "kata": [
+      "tingkap",
+      "تيڠکڤ"
+     ]
+    },
+    {
+     "maksud": "Dinding — دينديڠ",
+     "kata": [
+      "dinding",
+      "دينديڠ"
+     ]
+    },
+    {
+     "maksud": "Lantai — لنتاي",
+     "kata": [
+      "lantai",
+      "لنتاي"
+     ]
+    },
+    {
+     "maksud": "Bumbung — بومبوڠ",
+     "kata": [
+      "bumbung",
+      "بومبوڠ"
+     ]
+    },
+    {
+     "maksud": "Tangga — تڠݢ",
+     "kata": [
+      "tangga",
+      "تڠݢ"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "کروسي، ميجا، ڤينتو، تيڠکڤ، دينديڠ، لنتاي، بومبوڠ، تڠݢ"
+   ],
+   "jawapanContohRumi": [
+    "kerusi, meja, pintu, tingkap, dinding, lantai, bumbung, tangga"
+   ],
+   "id": "jawi-d23"
+  },
+  {
+   "bahagian": "E",
+   "jenis": "tulis",
+   "markah": 10,
+   "soalan": "توليس سموال اية دباوه دالم توليسن جاوي.\nتاجوق: ماکنن.",
+   "rumi": "Tulis semula ayat di bawah dalam tulisan Jawi. Topik: makanan.\nAyat: Saya suka makan nasi lemak pada waktu pagi setiap hari.",
+   "idea": [
+    {
+     "maksud": "Saya — ساي",
+     "kata": [
+      "saya",
+      "ساي"
+     ]
+    },
+    {
+     "maksud": "Suka — سوک",
+     "kata": [
+      "suka",
+      "سوک"
+     ]
+    },
+    {
+     "maksud": "Makan — ماکن",
+     "kata": [
+      "makan",
+      "ماکن"
+     ]
+    },
+    {
+     "maksud": "Nasi — ناسي",
+     "kata": [
+      "nasi",
+      "ناسي"
+     ]
+    },
+    {
+     "maksud": "Lemak — لمق",
+     "kata": [
+      "lemak",
+      "لمق"
+     ]
+    },
+    {
+     "maksud": "Pada — ڤد",
+     "kata": [
+      "pada",
+      "ڤد"
+     ]
+    },
+    {
+     "maksud": "Waktu — وقت",
+     "kata": [
+      "waktu",
+      "وقت"
+     ]
+    },
+    {
+     "maksud": "Pagi — ڤاݢي",
+     "kata": [
+      "pagi",
+      "ڤاݢي"
+     ]
+    },
+    {
+     "maksud": "Setiap — ستياڤ",
+     "kata": [
+      "setiap",
+      "ستياڤ"
+     ]
+    },
+    {
+     "maksud": "Hari — هاري",
+     "kata": [
+      "hari",
+      "هاري"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "ساي سوک ماکن ناسي لمق ڤد وقت ڤاݢي ستياڤ هاري"
+   ],
+   "jawapanContohRumi": [
+    "Saya suka makan nasi lemak pada waktu pagi setiap hari."
+   ],
+   "id": "jawi-e1"
+  },
+  {
+   "bahagian": "E",
+   "jenis": "tulis",
+   "markah": 10,
+   "soalan": "توليس سموال اية دباوه دالم توليسن جاوي.\nتاجوق: ڤڠڠکوتن.",
+   "rumi": "Tulis semula ayat di bawah dalam tulisan Jawi. Topik: pengangkutan.\nAyat: Ahmad pergi ke sekolah menaiki bas pada setiap hari Isnin.",
+   "idea": [
+    {
+     "maksud": "Ahmad — احمد",
+     "kata": [
+      "ahmad",
+      "احمد"
+     ]
+    },
+    {
+     "maksud": "Pergi — ڤرݢي",
+     "kata": [
+      "pergi",
+      "ڤرݢي"
+     ]
+    },
+    {
+     "maksud": "Ke — ک",
+     "kata": [
+      "ke",
+      "ک"
+     ]
+    },
+    {
+     "maksud": "Sekolah — سکوله",
+     "kata": [
+      "sekolah",
+      "سکوله"
+     ]
+    },
+    {
+     "maksud": "Menaiki — منائيکي",
+     "kata": [
+      "menaiki",
+      "منائيکي"
+     ]
+    },
+    {
+     "maksud": "Bas — بس",
+     "kata": [
+      "bas",
+      "بس"
+     ]
+    },
+    {
+     "maksud": "Pada — ڤد",
+     "kata": [
+      "pada",
+      "ڤد"
+     ]
+    },
+    {
+     "maksud": "Setiap — ستياڤ",
+     "kata": [
+      "setiap",
+      "ستياڤ"
+     ]
+    },
+    {
+     "maksud": "Hari — هاري",
+     "kata": [
+      "hari",
+      "هاري"
+     ]
+    },
+    {
+     "maksud": "Isnin — اثنين",
+     "kata": [
+      "isnin",
+      "اثنين"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "احمد ڤرݢي ک سکوله منائيکي بس ڤد ستياڤ هاري اثنين"
+   ],
+   "jawapanContohRumi": [
+    "Ahmad pergi ke sekolah menaiki bas pada setiap hari Isnin."
+   ],
+   "id": "jawi-e2"
+  },
+  {
+   "bahagian": "E",
+   "jenis": "tulis",
+   "markah": 10,
+   "soalan": "توليس سموال اية دباوه دالم توليسن جاوي.\nتاجوق: ڤمبلاجرن.",
+   "rumi": "Tulis semula ayat di bawah dalam tulisan Jawi. Topik: pembelajaran.\nAyat: Kami belajar membaca dan menulis di dalam kelas setiap hari.",
+   "idea": [
+    {
+     "maksud": "Kami — کامي",
+     "kata": [
+      "kami",
+      "کامي"
+     ]
+    },
+    {
+     "maksud": "Belajar — بلاجر",
+     "kata": [
+      "belajar",
+      "بلاجر"
+     ]
+    },
+    {
+     "maksud": "Membaca — ممباچ",
+     "kata": [
+      "membaca",
+      "ممباچ"
+     ]
+    },
+    {
+     "maksud": "Dan — دان",
+     "kata": [
+      "dan",
+      "دان"
+     ]
+    },
+    {
+     "maksud": "Menulis — منوليس",
+     "kata": [
+      "menulis",
+      "منوليس"
+     ]
+    },
+    {
+     "maksud": "Di — د",
+     "kata": [
+      "di",
+      "د"
+     ]
+    },
+    {
+     "maksud": "Dalam — دالم",
+     "kata": [
+      "dalam",
+      "دالم"
+     ]
+    },
+    {
+     "maksud": "Kelas — کلس",
+     "kata": [
+      "kelas",
+      "کلس"
+     ]
+    },
+    {
+     "maksud": "Setiap — ستياڤ",
+     "kata": [
+      "setiap",
+      "ستياڤ"
+     ]
+    },
+    {
+     "maksud": "Hari — هاري",
+     "kata": [
+      "hari",
+      "هاري"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "کامي بلاجر ممباچ دان منوليس د دالم کلس ستياڤ هاري"
+   ],
+   "jawapanContohRumi": [
+    "Kami belajar membaca dan menulis di dalam kelas setiap hari."
+   ],
+   "id": "jawi-e3"
+  },
+  {
+   "bahagian": "E",
+   "jenis": "tulis",
+   "markah": 10,
+   "soalan": "توليس سموال اية دباوه دالم توليسن جاوي.\nتاجوق: تومبوهن.",
+   "rumi": "Tulis semula ayat di bawah dalam tulisan Jawi. Topik: tumbuhan.\nAyat: Kakak menyiram pokok bunga di halaman rumah pada waktu petang.",
+   "idea": [
+    {
+     "maksud": "Kakak — کاکق",
+     "kata": [
+      "kakak",
+      "کاکق"
+     ]
+    },
+    {
+     "maksud": "Menyiram — مڽيرم",
+     "kata": [
+      "menyiram",
+      "مڽيرم"
+     ]
+    },
+    {
+     "maksud": "Pokok — ڤوکوق",
+     "kata": [
+      "pokok",
+      "ڤوکوق"
+     ]
+    },
+    {
+     "maksud": "Bunga — بوڠا",
+     "kata": [
+      "bunga",
+      "بوڠا"
+     ]
+    },
+    {
+     "maksud": "Di — د",
+     "kata": [
+      "di",
+      "د"
+     ]
+    },
+    {
+     "maksud": "Halaman — هالمن",
+     "kata": [
+      "halaman",
+      "هالمن"
+     ]
+    },
+    {
+     "maksud": "Rumah — رومه",
+     "kata": [
+      "rumah",
+      "رومه"
+     ]
+    },
+    {
+     "maksud": "Pada — ڤد",
+     "kata": [
+      "pada",
+      "ڤد"
+     ]
+    },
+    {
+     "maksud": "Waktu — وقت",
+     "kata": [
+      "waktu",
+      "وقت"
+     ]
+    },
+    {
+     "maksud": "Petang — ڤتڠ",
+     "kata": [
+      "petang",
+      "ڤتڠ"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "کاکق مڽيرم ڤوکوق بوڠا د هالمن رومه ڤد وقت ڤتڠ"
+   ],
+   "jawapanContohRumi": [
+    "Kakak menyiram pokok bunga di halaman rumah pada waktu petang."
+   ],
+   "id": "jawi-e4"
+  },
+  {
+   "bahagian": "E",
+   "jenis": "tulis",
+   "markah": 10,
+   "soalan": "توليس سموال اية دباوه دالم توليسن جاوي.\nتاجوق: کلوارݢ.",
+   "rumi": "Tulis semula ayat di bawah dalam tulisan Jawi. Topik: keluarga.\nAyat: Datuk dan nenek duduk di bawah pokok mangga sambil bercerita.",
+   "idea": [
+    {
+     "maksud": "Datuk — داتوق",
+     "kata": [
+      "datuk",
+      "داتوق"
+     ]
+    },
+    {
+     "maksud": "Dan — دان",
+     "kata": [
+      "dan",
+      "دان"
+     ]
+    },
+    {
+     "maksud": "Nenek — نينيک",
+     "kata": [
+      "nenek",
+      "نينيک"
+     ]
+    },
+    {
+     "maksud": "Duduk — دودوق",
+     "kata": [
+      "duduk",
+      "دودوق"
+     ]
+    },
+    {
+     "maksud": "Di — د",
+     "kata": [
+      "di",
+      "د"
+     ]
+    },
+    {
+     "maksud": "Bawah — باوه",
+     "kata": [
+      "bawah",
+      "باوه"
+     ]
+    },
+    {
+     "maksud": "Pokok — ڤوکوق",
+     "kata": [
+      "pokok",
+      "ڤوکوق"
+     ]
+    },
+    {
+     "maksud": "Mangga — ماڠݢ",
+     "kata": [
+      "mangga",
+      "ماڠݢ"
+     ]
+    },
+    {
+     "maksud": "Sambil — سامبيل",
+     "kata": [
+      "sambil",
+      "سامبيل"
+     ]
+    },
+    {
+     "maksud": "Bercerita — برچريتا",
+     "kata": [
+      "bercerita",
+      "برچريتا"
+     ]
+    }
+   ],
+   "jawapanContoh": [
+    "داتوق دان نينيک دودوق د باوه ڤوکوق ماڠݢ سامبيل برچريتا"
+   ],
+   "jawapanContohRumi": [
+    "Datuk dan nenek duduk di bawah pokok mangga sambil bercerita."
+   ],
+   "id": "jawi-e5"
+  }
+ ]
+}
