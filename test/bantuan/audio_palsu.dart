@@ -71,7 +71,10 @@ class _PlatformAudioPalsu extends AudioplayersPlatformInterface {
   }) async {}
 
   @override
-  Future<void> setAudioContext(String playerId, AudioContext audioContext) async {}
+  Future<void> setAudioContext(
+    String playerId,
+    AudioContext audioContext,
+  ) async {}
 
   @override
   Future<void> setPlayerMode(String playerId, PlayerMode playerMode) async {}
@@ -103,7 +106,17 @@ void pasangAudioPalsu() {
   // memanggil saluran asli; panggilan itu dikekalkan senyap di sini.
   TestDefaultBinaryMessengerBinding.instance.defaultBinaryMessenger
       .setMockMethodCallHandler(
-    const MethodChannel('xyz.luan/audioplayers.global'),
-    (_) async => null,
-  );
+        const MethodChannel('xyz.luan/audioplayers.global'),
+        (_) async => null,
+      );
+
+  // Aliran peristiwa global pula dibuka oleh `AudioPlayer.global` sebaik sahaja
+  // ia dicipta, dan tanpa pendengar palsu ia membaling `MissingPluginException`
+  // di tengah-tengah ujian yang membenarkan masa sebenar berlalu (misalnya
+  // ujian yang menunggu gambar kad ditangkap).
+  TestDefaultBinaryMessengerBinding.instance.defaultBinaryMessenger
+      .setMockStreamHandler(
+        const EventChannel('xyz.luan/audioplayers.global/events'),
+        MockStreamHandler.inline(onListen: (_, _) {}),
+      );
 }

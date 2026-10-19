@@ -25,6 +25,7 @@ import 'package:ulangkaji_upkk/screens/keputusan_screen.dart';
 import 'package:ulangkaji_upkk/screens/kongsi_screen.dart';
 import 'package:ulangkaji_upkk/services/kongsi.dart';
 import 'package:ulangkaji_upkk/services/tetapan.dart';
+import 'package:ulangkaji_upkk/tarikh.dart';
 import 'package:ulangkaji_upkk/widgets/kad_keputusan.dart';
 
 import 'bantuan/audio_palsu.dart';
@@ -61,20 +62,14 @@ Kertas _kertas() {
         markah: 10,
         arahan: 'توليس جوافن',
         arahanRumi: 'Tulis jawapan',
-        soalan: [
-          _soalan('uji-a1', 'A', 1, 5),
-          _soalan('uji-a2', 'A', 2, 5),
-        ],
+        soalan: [_soalan('uji-a1', 'A', 1, 5), _soalan('uji-a2', 'A', 2, 5)],
       ),
       BahagianKertas(
         nama: 'B',
         markah: 20,
         arahan: 'توليس جوافن',
         arahanRumi: 'Tulis jawapan',
-        soalan: [
-          _soalan('uji-b1', 'B', 1, 10),
-          _soalan('uji-b2', 'B', 2, 10),
-        ],
+        soalan: [_soalan('uji-b1', 'B', 1, 10), _soalan('uji-b2', 'B', 2, 10)],
       ),
     ],
   );
@@ -82,7 +77,7 @@ Kertas _kertas() {
 
 /// Kad keputusan untuk diuji — markah ditetapkan terus supaya gred dan
 /// pujian boleh diperiksa tanpa bergantung pada penanda jawapan.
-Widget _kad({int markah = 63, int penuh = 70, int peratus = 90}) {
+Widget _kad({int markah = 63, int penuh = 70, int peratus = 90, String? masa}) {
   return KadKeputusan(
     kertas: _kertas(),
     jawapan: const {},
@@ -92,12 +87,43 @@ Widget _kad({int markah = 63, int penuh = 70, int peratus = 90}) {
     gred: Gred.dariPeratus(peratus),
     nama: 'Aisyah',
     tarikh: '19 Oktober 2026',
+    masa: masa,
+  );
+}
+
+/// Kertas penuh 70 markah bertulis — kadnya lebih tinggi daripada skrin telefon.
+Kertas _kertasBesar() {
+  BahagianKertas bahagian(String nama, int bilangan, int markah) {
+    return BahagianKertas(
+      nama: nama,
+      markah: bilangan * markah,
+      arahan: 'توليس جوافن',
+      arahanRumi: 'Tulis jawapan',
+      soalan: [
+        for (var i = 0; i < bilangan; i++)
+          _soalan('$nama$i', nama, i + 1, markah),
+      ],
+    );
+  }
+
+  return Kertas(
+    id: 'uji-percubaan-besar',
+    subjekId: 'adab',
+    tajuk: 'Kertas Percubaan Adab',
+    sumber: 'Bank soalan Ulangkaji UPKK',
+    jenisSumber: 'percubaan',
+    bahagian: [
+      bahagian('A', 10, 1),
+      bahagian('B', 10, 1),
+      bahagian('C', 8, 5),
+      bahagian('D', 7, 5),
+    ],
   );
 }
 
 Widget _bingkai(Widget anak) => MaterialApp(
-      home: Scaffold(body: SingleChildScrollView(child: anak)),
-    );
+  home: Scaffold(body: SingleChildScrollView(child: anak)),
+);
 
 void main() {
   setUpAll(pasangAudioPalsu);
@@ -107,10 +133,10 @@ void main() {
       await tester.pumpWidget(_bingkai(_kad()));
 
       expect(find.text('63'), findsOneWidget);
-      expect(find.text('/ 70 markah'), findsOneWidget);
+      expect(find.text(' / 70'), findsOneWidget);
       expect(find.text('90%'), findsOneWidget);
-      expect(find.text('A'), findsWidgets);
-      expect(find.textContaining('Cemerlang'), findsOneWidget);
+      expect(find.text('A'), findsOneWidget);
+      expect(find.text('Cemerlang'), findsOneWidget);
     });
 
     testWidgets('membawa nama app dan kredit pencipta', (tester) async {
@@ -122,22 +148,97 @@ void main() {
       expect(find.textContaining('Adab'), findsWidgets);
     });
 
-    testWidgets('memaparkan pecahan markah setiap bahagian', (tester) async {
+    testWidgets('memaparkan jadual markah setiap bahagian', (tester) async {
       await tester.pumpWidget(_bingkai(_kad()));
 
-      expect(find.text('Pecahan markah'), findsOneWidget);
-      // Jawapan kosong: kedua-dua bahagian dapat sifar, tetapi penuhnya tetap
-      // dipaparkan supaya ibu bapa nampak bentuk kertas sebenar.
-      expect(find.text('0/10'), findsOneWidget);
-      expect(find.text('0/20'), findsOneWidget);
+      expect(find.text('Untuk Kegunaan Pemeriksa'), findsOneWidget);
+      // Nombor soalan berterusan merentas bahagian, seperti kertas cetak.
+      expect(find.text('Soalan 1–2'), findsOneWidget);
+      expect(find.text('Soalan 3–4'), findsOneWidget);
+
+      final bahagianA = find.byKey(const ValueKey('bahagian-A'));
+      final bahagianB = find.byKey(const ValueKey('bahagian-B'));
+      expect(bahagianA, findsOneWidget);
+      expect(bahagianB, findsOneWidget);
+      // Jawapan kosong: markah sifar, tetapi penuhnya tetap dipaparkan supaya
+      // ibu bapa nampak bentuk kertas sebenar.
+      expect(
+        find.descendant(of: bahagianA, matching: find.text('0/10')),
+        findsOneWidget,
+      );
+      expect(
+        find.descendant(of: bahagianB, matching: find.text('0/20')),
+        findsOneWidget,
+      );
     });
 
-    testWidgets('menukar pujian mengikut markah', (tester) async {
-      await tester.pumpWidget(_bingkai(_kad(markah: 14, penuh: 70, peratus: 20)));
-      expect(find.textContaining('Jangan putus asa'), findsOneWidget);
+    testWidgets('memaparkan markah setiap soalan', (tester) async {
+      await tester.pumpWidget(_bingkai(_kad()));
 
-      await tester.pumpWidget(_bingkai(_kad(markah: 46, penuh: 70, peratus: 66)));
-      expect(find.textContaining('Bagus'), findsOneWidget);
+      expect(find.text('Markah setiap soalan'), findsOneWidget);
+
+      // Empat soalan dalam kertas ujian ini, dinomborkan 1 hingga 4.
+      for (var nombor = 1; nombor <= 4; nombor++) {
+        final cip = find.byKey(ValueKey('cip-$nombor'));
+        expect(cip, findsOneWidget);
+        expect(
+          find.descendant(of: cip, matching: find.text('$nombor')),
+          findsOneWidget,
+        );
+      }
+
+      // Soalan bertulis boleh mendapat markah separa, jadi pecahannya
+      // dipaparkan (0/5 dan 0/10) dan bukan tanda ✓/✗.
+      expect(
+        find.descendant(
+          of: find.byKey(const ValueKey('cip-1')),
+          matching: find.text('0/5'),
+        ),
+        findsOneWidget,
+      );
+      expect(
+        find.descendant(
+          of: find.byKey(const ValueKey('cip-4')),
+          matching: find.text('0/10'),
+        ),
+        findsOneWidget,
+      );
+    });
+
+    testWidgets('menukar gred dan namanya mengikut markah', (tester) async {
+      await tester.pumpWidget(
+        _bingkai(_kad(markah: 14, penuh: 70, peratus: 20)),
+      );
+      expect(find.text('D'), findsOneWidget);
+      expect(find.text('Kurang Memuaskan'), findsOneWidget);
+
+      await tester.pumpWidget(
+        _bingkai(_kad(markah: 46, penuh: 70, peratus: 66)),
+      );
+      expect(find.text('B'), findsOneWidget);
+      expect(find.text('Baik'), findsOneWidget);
+    });
+
+    testWidgets('memaparkan masa menjawab pada kepala kad', (tester) async {
+      await tester.pumpWidget(_bingkai(_kad(masa: '5:28')));
+      expect(find.text('Masa 5:28'), findsOneWidget);
+    });
+
+    testWidgets('tidak memaparkan masa yang tidak diketahui', (tester) async {
+      // Lebih baik tiada maklumat daripada masa yang salah — kad yang dibuka
+      // tanpa data masa tidak boleh memaparkan "Masa 0:00" seolah-olah murid
+      // menjawab dalam sekelip mata.
+      await tester.pumpWidget(_bingkai(_kad()));
+      expect(find.textContaining('Masa'), findsNothing);
+    });
+  });
+
+  group('masa menjawab', () {
+    test('dipaparkan dalam minit dan saat, atau jam apabila perlu', () {
+      expect(masaTeks(0), '0:00');
+      expect(masaTeks(59), '0:59');
+      expect(masaTeks(328), '5:28');
+      expect(masaTeks(4500), '1:15:00');
     });
   });
 
@@ -159,12 +260,11 @@ void main() {
       expect(imej.length, greaterThan(4000));
     });
 
-    testWidgets('memulangkan null apabila kunci tidak melekat pada kad',
-        (tester) async {
+    testWidgets('memulangkan null apabila kunci tidak melekat pada kad', (
+      tester,
+    ) async {
       await tester.pumpWidget(_bingkai(const SizedBox()));
-      final imej = await tester.runAsync(
-        () => Kongsi.tangkapImej(GlobalKey()),
-      );
+      final imej = await tester.runAsync(() => Kongsi.tangkapImej(GlobalKey()));
       expect(imej, isNull);
     });
   });
@@ -190,12 +290,12 @@ void main() {
 
     test('memberi galakan berbeza mengikut markah', () {
       String kapsyen(int peratus) => Kongsi.kapsyenKeputusan(
-            tajuk: 'Adab',
-            markah: peratus,
-            penuh: 100,
-            peratus: peratus,
-            gred: Gred.dariPeratus(peratus),
-          );
+        tajuk: 'Adab',
+        markah: peratus,
+        penuh: 100,
+        peratus: peratus,
+        gred: Gred.dariPeratus(peratus),
+      );
 
       expect(kapsyen(90), contains('Cemerlang'));
       expect(kapsyen(65), contains('Bagus'));
@@ -217,8 +317,9 @@ void main() {
   });
 
   group('skrin kongsi', () {
-    testWidgets('memaparkan gambar dan kapsyen yang akan dihantar',
-        (tester) async {
+    testWidgets('memaparkan gambar dan kapsyen yang akan dihantar', (
+      tester,
+    ) async {
       await tester.pumpWidget(
         MaterialApp(
           home: KongsiScreen(
@@ -263,6 +364,45 @@ void main() {
       // Kad perkongsian hanya dilukis di luar skrin semasa gambar disediakan —
       // ia tidak boleh kelihatan semasa skrin biasa dibaca.
       expect(find.byType(KadKeputusan), findsNothing);
+    });
+
+    testWidgets('kad kongsi tidak dihadkan kepada tinggi skrin', (
+      tester,
+    ) async {
+      // Bunyi dimatikan supaya tiada had masa audio yang tinggal selepas ujian.
+      await Tetapan.instance.tetapkanBunyi(false);
+      tester.view.physicalSize = const Size(430, 932) * 3;
+      tester.view.devicePixelRatio = 3;
+      addTearDown(tester.view.reset);
+
+      await tester.pumpWidget(
+        MaterialApp(
+          home: KeputusanScreen(
+            kertas: _kertasBesar(),
+            jawapan: const {},
+            saat: 328,
+          ),
+        ),
+      );
+      await tester.pump(const Duration(milliseconds: 50));
+
+      // Butang kongsi di bar atas mula melukis kad di luar skrin.
+      await tester.tap(find.byIcon(Icons.ios_share_rounded));
+      await tester.pump();
+
+      final kad = find.byType(KadKeputusan);
+      expect(kad, findsOneWidget);
+
+      // Kad 35 soalan jauh lebih tinggi daripada skrin 932 pt. Jika kad itu
+      // dihadkan kepada tinggi skrin, gambar yang dikongsi terpotong sebelum
+      // sampai ke kaki kad — kredit pencipta hilang daripada gambar.
+      final saiz = tester.getSize(kad);
+      expect(saiz.width, 360);
+      expect(saiz.height, greaterThan(932));
+
+      // Biarkan aliran kongsi tamat (penangkapan gambar gagal dalam ujian,
+      // dan itu dikendalikan dengan SnackBar).
+      await tester.pump(const Duration(seconds: 1));
     });
   });
 }

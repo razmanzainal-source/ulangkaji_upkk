@@ -33,10 +33,18 @@ class KeputusanScreen extends StatefulWidget {
     super.key,
     required this.kertas,
     required this.jawapan,
+    this.saat,
   });
 
   final Kertas kertas;
   final Map<String, JawapanMurid> jawapan;
+
+  /// Masa menjawab, dalam saat.
+  ///
+  /// `null` bermakna masa tidak diketahui (contohnya kertas dibuka terus pada
+  /// skrin keputusan). Kad perkongsian tidak memaparkan "Masa" jika nilainya
+  /// tidak diketahui — lebih baik tiada maklumat daripada maklumat salah.
+  final int? saat;
 
   @override
   State<KeputusanScreen> createState() => _KeputusanScreenState();
@@ -93,6 +101,13 @@ class _KeputusanScreenState extends State<KeputusanScreen> {
 
   // --- Kongsi keputusan ----------------------------------------------------
 
+  /// Masa menjawab dalam bentuk `5:28`, atau `1:02:30` jika lebih sejam.
+  String? get _masaTeks {
+    final saat = widget.saat;
+    if (saat == null || saat < 0) return null;
+    return masaTeks(saat);
+  }
+
   /// Kad keputusan yang ditangkap sebagai gambar untuk dikongsi.
   ///
   /// Kad ini dilukis **di luar kawasan yang kelihatan** — kedudukannya
@@ -113,6 +128,7 @@ class _KeputusanScreenState extends State<KeputusanScreen> {
       gred: Gred.dariPeratus(peratus),
       nama: Tetapan.instance.namaAnak,
       tarikh: tarikhMelayu(DateTime.now()),
+      masa: _masaTeks,
     );
   }
 
@@ -279,10 +295,17 @@ class _KeputusanScreenState extends State<KeputusanScreen> {
         // yang kelihatan, dan hanya sementara gambar sedang disediakan. Ia
         // tidak pernah dipotong oleh kedudukan skrol, jadi gambar yang
         // dikongsi sentiasa lengkap.
+        //
+        // Lebar kad ditetapkan, tetapi tingginya sengaja **tidak** — kad
+        // kertas percubaan (sehingga 35 soalan dalam senarai markah setiap
+        // soalan) lebih tinggi daripada skrin telefon, dan tinggi yang
+        // dikunci di sini akan memotong kaki kad daripada gambar yang
+        // dikongsi.
         if (_menyediakanKongsi)
           Positioned(
             left: -4000,
             top: 0,
+            width: 360,
             child: RepaintBoundary(key: _kunciKongsi, child: _kadKongsi()),
           ),
         if (_letupan > 0)

@@ -410,9 +410,16 @@ class _KertasScreenState extends State<KertasScreen> {
     if (!mounted) return;
     await _simpanRekod();
     if (!mounted) return;
+    // Masa yang sama dengan rekod yang baru disimpan — kad perkongsian mesti
+    // memaparkan masa yang sepadan dengan rekod dalam Kemajuan.
+    final saat = _kertas.masaMinit * 60 - _saat;
     Navigator.of(context).pushReplacement(
       MaterialPageRoute(
-        builder: (_) => KeputusanScreen(kertas: _kertas, jawapan: _jawapan),
+        builder: (_) => KeputusanScreen(
+          kertas: _kertas,
+          jawapan: _jawapan,
+          saat: saat,
+        ),
       ),
     );
   }
@@ -698,10 +705,16 @@ class _KertasScreenState extends State<KertasScreen> {
                   ? null
                   : () => setState(() => _halaman--),
               icon: const Icon(Icons.chevron_left_rounded),
-              label: const Text('Sebelum', style: Teks.biasa),
+              label: Text(
+                'Sebelum',
+                maxLines: 1,
+                overflow: TextOverflow.ellipsis,
+                style: Teks.biasa.copyWith(fontWeight: FontWeight.w700),
+              ),
               style: OutlinedButton.styleFrom(
                 foregroundColor: Warna.utama,
                 minimumSize: const Size.fromHeight(50),
+                padding: const EdgeInsets.symmetric(horizontal: 8),
                 side: const BorderSide(color: Warna.utama),
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(16),
@@ -710,8 +723,11 @@ class _KertasScreenState extends State<KertasScreen> {
             ),
           ),
           const SizedBox(width: 10),
+          // Kedua-dua butang berkongsi lebar yang sama. Butang "Sebelum" yang
+          // lebih kecil daripada "Seterusnya" membuatkan perkataan "Sebelum"
+          // terpotong pada telefon kecil, dan kanak-kanak teragak-agak
+          // menekan butang yang kelihatan separuh siap.
           Expanded(
-            flex: 2,
             child: FilledButton.icon(
               onPressed: () {
                 if (terakhir) {
@@ -727,15 +743,15 @@ class _KertasScreenState extends State<KertasScreen> {
               ),
               label: Text(
                 terakhir ? 'Hantar kertas' : 'Seterusnya',
-                style: const TextStyle(
-                  fontSize: 16,
-                  fontWeight: FontWeight.w800,
-                ),
+                maxLines: 1,
+                overflow: TextOverflow.ellipsis,
+                style: Teks.biasa.copyWith(fontWeight: FontWeight.w800),
               ),
               style: FilledButton.styleFrom(
                 backgroundColor: terakhir ? Warna.betul : Warna.utama,
                 foregroundColor: Colors.white,
                 minimumSize: const Size.fromHeight(50),
+                padding: const EdgeInsets.symmetric(horizontal: 8),
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(16),
                 ),
@@ -1144,11 +1160,23 @@ class _KertasScreenState extends State<KertasScreen> {
                   ),
                 ),
               ),
-              const Spacer(),
-              Text(
-                '﴾ ${format?.markah ?? bahagian?.markah ?? 0} مرکه ﴿',
-                textDirection: TextDirection.rtl,
-                style: Teks.jawiKecil.copyWith(color: Colors.black87),
+              const SizedBox(width: 8),
+              // Markah bahagian di kanan. Ia dibalut `FittedBox` supaya teks
+              // Jawi yang lebar tidak melimpah keluar jalur pada telefon
+              // sempit — lebih baik ia mengecil sedikit daripada terpotong.
+              Expanded(
+                child: Align(
+                  alignment: Alignment.centerRight,
+                  child: FittedBox(
+                    fit: BoxFit.scaleDown,
+                    alignment: Alignment.centerRight,
+                    child: Text(
+                      '﴾ ${format?.markah ?? bahagian?.markah ?? 0} مرکه ﴿',
+                      textDirection: TextDirection.rtl,
+                      style: Teks.jawiKecil.copyWith(color: Colors.black87),
+                    ),
+                  ),
+                ),
               ),
             ],
           ),

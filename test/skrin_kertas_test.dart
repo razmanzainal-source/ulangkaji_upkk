@@ -221,4 +221,46 @@ void main() {
       await _tutup(tester);
     });
   }
+
+  testWidgets('butang Sebelum dan Seterusnya sama lebar pada telefon kecil', (
+    tester,
+  ) async {
+    final id = _subjekAdaBank().first;
+    final kertas = JanaKertas.percubaan(
+      subjek: _bacaSubjek(id),
+      bank: _bacaBank(id),
+    );
+
+    await _buka(tester, kertas);
+    await tester.tap(find.text('Mula menjawab'));
+    await tester.pump();
+
+    for (final saiz in const [Size(430, 932), Size(360, 740)]) {
+      tester.view.physicalSize = saiz * 3;
+      tester.view.devicePixelRatio = 3;
+      await tester.pump();
+
+      final sebelum = tester.getSize(
+        find.widgetWithText(OutlinedButton, 'Sebelum'),
+      );
+      final seterusnya = tester.getSize(
+        find.widgetWithText(FilledButton, 'Seterusnya'),
+      );
+
+      expect(
+        sebelum.width,
+        closeTo(seterusnya.width, 0.5),
+        reason: 'butang tidak sama lebar pada skrin ${saiz.width}',
+      );
+      expect(sebelum.height, seterusnya.height);
+
+      // Label mesti satu baris: "Sebelum" tidak boleh terpotong jadi
+      // "Sebelu/m" pada telefon sempit.
+      final label = tester.widget<Text>(find.text('Sebelum'));
+      expect(label.maxLines, 1);
+      expect(label.overflow, TextOverflow.ellipsis);
+    }
+
+    await _tutup(tester);
+  });
 }
