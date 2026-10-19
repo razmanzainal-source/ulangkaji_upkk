@@ -61,7 +61,7 @@ class _PilihSubjekScreenState extends State<PilihSubjekScreen> {
     return CustomScrollView(
       slivers: [
         SliverToBoxAdapter(
-          child: KepalaUpik(
+          child: KepalaRaz(
             tajuk: nama.isEmpty ? 'Ulangkaji UPKK' : 'Assalamualaikum, $nama!',
             sari: 'Jom belajar KAFA bersama Raz — 6 subjek bertulis, '
                 '70 markah, 1 jam 15 minit, mengikut format UPKK sebenar.',

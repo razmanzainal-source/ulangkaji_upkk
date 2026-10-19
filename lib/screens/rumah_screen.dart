@@ -76,10 +76,10 @@ class _RumahScreenState extends State<RumahScreen> {
 
 /// Kepala halaman yang dikongsi oleh senarai subjek dan Kertas Sebenar.
 ///
-/// Upik sentiasa muncul di sini supaya murid mengenali penjuru atas skrin
+/// Raz sentiasa muncul di sini supaya murid mengenali penjuru atas skrin
 /// sebagai "rumah" dan tahu tempat untuk kembali.
-class KepalaUpik extends StatelessWidget {
-  const KepalaUpik({
+class KepalaRaz extends StatelessWidget {
+  const KepalaRaz({
     super.key,
     required this.tajuk,
     required this.sari,

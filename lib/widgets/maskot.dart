@@ -3,9 +3,9 @@ import 'package:flutter/material.dart';
 /// Perasaan maskot. Mengubah animasi dan lencana kecil di sudut.
 enum MoodMaskot { biasa, gembira, fikir, insaf, hebat }
 
-/// Kanak-kanak perempuan comel bernama **Upik** — rakan belajar anak.
+/// Kanak-kanak perempuan comel bernama **Raz** — rakan belajar anak.
 ///
-/// Upik bertudung pink dan memeluk buku. Gambarnya ialah **lencana bulat**
+/// Raz bertudung pink dan memeluk buku. Gambarnya ialah **lencana bulat**
 /// yang dipotong daripada karya ikon app sendiri oleh `tools/potong_maskot.py`,
 /// jadi warnanya (pink) sama dengan tema app dan tepinya bergelang putih —
 /// boleh diletak atas latar putih mahupun pink tanpa nampak pelik.
@@ -34,7 +34,7 @@ class _MaskotState extends State<Maskot> with SingleTickerProviderStateMixin {
   static const double _ambangMuka = 84;
 
   /// Ikon memangkin tidak boleh mengisi seluruh kotak, kerana denyutan skala
-  /// sampai 1.20 (lihat [_skalaMaksimum]). 0.82 x 1.20 = 0.98, jadi Upik tidak
+  /// sampai 1.20 (lihat [_skalaMaksimum]). 0.82 x 1.20 = 0.98, jadi Raz tidak
   /// pernah terpotong oleh kotak induknya.
   static const double _nisbahIsi = 0.82;
 

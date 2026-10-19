@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
-"""Jadikan maskot **Upik** daripada karya ikon app.
+"""Jadikan maskot **Raz** daripada karya ikon app.
 
 `tools/karya_ikon.png` ialah satu ilustrasi penuh 1024x1024: kanak-kanak
 perempuan bertudung pink memeluk buku, bersama bulan, bintang, awan dan teks
 "ULANGKAJI UPKK / KAFA • TAHUN 5".
 
-Kenapa bukan potongan lutsinar? Latar karya ini pink muda dan tudung Upik juga
+Kenapa bukan potongan lutsinar? Latar karya ini pink muda dan tudung Raz juga
 pink — memotong latar secara automatik akan bocor ke dalam tudung atau
 meninggalkan sisa latar. Kerana itu maskot dijadikan **lencana bulat** (bulatan
 + gelang putih) — bersih, sengaja kelihatan seperti lencana, dan warnanya kekal

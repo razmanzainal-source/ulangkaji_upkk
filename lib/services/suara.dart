@@ -94,7 +94,7 @@ class Suara {
   /// Nama yang disebut dalam sapaan pembuka.
   ///
   /// Ini nama **pencipta app**, bukan nama maskot. Sapaan mengajak murid
-  /// belajar bersama orang yang membina app ini; maskot (Upik) pula watak yang
+  /// belajar bersama orang yang membina app ini; maskot (Raz) pula watak yang
   /// menemani murid di dalam skrin, dan namanya tidak perlu disebut kerana ia
   /// sentiasa kelihatan.
   static const String namaPencipta = 'Raz';

@@ -540,7 +540,7 @@ class _TetapanState extends State<_Tetapan> {
       ikon: Icons.settings_rounded,
       kanak: [
         // Nama anak diletakkan paling atas kerana ia perkara pertama yang
-        // ibu bapa mahu betulkan apabila Upik menyapa nama yang salah.
+        // ibu bapa mahu betulkan apabila Raz menyapa nama yang salah.
         Material(
           color: Colors.transparent,
           child: ListTile(
@@ -550,7 +550,7 @@ class _TetapanState extends State<_Tetapan> {
             subtitle: Text(
               Tetapan.instance.adaNama
                   ? Tetapan.instance.namaAnak
-                  : 'Belum ditetapkan — Upik belum tahu nama murid.',
+                  : 'Belum ditetapkan — Raz belum tahu nama murid.',
               style: Teks.label.copyWith(color: Colors.black54),
             ),
             trailing: const Icon(Icons.edit_outlined, size: 20),

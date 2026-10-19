@@ -36,7 +36,7 @@ class _KemajuanScreenState extends State<KemajuanScreen> {
     return CustomScrollView(
       slivers: [
         SliverToBoxAdapter(
-          child: KepalaUpik(
+          child: KepalaRaz(
             tajuk: 'Kemajuan',
             sari: jumlahPercubaan == 0
                 ? 'Belum ada percubaan. Mulakan dengan satu kertas — markah '

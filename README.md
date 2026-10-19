@@ -2,7 +2,7 @@
 
 App ulang kaji **Ujian Penilaian Kelas Al-Quran dan Fardu Ain (UPKK)** untuk
 murid Tahun 5 KAFA — luar talian sepenuhnya, dalam Bahasa Melayu dan Jawi,
-ditemani maskot **Upik**.
+ditemani maskot **Raz**.
 
 © 2026 Razman Zainal. App ini **percuma** dan tiada iklan.
 

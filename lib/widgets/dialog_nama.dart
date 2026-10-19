@@ -110,8 +110,8 @@ class _DialogNamaState extends State<_DialogNama> {
             const SizedBox(height: 6),
             Text(
               widget.tukar
-                  ? 'Upik akan guna nama baharu ini.'
-                  : 'Siapa nama kamu? Upik hendak kenal kamu.',
+                  ? 'Raz akan guna nama baharu ini.'
+                  : 'Siapa nama kamu? Raz hendak kenal kamu.',
               style: Teks.biasa.copyWith(color: Colors.black54, height: 1.4),
               textAlign: TextAlign.center,
             ),

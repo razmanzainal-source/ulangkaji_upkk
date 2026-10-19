@@ -11,7 +11,7 @@
 //     flutter test integration_test/aliran_penuh_test.dart -d <peranti>
 //
 // Nota penting: `pumpAndSettle` **tidak boleh** dipakai dalam app ini. Maskot
-// Upik berdenyut tanpa henti, jadi pokok widget tidak pernah "tenang" dan
+// Raz berdenyut tanpa henti, jadi pokok widget tidak pernah "tenang" dan
 // `pumpAndSettle` akan tamat masa. Semua penantian di sini memajukan masa
 // mengikut bingkai.
 

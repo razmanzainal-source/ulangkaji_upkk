@@ -40,7 +40,7 @@ List<Subjek> _subjekDariCakera() {
 }
 
 /// Majukan beberapa bingkai — pembaca tidak boleh memakai `pumpAndSettle`
-/// kerana maskot Upik di skrin belakang berdenyut tanpa henti.
+/// kerana maskot Raz di skrin belakang berdenyut tanpa henti.
 Future<void> _bingkai(WidgetTester tester, [int bilangan = 10]) async {
   for (var i = 0; i < bilangan; i++) {
     await tester.pump(const Duration(milliseconds: 120));
