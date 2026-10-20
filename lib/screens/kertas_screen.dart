@@ -67,6 +67,14 @@ class _KertasScreenState extends State<KertasScreen> {
   final Set<String> _sudahDipuji = {};
   final Set<String> _sudahDitegur = {};
 
+  /// Soalan yang jawapannya sudah **dimuktamadkan** oleh murid — menekan
+  /// pilihan, ✓/✗, padan, atau "Siap" pada medan taip.
+  ///
+  /// Pembetulan hanya dipaparkan untuk soalan ini. Semasa murid menaip huruf
+  /// satu demi satu, jawapannya belum muktamad dan panel jawapan betul akan
+  /// mendedahkan jawapan sebelum dia siap mencuba.
+  final Set<String> _dimuktamadkan = {};
+
   /// Soalan bertulis yang papannya ditutup sendiri oleh murid.
   ///
   /// Papan kekunci Jawi/Arab **terbuka sendiri** pada setiap soalan bertulis:
@@ -148,6 +156,7 @@ class _KertasScreenState extends State<KertasScreen> {
   void _simpan(SoalanKertas s, JawapanMurid jawapan, {bool raikan = true}) {
     setState(() => _jawapan[s.id] = jawapan);
 
+    if (raikan) _dimuktamadkan.add(s.id);
     if (!raikan) return;
 
     // Pujian dan teguran dikawal oleh [_sudahDipuji] dan [_sudahDitegur] —
@@ -1199,6 +1208,11 @@ class _KertasScreenState extends State<KertasScreen> {
               ],
               const SizedBox(height: 16),
               _badanSoalan(s, warna),
+              // Pembetulan — latih tubi sahaja (lihat [_perluPembetulan]).
+              if (_perluPembetulan(s)) ...[
+                const SizedBox(height: 14),
+                _pembetulan(s),
+              ],
             ],
           ),
         ),
@@ -1294,6 +1308,101 @@ class _KertasScreenState extends State<KertasScreen> {
       if (b.nama == nama) return b;
     }
     return null;
+  }
+
+  // --- Pembetulan latih tubi -----------------------------------------------
+
+  /// Benar apabila soalan ini perlu memaparkan **pembetulan**.
+  ///
+  /// Ibu bapa meminta maklum balas pembetulan dalam latih tubi: tanda ✗ semata
+  /// — mata memberitahu murid dia salah, tetapi tidak memberi jalan untuk
+  /// membetulkan diri. Panel ini tiada dalam kertas percubaan — di situ jawapan
+  /// betul hanya dibuka apabila kertas dihantar, supaya murid tidak boleh
+  /// membetulkan diri sambil diperiksa.
+  ///
+  /// Panel muncul hanya apabila jawapan sudah **dimuktamadkan** dan lengkap
+  /// tetapi belum betul sepenuhnya — jawapan separa yang sedang dibina tidak
+  /// patut didedahkan.
+  bool _perluPembetulan(SoalanKertas s) {
+    if (!_latihTubi || !_dimuktamadkan.contains(s.id)) return false;
+
+    final jawapan = _jawapan[s.id];
+    if (jawapan == null || s.betulPenuh(jawapan)) return false;
+
+    // `susun` tiada saat "selesai" (lihat `SoalanKertas.lengkap`): murid
+    // mengalihkan kad sehingga dia berpuas hati. Maka pembetulan menunggu
+    // sehingga semua kad sudah berada pada tempatnya.
+    if (s.jenis == JenisKertas.susun) {
+      return jawapan is JawapanSusun &&
+          jawapan.susunan.length == s.urutan.length;
+    }
+    return s.lengkap(jawapan);
+  }
+
+  /// Panel jawapan betul di bawah ruang jawapan.
+  ///
+  /// Rupanya sama dengan kad nota penerangan yang sedia ada dalam app (latar
+  /// krim, tepi amber) supaya ia kelihatan seperti nota guru, bukan seperti
+  /// satu lagi kegagalan berwarna merah.
+  Widget _pembetulan(SoalanKertas s) {
+    final teks = _teksPembetulan(s);
+    if (teks.isEmpty) return const SizedBox.shrink();
+
+    return Container(
+      width: double.infinity,
+      padding: const EdgeInsets.all(12),
+      decoration: BoxDecoration(
+        color: Warna.latarNota,
+        borderRadius: BorderRadius.circular(14),
+        border: Border.all(color: Warna.tepiNota, width: 1.5),
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Row(
+            children: [
+              const Icon(
+                Icons.lightbulb_rounded,
+                size: 18,
+                color: Warna.tepiNota,
+              ),
+              const SizedBox(width: 6),
+              // Dibungkus `Expanded` supaya baris ini menyimpul dan tidak
+              // melimpah keluar panel pada telefon sempit — panel pembetulan
+              // lebih penting daripada barisan tajuk yang kemas.
+              Expanded(
+                child: Text(
+                  'Pembetulan — jawapan sebenar',
+                  style: Teks.label.copyWith(fontWeight: FontWeight.w900),
+                ),
+              ),
+            ],
+          ),
+          const SizedBox(height: 6),
+          for (final baris in teks.split('\n'))
+            if (baris.trim().isNotEmpty)
+              Padding(
+                padding: const EdgeInsets.only(bottom: 2),
+                child: Text(
+                  baris.trim(),
+                  style: Teks.biasa.copyWith(height: 1.4),
+                ),
+              ),
+        ],
+      ),
+    );
+  }
+
+  /// Teks jawapan betul untuk panel pembetulan.
+  ///
+  /// Soalan bertulis memakai **jawapan contoh** dahulu. Jika bank tiada
+  /// jawapan contoh (soalan huraian dinilai dengan rubrik), idea rubrik yang
+  /// dipaparkan — sekurang-kurangnya murid nampak perkara apa yang sepatutnya
+  /// ada dalam jawapannya, bukan sekadar "salah".
+  String _teksPembetulan(SoalanKertas s) {
+    final contoh = s.jawapanPenuhTeks.trim();
+    if (contoh.isNotEmpty) return contoh;
+    return s.rubrik.idea.map((i) => '• ${i.maksud}').join('\n').trim();
   }
 
   // --- Badan jawapan mengikut jenis soalan ---------------------------------

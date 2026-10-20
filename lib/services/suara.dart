@@ -40,6 +40,11 @@ class Suara {
 
   static const String kunciCubaLagi = 'f-salah';
 
+  // Nota tanda baca: tiada lagi ", ya." di hujung ayat app. Ayat yang
+  // berakhir dengan "ya" berbunyi seperti orang dewasa yang memujuk, bukan
+  // seperti guru yang yakin — dan selepas ayat kesalahan yang ke sepuluh dalam
+  // satu sesi, "ya" itu kedengaran janggal (runutan murid sendiri).
+
   /// **Tiada** pujian bersuara selepas setiap jawapan betul.
   ///
   /// Ayat "Betul! Syabas!" selepas setiap jawapan betul kelihatan mesra di
@@ -52,7 +57,7 @@ class Suara {
   /// maklum balas keputusan, dan ayat menenangkan apabila jawapan salah.
 
   /// Teks sandaran daripada [kunciCubaLagi].
-  static const String teksCubaLagi = 'Cuba lagi, ya.';
+  static const String teksCubaLagi = 'Cuba lagi.';
 
   /// Ayat maklum balas keputusan: (kunci rakaman, teks sandaran).
   ///
@@ -67,7 +72,7 @@ class Suara {
     if (sempurna) return (kunciSempurna, 'Cemerlang! Semua jawapan betul.');
     if (peratus >= 80) return (kunciHebat, 'Cemerlang! Markah kamu cemerlang.');
     if (peratus >= 60) return (kunciBagus, 'Bagus! Sedikit lagi usaha.');
-    if (peratus >= 40) return (kunciBoleh, 'Boleh lagi! Cuba sekali lagi, ya.');
+    if (peratus >= 40) return (kunciBoleh, 'Boleh lagi! Cuba sekali lagi.');
     return (kunciUlang, 'Jangan putus asa. Mari kita ulang kaji sekali lagi.');
   }
 
@@ -84,14 +89,51 @@ class Suara {
   static const String kunciNama = 'f-nama';
   static const String kunciSelamat = 'f-selamat';
 
-  /// Ayat penutup **latih tubi**.
+  /// Ayat penutup **latih tubi** mengikut keputusan murid.
   ///
-  /// Latih tubi bukan kertas, jadi ayat ini tidak menyebut markah, peratus
-  /// mahupun gred — hanya mengesahkan latihan sudah selesai dan mengajak murid
-  /// mencuba lagi.
+  /// Latih tubi bukan kertas, jadi **ketiga-tiga** ayat ini tidak menyebut
+  /// markah, peratus mahupun gred — hanya mengesahkan latihan sudah selesai
+  /// dan mengajak murid mencuba lagi.
+  ///
+  /// "Syabas" hanya untuk [ambangSyabasPeratus] peratus ke atas. Memuji
+  /// sepuluh soalan yang tujuh salah membuatkan pujian itu tidak bermakna —
+  /// murid tahu dia banyak salah, dan pujian yang tidak jujur lebih mudah
+  /// dikesan oleh kanak-kanak daripada pujian yang tulus.
   static const String kunciLatihanSelesai = 'f-latihan';
   static const String teksLatihanSelesai =
-      'Syabas! Latihan selesai. Jom cuba lagi, ya.';
+      'Syabas! Latihan selesai. Jom cuba lagi.';
+
+  /// Ayat penutup latih tubi — keputusan sederhana (bawah ambang syabas).
+  static const String kunciLatihanSederhana = 'f-latihan-sederhana';
+  static const String teksLatihanSederhana =
+      'Latihan selesai. Teruskan usaha, jom cuba lagi.';
+
+  /// Ayat penutup latih tubi — keputusan lemah (banyak soalan salah).
+  static const String kunciLatihanUlang = 'f-latihan-ulang';
+  static const String teksLatihanUlang =
+      'Latihan selesai. Jangan putus asa, mari ulang kaji sekali lagi.';
+
+  /// Peratus minimum soalan betul untuk mendengar "Syabas".
+  ///
+  /// Ambang ini dikunci oleh permintaan ibu bapa: pujian mesti **logik**.
+  /// Tujuh soalan betul daripada sepuluh (70%) masih layak dipuji; tiga
+  /// daripada sepuluh tidak.
+  static const int ambangSyabasPeratus = 70;
+
+  /// Ayat penutup latih tubi bagi satu peratus jawapan betul.
+  ///
+  /// Dipisahkan daripada skrin penutup supaya ambang ditulis sekali sahaja di
+  /// sini — dan supaya paparan sentiasa bermula dengan perkataan yang sama
+  /// seperti bunyi (lihat [keputusan]).
+  static (String, String) latihanSelesai(int peratus) {
+    if (peratus >= ambangSyabasPeratus) {
+      return (kunciLatihanSelesai, teksLatihanSelesai);
+    }
+    if (peratus >= 40) {
+      return (kunciLatihanSederhana, teksLatihanSederhana);
+    }
+    return (kunciLatihanUlang, teksLatihanUlang);
+  }
 
   /// Teks rakaman [kunciNama] — soalan nama dibaca kuat.
   ///

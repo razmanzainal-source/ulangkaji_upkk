@@ -246,6 +246,181 @@ void main() {
       expect(find.text('2'), findsWidgets);
       await _tutup(tester);
     });
+
+    testWidgets('keputusan sederhana (50%): ayat sederhana, tiada "Syabas"', (
+      tester,
+    ) async {
+      await _bukaSebagaiLaluan(tester, _kertas(jenisSumber: 'latihan'));
+      await _jawabSatu(tester);
+      await tester.tap(find.text('Seterusnya'));
+      await tester.pump();
+      // Soalan kedua dijawab salah — 1 daripada 2 = 50%, bawah ambang syabas.
+      await tester.tap(find.byType(ButangPilihan).at(1));
+      await tester.pump();
+      await tester.tap(find.text('Seterusnya'));
+      await tester.pump();
+
+      // Padam rekod bunyi daripada jawab soalan supaya hanya bunyi penutup
+      // yang dinilai di sini.
+      Suara.instance.ayatTerakhir = null;
+
+      await tester.tap(find.text('Selesai'));
+      await tester.pump();
+      await tester.pump(const Duration(milliseconds: 400));
+
+      // Tajuk kad mesti sama dengan ayat pertama bunyi penutup. (Bar skrin
+      // turut menulis "Latihan selesai" — diperiksa pada kad sahaja.)
+      expect(find.text('Latihan selesai!'), findsOneWidget);
+      expect(
+        find.textContaining('Syabas'),
+        findsNothing,
+        reason: 'keputusan yang banyak salah tidak layak mendapat "Syabas"',
+      );
+
+      for (var i = 0; i < 30 && Suara.instance.ayatTerakhir == null; i++) {
+        await tester.pump(const Duration(milliseconds: 200));
+      }
+      expect(Suara.instance.ayatTerakhir, Suara.kunciLatihanSederhana);
+      // Tiada fanfar di atas markah yang banyak salah.
+      expect(Suara.instance.kesanTerakhir, isNot(Suara.kesanHebat));
+      await _tutup(tester);
+    });
+
+    testWidgets('keputusan lemah: ajakan ulang kaji, bukan "Syabas"', (
+      tester,
+    ) async {
+      await _bukaSebagaiLaluan(tester, _kertas(jenisSumber: 'latihan'));
+      await _jawabSatu(tester, pilihan: 1); // salah
+      await tester.tap(find.text('Seterusnya'));
+      await tester.pump();
+      await tester.tap(find.byType(ButangPilihan).at(1)); // salah
+      await tester.pump();
+      await tester.tap(find.text('Seterusnya'));
+      await tester.pump();
+
+      Suara.instance.ayatTerakhir = null;
+      await tester.tap(find.text('Selesai'));
+      await tester.pump();
+      await tester.pump(const Duration(milliseconds: 400));
+
+      expect(find.textContaining('Syabas'), findsNothing);
+      // Tajuk kad sepadan dengan ayat pertama bunyi penutup.
+      expect(find.text('Latihan selesai!'), findsOneWidget);
+
+      for (var i = 0; i < 30 && Suara.instance.ayatTerakhir == null; i++) {
+        await tester.pump(const Duration(milliseconds: 200));
+      }
+      expect(Suara.instance.ayatTerakhir, Suara.kunciLatihanUlang);
+      expect(Suara.instance.kesanTerakhir, isNot(Suara.kesanHebat));
+      await _tutup(tester);
+    });
+
+    testWidgets('semua betul (100%): "Syabas" + fanfar', (tester) async {
+      await _bukaSebagaiLaluan(tester, _kertas(jenisSumber: 'latihan'));
+      await _jawabSatu(tester);
+      await tester.tap(find.text('Seterusnya'));
+      await tester.pump();
+      await tester.tap(find.byType(ButangPilihan).at(0)); // betul
+      await tester.pump();
+      await tester.tap(find.text('Seterusnya'));
+      await tester.pump();
+
+      Suara.instance.ayatTerakhir = null;
+      await tester.tap(find.text('Selesai'));
+      await tester.pump();
+      await tester.pump(const Duration(milliseconds: 400));
+
+      expect(find.textContaining('Syabas'), findsOneWidget);
+      expect(Suara.instance.kesanTerakhir, Suara.kesanHebat);
+
+      for (var i = 0; i < 30 && Suara.instance.ayatTerakhir == null; i++) {
+        await tester.pump(const Duration(milliseconds: 200));
+      }
+      expect(Suara.instance.ayatTerakhir, Suara.kunciLatihanSelesai);
+      await _tutup(tester);
+    });
+
+    testWidgets('ayat penutup tiada "ya" di hujung', (tester) async {
+      // Runutan murid sendiri: hujung setiap ayat yang memujuk pernah didengar
+      // berakhir dengan "ya" dan kedengaran janggal selepas jawapan salah yang
+      // ke sepuluh dalam satu sesi.
+      for (final ayat in [
+        Suara.teksLatihanSelesai,
+        Suara.teksLatihanSederhana,
+        Suara.teksLatihanUlang,
+        Suara.teksCubaLagi,
+        'Cemerlang! Semua jawapan betul.',
+        'Cemerlang! Markah kamu cemerlang.',
+        'Bagus! Sedikit lagi usaha.',
+        'Boleh lagi! Cuba sekali lagi.',
+        'Jangan putus asa. Mari kita ulang kaji sekali lagi.',
+      ]) {
+        expect(
+          ayat.trim(),
+          isNot(endsWith('ya.')),
+          reason: '"ya" di hujung ayat berbunyi seperti orang dewasa memujuk',
+        );
+      }
+    });
+  });
+
+  group('ambang syabas', () {
+    test('syabas bermula pada 70 peratus', () {
+      expect(Suara.latihanSelesai(69).$1, Suara.kunciLatihanSederhana);
+      expect(Suara.latihanSelesai(70).$1, Suara.kunciLatihanSelesai);
+      expect(Suara.latihanSelesai(100).$1, Suara.kunciLatihanSelesai);
+    });
+
+    test('keputusan lemah mendapat ajakan ulang kaji', () {
+      expect(Suara.latihanSelesai(40).$1, Suara.kunciLatihanSederhana);
+      expect(Suara.latihanSelesai(39).$1, Suara.kunciLatihanUlang);
+      expect(Suara.latihanSelesai(0).$1, Suara.kunciLatihanUlang);
+    });
+  });
+
+  group('pembetulan jawapan', () {
+    testWidgets('latih tubi: jawapan salah dipaparkan dengan pembetulan', (
+      tester,
+    ) async {
+      await _bukaSebagaiLaluan(tester, _kertas(jenisSumber: 'latihan'));
+
+      // Pilihan pertama betul — sengaja pilih yang kedua.
+      await _jawabSatu(tester, pilihan: 1);
+
+      expect(
+        find.text('Pembetulan — jawapan sebenar'),
+        findsOneWidget,
+        reason: 'latih tubi ialah tempat belajar — ✗ sahaja tidak membantu',
+      );
+      expect(
+        find.text('ساتو').evaluate().length,
+        greaterThan(1),
+        reason: 'jawapan betul mesti dipaparkan semula pada panel pembetulan',
+      );
+      await _tutup(tester);
+    });
+
+    testWidgets('latih tubi: jawapan betul tiada pembetulan', (tester) async {
+      await _bukaSebagaiLaluan(tester, _kertas(jenisSumber: 'latihan'));
+      await _jawabSatu(tester, pilihan: 0);
+
+      expect(find.text('Pembetulan — jawapan sebenar'), findsNothing);
+      await _tutup(tester);
+    });
+
+    testWidgets('kertas percubaan: tiada pembetulan semasa menjawab', (
+      tester,
+    ) async {
+      await _bukaSebagaiLaluan(tester, _kertas(jenisSumber: 'percubaan'));
+      await _jawabSatu(tester, pilihan: 1);
+
+      expect(
+        find.text('Pembetulan — jawapan sebenar'),
+        findsNothing,
+        reason: 'percubaan bukan tempat membetulkan diri sambil diperiksa',
+      );
+      await _tutup(tester);
+    });
   });
 
   group('bantuan suara pilihan jawapan', () {

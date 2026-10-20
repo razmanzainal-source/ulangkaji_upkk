@@ -25,6 +25,12 @@ import '../widgets/maskot.dart';
 ///   * **Tiada senarai markah setiap soalan.** Yang tinggal hanyalah satu
 ///     ayat ringkas: berapa soalan betul, dan soalan mana yang patut diulang.
 ///
+/// Sambutan pula **ikut keputusan**: "Syabas", fanfar dan bunga api hanya
+/// apabila sekurang-kurangnya [Suara.ambangSyabasPeratus] peratus soalan
+/// betul. Latihan yang banyak salah ditutup dengan ayat yang mengajak
+/// mengulang kaji — memuji keputusan yang lemah menjadikan pujian itu tidak
+/// bermakna apabila murid benar-benar berjaya.
+///
 /// Murid tetap mendengar penutup yang menyeronokkan ([Suara.kunciLatihanSelesai])
 /// dan bunga api — latihan yang tamat tanpa sebarang sambutan terasa seperti
 /// latihan yang tidak dihiraukan.
@@ -59,6 +65,21 @@ class _LatihanSelesaiScreenState extends State<LatihanSelesaiScreen> {
   List<SoalanKertas> get _perluUlang =>
       _soalan.where((s) => !s.betulPenuh(widget.jawapan[s.id])).toList();
 
+  /// Peratus jawapan betul, dibundarkan.
+  ///
+  /// Tiada paparan peratus pada skrin ini (latih tubi bukan peperiksaan);
+  /// nilainya hanya untuk menentukan **ayat penutup** — lihat [Suara.latihanSelesai].
+  int get _peratus => _soalan.isEmpty
+      ? 0
+      : (_betul * 100 / _soalan.length).round();
+
+  /// Benar apabila keputusan ini layak mendapat "Syabas", fanfar dan bunga api.
+  ///
+  /// Pujian mesti logik: latihan yang banyak salah ditutup dengan ayat yang
+  /// mengajak mengulang kaji, bukan dengan "Syabas" yang bertentangan dengan
+  /// apa yang murid sendiri nampak pada skrin.
+  bool get _syabas => _peratus >= Suara.ambangSyabasPeratus;
+
   @override
   void initState() {
     super.initState();
@@ -66,19 +87,22 @@ class _LatihanSelesaiScreenState extends State<LatihanSelesaiScreen> {
     // belum wujud tidak boleh memainkan apa-apa.
     WidgetsBinding.instance.addPostFrameCallback((_) {
       if (!mounted) return;
-      setState(() => _letupan = 1);
+      if (_syabas) setState(() => _letupan = 1);
       unawaited(_sambut());
     });
   }
 
   /// Nada ceria dahulu, ayat kemudian — dua bunyi serentak menjadikan ayat
   /// itu kabur (lihat [Suara.mainkanKesanSelesai]).
+  ///
+  /// Fanfar **hanya** apabila [_syabas]. Keputusan yang lemah ditutup dengan
+  /// ayat sahaja: fanfar di atas markah yang banyak salah kedengaran sinis.
   Future<void> _sambut() async {
-    await Suara.instance.mainkanKesanSelesai(Suara.kesanHebat);
-    await Suara.instance.sebutKunci(
-      Suara.kunciLatihanSelesai,
-      sandaran: Suara.teksLatihanSelesai,
-    );
+    final (kunci, teks) = Suara.latihanSelesai(_peratus);
+    if (_syabas) {
+      await Suara.instance.mainkanKesanSelesai(Suara.kesanHebat);
+    }
+    await Suara.instance.sebutKunci(kunci, sandaran: teks);
   }
 
   String get _masaTeks {
@@ -111,6 +135,7 @@ class _LatihanSelesaiScreenState extends State<LatihanSelesaiScreen> {
                 jumlah: jumlah,
                 nama: nama,
                 semuaBetul: semuaBetul,
+                syabas: _syabas,
                 masa: _masaTeks,
               ),
               const SizedBox(height: 16),
@@ -158,13 +183,18 @@ class _LatihanSelesaiScreenState extends State<LatihanSelesaiScreen> {
   }
 }
 
-/// Kad utama: syabas, bilangan soalan betul, dan masa menjawab.
+/// Kad utama: tajuk mengikut keputusan, bilangan soalan betul, dan masa.
+///
+/// Tajuk mesti sama dengan **ayat pertama** bunyi penutup (lihat
+/// [Suara.latihanSelesai]): membaca "Syabas!" sambil mendengar "Latihan
+/// selesai" kedengaran seperti rakaman yang terpotong.
 class _KadSelesai extends StatelessWidget {
   const _KadSelesai({
     required this.betul,
     required this.jumlah,
     required this.nama,
     required this.semuaBetul,
+    required this.syabas,
     required this.masa,
   });
 
@@ -172,6 +202,7 @@ class _KadSelesai extends StatelessWidget {
   final int jumlah;
   final String nama;
   final bool semuaBetul;
+  final bool syabas;
   final String masa;
 
   @override
@@ -206,7 +237,7 @@ class _KadSelesai extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  'Syabas$sapaan!',
+                  syabas ? 'Syabas$sapaan!' : 'Latihan selesai$sapaan!',
                   style: const TextStyle(
                     fontSize: 22,
                     fontWeight: FontWeight.w900,

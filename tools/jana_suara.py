@@ -81,7 +81,7 @@ SUBJEK_ARAB = {"arab"}
 
 # Ayat tetap yang boleh diminta app melalui `Suara.sebutKunci`.
 AYAT_TETAP = {
-    "f-salah": "Cuba lagi, ya.",
+    "f-salah": "Cuba lagi.",
     # Ayat-ayat ini **mesti** bermula dengan perkataan yang dipaparkan besar di
     # kad keputusan (lihat `_pujian` dalam `keputusan_screen.dart`): murid
     # membaca "Jangan putus asa" sambil mendengar ayat yang sama. Ayat yang
@@ -89,13 +89,18 @@ AYAT_TETAP = {
     "f-sempurna": "Cemerlang! Semua jawapan betul.",
     "f-hebat": "Cemerlang! Markah kamu cemerlang.",
     "f-bagus": "Bagus! Sedikit lagi usaha.",
-    "f-boleh": "Boleh lagi! Cuba sekali lagi, ya.",
+    "f-boleh": "Boleh lagi! Cuba sekali lagi.",
     "f-ulang": "Jangan putus asa. Mari kita ulang kaji sekali lagi.",
     "f-nama": "Assalamualaikum! Siapa nama kamu?",
     # Sapaan pembuka. Nama murid **tidak** disebut — lihat `Suara.sapaan`.
     "f-selamat": "Assalamualaikum, jom belajar KAFA bersama Raz.",
-    # Penutup latih tubi. Tiada markah disebut: latih tubi bukan kertas.
-    "f-latihan": "Syabas! Latihan selesai. Jom cuba lagi, ya.",
+    # Penutup latih tubi — tiga ayat mengikut peratus jawapan betul
+    # (lihat `Suara.latihanSelesai`). Tiada markah disebut: latih tubi bukan
+    # kertas. "Syabas" hanya untuk 70% ke atas. Tiada ", ya." di hujung
+    # mana-mana ayat app.
+    "f-latihan": "Syabas! Latihan selesai. Jom cuba lagi.",
+    "f-latihan-sederhana": "Latihan selesai. Teruskan usaha, jom cuba lagi.",
+    "f-latihan-ulang": "Latihan selesai. Jangan putus asa, mari ulang kaji sekali lagi.",
 }
 
 # Teks mesti mengandungi sekurang-kurangnya satu huruf atau angka.

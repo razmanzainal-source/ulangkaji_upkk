@@ -3,7 +3,7 @@
  "suara": "ms-MY-YasminNeural",
  "suaraArab": "ar-SA-ZariyahNeural",
  "kadar": "-8%",
- "bilangan": 2266,
+ "bilangan": 2268,
  "fail": {
   "q-adab-d5": "71350f7cf28d5b63.m4a",
   "q-ibadah-b8": "c04df0c89a0dfb31.m4a",
@@ -177,7 +177,7 @@
   "q-sirah-a8": "c50bf18da7412549.m4a",
   "q-ibadah-b5": "e7d41585303812bf.m4a",
   "q-ibadah-b6": "76c340921e58f35a.m4a",
-  "f-salah": "cf0bc364ce1cfdfa.m4a",
+  "f-salah": "f3f81537e89c0a83.m4a",
   "q-sirah-b31": "274e117d943a1a4e.m4a",
   "q-jawi-b20": "53ac430e98fa427b.m4a",
   "q-jawi-b28": "6217f564c4fa52ca.m4a",
@@ -757,7 +757,7 @@
   "q-arab-a11": "01f5b06a43dc64aa.m4a",
   "q-arab-a9": "49194b82cbf02269.m4a",
   "q-arab-b20": "27d5821a305b0859.m4a",
-  "f-boleh": "3ee979b583c2636e.m4a",
+  "f-boleh": "fdac92fbaa1aae23.m4a",
   "o-10 Zulhijah": "635bfc7ee60c11a9.m4a",
   "o-100": "8e08e3d4a2ec6ee1.m4a",
   "o-12": "27d8f7835c09cfcd.m4a",
@@ -1429,7 +1429,7 @@
   "o-Subuh": "47e77eb6a0ee9755.m4a",
   "o-Surah al-____ dibaca pada setiap rakaat solat.": "2ad873cdb31dcc7d.m4a",
   "o-Surah yang pertama diturunkan kepada Nabi Muhammad ialah": "4cf3a2d80efbaedf.m4a",
-  "f-latihan": "0b7094f6cc496b19.m4a",
+  "f-latihan": "09039e1996ee09b5.m4a",
   "o-Syam": "a0de132f208054a4.m4a",
   "o-Syawal": "f24aae5541177898.m4a",
   "o-Syirik ialah perbuatan mengesakan Allah.": "d6a69bdf2efb61ce.m4a",
@@ -2270,6 +2270,8 @@
   "o-٧٠": "31efffe95dc6fb51.m4a",
   "o-٧٩": "1b48f9ebd8ef3744.m4a",
   "o-٨١": "4a0b85ea4b39b917.m4a",
-  "o-٩٠": "9c9a6b71150a571d.m4a"
+  "o-٩٠": "9c9a6b71150a571d.m4a",
+  "f-latihan-ulang": "e595cdcacfc81c6f.m4a",
+  "f-latihan-sederhana": "c7a2069b973b39ba.m4a"
  }
 }
