@@ -287,6 +287,9 @@ void main() {
       // Soalan kedua dijawab **salah** supaya skrin penutup ada dua nombor.
       await tester.tap(find.byType(ButangPilihan).at(1));
       await tester.pump();
+      // Jawapan salah: tekanan pertama membuka pembetulan, kedua bergerak maju.
+      await tester.tap(find.text('Seterusnya'));
+      await tester.pump();
       await tester.tap(find.text('Seterusnya'));
       await tester.pump();
 
@@ -320,6 +323,9 @@ void main() {
       await tester.pump();
       await tester.tap(find.byType(ButangPilihan).at(1));
       await tester.pump();
+      // Dua tekanan: buka pembetulan, kemudian bergerak maju.
+      await tester.tap(find.text('Seterusnya'));
+      await tester.pump();
       await tester.tap(find.text('Seterusnya'));
       await tester.pump();
       await tester.tap(find.text('Selesai'));
@@ -340,6 +346,9 @@ void main() {
       await tester.pump();
       // Soalan kedua dijawab salah — 1 daripada 2 = 50%, bawah ambang syabas.
       await tester.tap(find.byType(ButangPilihan).at(1));
+      await tester.pump();
+      // Dua tekanan: buka pembetulan, kemudian bergerak maju.
+      await tester.tap(find.text('Seterusnya'));
       await tester.pump();
       await tester.tap(find.text('Seterusnya'));
       await tester.pump();
@@ -375,9 +384,15 @@ void main() {
     ) async {
       await _bukaSebagaiLaluan(tester, _kertas(jenisSumber: 'latihan'));
       await _jawabSatu(tester, pilihan: 1); // salah
+      // Soalan 1: dua tekanan — buka pembetulan, kemudian bergerak maju.
       await tester.tap(find.text('Seterusnya'));
       await tester.pump();
+      await tester.tap(find.text('Seterusnya'));
+      await tester.pump();
+      // Soalan 2 juga salah — sama, dua tekanan sebelum halaman akhir.
       await tester.tap(find.byType(ButangPilihan).at(1)); // salah
+      await tester.pump();
+      await tester.tap(find.text('Seterusnya'));
       await tester.pump();
       await tester.tap(find.text('Seterusnya'));
       await tester.pump();
@@ -765,6 +780,12 @@ void main() {
       // Sengaja jawab salah — gate menuntut **ada** jawapan, bukan betul.
       await _jawabSatu(tester, pilihan: 1);
 
+      // Tekanan pertama tidak bergerak — panel pembetulan terbuka dahulu.
+      await tester.tap(find.text('Seterusnya'));
+      await tester.pump();
+      expect(find.text('Pembetulan — jawapan sebenar'), findsOneWidget);
+
+      // Tekanan kedua — pembetulan sudah dilihat — barulah bergerak maju.
       await tester.tap(find.text('Seterusnya'));
       await tester.pump();
 
@@ -1114,6 +1135,70 @@ void main() {
       await tester.tap(find.text('Sebelum'), warnIfMissed: false);
       await tester.pump();
       expect(Suara.instance.berhentiDipanggil, isFalse);
+      await _tutup(tester);
+    });
+  });
+
+  // Latih tubi tidak membenarkan jawapan salah dilangkapi tanpa pembetulan
+  // dilihat. Gerbang lama hanya menyemak "ada jawapan", jadi murid yang
+  // menjawab salah menekan "Seterusnya" sekali dan terus berpindah — panel
+  // pembetulan yang sudah dipaparkan tidak pernah dibaca.
+  group('jawapan salah membuka pembetulan dahulu (latih tubi)', () {
+    testWidgets('Seterusnya membuka pembetulan dan tidak berpindah', (
+      tester,
+    ) async {
+      await _bukaSebagaiLaluan(
+        tester,
+        _kertas(jenisSumber: 'latihan', bilangan: 3),
+      );
+      await tester.tap(find.text('Mula menjawab'));
+      await tester.pump();
+
+      // Pilihan kedua salah — jawapan sebenar bagi fixture ini ialah pilihan
+      // pertama.
+      await tester.tap(find.byType(ButangPilihan).at(1));
+      await tester.pump();
+
+      await tester.tap(find.text('Seterusnya'));
+      await tester.pump();
+
+      expect(
+        find.text('Pembetulan — jawapan sebenar'),
+        findsOneWidget,
+        reason: 'jawapan salah mesti menunjukkan jawapan sebenar di situ',
+      );
+      expect(
+        find.text('Soalan 1 daripada 3'),
+        findsOneWidget,
+        reason: 'butang tidak bergerak sehingga pembetulan dilihat',
+      );
+
+      // Tekanan kedua — pembetulan sudah dilihat — kini bergerak maju. Murid
+      // yang benar-benar tidak tahu jawapannya masih boleh meneruskan.
+      await tester.tap(find.text('Seterusnya'));
+      await tester.pump();
+      expect(find.text('Pembetulan — jawapan sebenar'), findsNothing);
+      expect(find.text('Soalan 2 daripada 3'), findsOneWidget);
+      await _tutup(tester);
+    });
+
+    testWidgets('jawapan betul terus bergerak maju tanpa pembetulan', (
+      tester,
+    ) async {
+      await _bukaSebagaiLaluan(
+        tester,
+        _kertas(jenisSumber: 'latihan', bilangan: 3),
+      );
+      await tester.tap(find.text('Mula menjawab'));
+      await tester.pump();
+
+      await tester.tap(find.byType(ButangPilihan).at(0));
+      await tester.pump();
+      await tester.tap(find.text('Seterusnya'));
+      await tester.pump();
+
+      expect(find.text('Pembetulan — jawapan sebenar'), findsNothing);
+      expect(find.text('Soalan 2 daripada 3'), findsOneWidget);
       await _tutup(tester);
     });
   });

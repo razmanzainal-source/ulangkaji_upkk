@@ -371,6 +371,78 @@ class _KertasScreenState extends State<KertasScreen> {
     return s != null && _sudahJawab(s);
   }
 
+  /// Kunci untuk menatal panel pembetulan ke dalam pandangan.
+  ///
+  /// Butang "Seterusnya" berada di bawah skrin dan panel pembetulan muncul
+  /// di bawah soalan — hampir pasti di luar pandangan ketika ditekan. Tanpa
+  /// penatal ini murid mendengar bunyi teguran tetapi tidak nampak jawapan
+  /// sebenar, lalu menekan "Seterusnya" sekali lagi dan berpindah tanpa
+  /// membacanya.
+  final GlobalKey _kunciPembetulan = GlobalKey();
+
+  /// Soalan yang pembetulannya dipaksa terbuka oleh tekanan "Seterusnya".
+  ///
+  /// [`_dimuktamadkan`] sahaja tidak mencukupi: bagi soalan objektif ia sudah
+  /// ditambah sebaik murid memilih, dan panel muncul pada ketika itu. Maka
+  /// menekan "Seterusnya" dengan jawapan salah akan terus bergerak maju —
+  /// panel yang kelihatan itu ditinggalkan tanpa sempat dibaca.
+  ///
+  /// Set ini menandakan tekanan itu sendiri: panel mesti **masih** terbuka
+  /// (walau jawapan belum lengkap), dan tekanan kedua barulah bergerak maju.
+  final Set<String> _pembetulanPaksa = {};
+
+  /// Latih tubi: jawapan yang belum betul tidak boleh dilangkapi tanpa
+  /// pembetulan dilihat terlebih dahulu.
+  ///
+  /// Tekanan pertama menetapkan jawapan dan membuka panel pembetulan di ruang
+  /// bawah, disertai bunyi teguran. Murid kemudian menekan "Seterusnya"
+  /// sekali lagi untuk bergerak maju.
+  ///
+  /// Ini **bukan** keperluan jawapan betul. Murid yang benar-benar tidak tahu
+  /// jawapannya masih boleh meneruskan — tetapi hanya selepas melihat jawapan
+  /// sebenar. Tanpa dua langkah ini murid yang menjawab salah menekan sekali
+  /// dan terus berpindah, dan panel pembetulan yang sudah dipaparkan itu tidak
+  /// pernah dibaca.
+  ///
+  /// [`_dimuktamadkan`] ialah penanda "sudah dilihat" di sini: ia juga
+  /// ditambah oleh butang "Siap", dan [_perluPembetulan] memeriksanya — jadi
+  /// menambah id yang sama membuka panel tanpa memerlukan keadaan tambahan.
+  bool _perluSahkanPembetulan(SoalanKertas s) {
+    if (!_latihTubi || !_sudahJawab(s)) return false;
+    if (_pembetulanPaksa.contains(s.id)) return false;
+    final jawapan = _jawapan[s.id];
+    return jawapan != null && !s.betulPenuh(jawapan);
+  }
+
+  /// Tetapkan jawapan dan paparkan pembetulan **tanpa** bergerak ke soalan
+  /// yang seterusnya.
+  void _sahkanPembetulan(SoalanKertas s) {
+    _pemasaGalakan?.cancel();
+    setState(() {
+      _galakJawab = false;
+      _dimuktamadkan.add(s.id);
+      _pembetulanPaksa.add(s.id);
+    });
+    // Panel muncul di bawah soalan sedangkan butang berada di bawah skrin —
+    // tanpa menatal, murid hanya mendengar bunyi dan tidak nampak jawapan.
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      final konteks = _kunciPembetulan.currentContext;
+      if (konteks == null) return;
+      Scrollable.ensureVisible(
+        konteks,
+        duration: const Duration(milliseconds: 320),
+        curve: Curves.easeOutCubic,
+        alignment: 0.08,
+      );
+    });
+    // Bunyi dan petunjuk visual berlaku serentak — kanak-kanak yang melihat
+    // butang tidak bergerak tanpa penjelasan berasa keliru. `_tegur` sudah
+    // mengehadkan dirinya kepada sekali bagi setiap soalan, jadi murid yang
+    /// sudah pun ditegur sewaktu memilih jawapan tidak akan mendengar ayat
+    // yang sama buat kali kedua; panel tetap muncul.
+    _tegur(s);
+  }
+
   /// Beritahu murid supaya menjawab dahulu, lalu paparkan petunjuk.
   ///
   /// Bunyi dan petunjuk visual digunakan bersama: kanak-kanak yang menekan
@@ -1075,12 +1147,17 @@ class _KertasScreenState extends State<KertasScreen> {
               Expanded(
                 child: FilledButton.icon(
                   onPressed: () {
+                    final s = _soalanSemasa;
                     if (terakhir) {
                       _hantar();
                     } else if (!_bolehTerus) {
                       // Latih tubi menuntut satu jawapan bagi setiap soalan
                       // sebelum murid bergerak maju — lihat [_bolehTerus].
                       _galakJawabSekarang();
+                    } else if (s != null && _perluSahkanPembetulan(s)) {
+                      // Jawapan ada tetapi belum betul, dan pembetulan belum
+                      // pernah dilihat — bukanya dahulu, di sini juga.
+                      _sahkanPembetulan(s);
                     } else {
                       _berhentiBunyiHalaman();
                       setState(() {
@@ -1484,7 +1561,7 @@ class _KertasScreenState extends State<KertasScreen> {
               // Pembetulan — latih tubi sahaja (lihat [_perluPembetulan]).
               if (_perluPembetulan(s)) ...[
                 const SizedBox(height: 14),
-                _pembetulan(s),
+                KeyedSubtree(key: _kunciPembetulan, child: _pembetulan(s)),
               ],
             ],
           ),
@@ -1601,6 +1678,15 @@ class _KertasScreenState extends State<KertasScreen> {
 
     final jawapan = _jawapan[s.id];
     if (jawapan == null || s.betulPenuh(jawapan)) return false;
+
+    // Dipaksa oleh tekanan "Seterusnya" (lihat [_pembetulanPaksa]). Tanpa
+    // syarat ini, jawapan yang **belum lengkap** — dua daripada lima padanan
+    // sudah diisi, tiga pernyataan belum disemak — tidak akan menunjukkan
+    // apa-apa, dan murid berpindah ke soalan seterusnya dengan senyap.
+    //
+    // Murid yang menekan "Seterusnya" sudah pun menganggap soalan itu
+    // selesai, jadi dia berhak melihat jawapan sebenar di ruang bawah.
+    if (_pembetulanPaksa.contains(s.id)) return true;
 
     // `susun` tiada saat "selesai" (lihat `SoalanKertas.lengkap`): murid
     // mengalihkan kad sehingga dia berpuas hati. Maka pembetulan menunggu
