@@ -1,6 +1,12 @@
 import 'package:flutter/material.dart';
 
-/// Perasaan maskot. Mengubah animasi dan lencana kecil di sudut.
+/// Perasaan maskot. Mengubah kuat denyutan skala.
+///
+/// Perasaan hanya dipaparkan melalui **gerakan** Raz sendiri, bukan melalui
+/// emoji di sudut. Lencana emoji (🏆 🎉 💭 💡) pernah wujud di situ dan
+/// dibuang atas permintaan ibu bapa: ia menutup sebahagian muka Raz dan
+/// gambarnya kelihatan bertindih, sedangkan animasi denyut sudah cukup
+/// menyampaikan perasaan.
 enum MoodMaskot { biasa, gembira, fikir, insaf, hebat }
 
 /// Kanak-kanak perempuan comel bernama **Raz** — rakan belajar anak.
@@ -16,8 +22,7 @@ enum MoodMaskot { biasa, gembira, fikir, insaf, hebat }
 ///     jelas walaupun pada 48px);
 ///   - `maskot_upkk.png` — badan penuh, untuk saiz besar.
 ///
-/// Perasaan ditunjukkan oleh lencana di sudut (lihat [_lencana]) dan oleh
-/// denyutan skala.
+/// Perasaan ditunjukkan oleh denyutan skala sahaja.
 class Maskot extends StatefulWidget {
   const Maskot({super.key, this.mood = MoodMaskot.biasa, this.saiz = 84});
 
@@ -61,48 +66,26 @@ class _MaskotState extends State<Maskot> with SingleTickerProviderStateMixin {
       ? 'assets/gambar/maskot_upkk_muka.png'
       : 'assets/gambar/maskot_upkk.png';
 
-  String? get _lencana => switch (widget.mood) {
-    MoodMaskot.hebat => '🏆',
-    MoodMaskot.gembira => '🎉',
-    MoodMaskot.fikir => '💭',
-    MoodMaskot.insaf => '💡',
-    MoodMaskot.biasa => null,
-  };
-
   @override
   Widget build(BuildContext context) {
     final sisi = widget.saiz * _nisbahIsi;
     return SizedBox(
       width: widget.saiz,
       height: widget.saiz,
-      child: Stack(
-        alignment: Alignment.center,
-        children: [
-          AnimatedBuilder(
-            animation: _kawalan,
-            builder: (context, anak) {
-              final t = Curves.easeInOut.transform(_kawalan.value);
-              final skala = 1 + (_skalaMaksimum - 1) * t;
-              return Transform.scale(scale: skala, child: anak);
-            },
-            child: Image.asset(
-              _gambar,
-              width: sisi,
-              height: sisi,
-              fit: BoxFit.contain,
-              filterQuality: FilterQuality.medium,
-            ),
-          ),
-          if (_lencana != null)
-            Positioned(
-              top: 0,
-              right: 0,
-              child: Text(
-                _lencana!,
-                style: TextStyle(fontSize: widget.saiz * 0.34),
-              ),
-            ),
-        ],
+      child: AnimatedBuilder(
+        animation: _kawalan,
+        builder: (context, anak) {
+          final t = Curves.easeInOut.transform(_kawalan.value);
+          final skala = 1 + (_skalaMaksimum - 1) * t;
+          return Transform.scale(scale: skala, child: anak);
+        },
+        child: Image.asset(
+          _gambar,
+          width: sisi,
+          height: sisi,
+          fit: BoxFit.contain,
+          filterQuality: FilterQuality.medium,
+        ),
       ),
     );
   }

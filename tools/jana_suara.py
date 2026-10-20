@@ -82,6 +82,23 @@ SUBJEK_ARAB = {"arab"}
 # Ayat tetap yang boleh diminta app melalui `Suara.sebutKunci`.
 AYAT_TETAP = {
     "f-salah": "Cuba lagi.",
+    # Gesaan menjawab dalam latih tubi — murid menekan "Seterusnya" sebelum
+    # menjawab soalan. Latih tubi mewajibkan satu jawapan bagi setiap soalan,
+    # jadi butang itu enggan bergerak dan ayat ini menerangkan sebabnya.
+    # Sengaja bukan teguran: ayat menyuruh murid mencuba, bukan memberitahu
+    # dia telah gagal.
+    "f-jawab-dulu": "Jawab dulu sebelum teruskan.",
+    # Pujian rentetan dalam **latih tubi** — dipanggil apabila murid mendapat
+    # 3, 6, 9… jawapan betul berturut-turut (lihat `_puji`).
+    #
+    # Sengaja TIDAK dipuji pada setiap jawapan betul: ayat yang sama selepas
+    # setiap soalan menjadi bunyi latar selepas sepuluh soalan dan tidak
+    # lagi didengar. Dengan rentetan, pujian bermakna — ia tiba apabila murid
+    # benar-benar konsisten, dan tiga ayat yang bergilir mengelakkan bunyi
+    # daripada berulang.
+    "f-rentetan1": "Bagus! Tiga betul berturut-turut.",
+    "f-rentetan2": "Hebat! Kamu semakin mahir.",
+    "f-rentetan3": "Cemerlang! Teruskan rentetan itu.",
     # Ayat-ayat ini **mesti** bermula dengan perkataan yang dipaparkan besar di
     # kad keputusan (lihat `_pujian` dalam `keputusan_screen.dart`): murid
     # membaca "Jangan putus asa" sambil mendengar ayat yang sama. Ayat yang
@@ -295,6 +312,25 @@ def _teks(s: dict, rujuk_arab: bool) -> list[tuple[str, str]]:
         else:
             rumi = (s.get("bankRumi") or [])
             tambah(rumi[i] if i < len(rumi) else None)
+
+    # Pembetulan jawapan bagi soalan **bertulis** sahaja.
+    #
+    # Panel "Pembetulan — jawapan sebenar" memaparkan jawapan contoh panjang
+    # yang murid sepatutnya tulis. Soalan lain tidak memerlukan klip di sini
+    # kerana jawapan betulnya masih terpapar di skrin dengan butang speaker
+    # sendiri — menjana klip untuknya hanya mengulang bunyi yang sedia ada
+    # dalam ratusan variasi teks yang hampir serupa.
+    if s.get("jenis") in ("tulis", "huraian"):
+        if rujuk_arab:
+            contoh = s.get("jawapanContoh") or []
+        else:
+            contoh = s.get("jawapanContohRumi") or s.get("jawapanContoh") or []
+        # Teks mesti sepadan **tepi demi tepi** dengan `jawapanPenuhDengar`
+        # dalam app, kerana kunci diperoleh daripada teks mentah itu sendiri.
+        # Dart menyertai `join('\n')` tanpa menapis baris kosong, jadi Python
+        # turut berbuat demikian — menapis di sini akan menghasilkan kunci
+        # yang tidak dapat dijumpai oleh app.
+        tambah("\n".join(contoh).strip())
 
     return [(k, v) for k, v in keluar if v]
 

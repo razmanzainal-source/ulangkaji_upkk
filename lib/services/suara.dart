@@ -40,6 +40,44 @@ class Suara {
 
   static const String kunciCubaLagi = 'f-salah';
 
+  /// Gesaan menjawab apabila murid menekan "Seterusnya" sebelum menjawab.
+  ///
+  /// Hanya untuk **latih tubi**, yang mewajibkan satu jawapan bagi setiap
+  /// soalan (lihat `_bolehTerus` dalam `kertas_screen.dart`). Tanpa ayat ini
+  /// butang kelihatan rosak kepada kanak-kanak.
+  ///
+  /// Ia sengaja **bukan** teguran: ayatnya menyuruh murid mencuba, bukan
+  /// memberitahu dia telah gagal.
+  static const String kunciJawabDulu = 'f-jawab-dulu';
+  static const String teksJawabDulu = 'Jawab dulu sebelum teruskan.';
+
+  /// Ambang jawapan betul berturut-turut untuk mendengar pujian bersuara.
+  ///
+  /// Pujian **tidak** diberikan pada setiap jawapan betul: ayat yang sama
+  /// selepas setiap soalan menjadi bunyi latar selepas sepuluh soalan dan
+  /// tidak lagi didengar. Dengan rentetan, pujian bermakna — ia tiba apabila
+  /// murid benar-benar konsisten.
+  ///
+  /// Tiga dipilih kerana ia mudah dicapai tetapi tidak murah: murid yang
+  /// menjawab sesuka hati hampir tidak akan pernah mendengarnya.
+  static const int ambangRentetan = 3;
+
+  /// Pujian rentetan — tiga ayat yang bergilir mengikut [kunciRentetan].
+  static const String kunciRentetan1 = 'f-rentetan1';
+  static const String kunciRentetan2 = 'f-rentetan2';
+  static const String kunciRentetan3 = 'f-rentetan3';
+
+  /// Pujian bagi rentetan [nombor] jawapan betul berturut-turut.
+  ///
+  /// [nombor] di sini ialah **nombor giliran pujian** (1, 2, 3…), bukan
+  /// bilangan rentetan itu sendiri — lihat `_puji`. Bergilir antara tiga ayat
+  /// supaya bunyi tidak berulang dalam satu sesi.
+  static String kunciRentetan(int nombor) => switch (nombor % 3) {
+        1 => kunciRentetan1,
+        2 => kunciRentetan2,
+        _ => kunciRentetan3,
+      };
+
   // Nota tanda baca: tiada lagi ", ya." di hujung ayat app. Ayat yang
   // berakhir dengan "ya" berbunyi seperti orang dewasa yang memujuk, bukan
   // seperti guru yang yakin — dan selepas ayat kesalahan yang ke sepuluh dalam

@@ -368,6 +368,38 @@ class SoalanKertas {
     };
   }
 
+  /// Jawapan betul dalam tulisan yang **boleh dibaca enjin suara**.
+  ///
+  /// Enjin suara Melayu tidak boleh membaca Jawi, dan enjin suara Arab tidak
+  /// boleh membaca Rumi. Panel pembetulan memaparkan tulisan sekolah (Jawi
+  /// atau Arab) supaya murid boleh membaca dengan matanya, tetapi apabila
+  /// jawapan itu **dibacakan** ia mesti dalam tulisan yang sepadan dengan
+  /// enjin — sama seperti bantuan suara pilihan jawapan.
+  ///
+  /// [jawapanArab] menentukan arah: subjek Bahasa Arab dibaca dengan suara
+  /// Arab daripada medan Arab, subjek lain dengan suara Melayu daripada medan
+  /// Rumi.
+  String get jawapanPenuhDengar {
+    if (jawapanArab) return jawapanPenuhTeks;
+
+    if (jawapanContohRumi.isNotEmpty) return jawapanContohRumi.join('\n');
+    if (jawapanContoh.isNotEmpty) return jawapanContoh.join('\n');
+
+    return switch (jenis) {
+      JenisKertas.bulat || JenisKertas.objektif => item
+          .where((i) => i.jawapan >= 0 && i.jawapan < i.pilihanRumi.length)
+          .map((i) => i.pilihanRumi[i.jawapan])
+          .join(', '),
+      JenisKertas.betulSalah =>
+        item.map((i) => '${i.rumi} (${i.betul == true ? '✓' : '✗'})').join('\n'),
+      JenisKertas.suai =>
+        pasangan.map((p) => '${p.kiriRumi} — ${p.kananRumi}').join('\n'),
+      JenisKertas.susun => urutanRumi.join(' '),
+      JenisKertas.tempatKosong => bankRumi.join(', '),
+      JenisKertas.tulis || JenisKertas.huraian => '',
+    };
+  }
+
   /// Kunci jawapan bagi soalan `suai` — indeks kanan yang betul bagi setiap
   /// item kiri.
   ///

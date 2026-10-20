@@ -97,6 +97,19 @@ class _KertasScreenState extends State<KertasScreen> {
   /// app tidak berbunyi dan berkelip sama sepanjang masa.
   int _beruntun = 0;
 
+  /// Petunjuk "jawab dahulu" sedang dipaparkan di atas bar navigasi.
+  ///
+  /// Latih tubi **mewajibkan** satu jawapan bagi setiap soalan sebelum murid
+  /// boleh meneruskan — tidak kisah betul atau salah (lihat [_bolehTerus]).
+  /// Kerana itu butang "Seterusnya" kadang-kadang menekan tanpa bergerak, dan
+  /// murid perlu tahu sebabnya. Petunjuk ini muncul di tempat matanya berada:
+  /// betul-betul di atas butang yang baru ditekan, bukan sebagai `SnackBar`
+  /// yang meluncur turun dari atas dan kemudian tertutup oleh papan kekunci.
+  bool _galakJawab = false;
+
+  /// Memendekkan tempoh petunjuk [galakJawab] supaya ia hilang sendiri.
+  Timer? _pemasaGalakan;
+
   late int _saat;
   Timer? _pemasa;
 
@@ -127,6 +140,7 @@ class _KertasScreenState extends State<KertasScreen> {
   @override
   void dispose() {
     _pemasa?.cancel();
+    _pemasaGalakan?.cancel();
     for (final k in _kawalan.values) {
       k.dispose();
     }
@@ -154,7 +168,12 @@ class _KertasScreenState extends State<KertasScreen> {
   /// jawapan Jawi yang betul akan disambut bunga api ketika murid masih belum
   /// menamatkan ayatnya.
   void _simpan(SoalanKertas s, JawapanMurid jawapan, {bool raikan = true}) {
-    setState(() => _jawapan[s.id] = jawapan);
+    setState(() {
+      _jawapan[s.id] = jawapan;
+      // Petunjuk "jawab dahulu" tidak relevan lagi — kini ada jawapan.
+      _galakJawab = false;
+    });
+    _pemasaGalakan?.cancel();
 
     if (raikan) _dimuktamadkan.add(s.id);
     if (!raikan) return;
@@ -198,20 +217,53 @@ class _KertasScreenState extends State<KertasScreen> {
           );
   }
 
-  /// Raikan jawapan betul: bunga api, dan nada ceria dalam latih tubi.
+  /// Raikan jawapan betul — **latih tubi sahaja**.
   ///
-  /// Tiada pujian bersuara: nada ceria lebih pantas difahami, dan ayat yang
-  /// sama disebut sepuluh kali dalam satu sesi cepat menjadi bunyi latar.
+  /// Kertas percubaan menyerupai kertas sebenar, dan kertas sebenar tiada
+  /// bunga api mahupun lencana rentetan. Murid yang sedang menjawab kertas
+  /// perlu rasa seperti dalam dewan peperiksaan: skrin berubah hanya dengan
+  /// penanda ✓/✗ di bawah jawapannya. Perayaan di tengah kertas percubaan
+  /// mengingatkannya bahawa dia sedang dinilai, dan itu yang ditakuti.
+  ///
+  /// Oleh itu tiada apa pun yang dikemas kini di sini melainkan latih tubi —
+  /// [_letupan] dan [_beruntun] kekal `0` sepanjang kertas percubaan, jadi
+  /// widget bunga api dan lencana rentetan tidak pernah dipaparkan walaupun
+  /// mereka masih ada dalam pokok widget.
+  ///
+  /// Tiada pujian bersuara pada setiap jawapan betul dalam mana-mana mod.
+  ///
+  /// Ayat "Betul! Syabas!" selepas setiap soalan kelihatan mesra di atas
+  /// kertas, tetapi dalam tangan ia menjadi dua masalah: ia melewatkan murid
+  /// yang sedang laju menjawab, dan selepas sepuluh soalan ia menjadi bunyi
+  /// latar yang tidak lagi didengar.
+  ///
+  /// Sebaliknya, dalam **latih tubi** sahaja, Raz bersuara apabila murid
+  /// mencapai [Suara.ambangRentetan] jawapan betul berturut-turut, dan
+  /// setiap kelipatan tiga selepas itu (3, 6, 9…). Pujian tiba apabila
+  /// murid benar-benar konsisten, jadi ia bermakna — dan tiga ayat yang
+  /// bergilir mengelakkan bunyi daripada berulang.
+  ///
+  /// Kertas percubaan kekal senyap sepenuhnya.
   void _puji(SoalanKertas s) {
     if (!_sudahDipuji.add(s.id)) return;
+    if (!_latihTubi) return;
 
     setState(() {
       _beruntun++;
       _letupan++;
     });
+    unawaited(Suara.instance.mainkanKesan(Suara.kesanBetul));
 
-    if (_latihTubi) {
-      unawaited(Suara.instance.mainkanKesan(Suara.kesanBetul));
+    // Pujian bersuara pada rentetan 3, 6, 9… sahaja. Nada ceria di atas
+    // sudah mengesahkan setiap jawapan betul; suara ini menambah semangat
+    // tanpa mengulanginya setiap kali.
+    final ambang = Suara.ambangRentetan;
+    if (_beruntun >= ambang && _beruntun % ambang == 0) {
+      unawaited(
+        Suara.instance.sebutKunci(
+          Suara.kunciRentetan(_beruntun ~/ ambang),
+        ),
+      );
     }
   }
 
@@ -277,6 +329,44 @@ class _KertasScreenState extends State<KertasScreen> {
   }
 
   int get _bilanganDijawab => _soalan.where(_sudahJawab).length;
+
+  /// Adakah murid dibenarkan meninggalkan soalan semasa?
+  ///
+  /// Dalam **latih tubi**, setiap soalan wajib dijawab dahulu — tidak kisah
+  /// betul atau salah. Ini yang menjadikan latihan berkesan: murid yang
+  /// melangkapi soalan sukar berpindah kepada soalan seterusnya tanpa belajar
+  /// apa-apa, dan kerana tiada siapa yang menandakannya, kesilapan itu tidak
+  /// pernah dibetulkan. Dengan gate ini murid terpaksa mencuba, dan panel
+  /// pembetulan terus menunjukkan jawapan betul di situ.
+  ///
+  /// **Kertas percubaan tidak dikunci.** Peperiksaan sebenar membenarkan
+  /// murid melangkapi soalan yang sukar dan kembali kepadanya kemudian —
+  /// itu sebahagian daripada kemahiran peperiksaan yang app ini mahu latih.
+  bool get _bolehTerus {
+    if (!_latihTubi) return true;
+    final s = _soalanSemasa;
+    return s != null && _sudahJawab(s);
+  }
+
+  /// Beritahu murid supaya menjawab dahulu, lalu paparkan petunjuk.
+  ///
+  /// Bunyi dan petunjuk visual digunakan bersama: kanak-kanak yang menekan
+  /// butang yang "rosak" berasa keliru, jadi app mesti menerangkan sebabnya
+  /// pada masa yang sama — bukan sekadar enggan bergerak.
+  void _galakJawabSekarang() {
+    if (!mounted) return;
+    setState(() => _galakJawab = true);
+    _pemasaGalakan?.cancel();
+    _pemasaGalakan = Timer(const Duration(seconds: 5), () {
+      if (mounted && _galakJawab) setState(() => _galakJawab = false);
+    });
+    unawaited(
+      Suara.instance.sebutKunci(
+        Suara.kunciJawabDulu,
+        sandaran: Suara.teksJawabDulu,
+      ),
+    );
+  }
 
   Paparan _paparanBagi(SoalanKertas s) => _paparan.putIfAbsent(
         s.id,
@@ -390,6 +480,15 @@ class _KertasScreenState extends State<KertasScreen> {
 
   /// Murid menekan kekunci "Siap" — jawapan disemak dan diraikan.
   void _siapTaip(SoalanKertas s) {
+    // Murid sudah selesai menaip, jadi papan kekunci ditutup. Tanpa ini panel
+    // pembetulan — yang muncul serta-merta apabila jawapan salah — terkurung
+    // di belakang kekunci dan butang speaker jawapan betul padanya tidak
+    // boleh ditekan. Murid terpaksa menyembunyikan kekunci secara manual
+    // dahulu, iaitu dua ketikan yang tidak sepatutnya diperlukan.
+    //
+    // Medan jawapan masih boleh disentuh untuk membuka semula kekunci
+    // (lihat `onSentuh`), jadi menaip semula kekal mudah.
+    setState(() => _kekunciDitutup.add(s.id));
     _simpan(s, JawapanTaip(_kawalanBagi(s).text.trim()));
   }
 
@@ -775,72 +874,118 @@ class _KertasScreenState extends State<KertasScreen> {
     );
   }
 
+  /// Petunjuk kecil di atas bar navigasi apabila "Seterusnya" ditekan awal.
+  ///
+  /// Ia berwarna pink lembut, bukan merah: ini bukan kesalahan, hanya satu
+  /// langkah yang belum boleh diambil. Ayatnya pendek kerana penerima ialah
+  /// kanak-kanak Tahun 5 yang baru sahaja menekan butang.
+  Widget _petunjukJawabDulu() => Container(
+        width: double.infinity,
+        padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
+        decoration: BoxDecoration(
+          color: Warna.utamaLembut,
+          borderRadius: BorderRadius.circular(12),
+          border: Border.all(color: Warna.utamaMuda),
+        ),
+        child: Row(
+          children: [
+            const Icon(Icons.edit_note_rounded, size: 18, color: Warna.utama),
+            const SizedBox(width: 8),
+            Expanded(
+              child: Text(
+                'Jawab soalan ini dahulu.',
+                style: Teks.biasa.copyWith(
+                  color: Warna.utama,
+                  fontWeight: FontWeight.w800,
+                ),
+              ),
+            ),
+          ],
+        ),
+      );
+
   Widget _barNavigasi({bool adaKekunci = false}) {
     final terakhir = _halaman >= _bilangan;
     final isi = Padding(
       padding: const EdgeInsets.fromLTRB(12, 8, 12, 12),
-      child: Row(
+      child: Column(
+        mainAxisSize: MainAxisSize.min,
         children: [
-          Expanded(
-            child: OutlinedButton.icon(
-              onPressed: _halaman <= 0
-                  ? null
-                  : () => setState(() => _halaman--),
-              icon: const Icon(Icons.chevron_left_rounded),
-              label: Text(
-                'Sebelum',
-                maxLines: 1,
-                overflow: TextOverflow.ellipsis,
-                style: Teks.biasa.copyWith(fontWeight: FontWeight.w700),
-              ),
-              style: OutlinedButton.styleFrom(
-                foregroundColor: Warna.utama,
-                minimumSize: const Size.fromHeight(50),
-                padding: const EdgeInsets.symmetric(horizontal: 8),
-                side: const BorderSide(color: Warna.utama),
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(16),
+          if (_galakJawab) ...[
+            _petunjukJawabDulu(),
+            const SizedBox(height: 8),
+          ],
+          Row(
+            children: [
+              Expanded(
+                child: OutlinedButton.icon(
+                  onPressed: _halaman <= 0
+                      ? null
+                      : () => setState(() => _halaman--),
+                  icon: const Icon(Icons.chevron_left_rounded),
+                  label: Text(
+                    'Sebelum',
+                    maxLines: 1,
+                    overflow: TextOverflow.ellipsis,
+                    style: Teks.biasa.copyWith(fontWeight: FontWeight.w700),
+                  ),
+                  style: OutlinedButton.styleFrom(
+                    foregroundColor: Warna.utama,
+                    minimumSize: const Size.fromHeight(50),
+                    padding: const EdgeInsets.symmetric(horizontal: 8),
+                    side: const BorderSide(color: Warna.utama),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(16),
+                    ),
+                  ),
                 ),
               ),
-            ),
-          ),
-          const SizedBox(width: 10),
-          // Kedua-dua butang berkongsi lebar yang sama. Butang "Sebelum" yang
-          // lebih kecil daripada "Seterusnya" membuatkan perkataan "Sebelum"
-          // terpotong pada telefon kecil, dan kanak-kanak teragak-agak
-          // menekan butang yang kelihatan separuh siap.
-          Expanded(
-            child: FilledButton.icon(
-              onPressed: () {
-                if (terakhir) {
-                  _hantar();
-                } else {
-                  setState(() => _halaman++);
-                }
-              },
-              icon: Icon(
-                terakhir
-                    ? Icons.done_all_rounded
-                    : Icons.chevron_right_rounded,
-              ),
-              label: Text(
-                terakhir
-                    ? (_latihTubi ? 'Selesai' : 'Hantar kertas')
-                    : 'Seterusnya',
-                maxLines: 1,
-                overflow: TextOverflow.ellipsis,
-                style: Teks.biasa.copyWith(fontWeight: FontWeight.w800),
-              ),
-              style: FilledButton.styleFrom(
-                backgroundColor: terakhir ? Warna.betul : Warna.utama,
-                foregroundColor: Colors.white,
-                minimumSize: const Size.fromHeight(50),
-                padding: const EdgeInsets.symmetric(horizontal: 8),
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(16),
+              const SizedBox(width: 10),
+              // Kedua-dua butang berkongsi lebar yang sama. Butang "Sebelum"
+              // yang lebih kecil daripada "Seterusnya" membuatkan perkataan
+              // "Sebelum" terpotong pada telefon kecil, dan kanak-kanak
+              // teragak-agak menekan butang yang kelihatan separuh siap.
+              Expanded(
+                child: FilledButton.icon(
+                  onPressed: () {
+                    if (terakhir) {
+                      _hantar();
+                    } else if (!_bolehTerus) {
+                      // Latih tubi menuntut satu jawapan bagi setiap soalan
+                      // sebelum murid bergerak maju — lihat [_bolehTerus].
+                      _galakJawabSekarang();
+                    } else {
+                      setState(() {
+                        _halaman++;
+                        _galakJawab = false;
+                      });
+                    }
+                  },
+                  icon: Icon(
+                    terakhir
+                        ? Icons.done_all_rounded
+                        : Icons.chevron_right_rounded,
+                  ),
+                  label: Text(
+                    terakhir
+                        ? (_latihTubi ? 'Selesai' : 'Hantar kertas')
+                        : 'Seterusnya',
+                    maxLines: 1,
+                    overflow: TextOverflow.ellipsis,
+                    style: Teks.biasa.copyWith(fontWeight: FontWeight.w800),
+                  ),
+                  style: FilledButton.styleFrom(
+                    backgroundColor: terakhir ? Warna.betul : Warna.utama,
+                    foregroundColor: Colors.white,
+                    minimumSize: const Size.fromHeight(50),
+                    padding: const EdgeInsets.symmetric(horizontal: 8),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(16),
+                    ),
+                  ),
                 ),
               ),
-            ),
+            ],
           ),
         ],
       ),
@@ -1376,6 +1521,24 @@ class _KertasScreenState extends State<KertasScreen> {
                   style: Teks.label.copyWith(fontWeight: FontWeight.w900),
                 ),
               ),
+              // Dengar jawapan betul. Butang ini muncul hanya apabila ada teks
+              // yang boleh dibacakan (lihat [_teksPembetulanDengar]).
+              //
+              // Ia sengaja **tidak** membacakan sendiri: senarai seperti
+              // sepuluh malaikat mengambil masa agak panjang, dan murid yang
+              // sudah nampak jawapannya tidak perlu mendengarnya. Memberi
+              // kawalan kepada murid juga selari dengan butang speaker pada
+              // setiap pilihan jawapan.
+              if (_teksPembetulanDengar(s) != null)
+                IconButton(
+                  tooltip: 'Dengar jawapan betul',
+                  onPressed: () => _dengar(_teksPembetulanDengar(s)!),
+                  icon: const Icon(
+                    Icons.volume_up_rounded,
+                    size: 22,
+                    color: Warna.utama,
+                  ),
+                ),
             ],
           ),
           const SizedBox(height: 6),
@@ -1403,6 +1566,28 @@ class _KertasScreenState extends State<KertasScreen> {
     final contoh = s.jawapanPenuhTeks.trim();
     if (contoh.isNotEmpty) return contoh;
     return s.rubrik.idea.map((i) => '• ${i.maksud}').join('\n').trim();
+  }
+
+  /// Teks pembetulan yang **boleh dibacakan** — medan Rumi, atau medan Arab
+  /// bagi subjek Bahasa Arab.
+  ///
+  /// Hanya soalan **bertulis** (`tulis` dan `huraian`) yang mempunyai teks
+  /// di sini. Soalan lain sengaja dilangkau kerana jawapan betulnya masih
+  /// terpapar di skrin dengan butang speaker sendiri — menambah butang kedua
+  /// pada panel pembetulan hanya mengulang bunyi yang murid sudah boleh
+  /// dapat, sambil memaksa app membundel ratusan klip yang hampir serupa.
+  ///
+  /// Sebaliknya, jawapan contoh bagi soalan bertulis **tiada** klip langsung
+  /// (ia dijana daripada medan `jawapanContoh`), jadi butang ini ialah satu-
+  /// satunya cara murid mendengar jawapan yang sepatutnya ditulisnya.
+  ///
+  /// `null` apabila tiada teks yang boleh dibacakan.
+  String? _teksPembetulanDengar(SoalanKertas s) {
+    if (s.jenis != JenisKertas.tulis && s.jenis != JenisKertas.huraian) {
+      return null;
+    }
+    final dengar = s.jawapanPenuhDengar.trim();
+    return dengar.isEmpty ? null : dengar;
   }
 
   // --- Badan jawapan mengikut jenis soalan ---------------------------------
@@ -1668,6 +1853,13 @@ class _KertasScreenState extends State<KertasScreen> {
   /// kepada Jawi, jadi membiarkannya terbuka hanya menutup separuh skrin
   /// dengan papan kekunci Latin yang tidak berguna. Jawapan ditaip melalui
   /// [PapanKekunciTulisan] yang terbuka sendiri di bawah halaman ini.
+  ///
+  /// **Markah tidak dipaparkan dalam kertas percubaan.** Papan ini hanya
+  /// menerima [markah] dalam latih tubi. Dalam peperiksaan rasmi murid tidak
+  /// pernah melihat markahnya semasa menjawab — kalau setiap baris jawapan
+  /// serta-merta menjawab "3/5, isi ini belum ada", murid akan terus menulis
+  /// sehingga nombor itu penuh, dan yang diuji menjadi teka-teki, bukan
+  /// pengetahuan. Kertas yang ditandakan hanya selepas dihantar.
   Widget _taip(SoalanKertas s, Color warna) {
     final kawalan = _kawalanBagi(s);
     final jawapan = _jawapan[s.id];
@@ -1677,7 +1869,9 @@ class _KertasScreenState extends State<KertasScreen> {
       rubrik: s.rubrik,
       lumpuh: false,
       onHantar: (teks) => _simpan(s, JawapanTaip(teks)),
-      markah: jawapan is JawapanTaip && jawapan.teks.trim().isNotEmpty
+      markah: _latihTubi &&
+              jawapan is JawapanTaip &&
+              jawapan.teks.trim().isNotEmpty
           ? Pemarkah.semak(s.rubrik, jawapan.teks)
           : null,
       had: _hadTaip(s),

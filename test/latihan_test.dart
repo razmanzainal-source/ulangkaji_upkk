@@ -22,6 +22,7 @@ import 'package:ulangkaji_upkk/screens/kertas_screen.dart';
 import 'package:ulangkaji_upkk/screens/latihan_selesai_screen.dart';
 import 'package:ulangkaji_upkk/services/suara.dart';
 import 'package:ulangkaji_upkk/widgets/butang_pilihan.dart';
+import 'package:ulangkaji_upkk/widgets/papan_taip.dart';
 
 import 'bantuan/audio_palsu.dart';
 import 'bantuan/saiz_telefon.dart';
@@ -63,6 +64,42 @@ Kertas _kertas({required String jenisSumber, int bilangan = 2}) {
                 ),
               ],
             ),
+        ],
+      ),
+    ],
+  );
+}
+
+/// Kertas satu soalan **bertulis** — untuk menguji panel pembetulan dan
+/// butang speaker jawapan contoh.
+///
+/// Soalan `tulis` dengan jawapan contoh tiga baris, meniru soalan senarai
+/// UPKK seperti "Nyatakan lima adab terhadap Allah".
+Kertas _kertasTulis({required String jenisSumber}) {
+  return Kertas(
+    id: 'uji-tulis',
+    subjekId: 'adab',
+    tajuk: 'Adab — Ujian',
+    sumber: 'Ujian',
+    jenisSumber: jenisSumber,
+    bahagian: [
+      BahagianKertas(
+        nama: 'C',
+        markah: 3,
+        arahan: 'سنارايکن تيچ ادب',
+        arahanRumi: 'Senaraikan tiga adab',
+        soalan: [
+          SoalanKertas(
+            id: 'uji-c1',
+            bahagian: 'C',
+            nombor: 1,
+            jenis: JenisKertas.tulis,
+            soalan: 'سنارايکن تيچ ادب ترهادڤ الله.',
+            rumi: 'Senaraikan tiga adab terhadap Allah.',
+            markah: 3,
+            jawapanContoh: const ['ساتو', 'دوا', 'تيچ'],
+            jawapanContohRumi: const ['satu', 'dua', 'tiga'],
+          ),
         ],
       ),
     ],
@@ -423,6 +460,127 @@ void main() {
     });
   });
 
+  group('suara jawapan betul (latih tubi)', () {
+    /// Tulis satu huruf Jawi lalu tekan "Siap" — jawapan sengaja salah.
+    Future<void> tulisSalah(WidgetTester tester) async {
+      await tester.tap(find.text('Mula menjawab'));
+      await tester.pump();
+      // Papan kekunci Jawi terbuka sendiri pada soalan bertulis.
+      await tester.tap(find.text('س').first);
+      await tester.pump();
+      await tester.tap(find.text('سياڤ'));
+      await tester.pump();
+    }
+
+    testWidgets('soalan tulis: panel pembetulan ada butang speaker', (
+      tester,
+    ) async {
+      await _bukaSebagaiLaluan(tester, _kertasTulis(jenisSumber: 'latihan'));
+      await tulisSalah(tester);
+
+      expect(find.text('Pembetulan — jawapan sebenar'), findsOneWidget);
+
+      final speaker = find.byTooltip('Dengar jawapan betul');
+      expect(
+        speaker,
+        findsOneWidget,
+        reason: 'soalan bertulis tiada cara lain mendengar jawapan contoh',
+      );
+
+      await tester.ensureVisible(speaker);
+      await tester.pump();
+      await tester.tap(speaker);
+      await tester.pump(const Duration(milliseconds: 400));
+
+      expect(
+        Suara.instance.ayatTerakhir,
+        Suara.kunciPilihan('satu\ndua\ntiga'),
+        reason: 'mesti dibaca dalam tulisan Rumi, bukan Jawi yang dipaparkan',
+      );
+      await _tutup(tester);
+    });
+
+    testWidgets('tekan "Siap": papan kekunci tutup, pembetulan tercapai', (
+      tester,
+    ) async {
+      // Papan kekunci yang kekal terbuka selepas menaip akan menutup panel
+      // pembetulan di belakangnya, sehingga butang speaker jawapan betul
+      // tidak boleh ditekan tanpa menyembunyikan kekunci secara manual.
+      await _bukaSebagaiLaluan(tester, _kertasTulis(jenisSumber: 'latihan'));
+      await tester.tap(find.text('Mula menjawab'));
+      await tester.pump();
+      expect(find.text('سياڤ'), findsOneWidget, reason: 'kekunci terbuka');
+
+      await tester.tap(find.text('س').first);
+      await tester.pump();
+      await tester.tap(find.text('سياڤ'));
+      await tester.pump();
+
+      expect(
+        find.text('سياڤ'),
+        findsNothing,
+        reason: 'kerja menaip sudah selesai, kekunci mesti tertutup',
+      );
+
+      // Butang speaker kini boleh ditekan terus, tanpa langkah tambahan.
+      await tester.tap(find.byTooltip('Dengar jawapan betul'));
+      await tester.pump();
+      expect(Suara.instance.ayatTerakhir, Suara.kunciPilihan('satu\ndua\ntiga'));
+      await _tutup(tester);
+    });
+
+    testWidgets('medan jawapan masih membuka semula kekunci', (tester) async {
+      await _bukaSebagaiLaluan(tester, _kertasTulis(jenisSumber: 'latihan'));
+      await tester.tap(find.text('Mula menjawab'));
+      await tester.pump();
+      await tester.tap(find.text('س').first);
+      await tester.pump();
+      await tester.tap(find.text('سياڤ'));
+      await tester.pump();
+      expect(find.text('سياڤ'), findsNothing);
+
+      // Menutup kekunci secara automatik tidak boleh mengunci murid keluar
+      // daripada medan taip.
+      await tester.tap(find.byType(PapanTaip));
+      await tester.pump();
+      expect(
+        find.text('سياڤ'),
+        findsOneWidget,
+        reason: 'menyentuh medan jawapan mesti membuka semula kekunci',
+      );
+      await _tutup(tester);
+    });
+
+    testWidgets('soalan objektif: tiada butang speaker kedua pada panel', (
+      tester,
+    ) async {
+      // Jawapan betul bagi soalan objektif masih terpapar di skrin dengan
+      // butang speaker sendiri. Butang kedua pada panel hanya mengulang
+      // bunyi yang sama sambil memaksa app membundel klip hampir serupa.
+      await _bukaSebagaiLaluan(tester, _kertas(jenisSumber: 'latihan'));
+      await _jawabSatu(tester, pilihan: 1);
+
+      expect(find.text('Pembetulan — jawapan sebenar'), findsOneWidget);
+      expect(
+        find.byTooltip('Dengar jawapan betul'),
+        findsNothing,
+        reason: 'pilihan betul sudah ada butang speaker tersendiri',
+      );
+      await _tutup(tester);
+    });
+
+    testWidgets('kertas percubaan: tiada butang speaker pembetulan', (
+      tester,
+    ) async {
+      await _bukaSebagaiLaluan(tester, _kertasTulis(jenisSumber: 'percubaan'));
+      await tester.tap(find.text('Mula menjawab'));
+      await tester.pump();
+
+      expect(find.byTooltip('Dengar jawapan betul'), findsNothing);
+      await _tutup(tester);
+    });
+  });
+
   group('bantuan suara pilihan jawapan', () {
     testWidgets('latih tubi: memilih jawapan tidak berbunyi', (tester) async {
       await _bukaSebagaiLaluan(tester, _kertas(jenisSumber: 'latihan'));
@@ -481,6 +639,265 @@ void main() {
     ) async {
       await _bukaSebagaiLaluan(tester, _kertas(jenisSumber: 'percubaan'));
       await _jawabSatu(tester);
+
+      expect(Suara.instance.ayatTerakhir, isNull);
+      await _tutup(tester);
+    });
+  });
+
+  group('gate jawapan wajib (latih tubi)', () {
+    testWidgets('"Seterusnya" tidak bergerak sebelum soalan dijawab', (
+      tester,
+    ) async {
+      await _bukaSebagaiLaluan(tester, _kertas(jenisSumber: 'latihan'));
+      await tester.tap(find.text('Mula menjawab'));
+      await tester.pump();
+
+      await tester.tap(find.text('Seterusnya'));
+      await tester.pump();
+
+      expect(
+        find.text('Soalan 2 daripada 2'),
+        findsNothing,
+        reason: 'latih tubi mewajibkan satu jawapan bagi setiap soalan',
+      );
+      expect(find.text('Soalan 1 daripada 2'), findsOneWidget);
+      await _tutup(tester);
+    });
+
+    testWidgets('gate menerangkan sebabnya, bukan hanya enggan bergerak', (
+      tester,
+    ) async {
+      await _bukaSebagaiLaluan(tester, _kertas(jenisSumber: 'latihan'));
+      await tester.tap(find.text('Mula menjawab'));
+      await tester.pump();
+
+      expect(find.text('Jawab soalan ini dahulu.'), findsNothing);
+
+      await tester.tap(find.text('Seterusnya'));
+      await tester.pump();
+
+      // Petunjuk visual dan suara muncul serentak: kanak-kanak yang menekan
+      // butang yang "rosak" berasa keliru tanpa penjelasan.
+      expect(find.text('Jawab soalan ini dahulu.'), findsOneWidget);
+      expect(Suara.instance.ayatTerakhir, Suara.kunciJawabDulu);
+      await _tutup(tester);
+    });
+
+    testWidgets('petunjuk hilang sendiri selepas beberapa saat', (tester) async {
+      await _bukaSebagaiLaluan(tester, _kertas(jenisSumber: 'latihan'));
+      await tester.tap(find.text('Mula menjawab'));
+      await tester.pump();
+      await tester.tap(find.text('Seterusnya'));
+      await tester.pump();
+      expect(find.text('Jawab soalan ini dahulu.'), findsOneWidget);
+
+      await tester.pump(const Duration(seconds: 6));
+      expect(find.text('Jawab soalan ini dahulu.'), findsNothing);
+      await _tutup(tester);
+    });
+
+    testWidgets('petunjuk hilang serta-merta apabila soalan dijawab', (
+      tester,
+    ) async {
+      await _bukaSebagaiLaluan(tester, _kertas(jenisSumber: 'latihan'));
+      await tester.tap(find.text('Mula menjawab'));
+      await tester.pump();
+      await tester.tap(find.text('Seterusnya'));
+      await tester.pump();
+      expect(find.text('Jawab soalan ini dahulu.'), findsOneWidget);
+
+      await tester.tap(find.byType(ButangPilihan).at(0));
+      await tester.pump();
+      expect(find.text('Jawab soalan ini dahulu.'), findsNothing);
+      await _tutup(tester);
+    });
+
+    testWidgets('jawapan salah tetap membenarkan "Seterusnya"', (tester) async {
+      await _bukaSebagaiLaluan(tester, _kertas(jenisSumber: 'latihan'));
+      // Sengaja jawab salah — gate menuntut **ada** jawapan, bukan betul.
+      await _jawabSatu(tester, pilihan: 1);
+
+      await tester.tap(find.text('Seterusnya'));
+      await tester.pump();
+
+      expect(find.text('Soalan 2 daripada 2'), findsOneWidget);
+      await _tutup(tester);
+    });
+
+    testWidgets('kertas percubaan: boleh melangkapi soalan', (tester) async {
+      await _bukaSebagaiLaluan(tester, _kertas(jenisSumber: 'percubaan'));
+      await tester.tap(find.text('Mula menjawab'));
+      await tester.pump();
+
+      await tester.tap(find.text('Seterusnya'));
+      await tester.pump();
+
+      expect(
+        find.text('Soalan 2 daripada 2'),
+        findsOneWidget,
+        reason: 'peperiksaan sebenar membenarkan murid melangkapi dan kembali',
+      );
+      expect(
+        find.text('Jawab soalan ini dahulu.'),
+        findsNothing,
+        reason: 'percubaan tidak mengunci soalan',
+      );
+      await _tutup(tester);
+    });
+  });
+
+  group('pujian rentetan (latih tubi)', () {
+    /// Jawab soalan semasa dengan pilihan [pilihan] lalu tekan "Seterusnya".
+    Future<void> jawabDanTerus(
+      WidgetTester tester, {
+      int pilihan = 0,
+    }) async {
+      await tester.tap(find.byType(ButangPilihan).at(pilihan));
+      await tester.pump();
+      await tester.tap(find.text('Seterusnya'));
+      await tester.pump();
+    }
+
+    testWidgets('dua betul berturut: tiada suara pujian', (tester) async {
+      await _bukaSebagaiLaluan(
+        tester,
+        _kertas(jenisSumber: 'latihan', bilangan: 4),
+      );
+      await tester.tap(find.text('Mula menjawab'));
+      await tester.pump();
+
+      await jawabDanTerus(tester);
+      expect(Suara.instance.ayatTerakhir, isNull);
+      await jawabDanTerus(tester);
+      expect(Suara.instance.ayatTerakhir, isNull);
+
+      await _tutup(tester);
+    });
+
+    testWidgets('tiga betul berturut: pujian bersuara pertama', (tester) async {
+      await _bukaSebagaiLaluan(
+        tester,
+        _kertas(jenisSumber: 'latihan', bilangan: 4),
+      );
+      await tester.tap(find.text('Mula menjawab'));
+      await tester.pump();
+
+      await jawabDanTerus(tester);
+      await jawabDanTerus(tester);
+      await tester.tap(find.byType(ButangPilihan).at(0));
+      await tester.pump();
+
+      expect(
+        Suara.instance.ayatTerakhir,
+        Suara.kunciRentetan1,
+        reason: 'rentetan 3 layak mendapat pujian bersuara',
+      );
+      await _tutup(tester);
+    });
+
+    testWidgets('empat betul berturut: tiada pujian (bukan kelipatan 3)', (
+      tester,
+    ) async {
+      await _bukaSebagaiLaluan(
+        tester,
+        _kertas(jenisSumber: 'latihan', bilangan: 5),
+      );
+      await tester.tap(find.text('Mula menjawab'));
+      await tester.pump();
+
+      await jawabDanTerus(tester);
+      await jawabDanTerus(tester);
+      await jawabDanTerus(tester);
+      Suara.instance.ayatTerakhir = null;
+
+      await tester.tap(find.byType(ButangPilihan).at(0));
+      await tester.pump();
+
+      expect(
+        Suara.instance.ayatTerakhir,
+        isNull,
+        reason: 'pujian hanya pada kelipatan 3 supaya tidak menjadi bunyi latar',
+      );
+      await _tutup(tester);
+    });
+
+    testWidgets('rentetan putus selepas jawapan salah', (tester) async {
+      await _bukaSebagaiLaluan(
+        tester,
+        _kertas(jenisSumber: 'latihan', bilangan: 7),
+      );
+      await tester.tap(find.text('Mula menjawab'));
+      await tester.pump();
+
+      await jawabDanTerus(tester);
+      await jawabDanTerus(tester);
+      // Salah — rentetan mesti bermula semula.
+      await jawabDanTerus(tester, pilihan: 1);
+      Suara.instance.ayatTerakhir = null;
+
+      // Tiga betul berturut selepas putus. Kalau rentetan tidak diset semula,
+      // pujian akan tiba pada soalan kelima (jumlah 5) — bukan keenam.
+      await jawabDanTerus(tester);
+      expect(Suara.instance.ayatTerakhir, isNull);
+      await jawabDanTerus(tester);
+      expect(Suara.instance.ayatTerakhir, isNull);
+      await tester.tap(find.byType(ButangPilihan).at(0));
+      await tester.pump();
+
+      expect(
+        Suara.instance.ayatTerakhir,
+        Suara.kunciRentetan1,
+        reason: 'selepas putus, rentetan baharu bermula pada 3 — bukan 5',
+      );
+      await _tutup(tester);
+    });
+
+    testWidgets('ayat pujian bergilir supaya tidak berulang', (tester) async {
+      await _bukaSebagaiLaluan(
+        tester,
+        _kertas(jenisSumber: 'latihan', bilangan: 7),
+      );
+      await tester.tap(find.text('Mula menjawab'));
+      await tester.pump();
+
+      await jawabDanTerus(tester);
+      await jawabDanTerus(tester);
+      await tester.tap(find.byType(ButangPilihan).at(0)); // rentetan 3
+      await tester.pump();
+      expect(Suara.instance.ayatTerakhir, Suara.kunciRentetan1);
+
+      await tester.tap(find.text('Seterusnya'));
+      await tester.pump();
+      await jawabDanTerus(tester); // rentetan 4 — senyap
+      await jawabDanTerus(tester); // rentetan 5 — senyap
+      expect(Suara.instance.ayatTerakhir, Suara.kunciRentetan1);
+
+      await tester.tap(find.byType(ButangPilihan).at(0)); // rentetan 6
+      await tester.pump();
+
+      expect(
+        Suara.instance.ayatTerakhir,
+        Suara.kunciRentetan2,
+        reason: 'pujian kedua mesti berbeza daripada yang pertama',
+      );
+      await _tutup(tester);
+    });
+
+    testWidgets('kertas percubaan: tiada pujian bersuara langsung', (
+      tester,
+    ) async {
+      await _bukaSebagaiLaluan(
+        tester,
+        _kertas(jenisSumber: 'percubaan', bilangan: 4),
+      );
+      await tester.tap(find.text('Mula menjawab'));
+      await tester.pump();
+
+      await jawabDanTerus(tester);
+      await jawabDanTerus(tester);
+      await tester.tap(find.byType(ButangPilihan).at(0));
+      await tester.pump();
 
       expect(Suara.instance.ayatTerakhir, isNull);
       await _tutup(tester);

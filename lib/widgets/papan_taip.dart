@@ -1,3 +1,5 @@
+
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -24,6 +26,8 @@ class PapanTaip extends StatelessWidget {
     required this.rubrik,
     required this.lumpuh,
     required this.onHantar,
+    this.baris,
+    this.barisAktif,
     this.markah,
     this.tunjukIdea = false,
     this.jawapanContoh = '',
@@ -38,6 +42,25 @@ class PapanTaip extends StatelessWidget {
   /// Pengawal teks jawapan. Dimiliki oleh skrin supaya teks kekal apabila
   /// widget dibina semula (contohnya semasa maskot beranimasi).
   final TextEditingController kawalan;
+
+  /// Pengawal bagi setiap baris bagi soalan yang berbilang baris.
+  ///
+  /// Soalan seperti "Nyatakan lima adab terhadap Allah" meminta N perkara
+  /// berasingan, dan kertas asal memberikan N baris kosong. Apabila senarai
+  /// ini diberi dan tidak kosong, papan menunjukkan N kotak bernombor dan
+  /// [kawalan] tidak dipakai.
+  ///
+  /// Pemarkahan kekal menggabungkan kesemua baris menjadi satu jawapan
+  /// sebelum dinilai terhadap rubrik, jadi murid bebas menulis isi ke mana-
+  /// mana baris — skema kertas asli pun menilai demikian.
+  final List<TextEditingController>? baris;
+
+  /// Medan taip yang sedang dipilih bagi soalan berbilang baris.
+  ///
+  /// Papan kekunci dalam app menulis terus kepada **satu** medan, jadi skrin
+  /// mesti memberitahu papan medan mana yang sedang aktif. Nilai `null`
+  /// bermakna tiada medan dipilih lagi.
+  final ValueNotifier<int?>? barisAktif;
 
   /// Warna unit untuk sorotan dan butang.
   final Color warna;
@@ -124,15 +147,15 @@ class PapanTaip extends StatelessWidget {
               const SizedBox(width: 8),
               Expanded(
                 child: Text(
-                  'Tulis jawapan kamu di sini:',
+                  _tajuk,
                   style: Teks.sederhana.copyWith(fontSize: 17),
                 ),
               ),
             ],
           ),
           const SizedBox(height: 10),
-          _medanTaip(),
-          if (_adaRumiBayang) _bayangRumi(),
+          if (_berbilangBaris) _medanBaris() else _medanTaip(),
+          if (!_berbilangBaris && _adaRumiBayang) _bayangRumi(),
           _kiraAksara(),
           if (keputusan != null) ...[
             const SizedBox(height: 12),
@@ -213,6 +236,132 @@ class PapanTaip extends StatelessWidget {
     );
   }
 
+  /// Benar apabila soalan ini memerlukan beberapa baris jawapan berasingan.
+  ///
+  /// Soalan seperti "Nyatakan lima adab terhadap Allah" meminta N perkara, dan
+  /// kertas asal memberi N ruang kosong bernombor. Paparan kotak bernombor
+  /// menyerupai ruang itu supaya murid tidak perlu memecahkan jawapannya
+  /// sendiri dalam satu kotak besar.
+  bool get _berbilangBaris =>
+      baris != null && baris!.isNotEmpty && baris!.length > 1;
+
+  /// Jumlah aksara merangkumi semua baris yang dipaparkan.
+  ///
+  /// Satu pengira untuk semua pengawal — papan kekunci menulis kepada medan
+  /// yang berbeza-beza, jadi kiraan mesti merentasi semuanya, bukan hanya
+  /// medan pertama. Ia dibina sekali sahaja supaya pendengar tidak bertambah
+  /// pada setiap binaan semula.
+  ValueListenable<int> get _pengiraAksara =>
+      _PengiraAksara(baris ?? [kawalan]);
+
+  /// Nombor ruang yang dicetak di sebelah kiri setiap baris.
+  ///
+  /// Nombor ini bukan penunjuk jawapan: murid boleh menulis isi ke mana-mana
+  /// baris kerana pemarkahan menggabungkan semuanya. Ia hanya meniru ruang
+  /// bernombor pada kertas asal.
+  String _nomborBaris(int i) => '(${i + 1})';
+
+  Widget _medanBaris() {
+    final senarai = baris!;
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        for (var i = 0; i < senarai.length; i++) ...[
+          if (i > 0) const SizedBox(height: 8),
+          Row(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Padding(
+                padding: const EdgeInsets.only(top: 14),
+                child: SizedBox(
+                  width: 26,
+                  child: Text(
+                    _nomborBaris(i),
+                    style: Teks.label.copyWith(fontWeight: FontWeight.w900),
+                  ),
+                ),
+              ),
+              const SizedBox(width: 6),
+              Expanded(
+                child: ValueListenableBuilder<TextEditingValue>(
+                  valueListenable: senarai[i],
+                  builder: (konteks, nilai, _) {
+                    // Baris pertama menentukan arah dan font keseluruhan
+                    // jawapan — murid biasanya menulis dalam satu tulisan.
+                    final kiriKeKanan = !bertulisanArab(nilai.text) &&
+                        !senarai.any((k) => bertulisanArab(k.text));
+                    return TextField(
+                      controller: senarai[i],
+                      enabled: !lumpuh,
+                      readOnly: bacaSahaja,
+                      showCursor: true,
+                      // Medan dipilih menjadikan kotak ini sasaran papan
+                      // kekunci dalam app. Tanpanya papan kekunci tidak tahu
+                      // huruf yang ditekan patut masuk ke mana.
+                      onTap: () {
+                        barisAktif?.value = i;
+                        onSentuh?.call();
+                      },
+                      minLines: 1,
+                      maxLines: 2,
+                      keyboardType: bacaSahaja
+                          ? TextInputType.none
+                          : TextInputType.multiline,
+                      textCapitalization: TextCapitalization.sentences,
+                      textAlign: kiriKeKanan ? TextAlign.left : TextAlign.right,
+                      textDirection:
+                          kiriKeKanan ? TextDirection.ltr : TextDirection.rtl,
+                      style: gayaTaip ?? Teks.biasa.copyWith(fontSize: 18),
+                      decoration: InputDecoration(
+                        isDense: true,
+                        hintText: i == 0 ? bayang : null,
+                        hintStyle:
+                            (gayaTaip ?? Teks.biasa.copyWith(fontSize: 18))
+                                .copyWith(color: Colors.black38),
+                        filled: true,
+                        fillColor: lumpuh ? Colors.white70 : Colors.white,
+                        contentPadding: const EdgeInsets.symmetric(
+                          horizontal: 12,
+                          vertical: 12,
+                        ),
+                        border: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(16),
+                          borderSide: BorderSide(
+                            color: warna.withValues(alpha: 0.4),
+                            width: 2,
+                          ),
+                        ),
+                        enabledBorder: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(16),
+                          borderSide: BorderSide(
+                            color: warna.withValues(alpha: 0.4),
+                            width: 2,
+                          ),
+                        ),
+                        focusedBorder: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(16),
+                          borderSide: BorderSide(color: warna, width: 3),
+                        ),
+                        disabledBorder: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(16),
+                          borderSide: BorderSide(
+                            color: Colors.black.withValues(alpha: 0.12),
+                            width: 2,
+                          ),
+                        ),
+                        counterText: '',
+                      ),
+                    );
+                  },
+                ),
+              ),
+            ],
+          ),
+        ],
+      ],
+    );
+  }
+
   /// Benar apabila ada baris Rumi untuk dipaparkan di bawah medan taip.
   bool get _adaRumiBayang =>
       rumiBayang != null && rumiBayang!.trim().isNotEmpty;
@@ -241,22 +390,35 @@ class PapanTaip extends StatelessWidget {
     );
   }
 
+  /// Tajuk papan jawapan.
+  ///
+  /// Soalan berbilang baris menyebut bilangan isi yang diminta supaya murid
+  /// tahu berapa banyak ruang yang disediakan untuknya — dan tahu bila dia
+  /// sudah mengisi semuanya.
+  String get _tajuk => _berbilangBaris
+      ? 'Tulis ${baris!.length} isi kamu, satu dalam setiap baris:'
+      : 'Tulis jawapan kamu di sini:';
+
   /// Kiraan aksara di bawah kotak taip.
   ///
   /// Kanak-kanak perlu nampak dengan jelas berapa banyak lagi ruang yang ada,
   /// dan had ini mesti kelihatan sebelum dia terlanggar, bukan selepas.
+  /// Bagi soalan berbilang baris, had dan kiraan merangkumi **semua** baris
+  /// kerana pemarkahannya pun menggabungkan kesemua baris menjadi satu
+  /// jawapan.
   Widget _kiraAksara() {
-    return ValueListenableBuilder<TextEditingValue>(
-      valueListenable: kawalan,
-      builder: (context, nilai, _) {
-        final panjang = nilai.text.length;
-        final hampir = panjang >= had * 0.9;
+    final hadBaris = _berbilangBaris ? had * baris!.length : had;
+
+    return ValueListenableBuilder<int>(
+      valueListenable: _pengiraAksara,
+      builder: (context, panjang, _) {
+        final hampir = panjang >= hadBaris * 0.9;
         return Padding(
           padding: const EdgeInsets.only(top: 6, right: 2),
           child: Align(
             alignment: Alignment.centerRight,
             child: Text(
-              '$panjang / $had aksara',
+              '$panjang / $hadBaris aksara',
               style: Teks.label.copyWith(
                 fontWeight: FontWeight.w700,
                 color: hampir
@@ -370,5 +532,40 @@ class PapanTaip extends StatelessWidget {
         ],
       ),
     );
+  }
+}
+
+/// Pengira jumlah aksara merentasi beberapa pengawal teks.
+///
+/// Satu jawapan berbilang baris dihadkan sebagai satu jawapan: murid boleh
+/// menulis isi panjang di baris pertama dan pendek di baris kelima, dan jumlah
+/// itulah yang dibandingkan dengan had. Papan kekunci dalam app pula menulis
+/// kepada medan yang berbeza-beza mengikut baris yang dipilih, jadi kiraan
+/// mesti merentasi kesemua pengawal, bukan hanya medan pertama.
+///
+/// Kelas ini ialah `ChangeNotifier` biasa yang turut mendengar setiap pengawal
+/// yang diberi — ia menggantikan `Listenable.merge` kerana
+/// `ValueListenableBuilder` menuntut `ValueListenable` dan `merge` hanya
+/// menghasilkan `Listenable`.
+class _PengiraAksara extends ChangeNotifier implements ValueListenable<int> {
+  _PengiraAksara(this.pengawal) {
+    for (final p in pengawal) {
+      p.addListener(kiraSemula);
+    }
+  }
+
+  final List<TextEditingController> pengawal;
+
+  @override
+  int get value => pengawal.fold(0, (j, p) => j + p.text.length);
+
+  void kiraSemula() => notifyListeners();
+
+  @override
+  void dispose() {
+    for (final p in pengawal) {
+      p.removeListener(kiraSemula);
+    }
+    super.dispose();
   }
 }
