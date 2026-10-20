@@ -229,8 +229,8 @@
        "rumi": "buku"
       },
       {
-       "teks": "بوکو",
-       "rumi": "buku"
+       "teks": "بولا",
+       "rumi": "bola"
       }
      ],
      "jawapan": 0
@@ -244,11 +244,11 @@
        "rumi": "susu"
       },
       {
-       "teks": "سوسو",
-       "rumi": "susu"
+       "teks": "بوکو",
+       "rumi": "buku"
       }
      ],
-     "jawapan": 1
+     "jawapan": 0
     }
    ],
    "id": "jawi-a7"
@@ -269,8 +269,8 @@
        "rumi": "nasi"
       },
       {
-       "teks": "ناسي",
-       "rumi": "nasi"
+       "teks": "روتي",
+       "rumi": "roti"
       }
      ],
      "jawapan": 0
@@ -284,11 +284,11 @@
        "rumi": "roti"
       },
       {
-       "teks": "روتي",
-       "rumi": "roti"
+       "teks": "ناسي",
+       "rumi": "nasi"
       }
      ],
-     "jawapan": 1
+     "jawapan": 0
     }
    ],
    "id": "jawi-a8"
@@ -309,8 +309,8 @@
        "rumi": "bola"
       },
       {
-       "teks": "بولا",
-       "rumi": "bola"
+       "teks": "ميجا",
+       "rumi": "meja"
       }
      ],
      "jawapan": 0
@@ -324,8 +324,8 @@
        "rumi": "meja"
       },
       {
-       "teks": "ميجا",
-       "rumi": "meja"
+       "teks": "بولا",
+       "rumi": "bola"
       }
      ],
      "jawapan": 0
@@ -349,11 +349,11 @@
        "rumi": "gigi"
       },
       {
-       "teks": "ݢيݢي",
-       "rumi": "gigi"
+       "teks": "باتو",
+       "rumi": "batu"
       }
      ],
-     "jawapan": 1
+     "jawapan": 0
     },
     {
      "teks": "ب + ا + ت + و",
@@ -364,8 +364,8 @@
        "rumi": "batu"
       },
       {
-       "teks": "باتو",
-       "rumi": "batu"
+       "teks": "ݢيݢي",
+       "rumi": "gigi"
       }
      ],
      "jawapan": 0
@@ -954,19 +954,19 @@
        "rumi": "makan"
       },
       {
-       "teks": "ماکن",
-       "rumi": "makan"
+       "teks": "مکروه",
+       "rumi": "makruh"
       },
       {
-       "teks": "ماکن",
-       "rumi": "makan"
+       "teks": "بولا",
+       "rumi": "bola"
       },
       {
-       "teks": "ماکن",
-       "rumi": "makan"
+       "teks": "بوکو",
+       "rumi": "buku"
       }
      ],
-     "jawapan": 1
+     "jawapan": 0
     }
    ],
    "id": "jawi-b4"
@@ -987,16 +987,16 @@
        "rumi": "buku"
       },
       {
-       "teks": "بوکو",
-       "rumi": "buku"
+       "teks": "بولا",
+       "rumi": "bola"
       },
       {
-       "teks": "بوکو",
-       "rumi": "buku"
+       "teks": "باتو",
+       "rumi": "batu"
       },
       {
-       "teks": "بوکو",
-       "rumi": "buku"
+       "teks": "ميجا",
+       "rumi": "meja"
       }
      ],
      "jawapan": 0
@@ -1251,16 +1251,16 @@
        "rumi": "monyet"
       },
       {
-       "teks": "موڽيت",
-       "rumi": "munit"
-      },
-      {
        "teks": "مومي",
        "rumi": "mumi"
       },
       {
        "teks": "ݢوني",
        "rumi": "guni"
+      },
+      {
+       "teks": "کوچيڠ",
+       "rumi": "kucing"
       }
      ],
      "jawapan": 0
@@ -1284,19 +1284,19 @@
        "rumi": "bintang"
       },
       {
-       "teks": "بينتڠ",
-       "rumi": "bintang"
+       "teks": "ماتاهاري",
+       "rumi": "matahari"
       },
       {
-       "teks": "بينتڠ",
-       "rumi": "bintang"
+       "teks": "اڠين",
+       "rumi": "angin"
       },
       {
-       "teks": "بينتڠ",
-       "rumi": "bintang"
+       "teks": "اير",
+       "rumi": "air"
       }
      ],
-     "jawapan": 1
+     "jawapan": 0
     }
    ],
    "id": "jawi-b14"
@@ -1317,19 +1317,19 @@
        "rumi": "ikan"
       },
       {
-       "teks": "ايکن",
-       "rumi": "ikan"
+       "teks": "کوچيڠ",
+       "rumi": "kucing"
       },
       {
-       "teks": "ايکن",
-       "rumi": "ikan"
+       "teks": "اونتا",
+       "rumi": "unta"
       },
       {
-       "teks": "ايکن",
-       "rumi": "ikan"
+       "teks": "ݢاجه",
+       "rumi": "gajah"
       }
      ],
-     "jawapan": 2
+     "jawapan": 0
     }
    ],
    "id": "jawi-b15"
@@ -1350,16 +1350,16 @@
        "rumi": "pensel"
       },
       {
-       "teks": "ڤينسيل",
-       "rumi": "pensel"
+       "teks": "ڤمادم",
+       "rumi": "pemadam"
       },
       {
-       "teks": "ڤينسيل",
-       "rumi": "pensel"
+       "teks": "ڤمباريس",
+       "rumi": "pembaris"
       },
       {
-       "teks": "ڤينسيل",
-       "rumi": "pensel"
+       "teks": "کاميرا",
+       "rumi": "kamera"
       }
      ],
      "jawapan": 0
@@ -1383,19 +1383,19 @@
        "rumi": "ulat"
       },
       {
-       "teks": "اولت",
-       "rumi": "ulat"
+       "teks": "کوچيڠ",
+       "rumi": "kucing"
       },
       {
-       "teks": "اولت",
-       "rumi": "ulat"
+       "teks": "ايکن",
+       "rumi": "ikan"
       },
       {
-       "teks": "اولت",
-       "rumi": "ulat"
+       "teks": "هاريماو",
+       "rumi": "harimau"
       }
      ],
-     "jawapan": 2
+     "jawapan": 0
     }
    ],
    "id": "jawi-b17"
@@ -1416,16 +1416,16 @@
        "rumi": "susu"
       },
       {
-       "teks": "سوسو",
-       "rumi": "susu"
+       "teks": "روتي",
+       "rumi": "roti"
       },
       {
-       "teks": "سوسو",
-       "rumi": "susu"
+       "teks": "ناسي",
+       "rumi": "nasi"
       },
       {
-       "teks": "سوسو",
-       "rumi": "susu"
+       "teks": "باتو",
+       "rumi": "batu"
       }
      ],
      "jawapan": 0
@@ -1449,19 +1449,19 @@
        "rumi": "kucing"
       },
       {
-       "teks": "کوچيڠ",
-       "rumi": "kucing"
+       "teks": "ايکن",
+       "rumi": "ikan"
       },
       {
-       "teks": "کوچيڠ",
-       "rumi": "kucing"
+       "teks": "اونتا",
+       "rumi": "unta"
       },
       {
-       "teks": "کوچيڠ",
-       "rumi": "kucing"
+       "teks": "هاريماو",
+       "rumi": "harimau"
       }
      ],
-     "jawapan": 2
+     "jawapan": 0
     }
    ],
    "id": "jawi-b19"
@@ -1482,16 +1482,16 @@
        "rumi": "hijau"
       },
       {
-       "teks": "هيجاو",
-       "rumi": "hijau"
+       "teks": "ڤوتيه",
+       "rumi": "putih"
       },
       {
-       "teks": "هيجاو",
-       "rumi": "hijau"
+       "teks": "ميجا",
+       "rumi": "meja"
       },
       {
-       "teks": "هيجاو",
-       "rumi": "hijau"
+       "teks": "بولا",
+       "rumi": "bola"
       }
      ],
      "jawapan": 0
@@ -1515,19 +1515,19 @@
        "rumi": "putih"
       },
       {
-       "teks": "ڤوتيه",
-       "rumi": "putih"
+       "teks": "هيجاو",
+       "rumi": "hijau"
       },
       {
-       "teks": "ڤوتيه",
-       "rumi": "putih"
+       "teks": "ميجا",
+       "rumi": "meja"
       },
       {
-       "teks": "ڤوتيه",
-       "rumi": "putih"
+       "teks": "بولا",
+       "rumi": "bola"
       }
      ],
-     "jawapan": 2
+     "jawapan": 0
     }
    ],
    "id": "jawi-b21"
@@ -1548,19 +1548,19 @@
        "rumi": "guru"
       },
       {
-       "teks": "ݢورو",
-       "rumi": "guru"
+       "teks": "ڤمبنتو",
+       "rumi": "pembantu"
       },
       {
-       "teks": "ݢورو",
-       "rumi": "guru"
+       "teks": "ڤڠاسوه",
+       "rumi": "pengasuh"
       },
       {
-       "teks": "ݢورو",
-       "rumi": "guru"
+       "teks": "ڤنداي بسي",
+       "rumi": "pandai besi"
       }
      ],
-     "jawapan": 3
+     "jawapan": 0
     }
    ],
    "id": "jawi-b22"
@@ -1581,19 +1581,19 @@
        "rumi": "sekolah"
       },
       {
-       "teks": "سکوله",
-       "rumi": "sekolah"
+       "teks": "هوتيل",
+       "rumi": "hotel"
       },
       {
-       "teks": "سکوله",
-       "rumi": "sekolah"
+       "teks": "سينما",
+       "rumi": "sinema"
       },
       {
-       "teks": "سکوله",
-       "rumi": "sekolah"
+       "teks": "لڠيت",
+       "rumi": "langit"
       }
      ],
-     "jawapan": 1
+     "jawapan": 0
     }
    ],
    "id": "jawi-b23"

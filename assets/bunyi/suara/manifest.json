@@ -3,7 +3,7 @@
  "suara": "ms-MY-YasminNeural",
  "suaraArab": "ar-SA-ZariyahNeural",
  "kadar": "-8%",
- "bilangan": 2559,
+ "bilangan": 2563,
  "fail": {
   "q-adab-d5": "71350f7cf28d5b63.m4a",
   "q-ibadah-b8": "c04df0c89a0dfb31.m4a",
@@ -2563,6 +2563,10 @@
   "q-arab-c10": "2c91b03f32e2007b.m4a",
   "q-arab-c6": "8f0acbb99ae24dd0.m4a",
   "q-arab-d6": "61833bdbb255a59b.m4a",
-  "o-يَذْهَبُ — ڤرݢي\nيَرْجِعُ — ڤولڠ\nيَلْعَبُ — برماءين\nيَأْكُلُ — ماکن\nيَشْرَبُ — منوم\nيَسْمَعُ — مندڠر\nيَنْظُرُ — مليهت": "1c4412463d06d204.m4a"
+  "o-يَذْهَبُ — ڤرݢي\nيَرْجِعُ — ڤولڠ\nيَلْعَبُ — برماءين\nيَأْكُلُ — ماکن\nيَشْرَبُ — منوم\nيَسْمَعُ — مندڠر\nيَنْظُرُ — مليهت": "1c4412463d06d204.m4a",
+  "o-gajah": "9913aef385432fe4.m4a",
+  "o-harimau": "2d0ec471c6758106.m4a",
+  "o-matahari": "eb862675c996d30d.m4a",
+  "o-unta": "5802e60c99e9d07c.m4a"
  }
 }
