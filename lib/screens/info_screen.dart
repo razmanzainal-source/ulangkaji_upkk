@@ -52,9 +52,17 @@ class _InfoScreenState extends State<InfoScreen> {
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
               _Kotak(
-                tajuk: 'Apa app ini',
-                ikon: Icons.info_rounded,
+                tajuk: 'Pengenalan',
+                ikon: Icons.menu_book_rounded,
                 kanak: const [
+                  _Perenggan(
+                    'Ulangkaji KAFA untuk persediaan UPKK bersama Raz.',
+                  ),
+                  _Perenggan(
+                    'Raz ialah kanak-kanak perempuan kecil yang menemani '
+                    'murid belajar di dalam app ini — maskot app ini. Nama '
+                    'itu ialah nama anak pencipta app.',
+                  ),
                   _Perenggan(
                     'Ulangkaji UPKK ialah app ulang kaji untuk murid Tahun 5 '
                     'yang akan menduduki Ujian Penilaian Kelas Al-Quran dan '

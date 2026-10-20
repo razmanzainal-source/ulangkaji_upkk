@@ -6,7 +6,7 @@
   {
    "bahagian": "A",
    "jenis": "tempat_kosong",
-   "soalan": "توليس حروف توغکل مڠيکوت اوروتن يڠ بتول.",
+   "soalan": "توليس حروف توڠݢل مڠيکوت اوروتن يڠ بتول.",
    "rumi": "Tulis huruf tunggal mengikut urutan yang betul.",
    "markah": 3,
    "bank": [
@@ -41,7 +41,7 @@
   {
    "bahagian": "A",
    "jenis": "tempat_kosong",
-   "soalan": "توليس حروف توغکل مڠيکوت اوروتن يڠ بتول.",
+   "soalan": "توليس حروف توڠݢل مڠيکوت اوروتن يڠ بتول.",
    "rumi": "Tulis huruf tunggal mengikut urutan yang betul.",
    "markah": 3,
    "bank": [
@@ -76,7 +76,7 @@
   {
    "bahagian": "A",
    "jenis": "tempat_kosong",
-   "soalan": "توليس حروف توغکل مڠيکوت اوروتن يڠ بتول.",
+   "soalan": "توليس حروف توڠݢل مڠيکوت اوروتن يڠ بتول.",
    "rumi": "Tulis huruf tunggal mengikut urutan yang betul.",
    "markah": 3,
    "bank": [
@@ -111,7 +111,7 @@
   {
    "bahagian": "A",
    "jenis": "tempat_kosong",
-   "soalan": "توليس حروف توغکل مڠيکوت اوروتن يڠ بتول.",
+   "soalan": "توليس حروف توڠݢل مڠيکوت اوروتن يڠ بتول.",
    "rumi": "Tulis huruf tunggal mengikut urutan yang betul.",
    "markah": 3,
    "bank": [
@@ -146,7 +146,7 @@
   {
    "bahagian": "A",
    "jenis": "tempat_kosong",
-   "soalan": "توليس حروف توغکل مڠيکوت اوروتن يڠ بتول.",
+   "soalan": "توليس حروف توڠݢل مڠيکوت اوروتن يڠ بتول.",
    "rumi": "Tulis huruf tunggal mengikut urutan yang betul.",
    "markah": 3,
    "bank": [
@@ -181,7 +181,7 @@
   {
    "bahagian": "A",
    "jenis": "tempat_kosong",
-   "soalan": "توليس حروف توغکل مڠيکوت اوروتن يڠ بتول.",
+   "soalan": "توليس حروف توڠݢل مڠيکوت اوروتن يڠ بتول.",
    "rumi": "Tulis huruf tunggal mengikut urutan yang betul.",
    "markah": 3,
    "bank": [
@@ -229,7 +229,7 @@
        "rumi": "buku"
       },
       {
-       "teks": "بکو",
+       "teks": "بوکو",
        "rumi": "buku"
       }
      ],
@@ -240,7 +240,7 @@
      "rumi": "s + u + s + u",
      "pilihan": [
       {
-       "teks": "سسو",
+       "teks": "سوسو",
        "rumi": "susu"
       },
       {
@@ -269,7 +269,7 @@
        "rumi": "nasi"
       },
       {
-       "teks": "نسي",
+       "teks": "ناسي",
        "rumi": "nasi"
       }
      ],
@@ -280,7 +280,7 @@
      "rumi": "r + o + t + i",
      "pilihan": [
       {
-       "teks": "رتي",
+       "teks": "روتي",
        "rumi": "roti"
       },
       {
@@ -309,7 +309,7 @@
        "rumi": "bola"
       },
       {
-       "teks": "بلا",
+       "teks": "بولا",
        "rumi": "bola"
       }
      ],
@@ -324,7 +324,7 @@
        "rumi": "meja"
       },
       {
-       "teks": "مجا",
+       "teks": "ميجا",
        "rumi": "meja"
       }
      ],
@@ -345,7 +345,7 @@
      "rumi": "g + i + g + i",
      "pilihan": [
       {
-       "teks": "ݢݢي",
+       "teks": "ݢيݢي",
        "rumi": "gigi"
       },
       {
@@ -364,7 +364,7 @@
        "rumi": "batu"
       },
       {
-       "teks": "بتو",
+       "teks": "باتو",
        "rumi": "batu"
       }
      ],
@@ -376,12 +376,12 @@
   {
    "bahagian": "A",
    "jenis": "bulat",
-   "soalan": "حروف يڠ بوليه دسامبوڠ کڤد حروف سلفسڽ اياله ____.",
+   "soalan": "حروف يڠ بوليه دسامبوڠ کڤد حروف سلڤسڽ اياله ____.",
    "rumi": "Huruf yang boleh disambung kepada huruf selepasnya ialah ____.",
    "markah": 2,
    "item": [
     {
-     "teks": "حروف يڠ بوليه دسامبوڠ کڤد حروف سلفسڽ اياله ____.",
+     "teks": "حروف يڠ بوليه دسامبوڠ کڤد حروف سلڤسڽ اياله ____.",
      "rumi": "Huruf yang boleh disambung kepada huruf selepasnya ialah ____.",
      "pilihan": [
       {
@@ -396,7 +396,7 @@
      "jawapan": 0
     },
     {
-     "teks": "حروف يڠ بوليه دسامبوڠ کڤد حروف سلفسڽ اياله ____.",
+     "teks": "حروف يڠ بوليه دسامبوڠ کڤد حروف سلڤسڽ اياله ____.",
      "rumi": "Huruf yang boleh disambung kepada huruf selepasnya ialah ____.",
      "pilihan": [
       {
@@ -416,12 +416,12 @@
   {
    "bahagian": "A",
    "jenis": "bulat",
-   "soalan": "حروف يڠ بوليه دسامبوڠ کڤد حروف سلفسڽ اياله ____.",
+   "soalan": "حروف يڠ بوليه دسامبوڠ کڤد حروف سلڤسڽ اياله ____.",
    "rumi": "Huruf yang boleh disambung kepada huruf selepasnya ialah ____.",
    "markah": 2,
    "item": [
     {
-     "teks": "حروف يڠ بوليه دسامبوڠ کڤد حروف سلفسڽ اياله ____.",
+     "teks": "حروف يڠ بوليه دسامبوڠ کڤد حروف سلڤسڽ اياله ____.",
      "rumi": "Huruf yang boleh disambung kepada huruf selepasnya ialah ____.",
      "pilihan": [
       {
@@ -436,7 +436,7 @@
      "jawapan": 0
     },
     {
-     "teks": "حروف يڠ بوليه دسامبوڠ کڤد حروف سلفسڽ اياله ____.",
+     "teks": "حروف يڠ بوليه دسامبوڠ کڤد حروف سلڤسڽ اياله ____.",
      "rumi": "Huruf yang boleh disambung kepada huruf selepasnya ialah ____.",
      "pilihan": [
       {
@@ -456,12 +456,12 @@
   {
    "bahagian": "A",
    "jenis": "bulat",
-   "soalan": "حروف يڠ بوليه دسامبوڠ کڤد حروف سلفسڽ اياله ____.",
+   "soalan": "حروف يڠ بوليه دسامبوڠ کڤد حروف سلڤسڽ اياله ____.",
    "rumi": "Huruf yang boleh disambung kepada huruf selepasnya ialah ____.",
    "markah": 2,
    "item": [
     {
-     "teks": "حروف يڠ بوليه دسامبوڠ کڤد حروف سلفسڽ اياله ____.",
+     "teks": "حروف يڠ بوليه دسامبوڠ کڤد حروف سلڤسڽ اياله ____.",
      "rumi": "Huruf yang boleh disambung kepada huruf selepasnya ialah ____.",
      "pilihan": [
       {
@@ -476,7 +476,7 @@
      "jawapan": 0
     },
     {
-     "teks": "حروف يڠ بوليه دسامبوڠ کڤد حروف سلفسڽ اياله ____.",
+     "teks": "حروف يڠ بوليه دسامبوڠ کڤد حروف سلڤسڽ اياله ____.",
      "rumi": "Huruf yang boleh disambung kepada huruf selepasnya ialah ____.",
      "pilihan": [
       {
@@ -496,12 +496,12 @@
   {
    "bahagian": "A",
    "jenis": "bulat",
-   "soalan": "حروف يڠ بوليه دسامبوڠ کڤد حروف سلفسڽ اياله ____.",
+   "soalan": "حروف يڠ بوليه دسامبوڠ کڤد حروف سلڤسڽ اياله ____.",
    "rumi": "Huruf yang boleh disambung kepada huruf selepasnya ialah ____.",
    "markah": 2,
    "item": [
     {
-     "teks": "حروف يڠ بوليه دسامبوڠ کڤد حروف سلفسڽ اياله ____.",
+     "teks": "حروف يڠ بوليه دسامبوڠ کڤد حروف سلڤسڽ اياله ____.",
      "rumi": "Huruf yang boleh disambung kepada huruf selepasnya ialah ____.",
      "pilihan": [
       {
@@ -516,7 +516,7 @@
      "jawapan": 0
     },
     {
-     "teks": "حروف يڠ بوليه دسامبوڠ کڤد حروف سلفسڽ اياله ____.",
+     "teks": "حروف يڠ بوليه دسامبوڠ کڤد حروف سلڤسڽ اياله ____.",
      "rumi": "Huruf yang boleh disambung kepada huruf selepasnya ialah ____.",
      "pilihan": [
       {
@@ -842,7 +842,7 @@
   {
    "bahagian": "B",
    "jenis": "objektif",
-   "soalan": "انتارا حروف برايکوت، يڠ ماناکه تيدق بوليه دسامبوڠ کڤد حروف سلفسڽ؟",
+   "soalan": "انتارا حروف برايکوت، يڠ ماناکه تيدق بوليه دسامبوڠ کڤد حروف سلڤسڽ؟",
    "rumi": "Antara huruf berikut, yang manakah tidak boleh disambung kepada huruf selepasnya?",
    "markah": 1,
    "item": [
@@ -875,7 +875,7 @@
   {
    "bahagian": "B",
    "jenis": "objektif",
-   "soalan": "انتارا حروف برايکوت، يڠ ماناکه بوليه دسامبوڠ کڤد حروف سلفسڽ؟",
+   "soalan": "انتارا حروف برايکوت، يڠ ماناکه بوليه دسامبوڠ کڤد حروف سلڤسڽ؟",
    "rumi": "Antara huruf berikut, yang manakah boleh disambung kepada huruf selepasnya?",
    "markah": 1,
    "item": [
@@ -908,7 +908,7 @@
   {
    "bahagian": "B",
    "jenis": "objektif",
-   "soalan": "حروف ا، د، ر دان و تيدق بوليه ____ کڤد حروف سلفسڽ.",
+   "soalan": "حروف ا، د، ر دان و تيدق بوليه ____ کڤد حروف سلڤسڽ.",
    "rumi": "Huruf alif, dal, ra dan wau tidak boleh ____ kepada huruf selepasnya.",
    "markah": 1,
    "item": [
@@ -921,7 +921,7 @@
        "rumi": "disambung"
       },
       {
-       "teks": "دچمڤور",
+       "teks": "دچامڤور",
        "rumi": "dicampur"
       },
       {
@@ -929,7 +929,7 @@
        "rumi": "disusun"
       },
       {
-       "teks": "دباليك",
+       "teks": "دبالک",
        "rumi": "dibalik"
       }
      ],
@@ -950,7 +950,7 @@
      "rumi": "",
      "pilihan": [
       {
-       "teks": "مکان",
+       "teks": "ماکن",
        "rumi": "makan"
       },
       {
@@ -958,11 +958,11 @@
        "rumi": "makan"
       },
       {
-       "teks": "ماکان",
+       "teks": "ماکن",
        "rumi": "makan"
       },
       {
-       "teks": "ماچن",
+       "teks": "ماکن",
        "rumi": "makan"
       }
      ],
@@ -987,15 +987,15 @@
        "rumi": "buku"
       },
       {
-       "teks": "بکو",
+       "teks": "بوکو",
        "rumi": "buku"
       },
       {
-       "teks": "بواکو",
+       "teks": "بوکو",
        "rumi": "buku"
       },
       {
-       "teks": "بوکوا",
+       "teks": "بوکو",
        "rumi": "buku"
       }
      ],
@@ -1007,7 +1007,7 @@
   {
    "bahagian": "B",
    "jenis": "objektif",
-   "soalan": "حروف يڠ دݢوناکن اونتوق بونيي «ng» اياله ____.",
+   "soalan": "حروف يڠ دݢوناکن اونتوق بوڽي «ng» اياله ____.",
    "rumi": "Huruf yang digunakan untuk bunyi «ng» ialah ____.",
    "markah": 1,
    "item": [
@@ -1040,7 +1040,7 @@
   {
    "bahagian": "B",
    "jenis": "objektif",
-   "soalan": "حروف يڠ دݢوناکن اونتوق بونيي «ny» اياله ____.",
+   "soalan": "حروف يڠ دݢوناکن اونتوق بوڽي «ny» اياله ____.",
    "rumi": "Huruf yang digunakan untuk bunyi «ny» ialah ____.",
    "markah": 1,
    "item": [
@@ -1073,7 +1073,7 @@
   {
    "bahagian": "B",
    "jenis": "objektif",
-   "soalan": "حروف يڠ دݢوناکن اونتوق بونيي «c» اياله ____.",
+   "soalan": "حروف يڠ دݢوناکن اونتوق بوڽي «c» اياله ____.",
    "rumi": "Huruf yang digunakan untuk bunyi «c» ialah ____.",
    "markah": 1,
    "item": [
@@ -1106,7 +1106,7 @@
   {
    "bahagian": "B",
    "jenis": "objektif",
-   "soalan": "حروف يڠ دݢوناکن اونتوق بونيي «v» اياله ____.",
+   "soalan": "حروف يڠ دݢوناکن اونتوق بوڽي «v» اياله ____.",
    "rumi": "Huruf yang digunakan untuk bunyi «v» ialah ____.",
    "markah": 1,
    "item": [
@@ -1139,7 +1139,7 @@
   {
    "bahagian": "B",
    "jenis": "objektif",
-   "soalan": "حروف يڠ دݢوناکن اونتوق بونيي «g» اياله ____.",
+   "soalan": "حروف يڠ دݢوناکن اونتوق بوڽي «g» اياله ____.",
    "rumi": "Huruf yang digunakan untuk bunyi «g» ialah ____.",
    "markah": 1,
    "item": [
@@ -1172,7 +1172,7 @@
   {
    "bahagian": "B",
    "jenis": "objektif",
-   "soalan": "حروف يڠ دݢوناکن اونتوق بونيي «p» اياله ____.",
+   "soalan": "حروف يڠ دݢوناکن اونتوق بوڽي «p» اياله ____.",
    "rumi": "Huruf yang digunakan untuk bunyi «p» ialah ____.",
    "markah": 1,
    "item": [
@@ -1251,7 +1251,7 @@
        "rumi": "monyet"
       },
       {
-       "teks": "مونيت",
+       "teks": "موڽيت",
        "rumi": "munit"
       },
       {
@@ -1280,7 +1280,7 @@
      "rumi": "",
      "pilihan": [
       {
-       "teks": "بيتڠ",
+       "teks": "بينتڠ",
        "rumi": "bintang"
       },
       {
@@ -1288,11 +1288,11 @@
        "rumi": "bintang"
       },
       {
-       "teks": "بينتن",
+       "teks": "بينتڠ",
        "rumi": "bintang"
       },
       {
-       "teks": "بينتاڠ",
+       "teks": "بينتڠ",
        "rumi": "bintang"
       }
      ],
@@ -1313,11 +1313,7 @@
      "rumi": "",
      "pilihan": [
       {
-       "teks": "اکن",
-       "rumi": "ikan"
-      },
-      {
-       "teks": "ايكت",
+       "teks": "ايکن",
        "rumi": "ikan"
       },
       {
@@ -1325,7 +1321,11 @@
        "rumi": "ikan"
       },
       {
-       "teks": "ايکو",
+       "teks": "ايکن",
+       "rumi": "ikan"
+      },
+      {
+       "teks": "ايکن",
        "rumi": "ikan"
       }
      ],
@@ -1350,15 +1350,15 @@
        "rumi": "pensel"
       },
       {
-       "teks": "ڤنسيل",
+       "teks": "ڤينسيل",
        "rumi": "pensel"
       },
       {
-       "teks": "فينسيل",
+       "teks": "ڤينسيل",
        "rumi": "pensel"
       },
       {
-       "teks": "ڤينسيله",
+       "teks": "ڤينسيل",
        "rumi": "pensel"
       }
      ],
@@ -1370,7 +1370,7 @@
   {
    "bahagian": "B",
    "jenis": "objektif",
-   "soalan": "____ اداله هيوان يڠ مماکن داءون.",
+   "soalan": "____ اياله هيوان يڠ مماکن داءون.",
    "rumi": "____ ialah haiwan yang memakan daun.",
    "markah": 1,
    "item": [
@@ -1379,11 +1379,7 @@
      "rumi": "",
      "pilihan": [
       {
-       "teks": "اولط",
-       "rumi": "ulat"
-      },
-      {
-       "teks": "اولث",
+       "teks": "اولت",
        "rumi": "ulat"
       },
       {
@@ -1391,7 +1387,11 @@
        "rumi": "ulat"
       },
       {
-       "teks": "اوله",
+       "teks": "اولت",
+       "rumi": "ulat"
+      },
+      {
+       "teks": "اولت",
        "rumi": "ulat"
       }
      ],
@@ -1416,15 +1416,15 @@
        "rumi": "susu"
       },
       {
-       "teks": "سسو",
+       "teks": "سوسو",
        "rumi": "susu"
       },
       {
-       "teks": "سوسوو",
+       "teks": "سوسو",
        "rumi": "susu"
       },
       {
-       "teks": "شوسو",
+       "teks": "سوسو",
        "rumi": "susu"
       }
      ],
@@ -1436,7 +1436,7 @@
   {
    "bahagian": "B",
    "jenis": "objektif",
-   "soalan": "____ اداله هيوان يڠ مڠيک.",
+   "soalan": "____ اياله هيوان يڠ مڠيک.",
    "rumi": "____ ialah haiwan yang mengiau.",
    "markah": 1,
    "item": [
@@ -1445,11 +1445,7 @@
      "rumi": "",
      "pilihan": [
       {
-       "teks": "کوجيڠ",
-       "rumi": "kucing"
-      },
-      {
-       "teks": "کوسيڠ",
+       "teks": "کوچيڠ",
        "rumi": "kucing"
       },
       {
@@ -1457,7 +1453,11 @@
        "rumi": "kucing"
       },
       {
-       "teks": "کوچڠ",
+       "teks": "کوچيڠ",
+       "rumi": "kucing"
+      },
+      {
+       "teks": "کوچيڠ",
        "rumi": "kucing"
       }
      ],
@@ -1482,15 +1482,15 @@
        "rumi": "hijau"
       },
       {
-       "teks": "هيجو",
+       "teks": "هيجاو",
        "rumi": "hijau"
       },
       {
-       "teks": "هيجا",
+       "teks": "هيجاو",
        "rumi": "hijau"
       },
       {
-       "teks": "هيجاوو",
+       "teks": "هيجاو",
        "rumi": "hijau"
       }
      ],
@@ -1502,7 +1502,7 @@
   {
    "bahagian": "B",
    "jenis": "objektif",
-   "soalan": "ورنا سوسو اداله ____.",
+   "soalan": "ورنا سوسو اياله ____.",
    "rumi": "Warna susu ialah ____.",
    "markah": 1,
    "item": [
@@ -1511,11 +1511,7 @@
      "rumi": "",
      "pilihan": [
       {
-       "teks": "ڤوتي",
-       "rumi": "putih"
-      },
-      {
-       "teks": "ڤوته",
+       "teks": "ڤوتيه",
        "rumi": "putih"
       },
       {
@@ -1523,7 +1519,11 @@
        "rumi": "putih"
       },
       {
-       "teks": "فيوتيه",
+       "teks": "ڤوتيه",
+       "rumi": "putih"
+      },
+      {
+       "teks": "ڤوتيه",
        "rumi": "putih"
       }
      ],
@@ -1535,7 +1535,7 @@
   {
    "bahagian": "B",
    "jenis": "objektif",
-   "soalan": "____ مڠاجر موريد د دالم کلس.",
+   "soalan": "____ مڠاجر موريد د دالم کلاس.",
    "rumi": "____ mengajar murid di dalam kelas.",
    "markah": 1,
    "item": [
@@ -1544,15 +1544,15 @@
      "rumi": "",
      "pilihan": [
       {
-       "teks": "کورو",
+       "teks": "ݢورو",
        "rumi": "guru"
       },
       {
-       "teks": "ݢرو",
+       "teks": "ݢورو",
        "rumi": "guru"
       },
       {
-       "teks": "ݢورور",
+       "teks": "ݢورو",
        "rumi": "guru"
       },
       {
@@ -1568,7 +1568,7 @@
   {
    "bahagian": "B",
    "jenis": "objektif",
-   "soalan": "____ اداله تيمڤت کيت منيمبا علمو.",
+   "soalan": "____ اياله تمڤت کيت منيمبا علمو.",
    "rumi": "____ ialah tempat kita menimba ilmu.",
    "markah": 1,
    "item": [
@@ -1577,7 +1577,7 @@
      "rumi": "",
      "pilihan": [
       {
-       "teks": "سکولا",
+       "teks": "سکوله",
        "rumi": "sekolah"
       },
       {
@@ -1585,11 +1585,11 @@
        "rumi": "sekolah"
       },
       {
-       "teks": "سکولح",
+       "teks": "سکوله",
        "rumi": "sekolah"
       },
       {
-       "teks": "سکولاه",
+       "teks": "سکوله",
        "rumi": "sekolah"
       }
      ],
@@ -1634,7 +1634,7 @@
   {
    "bahagian": "B",
    "jenis": "objektif",
-   "soalan": "تندا باچ «.» ديسبوت ____.",
+   "soalan": "تندا باچ «.» دسبوت ____.",
    "rumi": "Tanda baca «.» disebut ____.",
    "markah": 1,
    "item": [
@@ -1667,7 +1667,7 @@
   {
    "bahagian": "B",
    "jenis": "objektif",
-   "soalan": "تندا باچ «،» ديسبوت ____.",
+   "soalan": "تندا باچ «،» دسبوت ____.",
    "rumi": "Tanda baca «،» disebut ____.",
    "markah": 1,
    "item": [
@@ -1700,7 +1700,7 @@
   {
    "bahagian": "B",
    "jenis": "objektif",
-   "soalan": "تندا باچ يڠ دݢوناکن اونتوق منونجوقکن ڤراساءن کوت اياله ____.",
+   "soalan": "تندا باچ يڠ دݢوناکن اونتوق منونجوقکن ڤراساءن کوات اياله ____.",
    "rumi": "Tanda baca yang digunakan untuk menunjukkan perasaan kuat ialah ____.",
    "markah": 1,
    "item": [
@@ -1898,7 +1898,7 @@
   {
    "bahagian": "B",
    "jenis": "objektif",
-   "soalan": "ڤرکاتاءن «کتاب» اداله کات ڤينجم درڤد بهاس ____.",
+   "soalan": "ڤرکاتاءن «کتاب» اياله کات ڤينجم درڤد بهاس ____.",
    "rumi": "Perkataan «kitab» ialah kata pinjaman daripada bahasa ____.",
    "markah": 1,
    "item": [
@@ -1964,7 +1964,7 @@
   {
    "bahagian": "B",
    "jenis": "objektif",
-   "soalan": "ڤرکاتاءن «علمو» اداله کات ڤينجم درڤد بهاس ____.",
+   "soalan": "ڤرکاتاءن «علمو» اياله کات ڤينجم درڤد بهاس ____.",
    "rumi": "Perkataan «ilmu» ialah kata pinjaman daripada bahasa ____.",
    "markah": 1,
    "item": [
@@ -2030,7 +2030,7 @@
   {
    "bahagian": "B",
    "jenis": "objektif",
-   "soalan": "ڤرکاتاءن «صبر» اداله کات ڤينجم درڤد بهاس ____.",
+   "soalan": "ڤرکاتاءن «صبر» اياله کات ڤينجم درڤد بهاس ____.",
    "rumi": "Perkataan «sabar» ialah kata pinjaman daripada bahasa ____.",
    "markah": 1,
    "item": [
@@ -2096,7 +2096,7 @@
   {
    "bahagian": "B",
    "jenis": "objektif",
-   "soalan": "ڤرکاتاءن «تيليۏيشن» اداله کات ڤينجم درڤد بهاس ____.",
+   "soalan": "ڤرکاتاءن «تيليۏيشن» اياله کات ڤينجم درڤد بهاس ____.",
    "rumi": "Perkataan «televisyen» ialah kata pinjaman daripada bahasa ____.",
    "markah": 1,
    "item": [
@@ -2162,7 +2162,7 @@
   {
    "bahagian": "B",
    "jenis": "objektif",
-   "soalan": "ڤرکاتاءن «ديسيڤلين» اداله کات ڤينجم درڤد بهاس ____.",
+   "soalan": "ڤرکاتاءن «ديسيڤلين» اياله کات ڤينجم درڤد بهاس ____.",
    "rumi": "Perkataan «disiplin» ialah kata pinjaman daripada bahasa ____.",
    "markah": 1,
    "item": [
@@ -2228,7 +2228,7 @@
   {
    "bahagian": "B",
    "jenis": "objektif",
-   "soalan": "خط يڠ ڤاليڠ سسواي اونتوق منوليس القرءان اداله ____.",
+   "soalan": "خط يڠ ڤاليڠ سسواي اونتوق منوليس القرءان اياله ____.",
    "rumi": "Khat yang paling sesuai untuk menulis Al-Quran ialah ____.",
    "markah": 1,
    "item": [
@@ -2294,7 +2294,7 @@
   {
    "bahagian": "B",
    "jenis": "objektif",
-   "soalan": "خط يڠ دݢوناکن ڤد ڤرنکڤن راسمي دان ڤد تاج مبنڠونن اياله ____.",
+   "soalan": "خط يڠ دݢوناکن ڤد ڤرنکڤن راسمي دان ڤد مرچو مبنڠونن اياله ____.",
    "rumi": "Khat yang digunakan pada perhiasan rasmi dan pada mercu bangunan ialah ____.",
    "markah": 1,
    "item": [
@@ -2327,7 +2327,7 @@
   {
    "bahagian": "B",
    "jenis": "objektif",
-   "soalan": "خط يڠ مڠالير دان سوكر دباچ اياله ____.",
+   "soalan": "خط يڠ مڠالير دان سوکر دباچ اياله ____.",
    "rumi": "Khat yang mengalir dan sukar dibaca ialah ____.",
    "markah": 1,
    "item": [
@@ -2360,7 +2360,7 @@
   {
    "bahagian": "B",
    "jenis": "objektif",
-   "soalan": "خط يڠ کچيل دان سنت دتوليس اياله ____.",
+   "soalan": "خط يڠ کچيل دان سنڠ دتوليس اياله ____.",
    "rumi": "Khat yang kecil dan senang ditulis ialah ____.",
    "markah": 1,
    "item": [
@@ -2393,7 +2393,7 @@
   {
    "bahagian": "B",
    "jenis": "objektif",
-   "soalan": "الت يڠ ڤاليڠ اوتام اونتوق منوليس خط اداله ____.",
+   "soalan": "الت يڠ ڤاليڠ اوتام اونتوق منوليس خط اياله ____.",
    "rumi": "Alat yang paling utama untuk menulis khat ialah ____.",
    "markah": 1,
    "item": [
@@ -2426,7 +2426,7 @@
   {
    "bahagian": "B",
    "jenis": "objektif",
-   "soalan": "الت يڠ دݢوناکن اونتوق مموهڤ توليسن خط يڠ ساله اداله ____.",
+   "soalan": "الت يڠ دݢوناکن اونتوق مموهڤ توليسن خط يڠ ساله اياله ____.",
    "rumi": "Alat yang digunakan untuk memadam tulisan khat yang salah ialah ____.",
    "markah": 1,
    "item": [
@@ -2817,7 +2817,7 @@
    "bahagian": "C",
    "jenis": "tulis",
    "markah": 5,
-   "soalan": "توليس ڤرکاتاءن جاوي باݢي انگک برايکوت: ٣ ، ٥ ، ١٠ ، ١٢ ، ٢٠.",
+   "soalan": "توليس ڤرکاتاءن جاوي باݢي اڠک برايکوت: ٣ ، ٥ ، ١٠ ، ١٢ ، ٢٠.",
    "rumi": "Tulis perkataan Jawi bagi angka berikut: 3, 5, 10, 12, 20.",
    "idea": [
     {
@@ -2879,7 +2879,7 @@
    "bahagian": "C",
    "jenis": "suai",
    "markah": 5,
-   "soalan": "ڤادانکن انگک دڠن ڤرکاتاءن يڠ بتول.",
+   "soalan": "ڤادانکن اڠک دڠن ڤرکاتاءن يڠ بتول.",
    "rumi": "Padankan angka dengan perkataan yang betul.",
    "pasangan": [
     {
@@ -3028,7 +3028,7 @@
    ],
    "item": [
     {
-     "teks": "سيافاکه نام کامو ____",
+     "teks": "سياڤاکه نام کامو ____",
      "rumi": "Siapakah nama kamu ____"
     },
     {
@@ -3040,7 +3040,7 @@
      "rumi": "Hati-hati di jalan raya ____"
     },
     {
-     "teks": "کامي موريک تاهون ليم ____",
+     "teks": "کامي موريد تاهون ليم ____",
      "rumi": "Kami murid tahun lima ____"
     },
     {
@@ -3088,7 +3088,7 @@
      "rumi": "Ayah saya bekerja sebagai guru ____"
     },
     {
-     "teks": "اينله ݢورو کلس ساي ____ اوستاذ احمد",
+     "teks": "اينله ݢورو کلاس ساي ____ اوستاذ احمد",
      "rumi": "Inilah guru kelas saya ____ Ustaz Ahmad"
     }
    ],
@@ -3155,7 +3155,7 @@
    "bahagian": "C",
    "jenis": "tulis",
    "markah": 5,
-   "soalan": "ناماکن الت خط برايکوت: (i) ڤين يڠ دݢوناکن اونتوق منوليس خط (ii) چاءير هيتم اونتوق منوليس (iii) تمڤت مڠيسي داکوت (iv) باهن تمڤت منوليس (v) الت اونتوق مڠهاڤوس تليسن يڠ ساله.",
+   "soalan": "ناماکن الت خط برايکوت: (i) ڤين يڠ دݢوناکن اونتوق منوليس خط (ii) چچاءير هيتم اونتوق منوليس (iii) تمڤت مڠيسي داکوت (iv) باهن تمڤت منوليس (v) الت اونتوق مڠهاڤوس توليسن يڠ ساله.",
    "rumi": "Namakan alat khat berikut: (i) pen yang digunakan untuk menulis khat (ii) cecair hitam untuk menulis (iii) tempat mengisi dakwat (iv) bahan tempat menulis (v) alat untuk menghapuskan tulisan yang salah.",
    "idea": [
     {
@@ -3568,7 +3568,7 @@
    "bahagian": "D",
    "jenis": "tulis",
    "markah": 6,
-   "soalan": "توكر انگک برايکوت ک ڤرکاتاءن جاوي: ٤ ، ٧ ، ١٥ ، ٤٠ ، ٦٠ ، ١٠٠.",
+   "soalan": "توکر اڠک برايکوت ک ڤرکاتاءن جاوي: ٤ ، ٧ ، ١٥ ، ٤٠ ، ٦٠ ، ١٠٠.",
    "rumi": "Tukar angka berikut kepada perkataan Jawi: 4, 7, 15, 40, 60, 100.",
    "idea": [
     {
@@ -3638,7 +3638,7 @@
    "bahagian": "D",
    "jenis": "tulis",
    "markah": 6,
-   "soalan": "توكر ڤرکاتاءن برايکوت ک انگک جاوي: دوا، ليم، لاڤن، دوا بلاس، تيݢ ڤولوه، سيراتوس.",
+   "soalan": "توکر ڤرکاتاءن برايکوت کڤد اڠک جاوي: دوا، ليم، لاڤن، دوا بلاس، تيݢ ڤولوه، سيراتوس.",
    "rumi": "Tukar perkataan berikut kepada angka Jawi: dua, lima, lapan, dua belas, tiga puluh, seratus.",
    "idea": [
     {
@@ -4022,7 +4022,7 @@
    "bahagian": "D",
    "jenis": "tulis",
    "markah": 6,
-   "soalan": "سنارايکن اينم جنيس خط يڠ کامو ڤلاجري.",
+   "soalan": "سنارايکن انم جنيس خط يڠ کامو ڤلاجري.",
    "rumi": "Senaraikan enam jenis khat yang kamu pelajari.",
    "idea": [
     {
@@ -4142,7 +4142,7 @@
    "bahagian": "D",
    "jenis": "tulis",
    "markah": 5,
-   "soalan": "توليس تندا باچ يڠ بتول باݢي ايات برايکوت: (i) دمان کامو تيڠݢل (ii) هاتي-هاتي د جالن راي (iii) کامي موريک تاهون ليم (iv) اينله ݢورو کلس ساي اوستاذ احمد (v) احمد ساي دان علي ݢي ک سکوله.",
+   "soalan": "توليس تندا باچ يڠ بتول باݢي ايات برايکوت: (i) دمان کامو تيڠݢل (ii) هاتي-هاتي د جالن راي (iii) کامي موريد تاهون ليم (iv) اينله ݢورو کلاس ساي اوستاذ احمد (v) احمد ساي دان علي ڤرݢي ک سکوله.",
    "rumi": "Tulis tanda baca yang betul bagi ayat berikut: (i) Di mana kamu tinggal (ii) Hati-hati di jalan raya (iii) Kami murid tahun lima (iv) Inilah guru kelas saya Ustaz Ahmad (v) Ahmad saya dan Ali pergi ke sekolah.",
    "idea": [
     {
@@ -4248,7 +4248,7 @@
    "bahagian": "D",
    "jenis": "tulis",
    "markah": 6,
-   "soalan": "توليس ڤرکاتاءن جاوي باݢي انگک برايکوت: ١١ ، ١٣ ، ٢١ ، ٣٢ ، ٤٥ ، ٥٠.",
+   "soalan": "توليس ڤرکاتاءن جاوي باݢي اڠک برايکوت: ١١ ، ١٣ ، ٢١ ، ٣٢ ، ٤٥ ، ٥٠.",
    "rumi": "Tulis perkataan Jawi bagi angka berikut: 11, 13, 21, 32, 45, 50.",
    "idea": [
     {
@@ -4325,7 +4325,7 @@
    "bahagian": "D",
    "jenis": "tulis",
    "markah": 6,
-   "soalan": "توليس انگک جاوي باݢي ڤرکاتاءن برايکوت: سبلس، تيݢ بلاس، دوا ڤولوه ساتو، تيݢ ڤولوه دوا، امڤت ڤولوه ليم، ليم ڤولوه.",
+   "soalan": "توليس اڠک جاوي باݢي ڤرکاتاءن برايکوت: سبلس، تيݢ بلاس، دوا ڤولوه ساتو، تيݢ ڤولوه دوا، امڤت ڤولوه ليم، ليم ڤولوه.",
    "rumi": "Tulis angka Jawi bagi perkataan berikut: sebelas, tiga belas, dua puluh satu, tiga puluh dua, empat puluh lima, lima puluh.",
    "idea": [
     {
@@ -4389,7 +4389,7 @@
    "bahagian": "D",
    "jenis": "tulis",
    "markah": 5,
-   "soalan": "ناماکن الت خط باݢي ڤڠݢوناکن برايکوت: (i) مڠهاڤوس تليسن يڠ ساله (ii) منوليس خط (iii) مڠوکور ݢاريس لوروس (iv) مڠساڤ ورنا (v) مڠيڠݢکن داکوت.",
+   "soalan": "ناماکن الت خط باݢي ڤڠݢوناکن برايکوت: (i) مڠهاڤوس توليسن يڠ ساله (ii) منوليس خط (iii) مڠوکور ݢاريس لوروس (iv) مڽاڤو ورنا (v) مڽيمڤن داکوت.",
    "rumi": "Namakan alat khat bagi penggunaan berikut: (i) menghapuskan tulisan yang salah (ii) menulis khat (iii) mengukur garis lurus (iv) menyapu warna (v) menyimpan dakwat.",
    "idea": [
     {
@@ -4485,15 +4485,15 @@
      ]
     },
     {
-     "maksud": "Hikmat — حكمة",
+     "maksud": "Hikmat — حکمه",
      "kata": [
       "hikmat",
-      "حكمة"
+      "حکمه"
      ]
     }
    ],
    "jawapanContoh": [
-    "علمو، عمل، ظالم، انصاف، نعمة، حكمة"
+    "علمو، عمل، ظالم، انصاف، نعمة، حکمه"
    ],
    "jawapanContohRumi": [
     "ilmu, amal, zalim, insaf, nikmat, hikmat"
@@ -4555,7 +4555,7 @@
    "bahagian": "D",
    "jenis": "tulis",
    "markah": 5,
-   "soalan": "توليس تندا باچ باݢي ايات برايکوت: (i) دمان ايبو کامو تيڠݢل (ii) احمد داتڠله ک سيني سبنتار (iii) ساي هندق منوليس سورت ک ݢورو ساي (iv) اينله کاون-کاون ساي علي دان ابو (v) احمد ݢورو ساي ݢي ک سکوله.",
+   "soalan": "توليس تندا باچ باݢي ايات برايکوت: (i) دمان ايبو کامو تيڠݢل (ii) احمد داتڠله ک سيني سبنتار (iii) ساي هندق منوليس سورت کڤد ݢورو ساي (iv) اينله کاون-کاون ساي علي دان ابو (v) احمد ݢورو ساي ڤرݢي ک سکوله.",
    "rumi": "Tulis tanda baca bagi ayat berikut: (i) Di mana ibu kamu tinggal (ii) Ahmad datanglah ke sini sebentar (iii) Saya hendak menulis surat kepada guru saya (iv) Inilah kawan-kawan saya Ali dan Abu (v) Ahmad guru saya pergi ke sekolah.",
    "idea": [
     {

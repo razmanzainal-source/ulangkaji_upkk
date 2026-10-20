@@ -45,7 +45,7 @@
      "rumi": "Tempat kelahiran Nabi Muhammad ialah",
      "pilihan": [
       {
-       "teks": "مدينة",
+       "teks": "مدينه",
        "rumi": "Madinah"
       },
       {
@@ -56,7 +56,7 @@
      "jawapan": 1
     },
     {
-     "teks": "نبي محمد برعومور ______ کتيک ايبو بکيندا وفاة.",
+     "teks": "نبي محمد برعومور ______ کتيک ايبو بݢيندا وفاة.",
      "rumi": "Nabi Muhammad berumur ______ ketika ibu baginda wafat.",
      "pilihan": [
       {
@@ -81,7 +81,7 @@
    "markah": 4,
    "item": [
     {
-     "teks": "نام باف نبي محمد اياله",
+     "teks": "نام باڤ نبي محمد اياله",
      "rumi": "Nama bapa Nabi Muhammad ialah",
      "pilihan": [
       {
@@ -126,7 +126,7 @@
      "jawapan": 1
     },
     {
-     "teks": "نبي محمد دجاݢ اوليه باف ساوداراڽ يڠ برنام",
+     "teks": "نبي محمد دجاݢ اوليه باڤ ساوداراڽ يڠ برنام",
      "rumi": "Nabi Muhammad dijaga oleh bapa saudaranya yang bernama",
      "pilihan": [
       {
@@ -166,26 +166,26 @@
      "jawapan": 0
     },
     {
-     "teks": "سلفس ايبو بکيندا وفاة، نبي محمد دجاݢ اوليه",
+     "teks": "سلڤس ايبو بݢيندا وفاة، نبي محمد دجاݢ اوليه",
      "rumi": "Selepas ibu baginda wafat, Nabi Muhammad dijaga oleh",
      "pilihan": [
       {
-       "teks": "ايبو ساودارا بکيندا",
+       "teks": "ايبو ساودارا بݢيندا",
        "rumi": "ibu saudara baginda"
       },
       {
-       "teks": "داتوق بکيندا",
+       "teks": "داتوق بݢيندا",
        "rumi": "datuk baginda"
       }
      ],
      "jawapan": 1
     },
     {
-     "teks": "سلفس داتوق بکيندا وفاة، نبي محمد دجاݢ اوليه",
+     "teks": "سلڤس داتوق بݢيندا وفاة، نبي محمد دجاݢ اوليه",
      "rumi": "Selepas datuk baginda wafat, Nabi Muhammad dijaga oleh",
      "pilihan": [
       {
-       "teks": "باف ساوداراڽ ابو طالب",
+       "teks": "باڤ ساوداراڽ ابو طالب",
        "rumi": "bapa saudaranya Abu Talib"
       },
       {
@@ -236,11 +236,11 @@
      "jawapan": 1
     },
     {
-     "teks": "نبي محمد بکرجا سباݢاي ______ کتيک کوچيل.",
+     "teks": "نبي محمد بکرجا سباݢاي ______ کتيک کچيل.",
      "rumi": "Nabi Muhammad bekerja sebagai ______ ketika kecil.",
      "pilihan": [
       {
-       "teks": "ڤڠݢمبال کبيڠ",
+       "teks": "ڤڠݢمبال کمبيڠ",
        "rumi": "penggembala kambing"
       },
       {
@@ -251,7 +251,7 @@
      "jawapan": 0
     },
     {
-     "teks": "مودال ڤرنياݢاءن نبي محمد براصل داري",
+     "teks": "مودال ڤرنياݢاءن نبي محمد براصل درڤد",
      "rumi": "Modal perniagaan Nabi Muhammad berasal daripada",
      "pilihan": [
       {
@@ -280,7 +280,7 @@
      "rumi": "Nabi Muhammad berkahwin dengan Siti Khadijah ketika berumur",
      "pilihan": [
       {
-       "teks": "دوا ڤولوه ليما تاهون",
+       "teks": "دوا ڤولوه ليم تاهون",
        "rumi": "dua puluh lima tahun"
       },
       {
@@ -346,11 +346,11 @@
      "jawapan": 0
     },
     {
-     "teks": "ملايکة يڠ مڠمباکن وهيو کڤد نبي محمد اياله",
+     "teks": "ملايکة يڠ مڽمڤايکن وهيو کڤد نبي محمد اياله",
      "rumi": "Malaikat yang menyampaikan wahyu kepada Nabi Muhammad ialah",
      "pilihan": [
       {
-       "teks": "ميكائيل",
+       "teks": "ميکائيل",
        "rumi": "Mikail"
       },
       {
@@ -384,7 +384,7 @@
        "rumi": "Alhamdulillahi rabbil alamin"
       },
       {
-       "teks": "إقرأ باسم ربك",
+       "teks": "إقرأ باسم ربک",
        "rumi": "Iqra' bismi rabbik"
       }
      ],
@@ -416,7 +416,7 @@
      "jawapan": 0
     },
     {
-     "teks": "اورڠ ڤرتام يڠ منريم اسلام داري کالڠن ڤرمڤوان اياله",
+     "teks": "اورڠ ڤرتام يڠ منريم اسلام درڤد کالڠن ڤرمڤوان اياله",
      "rumi": "Orang pertama yang menerima Islam daripada kalangan perempuan ialah",
      "pilihan": [
       {
@@ -431,7 +431,7 @@
      "jawapan": 1
     },
     {
-     "teks": "نبي محمد مڠسوروهکن بهاݢين ڤڠيکوتڽ برهجرة ک",
+     "teks": "نبي محمد مڽوروهکن سبهاݢين ڤڠيکوتڽ برهجرة ک",
      "rumi": "Nabi Muhammad menyuruh sebahagian pengikutnya berhijrah ke",
      "pilihan": [
       {
@@ -439,7 +439,7 @@
        "rumi": "Habsyah"
       },
       {
-       "teks": "مدينة",
+       "teks": "مدينه",
        "rumi": "Madinah"
       }
      ],
@@ -464,7 +464,7 @@
        "rumi": "sepuluh"
       },
       {
-       "teks": "ليما",
+       "teks": "ليم",
        "rumi": "lima"
       }
      ],
@@ -479,7 +479,7 @@
        "rumi": "zakat"
       },
       {
-       "teks": "صلاة ليما وقتو",
+       "teks": "صلاة ليم وقتو",
        "rumi": "solat lima waktu"
       }
      ],
@@ -512,7 +512,7 @@
    "pasangan": [
     {
      "kiri": "عبد الله",
-     "kanan": "باف نبي محمد",
+     "kanan": "باڤ نبي محمد",
      "kiriRumi": "Abdullah",
      "kananRumi": "Bapa Nabi Muhammad"
     },
@@ -552,19 +552,19 @@
     },
     {
      "kiri": "ݢوا ثور",
-     "kanan": "تمڤت ڤرسيمڤنن کتيک هجرة",
+     "kanan": "تمڤت ڤرسمبونين کتيک هجره",
      "kiriRumi": "Gua Thur",
      "kananRumi": "Tempat persembunyian ketika hijrah"
     },
     {
-     "kiri": "مسجيد قباء",
-     "kanan": "مسجيد ڤرتام يڠ دبينا",
+     "kiri": "مسجد قباء",
+     "kanan": "مسجد ڤرتام يڠ دبينا",
      "kiriRumi": "Masjid Quba",
      "kananRumi": "Masjid pertama yang dibina"
     },
     {
-     "kiri": "مسجيد نبوي",
-     "kanan": "مسجيد يڠ دبينا د مدينة",
+     "kiri": "مسجد نبوي",
+     "kanan": "مسجد يڠ دبينا د مدينه",
      "kiriRumi": "Masjid Nabawi",
      "kananRumi": "Masjid yang dibina di Madinah"
     }
@@ -585,14 +585,14 @@
      "kananRumi": "Perang pertama orang Islam dengan Quraisy"
     },
     {
-     "kiri": "ڤرڠ أحد",
+     "kiri": "ڤرڠ احد",
      "kanan": "ڤرڠ يڠ مڽببکن حمزة شاهيم",
      "kiriRumi": "Perang Uhud",
      "kananRumi": "Perang yang menyebabkan Hamzah syahid"
     },
     {
      "kiri": "ڤرڠ خندق",
-     "kanan": "ڤرڠ يڠ مڠݢالي ڤاريت د سکيتر مدينة",
+     "kanan": "ڤرڠ يڠ مڠݢالي ڤاريت د سکيتر مدينه",
      "kiriRumi": "Perang Khandaq",
      "kananRumi": "Perang yang menggali parit di sekitar Madinah"
     }
@@ -613,14 +613,14 @@
      "kananRumi": "Benar dalam perkataan dan perbuatan"
     },
     {
-     "kiri": "أمانة",
+     "kiri": "امانه",
      "kanan": "بوليه ڤرچاي",
      "kiriRumi": "Amanah",
      "kananRumi": "Boleh dipercayai"
     },
     {
      "kiri": "تبليغ",
-     "kanan": "مڠمباکن ڤرينته الله",
+     "kanan": "مڽمڤايکن ڤرينته الله",
      "kiriRumi": "Tabligh",
      "kananRumi": "Menyampaikan perintah Allah"
     },
@@ -642,25 +642,25 @@
    "pasangan": [
     {
      "kiri": "ابو بکر الصديق",
-     "kanan": "صحابة يڠ مڠيريڠي نبي محمد کتيک هجرة",
+     "kanan": "صحابة يڠ مڠيريڠي نبي محمد کتيک هجره",
      "kiriRumi": "Abu Bakar as-Siddiq",
      "kananRumi": "Sahabat yang menemani Nabi Muhammad ketika hijrah"
     },
     {
      "kiri": "سلمان الفارسي",
-     "kanan": "ڤنجنترا ڤمبواءن ڤاريت دالم ڤرڠ خندق",
+     "kanan": "ڤنچادڠ ڤمبواءن ڤاريت دالم ڤرڠ خندق",
      "kiriRumi": "Salman al-Farisi",
      "kananRumi": "Pencadang pembinaan parit dalam Perang Khandaq"
     },
     {
-     "kiri": "سيدتينا خديجة",
+     "kiri": "سيتي خديجة",
      "kanan": "ايستري ڤرتام نبي محمد",
      "kiriRumi": "Siti Khadijah",
      "kananRumi": "Isteri pertama Nabi Muhammad"
     },
     {
      "kiri": "ابو طالب",
-     "kanan": "باف ساودارا نبي محمد",
+     "kanan": "باڤ ساودارا نبي محمد",
      "kiriRumi": "Abu Talib",
      "kananRumi": "Bapa saudara Nabi Muhammad"
     }
@@ -670,7 +670,7 @@
   {
    "bahagian": "A",
    "jenis": "betul_salah",
-   "soalan": "تنداکن (✓) ڤد ڤرپاتاءن يڠ بتول دان (✗) ڤد ڤرپاتاءن يڠ ساله.",
+   "soalan": "تنداکن (✓) ڤد ڤرڽاتاءن يڠ بتول دان (✗) ڤد ڤرڽاتاءن يڠ ساله.",
    "rumi": "Tandakan (✓) pada pernyataan yang betul dan (✗) pada pernyataan yang salah.",
    "markah": 4,
    "item": [
@@ -681,7 +681,7 @@
      "jawapan": -1
     },
     {
-     "teks": "باف نبي محمد برنام عبد المطلب.",
+     "teks": "باڤ نبي محمد برنام عبد المطلب.",
      "rumi": "Bapa Nabi Muhammad bernama Abdul Muttalib.",
      "betul": false,
      "jawapan": -1
@@ -704,7 +704,7 @@
   {
    "bahagian": "A",
    "jenis": "betul_salah",
-   "soalan": "تنداکن (✓) ڤد ڤرپاتاءن يڠ بتول دان (✗) ڤد ڤرپاتاءن يڠ ساله.",
+   "soalan": "تنداکن (✓) ڤد ڤرڽاتاءن يڠ بتول دان (✗) ڤد ڤرڽاتاءن يڠ ساله.",
    "rumi": "Tandakan (✓) pada pernyataan yang betul dan (✗) pada pernyataan yang salah.",
    "markah": 4,
    "item": [
@@ -715,13 +715,13 @@
      "jawapan": -1
     },
     {
-     "teks": "ايبو نبي محمد وفاة کتيک بکيندا برعومور انم تاهون.",
+     "teks": "ايبو نبي محمد وفاة کتيک بݢيندا برعومور انم تاهون.",
      "rumi": "Ibu Nabi Muhammad wafat ketika baginda berumur enam tahun.",
      "betul": true,
      "jawapan": -1
     },
     {
-     "teks": "نبي محمد دجاݢ اوليه ابو جهل سلفس داتوق بکيندا وفاة.",
+     "teks": "نبي محمد دجاݢ اوليه ابو جهل سلڤس داتوق بݢيندا وفاة.",
      "rumi": "Nabi Muhammad dijaga oleh Abu Jahal selepas datuk baginda wafat.",
      "betul": false,
      "jawapan": -1
@@ -738,7 +738,7 @@
   {
    "bahagian": "A",
    "jenis": "betul_salah",
-   "soalan": "تنداکن (✓) ڤد ڤرپاتاءن يڠ بتول دان (✗) ڤد ڤرپاتاءن يڠ ساله.",
+   "soalan": "تنداکن (✓) ڤد ڤرڽاتاءن يڠ بتول دان (✗) ڤد ڤرڽاتاءن يڠ ساله.",
    "rumi": "Tandakan (✓) pada pernyataan yang betul dan (✗) pada pernyataan yang salah.",
    "markah": 4,
    "item": [
@@ -755,7 +755,7 @@
      "jawapan": -1
     },
     {
-     "teks": "ملايکة جبريل مڠمباکن سورة العلق کڤد نبي محمد.",
+     "teks": "ملايکة جبريل مڽمڤايکن سورة العلق کڤد نبي محمد.",
      "rumi": "Malaikat Jibril menyampaikan surah Al-Alaq kepada Nabi Muhammad.",
      "betul": true,
      "jawapan": -1
@@ -772,24 +772,24 @@
   {
    "bahagian": "A",
    "jenis": "betul_salah",
-   "soalan": "تنداکن (✓) ڤد ڤرپاتاءن يڠ بتول دان (✗) ڤد ڤرپاتاءن يڠ ساله.",
+   "soalan": "تنداکن (✓) ڤد ڤرڽاتاءن يڠ بتول دان (✗) ڤد ڤرڽاتاءن يڠ ساله.",
    "rumi": "Tandakan (✓) pada pernyataan yang betul dan (✗) pada pernyataan yang salah.",
    "markah": 3,
    "item": [
     {
-     "teks": "نبي محمد برهجرة ک مدينة برسام ابو بکر الصديق.",
+     "teks": "نبي محمد برهجرة ک مدينه برسام ابو بکر الصديق.",
      "rumi": "Nabi Muhammad berhijrah ke Madinah bersama Abu Bakar as-Siddiq.",
      "betul": true,
      "jawapan": -1
     },
     {
-     "teks": "مسجيد قباء اداله مسجيد يڠ ڤرتام دبينا اوليه نبي محمد.",
+     "teks": "مسجد قباء اياله مسجد يڠ ڤرتام دبينا اوليه نبي محمد.",
      "rumi": "Masjid Quba ialah masjid yang pertama dibina oleh Nabi Muhammad.",
      "betul": true,
      "jawapan": -1
     },
     {
-     "teks": "ڤياݢم مدينة مڠاندوڠي ڤرجنجين انتارا اورڠ اسلام سهاج.",
+     "teks": "ڤياݢم مدينه مڠاندوڠي ڤرجنجين انتارا اورڠ اسلام سهاج.",
      "rumi": "Piagam Madinah mengandungi perjanjian antara orang Islam sahaja.",
      "betul": false,
      "jawapan": -1
@@ -859,7 +859,7 @@
    ],
    "item": [
     {
-     "teks": "باف نبي محمد برنام ____.",
+     "teks": "باڤ نبي محمد برنام ____.",
      "rumi": "Bapa Nabi Muhammad bernama ____.",
      "jawapan": -1
     },
@@ -874,7 +874,7 @@
      "jawapan": -1
     },
     {
-     "teks": "نبي محمد دجاݢ اوليه باف ساوداراڽ ____ سلفس داتوق بکيندا وفاة.",
+     "teks": "نبي محمد دجاݢ اوليه باڤ ساوداراڽ ____ سلڤس داتوق بݢيندا وفاة.",
      "rumi": "Nabi Muhammad dijaga oleh bapa saudaranya ____ selepas datuk baginda wafat.",
      "jawapan": -1
     }
@@ -906,12 +906,12 @@
      "jawapan": -1
     },
     {
-     "teks": "نبي محمد برکاهوين دڠن سيدتينا ____.",
+     "teks": "نبي محمد برکاهوين دڠن سيتي ____.",
      "rumi": "Nabi Muhammad berkahwin dengan Siti ____.",
      "jawapan": -1
     },
     {
-     "teks": "ملايکة ____ مڠمباکن وهيو کڤد نبي محمد.",
+     "teks": "ملايکة ____ مڽمڤايکن وهيو کڤد نبي محمد.",
      "rumi": "Malaikat ____ menyampaikan wahyu kepada Nabi Muhammad.",
      "jawapan": -1
     },
@@ -930,9 +930,9 @@
    "rumi": "Isi tempat kosong dengan perkataan yang diberi.",
    "markah": 3,
    "bank": [
-    "هجرة",
+    "هجره",
     "قباء",
-    "مدينة"
+    "مدينه"
    ],
    "bankRumi": [
     "hijrah",
@@ -941,12 +941,12 @@
    ],
    "item": [
     {
-     "teks": "نبي محمد مڠسوروهکن بهاݢين ڤڠيکوتڽ بر____ ک حبشة.",
+     "teks": "نبي محمد مڽوروهکن سبهاݢين ڤڠيکوتڽ بر____ ک حبشة.",
      "rumi": "Nabi Muhammad menyuruh sebahagian pengikutnya ber____ ke Habsyah.",
      "jawapan": -1
     },
     {
-     "teks": "مسجيد ____ اداله مسجيد يڠ ڤرتام دبينا اوليه نبي محمد.",
+     "teks": "مسجد ____ اياله مسجد يڠ ڤرتام دبينا اوليه نبي محمد.",
      "rumi": "Masjid ____ ialah masjid yang pertama dibina oleh Nabi Muhammad.",
      "jawapan": -1
     },
@@ -966,9 +966,9 @@
    "markah": 4,
    "bank": [
     "بدر",
-    "أحد",
+    "احد",
     "خندق",
-    "حديبية"
+    "هدايبه"
    ],
    "bankRumi": [
     "Badar",
@@ -988,7 +988,7 @@
      "jawapan": -1
     },
     {
-     "teks": "دالم ڤرڠ ____، اورڠ اسلام مڠݢالي ڤاريت د سکيتر مدينة.",
+     "teks": "دالم ڤرڠ ____، اورڠ اسلام مڠݢالي ڤاريت د سکيتر مدينه.",
      "rumi": "Dalam Perang ____, orang Islam menggali parit di sekitar Madinah.",
      "jawapan": -1
     },
@@ -1008,7 +1008,7 @@
    "markah": 4,
    "bank": [
     "وداع",
-    "مدينة",
+    "مدينه",
     "انم ڤولوه تيݢ",
     "قريش"
    ],
@@ -1020,7 +1020,7 @@
    ],
    "item": [
     {
-     "teks": "نبي محمد مڠرجاکن حاجي ____ ڤد تاهون کسڤولوه هجرة.",
+     "teks": "نبي محمد مڠرجاکن حاجي ____ ڤد تاهون کسڤولوه هجره.",
      "rumi": "Nabi Muhammad mengerjakan haji ____ pada tahun kesepuluh hijrah.",
      "jawapan": -1
     },
@@ -1035,7 +1035,7 @@
      "jawapan": -1
     },
     {
-     "teks": "سلفس ڤمبوکاءن مکه، نبي محمد مماعفکن اورڠ ____.",
+     "teks": "سلڤس ڤمبوکاءن مکه، نبي محمد مماعفکن اورڠ ____.",
      "rumi": "Selepas pembukaan Mekah, Nabi Muhammad memaafkan orang ____.",
      "jawapan": -1
     }
@@ -1058,7 +1058,7 @@
        "rumi": "Sabtu"
       },
       {
-       "teks": "أحد",
+       "teks": "احد",
        "rumi": "Ahad"
       },
       {
@@ -1120,7 +1120,7 @@
      "rumi": "",
      "pilihan": [
       {
-       "teks": "مدينة",
+       "teks": "مدينه",
        "rumi": "Madinah"
       },
       {
@@ -1165,7 +1165,7 @@
        "rumi": "Harimau"
       },
       {
-       "teks": "کبي",
+       "teks": "کمبيڠ",
        "rumi": "Kambing"
       }
      ],
@@ -1177,7 +1177,7 @@
   {
    "bahagian": "B",
    "jenis": "objektif",
-   "soalan": "نام باف نبي محمد اياله ______.",
+   "soalan": "نام باڤ نبي محمد اياله ______.",
    "rumi": "Nama bapa Nabi Muhammad ialah ______.",
    "markah": 1,
    "item": [
@@ -1309,7 +1309,7 @@
   {
    "bahagian": "B",
    "jenis": "objektif",
-   "soalan": "نبي محمد دجاݢ اوليه ______ سلفس داتوق بکيندا وفاة.",
+   "soalan": "نبي محمد دجاݢ اوليه ______ سلڤس داتوق بݢيندا وفاة.",
    "rumi": "Nabi Muhammad dijaga oleh ______ selepas datuk baginda wafat.",
    "markah": 1,
    "item": [
@@ -1342,7 +1342,7 @@
   {
    "bahagian": "B",
    "jenis": "objektif",
-   "soalan": "ايبو نبي محمد وفاة کتيک بکيندا برعومور ______.",
+   "soalan": "ايبو نبي محمد وفاة کتيک بݢيندا برعومور ______.",
    "rumi": "Ibu Nabi Muhammad wafat ketika baginda berumur ______.",
    "markah": 1,
    "item": [
@@ -1355,7 +1355,7 @@
        "rumi": "enam tahun"
       },
       {
-       "teks": "لڤن تاهون",
+       "teks": "لاڤن تاهون",
        "rumi": "lapan tahun"
       },
       {
@@ -1375,7 +1375,7 @@
   {
    "bahagian": "B",
    "jenis": "objektif",
-   "soalan": "نبي محمد برعومور ______ کتيک داتوق بکيندا وفاة.",
+   "soalan": "نبي محمد برعومور ______ کتيک داتوق بݢيندا وفاة.",
    "rumi": "Nabi Muhammad berumur ______ ketika datuk baginda wafat.",
    "markah": 1,
    "item": [
@@ -1392,7 +1392,7 @@
        "rumi": "enam tahun"
       },
       {
-       "teks": "لڤن تاهون",
+       "teks": "لاڤن تاهون",
        "rumi": "lapan tahun"
       },
       {
@@ -1441,7 +1441,7 @@
   {
    "bahagian": "B",
    "jenis": "objektif",
-   "soalan": "نبي محمد بکرجا سباݢاي ______ کتيک کوچيل.",
+   "soalan": "نبي محمد بکرجا سباݢاي ______ کتيک کچيل.",
    "rumi": "Nabi Muhammad bekerja sebagai ______ ketika kecil.",
    "markah": 1,
    "item": [
@@ -1450,7 +1450,7 @@
      "rumi": "",
      "pilihan": [
       {
-       "teks": "ڤڠݢمبال کبيڠ",
+       "teks": "ڤڠݢمبال کمبيڠ",
        "rumi": "penggembala kambing"
       },
       {
@@ -1491,7 +1491,7 @@
        "rumi": "dua belas tahun"
       },
       {
-       "teks": "لڤن تاهون",
+       "teks": "لاڤن تاهون",
        "rumi": "lapan tahun"
       },
       {
@@ -1507,7 +1507,7 @@
   {
    "bahagian": "B",
    "jenis": "objektif",
-   "soalan": "نبي محمد برکاهوين دڠن سيدتينا خديجة کتيک برعومور ______.",
+   "soalan": "نبي محمد برکاهوين دڠن سيتي خديجة کتيک برعومور ______.",
    "rumi": "Nabi Muhammad berkahwin dengan Siti Khadijah ketika berumur ______.",
    "markah": 1,
    "item": [
@@ -1528,7 +1528,7 @@
        "rumi": "empat puluh tahun"
       },
       {
-       "teks": "دوا ڤولوه ليما تاهون",
+       "teks": "دوا ڤولوه ليم تاهون",
        "rumi": "dua puluh lima tahun"
       }
      ],
@@ -1540,7 +1540,7 @@
   {
    "bahagian": "B",
    "jenis": "objektif",
-   "soalan": "عومور سيدتينا خديجة کتيک برکاهوين دڠن نبي محمد اياله ______.",
+   "soalan": "عومور سيتي خديجة کتيک برکاهوين دڠن نبي محمد اياله ______.",
    "rumi": "Umur Siti Khadijah ketika berkahwin dengan Nabi Muhammad ialah ______.",
    "markah": 1,
    "item": [
@@ -1549,7 +1549,7 @@
      "rumi": "",
      "pilihan": [
       {
-       "teks": "دوا ڤولوه ليما تاهون",
+       "teks": "دوا ڤولوه ليم تاهون",
        "rumi": "dua puluh lima tahun"
       },
       {
@@ -1573,7 +1573,7 @@
   {
    "bahagian": "B",
    "jenis": "objektif",
-   "soalan": "سيدتينا خديجة اداله ______ ڤرتام نبي محمد.",
+   "soalan": "سيتي خديجة اياله ______ ڤرتام نبي محمد.",
    "rumi": "Siti Khadijah ialah ______ pertama Nabi Muhammad.",
    "markah": 1,
    "item": [
@@ -1619,7 +1619,7 @@
        "rumi": "dua puluh tahun"
       },
       {
-       "teks": "تيݢ ڤولوه ليما تاهون",
+       "teks": "تيݢ ڤولوه ليم تاهون",
        "rumi": "tiga puluh lima tahun"
       },
       {
@@ -1714,7 +1714,7 @@
      "rumi": "",
      "pilihan": [
       {
-       "teks": "دوا ڤولوه ليما تاهون",
+       "teks": "دوا ڤولوه ليم تاهون",
        "rumi": "dua puluh lima tahun"
       },
       {
@@ -1738,7 +1738,7 @@
   {
    "bahagian": "B",
    "jenis": "objektif",
-   "soalan": "ملايکة يڠ مڠمباکن وهيو کڤد نبي محمد اياله ______.",
+   "soalan": "ملايکة يڠ مڽمڤايکن وهيو کڤد نبي محمد اياله ______.",
    "rumi": "Malaikat yang menyampaikan wahyu kepada Nabi Muhammad ialah ______.",
    "markah": 1,
    "item": [
@@ -1751,11 +1751,11 @@
        "rumi": "Jibril"
       },
       {
-       "teks": "ميكائيل",
+       "teks": "ميکائيل",
        "rumi": "Mikail"
       },
       {
-       "teks": "إسرافيل",
+       "teks": "اسرافيل",
        "rumi": "Israfil"
       },
       {
@@ -1817,11 +1817,11 @@
        "rumi": "Alhamdulillahi rabbil alamin"
       },
       {
-       "teks": "قل هو الله أحد",
+       "teks": "قل هو الله احد",
        "rumi": "Qul huwallahu ahad"
       },
       {
-       "teks": "إقرأ باسم ربك",
+       "teks": "إقرأ باسم ربک",
        "rumi": "Iqra' bismi rabbik"
       },
       {
@@ -1903,7 +1903,7 @@
   {
    "bahagian": "B",
    "jenis": "objektif",
-   "soalan": "کاءوم يڠ مننتڠ دعوة نبي محمد د مکه اياله کاءوم ______.",
+   "soalan": "قوم يڠ مننتڠ دعوة نبي محمد د مکه اياله قوم ______.",
    "rumi": "Kaum yang menentang dakwah Nabi Muhammad di Mekah ialah kaum ______.",
    "markah": 1,
    "item": [
@@ -1936,7 +1936,7 @@
   {
    "bahagian": "B",
    "jenis": "objektif",
-   "soalan": "نبي محمد مڠسوروهکن بهاݢين ڤڠيکوتڽ برهجرة ک ______.",
+   "soalan": "نبي محمد مڽوروهکن سبهاݢين ڤڠيکوتڽ برهجرة ک ______.",
    "rumi": "Nabi Muhammad menyuruh sebahagian pengikutnya berhijrah ke ______.",
    "markah": 1,
    "item": [
@@ -1978,7 +1978,7 @@
      "rumi": "",
      "pilihan": [
       {
-       "teks": "هرقل",
+       "teks": "هرکوليس",
        "rumi": "Hercules"
       },
       {
@@ -2015,11 +2015,11 @@
        "rumi": "sepuluh"
       },
       {
-       "teks": "ليما",
+       "teks": "ليم",
        "rumi": "lima"
       },
       {
-       "teks": "لڤن",
+       "teks": "لاڤن",
        "rumi": "lapan"
       },
       {
@@ -2044,11 +2044,11 @@
      "rumi": "",
      "pilihan": [
       {
-       "teks": "ڤواس رمضان",
+       "teks": "ڤواسا رمضان",
        "rumi": "puasa Ramadan"
       },
       {
-       "teks": "صلاة ليما وقتو",
+       "teks": "صلاة ليم وقتو",
        "rumi": "solat lima waktu"
       },
       {
@@ -2101,7 +2101,7 @@
   {
    "bahagian": "B",
    "jenis": "objektif",
-   "soalan": "نبي محمد برهجرة ک مدينة برسام ______.",
+   "soalan": "نبي محمد برهجرة ک مدينه برسام ______.",
    "rumi": "Nabi Muhammad berhijrah ke Madinah bersama ______.",
    "markah": 1,
    "item": [
@@ -2134,7 +2134,7 @@
   {
    "bahagian": "B",
    "jenis": "objektif",
-   "soalan": "نبي محمد برسيمڤن د ݢوا ______ کتيک برهجرة.",
+   "soalan": "نبي محمد برسمبوني د ݢوا ______ کتيک برهجرة.",
    "rumi": "Nabi Muhammad bersembunyi di Gua ______ ketika berhijrah.",
    "markah": 1,
    "item": [
@@ -2167,7 +2167,7 @@
   {
    "bahagian": "B",
    "jenis": "objektif",
-   "soalan": "مسجيد ڤرتام يڠ دبينا اوليه نبي محمد اياله مسجيد ______.",
+   "soalan": "مسجد ڤرتام يڠ دبينا اوليه نبي محمد اياله مسجد ______.",
    "rumi": "Masjid pertama yang dibina oleh Nabi Muhammad ialah Masjid ______.",
    "markah": 1,
    "item": [
@@ -2200,7 +2200,7 @@
   {
    "bahagian": "B",
    "jenis": "objektif",
-   "soalan": "نبي محمد ممبينا مسجيد ______ د مدينة.",
+   "soalan": "نبي محمد ممبينا مسجد ______ د مدينه.",
    "rumi": "Nabi Muhammad membina Masjid ______ di Madinah.",
    "markah": 1,
    "item": [
@@ -2233,7 +2233,7 @@
   {
    "bahagian": "B",
    "jenis": "objektif",
-   "soalan": "ڤياݢم مدينة دبوات اونتوق مڠاتور هوبوڠن اورڠ اسلام د مدينة دڠن ______.",
+   "soalan": "ڤياݢم مدينه دبوات اونتوق مڠاتور هوبوڠن اورڠ اسلام د مدينه دڠن ______.",
    "rumi": "Piagam Madinah dibuat untuk mengatur hubungan orang Islam di Madinah dengan ______.",
    "markah": 1,
    "item": [
@@ -2246,7 +2246,7 @@
        "rumi": "Quraisy"
       },
       {
-       "teks": "فارس",
+       "teks": "ڤرسي",
        "rumi": "Parsi"
       },
       {
@@ -2266,7 +2266,7 @@
   {
    "bahagian": "B",
    "jenis": "objektif",
-   "soalan": "ڤرڠ ______ اداله ڤرڠ ڤرتام انتارا اورڠ اسلام دان قريش.",
+   "soalan": "ڤرڠ ______ اياله ڤرڠ ڤرتام انتارا اورڠ اسلام دان قريش.",
    "rumi": "Perang ______ ialah perang pertama antara orang Islam dan Quraisy.",
    "markah": 1,
    "item": [
@@ -2275,7 +2275,7 @@
      "rumi": "",
      "pilihan": [
       {
-       "teks": "أحد",
+       "teks": "احد",
        "rumi": "Uhud"
       },
       {
@@ -2287,7 +2287,7 @@
        "rumi": "Khandaq"
       },
       {
-       "teks": "تبوك",
+       "teks": "تابک",
        "rumi": "Tabuk"
       }
      ],
@@ -2308,7 +2308,7 @@
      "rumi": "",
      "pilihan": [
       {
-       "teks": "ساتوس تيݢ بلاس",
+       "teks": "سيراتوس تيݢ بلاس",
        "rumi": "seratus tiga belas"
       },
       {
@@ -2341,7 +2341,7 @@
      "rumi": "",
      "pilihan": [
       {
-       "teks": "أحد",
+       "teks": "احد",
        "rumi": "Uhud"
       },
       {
@@ -2378,7 +2378,7 @@
        "rumi": "Badar"
       },
       {
-       "teks": "أحد",
+       "teks": "احد",
        "rumi": "Uhud"
       },
       {
@@ -2398,7 +2398,7 @@
   {
    "bahagian": "B",
    "jenis": "objektif",
-   "soalan": "ڤنجنترا ڤمبواءن ڤاريت دالم ڤرڠ خندق اياله ______.",
+   "soalan": "ڤنچادڠ ڤمبيناءن ڤاريت دالم ڤرڠ خندق اياله ______.",
    "rumi": "Pencadang pembinaan parit dalam Perang Khandaq ialah ______.",
    "markah": 1,
    "item": [
@@ -2440,15 +2440,15 @@
      "rumi": "",
      "pilihan": [
       {
-       "teks": "حديبية",
+       "teks": "هدايبه",
        "rumi": "Hudaibiyah"
       },
       {
-       "teks": "تبوك",
+       "teks": "تابک",
        "rumi": "Tabuk"
       },
       {
-       "teks": "أحد",
+       "teks": "احد",
        "rumi": "Uhud"
       },
       {
@@ -2497,7 +2497,7 @@
   {
    "bahagian": "B",
    "jenis": "objektif",
-   "soalan": "نبي محمد مڠرجاکن حاجي ______ ڤد تاهون کسڤولوه هجرة.",
+   "soalan": "نبي محمد مڠرجاکن حاجي ______ ڤد تاهون کسڤولوه هجره.",
    "rumi": "Nabi Muhammad mengerjakan haji ______ pada tahun kesepuluh hijrah.",
    "markah": 1,
    "item": [
@@ -2547,7 +2547,7 @@
        "rumi": "Taif"
       },
       {
-       "teks": "مدينة",
+       "teks": "مدينه",
        "rumi": "Madinah"
       },
       {
@@ -2572,7 +2572,7 @@
      "rumi": "",
      "pilihan": [
       {
-       "teks": "ليما ڤولوه",
+       "teks": "ليم ڤولوه",
        "rumi": "lima puluh"
       },
       {
@@ -2580,7 +2580,7 @@
        "rumi": "enam puluh"
       },
       {
-       "teks": "لڤن ڤولوه",
+       "teks": "لاڤن ڤولوه",
        "rumi": "lapan puluh"
       },
       {
@@ -2605,7 +2605,7 @@
      "rumi": "",
      "pilihan": [
       {
-       "teks": "أمانة",
+       "teks": "امانه",
        "rumi": "Amanah"
       },
       {
@@ -2638,7 +2638,7 @@
      "rumi": "",
      "pilihan": [
       {
-       "teks": "أمانة",
+       "teks": "امانه",
        "rumi": "Amanah"
       },
       {
@@ -2662,7 +2662,7 @@
   {
    "bahagian": "B",
    "jenis": "objektif",
-   "soalan": "انتارا اخلاق نبي محمد، بکيندا سلاولو ______ کڤد اورڠ يڠ مڽکيت بکيندا.",
+   "soalan": "انتارا اخلاق نبي محمد، بݢيندا سلالو ______ کڤد اورڠ يڠ مڽکيت بݢيندا.",
    "rumi": "Antara akhlak Nabi Muhammad, baginda selalu ______ kepada orang yang menyakiti baginda.",
    "markah": 1,
    "item": [
@@ -3022,7 +3022,7 @@
   {
    "bahagian": "C",
    "jenis": "tulis",
-   "soalan": "ڽاتاکن سمبيلن بنتوق تنتڠن کأوم قريش ترهادڤ داکوه نبي محمد.",
+   "soalan": "ڽاتاکن سمبيلن بنتوق تنتڠن قوم قريش ترهادڤ داکوه نبي محمد.",
    "rumi": "Nyatakan sembilan bentuk tentangan kaum Quraisy terhadap dakwah Nabi Muhammad.",
    "markah": 9,
    "idea": [
@@ -3168,7 +3168,7 @@
   {
    "bahagian": "C",
    "jenis": "tulis",
-   "soalan": "ڽاتاکن انم چارا نبي محمد مڠهادڤي تنتڠن کأوم قريش.",
+   "soalan": "ڽاتاکن انم چارا نبي محمد مڠهادڤي تنتڠن قوم قريش.",
    "rumi": "Nyatakan enam cara Nabi Muhammad menghadapi tentangan kaum Quraisy.",
    "markah": 6,
    "idea": [
@@ -3267,7 +3267,7 @@
   {
    "bahagian": "C",
    "jenis": "tulis",
-   "soalan": "برايکن انم سبب کأوم قريش منولق داکوه نبي محمد.",
+   "soalan": "بريکن انم سبب قوم قريش منولق داکوه نبي محمد.",
    "rumi": "Berikan enam sebab kaum Quraisy menolak dakwah Nabi Muhammad.",
    "markah": 6,
    "idea": [
@@ -3364,7 +3364,7 @@
   {
    "bahagian": "C",
    "jenis": "tulis",
-   "soalan": "برايکن لاڤن حكمه ڤريستيوا إسراء دان معراج.",
+   "soalan": "بريکن لاڤن حکمه ڤريستيوا إسراء دان معراج.",
    "rumi": "Berikan lapan hikmah peristiwa Isra' dan Mikraj.",
    "markah": 8,
    "idea": [
@@ -3805,7 +3805,7 @@
   {
    "bahagian": "C",
    "jenis": "tulis",
-   "soalan": "برايکن انم کڤنتيڠن ڤياݢم مدينه.",
+   "soalan": "بريکن انم کڤنتيڠن ڤياݢم مدينه.",
    "rumi": "Berikan enam kepentingan Piagam Madinah.",
    "markah": 6,
    "idea": [
@@ -3900,7 +3900,7 @@
   {
    "bahagian": "C",
    "jenis": "tulis",
-   "soalan": "برايکن توجوه سبب کمنأڠن امت اسلام دالم ڤرڠ بدر.",
+   "soalan": "بريکن توجوه سبب کمنڠن امت اسلام دالم ڤرڠ بدر.",
    "rumi": "Berikan tujuh sebab kemenangan umat Islam dalam Perang Badar.",
    "markah": 7,
    "idea": [
@@ -4000,7 +4000,7 @@
   {
    "bahagian": "C",
    "jenis": "tulis",
-   "soalan": "برايکن لاڤن ڤڠاجرن درڤد ڤرڠ احد.",
+   "soalan": "بريکن لاڤن ڤڠاجرن درڤد ڤرڠ احد.",
    "rumi": "Berikan lapan pengajaran daripada Perang Uhud.",
    "markah": 8,
    "idea": [
@@ -4245,7 +4245,7 @@
   {
    "bahagian": "C",
    "jenis": "tulis",
-   "soalan": "برايکن انم حكمه ڤرجنجين هدايبه.",
+   "soalan": "بريکن انم حکمه ڤرجنجين هدايبه.",
    "rumi": "Berikan enam hikmah Perjanjian Hudaibiyah.",
    "markah": 6,
    "idea": [
@@ -4341,7 +4341,7 @@
   {
    "bahagian": "C",
    "jenis": "tulis",
-   "soalan": "ڽاتاکن توجوه ڤريستيوا کتيک ڤمبوکاءن مکة.",
+   "soalan": "ڽاتاکن توجوه ڤريستيوا کتيک ڤمبوکاءن مکه.",
    "rumi": "Nyatakan tujuh peristiwa ketika pembukaan Mekah.",
    "markah": 7,
    "idea": [
@@ -4633,7 +4633,7 @@
       "dermawan",
       "ڤموراه",
       "درموان",
-      "سوكا",
+      "سوکا",
       "ممبري",
       "سدقه"
      ]
@@ -4660,7 +4660,7 @@
     "٥. ڤماءف — مماءفکن کسالهن اورڠ.",
     "٦. ڤڽايڠ — سايڠ اکن کلوارݢ دان کانق-کانق.",
     "٧. صبر مڠهادڤي تنتڠن دان اوجين.",
-    "٨. ڤموراه دان درموان — سوكا ممبري سدقه.",
+    "٨. ڤموراه دان درموان — سوکا ممبري سدقه.",
     "٩. عادل کفد سموا اورڠ تنڤا مڠيرا ڤڠکت."
    ],
    "jawapanContohRumi": [
@@ -4773,7 +4773,7 @@
   {
    "bahagian": "C",
    "jenis": "tulis",
-   "soalan": "برايکن انم ڤرکارا يڠ دلاکوکن نبي محمد سلڤس تيبا د مدينه.",
+   "soalan": "بريکن انم ڤرکارا يڠ دلاکوکن نبي محمد سلڤس تيبا د مدينه.",
    "rumi": "Berikan enam perkara yang dilakukan Nabi Muhammad selepas tiba di Madinah.",
    "markah": 6,
    "idea": [
@@ -5019,7 +5019,7 @@
   {
    "bahagian": "D",
    "jenis": "huraian",
-   "soalan": "هوارايکن سڤولوه بنتوق تنتڠن کأوم قريش ترهادڤ داکوه نبي محمد.",
+   "soalan": "هوارايکن سڤولوه بنتوق تنتڠن قوم قريش ترهادڤ داکوه نبي محمد.",
    "rumi": "Huraikan sepuluh bentuk tentangan kaum Quraisy terhadap dakwah Nabi Muhammad.",
    "markah": 10,
    "idea": [
@@ -5312,7 +5312,7 @@
   {
    "bahagian": "D",
    "jenis": "huraian",
-   "soalan": "هوارايکن سڤولوه حكمه هجره نبي محمد ک مدينه.",
+   "soalan": "هوارايکن سڤولوه حکمه هجره نبي محمد ک مدينه.",
    "rumi": "Huraikan sepuluh hikmah hijrah Nabi Muhammad ke Madinah.",
    "markah": 10,
    "idea": [
@@ -5383,7 +5383,7 @@
      "maksud": "Ekonomi umat Islam semakin maju",
      "kata": [
       "ekonomi",
-      "ايكونومي",
+      "ايکونومي",
       "ماجو",
       "سماکين"
      ]
@@ -5428,7 +5428,7 @@
     "٤. ڤرڤادوان انتارا مهاجرين دان انصار.",
     "٥. مسجد نبوي منجادي ڤوست عبادت دان ڤنتدبيرن.",
     "٦. لاهيرڽ ڤياݢم مدينه.",
-    "٧. ايكونومي امت اسلام سماکين ماجو.",
+    "٧. ايکونومي امت اسلام سماکين ماجو.",
     "٨. امت اسلام منجادي کواس دان دسݢاني.",
     "٩. برمولاڽ کاليندر هجره.",
     "١٠. نبي داڤت برداکوه دڠن بياس."
@@ -5450,7 +5450,7 @@
   {
    "bahagian": "D",
    "jenis": "huraian",
-   "soalan": "هوارايکن سڤولوه ڤريستيوا کتيک ڤمبوکاءن مکة.",
+   "soalan": "هوارايکن سڤولوه ڤريستيوا کتيک ڤمبوکاءن مکه.",
    "rumi": "Huraikan sepuluh peristiwa ketika pembukaan Mekah.",
    "markah": 10,
    "idea": [
@@ -5592,7 +5592,7 @@
   {
    "bahagian": "D",
    "jenis": "huraian",
-   "soalan": "هوارايکن سڤولوه سبب کمنأڠن امت اسلام دالم ڤرڠ بدر.",
+   "soalan": "هوارايکن سڤولوه سبب کمنڠن امت اسلام دالم ڤرڠ بدر.",
    "rumi": "Huraikan sepuluh sebab kemenangan umat Islam dalam Perang Badar.",
    "markah": 10,
    "idea": [
@@ -6447,7 +6447,7 @@
   {
    "bahagian": "D",
    "jenis": "huraian",
-   "soalan": "هوارايکن سڤولوه ڤريستيوا برکايتن کوفاتن نبي محمد.",
+   "soalan": "هوارايکن سڤولوه ڤريستيوا برکاءيتن کوفاتن نبي محمد.",
    "rumi": "Huraikan sepuluh peristiwa berkaitan kewafatan Nabi Muhammad.",
    "markah": 10,
    "idea": [

@@ -75,7 +75,7 @@
      "rumi": "Sifat Iradat bermaksud",
      "pilihan": [
       {
-       "teks": "برکأندهق",
+       "teks": "برکهندق",
        "rumi": "berkehendak"
       },
       {
@@ -86,7 +86,7 @@
      "jawapan": 0
     },
     {
-     "teks": "صيفت كلام برمقصود",
+     "teks": "صيفت کلام برمقصود",
      "rumi": "Sifat Kalam bermaksud",
      "pilihan": [
       {
@@ -111,7 +111,7 @@
    "markah": 6,
    "item": [
     {
-     "teks": "ماءنا «الحمد لله» اياله",
+     "teks": "مقصود «الحمد لله» اياله",
      "rumi": "Maksud «Alhamdulillah» ialah",
      "pilihan": [
       {
@@ -126,7 +126,7 @@
      "jawapan": 1
     },
     {
-     "teks": "ماءنا «الله أكبر» اياله",
+     "teks": "مقصود «الله اکبر» اياله",
      "rumi": "Maksud «Allahu Akbar» ialah",
      "pilihan": [
       {
@@ -141,7 +141,7 @@
      "jawapan": 0
     },
     {
-     "teks": "ماءنا «سبحان الله» اياله",
+     "teks": "مقصود «سبحان الله» اياله",
      "rumi": "Maksud «Subhanallah» ialah",
      "pilihan": [
       {
@@ -149,14 +149,14 @@
        "rumi": "Maha Suci Allah"
       },
       {
-       "teks": "تياد دايا دان اوفايا ملاينکن دڠن الله",
+       "teks": "تياد دايا دان اوڤاي ملاينکن دڠن الله",
        "rumi": "tiada daya dan upaya melainkan dengan Allah"
       }
      ],
      "jawapan": 0
     },
     {
-     "teks": "ماءنا «لا حول ولا قوة إلا بالله» اياله",
+     "teks": "مقصود «لا حول ولا قوة إلا بالله» اياله",
      "rumi": "Maksud «La hawla wa la quwwata illa billah» ialah",
      "pilihan": [
       {
@@ -164,14 +164,14 @@
        "rumi": "segala puji bagi Allah"
       },
       {
-       "teks": "تياد دايا دان اوفايا ملاينکن دڠن الله",
+       "teks": "تياد دايا دان اوڤاي ملاينکن دڠن الله",
        "rumi": "tiada daya dan upaya melainkan dengan Allah"
       }
      ],
      "jawapan": 1
     },
     {
-     "teks": "ماءنا «لا إله إلا الله» اياله",
+     "teks": "مقصود «لا إله إلا الله» اياله",
      "rumi": "Maksud «La ilaha illallah» ialah",
      "pilihan": [
       {
@@ -186,7 +186,7 @@
      "jawapan": 0
     },
     {
-     "teks": "ماءنا «محمد رسول الله» اياله",
+     "teks": "مقصود «محمد رسول الله» اياله",
      "rumi": "Maksud «Muhammadur Rasulullah» ialah",
      "pilihan": [
       {
@@ -215,7 +215,7 @@
      "rumi": "Malaikat Jibril bertugas",
      "pilihan": [
       {
-       "teks": "مڠمباکن وهيو",
+       "teks": "مڽمڤايکن وهيو",
        "rumi": "menyampaikan wahyu"
       },
       {
@@ -226,7 +226,7 @@
      "jawapan": 0
     },
     {
-     "teks": "ملايکة ميكائيل برتوݢس",
+     "teks": "ملايکة ميکائيل برتوݢس",
      "rumi": "Malaikat Mikail bertugas",
      "pilihan": [
       {
@@ -241,7 +241,7 @@
      "jawapan": 1
     },
     {
-     "teks": "ملايکة إسرافيل برتوݢس",
+     "teks": "ملايکة اسرافيل برتوݢس",
      "rumi": "Malaikat Israfil bertugas",
      "pilihan": [
       {
@@ -260,7 +260,7 @@
      "rumi": "Malaikat Izrail bertugas",
      "pilihan": [
       {
-       "teks": "مڠمباکن وهيو",
+       "teks": "مڽمڤايکن وهيو",
        "rumi": "menyampaikan wahyu"
       },
       {
@@ -271,7 +271,7 @@
      "jawapan": 1
     },
     {
-     "teks": "ملايکة مالك منجاݢ",
+     "teks": "ملايکة مالک منجاݢ",
      "rumi": "Malaikat Malik menjaga",
      "pilihan": [
       {
@@ -326,7 +326,7 @@
      "jawapan": 1
     },
     {
-     "teks": "کتاب إنجيل دتورونکن کڤد",
+     "teks": "کتاب انجيل دتورونکن کڤد",
      "rumi": "Kitab Injil diturunkan kepada",
      "pilihan": [
       {
@@ -356,7 +356,7 @@
      "jawapan": 1
     },
     {
-     "teks": "کتاب يڠ ڤاليڠ اخير اداله",
+     "teks": "کتاب يڠ ڤاليڠ اخير اياله",
      "rumi": "Kitab yang paling akhir ialah",
      "pilihan": [
       {
@@ -387,8 +387,8 @@
      "kananRumi": "Ada"
     },
     {
-     "kiri": "قديم",
-     "kanan": "سديا اد تيدا ڤرمولاءن",
+     "kiri": "قيدم",
+     "kanan": "سديا اد تياد ڤرمولاءن",
      "kiriRumi": "Qidam",
      "kananRumi": "Sedia ada, tiada permulaan"
     },
@@ -467,8 +467,8 @@
      "kananRumi": "Menjaga pintu syurga"
     },
     {
-     "kiri": "راقيب",
-     "kanan": "منچتت عملن بائيک",
+     "kiri": "رقيب",
+     "kanan": "منچتت عملن باءيق",
      "kiriRumi": "Raqib",
      "kananRumi": "Mencatat amalan baik"
     },
@@ -479,7 +479,7 @@
      "kananRumi": "Mencatat amalan jahat"
     },
     {
-     "kiri": "منكر دان نكير",
+     "kiri": "منکر دان ناکير",
      "kanan": "مڽوال ماءنسي دالم قبر",
      "kiriRumi": "Munkar dan Nakir",
      "kananRumi": "Menyoal manusia di dalam kubur"
@@ -490,7 +490,7 @@
   {
    "bahagian": "A",
    "jenis": "betul_salah",
-   "soalan": "تنداکن (✓) ڤد ڤرپاتاءن يڠ بتول دان (✗) ڤد ڤرپاتاءن يڠ ساله.",
+   "soalan": "تنداکن (✓) ڤد ڤرڽاتاءن يڠ بتول دان (✗) ڤد ڤرڽاتاءن يڠ ساله.",
    "rumi": "Tandakan (✓) pada pernyataan yang betul dan (✗) pada pernyataan yang salah.",
    "markah": 6,
    "item": [
@@ -507,25 +507,25 @@
      "jawapan": -1
     },
     {
-     "teks": "کتاب إنجيل دتورونکن کڤد نبي عيسى.",
+     "teks": "کتاب انجيل دتورونکن کڤد نبي عيسى.",
      "rumi": "Kitab Injil diturunkan kepada Nabi Isa.",
      "betul": true,
      "jawapan": -1
     },
     {
-     "teks": "القرءان اداله کتاب يڠ ڤرتام.",
+     "teks": "القرءان اياله کتاب يڠ ڤرتام.",
      "rumi": "Al-Quran ialah kitab yang pertama.",
      "betul": false,
      "jawapan": -1
     },
     {
-     "teks": "ڤرچاي کڤد قضاء دان قدر اداله رکن ايمان يڠ کانم.",
+     "teks": "ڤرچاي کڤد قضاء دان قدر اياله رکن ايمان يڠ کانم.",
      "rumi": "Percaya kepada qada dan qadar ialah rukun iman yang keenam.",
      "betul": true,
      "jawapan": -1
     },
     {
-     "teks": "نبي محمد اداله رسول يڠ ڤرتام.",
+     "teks": "نبي محمد اياله رسول يڠ ڤرتام.",
      "rumi": "Nabi Muhammad ialah rasul yang pertama.",
      "betul": false,
      "jawapan": -1
@@ -536,36 +536,36 @@
   {
    "bahagian": "A",
    "jenis": "betul_salah",
-   "soalan": "تنداکن (✓) ڤد ڤرپاتاءن يڠ بتول دان (✗) ڤد ڤرپاتاءن يڠ ساله.",
+   "soalan": "تنداکن (✓) ڤد ڤرڽاتاءن يڠ بتول دان (✗) ڤد ڤرڽاتاءن يڠ ساله.",
    "rumi": "Tandakan (✓) pada pernyataan yang betul dan (✗) pada pernyataan yang salah.",
    "markah": 5,
    "item": [
     {
-     "teks": "عالم برزخ اداله عالم انتارا دنيا دان اخيرت.",
+     "teks": "عالم برزخ اياله عالم انتارا دنيا دان اخيرت.",
      "rumi": "Alam barzakh ialah alam antara dunia dan akhirat.",
      "betul": true,
      "jawapan": -1
     },
     {
-     "teks": "منكر دان نكير مڽوال ماءنسي دالم قبر.",
+     "teks": "منکر دان ناکير مڽوال ماءنسي دالم قبر.",
      "rumi": "Munkar dan Nakir menyoal manusia di dalam kubur.",
      "betul": true,
      "jawapan": -1
     },
     {
-     "teks": "شورݢ اداله بالسن باݢي اورڠ يڠ کافر.",
+     "teks": "شورݢ اياله بالسن باݢي اورڠ يڠ کافر.",
      "rumi": "Syurga ialah balasan bagi orang yang kafir.",
      "betul": false,
      "jawapan": -1
     },
     {
-     "teks": "کليمة شهادة دأوچڤکن کتيک ماسوق اسلام.",
+     "teks": "کليمه شهادة دأوچڤکن کتيک ماسوق اسلام.",
      "rumi": "Kalimah syahadah diucapkan ketika masuk Islam.",
      "betul": true,
      "jawapan": -1
     },
     {
-     "teks": "شريک اداله ڤربواتن مڠساکن الله.",
+     "teks": "شريک اياله ڤربواتن مڠساکن الله.",
      "rumi": "Syirik ialah perbuatan mengesakan Allah.",
      "betul": false,
      "jawapan": -1
@@ -576,7 +576,7 @@
   {
    "bahagian": "A",
    "jenis": "betul_salah",
-   "soalan": "تنداکن (✓) ڤد ڤرپاتاءن يڠ بتول دان (✗) ڤد ڤرپاتاءن يڠ ساله.",
+   "soalan": "تنداکن (✓) ڤد ڤرڽاتاءن يڠ بتول دان (✗) ڤد ڤرڽاتاءن يڠ ساله.",
    "rumi": "Tandakan (✓) pada pernyataan yang betul dan (✗) pada pernyataan yang salah.",
    "markah": 4,
    "item": [
@@ -599,7 +599,7 @@
      "jawapan": -1
     },
     {
-     "teks": "کيت بوليه برزکير دالم مسجيد سهاج.",
+     "teks": "کيت بوليه برزکير دالم مسجد سهاج.",
      "rumi": "Kita boleh berzikir di dalam masjid sahaja.",
      "betul": false,
      "jawapan": -1
@@ -627,22 +627,22 @@
    ],
    "item": [
     {
-     "teks": "ماءنا «لا إله إلا الله» اياله تياد توهن ملاينکن ____.",
+     "teks": "مقصود «لا إله إلا الله» اياله تياد توهن ملاينکن ____.",
      "rumi": "Maksud «La ilaha illallah» ialah tiada Tuhan melainkan ____.",
      "jawapan": -1
     },
     {
-     "teks": "ماءنا «محمد رسول الله» اياله نبي ____ ڤسوروه الله.",
+     "teks": "مقصود «محمد رسول الله» اياله نبي ____ ڤسوروه الله.",
      "rumi": "Maksud «Muhammadur Rasulullah» ialah Nabi ____ pesuruh Allah.",
      "jawapan": -1
     },
     {
-     "teks": "کليمة ____ دأوچڤکن کتيک ماسوق اسلام.",
+     "teks": "کليمه ____ دأوچڤکن کتيک ماسوق اسلام.",
      "rumi": "Kalimah ____ diucapkan ketika masuk Islam.",
      "jawapan": -1
     },
     {
-     "teks": "کليمة شهادة مڠاندوڠي ____ بهاݢين.",
+     "teks": "کليمه شهادة مڠاندوڠي ____ بهاݢين.",
      "rumi": "Kalimah syahadah mengandungi ____ bahagian.",
      "jawapan": -1
     }
@@ -657,7 +657,7 @@
    "markah": 5,
    "bank": [
     "موسى",
-    "إنجيل",
+    "انجيل",
     "القرءان",
     "جبريل",
     "محمد"
@@ -686,12 +686,12 @@
      "jawapan": -1
     },
     {
-     "teks": "ملايکة ____ برتوݢس مڠمباکن وهيو.",
+     "teks": "ملايکة ____ برتوݢس مڽمڤايکن وهيو.",
      "rumi": "Malaikat ____ bertugas menyampaikan wahyu.",
      "jawapan": -1
     },
     {
-     "teks": "نبي ____ اداله نبي يڠ منريم کتاب القرءان.",
+     "teks": "نبي ____ اياله نبي يڠ منريم کتاب القرءان.",
      "rumi": "Nabi ____ ialah nabi yang menerima kitab Al-Quran.",
      "jawapan": -1
     }
@@ -766,7 +766,7 @@
      "rumi": "",
      "pilihan": [
       {
-       "teks": "ليما",
+       "teks": "ليم",
        "rumi": "Lima"
       },
       {
@@ -803,7 +803,7 @@
        "rumi": "Iman kepada Allah"
       },
       {
-       "teks": "ايمان کڤد ملائكة",
+       "teks": "ايمان کڤد ملايکة",
        "rumi": "Iman kepada malaikat"
       },
       {
@@ -823,7 +823,7 @@
   {
    "bahagian": "B",
    "jenis": "objektif",
-   "soalan": "ايمان کڤد قضاء دان قدر اداله رکن ايمان يڠ ______.",
+   "soalan": "ايمان کڤد قضاء دان قدر اياله رکن ايمان يڠ ______.",
    "rumi": "Iman kepada qada dan qadar ialah rukun iman yang ______.",
    "markah": 1,
    "item": [
@@ -832,7 +832,7 @@
      "rumi": "",
      "pilihan": [
       {
-       "teks": "کدو",
+       "teks": "کدوا",
        "rumi": "kedua"
       },
       {
@@ -889,7 +889,7 @@
   {
    "bahagian": "B",
    "jenis": "objektif",
-   "soalan": "ايمان کڤد ملايکة اداله رکن ايمان يڠ ک ______.",
+   "soalan": "ايمان کڤد ملايکة اياله رکن ايمان يڠ ک ______.",
    "rumi": "Iman kepada malaikat ialah rukun iman yang ke-______.",
    "markah": 1,
    "item": [
@@ -910,7 +910,7 @@
        "rumi": "dua"
       },
       {
-       "teks": "ليما",
+       "teks": "ليم",
        "rumi": "lima"
       }
      ],
@@ -922,7 +922,7 @@
   {
    "bahagian": "B",
    "jenis": "objektif",
-   "soalan": "کليمة شهادة مڠاندوڠي ببراڤ کليمة؟",
+   "soalan": "کليمه شهادة مڠاندوڠي ببراڤ کليمه؟",
    "rumi": "Kalimah syahadah mengandungi berapa kalimah?",
    "markah": 1,
    "item": [
@@ -935,7 +935,7 @@
        "rumi": "empat"
       },
       {
-       "teks": "ليما",
+       "teks": "ليم",
        "rumi": "lima"
       },
       {
@@ -955,7 +955,7 @@
   {
    "bahagian": "B",
    "jenis": "objektif",
-   "soalan": "اڤاکه ماءنا «أشهد أن لا إله إلا الله»؟",
+   "soalan": "اڤاکه مقصود «أشهد أن لا إله إلا الله»؟",
    "rumi": "Apakah maksud «Asyhadu an la ilaha illallah»?",
    "markah": 1,
    "item": [
@@ -988,7 +988,7 @@
   {
    "bahagian": "B",
    "jenis": "objektif",
-   "soalan": "اڤاکه ماءنا «أشهد أن محمدا رسول الله»؟",
+   "soalan": "اڤاکه مقصود «أشهد أن محمدا رسول الله»؟",
    "rumi": "Apakah maksud «Asyhadu anna Muhammadar Rasulullah»?",
    "markah": 1,
    "item": [
@@ -1034,7 +1034,7 @@
        "rumi": "Alhamdulillah"
       },
       {
-       "teks": "الله أكبر",
+       "teks": "الله اکبر",
        "rumi": "Allahu Akbar"
       },
       {
@@ -1042,7 +1042,7 @@
        "rumi": "Subhanallah"
       },
       {
-       "teks": "کليمة شهادة",
+       "teks": "کليمه شهادة",
        "rumi": "kalimah syahadah"
       }
      ],
@@ -1071,7 +1071,7 @@
        "rumi": "meniup sangkakala"
       },
       {
-       "teks": "مڠمباکن وهيو",
+       "teks": "مڽمڤايکن وهيو",
        "rumi": "menyampaikan wahyu"
       },
       {
@@ -1087,7 +1087,7 @@
   {
    "bahagian": "B",
    "jenis": "objektif",
-   "soalan": "ملايکة ميكائيل برتوݢس ______.",
+   "soalan": "ملايکة ميکائيل برتوݢس ______.",
    "rumi": "Malaikat Mikail bertugas ______.",
    "markah": 1,
    "item": [
@@ -1100,7 +1100,7 @@
        "rumi": "membahagi rezeki"
       },
       {
-       "teks": "مڠمباکن وهيو",
+       "teks": "مڽمڤايکن وهيو",
        "rumi": "menyampaikan wahyu"
       },
       {
@@ -1120,7 +1120,7 @@
   {
    "bahagian": "B",
    "jenis": "objektif",
-   "soalan": "ملايکة إسرافيل برتوݢس ______.",
+   "soalan": "ملايکة اسرافيل برتوݢس ______.",
    "rumi": "Malaikat Israfil bertugas ______.",
    "markah": 1,
    "item": [
@@ -1166,7 +1166,7 @@
        "rumi": "meniup sangkakala"
       },
       {
-       "teks": "مڠمباکن وهيو",
+       "teks": "مڽمڤايکن وهيو",
        "rumi": "menyampaikan wahyu"
       },
       {
@@ -1186,7 +1186,7 @@
   {
    "bahagian": "B",
    "jenis": "objektif",
-   "soalan": "ملايکة مالك منجاݢ ______.",
+   "soalan": "ملايکة مالک منجاݢ ______.",
    "rumi": "Malaikat Malik menjaga ______.",
    "markah": 1,
    "item": [
@@ -1252,7 +1252,7 @@
   {
    "bahagian": "B",
    "jenis": "objektif",
-   "soalan": "ملايکة راقيب برتوݢس ______.",
+   "soalan": "ملايکة رقيب برتوݢس ______.",
    "rumi": "Malaikat Raqib bertugas ______.",
    "markah": 1,
    "item": [
@@ -1261,7 +1261,7 @@
      "rumi": "",
      "pilihan": [
       {
-       "teks": "منچتت عملن بائيک",
+       "teks": "منچتت عملن باءيق",
        "rumi": "mencatat amalan baik"
       },
       {
@@ -1294,7 +1294,7 @@
      "rumi": "",
      "pilihan": [
       {
-       "teks": "منچتت عملن بائيک",
+       "teks": "منچتت عملن باءيق",
        "rumi": "mencatat amalan baik"
       },
       {
@@ -1318,7 +1318,7 @@
   {
    "bahagian": "B",
    "jenis": "objektif",
-   "soalan": "ملايکة منكر دان نكير برتوݢس ______.",
+   "soalan": "ملايکة منکر دان ناکير برتوݢس ______.",
    "rumi": "Malaikat Munkar dan Nakir bertugas ______.",
    "markah": 1,
    "item": [
@@ -1351,7 +1351,7 @@
   {
    "bahagian": "B",
    "jenis": "objektif",
-   "soalan": "انتارا برايكوت، يڠ ماناکه بتول تنتڠ ملايکة؟",
+   "soalan": "انتارا برايکوت، يڠ ماناکه بتول تنتڠ ملايکة؟",
    "rumi": "Antara berikut, yang manakah betul tentang malaikat?",
    "markah": 1,
    "item": [
@@ -1405,7 +1405,7 @@
        "rumi": "dua"
       },
       {
-       "teks": "ليما",
+       "teks": "ليم",
        "rumi": "lima"
       }
      ],
@@ -1483,7 +1483,7 @@
   {
    "bahagian": "B",
    "jenis": "objektif",
-   "soalan": "کتاب إنجيل دتورونکن کڤد ______.",
+   "soalan": "کتاب انجيل دتورونکن کڤد ______.",
    "rumi": "Kitab Injil diturunkan kepada ______.",
    "markah": 1,
    "item": [
@@ -1549,7 +1549,7 @@
   {
    "bahagian": "B",
    "jenis": "objektif",
-   "soalan": "کتاب يڠ ڤاليڠ اخير اداله ______.",
+   "soalan": "کتاب يڠ ڤاليڠ اخير اياله ______.",
    "rumi": "Kitab yang paling akhir ialah ______.",
    "markah": 1,
    "item": [
@@ -1558,7 +1558,7 @@
      "rumi": "",
      "pilihan": [
       {
-       "teks": "إنجيل",
+       "teks": "انجيل",
        "rumi": "Injil"
       },
       {
@@ -1582,7 +1582,7 @@
   {
    "bahagian": "B",
    "jenis": "objektif",
-   "soalan": "اڤاکه ماءنا «قل هو الله أحد»؟",
+   "soalan": "اڤاکه مقصود «قل هو الله احد»؟",
    "rumi": "Apakah maksud «Qul huwallahu ahad»?",
    "markah": 1,
    "item": [
@@ -1628,11 +1628,11 @@
        "rumi": "sepuluh"
       },
       {
-       "teks": "دوا ڤولوه ليما",
+       "teks": "دوا ڤولوه ليم",
        "rumi": "dua puluh lima"
       },
       {
-       "teks": "ليما",
+       "teks": "ليم",
        "rumi": "lima"
       },
       {
@@ -1681,7 +1681,7 @@
   {
    "bahagian": "B",
    "jenis": "objektif",
-   "soalan": "رسول يڠ ترواخير اياله ______.",
+   "soalan": "رسول يڠ تراخير اياله ______.",
    "rumi": "Rasul yang terakhir ialah ______.",
    "markah": 1,
    "item": [
@@ -1723,7 +1723,7 @@
      "rumi": "",
      "pilihan": [
       {
-       "teks": "أمانة",
+       "teks": "امانه",
        "rumi": "Amanah"
       },
       {
@@ -1768,7 +1768,7 @@
        "rumi": "Fatanah"
       },
       {
-       "teks": "أمانة",
+       "teks": "امانه",
        "rumi": "Amanah"
       }
      ],
@@ -1780,7 +1780,7 @@
   {
    "bahagian": "B",
    "jenis": "objektif",
-   "soalan": "صيفت واجب رسول يڠ برمقصود «مڠمباکن» اياله ______.",
+   "soalan": "صيفت واجب رسول يڠ برمقصود «مڽمڤايکن» اياله ______.",
    "rumi": "Sifat wajib rasul yang bermaksud «menyampaikan» ialah ______.",
    "markah": 1,
    "item": [
@@ -1797,7 +1797,7 @@
        "rumi": "Tabligh"
       },
       {
-       "teks": "أمانة",
+       "teks": "امانه",
        "rumi": "Amanah"
       },
       {
@@ -1830,7 +1830,7 @@
        "rumi": "Siddiq"
       },
       {
-       "teks": "أمانة",
+       "teks": "امانه",
        "rumi": "Amanah"
       },
       {
@@ -1912,7 +1912,7 @@
   {
    "bahagian": "B",
    "jenis": "objektif",
-   "soalan": "صيفت مستحيل رسول يڠ برمقصود «مڽمبونييکن» اياله ______.",
+   "soalan": "صيفت مستحيل رسول يڠ برمقصود «مڽمبونيکن» اياله ______.",
    "rumi": "Sifat mustahil rasul yang bermaksud «menyembunyikan» ialah ______.",
    "markah": 1,
    "item": [
@@ -2011,7 +2011,7 @@
   {
    "bahagian": "B",
    "jenis": "objektif",
-   "soalan": "صيفت واجب الله «قديم» برمقصود ______.",
+   "soalan": "صيفت واجب الله «قيدم» برمقصود ______.",
    "rumi": "Sifat wajib Allah «qidam» bermaksud ______.",
    "markah": 1,
    "item": [
@@ -2028,7 +2028,7 @@
        "rumi": "kekal"
       },
       {
-       "teks": "سديا اد تيدا ڤرمولاءن",
+       "teks": "سديا اد تياد ڤرمولاءن",
        "rumi": "sedia ada, tiada permulaan"
       },
       {
@@ -2218,7 +2218,7 @@
      "rumi": "",
      "pilihan": [
       {
-       "teks": "برکأندهق",
+       "teks": "برکهندق",
        "rumi": "berkehendak"
       },
       {
@@ -2374,7 +2374,7 @@
   {
    "bahagian": "B",
    "jenis": "objektif",
-   "soalan": "صيفت واجب الله «كلام» برمقصود ______.",
+   "soalan": "صيفت واجب الله «کلام» برمقصود ______.",
    "rumi": "Sifat wajib Allah «kalam» bermaksud ______.",
    "markah": 1,
    "item": [
@@ -2416,7 +2416,7 @@
      "rumi": "",
      "pilihan": [
       {
-       "teks": "تيدا",
+       "teks": "تياد",
        "rumi": "tiada"
       },
       {
@@ -2449,7 +2449,7 @@
      "rumi": "",
      "pilihan": [
       {
-       "teks": "تيدا",
+       "teks": "تياد",
        "rumi": "tiada"
       },
       {
@@ -2482,7 +2482,7 @@
      "rumi": "",
      "pilihan": [
       {
-       "teks": "تيدا مندڠر",
+       "teks": "تيدق مندڠر",
        "rumi": "tidak mendengar"
       },
       {
@@ -2490,7 +2490,7 @@
        "rumi": "mati"
       },
       {
-       "teks": "تيدا مليهت",
+       "teks": "تيدق مليهت",
        "rumi": "tidak melihat"
       },
       {
@@ -2791,7 +2791,7 @@
        "rumi": "hari kiamat"
       },
       {
-       "teks": "سلفس ماتي",
+       "teks": "سلڤس ماتي",
        "rumi": "selepas mati"
       }
      ],
@@ -2803,7 +2803,7 @@
   {
    "bahagian": "B",
    "jenis": "objektif",
-   "soalan": "کليمة طيبة يڠ ڤاليڠ افضل اياله ______.",
+   "soalan": "کليمه طيبة يڠ ڤاليڠ افضل اياله ______.",
    "rumi": "Kalimah tayyibah yang paling afdal ialah ______.",
    "markah": 1,
    "item": [
@@ -2824,7 +2824,7 @@
        "rumi": "Alhamdulillah"
       },
       {
-       "teks": "الله أكبر",
+       "teks": "الله اکبر",
        "rumi": "Allahu Akbar"
       }
      ],
@@ -2836,7 +2836,7 @@
   {
    "bahagian": "B",
    "jenis": "objektif",
-   "soalan": "ماءنا «الله أكبر» اياله ______.",
+   "soalan": "مقصود «الله اکبر» اياله ______.",
    "rumi": "Maksud «Allahu Akbar» ialah ______.",
    "markah": 1,
    "item": [
@@ -2853,7 +2853,7 @@
        "rumi": "Maha Suci Allah"
       },
       {
-       "teks": "تياد دايا دان اوفايا ملاينکن دڠن الله",
+       "teks": "تياد دايا دان اوڤاي ملاينکن دڠن الله",
        "rumi": "tiada daya dan upaya melainkan dengan Allah"
       },
       {
@@ -2886,7 +2886,7 @@
        "rumi": "Bismillah"
       },
       {
-       "teks": "الله أكبر",
+       "teks": "الله اکبر",
        "rumi": "Allahu Akbar"
       },
       {
@@ -2977,7 +2977,7 @@
      "rumi": "",
      "pilihan": [
       {
-       "teks": "کتنترمن",
+       "teks": "کتنڠن",
        "rumi": "ketenangan"
       },
       {
@@ -3001,7 +3001,7 @@
   {
    "bahagian": "C",
    "jenis": "tulis",
-   "soalan": "سنارايکن اينم رکون ايمان.",
+   "soalan": "سنارايکن انم رکن ايمان.",
    "rumi": "Senaraikan enam rukun iman.",
    "markah": 6,
    "idea": [
@@ -3083,7 +3083,7 @@
   {
    "bahagian": "C",
    "jenis": "tulis",
-   "soalan": "برايکن نام صيفت واجب باݢي الله يڠ برمقصود: (i) برکواس (ii) برکهندق (iii) مڠتاهوءي (iv) هيدوڤ (v) مندڠر (vi) مليهت (vii) برکات.",
+   "soalan": "بريکن نام صيفت واجب باݢي الله يڠ برمقصود: (i) برکواس (ii) برکهندق (iii) مڠتاهوءي (iv) هيدوڤ (v) مندڠر (vi) مليهت (vii) برکات.",
    "rumi": "Berikan nama sifat wajib bagi Allah yang bermaksud: (i) berkuasa (ii) berkehendak (iii) mengetahui (iv) hidup (v) mendengar (vi) melihat (vii) berkata.",
    "markah": 7,
    "idea": [
@@ -3176,7 +3176,7 @@
   {
    "bahagian": "C",
    "jenis": "huraian",
-   "soalan": "برايکن مکنا صيفت واجب باݢي الله يڠ برايکوت: قيدم، بقاء، وحدة، قيامه بنفسه دان مخالفة للحوادث.",
+   "soalan": "بريکن مکنا صيفت واجب باݢي الله يڠ برايکوت: قيدم، بقاء، وحدة، قيامه بنفسه دان مخالفة للحوادث.",
    "rumi": "Berikan makna sifat wajib bagi Allah yang berikut: qidam, baqa, wahdaniah, qiamuhu binafsihi dan mukhollafatul lil hawadith.",
    "markah": 5,
    "idea": [
@@ -3276,7 +3276,7 @@
   {
    "bahagian": "C",
    "jenis": "tulis",
-   "soalan": "سنارايکن سڤولوه ملائكة يڠ واجب دکتاهوءي اوليه ستياف مسلم.",
+   "soalan": "سنارايکن سڤولوه ملايکة يڠ واجب دکتاهوءي اوليه ستياڤ مسلم.",
    "rumi": "Senaraikan sepuluh malaikat yang wajib diketahui oleh setiap muslim.",
    "markah": 10,
    "idea": [
@@ -3376,7 +3376,7 @@
   {
    "bahagian": "C",
    "jenis": "huraian",
-   "soalan": "ترڠکن تواݢس ليم ملائكة برايکوت: جبريل، ميکائيل، اسرافيل، عزرائيل دان رقيب.",
+   "soalan": "ترڠکن تواݢس ليم ملايکة برايکوت: جبريل، ميکائيل، اسرافيل، عزرائيل دان رقيب.",
    "rumi": "Terangkan tugas lima malaikat berikut: Jibril, Mikail, Israfil, Izrail dan Raqib.",
    "markah": 5,
    "idea": [
@@ -3459,7 +3459,7 @@
   {
    "bahagian": "C",
    "jenis": "tulis",
-   "soalan": "سنارايکن امڤت کتاب يڠ دتورونکن اوليه الله کفد نبي٢ڽ.",
+   "soalan": "سنارايکن امڤت کتاب يڠ دتورونکن اوليه الله کڤد نبي٢ڽ.",
    "rumi": "Senaraikan empat kitab yang diturunkan oleh Allah kepada nabi-nabi-Nya.",
    "markah": 4,
    "idea": [
@@ -3510,7 +3510,7 @@
   {
    "bahagian": "C",
    "jenis": "huraian",
-   "soalan": "نياتکن نبي يڠ منريم کتاب برايکوت: توراة، زبور، انجيل دان القرءان.",
+   "soalan": "ڽاتاکن نبي يڠ منريم کتاب برايکوت: توراة، زبور، انجيل دان القرءان.",
    "rumi": "Nyatakan nabi yang menerima kitab berikut: Taurat, Zabur, Injil dan Al-Quran.",
    "markah": 4,
    "idea": [
@@ -3677,7 +3677,7 @@
   {
    "bahagian": "C",
    "jenis": "huraian",
-   "soalan": "برايکن مکنا صيفت واجب باݢي رسول يڠ برايکوت: صدق، امانة، تبليغ دان فطانة.",
+   "soalan": "بريکن مکنا صيفت واجب باݢي رسول يڠ برايکوت: صدق، امانه، تبليغ دان فطانة.",
    "rumi": "Berikan makna sifat wajib bagi rasul yang berikut: siddiq, amanah, tabligh dan fatanah.",
    "markah": 4,
    "idea": [
@@ -3755,7 +3755,7 @@
   {
    "bahagian": "C",
    "jenis": "huraian",
-   "soalan": "برايکن مکنا صيفت مستحيل باݢي رسول يڠ برايکوت: کذب، خيانات، کتمان دان بلادة.",
+   "soalan": "بريکن مکنا صيفت مستحيل باݢي رسول يڠ برايکوت: کذب، خيانات، کتمان دان بلادة.",
    "rumi": "Berikan makna sifat mustahil bagi rasul yang berikut: kizb, khianat, kitman dan baladah.",
    "markah": 4,
    "idea": [
@@ -3792,7 +3792,7 @@
       "sembunyikan",
       "kitman",
       "کتمان",
-      "مڽمبوڽيکن",
+      "مڽمبونيکن",
       "اجرن",
       "الله"
      ]
@@ -3812,7 +3812,7 @@
    "jawapanContoh": [
     "کذب: برفوستا.",
     "خيانات: مغخياناتي امانة.",
-    "کتمان: مڽمبوڽيکن اجرن الله.",
+    "کتمان: مڽمبونيکن اجرن الله.",
     "بلادة: بودوه."
    ],
    "jawapanContohRumi": [
@@ -3826,7 +3826,7 @@
   {
    "bahagian": "C",
    "jenis": "huraian",
-   "soalan": "برايکن ليم تندا کچيل هاري قيامة.",
+   "soalan": "بريکن ليم تندا کچيل هاري قيامة.",
    "rumi": "Berikan lima tanda kecil hari kiamat.",
    "markah": 5,
    "idea": [
@@ -3898,7 +3898,7 @@
   {
    "bahagian": "C",
    "jenis": "huraian",
-   "soalan": "برايکن سڤولوه تندا بسر هاري قيامة.",
+   "soalan": "بريکن سڤولوه تندا بسر هاري قيامة.",
    "rumi": "Berikan sepuluh tanda besar hari kiamat.",
    "markah": 10,
    "idea": [
@@ -4032,7 +4032,7 @@
   {
    "bahagian": "C",
    "jenis": "huraian",
-   "soalan": "برايکن مکنا قضاء، قدر، قضاء مبرم دان قضاء معلق.",
+   "soalan": "بريکن مکنا قضاء، قدر، قضاء مبرم دان قضاء معلق.",
    "rumi": "Berikan makna qada, qadar, qada mubram dan qada muallaq.",
    "markah": 4,
    "idea": [
@@ -4101,7 +4101,7 @@
   {
    "bahagian": "C",
    "jenis": "huraian",
-   "soalan": "برايکن ليم حکمه برايمان کفد قضاء دان قدر.",
+   "soalan": "بريکن ليم حکمه برايمان کڤد قضاء دان قدر.",
    "rumi": "Berikan lima hikmah beriman kepada qada dan qadar.",
    "markah": 5,
    "idea": [
@@ -4180,7 +4180,7 @@
   {
    "bahagian": "C",
    "jenis": "huraian",
-   "soalan": "برايکن مکنا کليمه طيبة برايکوت: سبحان الله، الحمد لله، الله اکبر، استغفر الله دان لا اله الا الله.",
+   "soalan": "بريکن مکنا کليمه طيبة برايکوت: سبحان الله، الحمد لله، الله اکبر، استغفر الله دان لا اله الا الله.",
    "rumi": "Berikan makna kalimah tayyibah berikut: Subhanallah, Alhamdulillah, Allahu Akbar, Astaghfirullah dan Lailahaillallah.",
    "markah": 5,
    "idea": [
@@ -4267,7 +4267,7 @@
   {
    "bahagian": "C",
    "jenis": "huraian",
-   "soalan": "برايکن مکنا توحيد دان شيريك، ساتو چونتوه باݢي ماسيڠ-ماسيڠ، دان حکوم شيريك.",
+   "soalan": "بريکن مکنا توحيد دان شريک، ساتو چونتوه باݢي ماسيڠ-ماسيڠ، دان حکوم شريک.",
    "rumi": "Berikan makna tauhid dan syirik, satu contoh bagi masing-masing, dan hukum syirik.",
    "markah": 5,
    "idea": [
@@ -4340,10 +4340,10 @@
    ],
    "jawapanContoh": [
     "توحيد: مڠساءکن الله.",
-    "شيريك: مڽکوتوکن الله.",
+    "شيريک: مڽکوتوکن الله.",
     "چونتوه توحيد: منونايکن صلاة دان بردعاء کفد الله.",
-    "چونتوه شيريك: ممکاي تڠکل اتاو ممرچاياءي بوموه.",
-    "حکوم شيريك: حرام دان بردوسا بسر."
+    "چونتوه شيريک: ممکاي تڠکل اتاو ممرچاياءي بوموه.",
+    "حکوم شيريک: حرام دان بردوسا بسر."
    ],
    "jawapanContohRumi": [
     "Tauhid: mengesakan Allah.",
@@ -4357,7 +4357,7 @@
   {
    "bahagian": "C",
    "jenis": "huraian",
-   "soalan": "برايکن امڤت چونتوه ڤربواتن توحيد دان امڤت چونتوه ڤربواتن شيريك.",
+   "soalan": "بريکن امڤت چونتوه ڤربواتن توحيد دان امڤت چونتوه ڤربواتن شريک.",
    "rumi": "Berikan empat contoh perbuatan tauhid dan empat contoh perbuatan syirik.",
    "markah": 8,
    "idea": [
@@ -4482,7 +4482,7 @@
   {
    "bahagian": "C",
    "jenis": "huraian",
-   "soalan": "برايکن ليم حکمه برايمان کفد ملائكة.",
+   "soalan": "بريکن ليم حکمه برايمان کڤد ملايکة.",
    "rumi": "Berikan lima hikmah beriman kepada malaikat.",
    "markah": 5,
    "idea": [
@@ -4567,7 +4567,7 @@
   {
    "bahagian": "C",
    "jenis": "huraian",
-   "soalan": "برايکن مکنا: عالم برزخ، هاري قيامة، شرݢ دان نراک.",
+   "soalan": "بريکن مکنا: عالم برزخ، هاري قيامة، شورݢ دان نراک.",
    "rumi": "Berikan makna: alam barzakh, hari kiamat, syurga dan neraka.",
    "markah": 4,
    "idea": [
@@ -4645,7 +4645,7 @@
   {
    "bahagian": "C",
    "jenis": "huraian",
-   "soalan": "برايکن ليم حکمه برايمان کفد هاري قيامة.",
+   "soalan": "بريکن ليم حکمه برايمان کڤد هاري قيامة.",
    "rumi": "Berikan lima hikmah beriman kepada hari kiamat.",
    "markah": 5,
    "idea": [
@@ -4725,7 +4725,7 @@
   {
    "bahagian": "C",
    "jenis": "huraian",
-   "soalan": "برايکن ليم حکمه برايمان کفد کتاب الله.",
+   "soalan": "بريکن ليم حکمه برايمان کڤد کتاب الله.",
    "rumi": "Berikan lima hikmah beriman kepada kitab-kitab Allah.",
    "markah": 5,
    "idea": [
@@ -4811,7 +4811,7 @@
   {
    "bahagian": "C",
    "jenis": "huraian",
-   "soalan": "نياتکن امڤت صيفت ملائكة يڠ ممبيذاکنڽ دڠن ماءنسي.",
+   "soalan": "ڽاتاکن امڤت صيفت ملايکة يڠ ممبيذاکنڽ دڠن ماءنسي.",
    "rumi": "Nyatakan empat sifat malaikat yang membezakannya dengan manusia.",
    "markah": 4,
    "idea": [
@@ -4866,7 +4866,7 @@
   {
    "bahagian": "C",
    "jenis": "huraian",
-   "soalan": "برايکن ليم ڤرکارا يڠ ڤرلو دلاکوکن اوليه سأورڠ يڠ برايمان کفد الله.",
+   "soalan": "بريکن ليم ڤرکارا يڠ ڤرلو دلاکوکن اوليه سسأورڠ يڠ برايمان کڤد الله.",
    "rumi": "Berikan lima perkara yang perlu dilakukan oleh seseorang yang beriman kepada Allah.",
    "markah": 5,
    "idea": [
@@ -4950,7 +4950,7 @@
   {
    "bahagian": "C",
    "jenis": "huraian",
-   "soalan": "برايکن امڤت حکمه برايمان کفد ملائكة دان دوا حکمه برايمان کفد قضاء دان قدر.",
+   "soalan": "بريکن امڤت حکمه برايمان کڤد ملايکة دان دوا حکمه برايمان کڤد قضاء دان قدر.",
    "rumi": "Berikan empat hikmah beriman kepada malaikat dan dua hikmah beriman kepada qada dan qadar.",
    "markah": 6,
    "idea": [
@@ -5037,7 +5037,7 @@
   {
    "bahagian": "C",
    "jenis": "huraian",
-   "soalan": "برايکن مکنا توجوه اسماء الحسنى برايکوت: الرحمن، الرحيم، المالک، العليم، السميع، البصير دان القدير.",
+   "soalan": "بريکن مکنا توجوه اسماء الحسنى برايکوت: الرحمن، الرحيم، المالک، العليم، السميع، البصير دان القدير.",
    "rumi": "Berikan makna tujuh asmaul husna berikut: ar-Rahman, ar-Rahim, al-Malik, al-Alim, as-Sami', al-Basir dan al-Qadir.",
    "markah": 7,
    "idea": [
@@ -5152,7 +5152,7 @@
   {
    "bahagian": "D",
    "jenis": "huraian",
-   "soalan": "برايکن دوا دليل عقلي کووجودن الله.",
+   "soalan": "بريکن دوا دليل عقلي کووجودن الله.",
    "rumi": "Berikan dua dalil akal (aqli) kewujudan Allah.",
    "markah": 2,
    "idea": [
@@ -5199,7 +5199,7 @@
   {
    "bahagian": "D",
    "jenis": "huraian",
-   "soalan": "برايکن مکنا صيفت واجب باݢي الله: وجود، قيدم دان بقاء.",
+   "soalan": "بريکن مکنا صيفت واجب باݢي الله: وجود، قيدم دان بقاء.",
    "rumi": "Berikan makna sifat wajib bagi Allah: wujud, qidam dan baqa.",
    "markah": 3,
    "idea": [
@@ -5254,7 +5254,7 @@
   {
    "bahagian": "D",
    "jenis": "huraian",
-   "soalan": "اڤاکه مکنا اسماء الحسنى؟ برايکن ساتو چونتوه.",
+   "soalan": "اڤاکه مکنا اسماء الحسنى؟ بريکن ساتو چونتوه.",
    "rumi": "Apakah makna asmaul husna? Berikan satu contoh.",
    "markah": 2,
    "idea": [
@@ -5309,7 +5309,7 @@
   {
    "bahagian": "D",
    "jenis": "huraian",
-   "soalan": "نياتکن مکنا صيفت وجود دان قيدم.",
+   "soalan": "ڽاتاکن مکنا صيفت وجود دان قيدم.",
    "rumi": "Nyatakan makna sifat wujud dan qidam.",
    "markah": 2,
    "idea": [
@@ -5349,7 +5349,7 @@
   {
    "bahagian": "D",
    "jenis": "huraian",
-   "soalan": "برايکن تيݢ چونتوه ڤربواتن توحيد.",
+   "soalan": "بريکن تيݢ چونتوه ڤربواتن توحيد.",
    "rumi": "Berikan tiga contoh perbuatan tauhid.",
    "markah": 3,
    "idea": [
@@ -5398,7 +5398,7 @@
   {
    "bahagian": "D",
    "jenis": "huraian",
-   "soalan": "برايکن تيݢ چونتوه ڤربواتن شيريك يڠ ڤرلو دجاوهي.",
+   "soalan": "بريکن تيݢ چونتوه ڤربواتن شريک يڠ ڤرلو دجاوهي.",
    "rumi": "Berikan tiga contoh perbuatan syirik yang perlu dijauhi.",
    "markah": 3,
    "idea": [
@@ -5454,7 +5454,7 @@
   {
    "bahagian": "D",
    "jenis": "huraian",
-   "soalan": "اڤاکه مکنا ملائكة؟",
+   "soalan": "اڤاکه مکنا ملايکة؟",
    "rumi": "Apakah makna malaikat?",
    "markah": 2,
    "idea": [
@@ -5495,7 +5495,7 @@
   {
    "bahagian": "D",
    "jenis": "huraian",
-   "soalan": "نياتکن تواݢس امڤت ملائكة: جبريل، ميکائيل، اسرافيل دان عزرائيل.",
+   "soalan": "ڽاتاکن تواݢس امڤت ملايکة: جبريل، ميکائيل، اسرافيل دان عزرائيل.",
    "rumi": "Nyatakan tugas empat malaikat: Jibril, Mikail, Israfil dan Izrail.",
    "markah": 4,
    "idea": [
@@ -5559,7 +5559,7 @@
   {
    "bahagian": "D",
    "jenis": "huraian",
-   "soalan": "برايکن تيݢ صيفت ملائكة.",
+   "soalan": "بريکن تيݢ صيفت ملايکة.",
    "rumi": "Berikan tiga sifat malaikat.",
    "markah": 3,
    "idea": [
@@ -5605,7 +5605,7 @@
   {
    "bahagian": "D",
    "jenis": "huraian",
-   "soalan": "سياڤاکه ملائكة يڠ منچاتت عملن بايق دان عملن بوروق ماءنسي؟",
+   "soalan": "سياڤاکه ملايکة يڠ منچتت عملن باءيق دان عملن بوروق ماءنسي؟",
    "rumi": "Siapakah malaikat yang mencatat amalan baik dan amalan buruk manusia?",
    "markah": 2,
    "idea": [
@@ -5641,7 +5641,7 @@
   {
    "bahagian": "D",
    "jenis": "huraian",
-   "soalan": "نياتکن تواݢس ملائكة منکر، مالک، رضوان دان رقيب.",
+   "soalan": "ڽاتاکن تواݢس ملايکة منکر، مالک، رضوان دان رقيب.",
    "rumi": "Nyatakan tugas malaikat Munkar, Malik, Ridhwan dan Raqib.",
    "markah": 4,
    "idea": [
@@ -5711,7 +5711,7 @@
   {
    "bahagian": "D",
    "jenis": "huraian",
-   "soalan": "نياتکن نبي يڠ منريم کتاب: توراة، زبور، انجيل دان القرءان.",
+   "soalan": "ڽاتاکن نبي يڠ منريم کتاب: توراة، زبور، انجيل دان القرءان.",
    "rumi": "Nyatakan nabi yang menerima kitab: Taurat, Zabur, Injil dan Al-Quran.",
    "markah": 4,
    "idea": [
@@ -5770,7 +5770,7 @@
   {
    "bahagian": "D",
    "jenis": "huraian",
-   "soalan": "نياتکن دوا کتاب يڠ دتورونکن کفد نبي موسى دان نبي داؤد.",
+   "soalan": "ڽاتاکن دوا کتاب يڠ دتورونکن کڤد نبي موسى دان نبي داود.",
    "rumi": "Nyatakan dua kitab yang diturunkan kepada Nabi Musa dan Nabi Daud.",
    "markah": 2,
    "idea": [
@@ -5805,7 +5805,7 @@
   {
    "bahagian": "D",
    "jenis": "huraian",
-   "soalan": "برايکن تيݢ کأيستيميواءن القرءان.",
+   "soalan": "بريکن تيݢ کأيستيميواءن القرءان.",
    "rumi": "Berikan tiga keistimewaan Al-Quran.",
    "markah": 3,
    "idea": [
@@ -5865,7 +5865,7 @@
   {
    "bahagian": "D",
    "jenis": "huraian",
-   "soalan": "برايکن دوا حکمه برايمان کفد کتاب الله.",
+   "soalan": "بريکن دوا حکمه برايمان کڤد کتاب الله.",
    "rumi": "Berikan dua hikmah beriman kepada kitab-kitab Allah.",
    "markah": 2,
    "idea": [
@@ -5909,7 +5909,7 @@
   {
    "bahagian": "D",
    "jenis": "huraian",
-   "soalan": "اڤاکه مکنا وحي دان کفد سياڤاکه دتورونکن؟",
+   "soalan": "اڤاکه مکنا وحي دان کڤد سياڤاکه دتورونکن؟",
    "rumi": "Apakah makna wahyu dan kepada siapakah ia diturunkan?",
    "markah": 2,
    "idea": [
@@ -5952,7 +5952,7 @@
   {
    "bahagian": "D",
    "jenis": "huraian",
-   "soalan": "نياتکن تيݢ رسول يڠ برݢلر اولوالعزم.",
+   "soalan": "ڽاتاکن تيݢ رسول يڠ برݢلر اولوالعزم.",
    "rumi": "Nyatakan tiga rasul yang bergelar ulul azmi.",
    "markah": 3,
    "idea": [
@@ -5992,7 +5992,7 @@
   {
    "bahagian": "D",
    "jenis": "huraian",
-   "soalan": "نياتکن امڤت صيفت واجب باݢي رسول.",
+   "soalan": "ڽاتاکن امڤت صيفت واجب باݢي رسول.",
    "rumi": "Nyatakan empat sifat wajib bagi rasul.",
    "markah": 4,
    "idea": [
@@ -6042,7 +6042,7 @@
   {
    "bahagian": "D",
    "jenis": "huraian",
-   "soalan": "نياتکن امڤت صيفت مستحيل باݢي رسول.",
+   "soalan": "ڽاتاکن امڤت صيفت مستحيل باݢي رسول.",
    "rumi": "Nyatakan empat sifat mustahil bagi rasul.",
    "markah": 4,
    "idea": [
@@ -6097,7 +6097,7 @@
   {
    "bahagian": "D",
    "jenis": "huraian",
-   "soalan": "برايکن مکنا صيفت صدق دان امانة.",
+   "soalan": "بريکن مکنا صيفت صدق دان امانه.",
    "rumi": "Berikan makna sifat siddiq dan amanah.",
    "markah": 2,
    "idea": [
@@ -6139,7 +6139,7 @@
   {
    "bahagian": "D",
    "jenis": "huraian",
-   "soalan": "برايکن تيݢ حکمه برايمان کفد رسول.",
+   "soalan": "بريکن تيݢ حکمه برايمان کڤد رسول.",
    "rumi": "Berikan tiga hikmah beriman kepada rasul.",
    "markah": 3,
    "idea": [
@@ -6197,7 +6197,7 @@
   {
    "bahagian": "D",
    "jenis": "huraian",
-   "soalan": "اڤاکه مکنا معجزة؟ برايکن ساتو چونتوه.",
+   "soalan": "اڤاکه مکنا معجزة؟ بريکن ساتو چونتوه.",
    "rumi": "Apakah makna mukjizat? Berikan satu contoh.",
    "markah": 2,
    "idea": [
@@ -6287,7 +6287,7 @@
   {
    "bahagian": "D",
    "jenis": "huraian",
-   "soalan": "برايکن مکنا عالم برزخ دان هاري حساب.",
+   "soalan": "بريکن مکنا عالم برزخ دان هاري حساب.",
    "rumi": "Berikan makna alam barzakh dan hari hisab.",
    "markah": 2,
    "idea": [
@@ -6334,7 +6334,7 @@
   {
    "bahagian": "D",
    "jenis": "huraian",
-   "soalan": "نياتکن تيݢ تندا کچيل هاري قيامة.",
+   "soalan": "ڽاتاکن تيݢ تندا کچيل هاري قيامة.",
    "rumi": "Nyatakan tiga tanda kecil hari kiamat.",
    "markah": 3,
    "idea": [
@@ -6387,7 +6387,7 @@
   {
    "bahagian": "D",
    "jenis": "huraian",
-   "soalan": "نياتکن تيݢ تندا بسر هاري قيامة.",
+   "soalan": "ڽاتاکن تيݢ تندا بسر هاري قيامة.",
    "rumi": "Nyatakan tiga tanda besar hari kiamat.",
    "markah": 3,
    "idea": [
@@ -6444,7 +6444,7 @@
   {
    "bahagian": "D",
    "jenis": "huraian",
-   "soalan": "نياتکن تيݢ نام لاءين باݢي هاري قيامة.",
+   "soalan": "ڽاتاکن تيݢ نام لاين باݢي هاري قيامة.",
    "rumi": "Nyatakan tiga nama lain bagi hari kiamat.",
    "markah": 3,
    "idea": [
@@ -6488,7 +6488,7 @@
   {
    "bahagian": "D",
    "jenis": "huraian",
-   "soalan": "نياتکن امڤت ڤرکارا يڠ برلاکو کفد ماءنسي سلڤس ماتي.",
+   "soalan": "ڽاتاکن امڤت ڤرکارا يڠ برلاکو کڤد ماءنسي سلڤس ماتي.",
    "rumi": "Nyatakan empat perkara yang berlaku kepada manusia selepas mati.",
    "markah": 4,
    "idea": [
@@ -6601,7 +6601,7 @@
   {
    "bahagian": "D",
    "jenis": "huraian",
-   "soalan": "برايکن تيݢ حکمه برايمان کفد هاري قيامة.",
+   "soalan": "بريکن تيݢ حکمه برايمان کڤد هاري قيامة.",
    "rumi": "Berikan tiga hikmah beriman kepada hari kiamat.",
    "markah": 3,
    "idea": [
@@ -6743,7 +6743,7 @@
   {
    "bahagian": "D",
    "jenis": "huraian",
-   "soalan": "برايکن تيݢ حکمه برايمان کفد قضاء دان قدر.",
+   "soalan": "بريکن تيݢ حکمه برايمان کڤد قضاء دان قدر.",
    "rumi": "Berikan tiga hikmah beriman kepada qada dan qadar.",
    "markah": 3,
    "idea": [
@@ -6848,7 +6848,7 @@
   {
    "bahagian": "D",
    "jenis": "huraian",
-   "soalan": "برايکن تيݢ کليمه طيبة.",
+   "soalan": "بريکن تيݢ کليمه طيبة.",
    "rumi": "Berikan tiga kalimah tayyibah.",
    "markah": 3,
    "idea": [
@@ -6906,7 +6906,7 @@
   {
    "bahagian": "D",
    "jenis": "huraian",
-   "soalan": "اڤاکه مکنا توحيد دان شيريك؟",
+   "soalan": "اڤاکه مکنا توحيد دان شريک؟",
    "rumi": "Apakah makna tauhid dan syirik?",
    "markah": 2,
    "idea": [
@@ -6928,14 +6928,14 @@
       "sekutu",
       "menyekutukan",
       "sekutukan",
-      "شيريك",
+      "شيريک",
       "مڽکوتوکن"
      ]
     }
    ],
    "jawapanContoh": [
     "توحيد: مڠساءکن الله.",
-    "شيريك: مڽکوتوکن الله."
+    "شيريک: مڽکوتوکن الله."
    ],
    "jawapanContohRumi": [
     "Tauhid: mengesakan Allah.",
@@ -6990,7 +6990,7 @@
   {
    "bahagian": "D",
    "jenis": "huraian",
-   "soalan": "برايکن تيݢ چارا منجاݢ ايمان دالم کهيدوڤن هاريان.",
+   "soalan": "بريکن تيݢ چارا منجاݢ ايمان دالم کهيدوڤن هاريان.",
    "rumi": "Berikan tiga cara menjaga iman dalam kehidupan harian.",
    "markah": 3,
    "idea": [
@@ -7050,7 +7050,7 @@
   {
    "bahagian": "D",
    "jenis": "huraian",
-   "soalan": "برايکن تيݢ حکمه منجادي اورڠ يڠ برايمان کفد الله.",
+   "soalan": "بريکن تيݢ حکمه منجادي اورڠ يڠ برايمان کڤد الله.",
    "rumi": "Berikan tiga hikmah menjadi orang yang beriman kepada Allah.",
    "markah": 3,
    "idea": [

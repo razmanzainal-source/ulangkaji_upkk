@@ -84,6 +84,15 @@ class Suara {
   static const String kunciNama = 'f-nama';
   static const String kunciSelamat = 'f-selamat';
 
+  /// Ayat penutup **latih tubi**.
+  ///
+  /// Latih tubi bukan kertas, jadi ayat ini tidak menyebut markah, peratus
+  /// mahupun gred — hanya mengesahkan latihan sudah selesai dan mengajak murid
+  /// mencuba lagi.
+  static const String kunciLatihanSelesai = 'f-latihan';
+  static const String teksLatihanSelesai =
+      'Syabas! Latihan selesai. Jom cuba lagi, ya.';
+
   /// Teks rakaman [kunciNama] — soalan nama dibaca kuat.
   ///
   /// Dialog nama berdiri sendiri tanpa sebarang teks lain di skrin, dan murid
@@ -91,13 +100,13 @@ class Suara {
   /// yang app mahu. Suara menjadikan soalan itu jelas.
   static const String soalanNama = 'Assalamualaikum! Siapa nama kamu?';
 
-  /// Nama yang disebut dalam sapaan pembuka.
+  /// Nama maskot yang disebut dalam sapaan pembuka.
   ///
-  /// Ini nama **pencipta app**, bukan nama maskot. Sapaan mengajak murid
-  /// belajar bersama orang yang membina app ini; maskot (Raz) pula watak yang
-  /// menemani murid di dalam skrin, dan namanya tidak perlu disebut kerana ia
-  /// sentiasa kelihatan.
-  static const String namaPencipta = 'Raz';
+  /// Raz ialah kanak-kanak perempuan kecil yang menemani murid di dalam app
+  /// ini. Nama itu ialah nama anak pencipta app — app ini dibina untuknya —
+  /// jadi sapaan mengajak murid belajar **bersama Raz**, bukan bersama orang
+  /// dewasa yang tidak kelihatan.
+  static const String namaMaskot = 'Raz';
 
   /// Ayat sapaan pembuka — teks rakaman Yasmin bagi [kunciSelamat].
   ///
@@ -113,7 +122,7 @@ class Suara {
   /// tidak disebut langsung. Nama murid masih dipaparkan di skrin (kepala
   /// skrin dan kad keputusan), cuma tidak dibaca kuat.
   static const String sapaan =
-      'Assalamualaikum, jom belajar KAFA bersama $namaPencipta.';
+      'Assalamualaikum, jom belajar KAFA bersama $namaMaskot.';
 
   // --- Bunyi kesan (nada, bukan suara) di `assets/bunyi/kesan/` -------------
 
@@ -126,29 +135,19 @@ class Suara {
   /// Fanfar untuk keputusan cemerlang.
   static const String kesanHebat = 'hebat';
 
+  /// Kunci rakaman satu soalan (teks soalan, bukan pilihannya).
   static String kunciSoalan(String id) => 'q-$id';
 
-  static String kunciPilihan(String id, int indeks) => 'p-$id-$indeks';
-
-  /// Item kiri soalan `padan` (padankan kiri–kanan).
-  static String kunciPadanKiri(String id, int indeks) => 'pd-$id-a-$indeks';
-
-  /// Item kanan soalan `padan`.
-  static String kunciPadanKanan(String id, int indeks) => 'pd-$id-b-$indeks';
-
-  /// Item soalan `susun`.
-  static String kunciSusun(String id, int indeks) => 'ps-$id-$indeks';
-
-  /// Ayat soalan `tempat_kosong` (setiap ayat dibaca dengan "tempat kosong").
-  static String kunciAyatKosong(String id, int indeks) => 'tk-$id-$indeks';
-
-  /// Perkataan bank soalan `tempat_kosong`.
-  static String kunciKataBank(String id, int indeks) => 'tb-$id-$indeks';
-
-  /// Pernyataan soalan `betul_salah_set`.
-  static String kunciPernyataan(String id, int indeks) => 'bs-$id-$indeks';
-
-  static String kunciJawapan(String id) => 'j-$id';
+  /// Kunci rakaman bagi satu teks pilihan jawapan.
+  ///
+  /// Klip pilihan dikongsi mengikut **teks**, bukan mengikut nombor soalan:
+  /// "Bersyukur" yang muncul dalam enam soalan hanya perlu satu rakaman. Itulah
+  /// sebabnya bantuan suara latih tubi menambah kira-kira 16 MB walaupun bank
+  /// mengandungi lebih 2,000 pilihan jawapan, pernyataan dan ayat.
+  ///
+  /// Kunci ini juga dipakai oleh `tools/jana_suara.py`; menukar bentuknya di
+  /// sini tanpa menukar penjana bermakna butang speaker menjadi senyap.
+  static String kunciPilihan(String teks) => 'o-${teks.trim()}';
 
   /// Pembetulan sebutan untuk **laluan sandaran sahaja** (TTS peranti).
   ///
@@ -402,6 +401,18 @@ class Suara {
   /// enjin suara peranti, jadi sapaan ini sentiasa berbunyi dengan suara
   /// perempuan yang sama seperti seluruh app.
   Future<void> sebutSalam() => sebutKunci(kunciSelamat, sandaran: sapaan);
+
+  /// Sebut satu pilihan jawapan — **latih tubi sahaja**.
+  ///
+  /// Kertas percubaan tidak memanggil fungsi ini: kertas sebenar tidak
+  /// membacakan pilihan jawapan kepada murid, dan bantuan suara di situ akan
+  /// mengubah markah, bukan menguji pemahaman.
+  ///
+  /// [teks] ialah teks yang **didengar**, bukan teks yang dipaparkan: Rumi bagi
+  /// subjek Jawi (enjin suara Melayu tidak boleh membaca tulisan Jawi) dan teks
+  /// Arab bagi subjek Bahasa Arab. Pemanggil yang memilih teks itu.
+  Future<void> sebutPilihan(String teks) =>
+      sebutKunci(kunciPilihan(teks), sandaran: teks);
 
   /// Sebut teks terus melalui enjin TTS peranti.
   ///

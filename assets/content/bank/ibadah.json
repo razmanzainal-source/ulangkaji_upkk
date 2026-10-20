@@ -15,7 +15,7 @@
      "rumi": "Istinjak bermaksud",
      "pilihan": [
       {
-       "teks": "ممبهرسيکن قوبل دان دوبور دڠن اير اتاو باتو",
+       "teks": "ممبرسيهکن قوبل دان دوبور دڠن اير اتاو باتو",
        "rumi": "membersihkan qubul dan dubur dengan air atau batu"
       },
       {
@@ -26,7 +26,7 @@
      "jawapan": 0
     },
     {
-     "teks": "هوکم ايسيتنجاء سلفس کلوار نجس اداله",
+     "teks": "هوکم ايسيتنجاء سلڤس کلوار نجس اياله",
      "rumi": "Hukum istinjak selepas keluar najis ialah",
      "pilihan": [
       {
@@ -41,7 +41,7 @@
      "jawapan": 1
     },
     {
-     "teks": "باهن يڠ تيدق بوليه دݢوناکن اونتوق ايسيتنجاء اداله",
+     "teks": "باهن يڠ تيدق بوليه دݢوناکن اونتوق ايسيتنجاء اياله",
      "rumi": "Bahan yang tidak boleh digunakan untuk istinjak ialah",
      "pilihan": [
       {
@@ -81,7 +81,7 @@
      "jawapan": 1
     },
     {
-     "teks": "رکن وضوء يڠ ڤرتام اداله",
+     "teks": "رکن وضوء يڠ ڤرتام اياله",
      "rumi": "Rukun wuduk yang pertama ialah",
      "pilihan": [
       {
@@ -96,7 +96,7 @@
      "jawapan": 0
     },
     {
-     "teks": "ممباسوه موک اداله رکن وضوء يڠ ک",
+     "teks": "ممباسوه موک اياله رکن وضوء يڠ ک",
      "rumi": "Membasuh muka ialah rukun wuduk yang ke-",
      "pilihan": [
       {
@@ -111,7 +111,7 @@
      "jawapan": 1
     },
     {
-     "teks": "مڠياڤ سبهاݢين کڤالا اداله رکن وضوء يڠ ک",
+     "teks": "مڽاڤو سبهاݢين کڤالا اياله رکن وضوء يڠ ک",
      "rumi": "Menyapu sebahagian kepala ialah rukun wuduk yang ke-",
      "pilihan": [
       {
@@ -119,7 +119,7 @@
        "rumi": "empat"
       },
       {
-       "teks": "ليما",
+       "teks": "ليم",
        "rumi": "lima"
       }
      ],
@@ -143,7 +143,7 @@
     },
     {
      "kiri": "نجس متوسطه",
-     "kanan": "دباسوه دڠن اير موطلق هيڠݢ هيلڠ ورنا، باءو دان راس",
+     "kanan": "دباسوه دڠن اير مطلق هيڠݢ هيلڠ ورنا، باءو دان راس",
      "kiriRumi": "Najis mutawassitah",
      "kananRumi": "Dibasuh dengan air mutlak hingga hilang warna, bau dan rasa"
     },
@@ -165,7 +165,7 @@
   {
    "bahagian": "A",
    "jenis": "betul_salah",
-   "soalan": "تنداکن (✓) ڤد ڤرڤاتاءن يڠ بتول دان (✗) ڤد ڤرڤاتاءن يڠ ساله.",
+   "soalan": "تنداکن (✓) ڤد ڤرڽاتاءن يڠ بتول دان (✗) ڤد ڤرڽاتاءن يڠ ساله.",
    "rumi": "Tandakan (✓) pada pernyataan yang betul dan (✗) pada pernyataan yang salah.",
    "markah": 4,
    "item": [
@@ -176,19 +176,19 @@
      "jawapan": -1
     },
     {
-     "teks": "نجس مغرلظة چوکو دباسوه دڠن اير ساتو کالي.",
+     "teks": "نجس مغرلظة چوکوڤ دباسوه دڠن اير ساتو کالي.",
      "rumi": "Najis mughallazah cukup dibasuh dengan air satu kali.",
      "betul": false,
      "jawapan": -1
     },
     {
-     "teks": "وضوء سه إذا تيدق مڠياڤ سبهاݢين کڤالا.",
+     "teks": "وضوء سه جک تيدق مڽاڤو سبهاݢين کڤالا.",
      "rumi": "Wuduk sah jika tidak menyapu sebahagian kepala.",
      "betul": false,
      "jawapan": -1
     },
     {
-     "teks": "ماندي واجب واجب کتيک کلوار ماني.",
+     "teks": "مندي واجب واجب کتيک کلوار ماني.",
      "rumi": "Mandi wajib wajib ketika keluar mani.",
      "betul": true,
      "jawapan": -1
@@ -216,12 +216,12 @@
    ],
    "item": [
     {
-     "teks": "تيمم برمقصود مڠياڤ ____ دان کدا تاعن هيڠݢ سيکو دڠن دبو.",
+     "teks": "تيمم برمقصود مڽاڤو ____ دان کدوا تاڠن هيڠݢ سيکو دڠن دبو.",
      "rumi": "Tayammum bermaksud menyapu ____ dan kedua tangan hingga siku dengan debu.",
      "jawapan": -1
     },
     {
-     "teks": "دبو يڠ دݢوناکن اونتوق تيمم اداله دبو ____.",
+     "teks": "دبو يڠ دݢوناکن اونتوق تيمم اياله دبو ____.",
      "rumi": "Debu yang digunakan untuk tayammum ialah debu ____.",
      "jawapan": -1
     },
@@ -231,7 +231,7 @@
      "jawapan": -1
     },
     {
-     "teks": "رکن تيمم يڠ اخير اداله ____.",
+     "teks": "رکن تيمم يڠ اخير اياله ____.",
      "rumi": "Rukun tayammum yang akhir ialah ____.",
      "jawapan": -1
     }
@@ -246,7 +246,7 @@
    "markah": 4,
    "item": [
     {
-     "teks": "هيض اداله حدث",
+     "teks": "هيض اياله حدث",
      "rumi": "Haid ialah hadas",
      "pilihan": [
       {
@@ -261,7 +261,7 @@
      "jawapan": 1
     },
     {
-     "teks": "کلوار ماني اداله حدث",
+     "teks": "کلوار ماني اياله حدث",
      "rumi": "Keluar mani ialah hadas",
      "pilihan": [
       {
@@ -276,7 +276,7 @@
      "jawapan": 0
     },
     {
-     "teks": "کلوار اير کينچي اداله حدث",
+     "teks": "کلوار اير کنچيڠ اياله حدث",
      "rumi": "Keluar air kencing ialah hadas",
      "pilihan": [
       {
@@ -291,7 +291,7 @@
      "jawapan": 0
     },
     {
-     "teks": "نجس يڠ ڤاليڠ برت اداله نجس",
+     "teks": "نجس يڠ ڤاليڠ برت اياله نجس",
      "rumi": "Najis yang paling berat ialah najis",
      "pilihan": [
       {
@@ -323,7 +323,7 @@
     },
     {
      "kiri": "رکن قولي",
-     "kanan": "ليما",
+     "kanan": "ليم",
      "kiriRumi": "Rukun qauli",
      "kananRumi": "Lima"
     },
@@ -345,12 +345,12 @@
   {
    "bahagian": "A",
    "jenis": "betul_salah",
-   "soalan": "تنداکن (✓) ڤد ڤرڤاتاءن يڠ بتول دان (✗) ڤد ڤرڤاتاءن يڠ ساله.",
+   "soalan": "تنداکن (✓) ڤد ڤرڽاتاءن يڠ بتول دان (✗) ڤد ڤرڽاتاءن يڠ ساله.",
    "rumi": "Tandakan (✓) pada pernyataan yang betul dan (✗) pada pernyataan yang salah.",
    "markah": 4,
    "item": [
     {
-     "teks": "صلاة فرض دالم ساتو هاري اد ليما وقتو.",
+     "teks": "صلاة فرض دالم ساتو هاري اد ليم وقتو.",
      "rumi": "Solat fardu dalam satu hari ada lima waktu.",
      "betul": true,
      "jawapan": -1
@@ -362,13 +362,13 @@
      "jawapan": -1
     },
     {
-     "teks": "صلاة عشاء دلاکوکن سلفس صلاة مغرب.",
+     "teks": "صلاة عشاء دلاکوکن سلڤس صلاة مغرب.",
      "rumi": "Solat Isyak dilakukan selepas solat Maghrib.",
      "betul": true,
      "jawapan": -1
     },
     {
-     "teks": "صلاة صبح دلاکوکن کتيک ماتاهاري ترݢلينق.",
+     "teks": "صلاة صبح دلاکوکن کتيک ماتاهاري ترݢلينچير.",
      "rumi": "Solat Subuh dilakukan ketika matahari tergelincir.",
      "betul": false,
      "jawapan": -1
@@ -386,7 +386,7 @@
     "صبح",
     "ظهر",
     "مغرب",
-    "ليما"
+    "ليم"
    ],
    "bankRumi": [
     "Subuh",
@@ -396,17 +396,17 @@
    ],
    "item": [
     {
-     "teks": "صلاة ____ اداله صلاة يڠ دلاکوکن سبلوم ماتاهاري تربيت.",
+     "teks": "صلاة ____ اياله صلاة يڠ دلاکوکن سبلوم ماتاهاري تربيت.",
      "rumi": "Solat ____ ialah solat yang dilakukan sebelum matahari terbit.",
      "jawapan": -1
     },
     {
-     "teks": "صلاة ____ اداله صلاة يڠ دلاکوکن کتيک ماتاهاري ترݢلينق دري تڠه لڠيت.",
+     "teks": "صلاة ____ اياله صلاة يڠ دلاکوکن کتيک ماتاهاري ترݢلينچير دري تڠه لڠيت.",
      "rumi": "Solat ____ ialah solat yang dilakukan ketika matahari tergelincir dari tengah langit.",
      "jawapan": -1
     },
     {
-     "teks": "صلاة ____ اداله صلاة يڠ دلاکوکن سلفس ماتاهاري ترنم.",
+     "teks": "صلاة ____ اياله صلاة يڠ دلاکوکن سلڤس ماتاهاري تربنم.",
      "rumi": "Solat ____ ialah solat yang dilakukan selepas matahari terbenam.",
      "jawapan": -1
     },
@@ -426,22 +426,22 @@
    "markah": 4,
    "item": [
     {
-     "teks": "أذان دلاوڠکن سبلوم صلاة دان إقامة دلاوڠکن",
+     "teks": "اذان دلاوڠکن سبلوم صلاة دان اقامه دلاوڠکن",
      "rumi": "Azan dilaungkan sebelum solat dan iqamah dilaungkan",
      "pilihan": [
       {
-       "teks": "سلفس أذان سبلوم صلاة",
+       "teks": "سلڤس اذان سبلوم صلاة",
        "rumi": "selepas azan, sebelum solat"
       },
       {
-       "teks": "سلفس صلاة",
+       "teks": "سلڤس صلاة",
        "rumi": "selepas solat"
       }
      ],
      "jawapan": 0
     },
     {
-     "teks": "اورڠ يڠ ملاوڠکن أذان دݢلر",
+     "teks": "اورڠ يڠ ملاوڠکن اذان دݢلر",
      "rumi": "Orang yang melaungkan azan digelar",
      "pilihan": [
       {
@@ -449,14 +449,14 @@
        "rumi": "muazzin"
       },
       {
-       "teks": "إمام",
+       "teks": "امام",
        "rumi": "imam"
       }
      ],
      "jawapan": 0
     },
     {
-     "teks": "هوکم أذان باݢي صلاة برجماعة اداله",
+     "teks": "هوکم اذان باݢي صلاة برجماعه اياله",
      "rumi": "Hukum azan bagi solat berjemaah ialah",
      "pilihan": [
       {
@@ -471,7 +471,7 @@
      "jawapan": 1
     },
     {
-     "teks": "إقامة دلاوڠکن دڠن چارا يڠ",
+     "teks": "اقامه دلاوڠکن دڠن چارا يڠ",
      "rumi": "Iqamah dilaungkan dengan cara yang",
      "pilihan": [
       {
@@ -503,7 +503,7 @@
     },
     {
      "kiri": "صلاة تهجد",
-     "kanan": "مالم سلفس تيدور",
+     "kanan": "مالم سلڤس تيدور",
      "kiriRumi": "Solat Tahajud",
      "kananRumi": "Malam selepas tidur"
     },
@@ -525,30 +525,30 @@
   {
    "bahagian": "A",
    "jenis": "betul_salah",
-   "soalan": "تنداکن (✓) ڤد ڤرڤاتاءن يڠ بتول دان (✗) ڤد ڤرڤاتاءن يڠ ساله.",
+   "soalan": "تنداکن (✓) ڤد ڤرڽاتاءن يڠ بتول دان (✗) ڤد ڤرڽاتاءن يڠ ساله.",
    "rumi": "Tandakan (✓) pada pernyataan yang betul dan (✗) pada pernyataan yang salah.",
    "markah": 4,
    "item": [
     {
-     "teks": "صلاة برجماعة دأوتامکن درڤد صلاة سنديري.",
+     "teks": "صلاة برجماعه دأوتامکن درڤد صلاة سنديري.",
      "rumi": "Solat berjemaah diutamakan daripada solat sendiri.",
      "betul": true,
      "jawapan": -1
     },
     {
-     "teks": "مأموم بوليه برديري دأڤن إمام.",
+     "teks": "مأموم بوليه برديري دأڤن امام.",
      "rumi": "Makmum boleh berdiri di hadapan imam.",
      "betul": false,
      "jawapan": -1
     },
     {
-     "teks": "دالم صلاة برجماعة، اورڠ يڠ مڠيکوتي إمام دݢلر مأموم.",
+     "teks": "دالم صلاة برجماعه، اورڠ يڠ مڠيکوتي امام دݢلر مأموم.",
      "rumi": "Dalam solat berjemaah, orang yang mengikuti imam digelar makmum.",
      "betul": true,
      "jawapan": -1
     },
     {
-     "teks": "صلاة برجماعة واجب دلاکوکن ددالم مسجد سهاج.",
+     "teks": "صلاة برجماعه واجب دلاکوکن ددالم مسجد سهاج.",
      "rumi": "Solat berjemaah wajib dilakukan di dalam masjid sahaja.",
      "betul": false,
      "jawapan": -1
@@ -564,7 +564,7 @@
    "markah": 4,
    "bank": [
     "جمعة",
-    "دو",
+    "دوا",
     "خطبة",
     "ظهر"
    ],
@@ -576,7 +576,7 @@
    ],
    "item": [
     {
-     "teks": "صلاة ____ واجب دلاکوکن اوليه لالکي مسلم يڠ بالغ.",
+     "teks": "صلاة ____ واجب دلاکوکن اوليه للاکي مسلم يڠ بالغ.",
      "rumi": "Solat ____ wajib dilakukan oleh lelaki muslim yang baligh.",
      "jawapan": -1
     },
@@ -586,7 +586,7 @@
      "jawapan": -1
     },
     {
-     "teks": "إمام مڠوچڤکن ____ سبلوم صلاة جمعة دلاکوکن.",
+     "teks": "امام مڠوچڤکن ____ سبلوم صلاة جمعة دلاکوکن.",
      "rumi": "Imam mengucapkan ____ sebelum solat Jumaat dilakukan.",
      "jawapan": -1
     },
@@ -606,7 +606,7 @@
    "markah": 4,
    "item": [
     {
-     "teks": "هوکم ڤواسا بولن رمضان اداله",
+     "teks": "هوکم ڤواسا بولن رمضان اياله",
      "rumi": "Hukum puasa bulan Ramadan ialah",
      "pilihan": [
       {
@@ -621,7 +621,7 @@
      "jawapan": 1
     },
     {
-     "teks": "ماکن دان مينوم سبلوم تربيت ڤاجر دالم بولن رمضان دسوبت",
+     "teks": "ماکن دان مينوم سبلوم تربيت ڤاجر دالم بولن رمضان دسبوت",
      "rumi": "Makan dan minum sebelum terbit fajar dalam bulan Ramadan disebut",
      "pilihan": [
       {
@@ -640,7 +640,7 @@
      "rumi": "Niat puasa dilakukan pada",
      "pilihan": [
       {
-       "teks": "سياء هاري",
+       "teks": "سيڠ هاري",
        "rumi": "siang hari"
       },
       {
@@ -651,7 +651,7 @@
      "jawapan": 1
     },
     {
-     "teks": "انتارا ڤرکارا يڠ ممبطلکن ڤواسا اداله",
+     "teks": "انتارا ڤرکارا يڠ ممبطلکن ڤواسا اياله",
      "rumi": "Antara perkara yang membatalkan puasa ialah",
      "pilihan": [
       {
@@ -677,7 +677,7 @@
    "pasangan": [
     {
      "kiri": "هوکم زکاة فطرة",
-     "kanan": "واجب کڤد ستيائڤ مسلم",
+     "kanan": "واجب کڤد ستياڤ مسلم",
      "kiriRumi": "Hukum zakat fitrah",
      "kananRumi": "Wajib kepada setiap muslim"
     },
@@ -699,30 +699,30 @@
   {
    "bahagian": "A",
    "jenis": "betul_salah",
-   "soalan": "تنداکن (✓) ڤد ڤرڤاتاءن يڠ بتول دان (✗) ڤد ڤرڤاتاءن يڠ ساله.",
+   "soalan": "تنداکن (✓) ڤد ڤرڽاتاءن يڠ بتول دان (✗) ڤد ڤرڽاتاءن يڠ ساله.",
    "rumi": "Tandakan (✓) pada pernyataan yang betul dan (✗) pada pernyataan yang salah.",
    "markah": 4,
    "item": [
     {
-     "teks": "زکاة فطرة واجب دبايار اوليه ستيائڤ مسلم.",
+     "teks": "زکاة فطرة واجب دبايار اوليه ستياڤ مسلم.",
      "rumi": "Zakat fitrah wajib dibayar oleh setiap muslim.",
      "betul": true,
      "jawapan": -1
     },
     {
-     "teks": "قدر زکاة فطرة اداله دوا ݢنتڠ برس باݢي ستيائڤ اورڠ.",
+     "teks": "قدر زکاة فطرة اياله دوا ݢنتڠ برس باݢي ستياڤ اورڠ.",
      "rumi": "Kadar zakat fitrah ialah dua gantang beras bagi setiap orang.",
      "betul": false,
      "jawapan": -1
     },
     {
-     "teks": "حج واجب کڤد اورڠ إسلام يڠ بالغ، برعقل، مرديکا دان ممڤوڽائي کواسا.",
+     "teks": "حج واجب کڤد اورڠ اسلام يڠ بالغ، برعقل، مرديکا دان ممڤوڽاءي کماڤوان.",
      "rumi": "Haji wajib kepada orang Islam yang baligh, berakal, merdeka dan mempunyai kemampuan.",
      "betul": true,
      "jawapan": -1
     },
     {
-     "teks": "عمرة اداله مڠونجوڠي کعبة ڤد بولن حج ڤد وقتو يڠ دتنتوکن.",
+     "teks": "عمرة اياله مڠونجوڠي کعبة ڤد بولن حج ڤد وقتو يڠ دتنتوکن.",
      "rumi": "Umrah ialah mengunjungi Kaabah pada bulan-bulan haji pada waktu yang ditentukan.",
      "betul": false,
      "jawapan": -1
@@ -737,7 +737,7 @@
    "rumi": "Isi tempat kosong dengan perkataan yang diberi.",
    "markah": 3,
    "bank": [
-    "مكة",
+    "مکه",
     "مينا",
     "طواف"
    ],
@@ -758,7 +758,7 @@
      "jawapan": -1
     },
     {
-     "teks": "مڠليليڠي کعبة سباڽق توجوه کالي دسوبت ____.",
+     "teks": "مڠليليڠي کعبة سباڽق توجوه کالي دسبوت ____.",
      "rumi": "Mengelilingi Kaabah sebanyak tujuh kali disebut ____.",
      "jawapan": -1
     }
@@ -773,11 +773,11 @@
    "markah": 4,
    "item": [
     {
-     "teks": "حج اداله رکن إسلام يڠ ک",
+     "teks": "حج اياله رکن اسلام يڠ ک",
      "rumi": "Haji ialah rukun Islam yang ke-",
      "pilihan": [
       {
-       "teks": "ليما",
+       "teks": "ليم",
        "rumi": "lima"
       },
       {
@@ -788,7 +788,7 @@
      "jawapan": 0
     },
     {
-     "teks": "ووقد د عرفة دلاکوکن ڤد تاريخ",
+     "teks": "وقوف د عرفة دلاکوکن ڤد تاريخ",
      "rumi": "Wukuf di Arafah dilakukan pada tarikh",
      "pilihan": [
       {
@@ -818,15 +818,15 @@
      "jawapan": 1
     },
     {
-     "teks": "رکن حج يڠ ڤرتام اداله",
+     "teks": "رکن حج يڠ ڤرتام اياله",
      "rumi": "Rukun haji yang pertama ialah",
      "pilihan": [
       {
-       "teks": "إحرام",
+       "teks": "احرام",
        "rumi": "Ihram"
       },
       {
-       "teks": "ووقد",
+       "teks": "وقوف",
        "rumi": "Wukuf"
       }
      ],
@@ -855,7 +855,7 @@
      "kananRumi": "Segala puji bagi Allah"
     },
     {
-     "kiri": "الله أكبر",
+     "kiri": "الله اکبر",
      "kanan": "الله مها بسر",
      "kiriRumi": "Allahu Akbar",
      "kananRumi": "Allah Maha Besar"
@@ -872,12 +872,12 @@
   {
    "bahagian": "A",
    "jenis": "betul_salah",
-   "soalan": "تنداکن (✓) ڤد ڤرڤاتاءن يڠ بتول دان (✗) ڤد ڤرڤاتاءن يڠ ساله.",
+   "soalan": "تنداکن (✓) ڤد ڤرڽاتاءن يڠ بتول دان (✗) ڤد ڤرڽاتاءن يڠ ساله.",
    "rumi": "Tandakan (✓) pada pernyataan yang betul dan (✗) pada pernyataan yang salah.",
    "markah": 4,
    "item": [
     {
-     "teks": "کيت هندقله برسوچي دري نجس سبلوم ماسوق کدالم مسجد.",
+     "teks": "کيت هندقله برسوچي درڤد نجس سبلوم ماسوق کدالم مسجد.",
      "rumi": "Kita hendaklah bersuci daripada najis sebelum masuk ke dalam masjid.",
      "betul": true,
      "jawapan": -1
@@ -915,7 +915,7 @@
      "rumi": "",
      "pilihan": [
       {
-       "teks": "ممبهرسيکن قوبل دان دوبور دڠن اير اتاو باتو",
+       "teks": "ممبرسيهکن قوبل دان دوبور دڠن اير اتاو باتو",
        "rumi": "membersihkan qubul dan dubur dengan air atau batu"
       },
       {
@@ -923,7 +923,7 @@
        "rumi": "membasuh muka dengan air"
       },
       {
-       "teks": "مڠياڤ کڤالا دڠن اير",
+       "teks": "مڽاڤو کڤالا دڠن اير",
        "rumi": "menyapu kepala dengan air"
       },
       {
@@ -939,7 +939,7 @@
   {
    "bahagian": "B",
    "jenis": "objektif",
-   "soalan": "هوکم ايسيتنجاء سلفس کلوار نجس اداله",
+   "soalan": "هوکم ايسيتنجاء سلڤس کلوار نجس اياله",
    "rumi": "Hukum istinjak selepas keluar najis ialah",
    "markah": 1,
    "item": [
@@ -972,7 +972,7 @@
   {
    "bahagian": "B",
    "jenis": "objektif",
-   "soalan": "انتارا برايكوت، باهن يڠ ماناکه تيدق بوليه دݢوناکن اونتوق ايسيتنجاء؟",
+   "soalan": "انتارا برايکوت، باهن يڠ ماناکه تيدق بوليه دݢوناکن اونتوق ايسيتنجاء؟",
    "rumi": "Antara berikut, bahan yang manakah tidak boleh digunakan untuk istinjak?",
    "markah": 1,
    "item": [
@@ -1005,7 +1005,7 @@
   {
    "bahagian": "B",
    "jenis": "objektif",
-   "soalan": "نجس يڠ ڤاليڠ برت اداله نجس",
+   "soalan": "نجس يڠ ڤاليڠ برت اياله نجس",
    "rumi": "Najis yang paling berat ialah najis",
    "markah": 1,
    "item": [
@@ -1038,7 +1038,7 @@
   {
    "bahagian": "B",
    "jenis": "objektif",
-   "soalan": "چارا مڽوچيکن نجس مغرلظة اداله",
+   "soalan": "چارا مڽوچيکن نجس مغرلظة اياله",
    "rumi": "Cara menyucikan najis mughallazah ialah",
    "markah": 1,
    "item": [
@@ -1071,7 +1071,7 @@
   {
    "bahagian": "B",
    "jenis": "objektif",
-   "soalan": "چونتوه نجس مخففة اداله",
+   "soalan": "چونتوه نجس مخففة اياله",
    "rumi": "Contoh najis mukhaffafah ialah",
    "markah": 1,
    "item": [
@@ -1084,7 +1084,7 @@
        "rumi": "darah"
       },
       {
-       "teks": "اير کينچي بايي لاکي",
+       "teks": "اير کنچيڠ بايي للاکي",
        "rumi": "air kencing bayi lelaki"
       },
       {
@@ -1121,7 +1121,7 @@
        "rumi": "disamak dengan tanah"
       },
       {
-       "teks": "دباسوه دڠن اير موطلق هيڠݢ هيلڠ ورنا، باءو دان راس",
+       "teks": "دباسوه دڠن اير مطلق هيڠݢ هيلڠ ورنا، باءو دان راس",
        "rumi": "dibasuh dengan air mutlak hingga hilang warna, bau dan rasa"
       },
       {
@@ -1137,7 +1137,7 @@
   {
    "bahagian": "B",
    "jenis": "objektif",
-   "soalan": "اير يڠ سوچي دان مڽوچيکن دسوبت",
+   "soalan": "اير يڠ سوچي دان مڽوچيکن دسبوت",
    "rumi": "Air yang suci dan menyucikan disebut",
    "markah": 1,
    "item": [
@@ -1158,7 +1158,7 @@
        "rumi": "air kopi"
       },
       {
-       "teks": "اير موطلق",
+       "teks": "اير مطلق",
        "rumi": "air mutlak"
       }
      ],
@@ -1191,7 +1191,7 @@
        "rumi": "empat"
       },
       {
-       "teks": "ليما",
+       "teks": "ليم",
        "rumi": "lima"
       }
      ],
@@ -1203,7 +1203,7 @@
   {
    "bahagian": "B",
    "jenis": "objektif",
-   "soalan": "نجس يڠ دماافکن دسوبت نجس",
+   "soalan": "نجس يڠ دماافکن دسبوت نجس",
    "rumi": "Najis yang dimaafkan disebut najis",
    "markah": 1,
    "item": [
@@ -1249,7 +1249,7 @@
        "rumi": "empat"
       },
       {
-       "teks": "ليما",
+       "teks": "ليم",
        "rumi": "lima"
       },
       {
@@ -1269,7 +1269,7 @@
   {
    "bahagian": "B",
    "jenis": "objektif",
-   "soalan": "رکن وضوء يڠ ڤرتام اداله",
+   "soalan": "رکن وضوء يڠ ڤرتام اياله",
    "rumi": "Rukun wuduk yang pertama ialah",
    "markah": 1,
    "item": [
@@ -1286,7 +1286,7 @@
        "rumi": "niat"
       },
       {
-       "teks": "مڠياڤ کڤالا",
+       "teks": "مڽاڤو کڤالا",
        "rumi": "menyapu kepala"
       },
       {
@@ -1302,7 +1302,7 @@
   {
    "bahagian": "B",
    "jenis": "objektif",
-   "soalan": "ممباسوه کدا تاعن هيڠݢ سيکو اداله رکن وضوء يڠ ک",
+   "soalan": "ممباسوه کدوا تاڠن هيڠݢ سيکو اياله رکن وضوء يڠ ک",
    "rumi": "Membasuh kedua tangan hingga siku ialah rukun wuduk yang ke-",
    "markah": 1,
    "item": [
@@ -1323,7 +1323,7 @@
        "rumi": "empat"
       },
       {
-       "teks": "ليما",
+       "teks": "ليم",
        "rumi": "lima"
       }
      ],
@@ -1335,7 +1335,7 @@
   {
    "bahagian": "B",
    "jenis": "objektif",
-   "soalan": "اڠݢوتا وضوء يڠ دساڤو دان بوکن دباسوه اداله",
+   "soalan": "اڠݢوتا وضوء يڠ دساڤو دان بوکن دباسوه اياله",
    "rumi": "Anggota wuduk yang disapu dan bukan dibasuh ialah",
    "markah": 1,
    "item": [
@@ -1348,7 +1348,7 @@
        "rumi": "muka"
       },
       {
-       "teks": "تاعن",
+       "teks": "تاڠن",
        "rumi": "tangan"
       },
       {
@@ -1368,7 +1368,7 @@
   {
    "bahagian": "B",
    "jenis": "objektif",
-   "soalan": "ممباسوه کدا کاکي هيڠݢ بوکو لالي اداله رکن وضوء يڠ ک",
+   "soalan": "ممباسوه کدوا کاکي هيڠݢ بوکو لالي اياله رکن وضوء يڠ ک",
    "rumi": "Membasuh kedua kaki hingga buku lali ialah rukun wuduk yang ke-",
    "markah": 1,
    "item": [
@@ -1377,7 +1377,7 @@
      "rumi": "",
      "pilihan": [
       {
-       "teks": "ليما",
+       "teks": "ليم",
        "rumi": "lima"
       },
       {
@@ -1401,7 +1401,7 @@
   {
    "bahagian": "B",
    "jenis": "objektif",
-   "soalan": "انتارا برايكوت، يڠ ماناکه ممبطلکن وضوء؟",
+   "soalan": "انتارا برايکوت، يڠ ماناکه ممبطلکن وضوء؟",
    "rumi": "Antara berikut, yang manakah membatalkan wuduk?",
    "markah": 1,
    "item": [
@@ -1434,7 +1434,7 @@
   {
    "bahagian": "B",
    "jenis": "objektif",
-   "soalan": "ڤرکارا يڠ دسنةکن سبلوم بروضوء اداله ممباچ",
+   "soalan": "ڤرکارا يڠ دسنتکن سبلوم بروضوء اياله ممباچ",
    "rumi": "Perkara yang disunatkan sebelum berwuduk ialah membaca",
    "markah": 1,
    "item": [
@@ -1480,15 +1480,15 @@
        "rumi": "sebelum membasuh muka"
       },
       {
-       "teks": "سلفس ممباسوه موک",
+       "teks": "سلڤس ممباسوه موک",
        "rumi": "selepas membasuh muka"
       },
       {
-       "teks": "کتيک مڠياڤ کڤالا",
+       "teks": "کتيک مڽاڤو کڤالا",
        "rumi": "ketika menyapu kepala"
       },
       {
-       "teks": "سلفس سلساي وضوء",
+       "teks": "سلڤس سلساي وضوء",
        "rumi": "selepas selesai wuduk"
       }
      ],
@@ -1533,7 +1533,7 @@
   {
    "bahagian": "B",
    "jenis": "objektif",
-   "soalan": "انتارا برايكوت، يڠ ماناکه بوکن رکن تيمم؟",
+   "soalan": "انتارا برايکوت، يڠ ماناکه بوکن رکن تيمم؟",
    "rumi": "Antara berikut, yang manakah bukan rukun tayammum?",
    "markah": 1,
    "item": [
@@ -1546,15 +1546,15 @@
        "rumi": "niat"
       },
       {
-       "teks": "مڠياڤ موک",
+       "teks": "مڽاڤو موک",
        "rumi": "menyapu muka"
       },
       {
-       "teks": "ممباسوه کدا کاکي",
+       "teks": "ممباسوه کدوا کاکي",
        "rumi": "membasuh kedua kaki"
       },
       {
-       "teks": "مڠياڤ کدا تاعن",
+       "teks": "مڽاڤو کدوا تاڠن",
        "rumi": "menyapu kedua tangan"
       }
      ],
@@ -1566,7 +1566,7 @@
   {
    "bahagian": "B",
    "jenis": "objektif",
-   "soalan": "انتارا برايكوت، يڠ ماناکه سبب دبوليهکن تيمم؟",
+   "soalan": "انتارا برايکوت، يڠ ماناکه سبب دبوليهکن تيمم؟",
    "rumi": "Antara berikut, yang manakah sebab dibolehkan tayammum?",
    "markah": 1,
    "item": [
@@ -1599,7 +1599,7 @@
   {
    "bahagian": "B",
    "jenis": "objektif",
-   "soalan": "ماندي واجب دلاکوکن دڠن چارا",
+   "soalan": "مندي واجب دلاکوکن دڠن چارا",
    "rumi": "Mandi wajib dilakukan dengan cara",
    "markah": 1,
    "item": [
@@ -1616,7 +1616,7 @@
        "rumi": "meratakan air ke seluruh badan dengan niat"
       },
       {
-       "teks": "مڠياڤ کڤالا سهاج",
+       "teks": "مڽاڤو کڤالا سهاج",
        "rumi": "menyapu kepala sahaja"
       },
       {
@@ -1632,7 +1632,7 @@
   {
    "bahagian": "B",
    "jenis": "objektif",
-   "soalan": "انتارا برايكوت، يڠ ماناکه بوکن سبب واجب مندي؟",
+   "soalan": "انتارا برايکوت، يڠ ماناکه بوکن سبب واجب مندي؟",
    "rumi": "Antara berikut, yang manakah bukan sebab wajib mandi?",
    "markah": 1,
    "item": [
@@ -1715,7 +1715,7 @@
        "rumi": "tiga belas"
       },
       {
-       "teks": "ليما بلس",
+       "teks": "ليم بلس",
        "rumi": "lima belas"
       },
       {
@@ -1731,7 +1731,7 @@
   {
    "bahagian": "B",
    "jenis": "objektif",
-   "soalan": "رکن صلاة يڠ ڤرتام اداله",
+   "soalan": "رکن صلاة يڠ ڤرتام اياله",
    "rumi": "Rukun solat yang pertama ialah",
    "markah": 1,
    "item": [
@@ -1839,7 +1839,7 @@
      "rumi": "",
      "pilihan": [
       {
-       "teks": "ليما",
+       "teks": "ليم",
        "rumi": "lima"
       },
       {
@@ -1863,7 +1863,7 @@
   {
    "bahagian": "B",
    "jenis": "objektif",
-   "soalan": "انتارا برايكوت، يڠ ماناکه رکن صلاة؟",
+   "soalan": "انتارا برايکوت، يڠ ماناکه رکن صلاة؟",
    "rumi": "Antara berikut, yang manakah rukun solat?",
    "markah": 1,
    "item": [
@@ -1884,7 +1884,7 @@
        "rumi": "membaca selawat dalam tahiyat awal"
       },
       {
-       "teks": "مڠڠکت تکبير کتيک برڤينده",
+       "teks": "مڠاڠکت تکبير کتيک برڤينده",
        "rumi": "mengangkat takbir ketika berpindah"
       }
      ],
@@ -1896,7 +1896,7 @@
   {
    "bahagian": "B",
    "jenis": "objektif",
-   "soalan": "رکن صلاة يڠ ترواخير اداله",
+   "soalan": "رکن صلاة يڠ تراخير اياله",
    "rumi": "Rukun solat yang terakhir ialah",
    "markah": 1,
    "item": [
@@ -1929,7 +1929,7 @@
   {
    "bahagian": "B",
    "jenis": "objektif",
-   "soalan": "بيلاڠن رکعة صلاة صبح اداله",
+   "soalan": "بيلاڠن رکعة صلاة صبح اياله",
    "rumi": "Bilangan rakaat solat Subuh ialah",
    "markah": 1,
    "item": [
@@ -1950,7 +1950,7 @@
        "rumi": "empat rakaat"
       },
       {
-       "teks": "ليما رکعة",
+       "teks": "ليم رکعة",
        "rumi": "lima rakaat"
       }
      ],
@@ -1962,7 +1962,7 @@
   {
    "bahagian": "B",
    "jenis": "objektif",
-   "soalan": "بيلاڠن رکعة صلاة مغرب اداله",
+   "soalan": "بيلاڠن رکعة صلاة مغرب اياله",
    "rumi": "Bilangan rakaat solat Maghrib ialah",
    "markah": 1,
    "item": [
@@ -1983,7 +1983,7 @@
        "rumi": "tiga rakaat"
       },
       {
-       "teks": "ليما رکعة",
+       "teks": "ليم رکعة",
        "rumi": "lima rakaat"
       }
      ],
@@ -1995,7 +1995,7 @@
   {
    "bahagian": "B",
    "jenis": "objektif",
-   "soalan": "بيلاڠن رکعة صلاة ظهر اداله",
+   "soalan": "بيلاڠن رکعة صلاة ظهر اياله",
    "rumi": "Bilangan rakaat solat Zuhur ialah",
    "markah": 1,
    "item": [
@@ -2016,7 +2016,7 @@
        "rumi": "dua rakaat"
       },
       {
-       "teks": "ليما رکعة",
+       "teks": "ليم رکعة",
        "rumi": "lima rakaat"
       }
      ],
@@ -2028,7 +2028,7 @@
   {
    "bahagian": "B",
    "jenis": "objektif",
-   "soalan": "صلاة يڠ دلاکوکن سبلوم ماتاهاري تربيت اداله صلاة",
+   "soalan": "صلاة يڠ دلاکوکن سبلوم ماتاهاري تربيت اياله صلاة",
    "rumi": "Solat yang dilakukan sebelum matahari terbit ialah solat",
    "markah": 1,
    "item": [
@@ -2061,7 +2061,7 @@
   {
    "bahagian": "B",
    "jenis": "objektif",
-   "soalan": "صلاة يڠ دلاکوکن سلفس ماتاهاري ترنم اداله صلاة",
+   "soalan": "صلاة يڠ دلاکوکن سلڤس ماتاهاري تربنم اياله صلاة",
    "rumi": "Solat yang dilakukan selepas matahari terbenam ialah solat",
    "markah": 1,
    "item": [
@@ -2107,11 +2107,11 @@
        "rumi": "matahari terbit"
       },
       {
-       "teks": "ماتاهاري ترݢلينق دري تڠه لڠيت",
+       "teks": "ماتاهاري ترݢلينچير دري تڠه لڠيت",
        "rumi": "matahari tergelincir dari tengah langit"
       },
       {
-       "teks": "ماتاهاري ترنم",
+       "teks": "ماتاهاري تربنم",
        "rumi": "matahari terbenam"
       },
       {
@@ -2127,7 +2127,7 @@
   {
    "bahagian": "B",
    "jenis": "objektif",
-   "soalan": "صلاة عصر دلاکوکن سلفس صلاة",
+   "soalan": "صلاة عصر دلاکوکن سلڤس صلاة",
    "rumi": "Solat Asar dilakukan selepas solat",
    "markah": 1,
    "item": [
@@ -2160,7 +2160,7 @@
   {
    "bahagian": "B",
    "jenis": "objektif",
-   "soalan": "صلاة عشاء دلاکوکن سلفس صلاة",
+   "soalan": "صلاة عشاء دلاکوکن سلڤس صلاة",
    "rumi": "Solat Isyak dilakukan selepas solat",
    "markah": 1,
    "item": [
@@ -2193,7 +2193,7 @@
   {
    "bahagian": "B",
    "jenis": "objektif",
-   "soalan": "ڤهالا صلاة برجماعة اداله",
+   "soalan": "ڤهالا صلاة برجماعه اياله",
    "rumi": "Pahala solat berjemaah ialah",
    "markah": 1,
    "item": [
@@ -2206,7 +2206,7 @@
        "rumi": "sepuluh darjat"
       },
       {
-       "teks": "ليما بلس درجت",
+       "teks": "ليم بلس درجت",
        "rumi": "lima belas darjat"
       },
       {
@@ -2226,7 +2226,7 @@
   {
    "bahagian": "B",
    "jenis": "objektif",
-   "soalan": "اورڠ يڠ مڠيکوتي إمام دالم صلاة برجماعة دݢلر",
+   "soalan": "اورڠ يڠ مڠيکوتي امام دالم صلاة برجماعه دݢلر",
    "rumi": "Orang yang mengikuti imam dalam solat berjemaah digelar",
    "markah": 1,
    "item": [
@@ -2235,7 +2235,7 @@
      "rumi": "",
      "pilihan": [
       {
-       "teks": "إمام",
+       "teks": "امام",
        "rumi": "imam"
       },
       {
@@ -2276,7 +2276,7 @@
        "rumi": "perempuan"
       },
       {
-       "teks": "لالکي مسلم يڠ بالغ",
+       "teks": "للاکي مسلم يڠ بالغ",
        "rumi": "lelaki muslim yang baligh"
       },
       {
@@ -2292,7 +2292,7 @@
   {
    "bahagian": "B",
    "jenis": "objektif",
-   "soalan": "بيلاڠن رکعة صلاة جمعة اداله",
+   "soalan": "بيلاڠن رکعة صلاة جمعة اياله",
    "rumi": "Bilangan rakaat solat Jumaat ialah",
    "markah": 1,
    "item": [
@@ -2313,7 +2313,7 @@
        "rumi": "empat rakaat"
       },
       {
-       "teks": "ليما رکعة",
+       "teks": "ليم رکعة",
        "rumi": "lima rakaat"
       }
      ],
@@ -2334,7 +2334,7 @@
      "rumi": "",
      "pilihan": [
       {
-       "teks": "سلفس صلاة جمعة",
+       "teks": "سلڤس صلاة جمعة",
        "rumi": "selepas solat Jumaat"
       },
       {
@@ -2346,7 +2346,7 @@
        "rumi": "sebelum solat Jumaat"
       },
       {
-       "teks": "سلفس سلام يڠ کدوا",
+       "teks": "سلڤس سلام يڠ کدوا",
        "rumi": "selepas salam yang kedua"
       }
      ],
@@ -2358,7 +2358,7 @@
   {
    "bahagian": "B",
    "jenis": "objektif",
-   "soalan": "صلاة سنة يڠ دلاکوکن ڤد بولن رمضان اداله صلاة",
+   "soalan": "صلاة سنة يڠ دلاکوکن ڤد بولن رمضان اياله صلاة",
    "rumi": "Solat sunat yang dilakukan pada bulan Ramadan ialah solat",
    "markah": 1,
    "item": [
@@ -2391,7 +2391,7 @@
   {
    "bahagian": "B",
    "jenis": "objektif",
-   "soalan": "صلاة سنة يڠ دلاکوکن ڤد وقتو ماتاهاري ناءيق اداله صلاة",
+   "soalan": "صلاة سنة يڠ دلاکوکن ڤد وقتو ماتاهاري ناءيق اياله صلاة",
    "rumi": "Solat sunat yang dilakukan pada waktu matahari naik ialah solat",
    "markah": 1,
    "item": [
@@ -2424,7 +2424,7 @@
   {
    "bahagian": "B",
    "jenis": "objektif",
-   "soalan": "صلاة سنة يڠ دلاکوکن کتيک ماسوق مسجد اداله صلاة",
+   "soalan": "صلاة سنة يڠ دلاکوکن کتيک ماسوق مسجد اياله صلاة",
    "rumi": "Solat sunat yang dilakukan ketika masuk masjid ialah solat",
    "markah": 1,
    "item": [
@@ -2457,7 +2457,7 @@
   {
    "bahagian": "B",
    "jenis": "objektif",
-   "soalan": "صلاة سنة يڠ دلاکوکن ڤد مالم سلفس تيدور اداله صلاة",
+   "soalan": "صلاة سنة يڠ دلاکوکن ڤد مالم سلڤس تيدور اياله صلاة",
    "rumi": "Solat sunat yang dilakukan pada malam selepas tidur ialah solat",
    "markah": 1,
    "item": [
@@ -2490,7 +2490,7 @@
   {
    "bahagian": "B",
    "jenis": "objektif",
-   "soalan": "اورڠ يڠ ملاوڠکن أذان دݢلر",
+   "soalan": "اورڠ يڠ ملاوڠکن اذان دݢلر",
    "rumi": "Orang yang melaungkan azan digelar",
    "markah": 1,
    "item": [
@@ -2499,7 +2499,7 @@
      "rumi": "",
      "pilihan": [
       {
-       "teks": "إمام",
+       "teks": "امام",
        "rumi": "imam"
       },
       {
@@ -2507,7 +2507,7 @@
        "rumi": "makmum"
       },
       {
-       "teks": "منجاݢ مسجد",
+       "teks": "ڤنجاݢ مسجد",
        "rumi": "penjaga masjid"
       },
       {
@@ -2523,7 +2523,7 @@
   {
    "bahagian": "B",
    "jenis": "objektif",
-   "soalan": "هوکم أذان باݢي صلاة برجماعة اداله",
+   "soalan": "هوکم اذان باݢي صلاة برجماعه اياله",
    "rumi": "Hukum azan bagi solat berjemaah ialah",
    "markah": 1,
    "item": [
@@ -2556,7 +2556,7 @@
   {
    "bahagian": "B",
    "jenis": "objektif",
-   "soalan": "إقامة دباچ",
+   "soalan": "اقامه دباچ",
    "rumi": "Iqamah dibaca",
    "markah": 1,
    "item": [
@@ -2565,15 +2565,15 @@
      "rumi": "",
      "pilihan": [
       {
-       "teks": "سلفس أذان دان سبلوم صلاة",
+       "teks": "سلڤس اذان دان سبلوم صلاة",
        "rumi": "selepas azan dan sebelum solat"
       },
       {
-       "teks": "سبلوم أذان",
+       "teks": "سبلوم اذان",
        "rumi": "sebelum azan"
       },
       {
-       "teks": "سلفس صلاة",
+       "teks": "سلڤس صلاة",
        "rumi": "selepas solat"
       },
       {
@@ -2589,7 +2589,7 @@
   {
    "bahagian": "B",
    "jenis": "objektif",
-   "soalan": "هوکم ڤواسا بولن رمضان اداله",
+   "soalan": "هوکم ڤواسا بولن رمضان اياله",
    "rumi": "Hukum puasa bulan Ramadan ialah",
    "markah": 1,
    "item": [
@@ -2622,7 +2622,7 @@
   {
    "bahagian": "B",
    "jenis": "objektif",
-   "soalan": "ماکن دان مينوم سبلوم تربيت ڤاجر دالم بولن رمضان دسوبت",
+   "soalan": "ماکن دان مينوم سبلوم تربيت ڤاجر دالم بولن رمضان دسبوت",
    "rumi": "Makan dan minum sebelum terbit fajar dalam bulan Ramadan disebut",
    "markah": 1,
    "item": [
@@ -2655,7 +2655,7 @@
   {
    "bahagian": "B",
    "jenis": "objektif",
-   "soalan": "وقتو بربوک ڤواسا اداله کتيک",
+   "soalan": "وقتو بربوک ڤواسا اياله کتيک",
    "rumi": "Waktu berbuka puasa ialah ketika",
    "markah": 1,
    "item": [
@@ -2664,7 +2664,7 @@
      "rumi": "",
      "pilihan": [
       {
-       "teks": "ماتاهاري ترنم",
+       "teks": "ماتاهاري تربنم",
        "rumi": "matahari terbenam"
       },
       {
@@ -2688,7 +2688,7 @@
   {
    "bahagian": "B",
    "jenis": "objektif",
-   "soalan": "انتارا برايكوت، يڠ ماناکه ممبطلکن ڤواسا؟",
+   "soalan": "انتارا برايکوت، يڠ ماناکه ممبطلکن ڤواسا؟",
    "rumi": "Antara berikut, yang manakah membatalkan puasa?",
    "markah": 1,
    "item": [
@@ -2730,7 +2730,7 @@
      "rumi": "",
      "pilihan": [
       {
-       "teks": "سياء هاري",
+       "teks": "سيڠ هاري",
        "rumi": "siang hari"
       },
       {
@@ -2787,7 +2787,7 @@
   {
    "bahagian": "B",
    "jenis": "objektif",
-   "soalan": "قدر زکاة فطرة باݢي ستيائڤ اورڠ اداله",
+   "soalan": "قدر زکاة فطرة باݢي ستياڤ اورڠ اياله",
    "rumi": "Kadar zakat fitrah bagi setiap orang ialah",
    "markah": 1,
    "item": [
@@ -2820,7 +2820,7 @@
   {
    "bahagian": "B",
    "jenis": "objektif",
-   "soalan": "وقتو تربائيک اونتوق ممبايار زکاة فطرة اداله",
+   "soalan": "وقتو تربائيک اونتوق ممبايار زکاة فطرة اياله",
    "rumi": "Waktu terbaik untuk membayar zakat fitrah ialah",
    "markah": 1,
    "item": [
@@ -2829,7 +2829,7 @@
      "rumi": "",
      "pilihan": [
       {
-       "teks": "سلفس صلاة عيد الفطري",
+       "teks": "سلڤس صلاة عيد الفطري",
        "rumi": "selepas solat Aidilfitri"
       },
       {
@@ -2853,7 +2853,7 @@
   {
    "bahagian": "B",
    "jenis": "objektif",
-   "soalan": "حج اداله رکن إسلام يڠ ک",
+   "soalan": "حج اياله رکن اسلام يڠ ک",
    "rumi": "Haji ialah rukun Islam yang ke-",
    "markah": 1,
    "item": [
@@ -2874,7 +2874,7 @@
        "rumi": "dua"
       },
       {
-       "teks": "ليما",
+       "teks": "ليم",
        "rumi": "lima"
       }
      ],
@@ -2886,7 +2886,7 @@
   {
    "bahagian": "B",
    "jenis": "objektif",
-   "soalan": "رکن حج يڠ ڤرتام اداله",
+   "soalan": "رکن حج يڠ ڤرتام اياله",
    "rumi": "Rukun haji yang pertama ialah",
    "markah": 1,
    "item": [
@@ -2895,11 +2895,11 @@
      "rumi": "",
      "pilihan": [
       {
-       "teks": "إحرام",
+       "teks": "احرام",
        "rumi": "Ihram"
       },
       {
-       "teks": "ووقد",
+       "teks": "وقوف",
        "rumi": "Wukuf"
       },
       {
@@ -2940,7 +2940,7 @@
        "rumi": "Arafah"
       },
       {
-       "teks": "مكة",
+       "teks": "مکه",
        "rumi": "Mekah"
       }
      ],
@@ -2952,7 +2952,7 @@
   {
    "bahagian": "B",
    "jenis": "objektif",
-   "soalan": "مڠليليڠي کعبة سباڽق توجوه کالي دسوبت",
+   "soalan": "مڠليليڠي کعبة سباڽق توجوه کالي دسبوت",
    "rumi": "Mengelilingi Kaabah sebanyak tujuh kali disebut",
    "markah": 1,
    "item": [
@@ -2965,7 +2965,7 @@
        "rumi": "sai"
       },
       {
-       "teks": "ووقد",
+       "teks": "وقوف",
        "rumi": "wukuf"
       },
       {
@@ -2985,7 +2985,7 @@
   {
    "bahagian": "B",
    "jenis": "objektif",
-   "soalan": "برجالن انتارا صفا دان مروة دسوبت",
+   "soalan": "برجالن انتارا صفا دان مروة دسبوت",
    "rumi": "Berjalan antara Safa dan Marwah disebut",
    "markah": 1,
    "item": [
@@ -3002,11 +3002,11 @@
        "rumi": "tawaf"
       },
       {
-       "teks": "ووقد",
+       "teks": "وقوف",
        "rumi": "wukuf"
       },
       {
-       "teks": "إحرام",
+       "teks": "احرام",
        "rumi": "ihram"
       }
      ],
@@ -3193,7 +3193,7 @@
    "bahagian": "C",
    "jenis": "tulis",
    "markah": 5,
-   "soalan": "ڽاتاکن ليم ڤرکارا يڠ ممبطلكن وضوء.",
+   "soalan": "ڽاتاکن ليم ڤرکارا يڠ ممبطلکن وضوء.",
    "rumi": "Nyatakan lima perkara yang membatalkan wuduk.",
    "idea": [
     {
@@ -3275,7 +3275,7 @@
    "bahagian": "C",
    "jenis": "tulis",
    "markah": 5,
-   "soalan": "ڽاتاکن ليم چونتوه اير مطلق يڠ بوليه ديݢوناکن اونتوق برسوچي.",
+   "soalan": "ڽاتاکن ليم چونتوه اير مطلق يڠ بوليه دݢوناکن اونتوق برسوچي.",
    "rumi": "Nyatakan lima contoh air mutlak yang boleh digunakan untuk bersuci.",
    "idea": [
     {
@@ -3345,7 +3345,7 @@
    "rumi": "Padankan istilah haji dan umrah dengan maksudnya.",
    "pasangan": [
     {
-     "kiri": "إحرام",
+     "kiri": "احرام",
      "kiriRumi": "Ihram",
      "kanan": "نية حج اتاو عمرة د ميقت",
      "kananRumi": "Niat haji atau umrah di miqat"
@@ -3353,13 +3353,13 @@
     {
      "kiri": "طواف",
      "kiriRumi": "Tawaf",
-     "kanan": "مڠليليڠي کعبة سبݢاي توجوه کالي",
+     "kanan": "مڠليليڠي کعبة سباڽق توجوه کالي",
      "kananRumi": "Mengelilingi Kaabah sebanyak tujuh kali"
     },
     {
      "kiri": "سعي",
      "kiriRumi": "Saie",
-     "kanan": "برجالن انتار صفا دان مروة سبݢاي توجوه کالي",
+     "kanan": "برجالن انتارا صفا دان مروة سباڽق توجوه کالي",
      "kananRumi": "Berjalan antara Safa dan Marwah sebanyak tujuh kali"
     },
     {
@@ -3381,7 +3381,7 @@
    "bahagian": "C",
    "jenis": "bulat",
    "markah": 5,
-   "soalan": "بولةکن جواڤن يڠ بتول.",
+   "soalan": "بولتکن جواڤن يڠ بتول.",
    "rumi": "Bulatkan jawapan yang betul.",
    "item": [
     {
@@ -3466,11 +3466,11 @@
    "bahagian": "C",
    "jenis": "bulat",
    "markah": 5,
-   "soalan": "بولةکن جواڤن يڠ بتول.",
+   "soalan": "بولتکن جواڤن يڠ بتول.",
    "rumi": "Bulatkan jawapan yang betul.",
    "item": [
     {
-     "teks": "صلاة فرض يڠ بيلڠن تيݢ رکعة اياله ____.",
+     "teks": "صلاة فرض يڠ بيلڠڽ تيݢ رکعة اياله ____.",
      "rumi": "Solat fardu yang bilangannya tiga rakaat ialah ____.",
      "pilihan": [
       {
@@ -3485,7 +3485,7 @@
      "jawapan": 1
     },
     {
-     "teks": "صلاة صبح دديريکن سبݢاي ____ رکعة.",
+     "teks": "صلاة صبح دديريکن سباڽق ____ رکعة.",
      "rumi": "Solat Subuh didirikan sebanyak ____ rakaat.",
      "pilihan": [
       {
@@ -3515,7 +3515,7 @@
      "jawapan": 1
     },
     {
-     "teks": "بيلڠن صلاة فرض دالم سهاري سماملم اياله ____.",
+     "teks": "بيلاڠن صلاة فرض دالم سهاري سماملم اياله ____.",
      "rumi": "Bilangan solat fardu dalam sehari semalam ialah ____.",
      "pilihan": [
       {
@@ -3523,7 +3523,7 @@
        "rumi": "lima"
       },
       {
-       "teks": "نم",
+       "teks": "انم",
        "rumi": "enam"
       }
      ],
@@ -3551,11 +3551,11 @@
    "bahagian": "C",
    "jenis": "bulat",
    "markah": 5,
-   "soalan": "بولةکن جواڤن يڠ بتول.",
+   "soalan": "بولتکن جواڤن يڠ بتول.",
    "rumi": "Bulatkan jawapan yang betul.",
    "item": [
     {
-     "teks": "ڤواسا رمضان واجب بݢي ستياڤ مسلم يڠ ____.",
+     "teks": "ڤواسا رمضان واجب باݢي ستياڤ مسلم يڠ ____.",
      "rumi": "Puasa Ramadan wajib bagi setiap muslim yang ____.",
      "pilihan": [
       {
@@ -3570,7 +3570,7 @@
      "jawapan": 0
     },
     {
-     "teks": "کيت دݢالکن برسحور سبلوم ماسوق وقتو ____.",
+     "teks": "کيت دݢالقکن برسحور سبلوم ماسوق وقتو ____.",
      "rumi": "Kita digalakkan bersahur sebelum masuk waktu ____.",
      "pilihan": [
       {
@@ -3600,7 +3600,7 @@
      "jawapan": 0
     },
     {
-     "teks": "ڤواسا بطل جک سساورڠ ____ دڠن سڠاج.",
+     "teks": "ڤواسا بطل جک سسأورڠ ____ دڠن سڠاج.",
      "rumi": "Puasa batal jika seseorang ____ dengan sengaja.",
      "pilihan": [
       {
@@ -3636,11 +3636,11 @@
    "bahagian": "C",
    "jenis": "bulat",
    "markah": 5,
-   "soalan": "بولةکن جواڤن يڠ بتول.",
+   "soalan": "بولتکن جواڤن يڠ بتول.",
    "rumi": "Bulatkan jawapan yang betul.",
    "item": [
     {
-     "teks": "سروان تند ماسوق وقتو صلاة دسبوت ____.",
+     "teks": "سروان تندا ماسوق وقتو صلاة دسبوت ____.",
      "rumi": "Seruan tanda masuk waktu solat disebut ____.",
      "pilihan": [
       {
@@ -3648,7 +3648,7 @@
        "rumi": "azan"
       },
       {
-       "teks": "اقامة",
+       "teks": "اقامه",
        "rumi": "iqamah"
       }
      ],
@@ -3685,7 +3685,7 @@
      "jawapan": 0
     },
     {
-     "teks": "زکاة فطرة دبايار سبݢاي ساتو ____ بݢي ستياڤ اورڠ.",
+     "teks": "زکاة فطرة دبايار سباڽق ساتو ____ باݢي ستياڤ اورڠ.",
      "rumi": "Zakat fitrah dibayar sebanyak satu ____ bagi setiap orang.",
      "pilihan": [
       {
@@ -3693,7 +3693,7 @@
        "rumi": "secupak"
       },
       {
-       "teks": "ݢنتن",
+       "teks": "ݢنتڠ",
        "rumi": "gantang"
       }
      ],
@@ -3721,7 +3721,7 @@
    "bahagian": "C",
    "jenis": "bulat",
    "markah": 5,
-   "soalan": "بولةکن جواڤن يڠ بتول.",
+   "soalan": "بولتکن جواڤن يڠ بتول.",
    "rumi": "Bulatkan jawapan yang betul.",
    "item": [
     {
@@ -3770,7 +3770,7 @@
      "jawapan": 1
     },
     {
-     "teks": "ممبريسهکن کمالوان سلڤس بواڠ اير دسبوت ____.",
+     "teks": "ممبرسيهکن کمالوان سلڤس بواڠ اير دسبوت ____.",
      "rumi": "Membersihkan kemaluan selepas buang air disebut ____.",
      "pilihan": [
       {
@@ -3806,7 +3806,7 @@
    "bahagian": "C",
    "jenis": "betul_salah",
    "markah": 5,
-   "soalan": "تندکن (✓) ڤد ڤرکاتاءن يڠ بتول دان (✗) ڤد ڤرکاتاءن يڠ ساله.",
+   "soalan": "تندکن (✓) ڤد ڤرڽاتاءن يڠ بتول دان (✗) ڤد ڤرڽاتاءن يڠ ساله.",
    "rumi": "Tandakan (betul) pada pernyataan yang betul dan (salah) pada pernyataan yang salah.",
    "item": [
     {
@@ -3816,13 +3816,13 @@
      "jawapan": -1
     },
     {
-     "teks": "صلاة فرض صبح سبݢاي دوا رکعة.",
+     "teks": "صلاة فرض صبح سباڽق دوا رکعة.",
      "rumi": "Solat fardu Subuh sebanyak dua rakaat.",
      "betul": true,
      "jawapan": -1
     },
     {
-     "teks": "بواڠ اير کچيل ممبطلكن وضوء.",
+     "teks": "بواڠ اير کچيل ممبطلکن وضوء.",
      "rumi": "Buang air kecil membatalkan wuduk.",
      "betul": true,
      "jawapan": -1
@@ -3846,23 +3846,23 @@
    "bahagian": "C",
    "jenis": "betul_salah",
    "markah": 5,
-   "soalan": "تندکن (✓) ڤد ڤرکاتاءن يڠ بتول دان (✗) ڤد ڤرکاتاءن يڠ ساله.",
+   "soalan": "تندکن (✓) ڤد ڤرڽاتاءن يڠ بتول دان (✗) ڤد ڤرڽاتاءن يڠ ساله.",
    "rumi": "Tandakan (betul) pada pernyataan yang betul dan (salah) pada pernyataan yang salah.",
    "item": [
     {
-     "teks": "ڤواسا رمضان واجب بݢي سموا کانق-کانق يڠ بلوم بالغ.",
+     "teks": "ڤواسا رمضان واجب باݢي سموا کانق-کانق يڠ بلوم بالغ.",
      "rumi": "Puasa Ramadan wajib bagi semua kanak-kanak yang belum baligh.",
      "betul": false,
      "jawapan": -1
     },
     {
-     "teks": "زکاة فطرة بوليه دبايار دالم بنتوق برس اتاو واڠ.",
+     "teks": "زکاة فطرة بوليه دبايار دالم بنتوق برس اتاو واءڠ.",
      "rumi": "Zakat fitrah boleh dibayar dalam bentuk beras atau wang.",
      "betul": true,
      "jawapan": -1
     },
     {
-     "teks": "صلاة تراويح هاث دلاکوکن ڤد بولن رمضان.",
+     "teks": "صلاة تراويح هاڽ دلاکوکن ڤد بولن رمضان.",
      "rumi": "Solat tarawih hanya dilakukan pada bulan Ramadan.",
      "betul": true,
      "jawapan": -1
@@ -3874,7 +3874,7 @@
      "jawapan": -1
     },
     {
-     "teks": "تيمم بوليه دلاکوکن والاوڤون ادا اير يڠ چوکوڤ.",
+     "teks": "تيمم بوليه دلاکوکن والاوڤون اد اير يڠ چوکوڤ.",
      "rumi": "Tayammum boleh dilakukan walaupun ada air yang cukup.",
      "betul": false,
      "jawapan": -1
@@ -3886,17 +3886,17 @@
    "bahagian": "C",
    "jenis": "betul_salah",
    "markah": 5,
-   "soalan": "تندکن (✓) ڤد ڤرکاتاءن يڠ بتول دان (✗) ڤد ڤرکاتاءن يڠ ساله.",
+   "soalan": "تندکن (✓) ڤد ڤرڽاتاءن يڠ بتول دان (✗) ڤد ڤرڽاتاءن يڠ ساله.",
    "rumi": "Tandakan (betul) pada pernyataan yang betul dan (salah) pada pernyataan yang salah.",
    "item": [
     {
-     "teks": "صلاة جمعة واجب بݢي للاکي مسلم يڠ بالغ.",
+     "teks": "صلاة جمعة واجب باݢي للاکي مسلم يڠ بالغ.",
      "rumi": "Solat Jumaat wajib bagi lelaki muslim yang baligh.",
      "betul": true,
      "jawapan": -1
     },
     {
-     "teks": "صلاة جمعة دلاکوکن سبݢاي دوا رکعة.",
+     "teks": "صلاة جمعة دلاکوکن سباڽق دوا رکعة.",
      "rumi": "Solat Jumaat dilakukan sebanyak dua rakaat.",
      "betul": true,
      "jawapan": -1
@@ -3908,7 +3908,7 @@
      "jawapan": -1
     },
     {
-     "teks": "صلاة برجماعه ممڤراوليه ڤهالا دوا ڤولوه توجوه درجه.",
+     "teks": "صلاة برجماعه ممڤراوليه ڤهالا دوا ڤولوه توجوه درجت.",
      "rumi": "Solat berjemaah memperoleh pahala dua puluh tujuh darjat.",
      "betul": true,
      "jawapan": -1
@@ -3926,35 +3926,35 @@
    "bahagian": "C",
    "jenis": "betul_salah",
    "markah": 5,
-   "soalan": "تندکن (✓) ڤد ڤرکاتاءن يڠ بتول دان (✗) ڤد ڤرکاتاءن يڠ ساله.",
+   "soalan": "تندکن (✓) ڤد ڤرڽاتاءن يڠ بتول دان (✗) ڤد ڤرڽاتاءن يڠ ساله.",
    "rumi": "Tandakan (betul) pada pernyataan yang betul dan (salah) pada pernyataan yang salah.",
    "item": [
     {
-     "teks": "اذان دلاوڠکن سبݢاي تند ماسوقڽ وقتو صلاة.",
+     "teks": "اذان دلاوڠکن سباݢاي تندا ماسوقڽ وقتو صلاة.",
      "rumi": "Azan dilaungkan sebagai tanda masuknya waktu solat.",
      "betul": true,
      "jawapan": -1
     },
     {
-     "teks": "اقامة دلاوڠکن دڠن لاڤظ يڠ لبيب ڤنجڠ درڤد اذان.",
+     "teks": "اقامه دلاوڠکن دڠن لفظ يڠ لبه ڤنجڠ درڤد اذان.",
      "rumi": "Iqamah dilaungkan dengan lafaz yang lebih panjang daripada azan.",
      "betul": false,
      "jawapan": -1
     },
     {
-     "teks": "صلاة سنة وتر بيلڠن رکعةڽ ݢنجيل.",
+     "teks": "صلاة سنة وتر بيلاڠن رکعةڽ ݢنجيل.",
      "rumi": "Solat sunat witir bilangan rakaatnya ganjil.",
      "betul": true,
      "jawapan": -1
     },
     {
-     "teks": "بردوءا سلڤس صلاة هندقله دڠن سوارا يڠ ساڠت کوات.",
+     "teks": "بردعاء سلڤس صلاة هندقله دڠن سوارا يڠ ساڠت کوات.",
      "rumi": "Berdoa selepas solat hendaklah dengan suara yang sangat kuat.",
      "betul": false,
      "jawapan": -1
     },
     {
-     "teks": "صلاة سنة ضحى دلاکوکن ڤد وقتو ڤاݢي سلڤس ماتاهاري نايق.",
+     "teks": "صلاة سنة ضحى دلاکوکن ڤد وقتو ڤاݢي سلڤس ماتاهاري ناءيق.",
      "rumi": "Solat sunat dhuha dilakukan pada waktu pagi selepas matahari naik.",
      "betul": true,
      "jawapan": -1
@@ -4175,7 +4175,7 @@
    "bahagian": "C",
    "jenis": "tulis",
    "markah": 5,
-   "soalan": "ڽاتاکن ليم ڤرکارا يڠ ممبطلكن صلاة.",
+   "soalan": "ڽاتاکن ليم ڤرکارا يڠ ممبطلکن صلاة.",
    "rumi": "Nyatakan lima perkara yang membatalkan solat.",
    "idea": [
     {
@@ -4598,7 +4598,7 @@
    "bahagian": "C",
    "jenis": "tulis",
    "markah": 5,
-   "soalan": "ڽاتاکن ليم ڤرکارا يڠ ممبطلكن ڤواسا.",
+   "soalan": "ڽاتاکن ليم ڤرکارا يڠ ممبطلکن ڤواسا.",
    "rumi": "Nyatakan lima perkara yang membatalkan puasa.",
    "idea": [
     {
@@ -4670,7 +4670,7 @@
    "bahagian": "C",
    "jenis": "tulis",
    "markah": 5,
-   "soalan": "ڽاتاکن ليم ݢولوڠن يڠ برحق منريما زکاة.",
+   "soalan": "ڽاتاکن ليم ݢولوڠن يڠ برحق منريم زکاة.",
    "rumi": "Nyatakan lima golongan yang berhak menerima zakat.",
    "idea": [
     {
@@ -4796,7 +4796,7 @@
    "bahagian": "C",
    "jenis": "tulis",
    "markah": 5,
-   "soalan": "ڽاتاکن ليم سبب يڠ ممبولهکن سساورڠ برتيمم.",
+   "soalan": "ڽاتاکن ليم سبب يڠ ممبولهکن سسأورڠ برتيمم.",
    "rumi": "Nyatakan lima sebab yang membolehkan seseorang bertayammum.",
    "idea": [
     {
@@ -4862,7 +4862,7 @@
    "bahagian": "C",
    "jenis": "tempat_kosong",
    "markah": 5,
-   "soalan": "ايسي تمڤت کوسوڠ دڠن ڤرکات يڠ دبريکن.",
+   "soalan": "ايسي تمڤت کوسوڠ دڠن ڤرکاتاءن يڠ دبريکن.",
    "rumi": "Isi tempat kosong dengan perkataan yang diberikan.",
    "bank": [
     "نية",
@@ -4906,7 +4906,7 @@
    "bahagian": "C",
    "jenis": "tempat_kosong",
    "markah": 5,
-   "soalan": "ايسي تمڤت کوسوڠ دڠن ڤرکات يڠ دبريکن.",
+   "soalan": "ايسي تمڤت کوسوڠ دڠن ڤرکاتاءن يڠ دبريکن.",
    "rumi": "Isi tempat kosong dengan perkataan yang diberikan.",
    "bank": [
     "سحور",
@@ -4924,11 +4924,11 @@
    ],
    "item": [
     {
-     "teks": "کيت دݢالکن ماکن ____ سبلوم ماسوق وقتو صبح.",
+     "teks": "کيت دݢالقکن ماکن ____ سبلوم ماسوق وقتو صبح.",
      "rumi": "Kita digalakkan makan ____ sebelum masuk waktu Subuh."
     },
     {
-     "teks": "ڤواسا هندقله دمولاءي دڠن ____ ڤد مالم هاري.",
+     "teks": "ڤواسا هندقله دمولاکن دڠن ____ ڤد مالم هاري.",
      "rumi": "Puasa hendaklah dimulakan dengan ____ pada malam hari."
     },
     {
@@ -4940,7 +4940,7 @@
      "rumi": "Solat ____ dilakukan selepas solat Isyak pada bulan Ramadan."
     },
     {
-     "teks": "وقتو ____ برمولى سبلوم ماسوق وقتو صبح.",
+     "teks": "وقتو ____ برمولا سبلوم ماسوق وقتو صبح.",
      "rumi": "Waktu ____ bermula sebelum masuk waktu Subuh."
     }
    ],
@@ -4950,7 +4950,7 @@
    "bahagian": "C",
    "jenis": "tempat_kosong",
    "markah": 5,
-   "soalan": "ايسي تمڤت کوسوڠ دڠن ڤرکات يڠ دبريکن.",
+   "soalan": "ايسي تمڤت کوسوڠ دڠن ڤرکاتاءن يڠ دبريکن.",
    "rumi": "Isi tempat kosong dengan perkataan yang diberikan.",
    "bank": [
     "مغرلظة",
@@ -4980,7 +4980,7 @@
      "rumi": "Najis ____ ialah najis yang ringan seperti air kencing kanak-kanak lelaki."
     },
     {
-     "teks": "نجس يڠ ڤاليڠ برت دسوچيکن دڠن ممباسوه مڠݢوناکن ____ سبݢاي توجوه کالي.",
+     "teks": "نجس يڠ ڤاليڠ برت دسوچيکن دڠن ممباسوه مڠݢوناکن ____ سباڽق توجوه کالي.",
      "rumi": "Najis yang paling berat disucikan dengan membasuh menggunakan ____ sebanyak tujuh kali."
     },
     {
@@ -4994,7 +4994,7 @@
    "bahagian": "C",
    "jenis": "tempat_kosong",
    "markah": 5,
-   "soalan": "ايسي تمڤت کوسوڠ دڠن ڤرکات يڠ دبريکن.",
+   "soalan": "ايسي تمڤت کوسوڠ دڠن ڤرکاتاءن يڠ دبريکن.",
    "rumi": "Isi tempat kosong dengan perkataan yang diberikan.",
    "bank": [
     "صبح",
@@ -5012,7 +5012,7 @@
    ],
    "item": [
     {
-     "teks": "صلاة ____ دلاکوکن ڤد اڤال ڤاݢي.",
+     "teks": "صلاة ____ دلاکوکن ڤد اول ڤاݢي.",
      "rumi": "Solat ____ dilakukan pada awal pagi."
     },
     {
@@ -5038,7 +5038,7 @@
    "bahagian": "C",
    "jenis": "tempat_kosong",
    "markah": 5,
-   "soalan": "ايسي تمڤت کوسوڠ دڠن ڤرکات يڠ دبريکن.",
+   "soalan": "ايسي تمڤت کوسوڠ دڠن ڤرکاتاءن يڠ دبريکن.",
    "rumi": "Isi tempat kosong dengan perkataan yang diberikan.",
    "bank": [
     "نية",
@@ -5056,7 +5056,7 @@
    ],
    "item": [
     {
-     "teks": "ستياڤ صلاة هندقله دمولاءي دڠن ____.",
+     "teks": "ستياڤ صلاة هندقله دمولاکن دڠن ____.",
      "rumi": "Setiap solat hendaklah dimulakan dengan ____."
     },
     {
@@ -5082,10 +5082,10 @@
    "bahagian": "C",
    "jenis": "tempat_kosong",
    "markah": 5,
-   "soalan": "ايسي تمڤت کوسوڠ دڠن ڤرکات يڠ دبريکن.",
+   "soalan": "ايسي تمڤت کوسوڠ دڠن ڤرکاتاءن يڠ دبريکن.",
    "rumi": "Isi tempat kosong dengan perkataan yang diberikan.",
    "bank": [
-    "إحرام",
+    "احرام",
     "وقوف",
     "طواف",
     "سعي",
@@ -5108,11 +5108,11 @@
      "rumi": "____ di Arafah ialah rukun haji yang paling utama."
     },
     {
-     "teks": "مڠليليڠي کعبة سبݢاي توجوه کالي دسبوت ____.",
+     "teks": "مڠليليڠي کعبة سباڽق توجوه کالي دسبوت ____.",
      "rumi": "Mengelilingi Kaabah sebanyak tujuh kali disebut ____."
     },
     {
-     "teks": "برجالن انتار بوكيت صفا دان مروة سبݢاي توجوه کالي دسبوت ____.",
+     "teks": "برجالن انتارا بوکيت صفا دان مروة سباڽق توجوه کالي دسبوت ____.",
      "rumi": "Berjalan antara bukit Safa dan Marwah sebanyak tujuh kali disebut ____."
     },
     {
@@ -5132,7 +5132,7 @@
     {
      "kiri": "صبح",
      "kiriRumi": "Subuh",
-     "kanan": "دوا رکعة، دلاکوکن سبلوم ماتاهاري نايق",
+     "kanan": "دوا رکعة، دلاکوکن سبلوم ماتاهاري ناءيق",
      "kananRumi": "Dua rakaat, dilakukan sebelum matahari naik"
     },
     {
@@ -5178,7 +5178,7 @@
     {
      "kiri": "ضحى",
      "kiriRumi": "Dhuha",
-     "kanan": "دلاکوکن ڤد وقتو ڤاݢي سلڤس ماتاهاري نايق",
+     "kanan": "دلاکوکن ڤد وقتو ڤاݢي سلڤس ماتاهاري ناءيق",
      "kananRumi": "Dilakukan pada waktu pagi selepas matahari naik"
     },
     {
@@ -5196,7 +5196,7 @@
     {
      "kiri": "وتر",
      "kiriRumi": "Witir",
-     "kanan": "بيلڠن رکعةڽ ݢنجيل",
+     "kanan": "بيلاڠن رکعةڽ ݢنجيل",
      "kananRumi": "Bilangan rakaatnya ganjil"
     }
    ],
@@ -5230,13 +5230,13 @@
     {
      "kiri": "استنجاء",
      "kiriRumi": "Istinjak",
-     "kanan": "ممبريسهکن کمالوان سلڤس بواڠ اير",
+     "kanan": "ممبرسيهکن کمالوان سلڤس بواڠ اير",
      "kananRumi": "Membersihkan kemaluan selepas buang air"
     },
     {
      "kiri": "مڽوچيکن نجس مغرلظة",
      "kiriRumi": "Menyucikan najis mughallazah",
-     "kanan": "ممباسوه سبݢاي توجوه کالي دان ساتو کالي دچامڤور تانه",
+     "kanan": "ممباسوه سباڽق توجوه کالي دان ساتو کالي دچامڤور تانه",
      "kananRumi": "Membasuh sebanyak tujuh kali dan satu kali dicampur tanah"
     }
    ],
@@ -5246,19 +5246,19 @@
    "bahagian": "C",
    "jenis": "suai",
    "markah": 5,
-   "soalan": "ڤادانکن ايستيله برايكوت دڠن مکسودڽ.",
+   "soalan": "ڤادانکن ايستيله برايکوت دڠن مکسودڽ.",
    "rumi": "Padankan istilah berikut dengan maksudnya.",
    "pasangan": [
     {
      "kiri": "اذان",
      "kiriRumi": "Azan",
-     "kanan": "سروان تند ماسوق وقتو صلاة",
+     "kanan": "سروان تندا ماسوق وقتو صلاة",
      "kananRumi": "Seruan tanda masuk waktu solat"
     },
     {
-     "kiri": "اقامة",
+     "kiri": "اقامه",
      "kiriRumi": "Iqamah",
-     "kanan": "سروان تند صلاة اکن دديريکن",
+     "kanan": "سروان تندا صلاة اکن دديريکن",
      "kananRumi": "Seruan tanda solat akan didirikan"
     },
     {
@@ -5310,13 +5310,13 @@
     {
      "kiri": "قضاء",
      "kiriRumi": "Qada",
-     "kanan": "ممݢنتيکن ڤواسا يڠ دتيڠݢلکن ڤد هاري لاين",
+     "kanan": "مڠݢنتيکن ڤواسا يڠ دتيڠݢلکن ڤد هاري لاين",
      "kananRumi": "Menggantikan puasa yang ditinggalkan pada hari lain"
     },
     {
      "kiri": "فدية",
      "kiriRumi": "Fidyah",
-     "kanan": "ممبري ماکان کڤد فقير مسکين سبݢاي دندا",
+     "kanan": "ممبري ماکنن کڤد فقير مسکين سباݢاي دندا",
      "kananRumi": "Memberi makanan kepada fakir miskin sebagai denda"
     }
    ],
@@ -5397,7 +5397,7 @@
    "bahagian": "D",
    "jenis": "huraian",
    "markah": 5,
-   "soalan": "هوايکن ليم چارا مڽوچيکن نجس.",
+   "soalan": "هوارايکن ليم چارا مڽوچيکن نجس.",
    "rumi": "Huraikan lima cara menyucikan najis.",
    "idea": [
     {
@@ -5483,7 +5483,7 @@
    "bahagian": "D",
    "jenis": "huraian",
    "markah": 5,
-   "soalan": "جلسکن ليم حکمة برسوچي دالم کهيدوڤن.",
+   "soalan": "جلسکن ليم حکمه برسوچي دالم کهيدوڤن.",
    "rumi": "Jelaskan lima hikmah bersuci dalam kehidupan.",
    "idea": [
     {
@@ -5708,7 +5708,7 @@
    "bahagian": "D",
    "jenis": "huraian",
    "markah": 5,
-   "soalan": "هوايکن ليم عملن سنة ڤد هاري جمعة.",
+   "soalan": "هوارايکن ليم عملن سنة ڤد هاري جمعة.",
    "rumi": "Huraikan lima amalan sunat pada hari Jumaat.",
    "idea": [
     {
@@ -5864,7 +5864,7 @@
    "bahagian": "D",
    "jenis": "huraian",
    "markah": 5,
-   "soalan": "هوايکن ليم حکمة برڤواسا.",
+   "soalan": "هوارايکن ليم حکمه برڤواسا.",
    "rumi": "Huraikan lima hikmah berpuasa.",
    "idea": [
     {
@@ -6023,7 +6023,7 @@
    "bahagian": "D",
    "jenis": "huraian",
    "markah": 5,
-   "soalan": "هوايکن ليم لارڠن کتيک برإحرام.",
+   "soalan": "هوارايکن ليم لارڠن کتيک برإحرام.",
    "rumi": "Huraikan lima larangan ketika berihram.",
    "idea": [
     {
@@ -6180,7 +6180,7 @@
    "bahagian": "D",
    "jenis": "huraian",
    "markah": 5,
-   "soalan": "هوايکن ليم جنيس ڤواسا سنة.",
+   "soalan": "هوارايکن ليم جنيس ڤواسا سنة.",
    "rumi": "Huraikan lima jenis puasa sunat.",
    "idea": [
     {
@@ -6324,7 +6324,7 @@
    "bahagian": "D",
    "jenis": "huraian",
    "markah": 5,
-   "soalan": "هوايکن ليم عملن کتيک ملاکساناکن عمرة.",
+   "soalan": "هوارايکن ليم عملن کتيک ملاکساناکن عمرة.",
    "rumi": "Huraikan lima amalan ketika melaksanakan umrah.",
    "idea": [
     {
@@ -6358,7 +6358,7 @@
       "marwah",
       "سعي",
       "انتار",
-      "بوكيت",
+      "بوکيت",
       "صفا",
       "مروة"
      ]
@@ -6389,7 +6389,7 @@
    "jawapanContoh": [
     "برنية إحرام د ميقت",
     "طواف مڠليليڠي کعبة سبݢاي توجوه کالي",
-    "سعي انتار بوكيت صفا دان مروة",
+    "سعي انتار بوکيت صفا دان مروة",
     "تحلل دڠن برݢونتيڠ اتاو منچوکور رمبوت",
     "ملاکساناکن رکن عمرة مڠيکوت ترتيب"
    ],
@@ -6406,7 +6406,7 @@
    "bahagian": "D",
    "jenis": "huraian",
    "markah": 5,
-   "soalan": "جلسکن ليم ڤربزاءن انتار حج دان عمرة.",
+   "soalan": "جلسکن ليم ڤربزاءن انتارا حج دان عمرة.",
    "rumi": "Jelaskan lima perbezaan antara haji dan umrah.",
    "idea": [
     {
@@ -6493,7 +6493,7 @@
    "bahagian": "D",
    "jenis": "huraian",
    "markah": 5,
-   "soalan": "هوايکن ليم ادب بردوءا.",
+   "soalan": "هوارايکن ليم ادب بردعاء.",
    "rumi": "Huraikan lima adab berdoa.",
    "idea": [
     {
@@ -6709,7 +6709,7 @@
    "bahagian": "D",
    "jenis": "huraian",
    "markah": 5,
-   "soalan": "هوايکن ليم چارا برسوچي درڤد حدث.",
+   "soalan": "هوارايکن ليم چارا برسوچي درڤد حدث.",
    "rumi": "Huraikan lima cara bersuci daripada hadas.",
    "idea": [
     {
@@ -6791,7 +6791,7 @@
    "bahagian": "D",
    "jenis": "huraian",
    "markah": 5,
-   "soalan": "ترڠکن ليم سبب سساورڠ ممڤوڽاءي ڤواسا يڠ ڤرلو دقضاء اتاو دبايار فدية.",
+   "soalan": "ترڠکن ليم سبب سسأورڠ ممڤوڽاءي ڤواسا يڠ ڤرلو دقضاء اتاو دبايار فدية.",
    "rumi": "Terangkan lima sebab seseorang mempunyai puasa yang perlu diqada atau dibayar fidyah.",
    "idea": [
     {
@@ -6868,7 +6868,7 @@
    "bahagian": "D",
    "jenis": "huraian",
    "markah": 5,
-   "soalan": "هوايکن ليم عملن يڠ منمبه ڤهالا ڤد بولن رمضان.",
+   "soalan": "هوارايکن ليم عملن يڠ منمبه ڤهالا ڤد بولن رمضان.",
    "rumi": "Huraikan lima amalan yang menambah pahala pada bulan Ramadan.",
    "idea": [
     {
@@ -6896,8 +6896,8 @@
      "kata": [
       "iktikaf",
       "masjid",
-      "اعتكاف",
-      "براعتكاف",
+      "اعتکاف",
+      "براعتکاف",
       "مسجد"
      ]
     },
@@ -6926,7 +6926,7 @@
    "jawapanContoh": [
     "منونايکن صلاة تراويح",
     "ممباچ دان برتدارس القرآن",
-    "براعتكاف د دالم مسجد",
+    "براعتکاف د دالم مسجد",
     "برصدقة کڤد اورڠ مسکين",
     "ممبري ماکن کڤد اورڠ يڠ بربوک ڤواسا"
    ],
@@ -6982,7 +6982,7 @@
      "kata": [
       "keji",
       "mungkar",
-      "منكر",
+      "منکر",
       "منجاوهي",
       "ڤربواتن",
       "کجي",
@@ -7020,7 +7020,7 @@
    "bahagian": "D",
    "jenis": "huraian",
    "markah": 5,
-   "soalan": "هوايکن ليم جنيس اير دان حکمڽ اونتوق برسوچي.",
+   "soalan": "هوارايکن ليم جنيس اير دان حکمڽ اونتوق برسوچي.",
    "rumi": "Huraikan lima jenis air dan hukumnya untuk bersuci.",
    "idea": [
     {

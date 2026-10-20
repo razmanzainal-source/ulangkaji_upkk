@@ -11,7 +11,7 @@
    "markah": 5,
    "item": [
     {
-     "teks": "کيت هندقله ____ ستياس نعمت يڠ دبريکن الله کڤد کيت.",
+     "teks": "کيت هندقله ____ سنتياس نعمت يڠ دبريکن الله کڤد کيت.",
      "rumi": "Kita hendaklah ____ sentiasa nikmat yang diberikan Allah kepada kita.",
      "pilihan": [
       {
@@ -19,14 +19,14 @@
        "rumi": "bersyukur"
       },
       {
-       "teks": "ملاڤکن",
+       "teks": "ملوڤاکن",
        "rumi": "melupakan"
       }
      ],
      "jawapan": 0
     },
     {
-     "teks": "کيت هندقله مڠرجاءکن ____ ڤد اول وقتو سباݢاي تندا کتاعت کڤد الله.",
+     "teks": "کيت هندقله مڠرجاکن ____ ڤد اول وقتو سباݢاي تندا کتاعت کڤد الله.",
      "rumi": "Kita hendaklah mengerjakan ____ pada awal waktu sebagai tanda ketaatan kepada Allah.",
      "pilihan": [
       {
@@ -56,11 +56,11 @@
      "jawapan": 0
     },
     {
-     "teks": "کيت هندقله ممباچ ____ سبلاوم ممولاکن ڤکرجاءن يڠ باءيق.",
+     "teks": "کيت هندقله ممباچ ____ سبلوم ممولاکن ڤکرجاءن يڠ باءيق.",
      "rumi": "Kita hendaklah membaca ____ sebelum memulakan pekerjaan yang baik.",
      "pilihan": [
       {
-       "teks": "دعاء اورڠ لاءين",
+       "teks": "دعاء اورڠ لاين",
        "rumi": "doa orang lain"
       },
       {
@@ -71,7 +71,7 @@
      "jawapan": 1
     },
     {
-     "teks": "کيت هندقله ____ رسول الله دڠن مڠيکوت سنة بݢيندا.",
+     "teks": "کيت هندقله ____ رسول الله دڠن مڠيکوتي سنة بݢيندا.",
      "rumi": "Kita hendaklah ____ Rasulullah dengan mengikuti sunnah baginda.",
      "pilihan": [
       {
@@ -111,7 +111,7 @@
      "jawapan": 1
     },
     {
-     "teks": "سبلاوم کلوار رومه، کيت هندقله ____ ايبو باڤ.",
+     "teks": "سبلوم کلوار رومه، کيت هندقله ____ ايبو باڤ.",
      "rumi": "Sebelum keluar rumah, kita hendaklah ____ ibu bapa.",
      "pilihan": [
       {
@@ -181,7 +181,7 @@
    "markah": 5,
    "item": [
     {
-     "teks": "سبلاوم ماکن، کيت هندقله ممباسوه تاڠن دان ممباچ ____.",
+     "teks": "سبلوم ماکن، کيت هندقله ممباسوه تاڠن دان ممباچ ____.",
      "rumi": "Sebelum makan, kita hendaklah membasuh tangan dan membaca ____.",
      "pilihan": [
       {
@@ -219,7 +219,7 @@
        "rumi": "bercakap"
       },
       {
-       "teks": "مڠونيڠ",
+       "teks": "مڠوڽه",
        "rumi": "mengunyah"
       }
      ],
@@ -266,7 +266,7 @@
    "markah": 5,
    "item": [
     {
-     "teks": "کيت هندقله ممباچ دعاء سبلاوم ____.",
+     "teks": "کيت هندقله ممباچ دعاء سبلوم ____.",
      "rumi": "Kita hendaklah membaca doa sebelum ____.",
      "pilihan": [
       {
@@ -351,7 +351,7 @@
    "markah": 5,
    "item": [
     {
-     "teks": "اورڠ يڠ برکات بنر دان تيدق بربوهوڠ دسيبوت اورڠ يڠ ____.",
+     "teks": "اورڠ يڠ برکات بنر دان تيدق بربوهوڠ دسبوت اورڠ يڠ ____.",
      "rumi": "Orang yang berkata benar dan tidak berbohong disebut orang yang ____.",
      "pilihan": [
       {
@@ -366,7 +366,7 @@
      "jawapan": 1
     },
     {
-     "teks": "کيت هندقله ____ امانه يڠ دبريکن اورڠ لاءين.",
+     "teks": "کيت هندقله ____ امانه يڠ دبريکن اورڠ لاين.",
      "rumi": "Kita hendaklah ____ amanah yang diberikan orang lain.",
      "pilihan": [
       {
@@ -381,7 +381,7 @@
      "jawapan": 0
     },
     {
-     "teks": "تيدق سنڠ مليهت کباءيکن اورڠ لاءين اداله سيفت ____.",
+     "teks": "تيدق سنڠ مليهت کباءيقن اورڠ لاين اياله سيفت ____.",
      "rumi": "Tidak senang melihat kebaikan orang lain adalah sifat ____.",
      "pilihan": [
       {
@@ -396,15 +396,15 @@
      "jawapan": 1
     },
     {
-     "teks": "مڠومڤت اورڠ لاءين اداله ڤربواتن يڠ ____.",
+     "teks": "مڠومڤت اورڠ لاين اياله ڤربواتن يڠ ____.",
      "rumi": "Mengumpat orang lain adalah perbuatan yang ____.",
      "pilihan": [
       {
-       "teks": "دلاڠ اوليه إسلام",
+       "teks": "دلاڠ اوليه اسلام",
        "rumi": "dilarang oleh Islam"
       },
       {
-       "teks": "دݢالقکن اوليه إسلام",
+       "teks": "دݢالقکن اوليه اسلام",
        "rumi": "digalakkan oleh Islam"
       }
      ],
@@ -462,7 +462,7 @@
     {
      "kiri": "برچاکڤ دڠن سوارا يڠ لمبوت",
      "kiriRumi": "Bercakap dengan suara yang lembut",
-     "kanan": "کتيک برچاکڤ دڠن اورڠ لاءين",
+     "kanan": "کتيک برچاکڤ دڠن اورڠ لاين",
      "kananRumi": "Ketika bercakap dengan orang lain"
     }
    ],
@@ -471,7 +471,7 @@
   {
    "bahagian": "A",
    "jenis": "suai",
-   "soalan": "سوايکن سيفت دڠن مکسود يڠ بتول.",
+   "soalan": "سوايکن سيفت دڠن مقصود يڠ بتول.",
    "rumi": "Suaikan sifat dengan maksud yang betul.",
    "markah": 5,
    "pasangan": [
@@ -484,7 +484,7 @@
     {
      "kiri": "امانه",
      "kiriRumi": "Amanah",
-     "kanan": "منجاݢ کڤرچاءأن اورڠ لاءين",
+     "kanan": "منجاݢ کڤرچاءأن اورڠ لاين",
      "kananRumi": "Menjaga kepercayaan orang lain"
     },
     {
@@ -496,13 +496,13 @@
     {
      "kiri": "تامق",
      "kiriRumi": "Tamak",
-     "kanan": "اينݢين مڠمبيل سموا بارڠ اونتوق ديري سنديري",
+     "kanan": "ايڠين مڠامبيل سموا بارڠ اونتوق ديري سنديري",
      "kananRumi": "Ingin mengambil semua barang untuk diri sendiri"
     },
     {
      "kiri": "مڠومڤت",
      "kiriRumi": "Mengumpat",
-     "kanan": "برچاکڤ کبوروکن اورڠ لاءين دبلکڠ مريک",
+     "kanan": "برچاکڤ کبوروکن اورڠ لاين دبلکڠ مريک",
      "kananRumi": "Bercakap keburukan orang lain di belakang mereka"
     }
    ],
@@ -564,7 +564,7 @@
     {
      "kiri": "بربوهوڠ",
      "kiriRumi": "Berbohong",
-     "kanan": "تيدق دڤرچاءاي اوليه اورڠ لاءين",
+     "kanan": "تيدق دڤرچاي اوليه اورڠ لاين",
      "kananRumi": "Tidak dipercayai oleh orang lain"
     },
     {
@@ -591,7 +591,7 @@
   {
    "bahagian": "A",
    "jenis": "betul_salah",
-   "soalan": "تنداکن ✓ ڤد ڤتاتاءن يڠ بتول دان ✗ ڤد ڤتاتاءن يڠ ساله.",
+   "soalan": "تنداکن ✓ ڤد ڤرڽاتاءن يڠ بتول دان ✗ ڤد ڤرڽاتاءن يڠ ساله.",
    "rumi": "Tandakan ✓ pada pernyataan yang betul dan ✗ pada pernyataan yang salah.",
    "markah": 5,
    "item": [
@@ -614,13 +614,13 @@
      "jawapan": -1
     },
     {
-     "teks": "مڠومڤت ايبو باڤ اداله ڤربواتن يڠ دݢالقکن دالم إسلام.",
+     "teks": "مڠومڤت ايبو باڤ اياله ڤربواتن يڠ دݢالقکن دالم اسلام.",
      "rumi": "Mengumpat ibu bapa adalah perbuatan yang digalakkan dalam Islam.",
      "betul": false,
      "jawapan": -1
     },
     {
-     "teks": "کيت هندقله ممباچ القرءان دان مڠيکوت سنة رسول الله.",
+     "teks": "کيت هندقله ممباچ القرءان دان مڠيکوتي سنة رسول الله.",
      "rumi": "Kita hendaklah membaca Al-Quran dan mengikuti sunnah Rasulullah.",
      "betul": true,
      "jawapan": -1
@@ -631,7 +631,7 @@
   {
    "bahagian": "A",
    "jenis": "betul_salah",
-   "soalan": "تنداکن ✓ ڤد ڤتاتاءن يڠ بتول دان ✗ ڤد ڤتاتاءن يڠ ساله.",
+   "soalan": "تنداکن ✓ ڤد ڤرڽاتاءن يڠ بتول دان ✗ ڤد ڤرڽاتاءن يڠ ساله.",
    "rumi": "Tandakan ✓ pada pernyataan yang betul dan ✗ pada pernyataan yang salah.",
    "markah": 5,
    "item": [
@@ -642,7 +642,7 @@
      "jawapan": -1
     },
     {
-     "teks": "کيت هندقله ممباسوه تاڠن سبلاوم ماکن.",
+     "teks": "کيت هندقله ممباسوه تاڠن سبلوم ماکن.",
      "rumi": "Kita hendaklah membasuh tangan sebelum makan.",
      "betul": true,
      "jawapan": -1
@@ -671,7 +671,7 @@
   {
    "bahagian": "A",
    "jenis": "betul_salah",
-   "soalan": "تنداکن ✓ ڤد ڤتاتاءن يڠ بتول دان ✗ ڤد ڤتاتاءن يڠ ساله.",
+   "soalan": "تنداکن ✓ ڤد ڤرڽاتاءن يڠ بتول دان ✗ ڤد ڤرڽاتاءن يڠ ساله.",
    "rumi": "Tandakan ✓ pada pernyataan yang betul dan ✗ pada pernyataan yang salah.",
    "markah": 5,
    "item": [
@@ -711,7 +711,7 @@
   {
    "bahagian": "A",
    "jenis": "betul_salah",
-   "soalan": "تنداکن ✓ ڤد ڤتاتاءن يڠ بتول دان ✗ ڤد ڤتاتاءن يڠ ساله.",
+   "soalan": "تنداکن ✓ ڤد ڤرڽاتاءن يڠ بتول دان ✗ ڤد ڤرڽاتاءن يڠ ساله.",
    "rumi": "Tandakan ✓ pada pernyataan yang betul dan ✗ pada pernyataan yang salah.",
    "markah": 5,
    "item": [
@@ -751,7 +751,7 @@
   {
    "bahagian": "A",
    "jenis": "tempat_kosong",
-   "soalan": "ايسي تمڤت کوسوڠ دڠن ڤركاتاءن درڤد بانك يڠ دبري.",
+   "soalan": "ايسي تمڤت کوسوڠ دڠن ڤرکاتاءن درڤد بڠک يڠ دبري.",
    "rumi": "Isi tempat kosong dengan perkataan daripada bank yang diberi.",
    "markah": 5,
    "bank": [
@@ -770,7 +770,7 @@
    ],
    "item": [
     {
-     "teks": "کيت هندقله ممباچ ____ سبلاوم ممولاکن ماکن.",
+     "teks": "کيت هندقله ممباچ ____ سبلوم ممولاکن ماکن.",
      "rumi": "Kita hendaklah membaca ____ sebelum memulakan makan."
     },
     {
@@ -786,7 +786,7 @@
      "rumi": "Kita hendaklah membersihkan diri agar selalu ____."
     },
     {
-     "teks": "کيت هندقله ممباچ ____ سبلاوم تيدور.",
+     "teks": "کيت هندقله ممباچ ____ سبلوم تيدور.",
      "rumi": "Kita hendaklah membaca ____ sebelum tidur."
     }
    ],
@@ -795,7 +795,7 @@
   {
    "bahagian": "A",
    "jenis": "tempat_kosong",
-   "soalan": "ايسي تمڤت کوسوڠ دڠن ڤركاتاءن درڤد بانك يڠ دبري.",
+   "soalan": "ايسي تمڤت کوسوڠ دڠن ڤرکاتاءن درڤد بڠک يڠ دبري.",
    "rumi": "Isi tempat kosong dengan perkataan daripada bank yang diberi.",
    "markah": 5,
    "bank": [
@@ -814,7 +814,7 @@
    ],
    "item": [
     {
-     "teks": "سبلاوم ماسوق کرومه اورڠ، کيت هندقله ممبري ____.",
+     "teks": "سبلوم ماسوق کرومه اورڠ، کيت هندقله ممبري ____.",
      "rumi": "Sebelum masuk ke rumah orang, kita hendaklah memberi ____."
     },
     {
@@ -839,7 +839,7 @@
   {
    "bahagian": "A",
    "jenis": "tempat_kosong",
-   "soalan": "ايسي تمڤت کوسوڠ دڠن ڤركاتاءن درڤد بانك يڠ دبري.",
+   "soalan": "ايسي تمڤت کوسوڠ دڠن ڤرکاتاءن درڤد بڠک يڠ دبري.",
    "rumi": "Isi tempat kosong dengan perkataan daripada bank yang diberi.",
    "markah": 5,
    "bank": [
@@ -892,7 +892,7 @@
      "rumi": "",
      "pilihan": [
       {
-       "teks": "مڠومڤت اورڠ لاءين",
+       "teks": "مڠومڤت اورڠ لاين",
        "rumi": "Mengumpat orang lain"
       },
       {
@@ -937,7 +937,7 @@
        "rumi": "Mengabaikan ajaran Nabi"
       },
       {
-       "teks": "برصلوات دان مڠيکوت سنة بݢيندا",
+       "teks": "برصلوات دان مڠيکوتي سنة بݢيندا",
        "rumi": "Berselawat dan mengikuti sunnah baginda"
       }
      ],
@@ -949,7 +949,7 @@
   {
    "bahagian": "B",
    "jenis": "objektif",
-   "soalan": "سبلاوم کلوار رومه، اڤاکه يڠ ڤرلو دلاکوکن اوليه سأورڠ انق؟",
+   "soalan": "سبلوم کلوار رومه، اڤاکه يڠ ڤرلو دلاکوکن اوليه سأورڠ انق؟",
    "rumi": "Sebelum keluar rumah, apakah yang perlu dilakukan oleh seorang anak?",
    "markah": 1,
    "item": [
@@ -1015,7 +1015,7 @@
   {
    "bahagian": "B",
    "jenis": "objektif",
-   "soalan": "اڤاکه ادب موريد ترهادڤ ݢورو ددالم کلس؟",
+   "soalan": "اڤاکه ادب موريد ترهادڤ ݢورو ددالم کلاس؟",
    "rumi": "Apakah adab murid terhadap guru di dalam kelas?",
    "markah": 1,
    "item": [
@@ -1036,7 +1036,7 @@
        "rumi": "Mendengar penjelasan guru dengan perhatian"
       },
       {
-       "teks": "ممبواڠ سمڤه ددالم کلس",
+       "teks": "ممبواڠ سمڤه ددالم کلاس",
        "rumi": "Membuang sampah di dalam kelas"
       }
      ],
@@ -1048,7 +1048,7 @@
   {
    "bahagian": "B",
    "jenis": "objektif",
-   "soalan": "اڤاکه کباءيکن يڠ کيت داڤت جک مڠحرمتي ݢورو؟",
+   "soalan": "اڤاکه کباءيقن يڠ کيت داڤت جک مڠحرمتي ݢورو؟",
    "rumi": "Apakah kebaikan yang kita dapat jika menghormati guru?",
    "markah": 1,
    "item": [
@@ -1114,7 +1114,7 @@
   {
    "bahagian": "B",
    "jenis": "objektif",
-   "soalan": "اڤاکه ادب کيت ترهادڤ داتوق دان نينيق؟",
+   "soalan": "اڤاکه ادب کيت ترهادڤ داتوق دان نيني؟",
    "rumi": "Apakah adab kita terhadap datuk dan nenek?",
    "markah": 1,
    "item": [
@@ -1164,7 +1164,7 @@
        "rumi": "Jiran akan menjadi musuh kita"
       },
       {
-       "teks": "کيت اکن دجاءوهي اوليه راکن",
+       "teks": "کيت اکن دجاوهي اوليه راکن",
        "rumi": "Kita akan dijauhi oleh rakan"
       },
       {
@@ -1312,7 +1312,7 @@
   {
    "bahagian": "B",
    "jenis": "objektif",
-   "soalan": "اڤاکه يڠ ڤرلو دلاکوکن سبلاوم ماسوق کرومه اورڠ؟",
+   "soalan": "اڤاکه يڠ ڤرلو دلاکوکن سبلوم ماسوق کرومه اورڠ؟",
    "rumi": "Apakah yang perlu dilakukan sebelum masuk ke rumah orang?",
    "markah": 1,
    "item": [
@@ -1345,7 +1345,7 @@
   {
    "bahagian": "B",
    "jenis": "objektif",
-   "soalan": "اڤاکه يڠ ڤرلو دلاکوکن سبلاوم ماکن؟",
+   "soalan": "اڤاکه يڠ ڤرلو دلاکوکن سبلوم ماکن؟",
    "rumi": "Apakah yang perlu dilakukan sebelum makan?",
    "markah": 1,
    "item": [
@@ -1358,7 +1358,7 @@
        "rumi": "Terus makan tanpa bercakap"
       },
       {
-       "teks": "مڠمبيل ماکنن راکن",
+       "teks": "مڠامبيل ماکنن راکن",
        "rumi": "Mengambil makanan rakan"
       },
       {
@@ -1399,7 +1399,7 @@
        "rumi": "Kedua tangan dalam masa yang sama"
       },
       {
-       "teks": "تاڠن اورڠ لاءين",
+       "teks": "تاڠن اورڠ لاين",
        "rumi": "Tangan orang lain"
       }
      ],
@@ -1420,7 +1420,7 @@
      "rumi": "",
      "pilihan": [
       {
-       "teks": "ممباسوه تاڠن سبلاوم ماکن",
+       "teks": "ممباسوه تاڠن سبلوم ماکن",
        "rumi": "Membasuh tangan sebelum makan"
       },
       {
@@ -1428,7 +1428,7 @@
        "rumi": "Bercakap ketika mulut penuh makanan"
       },
       {
-       "teks": "ممباچ بسم الله سبلاوم ماکن",
+       "teks": "ممباچ بسم الله سبلوم ماکن",
        "rumi": "Membaca Bismillah sebelum makan"
       },
       {
@@ -1477,7 +1477,7 @@
   {
    "bahagian": "B",
    "jenis": "objektif",
-   "soalan": "اڤاکه ادب يڠ بتول کتيک مينوم اءير؟",
+   "soalan": "اڤاکه ادب يڠ بتول کتيک مينوم اير؟",
    "rumi": "Apakah adab yang betul ketika minum air?",
    "markah": 1,
    "item": [
@@ -1498,7 +1498,7 @@
        "rumi": "Minum dengan duduk dan membaca Bismillah"
       },
       {
-       "teks": "مينوم سموا اءير ددالم چاوان دڠن سکالي تݢوق",
+       "teks": "مينوم سموا اير ددالم چاوان دڠن سکالي تݢوق",
        "rumi": "Minum semua air di dalam cawan dengan sekali teguk"
       }
      ],
@@ -1667,7 +1667,7 @@
       "merindui",
       "منچينتاي",
       "ملبيهي",
-      "سگالا",
+      "سڢالا",
       "ݢالا"
      ]
     },
@@ -1686,7 +1686,7 @@
    "jawapanContoh": [
     "1. مڠمalkan سنة رسول الله دالم هيدوڤ.",
     "2. سنتياس برصلوات کأاتس نبي محمد.",
-    "3. منچينتاي رسول الله ملبيهي سگالا-ݢالا.",
+    "3. منچينتاي رسول الله ملبيهي سڢالا-ݢالا.",
     "4. مڠحرمتي دان ممولياکن رسول الله."
    ],
    "jawapanContohRumi": [
@@ -1953,7 +1953,7 @@
   {
    "bahagian": "C",
    "jenis": "tulis",
-   "soalan": "ڽاتاکن ليم ادب ترهادڤ جيران.",
+   "soalan": "ڽاتاکن ليم ادب ترهادڤ جيرن.",
    "rumi": "Nyatakan lima adab terhadap jiran.",
    "markah": 5,
    "idea": [
@@ -2034,7 +2034,7 @@
   {
    "bahagian": "C",
    "jenis": "tulis",
-   "soalan": "اڤاکه ادب کتيک منريم تامو؟ بريکن ليم.",
+   "soalan": "اڤاکه ادب کتيک منريم تتامو؟ بريکن ليم.",
    "rumi": "Apakah adab ketika menerima tetamu? Berikan lima.",
    "markah": 5,
    "idea": [
@@ -2124,7 +2124,7 @@
   {
    "bahagian": "C",
    "jenis": "tulis",
-   "soalan": "بريکن امڤت ادب ترهادڤ رکن.",
+   "soalan": "بريکن امڤت ادب ترهادڤ راکن.",
    "rumi": "Berikan empat adab terhadap rakan.",
    "markah": 4,
    "idea": [
@@ -2196,7 +2196,7 @@
   {
    "bahagian": "C",
    "jenis": "tulis",
-   "soalan": "سنارايکن اينم ادب سبلوم دان کتيک ماکن.",
+   "soalan": "سنارايکن انم ادب سبلوم دان کتيک ماکن.",
    "rumi": "Senaraikan enam adab sebelum dan ketika makan.",
    "markah": 6,
    "idea": [
@@ -2365,7 +2365,7 @@
   {
    "bahagian": "C",
    "jenis": "tulis",
-   "soalan": "بريکن امڤت ادب سلفس باڠون درڤد تيدور.",
+   "soalan": "بريکن امڤت ادب سلڤس باڠون درڤد تيدور.",
    "rumi": "Berikan empat adab selepas bangun daripada tidur.",
    "markah": 4,
    "idea": [
@@ -2434,7 +2434,7 @@
   {
    "bahagian": "C",
    "jenis": "tulis",
-   "soalan": "سنارايکن اينم ادب ماسوق کدالم رومه.",
+   "soalan": "سنارايکن انم ادب ماسوق کدالم رومه.",
    "rumi": "Senaraikan enam adab masuk ke dalam rumah.",
    "markah": 6,
    "idea": [
@@ -2700,7 +2700,7 @@
   {
    "bahagian": "C",
    "jenis": "tulis",
-   "soalan": "سنارايکن اينم ادب کتيک براد د دالم مسجد.",
+   "soalan": "سنارايکن انم ادب کتيک براد د دالم مسجد.",
    "rumi": "Senaraikan enam adab ketika berada di dalam masjid.",
    "markah": 6,
    "idea": [
@@ -2801,7 +2801,7 @@
   {
    "bahagian": "C",
    "jenis": "tulis",
-   "soalan": "سنارايکن اينم ادب کتيک براد د دالم مجلس علمو.",
+   "soalan": "سنارايکن انم ادب کتيک براد د دالم مجلس علمو.",
    "rumi": "Senaraikan enam adab ketika berada di dalam majlis ilmu.",
    "markah": 6,
    "idea": [
@@ -2901,7 +2901,7 @@
   {
    "bahagian": "C",
    "jenis": "tulis",
-   "soalan": "اڤاکه ادب کتيک مناءيقي کندراءن عوام؟ بريکن اينم.",
+   "soalan": "اڤاکه ادب کتيک مناءيقي کندراءن عوام؟ بريکن انم.",
    "rumi": "Apakah adab ketika menaiki kenderaan awam? Berikan enam.",
    "markah": 6,
    "idea": [
@@ -3003,7 +3003,7 @@
   {
    "bahagian": "C",
    "jenis": "tulis",
-   "soalan": "اڤاکه ادب کتيک برچاکڤ دڠن اورڠ لاءين؟ بريکن ليم.",
+   "soalan": "اڤاکه ادب کتيک برچاکڤ دڠن اورڠ لاين؟ بريکن ليم.",
    "rumi": "Apakah adab ketika bercakap dengan orang lain? Berikan lima.",
    "markah": 5,
    "idea": [
@@ -3646,7 +3646,7 @@
   {
    "bahagian": "C",
    "jenis": "tulis",
-   "soalan": "سنارايکن اينم فاءيده هرمت-مڠحرمتي دالم مشارکت.",
+   "soalan": "سنارايکن انم فاءيده هرمت-مڠحرمتي دالم مشارکت.",
    "rumi": "Senaraikan enam faedah hormat-menghormati dalam masyarakat.",
    "markah": 6,
    "idea": [
@@ -3745,7 +3745,7 @@
   {
    "bahagian": "C",
    "jenis": "tulis",
-   "soalan": "سنارايکن اينم عاقبت برسيفت بوڠ.",
+   "soalan": "سنارايکن انم عاقبت برسيفت بوڠ.",
    "rumi": "Senaraikan enam akibat bersifat bohong.",
    "markah": 6,
    "idea": [
@@ -4068,7 +4068,7 @@
   {
    "bahagian": "C",
    "jenis": "tulis",
-   "soalan": "سنارايکن ليم عاقبت مڠومڤت اورڠ لاءين.",
+   "soalan": "سنارايکن ليم عاقبت مڠومڤت اورڠ لاين.",
    "rumi": "Senaraikan lima akibat mengumpat orang lain.",
    "markah": 5,
    "idea": [
@@ -4151,7 +4151,7 @@
   {
    "bahagian": "C",
    "jenis": "tulis",
-   "soalan": "اڤاکه ادب کتيک منزيارهي اورڠ يڠ ساکيت؟ بريکن اينم.",
+   "soalan": "اڤاکه ادب کتيک منزيارهي اورڠ يڠ ساکيت؟ بريکن انم.",
    "rumi": "Apakah adab ketika menziarahi orang yang sakit? Berikan enam.",
    "markah": 6,
    "idea": [
@@ -4566,7 +4566,7 @@
   {
    "bahagian": "D",
    "jenis": "huraian",
-   "soalan": "ايبو باڤ سنتياس بركوربان اونتوق انق. جلسکن ليم چارا اونتوق ممبالس جاس ايبو باڤ.",
+   "soalan": "ايبو باڤ سنتياس برکوربن اونتوق انق. جلسکن ليم چارا اونتوق ممبالس جاس ايبو باڤ.",
    "rumi": "Ibu bapa sentiasa berkorban untuk anak. Jelaskan lima cara untuk membalas jasa ibu bapa.",
    "markah": 5,
    "idea": [
@@ -4739,7 +4739,7 @@
   {
    "bahagian": "D",
    "jenis": "huraian",
-   "soalan": "جيران اداله اورڠ يڠ تيڠݢل برهامڤيرن دڠن کيت. جلسکن اينم کڤنتيڠن برادب ترهادڤ جيران.",
+   "soalan": "جيرن اياله اورڠ يڠ تيڠݢل برهامڤيرن دڠن کيت. جلسکن انم کڤنتيڠن برادب ترهادڤ جيرن.",
    "rumi": "Jiran adalah orang yang tinggal berhampiran dengan kita. Jelaskan enam kepentingan beradab terhadap jiran.",
    "markah": 6,
    "idea": [
@@ -4839,7 +4839,7 @@
   {
    "bahagian": "D",
    "jenis": "huraian",
-   "soalan": "زهرا برکونجوڠ ک رومه جيرانڽ. جلسکن ليم ادب يڠ ڤرلو دجݢ اوليه زهرا کتيک برتامو.",
+   "soalan": "زهرا برکونجوڠ ک رومه جيرانڽ. جلسکن ليم ادب يڠ ڤرلو دجاݢ اوليه زهرا کتيک برتامو.",
    "rumi": "Zahra berkunjung ke rumah jirannya. Jelaskan lima adab yang perlu dijaga oleh Zahra ketika bertamu.",
    "markah": 5,
    "idea": [
@@ -4928,7 +4928,7 @@
   {
    "bahagian": "D",
    "jenis": "huraian",
-   "soalan": "احمد دجوموت ماکن د رومه رکنڽ. جلسکن ليم ادب ماکن يڠ ڤرلو دجݢ اوليه احمد.",
+   "soalan": "احمد دجومڤوت ماکن د رومه راکنڽ. جلسکن ليم ادب ماکن يڠ ڤرلو دجاݢ اوليه احمد.",
    "rumi": "Ahmad dijemput makan di rumah rakannya. Jelaskan lima adab makan yang perlu dijaga oleh Ahmad.",
    "markah": 5,
    "idea": [
@@ -5012,7 +5012,7 @@
   {
    "bahagian": "D",
    "jenis": "huraian",
-   "soalan": "موريد يڠ تيدور ليوات مالم اکن برسيفت مالس کتيک براد د سکوله. جلسکن ليم عاقبت تيدور ليوات مالم.",
+   "soalan": "موريد يڠ تيدور لوات مالم اکن برسيفت مالس کتيک براد د سکوله. جلسکن ليم عاقبت تيدور لوات مالم.",
    "rumi": "Murid yang tidur lewat malam akan bersifat malas ketika berada di sekolah. Jelaskan lima akibat tidur lewat malam.",
    "markah": 5,
    "idea": [
@@ -5049,7 +5049,7 @@
       "mengantuk",
       "tumpu",
       "perhatian",
-      "فوكوس",
+      "فوکوس",
       "مڠنتوق",
       "کلاس"
      ]
@@ -5084,7 +5084,7 @@
    "jawapanContoh": [
     "1. باڠون ليوات دان کسيڠن.",
     "2. بادن مڠجادي لمه دان تيدق برمايا.",
-    "3. تيدق فوكوس دان مڠنتوق د دالم کلاس.",
+    "3. تيدق فوکوس دان مڠنتوق د دالم کلاس.",
     "4. کسيحتن ترججس دان موده ساکيت.",
     "5. تيدق داڤت مڠولاڠ کاجي ڤلاجرن."
    ],
@@ -5100,7 +5100,7 @@
   {
    "bahagian": "D",
    "jenis": "huraian",
-   "soalan": "ماسوق دان کلوار رومه اد اداڤنڽ. جلسکن امڤت عاقبت جک تيدق برادب کتيک ماسوق دان کلوار رومه.",
+   "soalan": "ماسوق دان کلوار رومه اد ادبڽ. جلسکن امڤت عاقبت جک تيدق برادب کتيک ماسوق دان کلوار رومه.",
    "rumi": "Masuk dan keluar rumah ada adabnya. Jelaskan empat akibat jika tidak beradab ketika masuk dan keluar rumah.",
    "markah": 4,
    "idea": [
@@ -5171,7 +5171,7 @@
   {
    "bahagian": "D",
    "jenis": "huraian",
-   "soalan": "مسجد اداله رومه الله. جلسکن ليم حکمه برادب کتيک براد د دالم مسجد.",
+   "soalan": "مسجد اياله رومه الله. جلسکن ليم حکمه برادب کتيک براد د دالم مسجد.",
    "rumi": "Masjid adalah rumah Allah. Jelaskan lima hikmah beradab ketika berada di dalam masjid.",
    "markah": 5,
    "idea": [
@@ -5334,7 +5334,7 @@
   {
    "bahagian": "D",
    "jenis": "huraian",
-   "soalan": "کلوارݢ رزوان بربالق ک کامڤوڠ دڠن بيس. جلسکن اينم ادب يڠ ڤرلو دجݢ اوليه کلوارݢ رزوان دالم ڤرجالنن.",
+   "soalan": "کلوارݢ رزوان ڤولڠ ک کامڤوڠ دڠن بيس. جلسکن انم ادب يڠ ڤرلو دجاݢ اوليه کلوارݢ رزوان دالم ڤرجالنن.",
    "rumi": "Keluarga Razuan pulang ke kampung dengan bas. Jelaskan enam adab yang perlu dijaga oleh keluarga Razuan dalam perjalanan.",
    "markah": 6,
    "idea": [
@@ -5437,7 +5437,7 @@
   {
    "bahagian": "D",
    "jenis": "huraian",
-   "soalan": "اورڠ يڠ برادب اکن منجاݢ ڤرکاتاءنڽ. جلسکن ليم عاقبت جک کيت برچاکڤ دڠن کاسر کڤد اورڠ لاءين.",
+   "soalan": "اورڠ يڠ برادب اکن منجاݢ ڤرکاتاءنڽ. جلسکن ليم عاقبت جک کيت برچاکڤ دڠن کاسر کڤد اورڠ لاين.",
    "rumi": "Orang yang beradab akan menjaga perkataannya. Jelaskan lima akibat jika kita bercakap dengan kasar kepada orang lain.",
    "markah": 5,
    "idea": [
@@ -5597,7 +5597,7 @@
   {
    "bahagian": "D",
    "jenis": "huraian",
-   "soalan": "امانه اداله صيفت يڠ ڤنتيڠ دالم ڤرݢاءولن. جلسکن امڤت عاقبت اورڠ يڠ تيدق امانه.",
+   "soalan": "امانه اياله صيفت يڠ ڤنتيڠ دالم ڤرݢاءولن. جلسکن امڤت عاقبت اورڠ يڠ تيدق امانه.",
    "rumi": "Amanah adalah sifat yang penting dalam pergaulan. Jelaskan empat akibat orang yang tidak amanah.",
    "markah": 4,
    "idea": [
@@ -5663,7 +5663,7 @@
   {
    "bahagian": "D",
    "jenis": "huraian",
-   "soalan": "جوجور اداله صيفت اورڠ يڠ برتقوى. جلسکن ليم کباءيقن جوجور دالم هيدوڤ سهارين.",
+   "soalan": "جوجور اياله صيفت اورڠ يڠ برتقوى. جلسکن ليم کباءيقن جوجور دالم هيدوڤ سهارين.",
    "rumi": "Jujur adalah sifat orang yang bertaqwa. Jelaskan lima kebaikan jujur dalam hidup seharian.",
    "markah": 5,
    "idea": [
@@ -5743,7 +5743,7 @@
   {
    "bahagian": "D",
    "jenis": "huraian",
-   "soalan": "صلاة اداله تياڠ اݢام. جلسکن ليم حکمه صلاة دالم هيدوڤ سأورڠ مسلم.",
+   "soalan": "صلاة اياله تياڠ اݢام. جلسکن ليم حکمه صلاة دالم هيدوڤ سأورڠ مسلم.",
    "rumi": "Solat adalah tiang agama. Jelaskan lima hikmah solat dalam hidup seorang Muslim.",
    "markah": 5,
    "idea": [
@@ -5911,7 +5911,7 @@
   {
    "bahagian": "D",
    "jenis": "huraian",
-   "soalan": "اورڠ يڠ برادب ترهادڤ اهل کلوارݢ اکن مڠحرمتي يڠ توا دان مڠسيهي يڠ مودا. جلسکن اينم چارا منونجوقکن کاسيه سايڠ دالم کلوارݢ.",
+   "soalan": "اورڠ يڠ برادب ترهادڤ اهل کلوارݢ اکن مڠحرمتي يڠ توا دان مڠاسيهي يڠ مودا. جلسکن انم چارا منونجوقکن کاسيه سايڠ دالم کلوارݢ.",
    "rumi": "Orang yang beradab terhadap ahli keluarga akan menghormati yang tua dan mengasihi yang muda. Jelaskan enam cara menunjukkan kasih sayang dalam keluarga.",
    "markah": 6,
    "idea": [
@@ -6100,7 +6100,7 @@
   {
    "bahagian": "D",
    "jenis": "huraian",
-   "soalan": "تامق اداله صيفت يڠ دجاءوهي دالم إسلام. جلسکن ليم عاقبت سيفت تامق.",
+   "soalan": "تامق اياله صيفت يڠ دجاوهي دالم اسلام. جلسکن ليم عاقبت سيفت تامق.",
    "rumi": "Tamak adalah sifat yang dijauhi dalam Islam. Jelaskan lima akibat sifat tamak.",
    "markah": 5,
    "idea": [
@@ -6253,7 +6253,7 @@
   {
    "bahagian": "D",
    "jenis": "huraian",
-   "soalan": "تندس اداله تمڤت يڠ کوتور. جلسکن ليم ادب يڠ ڤرلو دجݢ کتيک ماسوق دان کلوار تندس.",
+   "soalan": "تندس اياله تمڤت يڠ کوتور. جلسکن ليم ادب يڠ ڤرلو دجاݢ کتيک ماسوق دان کلوار تندس.",
    "rumi": "Tandas adalah tempat yang kotor. Jelaskan lima adab yang perlu dijaga ketika masuk dan keluar tandas.",
    "markah": 5,
    "idea": [
@@ -6336,7 +6336,7 @@
   {
    "bahagian": "D",
    "jenis": "huraian",
-   "soalan": "سأورڠ موريد منزيارهي راکنڽ يڠ ساکيت د هوسڤيتل. جلسکن ليم ادب يڠ ڤرلو دجݢ کتيک منزيارهي ڤساکيت.",
+   "soalan": "سأورڠ موريد منزيارهي راکنڽ يڠ ساکيت د هوسڤيتل. جلسکن ليم ادب يڠ ڤرلو دجاݢ کتيک منزيارهي ڤساکيت.",
    "rumi": "Seorang murid menziarahi rakannya yang sakit di hospital. Jelaskan lima adab yang perlu dijaga ketika menziarahi pesakit.",
    "markah": 5,
    "idea": [
@@ -6423,7 +6423,7 @@
   {
    "bahagian": "D",
    "jenis": "huraian",
-   "soalan": "موريد يڠ تيدق ممبري ڤرهاتين دالم کلاس اکن ترڠݢو ڤلاجرن. جلسکن اينم عاقبت تيدق برادب دالم مجلس علمو.",
+   "soalan": "موريد يڠ تيدق ممبري ڤرهاتين دالم کلاس اکن ترݢڠݢو ڤلاجرن. جلسکن انم عاقبت تيدق برادب دالم مجلس علمو.",
    "rumi": "Murid yang tidak memberi perhatian dalam kelas akan terganggu pelajaran. Jelaskan enam akibat tidak beradab dalam majlis ilmu.",
    "markah": 6,
    "idea": [

@@ -94,7 +94,12 @@ AYAT_TETAP = {
     "f-nama": "Assalamualaikum! Siapa nama kamu?",
     # Sapaan pembuka. Nama murid **tidak** disebut — lihat `Suara.sapaan`.
     "f-selamat": "Assalamualaikum, jom belajar KAFA bersama Raz.",
+    # Penutup latih tubi. Tiada markah disebut: latih tubi bukan kertas.
+    "f-latihan": "Syabas! Latihan selesai. Jom cuba lagi, ya.",
 }
+
+# Teks mesti mengandungi sekurang-kurangnya satu huruf atau angka.
+_ADA_HURUF = __import__("re").compile(r"[0-9A-Za-z\u0600-\u06FF]")
 
 DIBENARKAN = set(".,?!:;'-()/")
 
@@ -164,17 +169,27 @@ def jana_satu(teks: str, laluan: str, suara: str) -> None:
     with tempfile.TemporaryDirectory() as td:
         mp3 = os.path.join(td, "a.mp3")
         for cuba in range(CUBAAN):
-            hasil = subprocess.run(
-                [
-                    sys.executable, "-m", "edge_tts",
-                    "--voice", suara,
-                    f"--rate={KADAR}",
-                    "--text", teks,
-                    "--write-media", mp3,
-                ],
-                capture_output=True,
-                text=True,
-            )
+            try:
+                hasil = subprocess.run(
+                    [
+                        sys.executable, "-m", "edge_tts",
+                        "--voice", suara,
+                        f"--rate={KADAR}",
+                        "--text", teks,
+                        "--write-media", mp3,
+                    ],
+                    capture_output=True,
+                    text=True,
+                    # Tanpa had masa, satu permintaan rangkaian yang tergantung
+                    # menghentikan seluruh penjanaan — dan itulah yang berlaku
+                    # pada 2,000/2,130 klip.
+                    timeout=90,
+                )
+            except subprocess.TimeoutExpired:
+                if cuba == CUBAAN - 1:
+                    raise RuntimeError("edge-tts tamat masa: " + teks[:80])
+                time.sleep(2.0 * (cuba + 1))
+                continue
             if hasil.returncode == 0 and os.path.exists(mp3) and os.path.getsize(mp3) > 0:
                 break
             if cuba == CUBAAN - 1:
@@ -194,86 +209,92 @@ def jana_satu(teks: str, laluan: str, suara: str) -> None:
         )
 
 
-def _teks(jenis: str, s: dict, rujuk_arab: bool, penuh: bool) -> list[tuple[str, str]]:
+def _baca(teks: str | None, rujuk_arab: bool) -> str:
+    """Teks yang benar-benar disebut bagi satu teks yang dipaparkan.
+
+    Subjek Bahasa Arab dibaca daripada tulisan Arab; subjek lain dibaca
+    daripada baris Rumi, kerana enjin suara Melayu tidak boleh membaca Jawi.
+    """
+    if rujuk_arab:
+        return _bersih_arab(teks or "")
+    return bersih(teks or "")
+
+
+def _teks(s: dict, rujuk_arab: bool) -> list[tuple[str, str]]:
     """Senarai (kunci, teks) bagi satu soalan.
 
     Bentuk kunci mesti sepadan dengan fungsi `Suara.kunci*` dalam
     `lib/services/suara.dart` — kalau tidak, klip yang dijana tidak akan
     dijumpai oleh app.
 
-    [penuh] menambah klip untuk setiap item kecil (pilihan jawapan, pasangan
-    padanan, pernyataan betul/salah). App **tidak** memainkan klip-klip itu
-    sekarang — butang dengar hanya ada pada peringkat soalan — jadi ia
-    ditinggalkan secara lalai: saiznya tiga kali ganda klip soalan, dan audio
-    yang tidak pernah dimainkan hanya membesarkan app.
+    Dua kumpulan klip dijana:
+
+      * `q-<id>` — teks soalan itu sendiri (butang speaker di sebelah soalan);
+      * `o-<teks>` — setiap teks yang murid perlu **baca dan pilih**: pilihan
+        A/B/C/D, ayat kecil di bawah soalan berbilang item, item padanan, kad
+        susun, perkataan bank, pernyataan betul/salah dan ayat tempat kosong.
+
+    Klip `o-` dikunci mengikut **teks**, bukan mengikut nombor soalan. Teks
+    yang berulang dalam beberapa soalan berkongsi satu rakaman, dan itulah
+    sebabnya bantuan suara latih tubi hanya menambah kira-kira 17 MB walaupun
+    bank mengandungi lebih 2,000 pilihan.
     """
     sid = s["id"]
     keluar: list[tuple[str, str]] = []
 
-    utama = s.get("soalan") or ""
-    if rujuk_arab:
-        teks_utama = _bersih_arab(utama)
-    else:
-        # Soalan Jawi tidak boleh dibaca oleh enjin suara; baris Rumi ialah
-        # teks yang sebenarnya disebut.
-        teks_utama = bersih(s.get("rumi") or "")
-    if teks_utama:
-        keluar.append((f"q-{sid}", teks_utama))
+    utama = _baca(
+        s.get("soalan") if rujuk_arab else s.get("rumi"), rujuk_arab
+    )
+    if utama:
+        keluar.append((f"q-{sid}", utama))
 
-    item = s.get("item") or []
+    def tambah(teks: str | None) -> None:
+        """Tambah satu klip `o-` bagi teks yang dipaparkan.
 
-    if penuh:
-        if jenis == "tempat_kosong":
-            for i, it in enumerate(item):
-                t = bersih(it.get("rumi") or "")
-                if t:
-                    keluar.append((f"tk-{sid}-{i}", t))
-            for i, k in enumerate(s.get("bankRumi") or []):
-                t = bersih(k)
-                if t:
-                    keluar.append((f"tb-{sid}-{i}", t))
+        Kunci dibina daripada teks **mentah** (yang app pegang), manakala klip
+        dibaca daripada teks yang sudah dibersihkan. Dua teks berbeza yang
+        berbunyi sama tetap berkongsi satu fail (lihat `nama_fail`), tetapi
+        kuncinya kekal berasingan supaya carian app tidak pernah terlepas.
+        """
+        mentah = (teks or "").strip()
+        bunyi = _baca(teks, rujuk_arab)
+        # Teks yang hanya mengandungi tanda baca (contohnya "!") tidak boleh
+        # disebut. edge-tts menolaknya, dan kunci tanpa fail akan tergantung
+        # dalam manifest.
+        if not _ADA_HURUF.search(bunyi):
+            return
+        if mentah and bunyi:
+            keluar.append((f"o-{mentah}", bunyi))
 
-        elif jenis == "susun":
-            for i, u in enumerate(s.get("urutanRumi") or []):
-                t = bersih(u)
-                if t:
-                    keluar.append((f"ps-{sid}-{i}", t))
+    for it in s.get("item") or []:
+        # Ayat kecil di bawah soalan berbilang item (contoh: bulat, tempat
+        # kosong, betul/salah). Soalan satu item biasanya sudah mempunyai ayat
+        # itu pada `soalan`, jadi teks kosong dilangkau.
+        tambah(it.get("teks") if rujuk_arab else it.get("rumi"))
+        for p in it.get("pilihan") or []:
+            if isinstance(p, dict):
+                tambah(p.get("teks") if rujuk_arab else p.get("rumi"))
+            else:
+                tambah(str(p))
 
-        elif jenis == "suai":
-            for i, p in enumerate(s.get("pasangan") or []):
-                a = bersih(p.get("kiriRumi") or "")
-                b = bersih(p.get("kananRumi") or "")
-                if a:
-                    keluar.append((f"pd-{sid}-a-{i}", a))
-                if b:
-                    keluar.append((f"pd-{sid}-b-{i}", b))
+    for p in s.get("pasangan") or []:
+        tambah(p.get("kiri") if rujuk_arab else p.get("kiriRumi"))
+        tambah(p.get("kanan") if rujuk_arab else p.get("kananRumi"))
 
-        elif jenis == "betul_salah":
-            for i, it in enumerate(item):
-                t = bersih(it.get("rumi") or "")
-                if t:
-                    keluar.append((f"bs-{sid}-{i}", t))
+    for u in s.get("urutan") or []:
+        tambah(u if isinstance(u, str) else u.get("teks"))
 
-        # Kunci `p-` hanya bermakna apabila soalan ada satu item (objektif dan
-        # bulat satu item); soalan berbilang item tidak mempunyai indeks pilihan
-        # yang tunggal, jadi ia dilangkau.
-        if len(item) == 1:
-            for i, p in enumerate(item[0].get("pilihan") or []):
-                if isinstance(p, dict):
-                    t = bersih(p.get("rumi") or "")
-                    if t:
-                        keluar.append((f"p-{sid}-{i}", t))
-
-    # Jawapan contoh soalan bertulis — didengar selepas murid mencuba.
-    contoh = [x for x in (s.get("jawapanContohRumi") or []) if x]
-    if penuh and contoh:
-        pemisah = "، " if rujuk_arab else ". "
-        keluar.append((f"j-{sid}", bersih(pemisah.join(contoh))))
+    for i, k in enumerate(s.get("bank") or []):
+        if rujuk_arab:
+            tambah(k)
+        else:
+            rumi = (s.get("bankRumi") or [])
+            tambah(rumi[i] if i < len(rumi) else None)
 
     return [(k, v) for k, v in keluar if v]
 
 
-def kumpul_kerja(penapis: set[str] | None, penuh: bool) -> list[tuple[str, str, str]]:
+def kumpul_kerja(penapis: set[str] | None = None) -> list[tuple[str, str, str]]:
     """Bina senarai (kunci, teks, suara) untuk setiap ayat yang perlu disebut."""
     with open(FOLDER_SUBJEK, encoding="utf-8") as f:
         subjek = json.load(f)["subjek"]
@@ -298,8 +319,7 @@ def kumpul_kerja(penapis: set[str] | None, penuh: bool) -> list[tuple[str, str, 
         suara = SUARA_ARAB if rujuk_arab else SUARA
 
         for soalan in bank.get("soalan") or []:
-            jenis = soalan.get("jenis") or ""
-            for kunci, teks in _teks(jenis, soalan, rujuk_arab, penuh):
+            for kunci, teks in _teks(soalan, rujuk_arab):
                 kerja.append((kunci, teks, suara))
 
     # Pembetulan sebutan dijalankan di sini supaya nama fail audio sentiasa
@@ -322,11 +342,6 @@ def main() -> int:
     parser.add_argument("--paksa", action="store_true", help="jana semula fail yang sudah ada")
     parser.add_argument("--kerja", type=int, default=4, help="bilangan tugasan selari")
     parser.add_argument("--subjek", nargs="*", help="hadkan kepada subjek ini sahaja")
-    parser.add_argument(
-        "--penuh",
-        action="store_true",
-        help="jana juga klip setiap item kecil (pilihan, pasangan, pernyataan)",
-    )
     parser.add_argument("--senarai", action="store_true", help="senarai suara Melayu/Arab edge-tts")
     args = parser.parse_args()
 
@@ -337,7 +352,7 @@ def main() -> int:
     os.makedirs(KELUARAN, exist_ok=True)
 
     penapis = set(args.subjek) if args.subjek else None
-    kerja = kumpul_kerja(penapis, args.penuh)
+    kerja = kumpul_kerja(penapis)
 
     # Satu teks (dengan suara yang sama) = satu fail.
     ikut_teks: dict[tuple[str, str], list[str]] = {}
@@ -388,6 +403,14 @@ def main() -> int:
         fail = nama_fail(teks, suara)
         for k in kunci:
             peta[k] = fail
+
+    # Buang kunci yang failnya tidak wujud — teks tanda baca yang ditolak
+    # edge-tts, atau teks yang sudah dibetulkan ejaannya.
+    peta = {
+        k: v
+        for k, v in peta.items()
+        if os.path.exists(os.path.join(KELUARAN, v))
+    }
 
     with open(MANIFEST, "w", encoding="utf-8") as f:
         json.dump(

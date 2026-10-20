@@ -45,14 +45,37 @@ skop kandungan** sahaja — tiada soalan disalin daripadanya ke dalam bank.
 
 ## Jawi dan Rumi
 
-Setiap teks Jawi dipaparkan bersama baris Rumi di bawahnya, sama seperti kertas
-UPKK sebenar yang mencetak transliterasi Rumi. Murid yang belum lancar Jawi
-tetap boleh membaca soalan, dan ibu bapa yang belum lancar Jawi tetap boleh
-menyemak jawapan anak.
+Setiap teks Jawi mempunyai baris Rumi di bawahnya. Dalam **latih tubi**, baris
+itu dipaparkan — murid yang belum lancar Jawi tetap boleh membaca soalan, dan
+ibu bapa yang belum lancar Jawi tetap boleh menyemak jawapan anak. Dalam
+**kertas percubaan**, baris Rumi ditanggalkan supaya paparan menyerupai kertas
+UPKK sebenar, yang 100% Jawi.
 
 Fon **Noto Naskh Arabic** dibundelkan bersama app supaya huruf Jawi khas
 (چ ݢ ڠ ڤ ۏ ڽ) kelihatan betul pada setiap peranti — sesetengah telefon
 memaparkannya sebagai petak kosong.
+
+## Latih tubi dan kertas percubaan
+
+Kedua-duanya menggunakan bank soalan yang sama, tetapi tujuannya berbeza dan
+app melayaninya dengan cara yang berbeza:
+
+| | Latih tubi | Kertas percubaan |
+| --- | --- | --- |
+| Tujuan | belajar dan mencuba | meniru peperiksaan sebenar |
+| Rumi | ada | tiada |
+| Bantuan suara | soalan **dan** setiap pilihan jawapan | tiada langsung |
+| Bunyi betul / salah | ada | tiada |
+| Masa | tiada had | 1 jam 15 minit |
+| Markah dan gred | tiada | ada (70 markah, gred A–D) |
+| Keluar di tengah jalan | terus keluar, tanpa dialog | bertanya dahulu |
+
+Bantuan suara latih tubi **tidak** dipasang pada kertas percubaan dengan
+sengaja: kertas sebenar tidak membacakan soalan atau pilihan jawapan kepada
+calon, dan bantuan itu akan mengubah markah, bukan menguji pemahaman. Setiap
+klip ialah rakaman suara perempuan Bahasa Melayu (`ms-MY-YasminNeural`) atau
+Arab (`ar-SA-ZariyahNeural`) yang dijana lebih awal, jadi bunyinya sama pada
+setiap telefon — termasuk iPhone yang langsung tiada suara Bahasa Melayu.
 
 ## Bagaimana app ini dibina
 

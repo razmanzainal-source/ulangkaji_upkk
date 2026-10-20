@@ -19,6 +19,7 @@ import '../widgets/papan_susun.dart';
 import '../widgets/papan_taip.dart';
 import '../widgets/papan_tempat_kosong.dart';
 import 'keputusan_screen.dart';
+import 'latihan_selesai_screen.dart';
 
 /// Skrin menjawab satu kertas UPKK penuh.
 ///
@@ -121,9 +122,18 @@ class _KertasScreenState extends State<KertasScreen> {
     for (final k in _kawalan.values) {
       k.dispose();
     }
-    Suara.instance.berhenti();
+    // Bunyi **tidak** dihentikan apabila skrin ini menyerahkan tugas kepada
+    // skrin keputusan/penutup: skrin baharu memulakan nada sambutannya pada
+    // bingkai pertama, dan laluan lama hanya dilupuskan selepas peralihan
+    // tamat (~300 ms) — menghentikan bunyi di sini memotong nada itu separuh
+    // jalan. Apabila murid meninggalkan kertas tanpa menghantar, tiada skrin
+    // baharu, jadi bunyi mesti dihentikan.
+    if (!_menyerahkan) Suara.instance.berhenti();
     super.dispose();
   }
+
+  /// Benar apabila skrin ini sudah menyerahkan tugas kepada skrin lain.
+  bool _menyerahkan = false;
 
   // --- Keadaan jawapan -----------------------------------------------------
 
@@ -214,6 +224,30 @@ class _KertasScreenState extends State<KertasScreen> {
     unawaited(
       Suara.instance.sebutKunci(Suara.kunciCubaLagi, sandaran: Suara.teksCubaLagi),
     );
+  }
+
+  /// Bantuan suara bagi satu teks yang murid perlu baca.
+  ///
+  /// Bantuan ini wujud **hanya dalam latih tubi**. Kertas percubaan mesti
+  /// menyerupai kertas sebenar, dan kertas sebenar tidak membacakan soalan
+  /// atau pilihan jawapan kepada murid — bantuan di situ akan mengubah markah,
+  /// bukan menguji pemahaman.
+  ///
+  /// [teks] ialah teks yang **didengar**, bukan teks yang dipaparkan: Rumi
+  /// bagi subjek Jawi (enjin suara Melayu tidak boleh membaca Jawi) dan teks
+  /// Arab bagi subjek Bahasa Arab. Rakaman dikongsi mengikut teks (lihat
+  /// [Suara.kunciPilihan]), jadi teks yang berulang tidak berbunyi dua kali
+  /// dan tidak mengambil dua kali ruang.
+  void _dengar(String teks) {
+    if (!_latihTubi || teks.trim().isEmpty) return;
+    unawaited(Suara.instance.sebutPilihan(teks));
+  }
+
+  /// Butang dengar bagi satu teks, atau `null` apabila tiada apa yang boleh
+  /// disebut — kertas percubaan, teks kosong, atau pilihan gambar (emoji).
+  VoidCallback? _butangDengar(String teks) {
+    if (!_latihTubi || teks.trim().isEmpty) return null;
+    return () => _dengar(teks);
   }
 
   /// Adakah soalan ini sudah ada jawapan?
@@ -352,9 +386,34 @@ class _KertasScreenState extends State<KertasScreen> {
 
   // --- Hantar --------------------------------------------------------------
 
+  /// Murid menekan "Hantar kertas" (percubaan) atau "Selesai" (latih tubi).
+  ///
+  /// Latih tubi **tidak** melalui sebarang dialog dan tidak pernah menanda
+  /// kertas: ia bukan peperiksaan, jadi tiada "Hantar kertas?" dan tiada
+  /// markah atau gred. Kertas percubaan kekal dengan pengesahan kerana di situ
+  /// jawapan yang belum lengkap benar-benar hilang.
   Future<void> _hantar({bool auto = false}) async {
     _pemasa?.cancel();
     final dijumpai = _bilanganDijawab;
+
+    if (_latihTubi) {
+      if (!mounted) return;
+      await _simpanRekod();
+      if (!mounted) return;
+      final saat = _kertas.masaMinit * 60 - _saat;
+      _menyerahkan = true;
+      Navigator.of(context).pushReplacement(
+        MaterialPageRoute(
+          builder: (_) => LatihanSelesaiScreen(
+            kertas: _kertas,
+            jawapan: _jawapan,
+            saat: saat,
+          ),
+        ),
+      );
+      return;
+    }
+
     if (!auto && dijumpai < _bilangan) {
       final teruskan = await showDialog<bool>(
         context: context,
@@ -413,6 +472,7 @@ class _KertasScreenState extends State<KertasScreen> {
     // Masa yang sama dengan rekod yang baru disimpan — kad perkongsian mesti
     // memaparkan masa yang sepadan dengan rekod dalam Kemajuan.
     final saat = _kertas.masaMinit * 60 - _saat;
+    _menyerahkan = true;
     Navigator.of(context).pushReplacement(
       MaterialPageRoute(
         builder: (_) => KeputusanScreen(
@@ -461,7 +521,10 @@ class _KertasScreenState extends State<KertasScreen> {
   @override
   Widget build(BuildContext context) {
     return PopScope(
-      canPop: false,
+      // Latih tubi bukan kertas: murid boleh keluar bila-bila masa tanpa
+      // ditanya apa-apa. Prompt "Keluar kertas?" hanya masuk akal untuk kertas
+      // percubaan, kerana di situlah jawapan yang separuh siap akan hilang.
+      canPop: _latihTubi,
       onPopInvokedWithResult: (keluar, _) async {
         if (keluar) return;
         final pengemudi = Navigator.of(context);
@@ -531,6 +594,16 @@ class _KertasScreenState extends State<KertasScreen> {
       backgroundColor: Warna.utama,
       foregroundColor: Colors.white,
       elevation: 0,
+      // Latih tubi boleh ditinggalkan bila-bila masa — butang X menjadikannya
+      // satu ketukan, bukan satu tekaan. Kertas percubaan kekal dengan anak
+      // panah kembali yang bertanya "Keluar kertas?" dahulu.
+      leading: _latihTubi
+          ? IconButton(
+              tooltip: 'Keluar latihan',
+              onPressed: () => Navigator.of(context).pop(),
+              icon: const Icon(Icons.close_rounded),
+            )
+          : null,
       title: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -742,7 +815,9 @@ class _KertasScreenState extends State<KertasScreen> {
                     : Icons.chevron_right_rounded,
               ),
               label: Text(
-                terakhir ? 'Hantar kertas' : 'Seterusnya',
+                terakhir
+                    ? (_latihTubi ? 'Selesai' : 'Hantar kertas')
+                    : 'Seterusnya',
                 maxLines: 1,
                 overflow: TextOverflow.ellipsis,
                 style: Teks.biasa.copyWith(fontWeight: FontWeight.w800),
@@ -850,11 +925,14 @@ class _KertasScreenState extends State<KertasScreen> {
                     // masa rasmi. Memaparkan "1 jam 15 minit" di atas latihan
                     // sepuluh soalan hanya mengelirukan.
                     if (!_latihTubi) _barisKulit('MASA', FormatUpkk.masaTeks),
-                    _barisKulit(
-                      'MARKAH',
-                      '${_kertas.markahPenuh} markah'
-                          '${_kertas.markahTersedia != _kertas.markahPenuh ? ' (${_kertas.markahTersedia} tersedia)' : ''}',
-                    ),
+                    // Latih tubi bukan kertas: tiada markah untuk dikira, jadi
+                    // baris ini hanya mengelirukan ("10 markah (15 tersedia)").
+                    if (!_latihTubi)
+                      _barisKulit(
+                        'MARKAH',
+                        '${_kertas.markahPenuh} markah'
+                            '${_kertas.markahTersedia != _kertas.markahPenuh ? ' (${_kertas.markahTersedia} tersedia)' : ''}',
+                      ),
                     _barisKulit('SOALAN', '$_bilangan soalan'),
                     const SizedBox(height: 14),
                     const Divider(color: Warna.garisKertas),
@@ -989,10 +1067,11 @@ class _KertasScreenState extends State<KertasScreen> {
                             fontWeight: FontWeight.w700,
                           ),
                         ),
-                        Text(
-                          '${b.markah} markah',
-                          style: Teks.label.copyWith(color: Colors.black54),
-                        ),
+                        if (!_latihTubi)
+                          Text(
+                            '${b.markah} markah',
+                            style: Teks.label.copyWith(color: Colors.black54),
+                          ),
                       ],
                     ),
                   ),
@@ -1089,22 +1168,29 @@ class _KertasScreenState extends State<KertasScreen> {
                   ),
                   const SizedBox(width: 10),
                   Expanded(
-                    child: Text(
-                      '${s.markahBolehDapat} markah',
-                      style: Teks.label.copyWith(
-                        color: Colors.black54,
-                        fontWeight: FontWeight.w700,
+                    child: _latihTubi
+                        ? const SizedBox.shrink()
+                        : Text(
+                            '${s.markahBolehDapat} markah',
+                            style: Teks.label.copyWith(
+                              color: Colors.black54,
+                              fontWeight: FontWeight.w700,
+                            ),
+                          ),
+                  ),
+                  // Bantuan suara soalan — latih tubi sahaja. Murid yang belum
+                  // lancar membaca Jawi mendengar soalan sebelum menjawab;
+                  // semasa kertas percubaan butang ini tiada, kerana kertas
+                  // sebenar tidak membacakan soalan.
+                  if (_latihTubi)
+                    IconButton(
+                      tooltip: 'Dengar soalan',
+                      onPressed: () => Suara.instance.sebutKunci(
+                        Suara.kunciSoalan(s.id),
+                        sandaran: s.rumi.isEmpty ? s.soalan : s.rumi,
                       ),
+                      icon: Icon(Icons.volume_up_rounded, color: warna),
                     ),
-                  ),
-                  IconButton(
-                    tooltip: 'Dengar soalan',
-                    onPressed: () => Suara.instance.sebutKunci(
-                      Suara.kunciSoalan(s.id),
-                      sandaran: s.rumi.isEmpty ? s.soalan : s.rumi,
-                    ),
-                    icon: Icon(Icons.volume_up_rounded, color: warna),
-                  ),
                 ],
               ),
               if (s.soalan.isNotEmpty) ...[
@@ -1164,18 +1250,23 @@ class _KertasScreenState extends State<KertasScreen> {
               // Markah bahagian di kanan. Ia dibalut `FittedBox` supaya teks
               // Jawi yang lebar tidak melimpah keluar jalur pada telefon
               // sempit — lebih baik ia mengecil sedikit daripada terpotong.
+              // Latih tubi tidak memaparkan markah langsung.
               Expanded(
                 child: Align(
                   alignment: Alignment.centerRight,
-                  child: FittedBox(
-                    fit: BoxFit.scaleDown,
-                    alignment: Alignment.centerRight,
-                    child: Text(
-                      '﴾ ${format?.markah ?? bahagian?.markah ?? 0} مرکه ﴿',
-                      textDirection: TextDirection.rtl,
-                      style: Teks.jawiKecil.copyWith(color: Colors.black87),
-                    ),
-                  ),
+                  child: _latihTubi
+                      ? const SizedBox.shrink()
+                      : FittedBox(
+                          fit: BoxFit.scaleDown,
+                          alignment: Alignment.centerRight,
+                          child: Text(
+                            '﴾ ${format?.markah ?? bahagian?.markah ?? 0} مرکه ﴿',
+                            textDirection: TextDirection.rtl,
+                            style: Teks.jawiKecil.copyWith(
+                              color: Colors.black87,
+                            ),
+                          ),
+                        ),
                 ),
               ),
             ],
@@ -1255,6 +1346,22 @@ class _KertasScreenState extends State<KertasScreen> {
                       gayaJawi: Teks.jawiKecil,
                     ),
                   ),
+                  // Ayat kecil ini ialah soalan sebenar bagi soalan berbilang
+                  // item — murid perlu mendengarnya sebelum memilih jawapan.
+                  if (_latihTubi &&
+                      (s.jawapanArab ? s.item[i].teks : s.item[i].rumi)
+                          .trim()
+                          .isNotEmpty)
+                    IconButton(
+                      tooltip: 'Dengar soalan ini',
+                      onPressed: () => _dengar(
+                        s.jawapanArab ? s.item[i].teks : s.item[i].rumi,
+                      ),
+                      iconSize: 20,
+                      visualDensity: VisualDensity.compact,
+                      color: warna,
+                      icon: const Icon(Icons.volume_up_rounded),
+                    ),
                 ],
               ),
             ),
@@ -1272,6 +1379,14 @@ class _KertasScreenState extends State<KertasScreen> {
                 keadaan: dipilih.length > i && dipilih[i] == j
                     ? KeadaanPilihan.dipilih
                     : KeadaanPilihan.biasa,
+                onDengar: _butangDengar(
+                  s.jawapanArab
+                      ? s.item[i].pilihan[j]
+                      : (i < s.item.length &&
+                              s.item[i].pilihanRumi.length > j
+                          ? s.item[i].pilihanRumi[j]
+                          : ''),
+                ),
                 onPilih: () {
                   final baharu = List<int>.from(dipilih);
                   while (baharu.length < s.item.length) {
@@ -1299,6 +1414,9 @@ class _KertasScreenState extends State<KertasScreen> {
       rumiPernyataan: [for (final i in s.item) i.rumi],
       jawapan: dipilih,
       warna: warna,
+      onDengar: _latihTubi
+          ? (i) => _dengar(s.jawapanArab ? s.item[i].teks : s.item[i].rumi)
+          : null,
       onJawab: (i, nilai) {
         final baharu = List<bool?>.from(dipilih);
         while (baharu.length < s.item.length) {
@@ -1329,6 +1447,15 @@ class _KertasScreenState extends State<KertasScreen> {
       rumiKanan: [
         for (final asal in paparan.kanan) s.pasangan[asal].kananRumi,
       ],
+      // Latih tubi sahaja: murid boleh mendengar setiap item kiri dan kanan
+      // sebelum memadankannya. Indeks yang dihantar ialah indeks **asal**,
+      // supaya teks yang disebut sepadan dengan teks yang dipaparkan.
+      onDengarKiri: _latihTubi
+          ? (i) => _dengar(s.pasangan[i].kiriRumi)
+          : null,
+      onDengarKanan: _latihTubi
+          ? (asal) => _dengar(s.pasangan[asal].kananRumi)
+          : null,
       onPilihKiri: (i) => setState(() => _padanTerpilih[s.id] = i),
       onPilihKanan: (asal) {
         final kiri = _padanTerpilih[s.id];
@@ -1364,6 +1491,13 @@ class _KertasScreenState extends State<KertasScreen> {
       item: [for (final asal in susunan) teksPada(asal)],
       rumiItem: [for (final asal in susunan) rumiPada(asal)],
       warna: warna,
+      // Indeks paparan ditukar kembali kepada indeks asal: kad boleh disusun
+      // semula, dan teks yang disebut mesti ikut kad yang ditekan.
+      onDengar: _latihTubi
+          ? (i) {
+              if (i >= 0 && i < susunan.length) _dengar(rumiPada(susunan[i]));
+            }
+          : null,
       onSusun: (lama, baru) {
         final baharu = List<int>.from(susunan);
         final dipindah = baharu.removeAt(lama);
@@ -1392,6 +1526,19 @@ class _KertasScreenState extends State<KertasScreen> {
       indeksBank: paparan.bank,
       isi: isi,
       warna: warna,
+      // Latih tubi sahaja: ayat dan setiap perkataan bank boleh didengar.
+      onDengarAyat: _latihTubi
+          ? (i) => _dengar(
+                s.jawapanArab
+                    ? s.item[i].teks
+                    : (i < s.item.length ? s.item[i].rumi : ''),
+              )
+          : null,
+      onDengarKata: _latihTubi
+          ? (asal) => _dengar(
+                asal < s.bankRumi.length ? s.bankRumi[asal] : '',
+              )
+          : null,
       onIsi: (kosong, asal) {
         final baharu = Map<int, int>.from(isi);
         baharu.removeWhere((_, nilai) => nilai == asal);

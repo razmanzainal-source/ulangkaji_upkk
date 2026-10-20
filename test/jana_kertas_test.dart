@@ -139,6 +139,40 @@ void main() {
         }
       });
 
+      test('$id: tiada soalan berulang dari segi kandungan', () {
+        // Id berbeza tidak menjamin soalan berbeza: dua id boleh memegang
+        // soalan yang sama. Murid yang melihat soalan yang sama dua kali dalam
+        // satu kertas akan berasa kertas itu cuai — dan markahnya tidak lagi
+        // mengukur apa-apa.
+        final subjek = _bacaSubjek(id);
+        final bank = _bacaBank(id);
+
+        String cap(SoalanKertas s) => [
+          s.soalan,
+          for (final i in s.item) ...[i.teks, ...i.pilihan],
+          for (final p in s.pasangan) '${p.kiri}|${p.kanan}',
+          ...s.bank,
+          ...s.urutan,
+        ].join('|').replaceAll(RegExp(r'\s+'), ' ').trim();
+
+        for (var giliran = 0; giliran < 10; giliran++) {
+          final kertas = JanaKertas.percubaan(
+            subjek: subjek,
+            bank: bank,
+            giliran: giliran,
+          );
+          final kandungan = [
+            for (final bahagian in kertas.bahagian)
+              for (final s in bahagian.soalan) cap(s),
+          ];
+          expect(
+            kandungan.toSet().length,
+            kandungan.length,
+            reason: 'percubaan $giliran bagi $id mengulang kandungan soalan',
+          );
+        }
+      });
+
       test('$id: percubaan berturut-turut tidak sama', () {
         final subjek = _bacaSubjek(id);
         final bank = _bacaBank(id);

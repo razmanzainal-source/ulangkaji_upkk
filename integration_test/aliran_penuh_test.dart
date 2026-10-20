@@ -2,8 +2,14 @@
 //
 // Ujian unit memeriksa bahagian satu demi satu, tetapi ia tidak pernah melihat
 // app **berjalan**. Ujian ini membuka app sebenar pada emulator dan melalui
-// jalan yang dilalui murid: beri nama, pilih subjek, jawab latih tubi, hantar,
-// dan kongsi keputusan. Ia menangkap perkara yang tidak dapat dilihat oleh
+// jalan yang dilalui murid: beri nama, pilih subjek, jawab **kertas percubaan**,
+// hantar, dan kongsi keputusan.
+//
+// Kertas percubaan dipilih (bukan latih tubi) kerana di situlah letaknya
+// bahagian yang paling senang rosak pada peranti sebenar: penangkapan gambar
+// kad keputusan, kebenaran menyimpan, dan perkongsian. Latih tubi pula diuji
+// dalam `test/latihan_test.dart` — ia tiada markah, tiada gred dan tiada kad
+// kongsi, jadi jalan itu tidak melalui penangkapan gambar. Ia menangkap perkara yang tidak dapat dilihat oleh
 // ujian unit — skrin yang tersekat, butang yang tidak boleh ditekan, papan
 // kekunci yang tidak muncul, dan penangkapan gambar yang gagal pada peranti.
 //
@@ -118,7 +124,7 @@ Future<void> _cubaJawab(WidgetTester tester) async {
 void main() {
   IntegrationTestWidgetsFlutterBinding.ensureInitialized();
 
-  testWidgets('perjalanan penuh murid: nama, latih tubi, keputusan, kongsi', (
+  testWidgets('perjalanan penuh murid: nama, kertas percubaan, keputusan, kongsi', (
     tester,
   ) async {
     // Mulakan dari keadaan bersih: tiada nama, tiada rekod kemajuan. Tanpa ini
@@ -147,25 +153,25 @@ void main() {
       reason: 'kepala halaman patut menyapa murid dengan namanya',
     );
 
-    // --- 2. Pilih subjek dan mula latih tubi ------------------------------
+    // --- 2. Pilih subjek dan mula kertas percubaan ------------------------
     expect(
-      find.text('Latih tubi'),
+      find.text('Mula kertas'),
       findsWidgets,
-      reason: 'kad subjek patut menawarkan latih tubi',
+      reason: 'kad subjek patut menawarkan kertas percubaan',
     );
-    await _tekan(tester, find.text('Latih tubi'));
+    await _tekan(tester, find.text('Mula kertas'));
 
     expect(
       await _tungguSehingga(tester, find.text('Mula menjawab')),
       isTrue,
-      reason: 'kulit kertas latih tubi patut muncul',
+      reason: 'kulit kertas percubaan patut muncul',
     );
     await _tekan(tester, find.text('Mula menjawab'));
 
     // --- 3. Jawab soalan -------------------------------------------------
     // Bilangan soalan tidak dipasak: gelung berhenti apabila halaman semakan
     // muncul, jadi perubahan bilangan soalan latih tubi tidak memecahkan ujian.
-    for (var soalan = 1; soalan <= 15; soalan++) {
+    for (var soalan = 1; soalan <= 40; soalan++) {
       if (find.text('Semak jawapan').evaluate().isNotEmpty) break;
 
       // Soalan bertulis mesti membuka papan kekunci Jawi/Arab **tanpa** murid
