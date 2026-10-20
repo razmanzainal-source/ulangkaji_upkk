@@ -53,6 +53,25 @@ class _KertasScreenState extends State<KertasScreen> {
   /// Pengawal medan taip — mesti kekal hidup walaupun halaman dibina semula.
   final Map<String, TextEditingController> _kawalan = {};
 
+  /// Pengawal bagi setiap kotak bagi soalan bertulis **berbilang baris**.
+  ///
+  /// Kertas asal memberi satu ruang bernombor bagi setiap isi yang diminta
+  /// ("Nyatakan lima adab terhadap Allah" = lima baris), jadi app turut
+  /// memaparkan lima kotak bernombor dan memecahkan jawapan itu sendiri.
+  ///
+  /// Hanya `tulis` yang memerlukannya. `huraian` (139 soalan) kekal satu kotak
+  /// panjang kerana kertas asalnya tidak memecahkan jawapan kepada isi
+  /// berasingan.
+  final Map<String, List<TextEditingController>> _kawalanBaris = {};
+
+  /// Baris yang sedang menjadi sasaran papan kekunci bagi setiap soalan.
+  ///
+  /// Papan kekunci Jawi/Arab dalam app menulis kepada **satu** medan sahaja,
+  /// jadi skrin mesti menyimpan medan mana yang sedang dipilih. Nilai lalai
+  /// `0` supaya menaip terus berfungsi sebaik sahaja papan kekunci terbuka
+  /// tanpa murid perlu mengetuk kotak dahulu.
+  final Map<String, ValueNotifier<int?>> _barisAktif = {};
+
   /// Susunan paparan (kocokan) bagi soalan padan, susun dan tempat kosong.
   final Map<String, Paparan> _paparan = {};
 
@@ -143,6 +162,14 @@ class _KertasScreenState extends State<KertasScreen> {
     _pemasaGalakan?.cancel();
     for (final k in _kawalan.values) {
       k.dispose();
+    }
+    for (final k in _kawalanBaris.values) {
+      for (final baris in k) {
+        baris.dispose();
+      }
+    }
+    for (final n in _barisAktif.values) {
+      n.dispose();
     }
     // Bunyi **tidak** dihentikan apabila skrin ini menyerahkan tugas kepada
     // skrin keputusan/penutup: skrin baharu memulakan nada sambutannya pada
@@ -390,6 +417,69 @@ class _KertasScreenState extends State<KertasScreen> {
         },
       );
 
+  /// Benar apabila soalan ini dipaparkan sebagai beberapa kotak bernombor.
+  ///
+  /// Hanya `tulis` dengan lebih satu isi dalam rubrik. Pemarkahan tidak
+  /// berubah: semua baris digabungkan semula menjadi satu jawapan sebelum
+  /// dibandingkan dengan rubrik, sama seperti skema kertas asli yang menilai
+  /// keseluruhan ruang jawapan secara serentak.
+  bool _berbilangBaris(SoalanKertas s) =>
+      s.jenis == JenisKertas.tulis && s.rubrik.idea.length > 1;
+
+  /// Pengawal bagi setiap kotak soalan berbilang baris.
+  List<TextEditingController> _barisBagi(SoalanKertas s) =>
+      _kawalanBaris.putIfAbsent(s.id, () {
+        // Pulihkan jawapan yang sudah disimpan. Kertas ini dahulunya sentiasa
+        // satu kotak, jadi teks tersimpan biasanya tiada baris baru — tetapi
+        // apa-apa baris tambahan kekal disambung supaya tiada tulisan murid
+        // hilang semasa pertukaran bentuk.
+        final tersimpan = switch (_jawapan[s.id]) {
+          JawapanTaip j => j.teks,
+          _ => '',
+        };
+        final bahagi = tersimpan.isEmpty ? <String>[] : tersimpan.split('\n');
+        final n = s.rubrik.idea.length;
+        final isi = List<String>.filled(n, '');
+        for (var i = 0; i < bahagi.length; i++) {
+          if (i >= n) {
+            isi[n - 1] = isi[n - 1].isEmpty
+                ? bahagi[i]
+                : '${isi[n - 1]}\n${bahagi[i]}';
+          } else {
+            isi[i] = bahagi[i];
+          }
+        }
+        return [
+          for (final teks in isi) TextEditingController(text: teks),
+        ];
+      });
+
+  /// Notifier baris aktif bagi soalan berbilang baris.
+  ValueNotifier<int?> _barisAktifBagi(SoalanKertas s) =>
+      _barisAktif.putIfAbsent(s.id, () => ValueNotifier<int?>(0));
+
+  /// Pengawal yang sedang menerima taipan daripada papan kekunci dalam app.
+  ///
+  /// Papan kekunci hanya mempunyai satu aliran aksara, jadi ia mesti tahu
+  /// kotak mana yang hendak ditulis. Soalan satu kotak terus menggunakan
+  /// [_kawalanBagi].
+  TextEditingController _kawalanAktif(SoalanKertas s) {
+    final baris = _kawalanBaris[s.id];
+    if (baris == null || baris.isEmpty) return _kawalanBagi(s);
+    final i = _barisAktif[s.id]?.value;
+    return (i == null || i < 0 || i >= baris.length) ? baris.first : baris[i];
+  }
+
+  /// Teks jawapan penuh bagi soalan bertulis.
+  ///
+  /// Semua kotak digabungkan dengan baris baru supaya pemarkahan tetap
+  /// melihat **satu** jawapan — itulah cara skema kertas asli menilainya.
+  String _teksAkhir(SoalanKertas s) {
+    final baris = _kawalanBaris[s.id];
+    if (baris == null || baris.isEmpty) return _kawalanBagi(s).text;
+    return baris.map((k) => k.text).join('\n');
+  }
+
   // --- Papan kekunci Jawi/Arab ---------------------------------------------
 
   /// Soalan yang sedang dipaparkan, atau `null` di kulit dan halaman semak.
@@ -433,7 +523,7 @@ class _KertasScreenState extends State<KertasScreen> {
 
   /// Masukkan satu aksara pada kedudukan kursor.
   void _taipAksara(SoalanKertas s, String aksara) {
-    final kawalan = _kawalanBagi(s);
+    final kawalan = _kawalanAktif(s);
     final teks = kawalan.text;
     final pemilihan = kawalan.selection;
 
@@ -457,7 +547,7 @@ class _KertasScreenState extends State<KertasScreen> {
 
   /// Padam satu aksara sebelum kedudukan kursor.
   void _padamAksara(SoalanKertas s) {
-    final kawalan = _kawalanBagi(s);
+    final kawalan = _kawalanAktif(s);
     final teks = kawalan.text;
     if (teks.isEmpty) return;
 
@@ -489,7 +579,7 @@ class _KertasScreenState extends State<KertasScreen> {
     // Medan jawapan masih boleh disentuh untuk membuka semula kekunci
     // (lihat `onSentuh`), jadi menaip semula kekal mudah.
     setState(() => _kekunciDitutup.add(s.id));
-    _simpan(s, JawapanTaip(_kawalanBagi(s).text.trim()));
+    _simpan(s, JawapanTaip(_teksAkhir(s).trim()));
   }
 
   // --- Hantar --------------------------------------------------------------
@@ -1861,14 +1951,21 @@ class _KertasScreenState extends State<KertasScreen> {
   /// sehingga nombor itu penuh, dan yang diuji menjadi teka-teki, bukan
   /// pengetahuan. Kertas yang ditandakan hanya selepas dihantar.
   Widget _taip(SoalanKertas s, Color warna) {
-    final kawalan = _kawalanBagi(s);
     final jawapan = _jawapan[s.id];
+    final berbilang = _berbilangBaris(s);
     return PapanTaip(
-      kawalan: kawalan,
+      // Soalan satu baris menggunakan `kawalan` biasa; bagi soalan berbilang
+      // baris widget memakai `baris` dan mengabaikan `kawalan`.
+      kawalan: _kawalanBagi(s),
+      baris: berbilang ? _barisBagi(s) : null,
+      barisAktif: berbilang ? _barisAktifBagi(s) : null,
       warna: warna,
       rubrik: s.rubrik,
       lumpuh: false,
-      onHantar: (teks) => _simpan(s, JawapanTaip(teks)),
+      // Teks diambil daripada semua kotak dan bukan daripada medan yang
+      // dihantar, kerana dalam mod berbilang baris tiada satu medan pun yang
+      // mewakili jawapan penuh.
+      onHantar: (_) => _simpan(s, JawapanTaip(_teksAkhir(s).trim())),
       markah: _latihTubi &&
               jawapan is JawapanTaip &&
               jawapan.teks.trim().isNotEmpty

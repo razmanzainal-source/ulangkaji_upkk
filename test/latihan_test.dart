@@ -18,6 +18,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:ulangkaji_upkk/models/kertas.dart';
+import 'package:ulangkaji_upkk/models/rubrik.dart';
 import 'package:ulangkaji_upkk/screens/kertas_screen.dart';
 import 'package:ulangkaji_upkk/screens/latihan_selesai_screen.dart';
 import 'package:ulangkaji_upkk/services/suara.dart';
@@ -97,6 +98,48 @@ Kertas _kertasTulis({required String jenisSumber}) {
             soalan: 'سنارايکن تيچ ادب ترهادڤ الله.',
             rumi: 'Senaraikan tiga adab terhadap Allah.',
             markah: 3,
+            jawapanContoh: const ['ساتو', 'دوا', 'تيچ'],
+            jawapanContohRumi: const ['satu', 'dua', 'tiga'],
+          ),
+        ],
+      ),
+    ],
+  );
+}
+
+/// Kertas latihan dengan satu soalan `tulis` yang rubriknya mempunyai **tiga
+/// isi**.
+///
+/// Kertas asal memberi satu ruang bernombor bagi setiap isi yang diminta, jadi
+/// app turut memaparkan tiga kotak bernombor. `_kertasTulis` di atas tiada
+/// rubrik, jadi ia kekal satu kotak besar — kedua-dua bentuk mesti diuji.
+Kertas _kertasTulisIsi({required String jenisSumber}) {
+  return Kertas(
+    id: 'uji-tulis-isi',
+    subjekId: 'adab',
+    tajuk: 'Adab — Ujian',
+    sumber: 'Ujian',
+    jenisSumber: jenisSumber,
+    bahagian: [
+      BahagianKertas(
+        nama: 'C',
+        markah: 3,
+        arahan: 'سنارايکن تيچ ادب',
+        arahanRumi: 'Senaraikan tiga adab',
+        soalan: [
+          SoalanKertas(
+            id: 'uji-c1i',
+            bahagian: 'C',
+            nombor: 1,
+            jenis: JenisKertas.tulis,
+            soalan: 'سنارايکن تيچ ادب ترهادڤ الله.',
+            rumi: 'Senaraikan tiga adab terhadap Allah.',
+            markah: 3,
+            rubrik: const Rubrik([
+              Idea(maksud: 'Isi satu', kata: ['ز']),
+              Idea(maksud: 'Isi dua', kata: ['س']),
+              Idea(maksud: 'Isi tiga', kata: ['ق']),
+            ]),
             jawapanContoh: const ['ساتو', 'دوا', 'تيچ'],
             jawapanContohRumi: const ['satu', 'dua', 'tiga'],
           ),
@@ -900,6 +943,98 @@ void main() {
       await tester.pump();
 
       expect(Suara.instance.ayatTerakhir, isNull);
+      await _tutup(tester);
+    });
+  });
+
+  // Soalan `tulis` yang rubriknya mempunyai beberapa isi dipaparkan sebagai
+  // kotak bernombor yang berasingan, meniru ruang yang dicetak pada kertas
+  // asal. Tiga perkara dikunci di sini kerana semuanya mudah hilang:
+  //
+  //   * bilangan kotak meniru bilangan isi;
+  //   * papan kekunci dalam app menulis kepada **kotak yang dipilih**, bukan
+  //     sentiasa kepada kotak pertama;
+  //   * semua kotak digabungkan sebelum dinilai — kalau tidak, murid yang
+  //     menulis isi ke baris 2 dan 3 akan kehilangan markahnya.
+  group('kotak berbilang baris (tulis)', () {
+    testWidgets('kotak mengikut isi, taipan ke kotak dipilih, markah digabungkan', (
+      tester,
+    ) async {
+      await _bukaSebagaiLaluan(
+        tester,
+        _kertasTulisIsi(jenisSumber: 'latihan'),
+      );
+      await tester.tap(find.text('Mula menjawab'));
+      await tester.pump();
+
+      final kotak = find.byType(TextField);
+      expect(kotak, findsNWidgets(3), reason: 'satu kotak bagi setiap isi');
+      for (final n in ['(1)', '(2)', '(3)']) {
+        expect(
+          find.text(n),
+          findsOneWidget,
+          reason: 'nombor ruang kertas asal',
+        );
+      }
+      // Had aksara merentasi kesemua kotak: 3 x 120.
+      expect(find.text('0 / 360 aksara'), findsOneWidget);
+
+      // Kotak kedua mungkin berada di belakang papan kekunci app. Tanpa
+      // ditatal ke hadapan, `tap` mendarat pada papan kekunci yang berada di
+      // atasnya — huruf kemudian masuk ke kotak yang salah, dan dalam ujian
+      // ini butang papan kekunci pula yang terkena.
+      await tester.ensureVisible(kotak.at(1));
+      await tester.pump();
+
+      await tester.tap(kotak.at(1));
+      await tester.pump();
+
+      expect(
+        tester.widget<TextField>(kotak.at(1)).controller!.text,
+        isEmpty,
+        reason: 'kotak kedua dipilih sebelum menaip',
+      );
+
+      await tester.tap(find.text('س').first);
+      await tester.pump();
+
+      expect(
+        tester.widget<TextField>(kotak.at(0)).controller!.text,
+        isEmpty,
+        reason: 'kotak pertama tidak boleh menerima taipan kotak kedua',
+      );
+      expect(
+        tester.widget<TextField>(kotak.at(1)).controller!.text,
+        'س',
+        reason: 'kotak dipilih mesti menerima taipan',
+      );
+      expect(tester.widget<TextField>(kotak.at(2)).controller!.text, isEmpty);
+      expect(find.text('1 / 360 aksara'), findsOneWidget);
+
+      await tester.ensureVisible(find.text('سياڤ'));
+      await tester.pump();
+      await tester.tap(find.text('سياڤ'));
+      await tester.pump();
+
+      // Hanya isi kedua (kata kunci 'س') yang dijumpai. Jika pemarkahan
+      // menggunakan satu kotak sahaja ia akan melihat kotak pertama yang
+      // kosong dan memberi 0/3 — itulah kerosakan yang dicegah oleh gabungan.
+      expect(
+        find.textContaining('1 / 3'),
+        findsWidgets,
+        reason: 'markah mesti mengira isi yang ditulis ke kotak kedua',
+      );
+      expect(find.textContaining('0 / 3'), findsNothing);
+      await _tutup(tester);
+    });
+
+    testWidgets('soalan tulis tanpa rubrik kekal satu kotak', (tester) async {
+      await _bukaSebagaiLaluan(tester, _kertasTulis(jenisSumber: 'latihan'));
+      await tester.tap(find.text('Mula menjawab'));
+      await tester.pump();
+
+      expect(find.byType(TextField), findsOneWidget);
+      expect(find.text('(1)'), findsNothing);
       await _tutup(tester);
     });
   });
