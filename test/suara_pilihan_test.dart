@@ -142,4 +142,129 @@ void main() {
     }
     expect(tiada, isEmpty, reason: 'soalan tiada klip: ${tiada.take(10).join(', ')}');
   });
+
+  // Medan `audio` pada bank menukar suara bagi klip tertentu — lihat `_teks`
+  // dalam `tools/jana_suara.py`. Ia sengaja bukan sebahagian daripada model
+  // Dart: app meminta kunci yang sama seperti biasa dan penjana menyambung
+  // segmen berlainan suara menjadi satu fail. Sebab itu tiada ujian model
+  // yang mengesahkannya, jadi ujian ini membaca medan mentah dan menegakkan
+  // syarat yang penjana perlukan.
+  group('penanda audio bercampur', () {
+    /// Blok tulisan Arab. Segmen yang dibaca oleh suara Melayu mesti
+    /// **bebas** daripada tulisan ini, kalau tidak `bersih()` akan
+    /// membuangnya sehingga klip menjadi senyap.
+    final RegExp blokArab = RegExp(r'[\u0600-\u06FF]');
+
+    /// Soalan mentah (belum ditukar kepada `SoalanKertas`, yang tidak
+    /// memegang medan `audio`).
+    List<Map<String, dynamic>> bankMentah(String id) =>
+        (_json('$_akar/assets/content/bank/$id.json')['soalan'] as List)
+            .cast<Map<String, dynamic>>();
+
+    /// Teks yang sepadan bagi satu medan bercampur, dalam bentuk senarai
+    /// baris seperti `jawapanContohRumi`.
+    List<String> barisRumi(Map<String, dynamic> s, String medan) =>
+        medan == 'soalan'
+            ? [s['rumi'] as String]
+            : (s['${medan}Rumi'] as List).cast<String>();
+
+    List<MapEntry<String, Map<String, dynamic>>> bertanda() {
+      final keluar = <MapEntry<String, Map<String, dynamic>>>[];
+      for (final id in _subjekAdaBank()) {
+        for (final s in bankMentah(id)) {
+          final audio = s['audio'];
+          if (audio != null) {
+            keluar.add(MapEntry(s['id'] as String, audio as Map<String, dynamic>));
+          }
+        }
+      }
+      return keluar;
+    }
+
+    test('hanya mod yang dikenali boleh ditulis', () {
+      final salah = <String>[];
+      for (final e in bertanda()) {
+        e.value.forEach((medan, mod) {
+          final m = mod as String;
+          final sah =
+              m == 'melayu' || (m.startsWith('pisah') && m.length > 'pisah'.length);
+          if (!sah) salah.add('${e.key}.$medan=$m');
+        });
+      }
+      expect(
+        salah,
+        isEmpty,
+        reason:
+            'Mod ini ditafsir secara senyap oleh penjana: ${salah.join('; ')}',
+      );
+    });
+
+    test('pembahagian tidak membuang teks dan mengekalkan segmen Melayu', () {
+      final salah = <String>[];
+      for (final id in _subjekAdaBank()) {
+        for (final s in bankMentah(id)) {
+          final audio = s['audio'];
+          if (audio == null) continue;
+          for (final e in (audio as Map).entries) {
+            final medan = e.key as String;
+            final mod = e.value as String;
+            if (!mod.startsWith('pisah')) continue;
+            final dl = mod.substring('pisah'.length);
+
+            if (medan == 'soalan') {
+              final ar = s['soalan'] as String;
+              if (!ar.contains(dl) || !barisRumi(s, medan).first.contains(dl)) {
+                salah.add('${s['id']}: penanda $dl tiada pada kedua-dua belah');
+                continue;
+              }
+              final kiri = ar.split(dl).first.trim();
+              final kanan = barisRumi(s, medan).first.split(dl).last.trim();
+              if (kiri.isEmpty || kanan.isEmpty) {
+                salah.add('${s['id']}: ada segmen kosong');
+              } else if (blokArab.hasMatch(kanan)) {
+                salah.add('${s['id']}: segmen Melayu masih bertulis Arab');
+              }
+            } else {
+              final ar = (s[medan] as List).cast<String>();
+              final rm = barisRumi(s, medan);
+              if (ar.length != rm.length) {
+                salah.add('${s['id']}: $medan berbeza panjang daripada Rumi');
+                continue;
+              }
+              for (var i = 0; i < ar.length; i++) {
+                if (!ar[i].contains(dl) || !rm[i].contains(dl)) {
+                  salah.add('${s['id']}[$i]: penanda $dl tiada');
+                } else if (blokArab.hasMatch(rm[i].split(dl).last.trim())) {
+                  salah.add('${s['id']}[$i]: segmen Melayu masih bertulis Arab');
+                }
+              }
+            }
+          }
+        }
+      }
+      expect(
+        salah,
+        isEmpty,
+        reason: 'Pembahagian rosak: ${salah.take(6).join('; ')}',
+      );
+    });
+
+    test('mod melayu: baris Rumi lengkap dan bebas tulisan Arab', () {
+      final salah = <String>[];
+      for (final id in _subjekAdaBank()) {
+        for (final s in bankMentah(id)) {
+          if ((s['audio'] as Map?)?['jawapanContoh'] != 'melayu') continue;
+          final ar = (s['jawapanContoh'] as List).cast<String>();
+          final rm =
+              (s['jawapanContohRumi'] as List?)?.cast<String>() ?? <String>[];
+          if (ar.length != rm.length || rm.any((x) => x.trim().isEmpty)) {
+            salah.add('${s['id']}: jawapanContohRumi tidak lengkap');
+          } else if (rm.any(blokArab.hasMatch)) {
+            salah.add('${s['id']}: Rumi masih bertulis Arab');
+          }
+        }
+      }
+      expect(salah, isEmpty, reason: salah.join('; '));
+    });
+  });
 }

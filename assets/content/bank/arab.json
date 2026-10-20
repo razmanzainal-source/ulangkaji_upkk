@@ -3272,7 +3272,10 @@
    "jawapanContohRumi": [
     "bait, madrasah, masjid, suq"
    ],
-   "id": "arab-c1"
+   "id": "arab-c1",
+   "audio": {
+    "soalan": "pisah:"
+   }
   },
   {
    "bahagian": "C",
@@ -3330,7 +3333,10 @@
    "jawapanContohRumi": [
     "kitab, qalam, tawilah, kursi"
    ],
-   "id": "arab-c2"
+   "id": "arab-c2",
+   "audio": {
+    "soalan": "pisah:"
+   }
   },
   {
    "bahagian": "C",
@@ -3387,7 +3393,10 @@
    "jawapanContohRumi": [
     "khamsah, asharah, ishrun, mi'ah"
    ],
-   "id": "arab-c3"
+   "id": "arab-c3",
+   "audio": {
+    "soalan": "pisah:"
+   }
   },
   {
    "bahagian": "C",
@@ -3444,7 +3453,10 @@
    "jawapanContohRumi": [
     "ahmar, azraq, asfar, akhdar"
    ],
-   "id": "arab-c4"
+   "id": "arab-c4",
+   "audio": {
+    "soalan": "pisah:"
+   }
   },
   {
    "bahagian": "C",
@@ -3501,7 +3513,10 @@
    "jawapanContohRumi": [
     "ain, anf, fam, udhun"
    ],
-   "id": "arab-c5"
+   "id": "arab-c5",
+   "audio": {
+    "soalan": "pisah:"
+   }
   },
   {
    "bahagian": "C",
@@ -3557,7 +3572,10 @@
    "jawapanContohRumi": [
     "yad, rijl, ra's, batn"
    ],
-   "id": "arab-c6"
+   "id": "arab-c6",
+   "audio": {
+    "soalan": "pisah:"
+   }
   },
   {
    "bahagian": "C",
@@ -3616,7 +3634,10 @@
    "jawapanContohRumi": [
     "ab, umm, jadd, jaddah"
    ],
-   "id": "arab-c7"
+   "id": "arab-c7",
+   "audio": {
+    "soalan": "pisah:"
+   }
   },
   {
    "bahagian": "C",
@@ -3672,7 +3693,10 @@
    "jawapanContohRumi": [
     "akh, ukht, amm, ammah"
    ],
-   "id": "arab-c8"
+   "id": "arab-c8",
+   "audio": {
+    "soalan": "pisah:"
+   }
   },
   {
    "bahagian": "C",
@@ -3729,7 +3753,10 @@
    "jawapanContohRumi": [
     "qitt, dajaj, samak, tair"
    ],
-   "id": "arab-c9"
+   "id": "arab-c9",
+   "audio": {
+    "soalan": "pisah:"
+   }
   },
   {
    "bahagian": "C",
@@ -3786,7 +3813,10 @@
    "jawapanContohRumi": [
     "asad, fil, hisan, baqarah"
    ],
-   "id": "arab-c10"
+   "id": "arab-c10",
+   "audio": {
+    "soalan": "pisah:"
+   }
   },
   {
    "bahagian": "C",
@@ -3844,7 +3874,10 @@
    "jawapanContohRumi": [
     "tuffah, mawz, burtuqal, batikh"
    ],
-   "id": "arab-c11"
+   "id": "arab-c11",
+   "audio": {
+    "soalan": "pisah:"
+   }
   },
   {
    "bahagian": "C",
@@ -3901,7 +3934,10 @@
    "jawapanContohRumi": [
     "aruzz, khubz, ma', halib"
    ],
-   "id": "arab-c12"
+   "id": "arab-c12",
+   "audio": {
+    "soalan": "pisah:"
+   }
   },
   {
    "bahagian": "C",
@@ -3958,7 +3994,10 @@
    "jawapanContohRumi": [
     "qamis, bantalun, hidha', qubbah"
    ],
-   "id": "arab-c13"
+   "id": "arab-c13",
+   "audio": {
+    "soalan": "pisah:"
+   }
   },
   {
    "bahagian": "C",
@@ -4064,7 +4103,10 @@
    "jawapanContohRumi": [
     "ana, anta, huwa, hiya"
    ],
-   "id": "arab-c15"
+   "id": "arab-c15",
+   "audio": {
+    "soalan": "pisah:"
+   }
   },
   {
    "bahagian": "C",
@@ -4116,7 +4158,10 @@
    "jawapanContohRumi": [
     "nahnu, hum, hunna, antum"
    ],
-   "id": "arab-c16"
+   "id": "arab-c16",
+   "audio": {
+    "soalan": "pisah:"
+   }
   },
   {
    "bahagian": "C",
@@ -4168,7 +4213,10 @@
    "jawapanContohRumi": [
     "ma, man, aina, kam"
    ],
-   "id": "arab-c17"
+   "id": "arab-c17",
+   "audio": {
+    "soalan": "pisah:"
+   }
   },
   {
    "bahagian": "C",
@@ -4650,7 +4698,10 @@
    "jawapanContohRumi": [
     "sabahul-khair, masa'ul-khair, syukran, 'afwan"
    ],
-   "id": "arab-c25"
+   "id": "arab-c25",
+   "audio": {
+    "soalan": "pisah:"
+   }
   },
   {
    "bahagian": "C",
@@ -4711,7 +4762,10 @@
    "jawapanContohRumi": [
     "ghurfatun-naum, matbakh, hammam, ghurfatul-julus"
    ],
-   "id": "arab-c26"
+   "id": "arab-c26",
+   "audio": {
+    "soalan": "pisah:"
+   }
   },
   {
    "bahagian": "C",
@@ -4766,7 +4820,10 @@
    "jawapanContohRumi": [
     "kaifa, mata, limadha, hal"
    ],
-   "id": "arab-c27"
+   "id": "arab-c27",
+   "audio": {
+    "soalan": "pisah:"
+   }
   },
   {
    "bahagian": "C",
@@ -4886,7 +4943,10 @@
    "jawapanContohRumi": [
     "hadha, hadhihi, dhalika, tilka"
    ],
-   "id": "arab-c29"
+   "id": "arab-c29",
+   "audio": {
+    "soalan": "pisah:"
+   }
   },
   {
    "bahagian": "C",
@@ -5249,7 +5309,10 @@
    "jawapanContohRumi": [
     "suq, mustashfa, maktabah, mazra'ah, mat'am, nahr, jabal"
    ],
-   "id": "arab-d3"
+   "id": "arab-d3",
+   "audio": {
+    "soalan": "pisah:"
+   }
   },
   {
    "bahagian": "D",
@@ -5464,7 +5527,10 @@
    "jawapanContohRumi": [
     "arnab, ma'iz, jamal, qird, namir, dubb, nahlah, namlah"
    ],
-   "id": "arab-d5"
+   "id": "arab-d5",
+   "audio": {
+    "soalan": "pisah:"
+   }
   },
   {
    "bahagian": "D",
@@ -5548,7 +5614,10 @@
    "jawapanContohRumi": [
     "yanam, yastaiqiz, yajlis, yaqif, yamshi, yaqra', yaktub"
    ],
-   "id": "arab-d6"
+   "id": "arab-d6",
+   "audio": {
+    "soalan": "pisah:"
+   }
   },
   {
    "bahagian": "D",
@@ -5835,7 +5904,10 @@
    "jawapanContohRumi": [
     "ahada 'asyar, ithna 'asyar, thalathun, arba'un, khamsun, sittun, sab'un, tis'un"
    ],
-   "id": "arab-d9"
+   "id": "arab-d9",
+   "audio": {
+    "soalan": "pisah:"
+   }
   },
   {
    "bahagian": "D",
@@ -6086,7 +6158,10 @@
     "Saya tidur di bilik tidur.",
     "Saya bersolat di masjid bersama ayah saya."
    ],
-   "id": "arab-d11"
+   "id": "arab-d11",
+   "audio": {
+    "jawapanContoh": "melayu"
+   }
   },
   {
    "bahagian": "D",
@@ -6177,7 +6252,10 @@
    "jawapanContohRumi": [
     "qamis, bantalun, hidha', jawrab, qubbah, hijab, wisyah, quffaz"
    ],
-   "id": "arab-d12"
+   "id": "arab-d12",
+   "audio": {
+    "soalan": "pisah:"
+   }
   },
   {
    "bahagian": "D",
@@ -6572,7 +6650,10 @@
     "Itu rumah datuk saya.",
     "Itu sekolah saya."
    ],
-   "id": "arab-d16"
+   "id": "arab-d16",
+   "audio": {
+    "jawapanContoh": "melayu"
+   }
   },
   {
    "bahagian": "D",
@@ -6910,7 +6991,10 @@
     "yasma'u — mendengar",
     "yanzuru — melihat"
    ],
-   "id": "arab-d19"
+   "id": "arab-d19",
+   "audio": {
+    "jawapanContoh": "pisah—"
+   }
   },
   {
    "bahagian": "D",
@@ -7000,7 +7084,10 @@
    "jawapanContohRumi": [
     "jubn, zubdah, sukkar, milh, bayd, tamr, 'asal, syay"
    ],
-   "id": "arab-d20"
+   "id": "arab-d20",
+   "audio": {
+    "soalan": "pisah:"
+   }
   }
  ]
 }

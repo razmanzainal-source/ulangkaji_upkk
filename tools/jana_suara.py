@@ -44,6 +44,7 @@ import subprocess
 import sys
 import tempfile
 import time
+import wave
 from concurrent.futures import ThreadPoolExecutor
 
 AKAR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -75,6 +76,22 @@ KADAR = os.environ.get("KADAR", "-8%")
 BITRATE = os.environ.get("BITRATE", "48000")
 
 CUBAAN = 3  # bilangan percubaan semula jika rangkaian gagal
+
+# Penanda bagi klip yang disintesis daripada beberapa segmen berlainan suara.
+# Ini bukan suara sebenar: ia memberitahu `jana_satu` bahawa `teks` mengandungi
+# kod segmen (lihat `gabung_segmen`), bukan ayat yang perlu disebut terus.
+#
+# Klip sebegini perlu menjadi **satu fail** kerana app hanya mengenal kunci
+# seperti `q-<id>` — tiada mekanisme memainkan beberapa fail berurutan. Dengan
+# menyambung segmen menjadi satu fail, senarai kunci dan manifest kekal tepat
+# seperti biasa dan tiada perubahan langsung pada app.
+SUARA_CAMPURAN = "campuran"
+
+# Awalan mod `audio`, ditulis berserta penanda: `"pisah" + <penanda>`.
+# Contoh `"pisah:"` bermaksud bahagikan pada titik dua, dan `"pisah—"`
+# bahagikan pada em dash. Awalan sengaja tanpa tanda dua sendiri supaya
+# penanda `:` tidak bertindih dengan penanda mod.
+PISAH = "pisah"
 
 # Subjek yang dibaca dengan suara Arab dan teks Arab.
 SUBJEK_ARAB = {"arab"}
@@ -186,49 +203,121 @@ def nama_fail(teks: str, suara: str) -> str:
     return cap + ".m4a"
 
 
+def _edge_tts(teks: str, mp3: str, suara: str) -> None:
+    """Rakam satu segmen dengan edge-tts menjadi fail mp3 sementara."""
+    for cuba in range(CUBAAN):
+        try:
+            hasil = subprocess.run(
+                [
+                    sys.executable, "-m", "edge_tts",
+                    "--voice", suara,
+                    f"--rate={KADAR}",
+                    "--text", teks,
+                    "--write-media", mp3,
+                ],
+                capture_output=True,
+                text=True,
+                # Tanpa had masa, satu permintaan rangkaian yang tergantung
+                # menghentikan seluruh penjanaan — dan itulah yang berlaku
+                # pada 2,000/2,130 klip.
+                timeout=90,
+            )
+        except subprocess.TimeoutExpired:
+            if cuba == CUBAAN - 1:
+                raise RuntimeError("edge-tts tamat masa: " + teks[:80])
+            time.sleep(2.0 * (cuba + 1))
+            continue
+        if hasil.returncode == 0 and os.path.exists(mp3) and os.path.getsize(mp3) > 0:
+            return
+        if cuba == CUBAAN - 1:
+            raise RuntimeError(
+                "edge-tts gagal: "
+                + (hasil.stderr.strip()[:200] or hasil.stdout.strip()[:200])
+            )
+        time.sleep(1.5 * (cuba + 1))
+
+
+def _ke_m4a(sumber: str, laluan: str) -> None:
+    """Tukar audio kepada AAC mono 48 kbps (format yang app gunakan)."""
+    subprocess.run(
+        [
+            "afconvert", "-f", "m4af", "-d", "aac", "-b", BITRATE,
+            "-c", "1", sumber, laluan,
+        ],
+        check=True,
+        capture_output=True,
+    )
+
+
+def gabung_segmen(segmen: list[tuple[str, str]]) -> str:
+    """Kodkan senarai (suara, teks) menjadi satu kerja tunggal.
+
+    Digunakan apabila satu klip perlu bertutur dalam dua bahasa: contohnya
+    arahan Bahasa Arab (`ar-SA-ZariyahNeural`) diikuti senarai perkataan Jawi
+    yang ialah bahasa Melayu (`ms-MY-YasminNeural`). Membaca keseluruhan ayat
+    dengan satu suara akan menyebut perkataan Jawi dengan sebutan Arab.
+    """
+    return json.dumps([[v, t] for v, t in segmen], ensure_ascii=False)
+
+
+def baca_segmen(kod: str) -> list[tuple[str, str]]:
+    """Songsang `gabung_segmen`."""
+    return [(v, t) for v, t in json.loads(kod)]
+
+
+def jana_segmen(segmen: list[tuple[str, str]], laluan: str) -> None:
+    """Sintesis setiap segmen dengan suaranya sendiri, kemudian sambung.
+
+    Tiada `ffmpeg` dalam persekitaran ini, jadi penyambungan dibuat melalui
+    WAV PCM: setiap segmen ditukar kepada WAV mono 16-bit 44.1 kHz (format
+    seragam, jadi bingkai boleh disalin terus), dan bingkai digabungkan
+    berturut-turut sebelum ditukar kepada m4a seperti klip biasa.
+    """
+    with tempfile.TemporaryDirectory() as td:
+        jalur: list[str] = []
+        for i, (suara, teks) in enumerate(segmen):
+            mp3 = os.path.join(td, f"seg{i}.mp3")
+            wav = os.path.join(td, f"seg{i}.wav")
+            _edge_tts(teks, mp3, suara)
+            subprocess.run(
+                # Sintaks `afconvert` untuk PCM ialah `[-][BE|LE]{F|I|UI}{bit}`
+                # — `LEI16` (little-endian, integer bertanda, 16-bit). Nama
+                # ringkas `leas16` hanya sah untuk codec, bukan PCM.
+                ["afconvert", "-f", "WAVE", "-d", "LEI16@44100", "-c", "1", mp3, wav],
+                check=True,
+                capture_output=True,
+            )
+            jalur.append(wav)
+
+        sambung = os.path.join(td, "sambung.wav")
+        params: tuple[int, int, int] | None = None
+        with wave.open(sambung, "wb") as luar:
+            for w in jalur:
+                with wave.open(w, "rb") as dalam:
+                    p = dalam.getparams()
+                    if params is None:
+                        params = (p.nchannels, p.sampwidth, p.framerate)
+                        luar.setnchannels(p.nchannels)
+                        luar.setsampwidth(p.sampwidth)
+                        luar.setframerate(p.framerate)
+                    # Rehat pendek antara bahagian supaya arahan Arab dan
+                    # senarai Melayu tidak bertindih antara satu sama lain.
+                    senyap = b"\x00" * (p.framerate // 8) * p.sampwidth * p.nchannels
+                    luar.writeframes(senyap)
+                    luar.writeframes(dalam.readframes(dalam.getnframes()))
+
+        _ke_m4a(sambung, laluan)
+
+
 def jana_satu(teks: str, laluan: str, suara: str) -> None:
     """Jana satu klip: edge-tts -> mp3, kemudian afconvert -> m4a (AAC mono)."""
+    if suara == SUARA_CAMPURAN:
+        jana_segmen(baca_segmen(teks), laluan)
+        return
     with tempfile.TemporaryDirectory() as td:
         mp3 = os.path.join(td, "a.mp3")
-        for cuba in range(CUBAAN):
-            try:
-                hasil = subprocess.run(
-                    [
-                        sys.executable, "-m", "edge_tts",
-                        "--voice", suara,
-                        f"--rate={KADAR}",
-                        "--text", teks,
-                        "--write-media", mp3,
-                    ],
-                    capture_output=True,
-                    text=True,
-                    # Tanpa had masa, satu permintaan rangkaian yang tergantung
-                    # menghentikan seluruh penjanaan — dan itulah yang berlaku
-                    # pada 2,000/2,130 klip.
-                    timeout=90,
-                )
-            except subprocess.TimeoutExpired:
-                if cuba == CUBAAN - 1:
-                    raise RuntimeError("edge-tts tamat masa: " + teks[:80])
-                time.sleep(2.0 * (cuba + 1))
-                continue
-            if hasil.returncode == 0 and os.path.exists(mp3) and os.path.getsize(mp3) > 0:
-                break
-            if cuba == CUBAAN - 1:
-                raise RuntimeError(
-                    "edge-tts gagal: "
-                    + (hasil.stderr.strip()[:200] or hasil.stdout.strip()[:200])
-                )
-            time.sleep(1.5 * (cuba + 1))
-
-        subprocess.run(
-            [
-                "afconvert", "-f", "m4af", "-d", "aac", "-b", BITRATE,
-                "-c", "1", mp3, laluan,
-            ],
-            check=True,
-            capture_output=True,
-        )
+        _edge_tts(teks, mp3, suara)
+        _ke_m4a(mp3, laluan)
 
 
 def _baca(teks: str | None, rujuk_arab: bool) -> str:
@@ -242,8 +331,8 @@ def _baca(teks: str | None, rujuk_arab: bool) -> str:
     return bersih(teks or "")
 
 
-def _teks(s: dict, rujuk_arab: bool) -> list[tuple[str, str]]:
-    """Senarai (kunci, teks) bagi satu soalan.
+def _teks(s: dict, rujuk_arab: bool) -> list[tuple[str, str, str]]:
+    """Senarai (kunci, teks yang disebut, suara) bagi satu soalan.
 
     Bentuk kunci mesti sepadan dengan fungsi `Suara.kunci*` dalam
     `lib/services/suara.dart` — kalau tidak, klip yang dijana tidak akan
@@ -260,33 +349,87 @@ def _teks(s: dict, rujuk_arab: bool) -> list[tuple[str, str]]:
     yang berulang dalam beberapa soalan berkongsi satu rakaman, dan itulah
     sebabnya bantuan suara latih tubi hanya menambah kira-kira 17 MB walaupun
     bank mengandungi lebih 2,000 pilihan.
+
+    Medan pilihan ``audio`` pada soalan menukar suara bagi klip tertentu.
+    Tiga mod wujud:
+
+      * ``"melayu"`` — baca daripada baris Rumi dengan suara Melayu. Digunakan
+        apabila jawapan contoh ialah ayat **Melayu** yang ditulis dalam huruf
+        Jawi; enjin suara Arab akan menyebutnya dengan sebutan Arab yang salah.
+      * ``"pisah<delim>"`` — bahagikan teks Arab dan baris Rumi pada
+        ``<delim>``: bahagian sebelumnya dibaca suara subjek (Arab), bahagian
+        selepasnya suara Melayu. Digunakan bagi ayat seperti
+        ``اكتب بالعربية: رومه، سکوله`` di mana arahan ialah Arab tulen tetapi
+        senarai selepas titik dua ialah perkataan Melayu dalam tulisan Jawi.
+      * tiada — tingkah laku asal, satu suara subjek bagi keseluruhan teks.
+
+    Walaupun bunyinya dua suara, klip kekal menjadi **satu kunci dan satu
+    fail** (lihat `gabung_segmen`) kerana app meminta satu kunci sahaja bagi
+    setiap soalan.
     """
     sid = s["id"]
-    keluar: list[tuple[str, str]] = []
+    suara_subjek = SUARA_ARAB if rujuk_arab else SUARA
+    audio = s.get("audio") or {}
+    keluar: list[tuple[str, str, str]] = []
 
-    utama = _baca(
-        s.get("soalan") if rujuk_arab else s.get("rumi"), rujuk_arab
-    )
+    # --- ayat soalan --------------------------------------------------
+    utama: str | None = None
+    utama_suara = suara_subjek
+    mod_soalan = audio.get("soalan")
+
+    if mod_soalan == "melayu":
+        utama = sebutan(bersih(s.get("rumi") or ""))
+        utama_suara = SUARA
+    elif mod_soalan and mod_soalan.startswith(PISAH):
+        dl = mod_soalan[len(PISAH):]
+        ar = s.get("soalan") or ""
+        rm = s.get("rumi") or ""
+        if dl not in ar or dl not in rm:
+            raise ValueError(f"{sid}: audio.soalan={mod_soalan!r} tidak sepadan")
+        seg = [
+            (suara_subjek, sebutan(_bersih_arab(ar.split(dl, 1)[0]))),
+            (SUARA, sebutan(bersih(rm.split(dl, 1)[1]))),
+        ]
+        seg = [(v, t) for v, t in seg if t]
+        if seg:
+            keluar.append((f"q-{sid}", gabung_segmen(seg), SUARA_CAMPURAN))
+    elif mod_soalan:
+        raise ValueError(f"{sid}: mod audio.soalan tidak dikenali {mod_soalan!r}")
+    else:
+        utama = _baca(
+            s.get("soalan") if rujuk_arab else s.get("rumi"), rujuk_arab
+        )
+
     if utama:
-        keluar.append((f"q-{sid}", utama))
+        keluar.append((f"q-{sid}", utama, utama_suara))
 
-    def tambah(teks: str | None) -> None:
+    def tambah(
+        teks: str | None,
+        *,
+        bunyi: str | None = None,
+        suara: str | None = None,
+    ) -> None:
         """Tambah satu klip `o-` bagi teks yang dipaparkan.
 
         Kunci dibina daripada teks **mentah** (yang app pegang), manakala klip
         dibaca daripada teks yang sudah dibersihkan. Dua teks berbeza yang
         berbunyi sama tetap berkongsi satu fail (lihat `nama_fail`), tetapi
         kuncinya kekal berasingan supaya carian app tidak pernah terlepas.
+
+        ``bunyi`` dan ``suara`` boleh dihantar sendiri apabila bacaan bukan
+        datang daripada teks yang sama dengan kunci — itulah kes jawapan
+        contoh Melayu-dalam-Jawi dan ayat bercampur suara.
         """
         mentah = (teks or "").strip()
-        bunyi = _baca(teks, rujuk_arab)
+        bunyi_teks = bunyi if bunyi is not None else _baca(teks, rujuk_arab)
+        suara_teks = suara if suara is not None else suara_subjek
         # Teks yang hanya mengandungi tanda baca (contohnya "!") tidak boleh
         # disebut. edge-tts menolaknya, dan kunci tanpa fail akan tergantung
         # dalam manifest.
-        if not _ADA_HURUF.search(bunyi):
+        if not _ADA_HURUF.search(bunyi_teks or ""):
             return
-        if mentah and bunyi:
-            keluar.append((f"o-{mentah}", bunyi))
+        if mentah and bunyi_teks:
+            keluar.append((f"o-{mentah}", bunyi_teks, suara_teks))
 
     for it in s.get("item") or []:
         # Ayat kecil di bawah soalan berbilang item (contoh: bulat, tempat
@@ -321,18 +464,56 @@ def _teks(s: dict, rujuk_arab: bool) -> list[tuple[str, str]]:
     # sendiri — menjana klip untuknya hanya mengulang bunyi yang sedia ada
     # dalam ratusan variasi teks yang hampir serupa.
     if s.get("jenis") in ("tulis", "huraian"):
-        if rujuk_arab:
-            contoh = s.get("jawapanContoh") or []
-        else:
-            contoh = s.get("jawapanContohRumi") or s.get("jawapanContoh") or []
-        # Teks mesti sepadan **tepi demi tepi** dengan `jawapanPenuhDengar`
-        # dalam app, kerana kunci diperoleh daripada teks mentah itu sendiri.
-        # Dart menyertai `join('\n')` tanpa menapis baris kosong, jadi Python
-        # turut berbuat demikian — menapis di sini akan menghasilkan kunci
-        # yang tidak dapat dijumpai oleh app.
-        tambah("\n".join(contoh).strip())
+        # Kunci mesti sepadan **tepi demi tepi** dengan `jawapanPenuhDengar`
+        # dalam app. Dart menyertai `join('\n')` tanpa menapis baris kosong,
+        # jadi Python turut berbuat demikian — menapis di sini akan
+        # menghasilkan kunci yang tidak dapat dijumpai oleh app.
+        #
+        # Subjek Arab: `jawapanPenuhDengar` memulangkan teks mentah
+        # `jawapanContoh`. Subjek lain: baris Rumi.
+        kunci_teks = "\n".join(
+            (s.get("jawapanContoh") or [])
+            if rujuk_arab
+            else (s.get("jawapanContohRumi") or s.get("jawapanContoh") or [])
+        ).strip()
 
-    return [(k, v) for k, v in keluar if v]
+        if not kunci_teks:
+            pass
+        elif audio.get("jawapanContoh") == "melayu":
+            # Jawapan contoh ini ayat **Melayu** sepenuhnya yang ditulis dalam
+            # huruf Jawi (bukan jawapan Bahasa Arab), jadi dibaca terus daripada
+            # baris Rumi dengan suara Melayu.
+            jawi_mentah = "\n".join(s.get("jawapanContoh") or []).strip()
+            rumi = "\n".join(s.get("jawapanContohRumi") or []).strip()
+            if not rumi:
+                raise ValueError(f"{sid}: mod melayu tanpa jawapanContohRumi")
+            tambah(jawi_mentah, bunyi=sebutan(bersih(rumi)), suara=SUARA)
+        elif audio.get("jawapanContoh", "").startswith(PISAH):
+            mod = audio["jawapanContoh"]
+            dl = mod[len(PISAH):]
+            jawi_mentah = "\n".join(s.get("jawapanContoh") or []).strip()
+            ar = s.get("jawapanContoh") or []
+            rm = s.get("jawapanContohRumi") or []
+            if len(ar) != len(rm):
+                raise ValueError(f"{sid}: jawapanContoh berbeza panjang")
+            seg: list[tuple[str, str]] = []
+            for a, r in zip(ar, rm):
+                if dl not in a or dl not in r:
+                    raise ValueError(f"{sid}: {dl!r} tiada pada {a!r}")
+                seg.append((suara_subjek, sebutan(_bersih_arab(a.split(dl, 1)[0]))))
+                seg.append((SUARA, sebutan(bersih(r.split(dl, 1)[1]))))
+            seg = [(v, t) for v, t in seg if t]
+            if seg:
+                tambah(jawi_mentah, bunyi=gabung_segmen(seg), suara=SUARA_CAMPURAN)
+        elif audio.get("jawapanContoh"):
+            raise ValueError(
+                f"{sid}: mod audio.jawapanContoh tidak dikenali "
+                f"{audio['jawapanContoh']!r}"
+            )
+        else:
+            tambah(kunci_teks)
+
+    return [(k, v, su) for k, v, su in keluar if v]
 
 
 def kumpul_kerja(penapis: set[str] | None = None) -> list[tuple[str, str, str]]:
@@ -357,15 +538,22 @@ def kumpul_kerja(penapis: set[str] | None = None) -> list[tuple[str, str, str]]:
             bank = json.load(f)
 
         rujuk_arab = sid_subjek in SUBJEK_ARAB
-        suara = SUARA_ARAB if rujuk_arab else SUARA
 
         for soalan in bank.get("soalan") or []:
-            for kunci, teks in _teks(soalan, rujuk_arab):
-                kerja.append((kunci, teks, suara))
+            # `_teks` sudah memilih suara bagi setiap klip, jadi suara subjek
+            # tidak lagi ditetapkan di sini.
+            kerja.extend(_teks(soalan, rujuk_arab))
 
     # Pembetulan sebutan dijalankan di sini supaya nama fail audio sentiasa
-    # sepadan dengan teks yang benar-benar disebut.
-    return [(k, sebutan(t), v) for k, t, v in kerja]
+    # sepadan dengan teks yang benar-benar disebut. Klip bercampur suara
+    # dikodkan sebagai JSON dan sudah pun dibetulkan segmen demi segmen
+    # semasa dibina — menjalankannya melalui `sebutan` sekali lagi akan
+    # memproses teks kod dan bukan ayat yang sebenar.
+    hasil: list[tuple[str, str, str]] = []
+    for kunci, teks, suara in kerja:
+        hasil.append((kunci, teks, suara) if suara == SUARA_CAMPURAN
+                     else (kunci, sebutan(teks), suara))
+    return hasil
 
 
 def senarai_suara() -> None:
