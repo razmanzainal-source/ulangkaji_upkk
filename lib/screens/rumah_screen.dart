@@ -96,51 +96,101 @@ class KepalaRaz extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    const bucu = BorderRadius.only(
+      bottomLeft: Radius.circular(28),
+      bottomRight: Radius.circular(28),
+    );
+
     return Container(
       width: double.infinity,
-      padding: const EdgeInsets.fromLTRB(18, 54, 18, 22),
-      decoration: const BoxDecoration(
-        gradient: LinearGradient(
-          colors: [Warna.utama, Warna.utamaMuda],
-          begin: Alignment.topLeft,
-          end: Alignment.bottomRight,
-        ),
-        borderRadius: BorderRadius.only(
-          bottomLeft: Radius.circular(28),
-          bottomRight: Radius.circular(28),
-        ),
-      ),
-      child: Row(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Expanded(
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text(
-                  tajuk,
-                  maxLines: 3,
-                  overflow: TextOverflow.ellipsis,
-                  style: const TextStyle(
-                    fontSize: 26,
-                    fontWeight: FontWeight.w900,
-                    color: Colors.white,
-                    height: 1.15,
+      decoration: const BoxDecoration(gradient: _kecerunan, borderRadius: bucu),
+      // Penjajaran lutsinar mesti dipangkas pada bucu bulat kepala, jadi
+      // `ClipRRect` berada **di dalam** `Container` dan padding dipindahkan
+      // ke dalamnya. Jika tidak, bulatan terpotong pada tepi padding dan
+      // meninggalkan garis lurus yang jelas.
+      child: ClipRRect(
+        borderRadius: bucu,
+        child: Stack(
+          clipBehavior: Clip.none,
+          children: [
+            Positioned(right: -30, top: -38, child: _Bulatan(104, Colors.white24)),
+            Positioned(right: 78, top: 82, child: _Bulatan(46, Colors.white12)),
+            Positioned(left: -40, bottom: -58, child: _Bulatan(132, Colors.white10)),
+            Positioned(right: 118, bottom: -26, child: _Bulatan(60, Colors.white12)),
+            Padding(
+              padding: const EdgeInsets.fromLTRB(18, 54, 18, 22),
+              child: Row(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Expanded(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          tajuk,
+                          maxLines: 3,
+                          overflow: TextOverflow.ellipsis,
+                          style: const TextStyle(
+                            fontSize: 26,
+                            fontWeight: FontWeight.w900,
+                            color: Colors.white,
+                            height: 1.15,
+                            shadows: [
+                              Shadow(color: Color(0x33000000), blurRadius: 6),
+                            ],
+                          ),
+                        ),
+                        const SizedBox(height: 6),
+                        Text(
+                          sari,
+                          style: Teks.label.copyWith(
+                            color: Colors.white70,
+                            height: 1.4,
+                          ),
+                        ),
+                        if (kanak != null) ...[
+                          const SizedBox(height: 14),
+                          kanak!,
+                        ],
+                      ],
+                    ),
                   ),
-                ),
-                const SizedBox(height: 6),
-                Text(
-                  sari,
-                  style: Teks.label.copyWith(color: Colors.white70, height: 1.4),
-                ),
-                if (kanak != null) ...[const SizedBox(height: 14), kanak!],
-              ],
+                  const SizedBox(width: 10),
+                  Maskot(saiz: 96, mood: mood),
+                ],
+              ),
             ),
-          ),
-          const SizedBox(width: 10),
-          Maskot(saiz: 96, mood: mood),
-        ],
+          ],
+        ),
       ),
+    );
+  }
+}
+
+/// Kecerunan kepala halaman — dikongsi supaya semua kepala kelihatan seragam.
+const _kecerunan = LinearGradient(
+  colors: [Warna.utama, Warna.utamaMuda],
+  begin: Alignment.topLeft,
+  end: Alignment.bottomRight,
+);
+
+/// Bulatan lutsinar untuk hiasan kepala halaman.
+///
+/// Kepala gradien rata tanpa sebarang bentuk kelihatan muram dan besar
+/// dengan sendirinya; bulatan ini memberi kedalaman tanpa bersaing dengan
+/// teks kerana warnanya putih pada ketulisan rendah.
+class _Bulatan extends StatelessWidget {
+  const _Bulatan(this.saiz, this.warna);
+
+  final double saiz;
+  final Color warna;
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      width: saiz,
+      height: saiz,
+      decoration: BoxDecoration(color: warna, shape: BoxShape.circle),
     );
   }
 }

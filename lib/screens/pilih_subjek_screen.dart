@@ -58,54 +58,90 @@ class _PilihSubjekScreenState extends State<PilihSubjekScreen> {
     final subjek = BankKertas.instance.subjek;
     final nama = Tetapan.instance.namaAnak.trim();
 
-    return CustomScrollView(
-      slivers: [
-        SliverToBoxAdapter(
-          child: KepalaRaz(
-            tajuk: nama.isEmpty ? 'Ulangkaji UPKK' : 'Assalamualaikum, $nama!',
-            sari: 'Jom belajar KAFA bersama Raz — 6 subjek bertulis, '
-                '70 markah, 1 jam 15 minit, mengikut format UPKK sebenar.',
-            kanak: Row(
-              children: [
-                CipStat(
-                  ikon: Icons.library_books_rounded,
-                  teks: '${subjek.length} subjek',
-                ),
-                const SizedBox(width: 8),
-                CipStat(
-                  ikon: Icons.local_fire_department_rounded,
-                  teks: '${Kemajuan.instance.rentetanHari} hari berturut',
-                ),
-              ],
-            ),
-          ),
-        ),
-        SliverPadding(
-          padding: const EdgeInsets.fromLTRB(16, 18, 16, 28),
-          sliver: SliverList.separated(
-            itemCount: subjek.length,
-            separatorBuilder: (_, _) => const SizedBox(height: 14),
-            itemBuilder: (_, i) => _KadSubjek(
-              subjek: subjek[i],
-              onMula: () => _mulaKertas(subjek[i]),
-              onLatihTubi: () => _mulaLatihTubi(subjek[i]),
-            ),
-          ),
-        ),
-        if (subjek.isEmpty)
-          const SliverFillRemaining(
-            hasScrollBody: false,
-            child: Center(
-              child: Padding(
-                padding: EdgeInsets.all(32),
-                child: Text(
-                  'Bank soalan tidak dapat dibaca.\nCuba tutup dan buka semula app.',
-                  style: Teks.biasa,
-                  textAlign: TextAlign.center,
+    return Stack(
+      children: [
+        // Jelaga latar. Skrin ini dahulunya kad putih di atas satu warna
+        // rata sehingga ke bawah — ruang di sekeliling kad kelihatan kosong
+        // dan membosankan. Jelaga besar yang hampir lut sinar memberi
+        // kedalaman dan gerak hati tanpa mengganggu teks, kerana ia berada
+        // di belakang kad dan hanya menyerlah di celah-celahnya.
+        Positioned(top: 320, right: -96, child: _Jelaga(230)),
+        Positioned(top: 590, left: -118, child: _Jelaga(272)),
+        Positioned(top: 900, right: -66, child: _Jelaga(186)),
+        Positioned(top: 1140, left: -84, child: _Jelaga(214)),
+        CustomScrollView(
+          slivers: [
+            SliverToBoxAdapter(
+              child: KepalaRaz(
+                tajuk: nama.isEmpty ? 'Ulangkaji UPKK' : 'Assalamualaikum, $nama!',
+                sari: 'Jom belajar KAFA bersama Raz — 6 subjek bertulis, '
+                    '70 markah, 1 jam 15 minit, mengikut format UPKK sebenar.',
+                kanak: Row(
+                  children: [
+                    CipStat(
+                      ikon: Icons.library_books_rounded,
+                      teks: '${subjek.length} subjek',
+                    ),
+                    const SizedBox(width: 8),
+                    CipStat(
+                      ikon: Icons.local_fire_department_rounded,
+                      teks: '${Kemajuan.instance.rentetanHari} hari berturut',
+                    ),
+                  ],
                 ),
               ),
             ),
-          ),
+            // Label bahagian. Tanpa ini, senarai bermula serta-merta selepas
+            // kepala dan kad terasa seperti senarai yang terjatuh ke bawah,
+            // bukan satu bahagian yang dirancang.
+            SliverToBoxAdapter(
+              child: Padding(
+                padding: const EdgeInsets.fromLTRB(20, 22, 20, 6),
+                child: Row(
+                  children: [
+                    Text('Pilih subjek', style: Teks.sederhana),
+                    const SizedBox(width: 12),
+                    Expanded(
+                      child: Container(
+                        height: 2,
+                        decoration: BoxDecoration(
+                          color: Warna.utamaLembut,
+                          borderRadius: BorderRadius.circular(2),
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+            SliverPadding(
+              padding: const EdgeInsets.fromLTRB(16, 12, 16, 28),
+              sliver: SliverList.separated(
+                itemCount: subjek.length,
+                separatorBuilder: (_, _) => const SizedBox(height: 14),
+                itemBuilder: (_, i) => _KadSubjek(
+                  subjek: subjek[i],
+                  onMula: () => _mulaKertas(subjek[i]),
+                  onLatihTubi: () => _mulaLatihTubi(subjek[i]),
+                ),
+              ),
+            ),
+            if (subjek.isEmpty)
+              const SliverFillRemaining(
+                hasScrollBody: false,
+                child: Center(
+                  child: Padding(
+                    padding: EdgeInsets.all(32),
+                    child: Text(
+                      'Bank soalan tidak dapat dibaca.\nCuba tutup dan buka semula app.',
+                      style: Teks.biasa,
+                      textAlign: TextAlign.center,
+                    ),
+                  ),
+                ),
+              ),
+          ],
+        ),
       ],
     );
   }
@@ -179,7 +215,16 @@ class _KadSubjek extends StatelessWidget {
 
     return Container(
       decoration: BoxDecoration(
-        color: Colors.white,
+        // Kecerunan sangat halus daripada putih kepada wash warna subjek.
+        // Semua kad sebelum ini putih pekat di atas latar pink rata, jadi
+        // keenam-enamnya kelihatan serupa dan menindih satu sama lain secara
+        // visual. Wash ini memberi setiap kad identiti sendiri tanpa
+        // mengurangkan kejelasan teks — alpha 0.06 masih hampir putih.
+        gradient: LinearGradient(
+          colors: [Colors.white, subjek.warna.withValues(alpha: 0.06)],
+          begin: Alignment.topLeft,
+          end: Alignment.bottomRight,
+        ),
         borderRadius: BorderRadius.circular(20),
         border: Border.all(color: subjek.warna.withValues(alpha: 0.22)),
         boxShadow: const [
@@ -259,6 +304,13 @@ class _KadSubjek extends StatelessWidget {
                   style: TextButton.styleFrom(
                     foregroundColor: subjek.warna,
                     padding: const EdgeInsets.symmetric(vertical: 14),
+                    // Padanan simetri kepada butang Mula di sebelah: arca        // tekanan mengikut bucu bawah kad, bukan pil lalai yang
+                    // menonjol keluar daripada bucu kad apabila ditekan.
+                    shape: const RoundedRectangleBorder(
+                      borderRadius: BorderRadius.only(
+                        bottomLeft: Radius.circular(19),
+                      ),
+                    ),
                   ),
                 ),
               ),
@@ -275,7 +327,15 @@ class _KadSubjek extends StatelessWidget {
                     backgroundColor: subjek.warna,
                     foregroundColor: Colors.white,
                     padding: const EdgeInsets.symmetric(vertical: 14),
-                    shape: const RoundedRectangleBorder(),
+                    // Butang mengikut bucu bawah kad supaya baris tindakan
+                    // berasa sebahagian daripada kad, bukan segi empat tegak
+                    // yang terapung di atasnya. Bucu 19 berpadanan dengan
+                    // bucu kad 20 supaya tepinya bertemu tepat.
+                    shape: const RoundedRectangleBorder(
+                      borderRadius: BorderRadius.only(
+                        bottomRight: Radius.circular(19),
+                      ),
+                    ),
                   ),
                 ),
               ),
@@ -334,6 +394,30 @@ class _Label extends StatelessWidget {
       child: Text(
         kecil,
         style: Teks.label.copyWith(fontWeight: FontWeight.w800),
+      ),
+    );
+  }
+}
+
+/// Bulatan hiasan besar di belakang senarai kad.
+///
+/// Warna `latarSkrin` (pink sangat muda) dengan `utamaLembut` (pink) ialah
+/// langkah yang jelas tetapi masih lembut — cukup untuk memecahkan rata tanpa
+/// menarik perhatian daripada kad, yang kekal putih pekat dan bertepi jelas di
+/// atasnya.
+class _Jelaga extends StatelessWidget {
+  const _Jelaga(this.saiz);
+
+  final double saiz;
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      width: saiz,
+      height: saiz,
+      decoration: const BoxDecoration(
+        color: Warna.utamaLembut,
+        shape: BoxShape.circle,
       ),
     );
   }
