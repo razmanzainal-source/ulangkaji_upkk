@@ -113,7 +113,10 @@ Kertas _kertasTulis({required String jenisSumber}) {
 /// Kertas asal memberi satu ruang bernombor bagi setiap isi yang diminta, jadi
 /// app turut memaparkan tiga kotak bernombor. `_kertasTulis` di atas tiada
 /// rubrik, jadi ia kekal satu kotak besar — kedua-dua bentuk mesti diuji.
-Kertas _kertasTulisIsi({required String jenisSumber}) {
+Kertas _kertasTulisIsi({
+  required String jenisSumber,
+  JenisKertas jenis = JenisKertas.tulis,
+}) {
   return Kertas(
     id: 'uji-tulis-isi',
     subjekId: 'adab',
@@ -131,7 +134,7 @@ Kertas _kertasTulisIsi({required String jenisSumber}) {
             id: 'uji-c1i',
             bahagian: 'C',
             nombor: 1,
-            jenis: JenisKertas.tulis,
+            jenis: jenis,
             soalan: 'سنارايکن تيچ ادب ترهادڤ الله.',
             rumi: 'Senaraikan tiga adab terhadap Allah.',
             markah: 3,
@@ -200,6 +203,7 @@ void main() {
   setUp(() {
     Suara.instance.ayatTerakhir = null;
     Suara.instance.kesanTerakhir = null;
+    Suara.instance.berhentiDipanggil = false;
   });
 
   group('keluar', () {
@@ -1035,6 +1039,81 @@ void main() {
 
       expect(find.byType(TextField), findsOneWidget);
       expect(find.text('(1)'), findsNothing);
+      await _tutup(tester);
+    });
+
+    testWidgets('soalan huraian juga memaparkan kotak berbilang', (tester) async {
+      await _bukaSebagaiLaluan(
+        tester,
+        _kertasTulisIsi(jenisSumber: 'latihan', jenis: JenisKertas.huraian),
+      );
+      await tester.tap(find.text('Mula menjawab'));
+      await tester.pump();
+
+      // Semua 139 soalan `huraian` dalam bank berbentuk "Jelaskan N ..." dengan
+      // tepat N isi dan N markah — bukan karangan bebas. Gerbang yang lama
+      // mengecualikannya hanya kerana nama bahagiannya, jadi soalan seperti
+      // "Jelaskan lima akibat" menunjukkan satu petak besar sahaja walau
+      // kertas asalnya memberi lima baris bernombor.
+      expect(find.byType(TextField), findsNWidgets(3));
+      expect(find.text('(1)'), findsOneWidget);
+      expect(find.text('(3)'), findsOneWidget);
+      // Had aksara kekal 120 bagi **satu** kotak, bukan 400 x 3 — ruang pada
+      // kertas asal mempunyai saiz yang sama bagi setiap baris.
+      expect(find.text('0 / 360 aksara'), findsOneWidget);
+      await _tutup(tester);
+    });
+  });
+
+  // Bunyi soalan dan bunyi jawapan betul boleh berjalan panjang. Jika murid
+  // menekan "Seterusnya" di tengah-tengah bacaan, bunyi itu berterusan
+  // menembusi soalan seterusnya dan bertindih dengan bacaan baharunya —
+  // murid kemudiannya tidak tahu ayat mana yang sedang didengarinya.
+  group('bunyi berhenti apabila halaman bertukar', () {
+    testWidgets('Seterusnya dan Sebelum menghentikan bunyi', (tester) async {
+      await _bukaSebagaiLaluan(
+        tester,
+        _kertas(jenisSumber: 'percubaan', bilangan: 3),
+      );
+      await tester.tap(find.text('Mula menjawab'));
+      await tester.pump();
+
+      Suara.instance.berhentiDipanggil = false;
+      await tester.tap(find.text('Seterusnya'));
+      await tester.pump();
+      expect(
+        Suara.instance.berhentiDipanggil,
+        isTrue,
+        reason: 'bunyi soalan tidak boleh menembusi soalan seterusnya',
+      );
+
+      Suara.instance.berhentiDipanggil = false;
+      await tester.tap(find.text('Sebelum'));
+      await tester.pump();
+      expect(
+        Suara.instance.berhentiDipanggil,
+        isTrue,
+        reason: 'soalan sebelum ini juga tidak patut ditindih bacaan lama',
+      );
+      await _tutup(tester);
+    });
+
+    testWidgets('Sebelum pada halaman pertama tidak menyentuh bunyi', (
+      tester,
+    ) async {
+      await _bukaSebagaiLaluan(
+        tester,
+        _kertas(jenisSumber: 'percubaan', bilangan: 3),
+      );
+      await tester.tap(find.text('Mula menjawab'));
+      await tester.pump();
+
+      // Butang sudah mati pada halaman pertama, jadi tiada halaman bertukar —
+      // dan bunyi yang sedang berjalan kekal relevan kepada murid.
+      Suara.instance.berhentiDipanggil = false;
+      await tester.tap(find.text('Sebelum'), warnIfMissed: false);
+      await tester.pump();
+      expect(Suara.instance.berhentiDipanggil, isFalse);
       await _tutup(tester);
     });
   });

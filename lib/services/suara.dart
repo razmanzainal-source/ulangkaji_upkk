@@ -579,7 +579,17 @@ class Suara {
         .trim();
   }
 
+  /// Benar apabila [berhenti] dipanggil sejak kali terakhir ditetapkan semula.
+  ///
+  /// Sengaja disegerakkan. [berhenti] menunggu platform audio dan pemasa had,
+  /// dan ujian tidak boleh menunggu platform yang memang tidak wujud di
+  /// dalamnya — dengan menandakan niat pada baris pertama, ujian boleh
+  /// memeriksa sama ada satu tindakan menghentikan bunyi tanpa bergantung
+  /// pada masa.
+  bool berhentiDipanggil = false;
+
   Future<void> berhenti() async {
+    berhentiDipanggil = true;
     _selesaikanTunggu();
     try {
       await _had(_pemain.stop(), const Duration(seconds: 2));

@@ -56,12 +56,8 @@ class _KertasScreenState extends State<KertasScreen> {
   /// Pengawal bagi setiap kotak bagi soalan bertulis **berbilang baris**.
   ///
   /// Kertas asal memberi satu ruang bernombor bagi setiap isi yang diminta
-  /// ("Nyatakan lima adab terhadap Allah" = lima baris), jadi app turut
-  /// memaparkan lima kotak bernombor dan memecahkan jawapan itu sendiri.
-  ///
-  /// Hanya `tulis` yang memerlukannya. `huraian` (139 soalan) kekal satu kotak
-  /// panjang kerana kertas asalnya tidak memecahkan jawapan kepada isi
-  /// berasingan.
+  /// ("Jelaskan lima akibat" = lima baris), jadi app turut memaparkan lima
+  /// kotak bernombor dan memecahkan jawapan itu sendiri.
   final Map<String, List<TextEditingController>> _kawalanBaris = {};
 
   /// Baris yang sedang menjadi sasaran papan kekunci bagi setiap soalan.
@@ -419,12 +415,19 @@ class _KertasScreenState extends State<KertasScreen> {
 
   /// Benar apabila soalan ini dipaparkan sebagai beberapa kotak bernombor.
   ///
-  /// Hanya `tulis` dengan lebih satu isi dalam rubrik. Pemarkahan tidak
-  /// berubah: semua baris digabungkan semula menjadi satu jawapan sebelum
-  /// dibandingkan dengan rubrik, sama seperti skema kertas asli yang menilai
-  /// keseluruhan ruang jawapan secara serentak.
+  /// Kertas asal memberi satu ruang bernombor bagi setiap isi yang diminta,
+  /// dan data bank mengesahkannya: kesemua 153 soalan `tulis` **dan**
+  /// kesemua 139 soalan `huraian` berbentuk "Jelaskan N ..." dengan tepat
+  /// N isi dalam rubriknya dan N markah. Tiada satu pun daripada 292 soalan
+  /// ini berupa karangan bebas yang ruangnya satu petak besar, jadi gerbang
+  /// ini memakai bilangan isi dan bukan nama bahagiannya.
+  ///
+  /// Pemarkahan tidak berubah: semua baris digabungkan semula menjadi satu
+  /// jawapan sebelum dibandingkan dengan rubrik, sama seperti skema kertas
+  /// asli yang menilai keseluruhan ruang jawapan secara serentak.
   bool _berbilangBaris(SoalanKertas s) =>
-      s.jenis == JenisKertas.tulis && s.rubrik.idea.length > 1;
+      (s.jenis == JenisKertas.tulis || s.jenis == JenisKertas.huraian) &&
+      s.rubrik.idea.length > 1;
 
   /// Pengawal bagi setiap kotak soalan berbilang baris.
   List<TextEditingController> _barisBagi(SoalanKertas s) =>
@@ -507,6 +510,24 @@ class _KertasScreenState extends State<KertasScreen> {
     return s.jawapanArab ? TulisanKekunci.arab : TulisanKekunci.jawi;
   }
 
+  /// Hentikan bunyi yang sedang berbunyi sebaik sahaja halaman bertukar.
+  ///
+  /// Murid boleh menekan butang pembesar suara — sama ada membaca soalan atau
+  /// jawapan betul — kemudian terus menekan "Seterusnya". Tanpa ini bunyi itu
+  /// berterusan menembusi soalan seterusnya dan bertindih dengan bacaan yang
+  /// baharu, dan murid tidak lagi tahu ayat mana yang sedang didengarinya.
+  ///
+  /// Panggil ini **hanya** apabila halaman benar-benar bertukar. Menekan
+  /// "Sebelum" pada halaman pertama (butang sudah mati) atau butang galakan
+  /// dalam latih tubi tidak mengubah soalan — bunyi yang sedang berjalan di
+  /// situ masih relevan kepada murid. Begitu juga apabila kertas dihantar:
+  /// di situ [`dispose`] sudah mengendalikannya, dan menghentikan bunyi lebih
+  /// awal akan memotong nada sambutan skrin baharu, kerana laluan lama hanya
+  /// dilupuskan selepas peralihan tamat.
+  void _berhentiBunyiHalaman() {
+    Suara.instance.berhenti();
+  }
+
   /// Benar apabila papan kekunci Jawi/Arab dipaparkan sekarang.
   bool get _papanTerbuka {
     final s = _soalanSemasa;
@@ -514,12 +535,20 @@ class _KertasScreenState extends State<KertasScreen> {
     return !_kekunciDitutup.contains(s.id);
   }
 
-  /// Had aksara medan taip bagi satu soalan.
+  /// Had aksara bagi **satu** kotak jawapan.
   ///
-  /// Jawapan Bahagian C ialah satu atau dua baris ayat; had ini menghalang
-  /// murid daripada menulis karangan.
-  int _hadTaip(SoalanKertas s) =>
-      s.jenis == JenisKertas.huraian ? 400 : 120;
+  /// Kotak bernombor sentiasa 120 aksara: ruang yang dicetak pada kertas asal
+  /// mempunyai saiz yang sama bagi setiap baris tanpa mengira bahagian, dan
+  /// setiap isi rubrik hanyalah satu ayat pendek. Tanpa had ini, soalan
+  /// `huraian` dengan lima kotak akan menawarkan 2000 aksara — lima kali
+  /// ruang yang benar-benar diperlukan.
+  ///
+  /// Soalan yang kekal satu petak panjang mengekalkan had lamanya: inilah
+  /// ruang karangan tunggal yang memang luas.
+  int _hadTaip(SoalanKertas s) {
+    if (_berbilangBaris(s)) return 120;
+    return s.jenis == JenisKertas.huraian ? 400 : 120;
+  }
 
   /// Masukkan satu aksara pada kedudukan kursor.
   void _taipAksara(SoalanKertas s, String aksara) {
@@ -880,7 +909,12 @@ class _KertasScreenState extends State<KertasScreen> {
         child: Padding(
           padding: const EdgeInsets.fromLTRB(16, 8, 16, 12),
           child: FilledButton.icon(
-            onPressed: _bilangan == 0 ? null : () => setState(() => _halaman = 0),
+            onPressed: _bilangan == 0
+                ? null
+                : () {
+                    _berhentiBunyiHalaman();
+                    setState(() => _halaman = 0);
+                  },
             icon: const Icon(Icons.play_arrow_rounded),
             label: const Text(
               'Mula menjawab',
@@ -1011,7 +1045,10 @@ class _KertasScreenState extends State<KertasScreen> {
                 child: OutlinedButton.icon(
                   onPressed: _halaman <= 0
                       ? null
-                      : () => setState(() => _halaman--),
+                      : () {
+                          _berhentiBunyiHalaman();
+                          setState(() => _halaman--);
+                        },
                   icon: const Icon(Icons.chevron_left_rounded),
                   label: Text(
                     'Sebelum',
@@ -1045,6 +1082,7 @@ class _KertasScreenState extends State<KertasScreen> {
                       // sebelum murid bergerak maju — lihat [_bolehTerus].
                       _galakJawabSekarang();
                     } else {
+                      _berhentiBunyiHalaman();
                       setState(() {
                         _halaman++;
                         _galakJawab = false;
@@ -2045,9 +2083,10 @@ class _KertasScreenState extends State<KertasScreen> {
                         nombor: s.nombor,
                         dijawab: _sudahJawab(s),
                         warna: Warna.utama,
-                        onTap: () => setState(
-                          () => _halaman = _soalan.indexOf(s),
-                        ),
+                        onTap: () {
+                          _berhentiBunyiHalaman();
+                          setState(() => _halaman = _soalan.indexOf(s));
+                        },
                       ),
                   ],
                 ),
