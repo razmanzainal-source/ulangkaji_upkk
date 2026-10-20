@@ -235,19 +235,24 @@ class PapanPadan extends StatelessWidget {
 
     return Material(
       color: digunakan ? warnaLatarCipDigunakan : Colors.white,
-      borderRadius: BorderRadius.circular(999),
+      borderRadius: BorderRadius.circular(18),
       child: InkWell(
-        borderRadius: BorderRadius.circular(999),
+        borderRadius: BorderRadius.circular(18),
         onTap: (lumpuh || digunakan) ? null : () => onPilihKanan(asal),
         child: Container(
           constraints: const BoxConstraints(minHeight: 46),
           padding: const EdgeInsets.fromLTRB(14, 8, 14, 8),
           decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(999),
+            borderRadius: BorderRadius.circular(18),
             border: Border.all(
               color: digunakan
                   ? Colors.black.withValues(alpha: 0.12)
-                  : warna.withValues(alpha: 0.45),
+                  // Sempadan yang sama dengan lajur kiri (0.28). Versi lama
+                  // menggunakan 0.45, yang pada skrin sempit menjadikan
+                  // kesemua cip kelihatan seperti dinding merah jambu — dan
+                  // teks Jawi yang membungkus kepada dua baris kelihatan
+                  // terkeluar apabila bucu pil memotong ruangnya.
+                  : warna.withValues(alpha: 0.28),
               width: 2,
             ),
           ),
@@ -259,8 +264,8 @@ class PapanPadan extends StatelessWidget {
                 const SizedBox(width: 6),
               ],
               Flexible(
-                // IntrinsicWidth: pil kanan kekal sebesar kandungannya —
-                // tanpanya baris Rumi akan meluaskan pil sehingga penuh.
+                // IntrinsicWidth: cip kanan kekal sebesar kandungannya —
+                // tanpanya baris Rumi akan meluaskan cip sehingga penuh.
                 child: IntrinsicWidth(
                   child: Dwibahasa(
                     jawi: kanan[j],

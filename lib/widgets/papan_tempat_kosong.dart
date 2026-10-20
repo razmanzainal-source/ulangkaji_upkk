@@ -320,19 +320,22 @@ class _PapanTempatKosongState extends State<PapanTempatKosong> {
 
     return Material(
       color: digunakan ? warnaLatarCipDigunakan : Colors.white,
-      borderRadius: BorderRadius.circular(999),
+      borderRadius: BorderRadius.circular(18),
       child: InkWell(
-        borderRadius: BorderRadius.circular(999),
+        borderRadius: BorderRadius.circular(18),
         onTap: (widget.lumpuh || digunakan) ? null : () => _isiDengan(asal),
         child: Container(
           constraints: const BoxConstraints(minHeight: 46),
           padding: const EdgeInsets.fromLTRB(14, 8, 14, 8),
           decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(999),
+            borderRadius: BorderRadius.circular(18),
             border: Border.all(
               color: digunakan
                   ? Colors.black.withValues(alpha: 0.12)
-                  : widget.warna.withValues(alpha: 0.45),
+                  // Sempadan yang sama dengan papan padan. Radius 999 dan
+                  // 0.45 menjadikan cip seperti pil yang teksnya terpotong
+                  // pada bucu apabila membungkus kepada dua baris.
+                  : widget.warna.withValues(alpha: 0.28),
               width: 2,
             ),
           ),
