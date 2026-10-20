@@ -1,5 +1,4 @@
 
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -247,13 +246,6 @@ class PapanTaip extends StatelessWidget {
 
   /// Jumlah aksara merangkumi semua baris yang dipaparkan.
   ///
-  /// Satu pengira untuk semua pengawal — papan kekunci menulis kepada medan
-  /// yang berbeza-beza, jadi kiraan mesti merentasi semuanya, bukan hanya
-  /// medan pertama. Ia dibina sekali sahaja supaya pendengar tidak bertambah
-  /// pada setiap binaan semula.
-  ValueListenable<int> get _pengiraAksara =>
-      _PengiraAksara(baris ?? [kawalan]);
-
   /// Nombor ruang yang dicetak di sebelah kiri setiap baris.
   ///
   /// Nombor ini bukan penunjuk jawapan: murid boleh menulis isi ke mana-mana
@@ -409,26 +401,34 @@ class PapanTaip extends StatelessWidget {
   Widget _kiraAksara() {
     final hadBaris = _berbilangBaris ? had * baris!.length : had;
 
-    return ValueListenableBuilder<int>(
-      valueListenable: _pengiraAksara,
-      builder: (context, panjang, _) {
-        final hampir = panjang >= hadBaris * 0.9;
-        return Padding(
-          padding: const EdgeInsets.only(top: 6, right: 2),
-          child: Align(
-            alignment: Alignment.centerRight,
-            child: Text(
-              '$panjang / $hadBaris aksara',
-              style: Teks.label.copyWith(
-                fontWeight: FontWeight.w700,
-                color: hampir
-                    ? Warna.tepiNota
-                    : Colors.black.withValues(alpha: 0.45),
-              ),
-            ),
+    // Kiraan dibaca terus daripada pengawal pada setiap binaan semula.
+    //
+    // Skrin memanggil `setState` bagi setiap aksara yang ditaip (lihat
+    // `_simpan` dalam skrin kertas), jadi binaan semula sudah pun berlaku
+    // dan pendengar tidak menambah apa-apa. Versi terdahulu membina satu
+    // `_PengiraAksara` **di dalam getter**: satu lagi pendengar dilekatkan
+    // pada setiap pengawal pada setiap binaan semula, dan `dispose()` yang
+    // wujud pada kelas itu tidak pernah dipanggil kerana getter tiada kitaran
+    // hayat. Semasa murid menulis, pendengar itu bertambah tanpa henti dan
+    // setiap ketukan kemudian memberitahu kesemuanya.
+    final pengira = _berbilangBaris ? baris! : [kawalan];
+    final panjang = pengira.fold(0, (j, p) => j + p.text.length);
+    final hampir = panjang >= hadBaris * 0.9;
+
+    return Padding(
+      padding: const EdgeInsets.only(top: 6, right: 2),
+      child: Align(
+        alignment: Alignment.centerRight,
+        child: Text(
+          '$panjang / $hadBaris aksara',
+          style: Teks.label.copyWith(
+            fontWeight: FontWeight.w700,
+            color: hampir
+                ? Warna.tepiNota
+                : Colors.black.withValues(alpha: 0.45),
           ),
-        );
-      },
+        ),
+      ),
     );
   }
 
@@ -547,25 +547,3 @@ class PapanTaip extends StatelessWidget {
 /// yang diberi — ia menggantikan `Listenable.merge` kerana
 /// `ValueListenableBuilder` menuntut `ValueListenable` dan `merge` hanya
 /// menghasilkan `Listenable`.
-class _PengiraAksara extends ChangeNotifier implements ValueListenable<int> {
-  _PengiraAksara(this.pengawal) {
-    for (final p in pengawal) {
-      p.addListener(kiraSemula);
-    }
-  }
-
-  final List<TextEditingController> pengawal;
-
-  @override
-  int get value => pengawal.fold(0, (j, p) => j + p.text.length);
-
-  void kiraSemula() => notifyListeners();
-
-  @override
-  void dispose() {
-    for (final p in pengawal) {
-      p.removeListener(kiraSemula);
-    }
-    super.dispose();
-  }
-}
