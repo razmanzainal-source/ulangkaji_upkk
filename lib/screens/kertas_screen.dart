@@ -348,6 +348,7 @@ class _KertasScreenState extends State<KertasScreen> {
         j is JawapanTempatKosong && j.isi.isNotEmpty,
       JenisKertas.tulis || JenisKertas.huraian =>
         j is JawapanTaip && j.teks.trim().isNotEmpty,
+      JenisKertas.senarai => j is JawapanTaip && j.teks.trim().isNotEmpty,
     };
   }
 
@@ -498,8 +499,19 @@ class _KertasScreenState extends State<KertasScreen> {
   /// jawapan sebelum dibandingkan dengan rubrik, sama seperti skema kertas
   /// asli yang menilai keseluruhan ruang jawapan secara serentak.
   bool _berbilangBaris(SoalanKertas s) =>
-      (s.jenis == JenisKertas.tulis || s.jenis == JenisKertas.huraian) &&
-      s.rubrik.idea.length > 1;
+      (s.jenis == JenisKertas.tulis ||
+          s.jenis == JenisKertas.huraian ||
+          s.jenis == JenisKertas.senarai) &&
+      _bilanganKotak(s) > 1;
+
+  /// Bilangan kotak jawapan bagi satu soalan bertulis.
+  ///
+  /// `tulis` dan `huraian` mencetak satu ruang bagi setiap idea rubrik, kerana
+  /// soalan itu berbunyi "Jelaskan N …" dengan tepat N isi. `senarai` pula
+  /// mencetak satu ruang bagi setiap isi yang diminta skema — dan bilangan itu
+  /// disimpan dalam medan `bilanganJawapan`, bukan dalam rubrik.
+  int _bilanganKotak(SoalanKertas s) =>
+      s.jenis == JenisKertas.senarai ? s.bilanganJawapan : s.rubrik.idea.length;
 
   /// Pengawal bagi setiap kotak soalan berbilang baris.
   List<TextEditingController> _barisBagi(SoalanKertas s) =>
@@ -513,7 +525,7 @@ class _KertasScreenState extends State<KertasScreen> {
           _ => '',
         };
         final bahagi = tersimpan.isEmpty ? <String>[] : tersimpan.split('\n');
-        final n = s.rubrik.idea.length;
+        final n = _bilanganKotak(s);
         final isi = List<String>.filled(n, '');
         for (var i = 0; i < bahagi.length; i++) {
           if (i >= n) {
@@ -573,6 +585,7 @@ class _KertasScreenState extends State<KertasScreen> {
     if (s == null) return null;
     final bertulis = switch (s.jenis) {
       JenisKertas.tulis || JenisKertas.huraian => true,
+      JenisKertas.senarai => true,
       // Soalan susun yang tidak cukup kad untuk disusun jatuh kembali kepada
       // jawapan bertulis, jadi ia pun memerlukan papan kekunci ini.
       JenisKertas.susun => s.urutan.length < 2,
@@ -1797,7 +1810,9 @@ class _KertasScreenState extends State<KertasScreen> {
   ///
   /// `null` apabila tiada teks yang boleh dibacakan.
   String? _teksPembetulanDengar(SoalanKertas s) {
-    if (s.jenis != JenisKertas.tulis && s.jenis != JenisKertas.huraian) {
+    if (s.jenis != JenisKertas.tulis &&
+        s.jenis != JenisKertas.huraian &&
+        s.jenis != JenisKertas.senarai) {
       return null;
     }
     final dengar = s.jawapanPenuhDengar.trim();
@@ -1814,6 +1829,7 @@ class _KertasScreenState extends State<KertasScreen> {
       JenisKertas.susun => _susun(s, warna),
       JenisKertas.tempatKosong => _tempatKosong(s, warna),
       JenisKertas.tulis || JenisKertas.huraian => _taip(s, warna),
+      JenisKertas.senarai => _taip(s, warna),
     };
   }
 
@@ -2093,7 +2109,16 @@ class _KertasScreenState extends State<KertasScreen> {
       markah: _latihTubi &&
               jawapan is JawapanTaip &&
               jawapan.teks.trim().isNotEmpty
-          ? Pemarkah.semak(s.rubrik, jawapan.teks)
+          ? (s.jenis == JenisKertas.senarai
+              // Soalan senarai tidak mempunyai rubrik kata kunci — jawapannya
+              // disemak terhadap senarai yang diterima skema, jadi tiada baris
+              // idea untuk ditanda. Warna kotak dan markah tetap betul.
+              ? Markah(
+                  diperoleh: s.markahDiperoleh(jawapan),
+                  penuh: s.markahBolehDapat,
+                  ideaDijumpai: const [],
+                )
+              : Pemarkah.semak(s.rubrik, jawapan.teks))
           : null,
       had: _hadTaip(s),
       bacaSahaja: true,

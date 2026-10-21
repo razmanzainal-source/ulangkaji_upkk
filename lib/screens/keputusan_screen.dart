@@ -800,6 +800,7 @@ class _SoalanBertanda extends StatelessWidget {
       JenisKertas.tempatKosong => s.bank.join(', '),
       JenisKertas.tulis ||
       JenisKertas.huraian => s.rubrik.idea.map((i) => i.maksud).join(' • '),
+      JenisKertas.senarai => s.jawapanContoh.join(' • '),
     };
   }
 }

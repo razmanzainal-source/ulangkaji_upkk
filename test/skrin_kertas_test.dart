@@ -84,6 +84,7 @@ Type _papan(JenisKertas jenis) => switch (jenis) {
   JenisKertas.susun => PapanSusun,
   JenisKertas.tempatKosong => PapanTempatKosong,
   JenisKertas.tulis || JenisKertas.huraian => PapanTaip,
+  JenisKertas.senarai => PapanTaip,
 };
 
 /// Lepaskan widget supaya pemasa kertas dan pemasa audio berhenti.

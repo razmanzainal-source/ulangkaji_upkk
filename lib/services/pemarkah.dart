@@ -75,6 +75,107 @@ class Pemarkah {
     );
   }
 
+  /// Bilangan isi jawapan murid yang sepadan dengan senarai jawapan diterima.
+  ///
+  /// Digunakan oleh soalan [JenisKertas.senarai] — soalan yang skemanya
+  /// menyenaraikan beberapa jawapan yang **semuanya** diterima ("mana-mana 2
+  /// jawapan yang betul diterima"). Setiap baris jawapan murid dipadankan
+  /// dengan **satu** jawapan dalam senarai; jawapan yang telah dipakai tidak
+  /// boleh dikira dua kali, supaya murid yang menulis isi yang sama dua kali
+  /// tidak mendapat dua markah.
+  ///
+  /// Padanan tidak menuntut ayat yang sama. Ia menuntut sekurang-kurangnya
+  /// [_nisbahSenarai] daripada perkataan penting dalam jawapan skema hadir
+  /// dalam baris murid — jadi "دودوق دڠن ترتيب" tetap sepadan dengan
+  /// "دودوق دڠن ترتيب دان سوڤن", manakala menulis satu perkataan sahaja
+  /// tidak memadai.
+  static int bilanganSenarai({
+    required List<String> diterima,
+    required List<String> jawapan,
+    int had = 0,
+  }) =>
+      semakSenarai(diterima: diterima, jawapan: jawapan, had: had)
+          .where((b) => b)
+          .length;
+
+  /// Benar bagi setiap baris jawapan murid yang sepadan dengan satu jawapan
+  /// dalam senarai [diterima].
+  ///
+  /// Paparan menggunakan senarai ini untuk menanda setiap kotak jawapan
+  /// (✓/✗) selepas murid menekan "Siap", sama seperti soalan rubrik menanda
+  /// setiap idea.
+  static List<bool> semakSenarai({
+    required List<String> diterima,
+    required List<String> jawapan,
+    int had = 0,
+  }) {
+    // Setiap jawapan skema diterjemah kepada senarai perkataan penting.
+    final sasaran = <List<Set<String>>>[
+      for (final a in diterima)
+        [
+          for (final k in perkataan(a))
+            if (!_kataLaluan.contains(k)) varian(k),
+        ],
+    ];
+
+    final dipakai = <int>{};
+    final hasil = <bool>[];
+    var bilangan = 0;
+
+    for (final baris in jawapan) {
+      if (had > 0 && bilangan >= had) {
+        hasil.add(false);
+        continue;
+      }
+      final calon = [for (final k in perkataan(baris)) varian(k)];
+      if (calon.isEmpty) {
+        hasil.add(false);
+        continue;
+      }
+
+      var terbaik = -1;
+      var nisbahTerbaik = 0.0;
+      for (var i = 0; i < sasaran.length; i++) {
+        if (dipakai.contains(i)) continue;
+        final perlu = sasaran[i];
+        if (perlu.isEmpty) continue;
+        final jumpa = perlu.where((k) => _adaDalam(calon, k)).length;
+        final nisbah = jumpa / perlu.length;
+        if (nisbah > nisbahTerbaik) {
+          nisbahTerbaik = nisbah;
+          terbaik = i;
+        }
+      }
+
+      final sepadan = terbaik >= 0 && nisbahTerbaik >= _nisbahSenarai;
+      if (sepadan) {
+        dipakai.add(terbaik);
+        bilangan++;
+      }
+      hasil.add(sepadan);
+    }
+
+    return hasil;
+  }
+
+  /// Bahagian minimum perkataan penting jawapan skema yang mesti hadir.
+  static const double _nisbahSenarai = 0.6;
+
+  /// Kata yang tidak membawa isi jawapan, dalam Rumi dan Jawi.
+  ///
+  /// Ia dibuang sebelum nisbah dikira supaya ayat yang panjang tetapi kosong
+  /// ("adalah dengan itu dan ini") tidak dianggap sepadan.
+  static const Set<String> _kataLaluan = {
+    'ada', 'adalah', 'akan', 'apabila', 'atau', 'bagi', 'boleh', 'dalam',
+    'dan', 'dari', 'daripada', 'dengan', 'di', 'ialah', 'ini', 'itu', 'juga',
+    'ke', 'kerana', 'kepada', 'oleh', 'pada', 'sama', 'secara', 'sesuatu',
+    'seseorang', 'serta', 'supaya', 'telah', 'tidak', 'untuk', 'yang',
+    'ادا', 'اکن', 'اڤابيلا', 'اتاو', 'باݢي', 'بوليه', 'دالم',
+    'دان', 'دري', 'درڤد', 'دڠن', 'د', 'اياله', 'اين', 'ايت', 'جوݢ',
+    'ک', 'کران', 'کڤد', 'اوليه', 'ڤد', 'سام', 'سچارا', 'سسواتو',
+    'سسأورڠ', 'سرتا', 'سوڤاي', 'تله', 'تيدق', 'اونتوق', 'يڠ',
+  };
+
   static bool _ideaDijumpai(
     Idea idea,
     List<Set<String>> calon,

@@ -208,7 +208,21 @@ enum JenisKertas {
   tulis,
 
   /// Jawapan bertulis panjang (huraian, sebab, contoh).
-  huraian;
+  huraian,
+
+  /// Senarai jawapan bertulis — murid memberi bilangan isi yang diminta, dan
+  /// **mana-mana** isi dalam senarai yang diterima skema dikira betul.
+  ///
+  /// Ini berbeza daripada [huraian] dalam dua hal:
+  ///
+  /// 1. **Pemarkahan.** [huraian] memadankan rubrik kata kunci yang ditulis
+  ///    khas untuk satu soalan. [senarai] membandingkan setiap baris jawapan
+  ///    murid dengan senarai jawapan yang diterima skema asal; satu baris yang
+  ///    sepadan dengan mana-mana satu jawapan itu mendapat markah penuh.
+  /// 2. **Markah berganda.** Skema UPKK kadangkala memberi 2 markah bagi satu
+  ///    isi (contohnya "Jelaskan dua adab … (4 markah)" — 2 isi × 2 markah).
+  ///    [senarai] membahagikan `markah` sama rata antara [bilanganJawapan].
+  senarai;
 
   static JenisKertas dariTeks(String teks) => switch (teks) {
         'bulat' || 'kariyes' => JenisKertas.bulat,
@@ -217,7 +231,8 @@ enum JenisKertas {
         'objektif' => JenisKertas.objektif,
         'tempat_kosong' => JenisKertas.tempatKosong,
         'susun' => JenisKertas.susun,
-        'huraian' || 'senarai' => JenisKertas.huraian,
+        'huraian' => JenisKertas.huraian,
+        'senarai' => JenisKertas.senarai,
         _ => JenisKertas.tulis,
       };
 
@@ -230,6 +245,7 @@ enum JenisKertas {
         JenisKertas.susun => 'susun',
         JenisKertas.tulis => 'tulis',
         JenisKertas.huraian => 'huraian',
+        JenisKertas.senarai => 'senarai',
       };
 }
 
@@ -258,6 +274,7 @@ class SoalanKertas {
     this.rubrik = Rubrik.kosong,
     this.jawapanContoh = const [],
     this.jawapanContohRumi = const [],
+    this.bilanganJawapan = 0,
     this.bahasa = 'jawi',
   });
 
@@ -300,6 +317,13 @@ class SoalanKertas {
   final List<String> jawapanContoh;
   final List<String> jawapanContohRumi;
 
+  /// Bilangan isi yang diminta bagi soalan [JenisKertas.senarai].
+  ///
+  /// Kertas sebenar mencetak satu ruang bernombor bagi setiap isi ("Tulis dua
+  /// adab …"), jadi angka ini juga menentukan bilangan kotak jawapan. Nilai
+  /// `0` bermaksud "ikut bilangan jawapan yang diterima".
+  final int bilanganJawapan;
+
   /// Tulisan jawapan yang dijangka (`jawi` atau `arab`).
   final String bahasa;
 
@@ -331,6 +355,13 @@ class SoalanKertas {
           bilanganKosong > 0 ? bilanganKosong : markah,
         JenisKertas.tulis || JenisKertas.huraian =>
           rubrik.ada ? rubrik.markah : markah,
+        // Skema UPKK menulis markah rasmi soalan senarai ("4 markah" bagi dua
+        // isi), jadi medan `markah` diutamakan — markah itulah yang dicetak
+        // pada kertas. Bilangan jawapan hanya menjadi ganti apabila markah
+        // tiada, kerana satu isi lazimnya satu markah.
+        JenisKertas.senarai => markah > 0
+            ? markah
+            : (bilanganJawapan > 0 ? bilanganJawapan : jawapanContoh.length),
       };
 
   /// Markah yang diperoleh murid bagi soalan ini.
@@ -348,6 +379,7 @@ class SoalanKertas {
             ? _bilanganKosongBetul(jawapan)
             : 0,
         JenisKertas.tulis || JenisKertas.huraian => _markahTaip(jawapan),
+        JenisKertas.senarai => _markahSenarai(jawapan),
       };
 
   /// Jawapan contoh untuk dipaparkan selepas murid menghantar jawapan.
@@ -365,6 +397,7 @@ class SoalanKertas {
       JenisKertas.susun => urutan.join(' '),
       JenisKertas.tempatKosong => bank.join(', '),
       JenisKertas.tulis || JenisKertas.huraian => '',
+      JenisKertas.senarai => jawapanContoh.join('\n'),
     };
   }
 
@@ -397,6 +430,9 @@ class SoalanKertas {
       JenisKertas.susun => urutanRumi.join(' '),
       JenisKertas.tempatKosong => bankRumi.join(', '),
       JenisKertas.tulis || JenisKertas.huraian => '',
+      JenisKertas.senarai => jawapanContohRumi.isNotEmpty
+          ? jawapanContohRumi.join('\n')
+          : jawapanContoh.join('\n'),
     };
   }
 
@@ -490,6 +526,32 @@ class SoalanKertas {
     return Pemarkah.semak(rubrik, jawapan.teks).diperoleh;
   }
 
+  /// Markah bagi soalan [JenisKertas.senarai].
+  ///
+  /// Skema UPKK menyenaraikan beberapa jawapan yang **semuanya** diterima
+  /// ("mana-mana 2 jawapan yang betul diterima"), dan kadangkala satu isi
+  /// bernilai lebih daripada satu markah. Jadi setiap baris jawapan murid
+  /// dibandingkan dengan senarai [jawapanContoh] — satu baris yang sepadan
+  /// dengan mana-mana satu jawapan itu dikira satu isi betul, dan setiap isi
+  /// bernilai `markah / bilanganJawapan`.
+  int _markahSenarai(JawapanMurid? jawapan) {
+    if (jawapan is! JawapanTaip) return 0;
+
+    final diterima =
+        jawapanContoh.where((t) => t.trim().isNotEmpty).toList();
+    if (diterima.isEmpty) return 0;
+
+    final bilangan = bilanganJawapan > 0 ? bilanganJawapan : diterima.length;
+    final betul = Pemarkah.bilanganSenarai(
+      diterima: diterima,
+      jawapan: jawapan.teks.split('\n'),
+      had: bilangan,
+    );
+    final penuh = markahBolehDapat;
+    if (bilangan <= 0 || betul >= bilangan) return penuh;
+    return (betul * penuh) ~/ bilangan;
+  }
+
   /// Semak sama ada jawapan murid betul sepenuhnya — untuk maklum balas.
   bool betulPenuh(JawapanMurid? jawapan) =>
       markahBolehDapat > 0 && markahDiperoleh(jawapan) == markahBolehDapat;
@@ -528,6 +590,15 @@ class SoalanKertas {
           jawapan.isi.length >= bilanganKosong,
     JenisKertas.tulis || JenisKertas.huraian =>
       jawapan is JawapanTaip && jawapan.teks.trim().isNotEmpty,
+    // Soalan senarai mencetak satu ruang bagi setiap isi, jadi ia belum
+    // "lengkap" sehingga setiap ruang itu berisi.
+    JenisKertas.senarai =>
+      jawapan is JawapanTaip &&
+          jawapan.teks
+                  .split('\n')
+                  .where((b) => b.trim().isNotEmpty)
+                  .length >=
+              (bilanganJawapan > 0 ? bilanganJawapan : 1),
     JenisKertas.susun => false,
   };
 
@@ -554,6 +625,7 @@ class SoalanKertas {
         rubrik: rubrik,
         jawapanContoh: jawapanContoh,
         jawapanContohRumi: jawapanContohRumi,
+        bilanganJawapan: bilanganJawapan,
         bahasa: bahasa,
       );
 
@@ -590,6 +662,7 @@ class SoalanKertas {
             (json['jawapanContoh'] as List? ?? const []).cast<String>(),
         jawapanContohRumi:
             (json['jawapanContohRumi'] as List? ?? const []).cast<String>(),
+        bilanganJawapan: json['bilanganJawapan'] as int? ?? 0,
         bahasa: json['bahasa'] as String? ?? 'jawi',
       );
 }
