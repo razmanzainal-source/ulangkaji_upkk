@@ -23,6 +23,7 @@ import 'package:ulangkaji_upkk/screens/kertas_screen.dart';
 import 'package:ulangkaji_upkk/services/jana_kertas.dart';
 import 'package:ulangkaji_upkk/widgets/butang_pilihan.dart';
 import 'package:ulangkaji_upkk/widgets/papan_betul_salah.dart';
+import 'package:ulangkaji_upkk/widgets/papan_kumpulan.dart';
 import 'package:ulangkaji_upkk/widgets/papan_padan.dart';
 import 'package:ulangkaji_upkk/widgets/papan_susun.dart';
 import 'package:ulangkaji_upkk/widgets/papan_taip.dart';
@@ -85,6 +86,7 @@ Type _papan(JenisKertas jenis) => switch (jenis) {
   JenisKertas.tempatKosong => PapanTempatKosong,
   JenisKertas.tulis || JenisKertas.huraian => PapanTaip,
   JenisKertas.senarai => PapanTaip,
+  JenisKertas.kumpulan => PapanKumpulan,
 };
 
 /// Lepaskan widget supaya pemasa kertas dan pemasa audio berhenti.

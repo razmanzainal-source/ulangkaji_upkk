@@ -14,6 +14,7 @@ import '../widgets/dwibahasa.dart';
 import '../widgets/maskot.dart';
 import '../widgets/papan_betul_salah.dart';
 import '../widgets/papan_kekunci_tulisan.dart';
+import '../widgets/papan_kumpulan.dart';
 import '../widgets/papan_padan.dart';
 import '../widgets/papan_susun.dart';
 import '../widgets/papan_taip.dart';
@@ -349,6 +350,8 @@ class _KertasScreenState extends State<KertasScreen> {
       JenisKertas.tulis || JenisKertas.huraian =>
         j is JawapanTaip && j.teks.trim().isNotEmpty,
       JenisKertas.senarai => j is JawapanTaip && j.teks.trim().isNotEmpty,
+      JenisKertas.kumpulan => j is JawapanKumpulan &&
+          j.pilihan.where((p) => p >= 0).isNotEmpty,
     };
   }
 
@@ -1830,7 +1833,36 @@ class _KertasScreenState extends State<KertasScreen> {
       JenisKertas.tempatKosong => _tempatKosong(s, warna),
       JenisKertas.tulis || JenisKertas.huraian => _taip(s, warna),
       JenisKertas.senarai => _taip(s, warna),
+      JenisKertas.kumpulan => _kumpulan(s, warna),
     };
+  }
+
+  /// Kelaskan setiap pernyataan ke dalam kategori — soalan padanan dua pilihan.
+  Widget _kumpulan(SoalanKertas s, Color warna) {
+    final jawapan = _jawapan[s.id];
+    final dipilih = jawapan is JawapanKumpulan
+        ? jawapan.pilihan
+        : List<int>.filled(s.item.length, -1);
+
+    return PapanKumpulan(
+      pernyataan: [for (final i in s.item) i.teks],
+      rumiPernyataan: [for (final i in s.item) i.rumi],
+      kategori: s.kategori,
+      kategoriRumi: s.kategoriRumi,
+      jawapan: dipilih,
+      warna: warna,
+      onDengar: _latihTubi
+          ? (i) => _dengar(s.jawapanArab ? s.item[i].teks : s.item[i].rumi)
+          : null,
+      onJawab: (i, kategori) {
+        final baharu = List<int>.from(dipilih);
+        while (baharu.length < s.item.length) {
+          baharu.add(-1);
+        }
+        baharu[i] = kategori;
+        _simpan(s, JawapanKumpulan(baharu));
+      },
+    );
   }
 
   /// Bulatkan jawapan yang betul — satu pilihan bagi setiap item.

@@ -222,7 +222,15 @@ enum JenisKertas {
   /// 2. **Markah berganda.** Skema UPKK kadangkala memberi 2 markah bagi satu
   ///    isi (contohnya "Jelaskan dua adab … (4 markah)" — 2 isi × 2 markah).
   ///    [senarai] membahagikan `markah` sama rata antara [bilanganJawapan].
-  senarai;
+  senarai,
+
+  /// Kelaskan setiap pernyataan ke dalam salah satu kategori.
+  ///
+  /// Kertas UPKK memakai bentuk ini untuk "Suaikan pernyataan bahagian (ا)
+  /// dengan bahagian (ب)" apabila bahagian (ب) hanya mempunyai dua pilihan.
+  /// Ia **bukan** [suai]: dua pernyataan boleh tergolong dalam kategori yang
+  /// sama, jadi kategori tidak "habis" apabila dipakai.
+  kumpulan;
 
   static JenisKertas dariTeks(String teks) => switch (teks) {
         'bulat' || 'kariyes' => JenisKertas.bulat,
@@ -233,6 +241,7 @@ enum JenisKertas {
         'susun' => JenisKertas.susun,
         'huraian' => JenisKertas.huraian,
         'senarai' => JenisKertas.senarai,
+        'kumpulan' => JenisKertas.kumpulan,
         _ => JenisKertas.tulis,
       };
 
@@ -246,6 +255,7 @@ enum JenisKertas {
         JenisKertas.tulis => 'tulis',
         JenisKertas.huraian => 'huraian',
         JenisKertas.senarai => 'senarai',
+        JenisKertas.kumpulan => 'kumpulan',
       };
 }
 
@@ -275,6 +285,8 @@ class SoalanKertas {
     this.jawapanContoh = const [],
     this.jawapanContohRumi = const [],
     this.bilanganJawapan = 0,
+    this.kategori = const [],
+    this.kategoriRumi = const [],
     this.bahasa = 'jawi',
   });
 
@@ -324,6 +336,14 @@ class SoalanKertas {
   /// `0` bermaksud "ikut bilangan jawapan yang diterima".
   final int bilanganJawapan;
 
+  /// Label kategori bagi soalan [JenisKertas.kumpulan].
+  ///
+  /// Setiap item menyimpan indeks kategori yang betul dalam medan `jawapan`
+  /// pada [ItemKertas] — sama medan yang menyimpan indeks pilihan bagi soalan
+  /// [JenisKertas.objektif].
+  final List<String> kategori;
+  final List<String> kategoriRumi;
+
   /// Tulisan jawapan yang dijangka (`jawi` atau `arab`).
   final String bahasa;
 
@@ -362,6 +382,7 @@ class SoalanKertas {
         JenisKertas.senarai => markah > 0
             ? markah
             : (bilanganJawapan > 0 ? bilanganJawapan : jawapanContoh.length),
+        JenisKertas.kumpulan => item.isNotEmpty ? item.length : markah,
       };
 
   /// Markah yang diperoleh murid bagi soalan ini.
@@ -380,6 +401,7 @@ class SoalanKertas {
             : 0,
         JenisKertas.tulis || JenisKertas.huraian => _markahTaip(jawapan),
         JenisKertas.senarai => _markahSenarai(jawapan),
+        JenisKertas.kumpulan => _bilanganKumpulanBetul(jawapan),
       };
 
   /// Jawapan contoh untuk dipaparkan selepas murid menghantar jawapan.
@@ -398,6 +420,13 @@ class SoalanKertas {
       JenisKertas.tempatKosong => bank.join(', '),
       JenisKertas.tulis || JenisKertas.huraian => '',
       JenisKertas.senarai => jawapanContoh.join('\n'),
+      JenisKertas.kumpulan => [
+        for (final i in item)
+          if (i.jawapan >= 0 && i.jawapan < kategori.length)
+            '${i.teks} — ${kategori[i.jawapan]}'
+          else
+            i.teks,
+      ].join('\n'),
     };
   }
 
@@ -433,6 +462,13 @@ class SoalanKertas {
       JenisKertas.senarai => jawapanContohRumi.isNotEmpty
           ? jawapanContohRumi.join('\n')
           : jawapanContoh.join('\n'),
+      JenisKertas.kumpulan => [
+        for (final i in item)
+          if (i.jawapan >= 0 && i.jawapan < kategoriRumi.length)
+            '${i.rumi} — ${kategoriRumi[i.jawapan]}'
+          else
+            i.rumi,
+      ].join('\n'),
     };
   }
 
@@ -511,6 +547,16 @@ class SoalanKertas {
     if (jawapan is! JawapanBetulSalah) return 0;
     if (i >= jawapan.jawapan.length) return 0;
     return jawapan.jawapan[i] == item[i].betul ? 1 : 0;
+  }
+
+  int _bilanganKumpulanBetul(JawapanMurid? jawapan) {
+    if (jawapan is! JawapanKumpulan) return 0;
+    var bilangan = 0;
+    for (var i = 0; i < item.length; i++) {
+      if (i >= jawapan.pilihan.length) continue;
+      if (jawapan.pilihan[i] == item[i].jawapan) bilangan++;
+    }
+    return bilangan;
   }
 
   int _markahTaip(JawapanMurid? jawapan) {
@@ -599,6 +645,11 @@ class SoalanKertas {
                   .where((b) => b.trim().isNotEmpty)
                   .length >=
               (bilanganJawapan > 0 ? bilanganJawapan : 1),
+    JenisKertas.kumpulan =>
+      jawapan is JawapanKumpulan &&
+          item.isNotEmpty &&
+          jawapan.pilihan.length >= item.length &&
+          jawapan.pilihan.every((p) => p >= 0),
     JenisKertas.susun => false,
   };
 
@@ -626,6 +677,8 @@ class SoalanKertas {
         jawapanContoh: jawapanContoh,
         jawapanContohRumi: jawapanContohRumi,
         bilanganJawapan: bilanganJawapan,
+        kategori: kategori,
+        kategoriRumi: kategoriRumi,
         bahasa: bahasa,
       );
 
@@ -663,6 +716,9 @@ class SoalanKertas {
         jawapanContohRumi:
             (json['jawapanContohRumi'] as List? ?? const []).cast<String>(),
         bilanganJawapan: json['bilanganJawapan'] as int? ?? 0,
+        kategori: (json['kategori'] as List? ?? const []).cast<String>(),
+        kategoriRumi:
+            (json['kategoriRumi'] as List? ?? const []).cast<String>(),
         bahasa: json['bahasa'] as String? ?? 'jawi',
       );
 }

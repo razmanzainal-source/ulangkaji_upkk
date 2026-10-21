@@ -801,6 +801,7 @@ class _SoalanBertanda extends StatelessWidget {
       JenisKertas.tulis ||
       JenisKertas.huraian => s.rubrik.idea.map((i) => i.maksud).join(' • '),
       JenisKertas.senarai => s.jawapanContoh.join(' • '),
+      JenisKertas.kumpulan => s.kategori.join(' • '),
     };
   }
 }

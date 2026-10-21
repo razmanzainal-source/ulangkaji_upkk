@@ -68,6 +68,22 @@ class JawapanBetulSalah extends JawapanMurid {
   final List<bool?> jawapan;
 }
 
+/// Jawapan soalan `kumpulan` — satu kategori dipilih bagi setiap pernyataan.
+///
+/// Kertas UPKK memakai bentuk ini untuk soalan seperti "Suaikan pernyataan
+/// bahagian (ا) dengan bahagian (ب)": murid tidak memadankan pasangan satu
+/// dengan satu, tetapi mengelaskan setiap pernyataan ke dalam salah satu
+/// kategori. `pilihan[i]` ialah indeks kategori bagi pernyataan `i`, dan `-1`
+/// bermakna pernyataan itu belum dikelaskan.
+class JawapanKumpulan extends JawapanMurid {
+  const JawapanKumpulan(this.pilihan);
+
+  final List<int> pilihan;
+
+  /// Bilangan pernyataan yang sudah dikelaskan.
+  int get bilanganDijawab => pilihan.where((p) => p >= 0).length;
+}
+
 /// Jawapan soalan yang mempunyai **beberapa item berpilihan** dalam satu soalan.
 ///
 /// Bahagian A dan Bahagian B kertas UPKK meminta murid membulatkan jawapan bagi
