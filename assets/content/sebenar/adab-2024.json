@@ -5,7 +5,7 @@
   "sumber": "Kertas soalan UPKK 2024 — imbasan rasmi",
   "jenisSumber": "sebenar",
   "masa": 75,
-  "nota": "Jawapan diambil terus daripada skema rasmi (muka surat 11). D3, D7 dan D8 dibaca daripada imbasan yang kurang jelas — sahkan sebelum digunakan.",
+  "nota": "Jawapan diambil terus daripada skema rasmi (muka surat 11, disahkan semula dengan zoom imbasan). D3 larangan baris pertama tertera sebagai 'بربووت ڤرالتن کوتوڠ-رويوڠ' (berbuat peralatan bergotong-royong) — ejaan cetakan skema, disahkan huruf demi huruf; kalau ada sumber lain yang lebih jelas, semak semula. D8: halaman skema memang tamat selepas jawapan pertama (5(i)) — tiada baris kedua yang terpotong.",
   "bahagian": [
     {
       "nama": "A",
@@ -197,21 +197,21 @@
         {
           "id": "adab-2024-d3",
           "jenis": "senarai",
-          "soalan": "سوالن کدوا: توليس لارڠن کتيک برکونجوڠ-رويوڠ دان عاقبت تيدق برادب کتيک برکونجوڠ-رويوڠ. (٤ مارکه)",
-          "rumi": "Soalan Kedua: Tulis larangan ketika berkunjung-ruyung dan akibat tidak beradab ketika berkunjung-ruyung. (4 markah)",
+          "soalan": "سوالن کدوا: توليس لارغن کتيک برکوتوڠ-رويوڠ دان عاقبت تيدق برادب کتيک برکوتوڠ-رويوڠ. (٤ مارکه)",
+          "rumi": "Soalan Kedua: Tulis larangan ketika bergotong-royong dan akibat tidak beradab ketika bergotong-royong. (4 markah)",
           "markah": 4,
           "bilanganJawapan": 4,
           "jawapanContoh": [
-            "بربوات ڤرلالن کوتوغ-رويوغ",
-            "مڠهارڤکن بالسنس سلڤس برکونتوغ-رويوغ",
-            "تيدق دافت ملسايکن کرجا دڠن باعيق",
-            "منحاضيرکن ڤرسکيترن کوتور"
+            "بربووت ڤرالتن کوتوڠ-رويوڠ",
+            "مڠهارڤکن بالسنس سلڤس برکوتوڠ-رويوڠ",
+            "تيدق دافت ملسايکن کرجا دغن بايق",
+            "منجادکن ڤرسکيترن کوتور"
           ],
           "jawapanContohRumi": [
-            "Buat perlakuan kutuk-ruyung",
-            "Mengharapkan balasan selepas berkunjung",
+            "Berbuat peralatan bergotong-royong",
+            "Mengharapkan balasan selepas bergotong-royong",
             "Tidak dapat melaksanakan kerja dengan baik",
-            "Menjejaskan persekitaran kotor"
+            "Menjadikan persekitaran kotor"
           ]
         },
         {
@@ -251,8 +251,8 @@
           "rumi": "4. Jelaskan perlakuan tidak beradab ketika solat Jumaat. (2 markah)",
           "markah": 2,
           "bilanganJawapan": 1,
-          "jawapanContoh": ["ملڠکه جماعه لاءين اونتوق کرواع هادڤن"],
-          "jawapanContohRumi": ["Melangkah jemaah lain untuk ke hadapan"]
+          "jawapanContoh": ["ملڠکه جماعه لاءين اونتوق کرواڠ هادڤن"],
+          "jawapanContohRumi": ["Melangkah jemaah lain untuk ke ruang hadapan"]
         },
         {
           "id": "adab-2024-d8",
