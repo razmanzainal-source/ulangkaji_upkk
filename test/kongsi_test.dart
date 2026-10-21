@@ -404,5 +404,42 @@ void main() {
       // dan itu dikendalikan dengan SnackBar).
       await tester.pump(const Duration(seconds: 1));
     });
+
+    testWidgets('kad luar skrin tidak mewarisi garis dua kuning', (tester) async {
+      // Bentuk sebenar dalam `KeputusanScreen`: kad yang ditangkap ialah
+      // **adik-beradik** Scaffold, bukan anaknya. Di luar Scaffold tiada induk
+      // Material, jadi teks kad mewarisi `_errorTextStyle` MaterialApp —
+      // `TextDecoration.underline` bergaya `double` berwarna `0xFFFFFF00`.
+      // Hiasan itu turut terbakar ke dalam gambar yang dikongsi, jadi ia
+      // mesti ditangkap di sini, bukan pada telefon sahaja.
+      await tester.pumpWidget(
+        MaterialApp(
+          home: Stack(
+            children: [
+              const Scaffold(body: SizedBox.shrink()),
+              Positioned(left: -4000, top: 0, child: _kad()),
+            ],
+          ),
+        ),
+      );
+      await tester.pump();
+
+      final kad = find.byType(KadKeputusan);
+      expect(kad, findsOneWidget);
+
+      final semuaTeks = tester.widgetList<RichText>(
+        find.descendant(of: kad, matching: find.byType(RichText)),
+      );
+      expect(semuaTeks, isNotEmpty, reason: 'Kad mesti mengandungi teks');
+
+      for (final teks in semuaTeks) {
+        final gaya = (teks.text as TextSpan).style;
+        expect(
+          gaya?.decorationColor,
+          isNot(const Color(0xFFFFFF00)),
+          reason: 'Teks kad mewarisi gaya ralat MaterialApp — garis dua kuning',
+        );
+      }
+    });
   });
 }

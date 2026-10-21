@@ -67,7 +67,14 @@ class KadKeputusan extends StatelessWidget {
       if (s.betulPenuh(jawapan[s.id])) betul++;
     }
 
-    return Container(
+    // Kad ini dipasang sebagai **adik-beradik** Scaffold (lihat
+    // `KeputusanScreen._kadKongsi`) supaya ia boleh ditangkap di luar skrin.
+    // Di luar Scaffold tiada induk Material, jadi setiap `Text` di sini
+    // mewarisi `_errorTextStyle` MaterialApp: `TextDecoration.underline`
+    // bergaya `double` berwarna `0xFFFFFF00`. Hiasan itu terbakar ke dalam
+    // gambar yang dikongsi sebagai garis dua kuning di bawah setiap baris.
+    // Material lutsinar memberi kad gaya teks yang sama seperti skrin biasa.
+    final kad = Container(
       width: lebar,
       color: Warna.latarSkrin,
       padding: const EdgeInsets.all(16),
@@ -132,6 +139,8 @@ class KadKeputusan extends StatelessWidget {
         ),
       ),
     );
+
+    return Material(type: MaterialType.transparency, child: kad);
   }
 
   /// Kepala kad: nama app, tajuk kertas dan masa menjawab.
