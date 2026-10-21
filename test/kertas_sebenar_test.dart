@@ -12,9 +12,11 @@
 //   3. Setiap soalan jenis terbuka (`senarai`) dan kumpulan mempunyai kandungan
 //      yang diperlukannya.
 
+import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 import 'package:ulangkaji_upkk/models/kertas.dart';
+import 'package:ulangkaji_upkk/screens/kertas_sebenar_screen.dart';
 import 'package:ulangkaji_upkk/services/bank_kertas.dart';
 
 void main() {
@@ -117,6 +119,20 @@ void main() {
           expect(i.rumi.trim(), isNotEmpty, reason: '${s.id}/${i.nombor}');
         }
       }
+    });
+  });
+
+  group('skrin kertas sebenar', () {
+    testWidgets('tahun yang ditranskrip mempunyai butang Jawab', (t) async {
+      await t.pumpWidget(const MaterialApp(home: SenaraiKertasSebenar()));
+      await t.pump();
+
+      // Adab 2024 sudah ditranskrip — butang Jawab muncul di sebelahnya.
+      expect(find.byKey(const ValueKey('jawab-adab-2024')), findsOneWidget);
+      // Tahun lain belum ditranskrip — kekal sebagai imbasan sahaja.
+      expect(find.byKey(const ValueKey('jawab-adab-2025')), findsNothing);
+      // Navigasi ke KertasScreen tidak diuji di sini: skrin itu memulakan
+      // pemasa perkhidmatan suara yang belum lupus apabila ujian tamat.
     });
   });
 }
