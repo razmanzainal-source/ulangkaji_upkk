@@ -60,7 +60,15 @@ SUARA_ARAB = os.environ.get("SUARA_ARAB", "ar-SA-ZariyahNeural")
 
 # Kadar bacaan: sedikit perlahan daripada biasa supaya murid Tahun 5 sempat
 # mengikuti. edge-tts menerima bentuk seperti "-10%".
-KADAR = os.environ.get("KADAR", "-8%")
+# Kadar dan pitch suara Melayu.
+#
+# Tiada suara kanak-kanak dalam edge-tts bagi Bahasa Melayu (hanya Yasmin
+# perempuan dan Osman lelaki). Untuk mendapatkan bunyi kanak-kanak perempuan
+# yang ceria, suara Yasmin dinaikkan pitch-nya dan sedikit dipercepat — pitch
+# yang lebih tinggi kedengaran muda, dan kadar yang sedikit laju kedengaran
+# ceria berbanding tempo perlahan yang dibaca oleh orang dewasa.
+KADAR = os.environ.get("KADAR", "+4%")
+PITCH = os.environ.get("PITCH", "+24Hz")
 
 # Kadar bit audio. Ini rakaman suara manusia, bukan muzik: 32 kbps mono sudah
 # cukup jelas, dan mengekalkannya rendah menjaga saiz app — beribu-beribu klip
@@ -127,7 +135,7 @@ AYAT_TETAP = {
     "f-ulang": "Jangan putus asa. Mari kita ulang kaji sekali lagi.",
     "f-nama": "Assalamualaikum! Siapa nama kamu?",
     # Sapaan pembuka. Nama murid **tidak** disebut — lihat `Suara.sapaan`.
-    "f-selamat": "Assalamualaikum, jom belajar KAFA bersama Raz.",
+    "f-selamat": "Assalamualaikum, jom ulangkaji KAFA bersama Raz.",
     # Penutup latih tubi — tiga ayat mengikut peratus jawapan betul
     # (lihat `Suara.latihanSelesai`). Tiada markah disebut: latih tubi bukan
     # kertas. "Syabas" hanya untuk 70% ke atas. Tiada ", ya." di hujung
@@ -199,7 +207,9 @@ def nama_fail(teks: str, suara: str) -> str:
     Dua soalan dengan bunyi yang sama berkongsi satu fail, jadi bank yang
     mengulang ayat tidak menggandakan saiz audio.
     """
-    cap = hashlib.sha1(f"{suara}\u0000{teks}".encode("utf-8")).hexdigest()[:16]
+    cap = hashlib.sha1(
+        f"{suara}\u0000{KADAR}\u0000{PITCH}\u0000{teks}".encode("utf-8")
+    ).hexdigest()[:16]
     return cap + ".m4a"
 
 
@@ -212,6 +222,7 @@ def _edge_tts(teks: str, mp3: str, suara: str) -> None:
                     sys.executable, "-m", "edge_tts",
                     "--voice", suara,
                     f"--rate={KADAR}",
+                    f"--pitch={PITCH}",
                     "--text", teks,
                     "--write-media", mp3,
                 ],

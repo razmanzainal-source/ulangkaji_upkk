@@ -191,9 +191,9 @@ class Suara {
   /// Ayat sapaan pembuka — teks rakaman Yasmin bagi [kunciSelamat].
   ///
   /// Ayat ini mesti pendek dan wajar didengari: ia dimainkan setiap kali app
-  /// dibuka. Sebutan "mengulang kaji KAFA" didengari sebagai "mengulangkaji"
-  /// yang tergantung; "belajar KAFA" ialah ayat yang murid Tahun 5 benar-benar
-  /// gunakan.
+  /// dibuka. "Ulangkaji KAFA" ialah nama app dan nama yang murid gunakan
+  /// sendiri — menyebutnya dalam sapaan menyatukan app dengan bunyi yang
+  /// didengar pada skrin.
   ///
   /// Nama murid **sengaja tidak** disebut di sini. Menyebut nama setiap murid
   /// memerlukan enjin suara peranti, dan jantina suara itu tidak dapat
@@ -202,7 +202,7 @@ class Suara {
   /// tidak disebut langsung. Nama murid masih dipaparkan di skrin (kepala
   /// skrin dan kad keputusan), cuma tidak dibaca kuat.
   static const String sapaan =
-      'Assalamualaikum, jom belajar KAFA bersama $namaMaskot.';
+      'Assalamualaikum, jom ulangkaji KAFA bersama $namaMaskot.';
 
   // --- Bunyi kesan (nada, bukan suara) di `assets/bunyi/kesan/` -------------
 
@@ -475,7 +475,7 @@ class Suara {
     }
   }
 
-  /// Sapaan pembuka: "Assalamualaikum, jom belajar KAFA bersama Raz."
+  /// Sapaan pembuka: "Assalamualaikum, jom ulangkaji KAFA bersama Raz."
   ///
   /// Satu rakaman sahaja ([kunciSelamat]); tiada bahagian yang dibina daripada
   /// enjin suara peranti, jadi sapaan ini sentiasa berbunyi dengan suara

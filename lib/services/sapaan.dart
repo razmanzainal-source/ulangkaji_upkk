@@ -3,7 +3,7 @@ import 'tetapan.dart';
 
 /// Mengawal sapaan pembuka app.
 ///
-/// Sapaan ("Assalamualaikum, jom belajar KAFA bersama Raz.") menandakan bahawa
+/// Sapaan ("Assalamualaikum, jom ulangkaji KAFA bersama Raz.") menandakan bahawa
 /// app ini mengenali murid itu. Tetapi sapaan yang sama dimainkan **setiap
 /// kali** murid menekan butang, atau setiap kali dia berpindah tab, cepat
 /// menjadi bunyi latar yang tidak lagi didengar.

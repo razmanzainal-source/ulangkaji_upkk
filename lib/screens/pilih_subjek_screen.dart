@@ -74,7 +74,7 @@ class _PilihSubjekScreenState extends State<PilihSubjekScreen> {
             SliverToBoxAdapter(
               child: KepalaRaz(
                 tajuk: nama.isEmpty ? 'Ulangkaji UPKK' : 'Assalamualaikum, $nama!',
-                sari: 'Jom belajar KAFA bersama Raz — 6 subjek bertulis, '
+                sari: 'Jom ulangkaji KAFA bersama Raz — 6 subjek bertulis, '
                     '70 markah, 1 jam 15 minit, mengikut format UPKK sebenar.',
                 kanak: Row(
                   children: [
