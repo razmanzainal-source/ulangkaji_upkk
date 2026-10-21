@@ -106,6 +106,7 @@ class BankKertas {
       }
 
       final kosong = _subjek.where((s) => (_bank[s.id] ?? const []).isEmpty);
+      await _muatKertasJawab();
       ralat = kosong.length == _subjek.length
           ? 'Bank soalan tidak dapat dibaca.'
           : null;
@@ -122,11 +123,43 @@ class BankKertas {
   bool adaSoalan(String subjekId) =>
       (_bank[subjekId] ?? const []).isNotEmpty && !_subjekKosong.contains(subjekId);
 
+  /// Kertas sebenar yang **boleh dijawab** dalam app, dipetakan mengikut nama
+  /// folder imbasan (`adab-2024`, `adab-2025`, …).
+  ///
+  /// Tidak semua tahun mempunyai kertas boleh dijawab — hanya tahun yang
+  /// transkripnya lengkap dan disemak dengan skema rasmi. Tahun lain kekal
+  /// sebagai imbasan gambar sahaja.
+  final Map<String, Kertas> _kertasJawab = {};
+
+  /// Adakah kertas ini boleh dijawab dalam app (bukan sekadar dibaca)?
+  bool bolehJawab(String folder) => _kertasJawab.containsKey(folder);
+
+  /// Kertas sebenar yang boleh dijawab — `null` jika tahun itu belum
+  /// ditranskripkan.
+  Kertas? kertasJawab(String folder) => _kertasJawab[folder];
+
+  Future<void> _muatKertasJawab() async {
+    for (final s in _subjek) {
+      for (final k in s.kertasSebenar) {
+        try {
+          final teks = await rootBundle.loadString(
+            'assets/content/sebenar/${k.folder}.json',
+          );
+          final json = jsonDecode(teks) as Map<String, dynamic>;
+          _kertasJawab[k.folder] = Kertas.dariJson(json);
+        } catch (_) {
+          // Tahun ini belum ditranskripkan — biarkan sebagai imbasan sahaja.
+        }
+      }
+    }
+  }
+
   /// Set semula untuk ujian.
   void setSemula() {
     _dimuatkan = false;
     _subjek = const [];
     _bank.clear();
+    _kertasJawab.clear();
     _subjekKosong = const {};
     ralat = null;
   }

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import 'kertas_screen.dart';
 import '../models/kertas.dart';
 import '../services/bank_kertas.dart';
 import '../tema.dart';
@@ -13,8 +14,9 @@ import '../widgets/pembaca_imej.dart';
 /// kertas yang sama seperti yang akan dipegangnya di dewan peperiksaan, termasuk
 /// susun atur, arahan dan bentuk soalan.
 ///
-/// Kertas dibaca sebagai gambar sahaja (bukan boleh dijawab dalam app) kerana
-/// tujuannya ialah membiasakan murid dengan rupa kertas, bukan menguji.
+/// Tahun yang transkripnya lengkap (dengan skema jawapan rasmi) boleh **dijawab
+/// terus dalam app** — butang "Jawab" muncul di sebelah tahun tersebut. Tahun
+/// lain kekal sebagai imbasan gambar sahaja.
 class SenaraiKertasSebenar extends StatelessWidget {
   const SenaraiKertasSebenar({super.key});
 
@@ -87,7 +89,8 @@ class _KadPengenalan extends StatelessWidget {
                 const SizedBox(height: 4),
                 Text(
                   'Imbasan kertas UPKK 2024 dan 2025. Baca untuk kenal bentuk '
-                  'kertas — susun atur, arahan dan jenis soalan.',
+                  'kertas — susun atur, arahan dan jenis soalan. Kertas yang '
+                  'sudah ditranskripkan boleh dijawab terus dalam app.',
                   style: Teks.label.copyWith(color: Colors.white70, height: 1.4),
                 ),
               ],
@@ -182,45 +185,84 @@ class _CipTahun extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Material(
-      color: subjek.warna.withValues(alpha: 0.10),
-      borderRadius: BorderRadius.circular(12),
-      child: InkWell(
-        key: ValueKey('cip-${subjek.id}-${kertas.tahun}'),
-        borderRadius: BorderRadius.circular(12),
-        onTap: () => Navigator.of(context).push(
-          MaterialPageRoute(
-            builder: (_) => PembacaKertasSebenar(
-              tajuk: '${subjek.nama} ${kertas.tahun}',
-              imej: [
-                for (var i = 1; i <= kertas.muka; i++) kertas.laluan(i),
-              ],
+    final jawab = BankKertas.instance.kertasJawab(kertas.folder);
+
+    return Row(
+      mainAxisSize: MainAxisSize.min,
+      children: [
+        Material(
+          color: subjek.warna.withValues(alpha: 0.10),
+          borderRadius: BorderRadius.circular(12),
+          child: InkWell(
+            key: ValueKey('cip-${subjek.id}-${kertas.tahun}'),
+            borderRadius: BorderRadius.circular(12),
+            onTap: () => Navigator.of(context).push(
+              MaterialPageRoute(
+                builder: (_) => PembacaKertasSebenar(
+                  tajuk: '${subjek.nama} ${kertas.tahun}',
+                  imej: [
+                    for (var i = 1; i <= kertas.muka; i++) kertas.laluan(i),
+                  ],
+                ),
+              ),
+            ),
+            child: Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+              child: Row(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  Icon(Icons.menu_book_rounded, size: 17, color: subjek.warna),
+                  const SizedBox(width: 6),
+                  Text(
+                    '${kertas.tahun}',
+                    style: Teks.sederhana.copyWith(
+                      color: subjek.warna,
+                      fontSize: 16,
+                    ),
+                  ),
+                  const SizedBox(width: 6),
+                  Text(
+                    '${kertas.muka} muka',
+                    style: Teks.label.copyWith(color: Colors.black54),
+                  ),
+                ],
+              ),
             ),
           ),
         ),
-        child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
-          child: Row(
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              Icon(Icons.menu_book_rounded, size: 17, color: subjek.warna),
-              const SizedBox(width: 6),
-              Text(
-                '${kertas.tahun}',
-                style: Teks.sederhana.copyWith(
-                  color: subjek.warna,
-                  fontSize: 16,
+        if (jawab != null) ...[
+          const SizedBox(width: 8),
+          Material(
+            color: subjek.warna,
+            borderRadius: BorderRadius.circular(12),
+            child: InkWell(
+              key: ValueKey('jawab-${subjek.id}-${kertas.tahun}'),
+              borderRadius: BorderRadius.circular(12),
+              onTap: () => Navigator.of(context).push(
+                MaterialPageRoute(builder: (_) => KertasScreen(kertas: jawab)),
+              ),
+              child: const Padding(
+                padding: EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+                child: Row(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    Icon(Icons.edit_rounded, size: 16, color: Colors.white),
+                    SizedBox(width: 6),
+                    Text(
+                      'Jawab',
+                      style: TextStyle(
+                        fontSize: 15,
+                        fontWeight: FontWeight.w800,
+                        color: Colors.white,
+                      ),
+                    ),
+                  ],
                 ),
               ),
-              const SizedBox(width: 6),
-              Text(
-                '${kertas.muka} muka',
-                style: Teks.label.copyWith(color: Colors.black54),
-              ),
-            ],
+            ),
           ),
-        ),
-      ),
+        ],
+      ],
     );
   }
 }

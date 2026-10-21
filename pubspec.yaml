@@ -93,6 +93,9 @@ flutter:
     # Bank soalan berada dalam subfolder, dan Flutter **tidak** menuruni
     # subfolder — folder bank mesti disenaraikan sendiri.
     - assets/content/bank/
+    # Kertas sebenar yang boleh dijawab dalam app — transkrip rasmi
+    # imbasan di atas, lengkap dengan skema jawapan.
+    - assets/content/sebenar/
     # Imbasan kertas sebenar didaftarkan SATU-SATU mengikut folder: Flutter
     # hanya membaca fail pada aras yang dinyatakan (tidak menuruni subfolder),
     # jadi "- assets/kertas/" sahaja akan meninggalkan semua muka surat.

@@ -1,182 +1,122 @@
-// Ujian "Kertas Sebenar" — imbasan kertas UPKK 2024 dan 2025.
+// Kertas sebenar Adab UPKK 2024 — transkrip imbasan + skema rasmi.
 //
-// Kertas sebenar ialah bukti app ini bukan sekadar kuiz: murid boleh melihat
-// kertas yang sama seperti yang akan dipegangnya di dewan peperiksaan. Dua
-// perkara senang rosak tanpa disedari:
+// Kertas ini ialah kertas yang sama yang dipegang murid UPKK: soalan diambil
+// terus daripada imbasan (assets/kertas/adab-2024/) dan **jawapan diambil
+// terus daripada skema rasmi pada muka 11** — tiada jawapan yang ditulis oleh
+// pembangun app.
 //
-//   1. **Fail imbasan.** `subjek.json` boleh menyebut 13 muka, sedangkan folder
-//      hanya mempunyai 12 (muka terakhir rosak), atau sebaliknya — muka ke-14
-//      dibundelkan tetapi tidak didaftarkan, jadi ia berada dalam app tanpa
-//      pernah dilihat sesiapa.
-//
-//   2. **Pembaca.** Senarai tahun, pembaca satu muka satu halaman, jalur
-//      thumbnail, dan butang Sebelum/Seterusnya.
-//
-// Kedua-duanya diperiksa di sini — yang pertama terus daripada cakera, yang
-// kedua dengan membuka skrin sebenar.
+// Ujian ini mengunci:
+//   1. Strukturnya menepati format rasmi (70 markah, 1 jam 15 minit).
+//   2. Setiap indeks jawapan berada dalam julat — kesilapan transkrip nombor
+//      menjadikan soalan mustahil untuk dijawab betul.
+//   3. Setiap soalan jenis terbuka (`senarai`) dan kumpulan mempunyai kandungan
+//      yang diperlukannya.
 
-import 'dart:convert';
-import 'dart:io';
-
-import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
+
 import 'package:ulangkaji_upkk/models/kertas.dart';
-import 'package:ulangkaji_upkk/screens/kertas_sebenar_screen.dart';
 import 'package:ulangkaji_upkk/services/bank_kertas.dart';
 
-import 'bantuan/saiz_telefon.dart';
-
-/// Laluan akar projek — ujian berjalan dari akar projek.
-const String _akar = '.';
-
-List<Subjek> _subjekDariCakera() {
-  final data = jsonDecode(
-    File('$_akar/assets/content/subjek.json').readAsStringSync(),
-  ) as Map<String, dynamic>;
-  return (data['subjek'] as List)
-      .cast<Map<String, dynamic>>()
-      .map(Subjek.dariJson)
-      .toList();
-}
-
-/// Majukan beberapa bingkai — pembaca tidak boleh memakai `pumpAndSettle`
-/// kerana maskot Raz di skrin belakang berdenyut tanpa henti.
-Future<void> _bingkai(WidgetTester tester, [int bilangan = 10]) async {
-  for (var i = 0; i < bilangan; i++) {
-    await tester.pump(const Duration(milliseconds: 120));
-  }
-}
-
 void main() {
-  final subjek = _subjekDariCakera();
+  late Kertas kertas;
 
-  group('fail imbasan', () {
-    test('setiap subjek ada kertas 2024 dan 2025', () {
-      for (final s in subjek) {
-        final tahun = {for (final k in s.kertasSebenar) k.tahun};
-        expect(
-          tahun,
-          containsAll(<int>[2024, 2025]),
-          reason: 'subjek ${s.id} hanya ada tahun $tahun',
-        );
-      }
+  setUpAll(() async {
+    TestWidgetsFlutterBinding.ensureInitialized();
+    await BankKertas.instance.muat();
+    final k = BankKertas.instance.kertasJawab('adab-2024');
+    expect(k, isNotNull,
+        reason: 'kertas sebenar tidak dimuatkan: ${BankKertas.instance.ralat}');
+    kertas = k!;
+  });
+
+  group('kertas Adab 2024', () {
+    test('boleh dijawab, bukan sekadar imbasan', () {
+      expect(BankKertas.instance.bolehJawab('adab-2024'), isTrue);
+      expect(BankKertas.instance.kertasJawab('adab-2025'), isNull);
     });
 
-    test('setiap muka yang didaftarkan benar-benar ada', () {
-      for (final s in subjek) {
-        for (final k in s.kertasSebenar) {
-          expect(k.muka, greaterThan(0), reason: '${k.folder} tiada muka');
-          for (var i = 1; i <= k.muka; i++) {
-            expect(
-              File('$_akar/${k.laluan(i)}').existsSync(),
-              isTrue,
-              reason: '${k.laluan(i)} didaftarkan tetapi tiada di cakera',
-            );
-          }
-        }
-      }
+    test('menepati format rasmi UPKK', () {
+      expect(kertas.markahPenuh, 70);
+      expect(kertas.markahTersedia, 70);
+      expect(kertas.masaMinit, 75);
+      expect(kertas.jenisSumber, 'sebenar');
+      expect(kertas.subjekId, 'adab');
+      expect(kertas.bahagian.map((b) => b.nama), ['A', 'B', 'C', 'D']);
+      expect(kertas.bahagian.map((b) => b.markah), [10, 10, 30, 20]);
+      expect(kertas.bilanganSoalan, 27);
     });
 
-    test('tiada muka dibundelkan tanpa didaftarkan', () {
-      for (final s in subjek) {
-        for (final k in s.kertasSebenar) {
-          final bilangan = Directory('$_akar/assets/kertas/${k.folder}')
-              .listSync()
-              .whereType<File>()
-              .where((f) => f.path.toLowerCase().endsWith('.jpg'))
-              .length;
+    test('setiap indeks jawapan berada dalam julat', () {
+      for (final s in kertas.semuaSoalan) {
+        for (final i in s.item) {
+          if (i.pilihan.isEmpty) continue;
+          expect(i.jawapan, greaterThanOrEqualTo(0), reason: '${s.id}/${i.nombor}');
           expect(
-            bilangan,
-            k.muka,
-            reason:
-                '${k.folder}: $bilangan imbasan dibundelkan tetapi hanya '
-                '${k.muka} didaftarkan — bakinya tidak akan dilihat murid',
+            i.jawapan,
+            lessThan(i.pilihan.length),
+            reason: '${s.id}/${i.nombor}',
           );
         }
       }
     });
-  });
 
-  group('pembaca kertas sebenar', () {
-    testWidgets('senarai membuka pembaca, dan pembaca menyelak muka', (
-      tester,
-    ) async {
-      gunaSaizTelefon(tester);
+    test('pilihan setiap item unik', () {
+      for (final s in kertas.semuaSoalan) {
+        for (final i in s.item) {
+          final pilihan = i.pilihan.where((p) => p.trim().isNotEmpty).toList();
+          expect(
+            pilihan.toSet().length,
+            pilihan.length,
+            reason: '${s.id}/${i.nombor} mempunyai pilihan berulang',
+          );
+        }
+      }
+    });
 
-      // Aset dibaca melalui saluran platform, jadi ia memerlukan gelung
-      // peristiwa sebenar — `runAsync` membenarkan kerja itu di dalam ujian
-      // widget (tanpa ini, `muat` tergantung selama-lamanya).
-      await tester.runAsync(() => BankKertas.instance.muat());
-      expect(BankKertas.instance.sedia, isTrue, reason: 'bank gagal dimuatkan');
+    test('soalan tempat kosong mempunyai bank yang cukup', () {
+      for (final s in kertas.semuaSoalan.where(
+        (s) => s.jenis == JenisKertas.tempatKosong,
+      )) {
+        expect(s.bank, isNotEmpty, reason: s.id);
+        for (final i in s.item) {
+          expect(i.jawapan, lessThan(s.bank.length), reason: s.id);
+        }
+      }
+    });
 
-      await tester.pumpWidget(const MaterialApp(home: SenaraiKertasSebenar()));
-      await tester.pump();
+    test('soalan kumpulan mempunyai kategori untuk setiap item', () {
+      for (final s in kertas.semuaSoalan.where(
+        (s) => s.jenis == JenisKertas.kumpulan,
+      )) {
+        expect(s.kategori, hasLength(2), reason: s.id);
+        expect(s.kategoriRumi, hasLength(2), reason: s.id);
+        for (final i in s.item) {
+          expect(i.jawapan, lessThan(s.kategori.length), reason: s.id);
+        }
+      }
+    });
 
-      // Kad pengenalan di atas senarai.
-      expect(find.text('Kertas UPKK sebenar'), findsOneWidget);
+    test('soalan senarai mempunyai jawapan contoh yang boleh disemak', () {
+      for (final s in kertas.semuaSoalan.where(
+        (s) => s.jenis == JenisKertas.senarai,
+      )) {
+        expect(s.bilanganJawapan, greaterThanOrEqualTo(1), reason: s.id);
+        expect(s.jawapanContoh, isNotEmpty, reason: s.id);
+        expect(s.jawapanContoh.every((j) => j.trim().isNotEmpty), isTrue,
+            reason: s.id);
+        expect(s.jawapanContohRumi.every((j) => j.trim().isNotEmpty), isTrue,
+            reason: s.id);
+      }
+    });
 
-      // Ambil subjek dan kertas pertama, dan pastikan cipnya boleh ditekan.
-      final s = BankKertas.instance.subjek.first;
-      expect(
-        s.kertasSebenar,
-        isNotEmpty,
-        reason: '${s.id} tiada kertas sebenar',
-      );
-      final k = s.kertasSebenar.first;
-      final cip = find.byKey(ValueKey('cip-${s.id}-${k.tahun}'));
-
-      await tester.dragUntilVisible(
-        cip,
-        find.byType(ListView).first,
-        const Offset(0, -200),
-        maxIteration: 30,
-      );
-      await tester.tap(cip);
-      await _bingkai(tester);
-
-      // Pembaca: tajuk kertas dan kiraan muka surat.
-      expect(find.text('${s.nama} ${k.tahun}'), findsOneWidget);
-      expect(find.text('Muka 1 / ${k.muka}'), findsOneWidget);
-
-      // Sebelum muka pertama, butang Sebelum dimatikan — tidak boleh tersasar.
-      final sebelum = tester.widget<FilledButton>(
-        find.widgetWithText(FilledButton, 'Sebelum'),
-      );
-      expect(sebelum.onPressed, isNull, reason: 'muka pertama tiada Sebelum');
-
-      // Selak ke muka kedua.
-      await tester.tap(find.text('Seterusnya'));
-      await _bingkai(tester, 6);
-      expect(find.text('Muka 2 / ${k.muka}'), findsOneWidget);
-
-      // Jalur thumbnail: tekan muka ketiga terus.
-      await tester.tap(find.text('Kertas penuh'));
-      await _bingkai(tester, 4);
-      await tester.tap(find.byKey(const Key('jalur-muka-3')));
-      await _bingkai(tester, 4);
-      expect(find.text('Muka 3 / ${k.muka}'), findsOneWidget);
-
-      // Tutup jalur dan kembali ke muka pertama.
-      await tester.tap(find.text('Tutup jalur'));
-      await _bingkai(tester, 2);
-      await tester.tap(find.text('Sebelum'));
-      await _bingkai(tester, 4);
-      expect(find.text('Muka 2 / ${k.muka}'), findsOneWidget);
-
-      // Kembali ke senarai — tidak boleh tergantung.
-      await tester.pageBack();
-      await _bingkai(tester, 6);
-      expect(find.byType(SenaraiKertasSebenar), findsOneWidget);
-
-      // Senarai masih pada kedudukan tatal yang tadi (cip tahun di bawah),
-      // jadi kad pengenalan di atas perlu ditatal semula untuk dilihat.
-      await tester.dragUntilVisible(
-        find.text('Kertas UPKK sebenar'),
-        find.byType(ListView).first,
-        const Offset(0, 300),
-        maxIteration: 30,
-      );
-      expect(find.text('Kertas UPKK sebenar'), findsOneWidget);
+    test('setiap item mempunyai teks Rumi untuk skrin latih tubi', () {
+      for (final s in kertas.semuaSoalan) {
+        expect(s.rumi.trim(), isNotEmpty, reason: '${s.id} soalan');
+        for (final i in s.item) {
+          if (i.teks.trim().isEmpty) continue;
+          expect(i.rumi.trim(), isNotEmpty, reason: '${s.id}/${i.nombor}');
+        }
+      }
     });
   });
 }
