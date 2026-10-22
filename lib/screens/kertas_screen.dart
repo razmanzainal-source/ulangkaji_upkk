@@ -1751,18 +1751,15 @@ class _KertasScreenState extends State<KertasScreen> {
                   style: Teks.label.copyWith(fontWeight: FontWeight.w900),
                 ),
               ),
-              // Dengar jawapan betul. Butang ini muncul hanya apabila ada teks
-              // yang boleh dibacakan (lihat [_teksPembetulanDengar]).
+              // Dengar soalan & jawapan betul. Butang ini muncul hanya apabila
+              // ada teks yang boleh dibacakan (lihat [_teksPembetulanDengar]).
               //
-              // Ia sengaja **tidak** membacakan sendiri: senarai seperti
-              // sepuluh malaikat mengambil masa agak panjang, dan murid yang
-              // sudah nampak jawapannya tidak perlu mendengarnya. Memberi
-              // kawalan kepada murid juga selari dengan butang speaker pada
-              // setiap pilihan jawapan.
+              // Ia memainkan soalan dahulu, kemudian jawapan — supaya murid
+              // mendengar konteks penuh sebelum mendengar jawapan yang betul.
               if (_teksPembetulanDengar(s) != null)
                 IconButton(
-                  tooltip: 'Dengar jawapan betul',
-                  onPressed: () => _dengar(_teksPembetulanDengar(s)!),
+                  tooltip: 'Dengar soalan & jawapan betul',
+                  onPressed: () => _dengarPembetulan(s),
                   icon: const Icon(
                     Icons.volume_up_rounded,
                     size: 22,
@@ -1784,6 +1781,24 @@ class _KertasScreenState extends State<KertasScreen> {
         ],
       ),
     );
+  }
+
+  /// Mainkan soalan dan jawapan betul secara berurutan untuk panel pembetulan.
+  ///
+  /// Latih tubi sahaja. Soalan dimainkan dahulu (guna kunci soalan),
+  /// kemudian jawapan betul (guna teks jawapan). Dua-duanya menggunakan
+  /// enjin suara yang sama supaya bunyi berterusan.
+  Future<void> _dengarPembetulan(SoalanKertas s) async {
+    if (!_latihTubi) return;
+
+    // 1. Mainkan soalan dahulu
+    final soalanKunci = Suara.kunciSoalan(s.id);
+    final soalanSandaran = s.rumi.isEmpty ? s.soalan : s.rumi;
+    await Suara.instance.sebutKunci(soalanKunci, sandaran: soalanSandaran);
+
+    // 2. Mainkan jawapan betul
+    final jawapanTeks = _teksPembetulanDengar(s)!;
+    await Suara.instance.sebutPilihan(jawapanTeks);
   }
 
   /// Teks jawapan betul untuk panel pembetulan.
@@ -1818,7 +1833,13 @@ class _KertasScreenState extends State<KertasScreen> {
         s.jenis != JenisKertas.senarai) {
       return null;
     }
-    final dengar = s.jawapanPenuhDengar.trim();
+    var dengar = s.jawapanPenuhDengar.trim();
+    if (dengar.isEmpty && s.rubrik.ada) {
+      // Soalan `tulis`/`huraian` yang dinilai dengan rubrik tidak menyimpan
+      // `jawapanContoh`; jawapan betulnya ialah isi rubrik. Bacakan maksud
+      // setiap isi supaya murid mendengar perkara yang sepatutnya ditulis.
+      dengar = s.rubrik.idea.map((i) => i.maksud).join('\n').trim();
+    }
     return dengar.isEmpty ? null : dengar;
   }
 

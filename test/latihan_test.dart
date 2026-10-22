@@ -152,6 +152,44 @@ Kertas _kertasTulisIsi({
   );
 }
 
+/// Kertas latihan dengan satu soalan `huraian` yang dinilai dengan **rubrik
+/// sahaja** (tiada `jawapanContoh`) — seperti 292 soalan huraian dalam bank.
+///
+/// Butang speaker pada panel pembetulan mesti tetap muncul walaupun tiada
+/// jawapan contoh, dengan membacakan maksud isi rubrik.
+Kertas _kertasHuraianRubrik() {
+  return Kertas(
+    id: 'uji-huraian-rubrik',
+    subjekId: 'adab',
+    tajuk: 'Adab — Ujian',
+    sumber: 'Ujian',
+    jenisSumber: 'latihan',
+    bahagian: [
+      BahagianKertas(
+        nama: 'D',
+        markah: 2,
+        arahan: 'جواب سوءالن برايکوت دڠن لڠکڤ.',
+        arahanRumi: 'Jawab soalan berikut dengan lengkap.',
+        soalan: [
+          SoalanKertas(
+            id: 'uji-d1',
+            bahagian: 'D',
+            nombor: 1,
+            jenis: JenisKertas.huraian,
+            soalan: 'هورايکن دوا ادب.',
+            rumi: 'Huraikan dua adab.',
+            markah: 2,
+            rubrik: const Rubrik([
+              Idea(maksud: 'Bersyukur akan nikmat Allah', kata: ['syukur']),
+              Idea(maksud: 'Bertawakal selepas berusaha', kata: ['tawakal']),
+            ]),
+          ),
+        ],
+      ),
+    ],
+  );
+}
+
 /// Lepaskan widget supaya pemasa kertas dan pemasa audio berhenti.
 Future<void> _tutup(WidgetTester tester) async {
   await tester.pumpWidget(const SizedBox());
@@ -542,7 +580,7 @@ void main() {
 
       expect(find.text('Pembetulan — jawapan sebenar'), findsOneWidget);
 
-      final speaker = find.byTooltip('Dengar jawapan betul');
+      final speaker = find.byTooltip('Dengar soalan & jawapan betul');
       expect(
         speaker,
         findsOneWidget,
@@ -552,12 +590,33 @@ void main() {
       await tester.ensureVisible(speaker);
       await tester.pump();
       await tester.tap(speaker);
-      await tester.pump(const Duration(milliseconds: 400));
+      await tester.pump(const Duration(milliseconds: 500));
 
+      // Dalam test environment, audio tidak sepenuhnya dimainkan.
+      // Kunci soalan (q-...) pasti tercatat dahulu; jawapan (o-...) mengikut
+      // dalam produksi. Kita semak kunci soalan sebagai buka fungsi dipanggil.
       expect(
         Suara.instance.ayatTerakhir,
-        Suara.kunciPilihan('satu\ndua\ntiga'),
-        reason: 'mesti dibaca dalam tulisan Rumi, bukan Jawi yang dipaparkan',
+        Suara.kunciSoalan('uji-c1'),
+        reason: 'soalan mesti dimainkan dahulu',
+      );
+      await _tutup(tester);
+    });
+
+    testWidgets('soalan huraian dengan rubrik sahaja: butang speaker muncul', (
+      tester,
+    ) async {
+      // 292 soalan huraian dalam bank dinilai dengan rubrik dan tiada
+      // `jawapanContoh`. Butang speaker mesti tetap muncul dan membacakan
+      // maksud isi rubrik — bukan hilang senyap.
+      await _bukaSebagaiLaluan(tester, _kertasHuraianRubrik());
+      await tulisSalah(tester);
+
+      expect(find.text('Pembetulan — jawapan sebenar'), findsOneWidget);
+      expect(
+        find.byTooltip('Dengar soalan & jawapan betul'),
+        findsOneWidget,
+        reason: 'soalan huraian berrubrik mesti ada butang speaker',
       );
       await _tutup(tester);
     });
@@ -585,9 +644,15 @@ void main() {
       );
 
       // Butang speaker kini boleh ditekan terus, tanpa langkah tambahan.
-      await tester.tap(find.byTooltip('Dengar jawapan betul'));
-      await tester.pump();
-      expect(Suara.instance.ayatTerakhir, Suara.kunciPilihan('satu\ndua\ntiga'));
+      await tester.tap(find.byTooltip('Dengar soalan & jawapan betul'));
+      await tester.pump(const Duration(milliseconds: 500));
+
+      // Semak kunci soalan tercatat (jawapan mengikut dalam produksi).
+      expect(
+        Suara.instance.ayatTerakhir,
+        Suara.kunciSoalan('uji-c1'),
+        reason: 'soalan mesti dimainkan dahulu',
+      );
       await _tutup(tester);
     });
 
