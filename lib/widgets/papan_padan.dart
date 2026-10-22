@@ -18,6 +18,7 @@ class PapanPadan extends StatelessWidget {
     required this.warna,
     required this.onPilihKiri,
     required this.onPilihKanan,
+    this.onBuangPadanan,
     this.onDengarKiri,
     this.onDengarKanan,
     this.rumiKiri,
@@ -47,6 +48,15 @@ class PapanPadan extends StatelessWidget {
 
   /// Dipanggil dengan indeks kanan (asal) apabila item kanan diketuk.
   final ValueChanged<int> onPilihKanan;
+
+  /// Dipanggil dengan indeks kiri (asal) apabila padanan itu **dibuang**.
+  ///
+  /// Ini muncul apabila cip padanan di bawah item kiri diketuk. Tanpa ia,
+  /// satu padanan yang sudah salah hanya boleh dibetulkan dengan memilih
+  /// padanan lain — tetapi apabila semua item kanan sudah terpakai, tiada
+  /// cip lain yang boleh dipilih, jadi murid terdead-lock dan tidak boleh
+  /// membetulkan kesilapan sendiri.
+  final ValueChanged<int>? onBuangPadanan;
 
   /// Butang dengar bagi item kiri (indeks asal). `null` menyembunyikannya.
   final ValueChanged<int>? onDengarKiri;
@@ -108,7 +118,12 @@ class PapanPadan extends StatelessWidget {
                 child: Text(
                   terpilih == null
                       ? 'Ketik satu item di atas, kemudian pilih padanannya.'
-                      : 'Sekarang pilih padanan untuk item yang berwarna.',
+                      : padanan.containsKey(terpilih)
+                          // Item ini sudah berpasangan: cip yang berwarna
+                          // boleh diketuk untuk membuang padanan itu.
+                          ? 'Ketik padanan berwarna untuk menukarnya, atau '
+                              'ketik sekali lagi untuk membuang.'
+                          : 'Sekarang pilih padanan untuk item yang berwarna.',
                   style: Teks.kecil,
                 ),
               ),
@@ -167,6 +182,8 @@ class PapanPadan extends StatelessWidget {
                         _cipPadan(
                           kanan[slot],
                           Dwibahasa.rumiSelari(rumiKanan, slot, kanan.length),
+                          onBuang:
+                              onBuangPadanan == null ? null : () => onBuangPadanan!(i),
                         ),
                       ],
                     ],
@@ -207,7 +224,12 @@ class PapanPadan extends StatelessWidget {
     );
   }
 
-  Widget _cipPadan(String teks, String? rumi) {
+  /// Cip padanan di bawah item kiri.
+  ///
+  /// Cip ini boleh diketuk untuk **membuang** padanan — butang silang kecil
+  /// di sebelahnyamengajar murid yang tidak biasa dengan app bahawa padanan
+  /// boleh dilepaskan.
+  Widget _cipPadan(String teks, String? rumi, {VoidCallback? onBuang}) {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
       decoration: BoxDecoration(
@@ -215,15 +237,40 @@ class PapanPadan extends StatelessWidget {
         borderRadius: BorderRadius.circular(12),
       ),
       // IntrinsicWidth: cip ini nota padanan, jadi ia mengekalkan saiz
-      // kandungannya. Tanpanya Dwibahasa akan meluaskan cip sehingga penuh.
+      // kandungannya. Tanpanya Dwibahasa akan mulaskan cip sehingga penuh.
       child: IntrinsicWidth(
-        child: Dwibahasa(
-          jawi: teks,
-          rumi: rumi,
-          // Cip kecil — guna saiz `jawiKecil` dari tema supaya ia kekal
-          // sebagai nota padanan di bawah item kiri, bukan menandingi teks
-          // utama item itu.
-          gayaJawi: Teks.jawiKecil,
+        child: Row(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Flexible(
+              child: Dwibahasa(
+                jawi: teks,
+                rumi: rumi,
+                // Cip kecil — guna saiz `jawiKecil` dari tema supaya ia kekal
+                // sebagai nota padanan di bawah item kiri, bukan menandingi teks
+                // utama item itu.
+                gayaJawi: Teks.jawiKecil,
+              ),
+            ),
+            if (onBuang != null) ...[
+              const SizedBox(width: 6),
+              InkWell(
+                onTap: onBuang,
+                borderRadius: BorderRadius.circular(10),
+                child: Tooltip(
+                  message: 'Buang padanan',
+                  child: Padding(
+                    padding: const EdgeInsets.all(2),
+                    child: Icon(
+                      Icons.close_rounded,
+                      size: 16,
+                      color: warna.withValues(alpha: 0.85),
+                    ),
+                  ),
+                ),
+              ),
+            ],
+          ],
         ),
       ),
     );
@@ -233,27 +280,42 @@ class PapanPadan extends StatelessWidget {
     final asal = indeksKanan[j];
     final digunakan = padanan.containsValue(asal);
 
+    // Cip yang **milik** item kiri yang sedang dipilih boleh diketuk untuk
+    // membuang padanan itu.
+    //
+    // Cip yang sudah terpakai oleh item kiri **yang lain** juga boleh
+    // diketuk: ia akan dipindah kepada item yang sedang dipilih, dan item
+    // yang lain kehilangan padanannya. Tanpa ini, apabila semua item
+    // kanan sudah terpakai, murid tidak boleh langsung menyusun semula
+    // padanan — tiada cip yang boleh diketuk.
+    final milikTerpilih = terpilih != null && padanan[terpilih] == asal;
+    final bolehKetuk = !lumpuh && terpilih != null;
+
     return Material(
       color: digunakan ? warnaLatarCipDigunakan : Colors.white,
       borderRadius: BorderRadius.circular(18),
       child: InkWell(
         borderRadius: BorderRadius.circular(18),
-        onTap: (lumpuh || digunakan) ? null : () => onPilihKanan(asal),
+        onTap: bolehKetuk ? () => onPilihKanan(asal) : null,
         child: Container(
           constraints: const BoxConstraints(minHeight: 46),
           padding: const EdgeInsets.fromLTRB(14, 8, 14, 8),
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(18),
             border: Border.all(
-              color: digunakan
-                  ? Colors.black.withValues(alpha: 0.12)
-                  // Sempadan yang sama dengan lajur kiri (0.28). Versi lama
-                  // menggunakan 0.45, yang pada skrin sempit menjadikan
-                  // kesemua cip kelihatan seperti dinding merah jambu — dan
-                  // teks Jawi yang membungkus kepada dua baris kelihatan
-                  // terkeluar apabila bucu pil memotong ruangnya.
-                  : warna.withValues(alpha: 0.28),
-              width: 2,
+              color: milikTerpilih
+                  // Garis tebal berwarna: cip ini milik item yang sedang
+                  // dipilih, jadi mengetiknya membuang padanan.
+                  ? warna
+                  : digunakan
+                      ? Colors.black.withValues(alpha: 0.12)
+                      // Sempadan yang sama dengan lajur kiri (0.28). Versi lama
+                      // menggunakan 0.45, yang pada skrin sempit menjadikan
+                      // kesemua cip kelihatan seperti dinding merah jambu — dan
+                      // teks Jawi yang membungkus kepada dua baris kelihatan
+                      // terkeluar apabila bucu pil memotong ruangnya.
+                      : warna.withValues(alpha: 0.28),
+              width: milikTerpilih ? 3 : 2,
             ),
           ),
           child: Row(
@@ -265,7 +327,7 @@ class PapanPadan extends StatelessWidget {
               ],
               Flexible(
                 // IntrinsicWidth: cip kanan kekal sebesar kandungannya —
-                // tanpanya baris Rumi akan meluaskan cip sehingga penuh.
+                // tanpanya baris Rumi akan mulaskan cip sehingga penuh.
                 child: IntrinsicWidth(
                   child: Dwibahasa(
                     jawi: kanan[j],
@@ -278,17 +340,9 @@ class PapanPadan extends StatelessWidget {
                   ),
                 ),
               ),
-              if (onDengarKanan != null) ...[
-                const SizedBox(width: 4),
-                IconButton(
-                  onPressed: () => onDengarKanan!(asal),
-                  iconSize: 20,
-                  color: warna,
-                  constraints: const BoxConstraints(),
-                  padding: const EdgeInsets.all(4),
-                  tooltip: 'Dengar',
-                  icon: const Icon(Icons.volume_up_rounded),
-                ),
+              if (milikTerpilih) ...[
+                const SizedBox(width: 6),
+                Icon(Icons.close_rounded, size: 18, color: warna),
               ],
             ],
           ),

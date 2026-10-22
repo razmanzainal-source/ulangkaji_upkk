@@ -10,6 +10,7 @@ import '../services/tetapan.dart';
 import '../tarikh.dart';
 import '../tema.dart';
 import '../widgets/kad_kemajuan_penuh.dart';
+import '../widgets/kad_lencana.dart';
 import '../widgets/lencana_widget.dart';
 import '../widgets/maskot.dart';
 import 'kongsi_screen.dart';
@@ -31,8 +32,14 @@ class _KemajuanScreenState extends State<KemajuanScreen> {
   /// Kunci kad perkongsian yang dilukis di luar skrin.
   final GlobalKey _kunciKongsi = GlobalKey();
 
+  /// Kunci kad lencana yang dilukis di luar skrin.
+  final GlobalKey _kunciLencana = GlobalKey();
+
   /// Benar semasa gambar kad disediakan.
   bool _menyediakanKongsi = false;
+
+  /// Benar semasa kad lencana sedang disediakan.
+  bool _menyediakanLencana = false;
 
   /// Menyediakan gambar kad kemajuan penuh, kemudian membuka skrin perkongsian.
   Future<void> _kongsiKemajuan() async {
@@ -76,6 +83,59 @@ class _KemajuanScreenState extends State<KemajuanScreen> {
           namaSimpan: 'keputusan_upkk_kemajuan_penuh',
         ),
       ),
+    );
+  }
+
+  /// Sediakan gambar koleksi lencana, kemudian buka skrin perkongsian.
+  ///
+  /// Kad lencana berbeza daripada slip markah: ia menunjukkan **pencapaian**,
+  /// jadi murid yang belum mendapat gred A masih boleh menunjukkan apa yang
+  /// dia kumpulkan.
+  Future<void> _kongsiLencana() async {
+    if (_menyediakanLencana) return;
+    setState(() => _menyediakanLencana = true);
+
+    // Satu bingkai diberi supaya kad dilukis dahulu — gambar hanya boleh
+    // ditangkap selepas kad benar-benar dilukis.
+    await WidgetsBinding.instance.endOfFrame;
+    final imej = await Kongsi.tangkapImej(_kunciLencana);
+
+    if (!mounted) return;
+    setState(() => _menyediakanLencana = false);
+
+    if (imej == null) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(
+          content: Text('Gambar lencana tidak dapat disediakan. Cuba lagi.'),
+        ),
+      );
+      return;
+    }
+
+    final nama = Tetapan.instance.namaAnak.trim();
+    final tarikh = tarikhMelayu(DateTime.now());
+    final jumlah = Kemajuan.instance.lencanaDiperoleh.length;
+
+    await Navigator.of(context).push(
+      MaterialPageRoute<void>(
+        builder: (_) => KongsiScreen(
+          imej: imej,
+          teks: 'Koleksi lencana Ulangkaji UPKK untuk $nama pada $tarikh. '
+              '$jumlah lencana diperoleh.',
+          namaFail: 'lencana-upkk.png',
+          namaSimpan: 'lencana_upkk',
+          tajuk: 'Kongsi lencana',
+        ),
+      ),
+    );
+  }
+
+  /// Kad lencana yang dilukis di luar kawasan yang kelihatan.
+  Widget _kadLencana() {
+    return KadLencana(
+      nama: Tetapan.instance.namaAnak,
+      tarikh: tarikhMelayu(DateTime.now()),
+      subjek: BankKertas.instance.subjek,
     );
   }
 
@@ -173,6 +233,12 @@ class _KemajuanScreenState extends State<KemajuanScreen> {
                 ),
               ),
               SliverPadding(
+                padding: const EdgeInsets.fromLTRB(16, 0, 16, 8),
+                sliver: SliverToBoxAdapter(
+                  child: _butangKongsiLencana(),
+                ),
+              ),
+              SliverPadding(
                 padding: const EdgeInsets.fromLTRB(16, 12, 16, 8),
                 sliver: SliverToBoxAdapter(
                   child: Text(
@@ -208,6 +274,18 @@ class _KemajuanScreenState extends State<KemajuanScreen> {
                 nama: Tetapan.instance.namaAnak,
                 tarikh: tarikhMelayu(DateTime.now()),
               ),
+            ),
+          ),
+        // Kad lencana di luar skrin — dilukis hanya semasa gambar
+        // sedang disediakan.
+        if (_menyediakanLencana)
+          Positioned(
+            left: -4000,
+            top: 0,
+            width: 360,
+            child: RepaintBoundary(
+              key: _kunciLencana,
+              child: _kadLencana(),
             ),
           ),
       ],
@@ -261,6 +339,45 @@ class _KemajuanScreenState extends State<KemajuanScreen> {
           ),
         ),
       ],
+    );
+  }
+  /// Butang kongsi koleksi lencana.
+  ///
+  /// Berbeza daripada butang "Kongsi Keputusan": butang ini menunjuk
+  /// **pencapaian** — lencana yang dikumpulkan — bukan markah.
+  Widget _butangKongsiLencana() {
+    return SizedBox(
+      width: double.infinity,
+      child: FilledButton.icon(
+        style: FilledButton.styleFrom(
+          minimumSize: const Size.fromHeight(52),
+          backgroundColor: Warna.utama.withValues(alpha: 0.12),
+          foregroundColor: Warna.utama,
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(18),
+          ),
+        ),
+        onPressed: _menyediakanLencana ? null : _kongsiLencana,
+        icon: _menyediakanLencana
+            ? const SizedBox(
+                width: 20,
+                height: 20,
+                child: CircularProgressIndicator(
+                  strokeWidth: 2.6,
+                  color: Warna.utama,
+                ),
+              )
+            : const Icon(Icons.workspace_premium_rounded),
+        label: Text(
+          _menyediakanLencana
+              ? 'Menyediakan gambar...'
+              : 'Kongsi Koleksi Lencana',
+          style: Teks.biasa.copyWith(
+            color: Warna.utama,
+            fontWeight: FontWeight.w800,
+          ),
+        ),
+      ),
     );
   }
 
@@ -489,35 +606,48 @@ class _KadRekod extends StatelessWidget {
             ],
           ),
           const SizedBox(height: 12),
-          Wrap(
-            spacing: 10,
-            runSpacing: 10,
-            children: [
-              _PetakRekod(
-                ikon: Icons.local_fire_department_rounded,
-                warna: const Color(0xFFFF7043),
-                nilai: '${kemajuan.rentetanTerpanjang}',
-                label: 'betul berturut',
-              ),
-              _PetakRekod(
-                ikon: Icons.check_circle_rounded,
-                warna: const Color(0xFF2E7D32),
-                nilai: '${kemajuan.jumlahBetul}',
-                label: 'jawapan betul',
-              ),
-              _PetakRekod(
-                ikon: Icons.emoji_events_rounded,
-                warna: const Color(0xFFD4A017),
-                nilai: '${kemajuan.kertasSempurna}',
-                label: 'kertas sempurna',
-              ),
-              _PetakRekod(
-                ikon: Icons.calendar_month_rounded,
-                warna: Warna.utama,
-                nilai: '${kemajuan.rentetanHari}',
-                label: 'hari berturut',
-              ),
-            ],
+          // Grid 2 x 2 — lebar setiap petak dikira daripada ruang yang
+          // **benar-benar** ada, bukan daripada saiz skrin. Pada iPad (atau
+          // skrin lebar lain) cara lama menggunakan lebar skrin dan menyemak
+          // dua petak ke satu baris, lalu ruang kanan kekal kosong.
+          LayoutBuilder(
+            builder: (context, ruang) {
+              final lebar = (ruang.maxWidth - 10) / 2;
+              return Wrap(
+                spacing: 10,
+                runSpacing: 10,
+                children: [
+                  _PetakRekod(
+                    lebar: lebar,
+                    ikon: Icons.local_fire_department_rounded,
+                    warna: const Color(0xFFFF7043),
+                    nilai: '${kemajuan.rentetanTerpanjang}',
+                    label: 'betul berturut',
+                  ),
+                  _PetakRekod(
+                    lebar: lebar,
+                    ikon: Icons.check_circle_rounded,
+                    warna: const Color(0xFF2E7D32),
+                    nilai: '${kemajuan.jumlahBetul}',
+                    label: 'jawapan betul',
+                  ),
+                  _PetakRekod(
+                    lebar: lebar,
+                    ikon: Icons.emoji_events_rounded,
+                    warna: const Color(0xFFD4A017),
+                    nilai: '${kemajuan.kertasSempurna}',
+                    label: 'kertas sempurna',
+                  ),
+                  _PetakRekod(
+                    lebar: lebar,
+                    ikon: Icons.calendar_month_rounded,
+                    warna: Warna.utama,
+                    nilai: '${kemajuan.rentetanHari}',
+                    label: 'hari berturut',
+                  ),
+                ],
+              );
+            },
           ),
           const SizedBox(height: 14),
           _StripTujuhHari(kemajuan: kemajuan),
@@ -530,11 +660,15 @@ class _KadRekod extends StatelessWidget {
 /// Satu angka dalam kad rekod.
 class _PetakRekod extends StatelessWidget {
   const _PetakRekod({
+    required this.lebar,
     required this.ikon,
     required this.warna,
     required this.nilai,
     required this.label,
   });
+
+  /// Lebar petak — dikira oleh `LayoutBuilder` daripada ruang sebenar.
+  final double lebar;
 
   final IconData ikon;
   final Color warna;
@@ -544,7 +678,7 @@ class _PetakRekod extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      width: (MediaQuery.sizeOf(context).width - 60) / 2,
+      width: lebar,
       child: Row(
         children: [
           Container(
@@ -590,7 +724,21 @@ class _StripTujuhHari extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final hariIni = DateTime.now();
-    return Row(
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Row(
+          children: [
+            const Icon(Icons.date_range_rounded, size: 14, color: Colors.black45),
+            const SizedBox(width: 5),
+            Text(
+              '7 hari terakhir — bulatan bertanda ialah hari belajar',
+              style: Teks.label.copyWith(color: Colors.black45),
+            ),
+          ],
+        ),
+        const SizedBox(height: 8),
+        Row(
       children: [
         for (var i = 6; i >= 0; i--)
           Padding(
@@ -629,6 +777,8 @@ class _StripTujuhHari extends StatelessWidget {
               ],
             ),
           ),
+      ],
+        ),
       ],
     );
   }

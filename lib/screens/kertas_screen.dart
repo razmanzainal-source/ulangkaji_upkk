@@ -2062,9 +2062,27 @@ class _KertasScreenState extends State<KertasScreen> {
         final kiri = _padanTerpilih[s.id];
         if (kiri == null) return;
         final baharu = Map<int, int>.from(padanan);
-        // Satu item kanan hanya boleh dipakai sekali — pilih semula jika perlu.
-        baharu.removeWhere((_, kanan) => kanan == asal);
-        baharu[kiri] = asal;
+        if (baharu[kiri] == asal) {
+          // Ketik semula pasangan yang **sama** — padanan itu dibuang.
+          //
+          // Tanpa ini, padanan yang salah tidak boleh dibetulkan apabila
+          // semua item kanan sudah terpakai: tiada cip lain yang boleh
+          // dipilih, jadi murid tersangkut.
+          baharu.remove(kiri);
+        } else {
+          // Satu item kanan hanya boleh dipakai sekali — ia dipindah kepada
+          // item yang sedang dipilih, dan pemilik lamanya kehilangan
+          // padanannya.
+          baharu.removeWhere((_, kanan) => kanan == asal);
+          baharu[kiri] = asal;
+        }
+        _padanTerpilih[s.id] = null;
+        _simpan(s, JawapanPadan(baharu));
+      },
+      // Buang padanan — butang silang pada nota padanan di bawah item kiri.
+      onBuangPadanan: (i) {
+        if (!padanan.containsKey(i)) return;
+        final baharu = Map<int, int>.from(padanan)..remove(i);
         _padanTerpilih[s.id] = null;
         _simpan(s, JawapanPadan(baharu));
       },

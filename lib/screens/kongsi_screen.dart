@@ -23,7 +23,12 @@ class KongsiScreen extends StatefulWidget {
     required this.teks,
     required this.namaFail,
     required this.namaSimpan,
+    this.tajuk = 'Kongsi keputusan',
   });
+
+  /// Tajuk skrin — "Kongsi keputusan" untuk slip markah, "Kongsi lencana"
+  /// untuk kad koleksi lencana.
+  final String tajuk;
 
   /// Bait PNG kad keputusan.
   final Uint8List imej;
@@ -96,7 +101,7 @@ class _KongsiScreenState extends State<KongsiScreen> {
         backgroundColor: Warna.utama,
         foregroundColor: Colors.white,
         elevation: 0,
-        title: const Text('Kongsi keputusan', style: Teks.sederhana),
+        title: Text(widget.tajuk, style: Teks.sederhana),
       ),
       body: SafeArea(
         child: Column(

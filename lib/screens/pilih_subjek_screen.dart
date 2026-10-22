@@ -332,7 +332,7 @@ class _KadSubjek extends StatelessWidget {
                   onPressed: onMula,
                   icon: const Icon(Icons.play_arrow_rounded, size: 21),
                   label: const Text(
-                    'Mula kertas',
+                    'Percubaan',
                     style: TextStyle(fontSize: 16, fontWeight: FontWeight.w800),
                   ),
                   style: FilledButton.styleFrom(

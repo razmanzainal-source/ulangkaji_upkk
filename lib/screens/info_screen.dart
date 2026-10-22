@@ -104,6 +104,74 @@ class _InfoScreenState extends State<InfoScreen> {
                 ],
               ),
               const SizedBox(height: 12),
+              const _Kotak(
+                tajuk: 'Ciri-ciri',
+                ikon: Icons.auto_awesome_rounded,
+                kanak: [
+                  _Ciri(
+                    ikon: Icons.assignment_rounded,
+                    tajuk: '12 kertas UPKK sebenar',
+                    butiran:
+                        'Enam subjek bagi 2024 dan 2025 — boleh dijawab terus '
+                        'dalam app, dengan skema jawapan rasmi.',
+                  ),
+                  _Ciri(
+                    ikon: Icons.bolt_rounded,
+                    tajuk: 'Latih tubi',
+                    butiran:
+                        'Sepuluh soalan untuk ulang kaji pantas. Boleh keluar '
+                        'bila-bila masa, tiada markah dan tiada gred.',
+                  ),
+                  _Ciri(
+                    ikon: Icons.timer_rounded,
+                    tajuk: 'Kertas percubaan',
+                    butiran:
+                        '70 markah dalam 1 jam 15 minit, mengikut format rasmi '
+                        'UPKK dengan bahagian A hingga E.',
+                  ),
+                  _Ciri(
+                    ikon: Icons.widgets_rounded,
+                    tajuk: 'Pelbagai bentuk soalan',
+                    butiran:
+                        'Objektif, benar salah, padankan, susun, isi tempat '
+                        'kosong dan soalan bertulis — semuanya boleh dijawab '
+                        'dengan tulisan Jawi.',
+                  ),
+                  _Ciri(
+                    ikon: Icons.volume_up_rounded,
+                    tajuk: 'Suara baca untuk setiap soalan',
+                    butiran:
+                        'Semua ayat dibacakan dengan suara perempuan yang '
+                        'sama. Bahasa Arab dibaca dengan suara Arab, dan '
+                        'terdapat butang "Dengar" pada soalan mahupun jawapan.',
+                  ),
+                  _Ciri(
+                    ikon: Icons.workspace_premium_rounded,
+                    tajuk: 'Lencana dan rekod',
+                    butiran:
+                        'Empat tahap lencana bagi setiap subjek (70%, 80%, '
+                        '90%, 95%), lima lencana global, rekod jawapan '
+                        'betul berturut dan rekod hari belajar.',
+                  ),
+                  _Ciri(
+                    ikon: Icons.ios_share_rounded,
+                    tajuk: 'Kongsi RESULT',
+                    butiran:
+                        'Slip markah dan kad koleksi lencana boleh dikongsi '
+                        'ke WhatsApp, Facebook atau dihantar melalui mana-mana '
+                        'aplikasi lain.',
+                  ),
+                  _Ciri(
+                    ikon: Icons.wifi_off_rounded,
+                    tajuk: 'Tanpa Internet',
+                    butiran:
+                        'App berfungsi sepenuhnya di luar talian. Tiada akaun, '
+                        'tiada iklan, dan semua rekod kekal di dalam telefon '
+                        'ini sahaja.',
+                  ),
+                ],
+              ),
+              const SizedBox(height: 12),
               _Kotak(
                 tajuk: 'Kertas sebenar',
                 ikon: Icons.folder_copy_rounded,
@@ -150,6 +218,64 @@ class _InfoScreenState extends State<InfoScreen> {
           ),
         ),
       ],
+    );
+  }
+}
+
+/// Satu ciri app — ikon, tajuk dan penerangan ringkas.
+class _Ciri extends StatelessWidget {
+  const _Ciri({
+    required this.ikon,
+    required this.tajuk,
+    required this.butiran,
+  });
+
+  final IconData ikon;
+  final String tajuk;
+  final String butiran;
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: const EdgeInsets.only(bottom: 12),
+      child: Row(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Container(
+            width: 34,
+            height: 34,
+            alignment: Alignment.center,
+            decoration: BoxDecoration(
+              color: Warna.utama.withValues(alpha: 0.10),
+              borderRadius: BorderRadius.circular(10),
+            ),
+            child: Icon(ikon, size: 18, color: Warna.utama),
+          ),
+          const SizedBox(width: 10),
+          Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  tajuk,
+                  style: Teks.label.copyWith(
+                    color: Warna.dakwat,
+                    fontWeight: FontWeight.w800,
+                  ),
+                ),
+                const SizedBox(height: 2),
+                Text(
+                  butiran,
+                  style: Teks.cop.copyWith(
+                    color: Colors.black.withValues(alpha: 0.72),
+                    height: 1.45,
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ],
+      ),
     );
   }
 }
