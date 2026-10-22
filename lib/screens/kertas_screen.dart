@@ -324,16 +324,29 @@ class _KertasScreenState extends State<KertasScreen> {
   /// Arab bagi subjek Bahasa Arab. Rakaman dikongsi mengikut teks (lihat
   /// [Suara.kunciPilihan]), jadi teks yang berulang tidak berbunyi dua kali
   /// dan tidak mengambil dua kali ruang.
-  void _dengar(String teks) {
+  void _dengar(SoalanKertas s, String teks) {
     if (!_latihTubi || teks.trim().isEmpty) return;
-    unawaited(Suara.instance.sebutPilihan(teks));
+    // Soalan dibaca **dahulu**, baru teksnya. Tanpa soalan, murid mendengar
+    // satu jawapan tanpa konteks — dia tidak tahu jawapan itu menjawab
+    // apa. Ini paling penting bagi butang di sebelah pilihan jawapan yang
+    // betul: menekan butang itu photocer中心的 soalan, bukan sekadar perkataan
+    // jawapan.
+    unawaited(
+      Suara.instance.sebutSoalanDanJawapan(
+        id: s.id,
+        sandaran: s.rumi.isEmpty ? s.soalan : s.rumi,
+        segmenJawapan: [
+          [teks],
+        ],
+      ),
+    );
   }
 
   /// Butang dengar bagi satu teks, atau `null` apabila tiada apa yang boleh
   /// disebut — kertas percubaan, teks kosong, atau pilihan gambar (emoji).
-  VoidCallback? _butangDengar(String teks) {
+  VoidCallback? _butangDengar(SoalanKertas s, String teks) {
     if (!_latihTubi || teks.trim().isEmpty) return null;
-    return () => _dengar(teks);
+    return () => _dengar(s, teks);
   }
 
   /// Adakah soalan ini sudah ada jawapan?
@@ -1897,7 +1910,7 @@ class _KertasScreenState extends State<KertasScreen> {
       jawapan: dipilih,
       warna: warna,
       onDengar: _latihTubi
-          ? (i) => _dengar(s.jawapanArab ? s.item[i].teks : s.item[i].rumi)
+          ? (i) => _dengar(s, s.jawapanArab ? s.item[i].teks : s.item[i].rumi)
           : null,
       onJawab: (i, kategori) {
         final baharu = List<int>.from(dipilih);
@@ -1954,8 +1967,9 @@ class _KertasScreenState extends State<KertasScreen> {
                           .trim()
                           .isNotEmpty)
                     IconButton(
-                      tooltip: 'Dengar soalan ini',
+                      tooltip: 'Dengar soalan dan ayat ini',
                       onPressed: () => _dengar(
+                        s,
                         s.jawapanArab ? s.item[i].teks : s.item[i].rumi,
                       ),
                       iconSize: 20,
@@ -1980,7 +1994,7 @@ class _KertasScreenState extends State<KertasScreen> {
                 keadaan: dipilih.length > i && dipilih[i] == j
                     ? KeadaanPilihan.dipilih
                     : KeadaanPilihan.biasa,
-                onDengar: _butangDengar(
+                onDengar: _butangDengar(s, 
                   s.jawapanArab
                       ? s.item[i].pilihan[j]
                       : (i < s.item.length &&
@@ -2016,7 +2030,7 @@ class _KertasScreenState extends State<KertasScreen> {
       jawapan: dipilih,
       warna: warna,
       onDengar: _latihTubi
-          ? (i) => _dengar(s.jawapanArab ? s.item[i].teks : s.item[i].rumi)
+          ? (i) => _dengar(s, s.jawapanArab ? s.item[i].teks : s.item[i].rumi)
           : null,
       onJawab: (i, nilai) {
         final baharu = List<bool?>.from(dipilih);
@@ -2052,10 +2066,10 @@ class _KertasScreenState extends State<KertasScreen> {
       // sebelum memadankannya. Indeks yang dihantar ialah indeks **asal**,
       // supaya teks yang disebut sepadan dengan teks yang dipaparkan.
       onDengarKiri: _latihTubi
-          ? (i) => _dengar(s.pasangan[i].kiriRumi)
+          ? (i) => _dengar(s, s.pasangan[i].kiriRumi)
           : null,
       onDengarKanan: _latihTubi
-          ? (asal) => _dengar(s.pasangan[asal].kananRumi)
+          ? (asal) => _dengar(s, s.pasangan[asal].kananRumi)
           : null,
       onPilihKiri: (i) => setState(() => _padanTerpilih[s.id] = i),
       onPilihKanan: (asal) {
@@ -2114,7 +2128,7 @@ class _KertasScreenState extends State<KertasScreen> {
       // semula, dan teks yang disebut mesti ikut kad yang ditekan.
       onDengar: _latihTubi
           ? (i) {
-              if (i >= 0 && i < susunan.length) _dengar(rumiPada(susunan[i]));
+              if (i >= 0 && i < susunan.length) _dengar(s, rumiPada(susunan[i]));
             }
           : null,
       onSusun: (lama, baru) {
@@ -2148,6 +2162,7 @@ class _KertasScreenState extends State<KertasScreen> {
       // Latih tubi sahaja: ayat dan setiap perkataan bank boleh didengar.
       onDengarAyat: _latihTubi
           ? (i) => _dengar(
+                s,
                 s.jawapanArab
                     ? s.item[i].teks
                     : (i < s.item.length ? s.item[i].rumi : ''),
@@ -2155,6 +2170,7 @@ class _KertasScreenState extends State<KertasScreen> {
           : null,
       onDengarKata: _latihTubi
           ? (asal) => _dengar(
+                s,
                 asal < s.bankRumi.length ? s.bankRumi[asal] : '',
               )
           : null,

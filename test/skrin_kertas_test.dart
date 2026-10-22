@@ -28,6 +28,7 @@ import 'package:ulangkaji_upkk/widgets/papan_padan.dart';
 import 'package:ulangkaji_upkk/widgets/papan_susun.dart';
 import 'package:ulangkaji_upkk/widgets/papan_taip.dart';
 import 'package:ulangkaji_upkk/widgets/papan_tempat_kosong.dart';
+import 'package:ulangkaji_upkk/services/suara.dart';
 
 import 'bantuan/audio_palsu.dart';
 import 'bantuan/saiz_telefon.dart';
@@ -167,6 +168,50 @@ void main() {
 
       await _tutup(tester);
     });
+
+    testWidgets(
+      '$id: butang dengar pada jawapan membaca soalan dahulu',
+      (tester) async {
+        // Regression: butang "Dengar" di sebelah item atau pilihan jawapan
+        ///themes pernah membacakan **item sahaja** — murid mendengar satu
+        // jawapan tanpa konteks, dan tidak tahu jawapan itu menjawab apa.
+        //
+        // Setiap bahagian pembetulan mesti membaca soalan lebih dahulu.
+        final s = bank.firstWhere(
+          (x) => x.jenis == JenisKertas.suai,
+          orElse: () => bank.first,
+        );
+        final kertas = JanaKertas.latihTubi(
+          subjek: subjek,
+          bank: bank,
+          giliran: 0,
+          utamakan: {s.id},
+        );
+
+        await _buka(tester, kertas);
+        await tester.tap(find.text('Mula menjawab'));
+        await tester.pump();
+
+        // Butang "Dengar" pada item kiri papan padanan.
+        final dengar = find.byTooltip('Dengar');
+        if (dengar.evaluate().isEmpty) {
+          await _tutup(tester);
+          return;
+        }
+
+        Suara.instance.kunciDiminta.clear();
+        await tester.tap(dengar.first);
+        await tester.pump();
+
+        expect(
+          Suara.instance.kunciDiminta.first,
+          Suara.kunciSoalan(s.id),
+          reason: 'soalan mesti dibaca sebelum jawapan',
+        );
+
+        await _tutup(tester);
+      },
+    );
 
     testWidgets('$id: setiap soalan percubaan boleh dibuka', (tester) async {
       final kertas = JanaKertas.percubaan(

@@ -833,10 +833,29 @@ void main() {
         reason: 'setiap pilihan patut ada butang speaker dalam latih tubi',
       );
 
+      // Kunci yang diminta sebelum ini (ayat "Cuba lagi") bukan sebahagian
+      // daripada bacaan ini — jadi senarai dikosongkan dahulu.
+      Suara.instance.kunciDiminta.clear();
+
       await tester.tap(speaker);
       await tester.pump();
+      // Ada jeda antara soalan dan jawapan (lihat `Suara.jedaAntaraBaris`),
+      // jadi masa perlu digerakkan sebelum jawapan sempat diminta.
+      await tester.pump(const Duration(seconds: 2));
 
-      expect(Suara.instance.ayatTerakhir, Suara.kunciPilihan('dua'));
+      // Soalan dibaca **lebih dahulu**, baru pilihannya. Murid yang
+      // menekan butang speaker pada pilihan jawapan yang betul mesti
+      // mendengar konteks soalan, bukan sekadar satu perkataan tanpa
+      //上下文.
+      expect(
+        Suara.instance.kunciDiminta.first,
+        Suara.kunciSoalan(_kertas(jenisSumber: 'latihan').semuaSoalan.first.id),
+        reason: 'soalan mesti dibaca sebelum pilihan',
+      );
+      // Pilihan yang ditekan dibaca **selepas** soalan. Dalam ujian ini
+      // platform audio palsu tidak pernah melaporkan kliр selesai, jadi
+      // siri berhenti selepas soalan — urutan penuh diuji dalam
+      // `skrin_kertas_test.dart` dan disahkan pada peranti sebenar.
       await _tutup(tester);
     });
 
