@@ -234,4 +234,70 @@ void main() {
       expect(Suara.sapaan, contains('Assalamualaikum'));
     });
   });
+
+  group('cara jawapan dibacakan', () {
+    test('betul/salah disebut dengan perkataan, bukan tanda', () {
+      final s = SoalanKertas(
+        id: 'uji-bs',
+        bahagian: 'C',
+        nombor: 1,
+        jenis: JenisKertas.betulSalah,
+        soalan: 'تنداكن ✓ ڤد ڤياتاءن يغ بتول دان ✗ ڤد ڤياتاءن يغ ساله.',
+        rumi: 'Tandakan betul atau salah.',
+        markah: 2,
+        item: const [
+          ItemKertas(
+            nombor: 1,
+            teks: 'محمد سوك برماءين دڤادغ.',
+            rumi: 'Muhammad suka bermain di padang.',
+            betul: true,
+          ),
+          ItemKertas(
+            nombor: 2,
+            teks: 'امبوي، جنتيقث باجو خديجة؟',
+            rumi: 'Amboi, cantiknya baju Khadijah?',
+            betul: false,
+          ),
+        ],
+      );
+
+      // Tanda ✓/✗ tidak boleh disebut enjin suara — perkataan "Betul"/"Salah"
+      // mesti disebut supaya murid tahu mana yang betul.
+      expect(s.jawapanDengarBaris.first, contains('Betul'));
+      expect(s.jawapanDengarBaris.last, contains('Salah'));
+      expect(s.jawapanDengarSegmen.first, contains('Betul'));
+      expect(s.jawapanDengarSegmen.last, contains('Salah'));
+    });
+
+    test('isi tempat kosong: ayat dibaca dahulu, kemudian jawapannya', () {
+      final s = SoalanKertas(
+        id: 'uji-tk',
+        bahagian: 'C',
+        nombor: 1,
+        jenis: JenisKertas.tempatKosong,
+        soalan: 'ايسي تمڤت کوسوڠ دغن جواڤن يغ بتول.',
+        rumi: 'Isi tempat kosong dengan jawapan yang betul.',
+        markah: 2,
+        item: const [
+          ItemKertas(
+            nombor: 1,
+            teks: 'تRoutine ____ ديري.',
+            rumi: 'Tetamu ialah orang yang datang ____.',
+          ),
+        ],
+        bank: const ['bertandang'],
+        bankRumi: const ['bertandang'],
+      );
+
+      // Ayat dahulu, kemudian jawapan — supaya murid tahu jawapan itu
+      // mengisi tempat kosong yang mana.
+      expect(
+        s.jawapanDengarSegmen.first,
+        ['Tetamu ialah orang yang datang ____.', 'bertandang'],
+      );
+      // Ayat juga mesti dipaparkan dalam semakan.
+      expect(s.ayatSoalan.first, contains('Tetamu'));
+      expect(s.jawapanTempatKosongPaparan, contains('bertandang'));
+    });
+  });
 }

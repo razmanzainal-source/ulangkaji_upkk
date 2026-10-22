@@ -464,8 +464,21 @@ def jawapan_dengar_segmen(s: dict, rujuk_arab: bool) -> list[list[str]]:
     elif jenis == "betul_salah":
         for it in s.get("item") or []:
             asal = it.get("teks", "") if rujuk_arab else it.get("rumi", "")
-            keluar.append([asal])
-    elif jenis in ("tempat_kosong", "susun"):
+            # Tanda ✓/✗ tidak boleh disebut — ayat diikuti "Betul"/"Salah".
+            keluar.append([asal, "Betul" if it.get("betul") is True else "Salah"])
+    elif jenis == "tempat_kosong":
+        # Ayat dibaca dahulu, kemudian jawapan bagi tempat kosong itu.
+        bank_rumi = s.get("bankRumi") or []
+        n = 0
+        for it in s.get("item") or []:
+            ayat = it.get("teks", "") if rujuk_arab else it.get("rumi", "")
+            for _ in range(str(ayat).count("____")):
+                jawapan = bank_rumi[n] if n < len(bank_rumi) else ""
+                n += 1
+                if not str(jawapan).strip():
+                    continue
+                keluar.append([str(ayat), jawapan])
+    elif jenis == "susun":
         satu = pelayan(s.get("bank") or [], s.get("bankRumi") or [])
         if satu is not None:
             keluar.append([satu])

@@ -452,8 +452,12 @@ class SoalanKertas {
           .where((i) => i.jawapan >= 0 && i.jawapan < i.pilihanRumi.length)
           .map((i) => i.pilihanRumi[i.jawapan])
           .join(', '),
-      JenisKertas.betulSalah =>
-        item.map((i) => '${i.rumi} (${i.betul == true ? '✓' : '✗'})').join('\n'),
+      // Tanda ✓/✗ **tidak boleh disebut** oleh enjin suara — murid hanya
+      // mendengar ayat tanpa tahu itu betul atau salah. Karena itu ayat
+      // diikuti perkataan "Betul" atau "Salah".
+      JenisKertas.betulSalah => item
+          .map((i) => '${i.rumi} — ${i.betul == true ? 'Betul' : 'Salah'}')
+          .join('\n'),
       JenisKertas.suai =>
         pasangan.map((p) => '${p.kiriRumi} — ${p.kananRumi}').join('\n'),
       JenisKertas.susun => urutanRumi.join(' '),
@@ -470,6 +474,60 @@ class SoalanKertas {
             i.rumi,
       ].join('\n'),
     };
+  }
+
+
+  /// Ayat-ayat soalan yang perlu dipaparkan dan dibacakan.
+  ///
+  /// Bagi soalan `tempatKosong`, **arahan** ("Isi tempat kosong dengan
+  /// jawapan yang betul") bukan soalannya — soalannya ialah ayat dengan
+  /// tempat kosong. Tanpa ayat ini, murid hanya mendengar senarai perkataan
+  /// tanpa tahu perkataan itu mengisi tempat kosong yang mana.
+  List<String> get ayatSoalan {
+    if (jenis == JenisKertas.tempatKosong) {
+      return [for (final i in item) jawapanArab ? i.teks : i.rumi];
+    }
+    if (soalan.isEmpty) return const [];
+    return [jawapanArab ? soalan : rumi];
+  }
+
+  /// Jawapan bagi setiap tempat kosong, mengikut turutan ayat.
+  ///
+  ///-bank perkataan diisikan mengikut turutan ini, jadi jawapan tempat
+  /// kosong pertama ialah perkataan pertama dalam bank.
+  List<String> get jawapanKosong {
+    final hasil = <String>[];
+    var n = 0;
+    for (final it in item) {
+      final bil = '____'.allMatches(jawapanArab ? it.teks : it.rumi).length;
+      for (var k = 0; k < bil; k++) {
+        hasil.add(n < bankRumi.length ? bankRumi[n] : '');
+        n++;
+      }
+    }
+    return hasil;
+  }
+
+  /// Paparan jawapan bagi soalan `tempatKosong` — ayat, kemudian jawapannya.
+  ///
+  /// Tanpa ayat, murid tidak dapat menyemak jawapan sendiri kerana panel
+  /// hanya menunjukkan senarai perkataan.
+  String get jawapanTempatKosongPaparan {
+    final hasil = <String>[];
+    var n = 0;
+    for (final i in item) {
+      final bil = '____'.allMatches(jawapanArab ? i.teks : i.rumi).length;
+      final jawapan = <String>[];
+      for (var k = 0; k < bil; k++) {
+        if (n < bank.length) jawapan.add(bank[n]);
+        n++;
+      }
+      if (jawapan.isEmpty) continue;
+      hasil.add(
+        '${jawapanArab ? i.teks : i.rumi} → ${jawapan.join('، ')}',
+      );
+    }
+    return hasil.join('\n');
   }
 
   /// Adakah jawapan soalan ini mengandungi satu baris bagi setiap item?
@@ -557,10 +615,11 @@ class SoalanKertas {
       case JenisKertas.betulSalah:
         for (var i = 0; i < item.length; i++) {
           final it = item[i];
+          // "Betul"/"Salah" — tanda ✓/✗ tidak boleh disebut.
           keluar.add(
             jawapanArab
-                ? '${it.teks} (${it.betul == true ? '✓' : '✗'})'
-                : '${it.rumi} (${it.betul == true ? '✓' : '✗'})',
+                ? '${it.teks} — ${it.betul == true ? 'Betul' : 'Salah'}'
+                : '${it.rumi} — ${it.betul == true ? 'Betul' : 'Salah'}',
           );
         }
       case JenisKertas.tempatKosong:
@@ -599,6 +658,24 @@ class SoalanKertas {
   ///   * `betul_salah` — nombor, pernyataan;
   ///   * `senarai`/`tulis`/`huraian` — nombor, satu jawapan.
   List<List<String>> get jawapanDengarSegmen {
+    // Soalan "isi tempat kosong": ayat dibaca dahulu, kemudian jawapan bagi
+    // tempat kosong itu. Tanpa ayat, murid tidak tahu jawapan yang mana
+    // mengisi tempat kosong yang mana.
+    if (jenis == JenisKertas.tempatKosong) {
+      final hasil = <List<String>>[];
+      var n = 0;
+      for (final it in item) {
+        final bil = '____'.allMatches(jawapanArab ? it.teks : it.rumi).length;
+        for (var k = 0; k < bil; k++) {
+          final jawapan = n < bankRumi.length ? bankRumi[n] : '';
+          n++;
+          if (jawapan.isEmpty) continue;
+          hasil.add([jawapanArab ? it.teks : it.rumi, jawapan]);
+        }
+      }
+      return hasil;
+    }
+
     final baris = jawapanDengarBaris;
     if (baris.isEmpty) return const [];
 
@@ -645,7 +722,11 @@ class SoalanKertas {
       case JenisKertas.betulSalah:
         if (indeks >= item.length) return const [];
         final it = item[indeks];
-        return [jawapanArab ? it.teks : it.rumi];
+        // "Betul"/"Salah" mesti disebut — tanda ✓/✗ tidak boleh dibacakan.
+        return [
+          jawapanArab ? it.teks : it.rumi,
+          it.betul == true ? 'Betul' : 'Salah',
+        ];
       default:
         final baris = jawapanDengarBaris;
         if (indeks >= baris.length) return const [];

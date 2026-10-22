@@ -660,7 +660,18 @@ class _SoalanBertanda extends StatelessWidget {
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          if (soalan.soalan.isNotEmpty)
+                          // Bagi soalan "isi tempat kosong", **ayat dengan
+                          // tempat kosong** inilah soalan sebenar — arahan
+                          // ("Isi tempat kosong…") tidak membantu murid
+                          // menyemak jawapan sendiri.
+                          if (soalan.jenis == JenisKertas.tempatKosong)
+                            for (final ayat in soalan.item)
+                              Dwibahasa(
+                                jawi: ayat.teks,
+                                rumi: ayat.rumi,
+                                gayaJawi: Teks.jawiKecil,
+                              )
+                          else if (soalan.soalan.isNotEmpty)
                             Dwibahasa(
                               jawi: soalan.soalan,
                               rumi: soalan.rumi,
@@ -833,7 +844,7 @@ class _SoalanBertanda extends StatelessWidget {
             .join('  '),
       JenisKertas.suai => s.pasangan.map((p) => p.kanan).join(', '),
       JenisKertas.susun => s.urutan.join(' '),
-      JenisKertas.tempatKosong => s.bank.join(', '),
+      JenisKertas.tempatKosong => s.jawapanTempatKosongPaparan,
       JenisKertas.tulis ||
       JenisKertas.huraian => s.rubrik.idea.map((i) => i.maksud).join(' • '),
       JenisKertas.senarai => s.jawapanContoh.join(' • '),

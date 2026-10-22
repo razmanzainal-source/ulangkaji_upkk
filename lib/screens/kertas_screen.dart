@@ -1824,13 +1824,17 @@ class _KertasScreenState extends State<KertasScreen> {
   /// Bagi soalan berbilang item, setiap baris diberi nombor supaya ia
   /// sepadan dengan penomboran pada kertas asal.
   String _teksPembetulan(SoalanKertas s) {
+    // Bagi soalan "isi tempat kosong", paparkan ayat bersama jawapannya —
+    //senarai perkataan sahaja tidak membantu murid menyemak.
+    if (s.jenis == JenisKertas.tempatKosong) {
+      return s.jawapanTempatKosongPaparan;
+    }
     final contoh = s.jawapanPenuhTeks.trim();
     if (contoh.isNotEmpty) {
       return s.jawapanPenuhTeksBernombor;
     }
     return s.rubrik.idea.map((i) => '• ${i.maksud}').join('\n').trim();
   }
-
   /// Baris-baris jawapan pembetulan yang boleh dibacakan — untuk suara.
   List<String> _jawapanDengar(SoalanKertas s) => s.jawapanDengarBaris;
 
