@@ -1816,23 +1816,17 @@ class _KertasScreenState extends State<KertasScreen> {
   /// Teks pembetulan yang **boleh dibacakan** — medan Rumi, atau medan Arab
   /// bagi subjek Bahasa Arab.
   ///
-  /// Hanya soalan **bertulis** (`tulis` dan `huraian`) yang mempunyai teks
-  /// di sini. Soalan lain sengaja dilangkau kerana jawapan betulnya masih
-  /// terpapar di skrin dengan butang speaker sendiri — menambah butang kedua
-  /// pada panel pembetulan hanya mengulang bunyi yang murid sudah boleh
-  /// dapat, sambil memaksa app membundel ratusan klip yang hampir serupa.
+  /// Panel pembetulan ialah tempat murid mendapat jawapan sebenar. Semasa
+  /// menjawab, murid hanya melihat jawapan yang **dia pilih** sahaja — jadi
+  /// butang di sini ialah satu-satunya cara ia boleh **mendengar soalan
+  /// sekali lagi** kemudian **mendengar jawapan betul** bersambung.
   ///
-  /// Sebaliknya, jawapan contoh bagi soalan bertulis **tiada** klip langsung
-  /// (ia dijana daripada medan `jawapanContoh`), jadi butang ini ialah satu-
-  /// satunya cara murid mendengar jawapan yang sepatutnya ditulisnya.
+  /// Ini penting untuk soalan `kumpulan`, `suai`, `bulat` dan `tempat_kosong`
+  /// juga: jawapan betulnya kelihatan di skrin, tetapi murid perlu tahu ayat
+  /// soalan dahulu untuk memahami kenapa jawapan itu betul.
   ///
   /// `null` apabila tiada teks yang boleh dibacakan.
   String? _teksPembetulanDengar(SoalanKertas s) {
-    if (s.jenis != JenisKertas.tulis &&
-        s.jenis != JenisKertas.huraian &&
-        s.jenis != JenisKertas.senarai) {
-      return null;
-    }
     var dengar = s.jawapanPenuhDengar.trim();
     if (dengar.isEmpty && s.rubrik.ada) {
       // Soalan `tulis`/`huraian` yang dinilai dengan rubrik tidak menyimpan

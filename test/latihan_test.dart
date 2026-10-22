@@ -190,6 +190,58 @@ Kertas _kertasHuraianRubrik() {
   );
 }
 
+/// Kertas latihan dengan satu soalan `kumpulan` (suaikan dengan jawapan yang
+/// betul) — bentuk soalan yang paling kerap muncul dalam Bahagian A Adab.
+///
+/// Panel pembetulan bagi soalan `kumpulan` mesti turut mempunyai butang
+/// speaker: jawapan betulnya dipaparkan sebagai "pernyataan — kategori", dan
+/// murid perlu mendengar ayat soalan dahulu untuk memahami kenapa jawapan itu
+/// betul.
+Kertas _kertasKumpulan() {
+  return Kertas(
+    id: 'uji-kumpulan',
+    subjekId: 'adab',
+    tajuk: 'Adab — Ujian',
+    sumber: 'Ujian',
+    jenisSumber: 'latihan',
+    bahagian: [
+      BahagianKertas(
+        nama: 'A',
+        markah: 4,
+        arahan: 'سوايکن ڤد جواڤن.',
+        arahanRumi: 'Suaikan dengan jawapan.',
+        soalan: [
+          SoalanKertas(
+            id: 'uji-d1',
+            bahagian: 'A',
+            nombor: 1,
+            jenis: JenisKertas.kumpulan,
+            soalan: 'منتجات كربونات دان سيمڤورن ڤلاڤن برجاکڠ بيسه.',
+            rumi: 'Minuman berkarbonat dan Schmitt di kedai minuman.',
+            markah: 4,
+            kategori: const ['دالوم مسجد', 'دالوم ڤونيسڤي'],
+            kategoriRumi: const ['Di dalam masjid', 'Di dalam universiti'],
+            item: const [
+              ItemKertas(
+                nombor: 1,
+                teks: 'منتجات كربونات',
+                rumi: 'Minuman berkarbonat',
+                jawapan: 1,
+              ),
+              ItemKertas(
+                nombor: 2,
+                teks: 'مبيع دغما',
+                rumi: 'Pasaran malam',
+                jawapan: 0,
+              ),
+            ],
+          ),
+        ],
+      ),
+    ],
+  );
+}
+
 /// Lepaskan widget supaya pemasa kertas dan pemasa audio berhenti.
 Future<void> _tutup(WidgetTester tester) async {
   await tester.pumpWidget(const SizedBox());
@@ -598,6 +650,48 @@ void main() {
       expect(
         Suara.instance.ayatTerakhir,
         Suara.kunciSoalan('uji-c1'),
+        reason: 'soalan mesti dimainkan dahulu',
+      );
+      await _tutup(tester);
+    });
+
+    testWidgets('soalan kumpulan: panel pembetulan ada butang speaker', (
+      tester,
+    ) async {
+      // Soalan "suaikan dengan jawapan yang betul" — jawapan betulnya
+      // dipaparkan sebagai "pernyataan — kategori". Murid masih memerlukan
+      // butang untuk mendengar soalan sekali lagi sebelum jawapan.
+      await _bukaSebagaiLaluan(tester, _kertasKumpulan());
+      await tester.tap(find.text('Mula menjawab'));
+      await tester.pump();
+
+      // Item 1 salah (sepatutnya universiti), item 2 betul (masjid).
+      final masjid = find.text('Di dalam masjid');
+      await tester.ensureVisible(masjid.first);
+      await tester.pump();
+      await tester.tap(masjid.first);
+      await tester.pump();
+      await tester.ensureVisible(masjid.last);
+      await tester.pump();
+      await tester.tap(masjid.last);
+      await tester.pump();
+
+      expect(find.text('Pembetulan — jawapan sebenar'), findsOneWidget);
+      final speaker = find.byTooltip('Dengar soalan & jawapan betul');
+      expect(
+        speaker,
+        findsOneWidget,
+        reason: 'panel pembetulan soalan kumpulan mesti ada butang speaker',
+      );
+
+      await tester.ensureVisible(speaker);
+      await tester.pump();
+      await tester.tap(speaker);
+      await tester.pump(const Duration(milliseconds: 500));
+
+      expect(
+        Suara.instance.ayatTerakhir,
+        Suara.kunciSoalan('uji-d1'),
         reason: 'soalan mesti dimainkan dahulu',
       );
       await _tutup(tester);

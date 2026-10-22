@@ -50,6 +50,7 @@ from concurrent.futures import ThreadPoolExecutor
 AKAR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 FOLDER_SUBJEK = os.path.join(AKAR, "assets", "content", "subjek.json")
 FOLDER_BANK = os.path.join(AKAR, "assets", "content", "bank")
+FOLDER_SEBENAR = os.path.join(AKAR, "assets", "content", "sebenar")
 KELUARAN = os.path.join(AKAR, "assets", "bunyi", "suara")
 MANIFEST = os.path.join(KELUARAN, "manifest.json")
 
@@ -554,6 +555,25 @@ def kumpul_kerja(penapis: set[str] | None = None) -> list[tuple[str, str, str]]:
             # `_teks` sudah memilih suara bagi setiap klip, jadi suara subjek
             # tidak lagi ditetapkan di sini.
             kerja.extend(_teks(soalan, rujuk_arab))
+
+    # Kertas sebenar — satu fail bagi setiap kertas (`adab-2025.json`, …).
+    # Nama fail membawa id subjek: `<subjek>-<tahun>`. Soalan sebenar mesti
+    # mendengar suara Yasmin yang sama seperti bank; tanpa ini, kertas sebenar
+    # jatuh kepada TTS peranti yang selalunya tiada suara Melayu.
+    if os.path.isdir(FOLDER_SEBENAR):
+        for nama_fail_json in sorted(os.listdir(FOLDER_SEBENAR)):
+            if not nama_fail_json.endswith(".json"):
+                continue
+            sid_subjek = nama_fail_json[:-5].rsplit("-", 1)[0]
+            if penapis and sid_subjek not in penapis:
+                continue
+            with open(os.path.join(FOLDER_SEBENAR, nama_fail_json),
+                      encoding="utf-8") as f:
+                kertas = json.load(f)
+            rujuk_arab = sid_subjek in SUBJEK_ARAB
+            for bahagian in kertas.get("bahagian") or []:
+                for soalan in bahagian.get("soalan") or []:
+                    kerja.extend(_teks(soalan, rujuk_arab))
 
     # Pembetulan sebutan dijalankan di sini supaya nama fail audio sentiasa
     # sepadan dengan teks yang benar-benar disebut. Klip bercampur suara
