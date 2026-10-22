@@ -354,6 +354,26 @@ def _teks_pilihan(pilihan) -> list[str]:
     return keluar
 
 
+JENIS_BERBILANG = {"kumpulan", "suai", "betul_salah"}
+
+
+def nombor_baris(s: dict, baris: list[str], gaya: str) -> str:
+    """Cermin `_nomborkanBaris` dalam Dart.
+
+    Paparan: `1. jawapan`. Suara: `Soalan 1, jawapan` — supaya nombor
+    kedengaran dengan jelas sebelum jawapan dibaca.
+    """
+    jenis = s.get("jenis")
+    if jenis not in JENIS_BERBILANG:
+        return "\n".join(baris)
+    n = len(s.get("pasangan") or []) if jenis == "suai" else len(s.get("item") or [])
+    if n < 2 or len(baris) < 2:
+        return "\n".join(baris)
+    if gaya == "papar":
+        return "\n".join(f"{i + 1}. {b}" for i, b in enumerate(baris))
+    return "\n".join(f"Soalan {i + 1}, {b}" for i, b in enumerate(baris))
+
+
 def jawapan_penuh_teks(s: dict) -> str:
     """Cermin `SoalanKertas.jawapanPenuhTeks` dalam Dart (tulisan asal)."""
     jc = s.get("jawapanContoh") or []
@@ -428,12 +448,12 @@ def jawapan_penuh_dengar(s: dict, rujuk_arab: bool) -> str:
         for it in s.get("item") or []:
             tanda = "\u2713" if it.get("betul") is True else "\u2717"
             keluar.append(f"{it.get('rumi', '')} ({tanda})")
-        return "\n".join(keluar)
+        return nombor_baris(s, keluar, "suara")
     if jenis == "suai":
-        return "\n".join(
+        return nombor_baris(s, [
             f"{p.get('kiriRumi', '')} \u2014 {p.get('kananRumi', '')}"
             for p in s.get("pasangan") or []
-        )
+        ], "suara")
     if jenis == "susun":
         return " ".join(s.get("urutanRumi") or [])
     if jenis == "tempat_kosong":
@@ -447,7 +467,7 @@ def jawapan_penuh_dengar(s: dict, rujuk_arab: bool) -> str:
                 keluar.append(f"{it.get('rumi', '')} \u2014 {kategori[jaw]}")
             else:
                 keluar.append(it.get("rumi", ""))
-        return "\n".join(keluar)
+        return nombor_baris(s, keluar, "suara")
     if jenis == "senarai":
         return "\n".join(s.get("jawapanContohRumi") or s.get("jawapanContoh") or [])
     if jenis in ("tulis", "huraian"):

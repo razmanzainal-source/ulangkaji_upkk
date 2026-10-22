@@ -699,6 +699,11 @@ class _SoalanBertanda extends StatelessWidget {
             ),
           ),
           const SizedBox(width: 8),
+          // Dengar soalan & jawapan — butang ini membolehkan murid
+          // mengulang soalan sekali lagi dan mendengar jawapan sebenar,
+          // supaya lebih mudah diingat.
+          _butangDengar(soalan),
+          const SizedBox(width: 4),
           // Markah ditulis seperti guru menanda dengan pen merah.
           Container(
             padding: const EdgeInsets.symmetric(horizontal: 9, vertical: 4),
@@ -740,6 +745,36 @@ class _SoalanBertanda extends StatelessWidget {
     return s.item.length == 1
         ? pertama
         : '$pertama  (+${s.item.length - 1} lagi)';
+  }
+
+  /// Butang "Dengar soalan & jawapan" untuk satu soalan dalam semakan.
+  ///
+  /// Skrin semakan ialah tempat murid ulang kaji: dia perlu melihat soalan
+  /// sekali lagi dan mendengar jawapan sebenar. Rakaman yang diperlukan
+  /// sudah ada dalam app (`q-<id>` untuk soalan, `o-<teks>` untuk jawapan),
+  /// jadi butang ini **tidak menambah saiz app** langsung.
+  Widget _butangDengar(SoalanKertas s) {
+    return IconButton(
+      tooltip: 'Dengar soalan & jawapan',
+      onPressed: () => _dengarSoalan(soalan),
+      icon: const Icon(Icons.volume_up_rounded, size: 20),
+      color: Warna.utama,
+      visualDensity: VisualDensity.compact,
+      padding: EdgeInsets.zero,
+      constraints: const BoxConstraints(minWidth: 32, minHeight: 32),
+    );
+  }
+
+  /// Mainkan soalan dahulu, kemudian jawapan betulnya.
+  Future<void> _dengarSoalan(SoalanKertas s) async {
+    await Suara.instance.sebutKunci(
+      Suara.kunciSoalan(s.id),
+      sandaran: s.rumi.isEmpty ? s.soalan : s.rumi,
+    );
+    final jawapan = s.jawapanPenuhDengarBernombor;
+    if (jawapan != null) {
+      await Suara.instance.sebutPilihan(jawapan);
+    }
   }
 
   /// Jawapan murid dalam bentuk teks ringkas.

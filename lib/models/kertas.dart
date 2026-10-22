@@ -472,6 +472,61 @@ class SoalanKertas {
     };
   }
 
+  /// Adakah jawapan soalan ini mengandungi satu baris bagi setiap item?
+  ///
+  /// Soalan `kumpulan`, `suai` dan `betul_salah` memaparkan jawapan dalam
+  /// beberapa baris. Tanpa nombor, baris-baris itu dibaca sebagai satu ayat
+  /// panjang dan murid tidak tahu jawapan yang mana milik item yang mana —
+  ///especially apabila ia dibacakan dengan suara.
+  bool get jawapanBerbilang {
+    final n = switch (jenis) {
+      JenisKertas.suai => pasangan.length,
+      JenisKertas.kumpulan || JenisKertas.betulSalah => item.length,
+      _ => 0,
+    };
+    return n > 1;
+  }
+
+  /// Jawapan penuh untuk **paparan** — setiap baris didahului nombor item.
+  ///
+  /// Nombor ini sepadan dengan penomboran pada kertas asal, jadi murid boleh
+  /// mencadangkan jawapan dengan jawapan soalan.
+  String get jawapanPenuhTeksBernombor =>
+      _nomborkanBaris(jawapanPenuhTeks.trim(), papar: true);
+
+  /// Jawapan penuh untuk **suara** — setiap baris didahului nombor soalan.
+  ///
+  /// Teks ini juga menjadi **kunci audio** (`o-<teks>`) yang diminta skrin
+  /// pembetulan dan skrin semakan, jadi ia mesti sama antara kedua-duanya.
+  ///
+  /// `null` apabila tiada jawapan yang boleh dibacakan.
+  String? get jawapanPenuhDengarBernombor {
+    var dengar = jawapanPenuhDengar.trim();
+    if (dengar.isEmpty && rubrik.ada) {
+      // Soalan `tulis`/`huraian` yang dinilai dengan rubrik tidak menyimpan
+      // `jawapanContoh`; jawapan betulnya ialah isi rubrik.
+      dengar = rubrik.idea.map((i) => i.maksud).join('\n').trim();
+    }
+    if (dengar.isEmpty) return null;
+    return _nomborkanBaris(dengar, papar: false);
+  }
+
+  /// Tulis semula jawapan berbilang baris dengan nombor di hadapan setiap
+  /// baris.
+  ///
+  /// Paparan guna `1.` — sepadan dengan kertas asal. Suara guna
+  /// `Soalan 1,` supaya nombor itu kedengaran dengan jelas sebelum jawapan
+  /// dibaca.
+  String _nomborkanBaris(String teks, {required bool papar}) {
+    if (!jawapanBerbilang) return teks;
+    final baris = teks.split('\n');
+    if (baris.length < 2) return teks;
+    return [
+      for (var i = 0; i < baris.length; i++)
+        papar ? '${i + 1}. ${baris[i]}' : 'Soalan ${i + 1}, ${baris[i]}',
+    ].join('\n');
+  }
+
   /// Kunci jawapan bagi soalan `suai` — indeks kanan yang betul bagi setiap
   /// item kiri.
   ///

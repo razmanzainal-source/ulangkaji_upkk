@@ -1801,18 +1801,6 @@ class _KertasScreenState extends State<KertasScreen> {
     await Suara.instance.sebutPilihan(jawapanTeks);
   }
 
-  /// Teks jawapan betul untuk panel pembetulan.
-  ///
-  /// Soalan bertulis memakai **jawapan contoh** dahulu. Jika bank tiada
-  /// jawapan contoh (soalan huraian dinilai dengan rubrik), idea rubrik yang
-  /// dipaparkan — sekurang-kurangnya murid nampak perkara apa yang sepatutnya
-  /// ada dalam jawapannya, bukan sekadar "salah".
-  String _teksPembetulan(SoalanKertas s) {
-    final contoh = s.jawapanPenuhTeks.trim();
-    if (contoh.isNotEmpty) return contoh;
-    return s.rubrik.idea.map((i) => '• ${i.maksud}').join('\n').trim();
-  }
-
   /// Teks pembetulan yang **boleh dibacakan** — medan Rumi, atau medan Arab
   /// bagi subjek Bahasa Arab.
   ///
@@ -1821,21 +1809,31 @@ class _KertasScreenState extends State<KertasScreen> {
   /// butang di sini ialah satu-satunya cara ia boleh **mendengar soalan
   /// sekali lagi** kemudian **mendengar jawapan betul** bersambung.
   ///
-  /// Ini penting untuk soalan `kumpulan`, `suai`, `bulat` dan `tempat_kosong`
-  /// juga: jawapan betulnya kelihatan di skrin, tetapi murid perlu tahu ayat
-  /// soalan dahulu untuk memahami kenapa jawapan itu betul.
+  /// Bagi soalan berbilang item, **nombor soalan didahului** sebelum
+  /// jawapannya. Tanpa itu, beberapa jawapan dibaca sebagai satu ayat
+  /// bersambung dan murid tidak tahu jawapan yang mana milik item yang mana.
   ///
-  /// `null` apabila tiada teks yang boleh dibacakan.
-  String? _teksPembetulanDengar(SoalanKertas s) {
-    var dengar = s.jawapanPenuhDengar.trim();
-    if (dengar.isEmpty && s.rubrik.ada) {
-      // Soalan `tulis`/`huraian` yang dinilai dengan rubrik tidak menyimpan
-      // `jawapanContoh`; jawapan betulnya ialah isi rubrik. Bacakan maksud
-      // setiap isi supaya murid mendengar perkara yang sepatutnya ditulis.
-      dengar = s.rubrik.idea.map((i) => i.maksud).join('\n').trim();
+  /// Teks jawapan betul untuk panel pembetulan.
+  ///
+  /// Soalan bertulis memakai **jawapan contoh** dahulu. Jika bank tiada
+  /// jawapan contoh (soalan huraian dinilai dengan rubrik), idea rubrik yang
+  /// dipaparkan — sekurang-kurangnya murid nampak perkara apa yang sepatutnya
+  /// ada dalam jawapannya, bukan sekadar "salah".
+  ///
+  /// Bagi soalan berbilang item, setiap baris diberi nombor supaya ia
+  /// sepadan dengan penomboran pada kertas asal.
+  String _teksPembetulan(SoalanKertas s) {
+    final contoh = s.jawapanPenuhTeks.trim();
+    if (contoh.isNotEmpty) {
+      return s.jawapanPenuhTeksBernombor;
     }
-    return dengar.isEmpty ? null : dengar;
+    return s.rubrik.idea.map((i) => '• ${i.maksud}').join('\n').trim();
   }
+
+  /// `null` apabila tiada teks yang boleh dibacakan.
+  String? _teksPembetulanDengar(SoalanKertas s) =>
+      s.jawapanPenuhDengarBernombor;
+
 
   // --- Badan jawapan mengikut jenis soalan ---------------------------------
 
