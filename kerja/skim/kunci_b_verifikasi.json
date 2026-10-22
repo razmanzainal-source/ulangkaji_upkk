@@ -1,0 +1,38 @@
+{
+  "_catatan": "Kunci jawapan Bahagian B yang disahkan secara VISUAL daripada halaman skim rasmi (muka 13/14). Sumber authorities: gambar skim rasmi, bukan OCR.",
+  "_cara_baca": "Jadual kunci dicetak sebagai pasangan 'huruf + nombor' (huruf di kiri nombor). Huruf = ا(0) ب(1) ج(2) د(3).",
+  "_tarikh_sahkan": "2026-10-22",
+  "kertas": {
+    "jawi-2024": {
+      "muka": 13,
+      "kunci": "ب ا ب د ج د ج ا ب د",
+      "kunci_indeks": [1, 0, 1, 3, 2, 3, 2, 0, 1, 3],
+      "status": "sama dengan JSON"
+    },
+    "sirah-2024": {
+      "muka": 13,
+      "kunci": "ا ج ج د ج ب د ا ب ب",
+      "kunci_indeks": [0, 2, 2, 3, 2, 1, 3, 0, 1, 1],
+      "status": "3 pembetulan: B7, B8"
+    },
+    "sirah-2025": {
+      "muka": 13,
+      "kunci": "د ب ا ا ج ا ج ب د ب",
+      "kunci_indeks": [3, 1, 0, 0, 2, 0, 2, 1, 3, 1],
+      "status": "1 pembetulan: B9"
+    },
+    "jawi-2025": {
+      "muka": 14,
+      "kunci": "ج ب ج ب ا ج ا د ج د",
+      "kunci_indeks": [2, 1, 2, 1, 0, 2, 0, 3, 2, 3],
+      "status": "5 pembetulan: B1, B3, B6, B7, B8"
+    },
+    "ibadah-2025": {
+      "muka": 13,
+      "susun_atur": "menegak (nombor kanan, huruf kiri)",
+      "kunci": "ج ب د ب ا د ج ب د ب",
+      "kunci_indeks": [2, 1, 3, 1, 0, 3, 2, 1, 3, 1],
+      "status": "5 pembetulan: B5, B6, B7, B9, B10"
+    }
+  }
+}
