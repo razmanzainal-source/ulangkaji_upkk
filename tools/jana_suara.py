@@ -84,6 +84,36 @@ PITCH = os.environ.get("PITCH", "+24Hz")
 # guru bacaan murid Tahun 5.
 BITRATE = os.environ.get("BITRATE", "48000")
 
+# Nada khas bagi dua perkataan yang paling kerap disebut dan paling **rata**
+# bunyinya.
+#
+# "Betul" dan "Salah" ialah satu perkataan sahaja, jadi tiada konteks untuk
+# memberi penekanan — dengan kadar dan pitch lalai, bunyinya kedengaran
+# robotik ("pelek"), berbeza dengan ayat-ayat panjang yang kedengaran hidup.
+# Dua perkataan ini deshalb itu dirakam dengan nada sendiri: "Betul" lebih
+# tinggi dan lebih laju (gembira), "Salah" lebih rendah dan lebih perlahan
+# (lembut — ini teguran, bukan hukuman).
+#
+# Kunci app kekal `o-Betul` dan `o-Salah`; hanya **teks yang disebut** dan
+# nada yang berubah, jadi tiada kod app perlu disentuh.
+#
+# Teks yang disebut bagi "Betul" dan "Salah" ialah dua perkataan **Melayu**,
+# jadi ia mesti sentiasa dibaca dengan suara Melayu — subjek Bahasa Arab
+# membaca soalannya dengan suara Arab, dan "Betul" yang dibaca dengan
+# sebutan Arab ("بِتُول") kedengaran teruk dan tidak bermakna.
+NADA_KHAS: dict[str, tuple[str, str, str]] = {
+    "Betul": ("Betul!", "+12%", "+52Hz"),
+    "Salah": ("Salah.", "-15%", "+2Hz"),
+}
+
+# Songsangan `NADA_KHAS`: teks yang **disebut** -> (kadar, pitch).
+#
+# Pencarian dibuat semasa jana, apabila teks yang disebut sudah diketahui
+# (bukan teks asal yang dipaparkan).
+_NADA_BACA: dict[str, tuple[str, str]] = {
+    v[0]: (v[1], v[2]) for v in NADA_KHAS.values()
+}
+
 CUBAAN = 3  # bilangan percubaan semula jika rangkaian gagal
 
 # Penanda bagi klip yang disintesis daripada beberapa segmen berlainan suara.
@@ -209,23 +239,29 @@ def nama_fail(teks: str, suara: str) -> str:
 
     Dua soalan dengan bunyi yang sama berkongsi satu fail, jadi bank yang
     mengulang ayat tidak menggandakan saiz audio.
+
+    Kadar dan pitch yang **sebenar** digunakan ikut dalam cap: perkataan
+    dengan nada khas (lihat `NADA_KHAS`) mesti mendapat nama fail berbeza,
+    supaya menukar nadanya tidak meninggalkan fail lama yang masih digunakan.
     """
+    kadar, pitch = _NADA_BACA.get(teks, (KADAR, PITCH))
     cap = hashlib.sha1(
-        f"{suara}\u0000{KADAR}\u0000{PITCH}\u0000{teks}".encode("utf-8")
+        f"{suara}\u0000{kadar}\u0000{pitch}\u0000{teks}".encode("utf-8")
     ).hexdigest()[:16]
     return cap + ".m4a"
 
 
 def _edge_tts(teks: str, mp3: str, suara: str) -> None:
     """Rakam satu segmen dengan edge-tts menjadi fail mp3 sementara."""
+    kadar, pitch = _NADA_BACA.get(teks, (KADAR, PITCH))
     for cuba in range(CUBAAN):
         try:
             hasil = subprocess.run(
                 [
                     sys.executable, "-m", "edge_tts",
                     "--voice", suara,
-                    f"--rate={KADAR}",
-                    f"--pitch={PITCH}",
+                    f"--rate={kadar}",
+                    f"--pitch={pitch}",
                     "--text", teks,
                     "--write-media", mp3,
                 ],
@@ -598,8 +634,18 @@ def _teks(s: dict, rujuk_arab: bool) -> list[tuple[str, str, str]]:
         contoh Melayu-dalam-Jawi dan ayat bercampur suara.
         """
         mentah = (teks or "").strip()
-        bunyi_teks = bunyi if bunyi is not None else _baca(teks, rujuk_arab)
-        suara_teks = suara if suara is not None else suara_subjek
+
+        # "Betul" dan "Salah" mendapat teks dan nada khas — dan **sentiasa**
+        # dibaca dengan suara Melayu, walaupun soalan itu daripada subjek
+        # Bahasa Arab (lihat `NADA_KHAS`).
+        khas = NADA_KHAS.get(mentah)
+        if khas is not None:
+            bunyi_teks = khas[0]
+            suara_teks = SUARA
+        else:
+            bunyi_teks = bunyi if bunyi is not None else _baca(teks, rujuk_arab)
+            suara_teks = suara if suara is not None else suara_subjek
+
         # Teks yang hanya mengandungi tanda baca (contohnya "!") tidak boleh
         # disebut. edge-tts menolaknya, dan kunci tanpa fail akan tergantung
         # dalam manifest.

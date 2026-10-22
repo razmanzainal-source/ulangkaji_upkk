@@ -6,18 +6,23 @@ import 'package:flutter/material.dart';
 /// berubah-ubah antara skrin mengganggu kanak-kanak yang mudah hilang tumpuan,
 /// dan menjadikan app kelihatan tidak kemas. Ketebalan (weight) dan warna
 /// boleh diubah dengan `copyWith`, tetapi **saiz** mesti datang dari sini.
+///
+/// Saiz di sini sengaja sederhana: telefon Android yang saiz fon sistemnya
+/// dibesarkan membesarkan seluruh teks, jadi saiz asas yang lebih besar
+/// menjadikan ayat soalan melimpah. Had teks sistem dikendalikan di
+/// `MaterialApp.builder` dalam `main.dart`, bukan di sini.
 class Teks {
   Teks._();
 
   /// Nombor skor besar — "62 / 70".
   static const TextStyle gergasi = TextStyle(
-    fontSize: 36,
+    fontSize: 33,
     fontWeight: FontWeight.w900,
     height: 1.1,
   );
 
   /// Emoji besar dalam pilihan jawapan.
-  static const TextStyle gambar = TextStyle(fontSize: 32, height: 1.2);
+  static const TextStyle gambar = TextStyle(fontSize: 29, height: 1.2);
 
   /// Ayat Jawi — saiz besar supaya huruf Jawi yang halus mudah dibaca.
   ///
@@ -32,7 +37,7 @@ class Teks {
   /// Ayat Jawi pada kepala kertas dan label kecil.
   static const TextStyle jawiKecil = TextStyle(
     fontFamily: 'Jawi',
-    fontSize: 17,
+    fontSize: 16,
     height: 1.6,
   );
 
@@ -40,7 +45,7 @@ class Teks {
   ///
   /// Sengaja lebih kecil dan berwarna lembut: ia membantu murid dan ibu bapa
   /// yang belum lancar Jawi, tanpa menenggelamkan ayat Jawi yang sebenar.
-  static const TextStyle rumi = TextStyle(fontSize: 14, height: 1.4);
+  static const TextStyle rumi = TextStyle(fontSize: 13, height: 1.4);
 
   /// Teks jawapan bertulis dalam tulisan Jawi.
   static const TextStyle jawiTaip = TextStyle(
@@ -51,58 +56,58 @@ class Teks {
 
   /// Tajuk skrin — "Syabas!", "Kertas selesai!".
   static const TextStyle tajuk = TextStyle(
-    fontSize: 26,
+    fontSize: 24,
     fontWeight: FontWeight.w900,
     height: 1.15,
   );
 
   /// Teks soalan dan butang utama.
   static const TextStyle besar = TextStyle(
-    fontSize: 22,
+    fontSize: 20,
     fontWeight: FontWeight.w800,
     height: 1.3,
   );
 
   /// Teks pilihan jawapan, tajuk kad utama.
   static const TextStyle sederhana = TextStyle(
-    fontSize: 19,
+    fontSize: 17.5,
     fontWeight: FontWeight.w700,
     height: 1.3,
   );
 
   /// Teks biasa dan butang kecil.
-  static const TextStyle biasa = TextStyle(fontSize: 16, height: 1.35);
+  static const TextStyle biasa = TextStyle(fontSize: 15, height: 1.35);
 
   /// Baris meta di bawah tajuk.
-  static const TextStyle kecil = TextStyle(fontSize: 14, height: 1.35);
+  static const TextStyle kecil = TextStyle(fontSize: 13, height: 1.35);
 
   /// Label paling kecil — kiraan soalan, peratus, nota.
-  static const TextStyle label = TextStyle(fontSize: 12.5, height: 1.3);
+  static const TextStyle label = TextStyle(fontSize: 11.5, height: 1.3);
 
   /// Huruf dalam lencana pilihan jawapan (A, B, C, D) dan pilihan Jawi
   /// (ا, ب, ج, د). Lencana Jawi lebih besar kerana mata hurufnya lebih halus.
   static const TextStyle lencana = TextStyle(
-    fontSize: 18,
+    fontSize: 17,
     fontWeight: FontWeight.w900,
     height: 1,
   );
 
   static const TextStyle lencanaJawi = TextStyle(
     fontFamily: 'Jawi',
-    fontSize: 22,
+    fontSize: 21,
     height: 1.4,
   );
 
   /// Huruf gred besar di dalam cop kertas percubaan.
   static const TextStyle gred = TextStyle(
-    fontSize: 40,
+    fontSize: 36,
     fontWeight: FontWeight.w900,
     height: 1,
   );
 
   /// Huruf kecil bergaya cop pada kertas percubaan ("GRED", "UPKK ADAB").
   static const TextStyle cop = TextStyle(
-    fontSize: 10.5,
+    fontSize: 10,
     fontWeight: FontWeight.w900,
     letterSpacing: 1.4,
     height: 1.25,

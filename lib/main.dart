@@ -40,6 +40,30 @@ class AplikasiUlangkajiUpkk extends StatelessWidget {
           foregroundColor: Colors.white,
         ),
       ),
+      // Hadkan saiz teks mengikut tetapan sistem.
+      //
+      // Android membolehkan saiz fon sistem dinaikkan sehingga 1.3 atau
+      // lebih, dan Flutter ikut membesarkan seluruh teks app. Untuk murid,
+      // ayat soalan dan pilihan jawapan yang membesar terlalu banyak memaksa
+      // mereka menggeser jauh, dan butang "Seterusnya" boleh keluar dari
+      // skrin.
+      //
+      // Julat 0.9 hingga 1.15 mengekalkan sebahagian kecil pembesaran yang
+      // murid mungkin perlukan, tetapi tidak membiarkan app pecah. Perkara ini
+      // sengaja dibuat di sini sahaja — setiap saiz huruf dalam `Teks` kekal
+      // tetap, supaya semua skrin kelihatan sama.
+      builder: (context, child) {
+        final mq = MediaQuery.of(context);
+        return MediaQuery(
+          data: mq.copyWith(
+            textScaler: mq.textScaler.clamp(
+              minScaleFactor: 0.9,
+              maxScaleFactor: 1.15,
+            ),
+          ),
+          child: child ?? const SizedBox.shrink(),
+        );
+      },
       home: const SkrinMuatTurun(),
     );
   }

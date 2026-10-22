@@ -146,12 +146,39 @@ class BankKertas {
             'assets/content/sebenar/${k.folder}.json',
           );
           final json = jsonDecode(teks) as Map<String, dynamic>;
-          _kertasJawab[k.folder] = Kertas.dariJson(json);
+          _kertasJawab[k.folder] = Kertas.dariJson(_tambahBahasa(json, s.bahasa));
         } catch (_) {
           // Tahun ini belum ditranskripkan — biarkan sebagai imbasan sahaja.
         }
       }
     }
+  }
+
+  /// Letakkan **bahasa subjek** pada setiap soalan satu kertas.
+  ///
+  /// Fail kertas sebenar tidak menyimpan medan `bahasa` — ia datang daripada
+  /// subjek. Tanpa medan ini, `SoalanKertas` mengguna nilai lalai 'jawi',
+  /// dan kertas Bahasa Arab akan:
+  ///
+  ///   * dibacakan dengan **transliterasi Rumi** dan suara Melayu, bukan
+  ///     tulisan Arab dan suara Arab; dan
+  ///   * meminta klip `o-<transliterasi>` yang tidak pernah dijana — jadi
+  ///     jawapan yang dibacakan jatuh ke enjin suara peranti, yang berbunyi
+  ///     robotik berbanding rekaman app.
+  ///
+  /// Fail bank latihan sudah membawa medan ini sendiri; hanya kertas sebenar
+  /// yang perlu dibaiki di sini.
+  static Map<String, dynamic> _tambahBahasa(
+    Map<String, dynamic> json,
+    String bahasa,
+  ) {
+    for (final b in (json['bahagian'] as List?) ?? const <dynamic>[]) {
+      for (final q in (b as Map<String, dynamic>)['soalan'] as List? ??
+          const <dynamic>[]) {
+        (q as Map<String, dynamic>)['bahasa'] = bahasa;
+      }
+    }
+    return json;
   }
 
   /// Set semula untuk ujian.

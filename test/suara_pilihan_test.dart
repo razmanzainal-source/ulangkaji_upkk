@@ -133,6 +133,118 @@ void main() {
     expect(hilang, isEmpty, reason: 'fail tiada: ${hilang.take(10).join(', ')}');
   });
 
+  // Soalan "betul salah" menyebut perkataan "Betul" atau "Salah" — tanda
+  // ✓/✗ tidak boleh dibacakan oleh enjin suara.
+  //
+  // Tiga perkara di sini mudah pecah tanpa disedari:
+  //
+  //   1. Kunci yang diminta app mesti sama dengan kunci yang dijana
+  //      penjana. Kalau tidak, app jatuh ke enjin suara **peranti** — dan
+  //      bunyi itu robotik ("pelek"), berbeza dengan rekaman Yasmin yang
+  //      dipakai di seluruh app.
+  //   2. "Betul" dan "Salah" mesti **sentiasa** dibaca dengan suara Melayu.
+  //      Subjek Bahasa Arab membaca soalannya dengan suara Arab, dan
+  //      "Betul" yang dibaca dengan sebutan Arab kedengaran teruk.
+  //   3. Setiap segmen jawapan — termasuk nombor item — mesti ada
+  //      rakaman, kalau tidak butang speaker senyap.
+  group('soalan betul salah', () {
+    /// Semua soalan `betul_salah` daripada bank latihan dan kertas sebenar.
+    List<SoalanKertas> semua() {
+      final keluar = <SoalanKertas>[];
+
+      for (final id in _subjekAdaBank()) {
+        keluar.addAll(_bank(id));
+      }
+
+      final dir = Directory('$_akar/assets/content/sebenar');
+      if (dir.existsSync()) {
+        // Bahasa datang daripada **subjek**, bukan daripada fail kertas —
+        // sama seperti `BankKertas._tambahBahasa`. Tanpa itu, kertas Bahasa
+        // Arab akan kelihatan Rumi, dan klip yang diminta tidak pernah dijana.
+        final bahasaSubjek = <String, String>{
+          for (final s in _json('$_akar/assets/content/subjek.json')['subjek']
+              as List)
+            (s as Map<String, dynamic>)['id'] as String:
+                s['bahasa'] as String? ?? 'jawi',
+        };
+
+        for (final failJson in dir.listSync().whereType<File>()) {
+          if (!failJson.path.endsWith('.json')) continue;
+          final data = _json(failJson.path);
+          final subjekId = (data['subjek'] as String? ?? '').toLowerCase();
+          final bahasa = bahasaSubjek[subjekId] ?? 'jawi';
+          for (final b in (data['bahagian'] as List? ?? const [])) {
+            for (final s in (b['soalan'] as List? ?? const [])) {
+              (s as Map<String, dynamic>)['bahasa'] = bahasa;
+              keluar.add(
+                SoalanKertas.dariJson(
+                  s,
+                  bahagian: (b['nama'] as String?) ?? '',
+                  nombor: 1,
+                ),
+              );
+            }
+          }
+        }
+      }
+      return keluar;
+    }
+
+    List<SoalanKertas> betulSalah() =>
+        semua().where((s) => s.jenis == JenisKertas.betulSalah).toList();
+
+    test('perkataan "Betul" dan "Salah" ada rakaman', () {
+      expect(
+        fail.containsKey(Suara.kunciPilihan('Betul')),
+        isTrue,
+        reason: 'Klip "Betul" tiada — jalankan `python3 tools/jana_suara.py`.',
+      );
+      expect(
+        fail.containsKey(Suara.kunciPilihan('Salah')),
+        isTrue,
+        reason: 'Klip "Salah" tiada — jalankan `python3 tools/jana_suara.py`.',
+      );
+    });
+
+    test('setiap segmen jawapan ada rakaman', () {
+      final tiada = <String>[];
+      for (final s in betulSalah()) {
+        for (final baris in s.jawapanDengarSegmen) {
+          for (final segmen in baris) {
+            if (segmen.trim().isEmpty) continue;
+            if (!RegExp(r'[0-9A-Za-z\u0600-\u06FF]').hasMatch(segmen)) continue;
+            if (!fail.containsKey(Suara.kunciPilihan(segmen))) {
+              tiada.add('${s.id}: $segmen');
+            }
+          }
+        }
+      }
+      expect(
+        tiada,
+        isEmpty,
+        reason:
+            'Segmen ini tiada klip dalam manifest — bunyinya akan jatuh ke '
+            'enjin suara peranti yang robotik: ${tiada.take(10).join('; ')}',
+      );
+    });
+
+    test('perkataan "Betul" dan "Salah" muncul sebagai segmen berasingan', () {
+      // Kalau digabungkan dengan teks lain ("Asy-Salam — Betul"), kunci
+      // `o-` tidak pernah dijana dan bunyinya robotik.
+      for (final s in betulSalah()) {
+        for (final baris in s.jawapanDengarSegmen) {
+          expect(
+            baris.where((x) => x == 'Betul' || x == 'Salah'),
+            isNotEmpty,
+            reason:
+                '${s.id}: baris jawapan tidak mengandungi "Betul"/"Salah" '
+                'sebagai segmen berasingan: $baris',
+          );
+        }
+      }
+    });
+  });
+
   test('setiap soalan ada rakaman', () {
     final tiada = <String>[];
     for (final id in _subjekAdaBank()) {
