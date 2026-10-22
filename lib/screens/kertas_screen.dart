@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 
 import '../models/jawapan.dart';
 import '../models/kertas.dart';
+import '../models/lencana.dart';
 import '../services/kemajuan.dart';
 import '../services/pemarkah.dart';
 import '../services/suara.dart';
@@ -782,7 +783,7 @@ class _KertasScreenState extends State<KertasScreen> {
     }
 
     if (!mounted) return;
-    await _simpanRekod();
+    final lencanaBaru = await _simpanRekod();
     if (!mounted) return;
     // Masa yang sama dengan rekod yang baru disimpan — kad perkongsian mesti
     // memaparkan masa yang sepadan dengan rekod dalam Kemajuan.
@@ -794,6 +795,7 @@ class _KertasScreenState extends State<KertasScreen> {
           kertas: _kertas,
           jawapan: _jawapan,
           saat: saat,
+          lencanaBaru: lencanaBaru,
         ),
       ),
     );
@@ -804,7 +806,10 @@ class _KertasScreenState extends State<KertasScreen> {
   /// Rekod latih tubi ditandakan [RekodPercubaan.latihan] supaya ia tidak
   /// diambil kira sebagai markah terbaik subjek atau purata percubaan — tetapi
   /// ia tetap disimpan, supaya rentetan hari ulang kaji tidak terputus.
-  Future<void> _simpanRekod() async {
+  ///
+  /// Mengembalikan lencana yang **baru** diperoleh dalam sesi ini — senarai
+  /// ini supaya skrin keputusan boleh merayakan achievement itu.
+  Future<List<Lencana>> _simpanRekod() async {
     final masa = _kertas.masaMinit * 60 - _saat;
     await Kemajuan.instance.simpanPercubaan(
       RekodPercubaan(
@@ -822,6 +827,25 @@ class _KertasScreenState extends State<KertasScreen> {
         latihan: _latihTubi,
       ),
     );
+    // Rentetan jawapan betul dikira daripada jawapan **akhir**, bukan
+    // daripada urutan murid menjawab. Murid boleh mengubah jawapan sebelum
+    // menyerahkan kertas, jadi kiraan semasa menjawab akan kadangkala
+    // berbeza dengan kertas yang benar-benar diserahkan.
+    var betul = 0;
+    var kini = 0;
+    var terpanjang = 0;
+    for (final s in _soalan) {
+      if (s.betulPenuh(_jawapan[s.id])) {
+        betul++;
+        kini++;
+        if (kini > terpanjang) terpanjang = kini;
+      } else {
+        kini = 0;
+      }
+    }
+    await Kemajuan.instance.tambahBetul(betul);
+    await Kemajuan.instance.catatRentetan(terpanjang);
+
     for (final s in _soalan) {
       await Kemajuan.instance.rekodJawapan(
         soalanId: s.id,
@@ -829,6 +853,10 @@ class _KertasScreenState extends State<KertasScreen> {
       );
     }
     await Kemajuan.instance.majukanGiliran(_kertas.subjekId);
+
+    // Lencana baharu — lencana markah datang daripada kertas percubaan,
+    // lencana global pula daripada tabiat (kedua-dua mod).
+    return Kemajuan.instance.semakLencana();
   }
 
   // --- Bina ----------------------------------------------------------------

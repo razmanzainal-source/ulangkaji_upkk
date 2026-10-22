@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../models/gred.dart';
 import '../models/kertas.dart';
+import '../models/lencana.dart';
 import '../services/bank_kertas.dart';
 import '../services/kemajuan.dart';
 import '../tema.dart';
@@ -101,6 +102,8 @@ class KadKemajuanPenuh extends StatelessWidget {
             const SizedBox(height: 12),
             _jadualSubjek(dataSubjek),
             const SizedBox(height: 12),
+            _barisLencana(),
+            const SizedBox(height: 12),
             const GarisPutus(),
             const SizedBox(height: 12),
             _jumlahan(totalMarkah, totalPenuh, purata, gredKeseluruhan),
@@ -151,6 +154,62 @@ class KadKemajuanPenuh extends StatelessWidget {
             'Semua Subjek',
             style: Teks.label.copyWith(fontWeight: FontWeight.w800),
           ),
+        ),
+      ],
+    );
+  }
+
+  /// Lencana yang diperoleh — supaya slip yang dikongsi menunjukkan
+  /// pencapaian, bukan sahaja markah.
+  ///
+  /// Lencana **global** sahaja dipaparkan di sini. Lencana markah adalah
+  /// satu bagi setiap subjek, jadi slip akan jadi sangat panjang tanpa
+  /// menambah nilai — nama lencana global sudah cukup untuk menunjukkan
+  /// pencapaian.
+  Widget _barisLencana() {
+    final ada = Kemajuan.instance.lencanaDiperoleh;
+    final didapat = DaftarLencana.global
+        .where((l) => ada.contains(l.id))
+        .toList();
+    if (didapat.isEmpty) return const SizedBox.shrink();
+
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Text(
+          'LENCANA (${didapat.length})',
+          style: Teks.cop.copyWith(color: Warna.dakwat),
+        ),
+        const SizedBox(height: 6),
+        Wrap(
+          spacing: 6,
+          runSpacing: 6,
+          children: [
+            for (final l in didapat)
+              Container(
+                padding:
+                    const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                decoration: BoxDecoration(
+                  color: l.warna.withValues(alpha: 0.10),
+                  borderRadius: BorderRadius.circular(14),
+                  border: Border.all(color: l.warna.withValues(alpha: 0.35)),
+                ),
+                child: Row(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    Icon(l.ikon, size: 13, color: l.warna),
+                    const SizedBox(width: 4),
+                    Text(
+                      l.tajuk,
+                      style: Teks.cop.copyWith(
+                        color: l.warna,
+                        fontWeight: FontWeight.w800,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+          ],
         ),
       ],
     );

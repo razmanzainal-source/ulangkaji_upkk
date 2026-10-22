@@ -237,6 +237,19 @@ class Suara {
   /// sini tanpa menukar penjana bermakna butang speaker menjadi senyap.
   static String kunciPilihan(String teks) => 'o-${teks.trim()}';
 
+  /// Kunci rakaman ayat lencana baharu.
+  ///
+  /// Nama lencana ikut daripada `lib/models/lencana.dart`. Setiap nama ada
+  /// rakamannya sendiri supaya bunyinya sama seperti seluruh app — ayat yang
+  /// dijana dengan enjin suara peranti kedengaran robotik ("pelek").
+  static String kunciLencana(String tajuk) => 'f-lencana-${tajuk.toLowerCase()}';
+
+  /// Sebut ayat lencana baharu.
+  Future<void> sebutLencana(String tajuk) => sebutKunci(
+        kunciLencana(tajuk),
+        sandaran: 'Syabas! Kamu dapat lencana $tajuk.',
+      );
+
   /// Pembetulan sebutan untuk **laluan sandaran sahaja** (TTS peranti).
   ///
   /// Enjin suara sesetengah telefon membaca huruf "c" Bahasa Melayu sebagai

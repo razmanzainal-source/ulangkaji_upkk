@@ -76,16 +76,28 @@ class _PilihSubjekScreenState extends State<PilihSubjekScreen> {
                 tajuk: nama.isEmpty ? 'Ulangkaji UPKK' : 'Assalamualaikum, $nama!',
                 sari: 'Jom ulangkaji KAFA bersama Raz — 6 subjek bertulis, '
                     '70 markah, 1 jam 15 minit, mengikut format UPKK sebenar.',
-                kanak: Row(
+                // `Wrap`, bukan `Row` — cip tambahan akan turun ke baris
+                // kedua pada telefon yang sempit, bukan melimpah keluar dari
+                // skrin.
+                kanak: Wrap(
+                  spacing: 8,
+                  runSpacing: 8,
                   children: [
                     CipStat(
                       ikon: Icons.library_books_rounded,
                       teks: '${subjek.length} subjek',
                     ),
-                    const SizedBox(width: 8),
                     CipStat(
                       ikon: Icons.local_fire_department_rounded,
                       teks: '${Kemajuan.instance.rentetanHari} hari berturut',
+                    ),
+                    CipStat(
+                      ikon: Icons.check_circle_rounded,
+                      teks: '${Kemajuan.instance.jumlahBetul} betul',
+                    ),
+                    CipStat(
+                      ikon: Icons.workspace_premium_rounded,
+                      teks: '${Kemajuan.instance.lencanaDiperoleh.length} lencana',
                     ),
                   ],
                 ),

@@ -7,7 +7,7 @@ kiri dan kanan bercampur.
 
 Skrip ini:
 1. mengimbas kawasan jadual dan mengambil kedudukan (x, y) setiap baris;
-2.集群 mengikut X kepada dua kumpulan (kiri / kanan) — jarak terbesar
+2. Mengcluster mengikut X kepada dua kumpulan (kiri / kanan) — jarak terbesar
    dalam histogram X menjadi pemisah;
 3. mengurutkan setiap kumpulan mengikut Y (atas ke bawah) — jadi baris
    pertama = nombor 1 (kiri) atau 6 (kanan);

@@ -53,7 +53,7 @@ void main() {
         gagal,
         isEmpty,
         reason: 'Kertas berikut gagal di-parse — butang "Jawab" tidak akan '
-            'muncul untuk失败的:\n${gagal.join('\n')}',
+            'muncul untuk kertas yang gagal:\n${gagal.join('\n')}',
       );
     });
 

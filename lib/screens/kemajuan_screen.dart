@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../models/gred.dart';
 import '../models/kertas.dart';
+import '../models/lencana.dart';
 import '../services/bank_kertas.dart';
 import '../services/kemajuan.dart';
 import '../services/kongsi.dart';
@@ -9,6 +10,7 @@ import '../services/tetapan.dart';
 import '../tarikh.dart';
 import '../tema.dart';
 import '../widgets/kad_kemajuan_penuh.dart';
+import '../widgets/lencana_widget.dart';
 import '../widgets/maskot.dart';
 import 'kongsi_screen.dart';
 import 'rumah_screen.dart';
@@ -99,19 +101,30 @@ class _KemajuanScreenState extends State<KemajuanScreen> {
                     : 'Purata anda $purata%. Ulang kaji bahagian yang lemah '
                         'supaya gred naik.',
                 mood: jumlahPercubaan == 0 ? MoodMaskot.fikir : MoodMaskot.gembira,
-                kanak: Row(
+                kanak: Wrap(
+                  spacing: 8,
+                  runSpacing: 8,
                   children: [
                     CipStat(
                       ikon: Icons.assignment_turned_in_rounded,
                       teks: '$jumlahPercubaan percubaan',
                     ),
-                    const SizedBox(width: 8),
                     CipStat(
                       ikon: Icons.local_fire_department_rounded,
                       teks: '${Kemajuan.instance.rentetanHari} hari berturut',
                     ),
+                    CipStat(
+                      ikon: Icons.workspace_premium_rounded,
+                      teks: '${Kemajuan.instance.lencanaDiperoleh.length} lencana',
+                    ),
                   ],
                 ),
+              ),
+            ),
+            SliverPadding(
+              padding: const EdgeInsets.fromLTRB(16, 0, 16, 16),
+              sliver: SliverToBoxAdapter(
+                child: _KadRekod(kemajuan: Kemajuan.instance),
               ),
             ),
             SliverPadding(
@@ -131,6 +144,24 @@ class _KemajuanScreenState extends State<KemajuanScreen> {
                 itemBuilder: (_, i) => _KadSubjek(
                   subjek: subjek[i],
                   ringkasan: Kemajuan.instance.ringkasan(subjek[i].id),
+                ),
+              ),
+            ),
+
+            SliverPadding(
+              padding: const EdgeInsets.fromLTRB(16, 12, 16, 6),
+              sliver: SliverToBoxAdapter(
+                child: Text(
+                  'Pencapaian',
+                  style: Teks.sederhana.copyWith(color: Colors.black87),
+                ),
+              ),
+            ),
+            SliverPadding(
+              padding: const EdgeInsets.fromLTRB(16, 0, 16, 16),
+              sliver: SliverToBoxAdapter(
+                child: _KoleksiLencana(
+                  subjek: BankKertas.instance.subjek,
                 ),
               ),
             ),
@@ -244,6 +275,18 @@ class _KadSubjek extends StatelessWidget {
   final Subjek subjek;
   final RingkasanSubjek ringkasan;
 
+  /// Lencana seterusnya yang perlu dicapai dalam subjek ini.
+  ///
+  /// `null` apabila keempat-empat lencana sudah diperoleh. Lencana
+  /// yang hilang tidak diambil semula — ia kekal.
+  TahapLencana? get _seterusnya {
+    final peratus = ringkasan.peratusTerbaik;
+    for (final t in TahapLencana.values) {
+      if (!t.cukup(peratus)) return t;
+    }
+    return null;
+  }
+
   @override
   Widget build(BuildContext context) {
     final ada = ringkasan.adaRekod;
@@ -300,6 +343,21 @@ class _KadSubjek extends StatelessWidget {
                     '${ringkasan.percubaan} percubaan',
                     style: Teks.label.copyWith(color: Colors.black54),
                   ),
+                  const SizedBox(height: 8),
+                  BarisLencanaMarkah(
+                    subjekId: subjek.id,
+                    namaSubjek: subjek.nama,
+                    ukuran: 28,
+                  ),
+                  if (_seterusnya != null) ...[
+                    const SizedBox(height: 4),
+                    Text(
+                      'Seterusnya: ${_seterusnya!.tajuk} (${_seterusnya!.peratus}%)',
+                      style: Teks.label.copyWith(
+                        color: Colors.black45,
+                      ),
+                    ),
+                  ],
                 ],
               ],
             ),
@@ -391,6 +449,295 @@ class _BarisRekod extends StatelessWidget {
           Text(
             '${rekod.markah}/${rekod.markahPenuh}',
             style: Teks.sederhana.copyWith(color: Colors.black87),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+/// Kad rekod — angka yang membesar dan strip tujuh hari.
+///
+/// Rekod ini sengaja **tidak pernah hilang**. Murid yang melihat
+/// "24 jawapan betul berturut-turut" tahu usahanya dikira, walaupun hari ini
+/// dia tidak mendapat apa-apa yang baharu.
+class _KadRekod extends StatelessWidget {
+  const _KadRekod({required this.kemajuan});
+
+  final Kemajuan kemajuan;
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      padding: const EdgeInsets.all(14),
+      decoration: BoxDecoration(
+        color: Colors.white,
+        borderRadius: BorderRadius.circular(16),
+        border: Border.all(color: Warna.utama.withValues(alpha: 0.18)),
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Row(
+            children: [
+              const Icon(Icons.insights_rounded, size: 18, color: Warna.utama),
+              const SizedBox(width: 6),
+              Text(
+                'Rekod',
+                style: Teks.sederhana.copyWith(color: Warna.utama),
+              ),
+            ],
+          ),
+          const SizedBox(height: 12),
+          Wrap(
+            spacing: 10,
+            runSpacing: 10,
+            children: [
+              _PetakRekod(
+                ikon: Icons.local_fire_department_rounded,
+                warna: const Color(0xFFFF7043),
+                nilai: '${kemajuan.rentetanTerpanjang}',
+                label: 'betul berturut',
+              ),
+              _PetakRekod(
+                ikon: Icons.check_circle_rounded,
+                warna: const Color(0xFF2E7D32),
+                nilai: '${kemajuan.jumlahBetul}',
+                label: 'jawapan betul',
+              ),
+              _PetakRekod(
+                ikon: Icons.emoji_events_rounded,
+                warna: const Color(0xFFD4A017),
+                nilai: '${kemajuan.kertasSempurna}',
+                label: 'kertas sempurna',
+              ),
+              _PetakRekod(
+                ikon: Icons.calendar_month_rounded,
+                warna: Warna.utama,
+                nilai: '${kemajuan.rentetanHari}',
+                label: 'hari berturut',
+              ),
+            ],
+          ),
+          const SizedBox(height: 14),
+          _StripTujuhHari(kemajuan: kemajuan),
+        ],
+      ),
+    );
+  }
+}
+
+/// Satu angka dalam kad rekod.
+class _PetakRekod extends StatelessWidget {
+  const _PetakRekod({
+    required this.ikon,
+    required this.warna,
+    required this.nilai,
+    required this.label,
+  });
+
+  final IconData ikon;
+  final Color warna;
+  final String nilai;
+  final String label;
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: (MediaQuery.sizeOf(context).width - 60) / 2,
+      child: Row(
+        children: [
+          Container(
+            width: 34,
+            height: 34,
+            alignment: Alignment.center,
+            decoration: BoxDecoration(
+              color: warna.withValues(alpha: 0.12),
+              borderRadius: BorderRadius.circular(10),
+            ),
+            child: Icon(ikon, size: 18, color: warna),
+          ),
+          const SizedBox(width: 8),
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              Text(
+                nilai,
+                style: Teks.biasa.copyWith(
+                  color: warna,
+                  fontWeight: FontWeight.w900,
+                ),
+              ),
+              Text(
+                label,
+                style: Teks.label.copyWith(color: Colors.black54),
+              ),
+            ],
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+/// Tujuh titik — hari-hari murid belajar, bermula dari hari ini.
+class _StripTujuhHari extends StatelessWidget {
+  const _StripTujuhHari({required this.kemajuan});
+
+  final Kemajuan kemajuan;
+
+  @override
+  Widget build(BuildContext context) {
+    final hariIni = DateTime.now();
+    return Row(
+      children: [
+        for (var i = 6; i >= 0; i--)
+          Padding(
+            padding: const EdgeInsets.only(right: 8),
+            child: Column(
+              children: [
+                Container(
+                  width: 26,
+                  height: 26,
+                  alignment: Alignment.center,
+                  decoration: BoxDecoration(
+                    color: kemajuan.adaPadaHari(
+                      hariIni.subtract(Duration(days: i)),
+                    )
+                        ? Warna.utama
+                        : Colors.grey.shade200,
+                    shape: BoxShape.circle,
+                  ),
+                  child: Icon(
+                    Icons.check_rounded,
+                    size: 15,
+                    color: Colors.white.withValues(
+                      alpha: kemajuan.adaPadaHari(
+                        hariIni.subtract(Duration(days: i)),
+                      )
+                          ? 1
+                          : 0,
+                    ),
+                  ),
+                ),
+                const SizedBox(height: 3),
+                Text(
+                  _hariPendek(hariIni.subtract(Duration(days: i))),
+                  style: Teks.cop.copyWith(color: Colors.black45),
+                ),
+              ],
+            ),
+          ),
+      ],
+    );
+  }
+
+  /// Huruf pertama nama hari — "I", "S", "R", "K", "J", "S", "A".
+  static String _hariPendek(DateTime d) => const [
+        'A',
+        'I',
+        'S',
+        'R',
+        'K',
+        'J',
+        'S',
+      ][d.weekday - 1];
+}
+
+/// Koleksi lencana — semua lencana yang ada, diperoleh atau belum.
+///
+/// Lencana yang belum diperoleh masih kelihatan, dikunci dan kelabu. Murid
+/// lebih-working untuk *"dapat"* sesuatu yang belum ada daripada diberi
+/// sesuatu yang sudah ada.
+class _KoleksiLencana extends StatelessWidget {
+  const _KoleksiLencana({required this.subjek});
+
+  final List<Subjek> subjek;
+
+  @override
+  Widget build(BuildContext context) {
+    final ada = Kemajuan.instance.lencanaDiperoleh;
+    final jumlah = subjek.length * TahapLencana.values.length +
+        DaftarLencana.global.length;
+
+    return Container(
+      padding: const EdgeInsets.all(14),
+      decoration: BoxDecoration(
+        color: Colors.white,
+        borderRadius: BorderRadius.circular(16),
+        border: Border.all(color: Warna.utama.withValues(alpha: 0.18)),
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Row(
+            children: [
+              const Icon(Icons.workspace_premium_rounded,
+                  size: 18, color: Warna.utama),
+              const SizedBox(width: 6),
+              Text(
+                '${ada.length} daripada $jumlah lencana diperoleh',
+                style: Teks.label.copyWith(color: Colors.black54),
+              ),
+            ],
+          ),
+          const SizedBox(height: 12),
+          for (final s in subjek) ...[
+            Text(
+              s.nama,
+              style: Teks.label.copyWith(
+                color: s.warna,
+                fontWeight: FontWeight.w800,
+              ),
+            ),
+            const SizedBox(height: 6),
+            Row(
+              children: [
+                for (final t in TahapLencana.values) ...[
+                  Expanded(
+                    child: PetakLencana(
+                      lencana: Lencana(
+                        id: DaftarLencana.kunciSubjek(s.id, t),
+                        tajuk: t.tajuk,
+                        penerangan: t.penerangan,
+                        ikon: t.ikon,
+                        warna: t.warna,
+                        subjekId: s.id,
+                        peratus: t.peratus,
+                      ),
+                      diperoleh: ada.contains(
+                        DaftarLencana.kunciSubjek(s.id, t),
+                      ),
+                    ),
+                  ),
+                  const SizedBox(width: 6),
+                ],
+              ],
+            ),
+            const SizedBox(height: 12),
+          ],
+          Text(
+            'Lencana global',
+            style: Teks.label.copyWith(
+              color: Warna.utama,
+              fontWeight: FontWeight.w800,
+            ),
+          ),
+          const SizedBox(height: 6),
+          Wrap(
+            spacing: 8,
+            runSpacing: 8,
+            children: [
+              for (final l in DaftarLencana.global)
+                SizedBox(
+                  width: 78,
+                  child: PetakLencana(
+                    lencana: l,
+                    diperoleh: ada.contains(l.id),
+                  ),
+                ),
+            ],
           ),
         ],
       ),

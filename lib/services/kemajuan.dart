@@ -3,6 +3,8 @@ import 'dart:convert';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import '../models/gred.dart';
+import '../models/lencana.dart';
+import 'bank_kertas.dart';
 
 /// Rekod satu percubaan menjawab kertas penuh.
 ///
@@ -128,6 +130,9 @@ class Kemajuan {
   static const String _kunciGiliran = 'giliran_subjek';
   static const String _kunciBetul = 'betul_';
   static const String _kunciSalah = 'salah_';
+  static const String _kunciRentetan = 'rentetan_terpanjang';
+  static const String _kunciJumlahBetul = 'jumlah_betul';
+  static const String _kunciLencana = 'lencana_diperoleh';
 
   /// Had rekod yang disimpan — cukup untuk melihat perkembangan beberapa bulan
   /// tanpa membesar tanpa had.
@@ -136,6 +141,15 @@ class Kemajuan {
   SharedPreferences? _p;
   List<RekodPercubaan> _rekod = [];
   Map<String, int> _giliran = {};
+
+  /// Rekod terpanjang rentetan jawapan betul dalam satu sesi.
+  int _rentetanTerpanjang = 0;
+
+  /// Jumlah jawapan betul sepanjang masa.
+  int _jumlahBetul = 0;
+
+  /// Kunci lencana yang telah diperoleh.
+  Set<String> _lencana = {};
 
   List<RekodPercubaan> get rekod => List.unmodifiable(_rekod);
 
@@ -164,12 +178,28 @@ class Kemajuan {
         _giliran = (jsonDecode(giliran) as Map)
             .map((k, v) => MapEntry('$k', v as int));
       }
+      _rentetanTerpanjang = _p?.getInt(_kunciRentetan) ?? 0;
+      _jumlahBetul = _p?.getInt(_kunciJumlahBetul) ?? 0;
+      final lencana = _p?.getString(_kunciLencana);
+      if (lencana != null && lencana.isNotEmpty) {
+        _lencana = (jsonDecode(lencana) as List).cast<String>().toSet();
+      }
     } catch (_) {
       // Rekod yang rosak tidak boleh menghalang app daripada dibuka. Ia
       // diabaikan, dan rekod baharu akan ditulis dari awal.
       _rekod = [];
       _giliran = {};
+      _lencana = {};
     }
+
+    // Semak lencana sekali lagi setiap kali app dibuka.
+    //
+    // Lencana dihitung daripada markah terbaik, jadi lencana yang tidak
+    // pernah dikira — kerana app ditutup sebelum sempat menyimpan, atau
+    // kerana lencana itu ditambah dalam kemas kini app — akan hilang
+    //selsamanya. Menyemak semula di sini memastikan koleksi lencana sentiasa
+    // lengkap.
+    await semakLencana();
   }
 
   // --- Penguasaan soalan ---------------------------------------------------
@@ -295,14 +325,199 @@ class Kemajuan {
     return bilangan;
   }
 
+  // --- Rekod jawapan -------------------------------------------------------
+
+  /// Rekod **terpanjang** rentetan jawapan betul dalam satu sesi.
+  ///
+  /// Rekod, bukan rentetan semasa. Rentetan semasa hilang apabila app
+  /// ditutup, dan ia tidak adil kepada murid yang berhenti di tengah
+  /// kertas. Rekod pula tidak pernah hilang — satu jawapan salah|esok tidak
+  /// mengambil-alih rekod yang sudah dicapai.
+  int get rentetanTerpanjang => _rentetanTerpanjang;
+
+  /// Jumlah jawapan betul sepanjang masa — kertas dan latih tubi.
+  ///
+  /// Angka ini hanya membesar. Murid yang melihatnya setiap hari akan terus
+  /// merasa usahanya dikira, walaupun satu hari dia tidak mendapat apa-apa
+  /// yang baharu.
+  int get jumlahBetul => _jumlahBetul;
+
+  /// Catat rentetan jawapan betul — rekod hanya naik, tidak pernah turun.
+  Future<void> catatRentetan(int panjang) async {
+    if (panjang <= _rentetanTerpanjang) return;
+    _rentetanTerpanjang = panjang;
+    await _p?.setInt(_kunciRentetan, panjang);
+  }
+
+  /// Tambah jumlah jawapan betul.
+  Future<void> tambahBetul(int bilangan) async {
+    if (bilangan <= 0) return;
+    _jumlahBetul += bilangan;
+    await _p?.setInt(_kunciJumlahBetul, _jumlahBetul);
+  }
+
+  /// Bilangan soalan yang pernah dijawab dengan betul.
+  int get soalanDikuasai {
+    final p = _p;
+    if (p == null) return 0;
+    var n = 0;
+    for (final k in p.getKeys()) {
+      if (k.startsWith(_kunciBetul) && (p.getInt(k) ?? 0) > 0) n++;
+    }
+    return n;
+  }
+
+  /// Bilangan kertas percubaan yang sempurna (100%).
+  int get kertasSempurna =>
+      rekodKertas.where((r) => r.peratus >= 100).length;
+
+  /// Adakah ada sebarang rekod pada hari [h]?
+  ///
+  ///dipakai untuk strip tujuh hari pada skrin Kemajuan.
+  bool adaPadaHari(DateTime h) {
+    for (final r in _rekod) {
+      if (r.tarikh.year == h.year &&
+          r.tarikh.month == h.month &&
+          r.tarikh.day == h.day) {
+        return true;
+      }
+    }
+    return false;
+  }
+
+  /// Tiga kertas percubaan berturut-turut mendapat 70% ke atas?
+  ///
+  /// Rekod latihan (sepuluh soalan) tidak dikira — nilainya tidak boleh
+  /// dibandingkan dengan kertas 70 markah.
+  bool get konsistenTiga {
+    var bilangan = 0;
+    for (final r in rekodKertas) {
+      if (r.peratus >= 70) {
+        bilangan++;
+        if (bilangan >= 3) return true;
+      } else {
+        bilangan = 0;
+      }
+    }
+    return false;
+  }
+
+  /// Lencana markah yang layak untuk satu peratus.
+  ///
+  /// Sebarang peratus yang mencapai 85% layak untuk **Gangsa** dan
+  /// **Perak** — tetapi bukan **Emas**. Fungsi ini menjadi satu-satunya
+  /// tempat yang menentukan itu, supaya skrin dan storan tidak boleh
+  /// berbeza.
+  static List<TahapLencana> tahapLayak(int peratus) => [
+        for (final t in TahapLencana.values)
+          if (t.cukup(peratus)) t,
+      ];
+
+  // --- Lencana --------------------------------------------------------------
+
+  /// Kunci lencana yang telah diperoleh.
+  Set<String> get lencanaDiperoleh => Set.unmodifiable(_lencana);
+
+  /// Adakah lencana ini sudah diperoleh?
+  bool adaLencana(String id) => _lencana.contains(id);
+
+  /// Simpan lencana baharu.
+  ///
+  /// Mengembalikan `true` **hanya** bila lencana itu belum ada — supaya
+  /// lencana yang sama tidak diumumkan dua kali.
+  Future<bool> beriLencana(String id) async {
+    if (_lencana.contains(id)) return false;
+    _lencana.add(id);
+    await _p?.setString(_kunciLencana, jsonEncode(_lencana.toList()));
+    return true;
+  }
+
+  /// Semak semua lencana, dan simpan yang baharu diperoleh.
+  ///
+  /// Lencana **markah** diperoleh daripada markah terbaik setiap subjek.
+  /// Markah itu datang daripada **kertas percubaan** sahaja — latih tubi
+  /// mempunyai sepuluh soalan, dan nilainya tidak boleh dibandingkan dengan
+  /// kertas 70 markah.
+  ///
+  /// Lencana **global** pula dikira daripada kedua-dua mod, sebab ia
+  /// mengukur tabiat, bukan hasil.
+  ///
+  /// Mengembalikan lencana yang **baru** diperoleh — senarai ini digunakan
+  /// untuk meraikan murid pada skrin keputusan.
+  Future<List<Lencana>> semakLencana() async {
+    final baru = <Lencana>[];
+
+    // Subjek yang pernah dicuba. Senarai ini diambil daripada **rekod**,
+    // bukan hanya daripada bank — jadi lencana tetap dikira walaupun bank
+    // belum dimuatkan, dan supaya subjek yang dihapus daripada bank tidak
+    // hilang lencakannya.
+    final namaSubjek = <String, String>{};
+    for (final s in BankKertas.instance.subjek) {
+      namaSubjek[s.id] = s.nama;
+    }
+    for (final r in _rekod) {
+      namaSubjek.putIfAbsent(r.subjekId, () => r.subjekId);
+    }
+
+    // --- Lencana markah, bagi setiap subjek --------------------------------
+    for (final e in namaSubjek.entries) {
+      final peratus = ringkasan(e.key).peratusTerbaik;
+      if (peratus <= 0) continue;
+      for (final tahap in tahapLayak(peratus)) {
+        final id = DaftarLencana.kunciSubjek(e.key, tahap);
+        if (await beriLencana(id)) {
+          baru.add(
+            Lencana(
+              id: id,
+              tajuk: tahap.tajuk,
+              penerangan: '${e.value} — ${tahap.penerangan}',
+              ikon: tahap.ikon,
+              warna: tahap.warna,
+              subjekId: e.key,
+              peratus: tahap.peratus,
+            ),
+          );
+        }
+      }
+    }
+
+    // --- Lencana global ----------------------------------------------------
+    for (final l in DaftarLencana.global) {
+      final layak = switch (l.id) {
+        'g-rajin' => rentetanHari >= 7,
+        'g-kilat' => rentetanTerpanjang >= 10,
+        'g-pujangga' => soalanDikuasai >= 100,
+        'g-konsisten' => konsistenTiga,
+        // "Juara" bermaksud empat lencana markah dalam **setiap** subjek.
+        'g-juara' =>
+          BankKertas.instance.subjek.isNotEmpty &&
+              BankKertas.instance.subjek.every(
+                (s) => TahapLencana.values.every(
+                  (t) => adaLencana(DaftarLencana.kunciSubjek(s.id, t)),
+                ),
+              ),
+        _ => false,
+      };
+      if (layak && await beriLencana(l.id)) baru.add(l);
+    }
+
+    return baru;
+  }
+
   /// Padam semua rekod — untuk butang "Padam rekod" pada skrin Info.
   Future<void> padamSemua() async {
     _rekod = [];
     _giliran = {};
+    _lencana = {};
+    _rentetanTerpanjang = 0;
+    _jumlahBetul = 0;
     final p = _p;
     if (p == null) return;
     await p.remove(_kunciRekod);
     await p.remove(_kunciGiliran);
+    await p.remove(_kunciLencana);
+    await p.remove(_kunciRentetan);
+    await p.remove(_kunciJumlahBetul);
     final kunci = p.getKeys().where(
           (k) => k.startsWith(_kunciBetul) || k.startsWith(_kunciSalah),
         );

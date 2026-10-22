@@ -176,6 +176,22 @@ AYAT_TETAP = {
     "f-latihan": "Syabas! Latihan selesai. Jom cuba lagi.",
     "f-latihan-sederhana": "Latihan selesai. Teruskan usaha, jom cuba lagi.",
     "f-latihan-ulang": "Latihan selesai. Jangan putus asa, mari ulang kaji sekali lagi.",
+
+    # Lencana baharu — satu rakaman bagi setiap nama lencana.
+    #
+    # Nama lencana ikut daripada `lib/models/lencana.dart`. Rakaman dibuat
+    # bagi setiap satu supaya bunyinya sama seperti seluruh app — ayat yang
+    # dijana dengan enjin suara peranti kedengaran robotik ("pelek"), dan
+    # lencana pula achievement yang paling patut kedengaran meriah.
+    "f-lencana-gangsa": "Syabas! Kamu dapat lencana Gangsa.",
+    "f-lencana-perak": "Syabas! Kamu dapat lencana Perak.",
+    "f-lencana-emas": "Syabas! Kamu dapat lencana Emas.",
+    "f-lencana-sempurna": "Syabas! Kamu dapat lencana Sempurna.",
+    "f-lencana-rajin": "Syabas! Kamu dapat lencana Rajin.",
+    "f-lencana-kilat": "Syabas! Kamu dapat lencana Kilat.",
+    "f-lencana-pujangga": "Syabas! Kamu dapat lencana Pujangga.",
+    "f-lencana-konsisten": "Syabas! Kamu dapat lencana Konsisten.",
+    "f-lencana-juara": "Syabas! Kamu dapat lencana Juara!",
 }
 
 # Teks mesti mengandungi sekurang-kurangnya satu huruf atau angka.

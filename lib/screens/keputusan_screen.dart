@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import '../models/gred.dart';
 import '../models/jawapan.dart';
 import '../models/kertas.dart';
+import '../models/lencana.dart';
 import '../services/kongsi.dart';
 import '../services/suara.dart';
 import '../services/tetapan.dart';
@@ -34,10 +35,18 @@ class KeputusanScreen extends StatefulWidget {
     required this.kertas,
     required this.jawapan,
     this.saat,
+    this.lencanaBaru = const [],
   });
 
   final Kertas kertas;
   final Map<String, JawapanMurid> jawapan;
+
+  /// Lencana yang **baru** diperoleh dalam kertas ini.
+  ///
+  /// Senarai ini digunakan untuk meraikan lencana itu — banner di atas kad
+  /// markah dan ayat pujian yang disampaikan oleh Raz. Kosong bagi kertas
+  /// yang tiada lencana baharu.
+  final List<Lencana> lencanaBaru;
 
   /// Masa menjawab, dalam saat.
   ///
@@ -67,11 +76,11 @@ class _KeputusanScreenState extends State<KeputusanScreen> {
     // `initState`, skrin belum wujud dan sesetengah peranti menggugurkan bunyi
     // itu begitu sahaja.
     WidgetsBinding.instance.addPostFrameCallback((_) {
-      if (mounted) _sambut();
+      if (mounted) unawaited(_sambut());
     });
   }
 
-  void _sambut() {
+  Future<void> _sambut() async {
     final peratus = widget.kertas.peratus(widget.jawapan);
     final markah = widget.kertas.markahDiperoleh(widget.jawapan);
     final penuh = widget.kertas.markahTersedia;
@@ -82,9 +91,17 @@ class _KeputusanScreenState extends State<KeputusanScreen> {
 
     if (peratus >= 60) {
       setState(() => _letupan = 1);
-      unawaited(_sambutan(Suara.kesanHebat, kunci, teks));
+      await _sambutan(Suara.kesanHebat, kunci, teks);
     } else {
-      unawaited(_sambutan(Suara.kesanSalah, kunci, teks));
+      await _sambutan(Suara.kesanSalah, kunci, teks);
+    }
+
+    // Ayat lencana — **selepas** ayat keputusan. Dua suara yang bertindih
+    // menjadikan kedua-duanya kabur, jadi hanya satu yang boleh kedengaran
+    // pada satu-satu masa.
+    for (final l in widget.lencanaBaru) {
+      await Suara.instance.sebutLencana(l.tajuk);
+      await Future<void>.delayed(Suara.jedaAntaraBaris);
     }
   }
 
@@ -265,6 +282,10 @@ class _KeputusanScreenState extends State<KeputusanScreen> {
           body: ListView(
             padding: const EdgeInsets.fromLTRB(16, 16, 16, 32),
             children: [
+              if (widget.lencanaBaru.isNotEmpty) ...[
+                _BannerLencana(lencana: widget.lencanaBaru),
+                const SizedBox(height: 16),
+              ],
               _KadMarkah(
                 markah: markah,
                 penuh: penuh,
@@ -322,6 +343,85 @@ class _KeputusanScreenState extends State<KeputusanScreen> {
     );
   }
 }
+
+/// Banner lencana baharu — dipaparkan di atas kad markah.
+///
+/// Banner ini hanya muncul untuk lencana yang **baru** diperoleh dalam kertas
+/// ini sahaja. Lencana lama tidak diulang — ia sudah ada dalam koleksi, dan
+/// ucapan ulang setiap kali akan menjadi gangguan.
+class _BannerLencana extends StatelessWidget {
+  const _BannerLencana({required this.lencana});
+
+  final List<Lencana> lencana;
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      padding: const EdgeInsets.fromLTRB(14, 12, 14, 14),
+      decoration: BoxDecoration(
+        color: Warna.latarNota,
+        borderRadius: BorderRadius.circular(16),
+        border: Border.all(color: Warna.tepiNota.withValues(alpha: 0.5)),
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Row(
+            children: [
+              const Icon(
+                Icons.emoji_events_rounded,
+                size: 20,
+                color: Warna.tepiNota,
+              ),
+              const SizedBox(width: 6),
+              Text(
+                lencana.length == 1
+                    ? 'Lencana baharu!'
+                    : '${lencana.length} lencana baharu!',
+                style: Teks.biasa.copyWith(
+                  color: Warna.dakwat,
+                  fontWeight: FontWeight.w900,
+                ),
+              ),
+            ],
+          ),
+          const SizedBox(height: 10),
+          Wrap(
+            spacing: 8,
+            runSpacing: 8,
+            children: [
+              for (final l in lencana)
+                Container(
+                  padding:
+                      const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(20),
+                    border: Border.all(color: l.warna.withValues(alpha: 0.4)),
+                  ),
+                  child: Row(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      Icon(l.ikon, size: 16, color: l.warna),
+                      const SizedBox(width: 5),
+                      Text(
+                        l.tajuk,
+                        style: Teks.label.copyWith(
+                          color: l.warna,
+                          fontWeight: FontWeight.w800,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+            ],
+          ),
+        ],
+      ),
+    );
+  }
+}
+
 
 /// Kad markah besar dengan cop gred.
 class _KadMarkah extends StatelessWidget {

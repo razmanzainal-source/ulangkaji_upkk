@@ -178,7 +178,7 @@ void main() {
       expect(
         Suara.instance.kunciDiminta.first,
         Suara.kunciSoalan('uji-a1'),
-        reason: 'soalan mesti 먼저 vdira sebelum jawapan',
+        reason: 'soalan mesti dibacakan lebih dahulu,'
       );
     });
 
