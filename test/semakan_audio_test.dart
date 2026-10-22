@@ -147,11 +147,15 @@ void main() {
         '2. ${s.item[1].teks} — ${s.kategori[0]}',
       );
 
-      // Suara: `Soalan 1, jawapan` — nombor kedengaran dahulu.
+      // Suara: satu baris satu baris. Setiap baris ialah segmen — nombor
+      // item dahulu, kemudian jawapannya — supaya murid tahu jawapan yang
+      // mana milik item yang mana.
       expect(
-        s.jawapanPenuhDengarBernombor,
-        'Soalan 1, ${s.item[0].rumi} — ${s.kategoriRumi[1]}\n'
-        'Soalan 2, ${s.item[1].rumi} — ${s.kategoriRumi[0]}',
+        s.jawapanDengarSegmen,
+        [
+          ['Nombor 1', s.item[0].rumi, s.kategoriRumi[1]],
+          ['Nombor 2', s.item[1].rumi, s.kategoriRumi[0]],
+        ],
       );
     });
 
@@ -177,6 +181,17 @@ void main() {
       );
       expect(s.jawapanBerbilang, isFalse);
       expect(s.jawapanPenuhTeksBernombor, 'ساتو');
+    });
+  });
+
+  group('sapaan pembuka', () {
+    test('sapaan dipecahkan supaya nama boleh diletakkan di tengah', () {
+      // "Assalamualaikum, [nama], jom ulangkaji KAFA bersama Raz." —
+      // dua rakaman dengan nama di antaranya.
+      expect(Suara.kunciSelamat1, 'f-selamat-1');
+      expect(Suara.kunciSelamat2, 'f-selamat-2');
+      expect(Suara.sapaanBer, contains('Raz'));
+      expect(Suara.sapaan, contains('Assalamualaikum'));
     });
   });
 }

@@ -475,12 +475,39 @@ class Suara {
     }
   }
 
-  /// Sapaan pembuka: "Assalamualaikum, jom ulangkaji KAFA bersama Raz."
+  /// Bahagian pertama sapaan — "Assalamualaikum".
   ///
-  /// Satu rakaman sahaja ([kunciSelamat]); tiada bahagian yang dibina daripada
-  /// enjin suara peranti, jadi sapaan ini sentiasa berbunyi dengan suara
-  /// perempuan yang sama seperti seluruh app.
-  Future<void> sebutSalam() => sebutKunci(kunciSelamat, sandaran: sapaan);
+  /// Sapaan dipecahkan kepada dua rakaman supaya **nama murid** boleh
+  /// diletakkan di tengah: "Assalamualaikum, [nama], jom ulangkaji KAFA
+  /// bersama Raz." Rakaman pertama dan terakhir menggunakan suara Yasmin yang
+  /// sama seperti seluruh app; hanya nama itu sendiri yang perlu enjin suara
+  /// peranti, sebab nama tidak boleh dirakam lebih awal.
+  static const String kunciSelamat1 = 'f-selamat-1';
+
+  /// Bahagian akhir sapaan — "jom ulangkaji KAFA bersama Raz."
+  static const String kunciSelamat2 = 'f-selamat-2';
+
+  /// Bahagian akhir sapaan dalam bentuk sandaran.
+  static const String sapaanBer = 'jom ulangkaji KAFA bersama $namaMaskot.';
+
+  /// Sapaan pembuka: "Assalamualaikum, [nama], jom ulangkaji KAFA bersama Raz."
+  ///
+  /// Bila nama tidak diketahui, sapaan penuh ([kunciSelamat]) dimainkan
+  /// sebagai satu rakaman. Bila nama ada, sapaan dipecahkan kepada dua
+  /// rakaman dengan nama di tengah.
+  Future<void> sebutSalam({String? nama}) async {
+    final namaMurid = (nama ?? '').trim();
+    if (namaMurid.isEmpty) {
+      await sebutKunci(kunciSelamat, sandaran: sapaan);
+      return;
+    }
+
+    await sebutKunci(kunciSelamat1, sandaran: 'Assalamualaikum');
+    await Future<void>.delayed(jedaAntaraBaris);
+    await sebut(namaMurid);
+    await Future<void>.delayed(jedaAntaraBaris);
+    await sebutKunci(kunciSelamat2, sandaran: sapaanBer);
+  }
 
   /// Sebut satu pilihan jawapan — **latih tubi sahaja**.
   ///
@@ -493,6 +520,57 @@ class Suara {
   /// Arab bagi subjek Bahasa Arab. Pemanggil yang memilih teks itu.
   Future<void> sebutPilihan(String teks) =>
       sebutKunci(kunciPilihan(teks), sandaran: teks);
+
+  /// Jeda pendek antara segmen — nombor item dan jawapannya.
+  static const Duration jedaPendek = Duration(milliseconds: 250);
+
+  /// Jeda sebelum setiap baris jawapan.
+  ///
+  /// Tanpa jeda, beberapa jawapan kedengaran seperti satu karangan yang
+  /// panjang — murid tidak tahu yang mana yang baharu bermula. Jeda pendek
+  /// memberi ruang supaya setiap ayat kedengaran berasingan.
+  static const Duration jedaAntaraBaris = Duration(milliseconds: 700);
+
+  /// Nombor jujukan — naik setiap kali bunyi dihentikan.
+  ///
+  /// Jujukan ini membolehkan siri audio yang sedang berjalan tahu ia sudah
+  /// dibatalkan (contohnya murid menekan "Seterusnya" ketika jawapan masih
+  /// dibacakan).
+  int _jujukan = 0;
+
+  /// Mainkan soalan, kemudian jawapan betulnya — satu baris satu baris.
+  ///
+  /// Setiap baris jawapan didahului **jeda**, jadi bunyi tidak menjadi satu
+  /// karangan panjang. Baris-baris jawapan perlu membawa nombor item
+  /// ("Nombor 1, …") supaya murid tahu jawapan yang mana milik item yang
+  /// mana.
+  ///
+  /// [sandaran] ialah teks yang disebut oleh enjin TTS apabila rakaman soalan
+  /// tiada — ia tidak pernah menggantikan rakaman.
+  Future<void> sebutSoalanDanJawapan({
+    required String id,
+    required String sandaran,
+    required List<List<String>> segmenJawapan,
+  }) async {
+    final jujukan = _jujukan;
+
+    // 1. Soalan dahulu — supaya murid tahu konteks jawapannya.
+    await sebutKunci(kunciSoalan(id), sandaran: sandaran);
+    if (_jujukan != jujukan) return;
+
+    // 2. Jawapan, satu baris satu baris. Setiap baris bermula dengan nombor
+    //    item, jadi murid tahu jawapan yang mana milik item yang mana.
+    for (final baris in segmenJawapan) {
+      await Future<void>.delayed(jedaAntaraBaris);
+      if (_jujukan != jujukan) return;
+      for (final segmen in baris) {
+        await Future<void>.delayed(jedaPendek);
+        if (_jujukan != jujukan) return;
+        await sebutPilihan(segmen);
+      }
+    }
+  }
+
 
   /// Sebut teks terus melalui enjin TTS peranti.
   ///
@@ -590,6 +668,8 @@ class Suara {
 
   Future<void> berhenti() async {
     berhentiDipanggil = true;
+    // Batalkan sebarang siri audio yang sedang berjalan.
+    _jujukan++;
     _selesaikanTunggu();
     try {
       await _had(_pemain.stop(), const Duration(seconds: 2));

@@ -494,21 +494,163 @@ class SoalanKertas {
   String get jawapanPenuhTeksBernombor =>
       _nomborkanBaris(jawapanPenuhTeks.trim(), papar: true);
 
-  /// Jawapan penuh untuk **suara** — setiap baris didahului nombor soalan.
+  /// Baris-baris jawapan yang boleh dibacakan **satu per satu**.
   ///
-  /// Teks ini juga menjadi **kunci audio** (`o-<teks>`) yang diminta skrin
-  /// pembetulan dan skrin semakan, jadi ia mesti sama antara kedua-duanya.
+  /// Setiap baris menjadi satu klip audio sendiri. App boleh kemudian
+  /// menambah **jeda** antara baris — tanpa jeda, beberapa jawapan
+  /// kedengaran seperti satu karangan panjang dan murid tidak tahu
+  /// jawapan yang mana milik item yang mana.
   ///
-  /// `null` apabila tiada jawapan yang boleh dibacakan.
-  String? get jawapanPenuhDengarBernombor {
-    var dengar = jawapanPenuhDengar.trim();
-    if (dengar.isEmpty && rubrik.ada) {
-      // Soalan `tulis`/`huraian` yang dinilai dengan rubrik tidak menyimpan
-      // `jawapanContoh`; jawapan betulnya ialah isi rubrik.
-      dengar = rubrik.idea.map((i) => i.maksud).join('\n').trim();
+  /// Baris pertama ialah jawapan bagi item pertama, dan seterusnya.
+  /// **Nombor item didahului** pada setiap baris (`Nombor 1, …`) supaya
+  /// nombor itu kedengaran dahulu — dengan nombor, murid tahu jawapan yang
+  /// mana milik item yang mana.
+  ///
+  /// Senarai kosong apabila tiada jawapan yang boleh dibacakan.
+  /// Baris-baris jawapan yang boleh dibacakan — satu baris bagi setiap item.
+  ///
+  /// Baris pertama ialah jawapan bagi item pertama, dan seterusnya. Teks
+  /// yang dibacakan ialah tulisan asal bagi subjek Bahasa Arab, Rumi bagi
+  /// subjek lain.
+  List<String> get jawapanDengarBaris {
+    final keluar = <String>[];
+
+    // Teks yang boleh dibacakan: tulisan asal bagi subjek Bahasa Arab,
+    // Rumi bagi subjek lain.
+    String? pelayan(List<String> arab, List<String> rumi) => jawapanArab
+        ? (arab.isEmpty ? null : arab.join('\n'))
+        : (rumi.isEmpty ? null : rumi.join('\n'));
+
+    switch (jenis) {
+      case JenisKertas.bulat:
+      case JenisKertas.objektif:
+        for (var i = 0; i < item.length; i++) {
+          final it = item[i];
+          final pilihan = jawapanArab ? it.pilihan : it.pilihanRumi;
+          if (it.jawapan < 0 || it.jawapan >= pilihan.length) {
+            continue;
+          }
+          keluar.add(pilihan[it.jawapan]);
+        }
+      case JenisKertas.kumpulan:
+        for (var i = 0; i < item.length; i++) {
+          final it = item[i];
+          final senaraiKategori = jawapanArab ? kategori : kategoriRumi;
+          // Teks yang dibacakan: tulisan asal bagi subjek Bahasa Arab, Rumi
+          // bagi subjek lain — enjin suara Melayu tidak boleh membaca Jawi.
+          final asal = jawapanArab ? it.teks : it.rumi;
+          keluar.add(
+            (it.jawapan >= 0 && it.jawapan < senaraiKategori.length)
+                ? '$asal — ${senaraiKategori[it.jawapan]}'
+                : asal,
+          );
+        }
+      case JenisKertas.suai:
+        for (var i = 0; i < pasangan.length; i++) {
+          final p = pasangan[i];
+          keluar.add(
+            jawapanArab
+                ? '${p.kiri} — ${p.kanan}'
+                : '${p.kiriRumi} — ${p.kananRumi}',
+          );
+        }
+      case JenisKertas.betulSalah:
+        for (var i = 0; i < item.length; i++) {
+          final it = item[i];
+          keluar.add(
+            jawapanArab
+                ? '${it.teks} (${it.betul == true ? '✓' : '✗'})'
+                : '${it.rumi} (${it.betul == true ? '✓' : '✗'})',
+          );
+        }
+      case JenisKertas.tempatKosong:
+      case JenisKertas.susun:
+        final satu = pelayan(bank, bankRumi);
+        if (satu != null) keluar.add(satu);
+      case JenisKertas.tulis:
+      case JenisKertas.huraian:
+        if (rubrik.ada) {
+          for (final i in rubrik.idea) {
+            keluar.add(i.maksud);
+          }
+        } else {
+          final senarai = pelayan(jawapanContoh, jawapanContohRumi);
+          if (senarai != null) keluar.addAll(senarai.split('\n'));
+        }
+      case JenisKertas.senarai:
+        final senarai = pelayan(jawapanContoh, jawapanContohRumi);
+        if (senarai != null) keluar.addAll(senarai.split('\n'));
     }
-    if (dengar.isEmpty) return null;
-    return _nomborkanBaris(dengar, papar: false);
+
+    return keluar.where((e) => e.trim().isNotEmpty).toList();
+  }
+
+  /// Segmen-segmen yang perlu dibaca untuk setiap baris jawapan.
+  ///
+  /// Setiap baris ialah senarai segmen: **nombor item dahulu**, kemudian
+  /// jawapannya. Nombor dan jawapan ialah klip berasingan — jadi nombor
+  /// yang sama dikongsi oleh semua soalan dan saiz app tidak melonjak hanya kerana setiap jawapan
+  /// panjang memerlukan rakaman sendiri.
+  ///
+  /// Susunan setiap jenis:
+  ///   * `bulat`/`objektif` — nombor, pilihan yang betul;
+  ///   * `kumpulan` — nombor, pernyataan, kategori;
+  ///   * `suai` — nombor, kiri, kanan;
+  ///   * `betul_salah` — nombor, pernyataan;
+  ///   * `senarai`/`tulis`/`huraian` — nombor, satu jawapan.
+  List<List<String>> get jawapanDengarSegmen {
+    final baris = jawapanDengarBaris;
+    if (baris.isEmpty) return const [];
+
+    // Soalan berbilang item perlu nombor; soalan satu jawapan tidak.
+    final perluNombor = jenis == JenisKertas.kumpulan ||
+        jenis == JenisKertas.suai ||
+        jenis == JenisKertas.betulSalah ||
+        (jenis == JenisKertas.bulat || jenis == JenisKertas.objektif) &&
+            item.length > 1 ||
+        jenis == JenisKertas.senarai ||
+        jenis == JenisKertas.tulis ||
+        jenis == JenisKertas.huraian;
+
+    if (!perluNombor) {
+      return [for (final b in baris) [b]];
+    }
+
+    return [
+      for (var i = 0; i < baris.length; i++) [
+        '${jawapanArab ? 'رقم' : 'Nombor'} ${i + 1}',
+        ..._segmenIsi(i),
+      ],
+    ];
+  }
+
+  /// Segmen isi bagi baris jawapan ke-[indeks].
+  List<String> _segmenIsi(int indeks) {
+    switch (jenis) {
+      case JenisKertas.kumpulan:
+        if (indeks >= item.length) return const [];
+        final it = item[indeks];
+        final senaraiKategori = jawapanArab ? kategori : kategoriRumi;
+        final asal = jawapanArab ? it.teks : it.rumi;
+        if (it.jawapan >= 0 && it.jawapan < senaraiKategori.length) {
+          return [asal, senaraiKategori[it.jawapan]];
+        }
+        return [asal];
+      case JenisKertas.suai:
+        if (indeks >= pasangan.length) return const [];
+        final p = pasangan[indeks];
+        return jawapanArab
+            ? [p.kiri, p.kanan]
+            : [p.kiriRumi, p.kananRumi];
+      case JenisKertas.betulSalah:
+        if (indeks >= item.length) return const [];
+        final it = item[indeks];
+        return [jawapanArab ? it.teks : it.rumi];
+      default:
+        final baris = jawapanDengarBaris;
+        if (indeks >= baris.length) return const [];
+        return [baris[indeks]];
+    }
   }
 
   /// Tulis semula jawapan berbilang baris dengan nombor di hadapan setiap

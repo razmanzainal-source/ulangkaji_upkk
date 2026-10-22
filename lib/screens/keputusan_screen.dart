@@ -766,15 +766,16 @@ class _SoalanBertanda extends StatelessWidget {
   }
 
   /// Mainkan soalan dahulu, kemudian jawapan betulnya.
+  /// Mainkan soalan sekali dahulu, kemudian jawapan betulnya.
+  ///
+  /// Setiap baris jawapan didahului nombor item ("Nombor 1, …") dan jeda,
+  /// supaya murid tahu jawapan yang mana milik item yang mana.
   Future<void> _dengarSoalan(SoalanKertas s) async {
-    await Suara.instance.sebutKunci(
-      Suara.kunciSoalan(s.id),
+    await Suara.instance.sebutSoalanDanJawapan(
+      id: s.id,
       sandaran: s.rumi.isEmpty ? s.soalan : s.rumi,
+      segmenJawapan: s.jawapanDengarSegmen,
     );
-    final jawapan = s.jawapanPenuhDengarBernombor;
-    if (jawapan != null) {
-      await Suara.instance.sebutPilihan(jawapan);
-    }
   }
 
   /// Jawapan murid dalam bentuk teks ringkas.

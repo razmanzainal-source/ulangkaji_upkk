@@ -1756,10 +1756,10 @@ class _KertasScreenState extends State<KertasScreen> {
               //
               // Ia memainkan soalan dahulu, kemudian jawapan — supaya murid
               // mendengar konteks penuh sebelum mendengar jawapan yang betul.
-              if (_teksPembetulanDengar(s) != null)
+              if (_jawapanDengar(s).isNotEmpty)
                 IconButton(
                   tooltip: 'Dengar soalan & jawapan betul',
-                  onPressed: () => _dengarPembetulan(s),
+                  onPressed: () => _dengarPembeturean(s),
                   icon: const Icon(
                     Icons.volume_up_rounded,
                     size: 22,
@@ -1788,17 +1788,18 @@ class _KertasScreenState extends State<KertasScreen> {
   /// Latih tubi sahaja. Soalan dimainkan dahulu (guna kunci soalan),
   /// kemudian jawapan betul (guna teks jawapan). Dua-duanya menggunakan
   /// enjin suara yang sama supaya bunyi berterusan.
-  Future<void> _dengarPembetulan(SoalanKertas s) async {
+  /// Mainkan soalan sekali dahulu, kemudian jawapan betulnya.
+  ///
+  /// Setiap baris jawapan didahului nombor item ("Nombor 1, …") dan jeda,
+  /// supaya bunyi tidak menjadi satu karangan panjang.
+  Future<void> _dengarPembeturean(SoalanKertas s) async {
     if (!_latihTubi) return;
 
-    // 1. Mainkan soalan dahulu
-    final soalanKunci = Suara.kunciSoalan(s.id);
-    final soalanSandaran = s.rumi.isEmpty ? s.soalan : s.rumi;
-    await Suara.instance.sebutKunci(soalanKunci, sandaran: soalanSandaran);
-
-    // 2. Mainkan jawapan betul
-    final jawapanTeks = _teksPembetulanDengar(s)!;
-    await Suara.instance.sebutPilihan(jawapanTeks);
+    await Suara.instance.sebutSoalanDanJawapan(
+      id: s.id,
+      sandaran: s.rumi.isEmpty ? s.soalan : s.rumi,
+      segmenJawapan: s.jawapanDengarSegmen,
+    );
   }
 
   /// Teks pembetulan yang **boleh dibacakan** — medan Rumi, atau medan Arab
@@ -1830,9 +1831,8 @@ class _KertasScreenState extends State<KertasScreen> {
     return s.rubrik.idea.map((i) => '• ${i.maksud}').join('\n').trim();
   }
 
-  /// `null` apabila tiada teks yang boleh dibacakan.
-  String? _teksPembetulanDengar(SoalanKertas s) =>
-      s.jawapanPenuhDengarBernombor;
+  /// Baris-baris jawapan pembetulan yang boleh dibacakan — untuk suara.
+  List<String> _jawapanDengar(SoalanKertas s) => s.jawapanDengarBaris;
 
 
   // --- Badan jawapan mengikut jenis soalan ---------------------------------

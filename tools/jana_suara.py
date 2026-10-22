@@ -135,8 +135,12 @@ AYAT_TETAP = {
     "f-boleh": "Boleh lagi! Cuba sekali lagi.",
     "f-ulang": "Jangan putus asa. Mari kita ulang kaji sekali lagi.",
     "f-nama": "Assalamualaikum! Siapa nama kamu?",
-    # Sapaan pembuka. Nama murid **tidak** disebut — lihat `Suara.sapaan`.
+    # Sapaan pembuka. Nama murid **disebut** di tengah sapaan, jadi sapaan
+    # dipecahkan kepada dua rakaman dan nama di muchísimo diletakkan di
+    # antara (lihat `Suara.sebutSalam`).
     "f-selamat": "Assalamualaikum, jom ulangkaji KAFA bersama Raz.",
+    "f-selamat-1": "Assalamualaikum",
+    "f-selamat-2": "jom ulangkaji KAFA bersama Raz",
     # Penutup latih tubi — tiga ayat mengikut peratus jawapan betul
     # (lihat `Suara.latihanSelesai`). Tiada markah disebut: latih tubi bukan
     # kertas. "Syabas" hanya untuk 70% ke atas. Tiada ", ya." di hujung
@@ -416,65 +420,81 @@ def jawapan_penuh_teks(s: dict) -> str:
     return ""
 
 
-def jawapan_penuh_dengar(s: dict, rujuk_arab: bool) -> str:
-    """Cermin `SoalanKertas.jawapanPenuhDengar` dalam Dart.
+def jawapan_dengar_segmen(s: dict, rujuk_arab: bool) -> list[list[str]]:
+    """Cermin `SoalanKertas.jawapanDengarSegmen` dalam Dart.
 
-    Panel pembetulan meminta satu kunci: `o-<teks jawapan penuh>`. Kunci itu
-    mesti sama seperti teks yang appcribers, jadi logik ini kena salin
-    daripada model Dart. Tanpa padanan ini, jawapan pembetulan jatuh kepada
-    TTS peranti yang selalunya tiada suara Melayu.
+    Setiap baris jawapan ialah senarai segmen: **nombor item dahulu**,
+    kemudian jawapannya. Nombor dan jawapan adalah klip berasingan supaya
+    nombor yang sama dikongsi semua soalan — saiz app tidak melonjak.
+
+    Teks jawapan sendiri kebetulan sudah ada sebagai klip `o-` (medan item,
+    pasangan, pilihan, bank), jadi hanya nombor dan kategori yang baharu.
     """
+    keluar: list[list[str]] = []
+    awalan = "رقم" if rujuk_arab else "Nombor"
+
+    def pelayan(arab: list[str], rumi: list[str]) -> str | None:
+        if rujuk_arab:
+            return "\n".join(arab) if arab else None
+        return "\n".join(rumi) if rumi else None
+
     jenis = s.get("jenis")
-    if rujuk_arab:
-        return jawapan_penuh_teks(s)
-
-    jcr = s.get("jawapanContohRumi") or []
-    if jcr:
-        return "\n".join(jcr)
-    jc = s.get("jawapanContoh") or []
-    if jc:
-        return "\n".join(jc)
-
     if jenis in ("bulat", "objektif"):
-        keluar = []
         for it in s.get("item") or []:
-            pil = _teks_pilihan(it.get("pilihanRumi"))
+            pil = _teks_pilihan(it.get("pilihan") if rujuk_arab else it.get("pilihanRumi"))
             jaw = it.get("jawapan", -1)
             if isinstance(jaw, int) and 0 <= jaw < len(pil):
-                keluar.append(pil[jaw])
-        return ", ".join(keluar)
-    if jenis == "betul_salah":
-        keluar = []
-        for it in s.get("item") or []:
-            tanda = "\u2713" if it.get("betul") is True else "\u2717"
-            keluar.append(f"{it.get('rumi', '')} ({tanda})")
-        return nombor_baris(s, keluar, "suara")
-    if jenis == "suai":
-        return nombor_baris(s, [
-            f"{p.get('kiriRumi', '')} \u2014 {p.get('kananRumi', '')}"
-            for p in s.get("pasangan") or []
-        ], "suara")
-    if jenis == "susun":
-        return " ".join(s.get("urutanRumi") or [])
-    if jenis == "tempat_kosong":
-        return ", ".join(s.get("bankRumi") or [])
-    if jenis == "kumpulan":
-        kategori = s.get("kategoriRumi") or []
-        keluar = []
+                keluar.append([pil[jaw]])
+    elif jenis == "kumpulan":
+        kategori = s.get("kategori") if rujuk_arab else s.get("kategoriRumi")
+        kategori = kategori or []
         for it in s.get("item") or []:
             jaw = it.get("jawapan", -1)
+            asal = it.get("teks", "") if rujuk_arab else it.get("rumi", "")
             if isinstance(jaw, int) and 0 <= jaw < len(kategori):
-                keluar.append(f"{it.get('rumi', '')} \u2014 {kategori[jaw]}")
+                keluar.append([asal, kategori[jaw]])
             else:
-                keluar.append(it.get("rumi", ""))
-        return nombor_baris(s, keluar, "suara")
-    if jenis == "senarai":
-        return "\n".join(s.get("jawapanContohRumi") or s.get("jawapanContoh") or [])
-    if jenis in ("tulis", "huraian"):
-        # Rubrik sahaja — jawapannya ialah isi rubrik.
+                keluar.append([asal])
+    elif jenis == "suai":
+        for pr in s.get("pasangan") or []:
+            if rujuk_arab:
+                keluar.append([pr.get("kiri", ""), pr.get("kanan", "")])
+            else:
+                keluar.append([pr.get("kiriRumi", ""), pr.get("kananRumi", "")])
+    elif jenis == "betul_salah":
+        for it in s.get("item") or []:
+            asal = it.get("teks", "") if rujuk_arab else it.get("rumi", "")
+            keluar.append([asal])
+    elif jenis in ("tempat_kosong", "susun"):
+        satu = pelayan(s.get("bank") or [], s.get("bankRumi") or [])
+        if satu is not None:
+            keluar.append([satu])
+    elif jenis in ("tulis", "huraian"):
         isi = s.get("idea") or []
-        return "\n".join(i.get("maksud", "") for i in isi if i.get("maksud"))
-    return ""
+        if isi:
+            keluar.extend([[i.get("maksud", "")] for i in isi])
+        else:
+            senarai = pelayan(s.get("jawapanContoh") or [], s.get("jawapanContohRumi") or [])
+            if senarai is not None:
+                keluar.extend([[b] for b in senarai.split("\n") if b.strip()])
+    elif jenis == "senarai":
+        senarai = pelayan(s.get("jawapanContoh") or [], s.get("jawapanContohRumi") or [])
+        if senarai is not None:
+            keluar.extend([[b] for b in senarai.split("\n") if b.strip()])
+
+    keluar = [[seg for seg in baris if seg.strip()] for baris in keluar]
+    keluar = [baris for baris in keluar if baris]
+    if not keluar:
+        return keluar
+
+    # Nombor hanya perlu dibaca apabila soalan memang berbilang item.
+    n_item = len(s.get("pasangan") or []) if jenis == "suai" else len(s.get("item") or [])
+    perlu_nombor = jenis in ("kumpulan", "suai", "betul_salah", "senarai", "tulis", "huraian") or (
+        jenis in ("bulat", "objektif") and n_item > 1
+    )
+    if not perlu_nombor:
+        return keluar
+    return [[f"{awalan} {i + 1}"] + baris for i, baris in enumerate(keluar)]
 
 
 def _teks(s: dict, rujuk_arab: bool) -> list[tuple[str, str, str]]:
@@ -659,14 +679,15 @@ def _teks(s: dict, rujuk_arab: bool) -> list[tuple[str, str, str]]:
         else:
             tambah(kunci_teks)
 
-    # Jawapan penuh panel pembertura — satu kunci `o-<teks>`.
+    # Jawapan panel pembetulan — **satu klip satu baris**.
     #
-    # Butang "Dengar soalan & jawapan betul" meminta kunci ini. Tanpa klip
-    # itu, jawapan hanya dibacakan oleh TTS peranti yang selalunya tiada
-    # suara Melayu — jadi murid tidak dapat mendengar jawapan sebenar.
-    jawapan = jawapan_penuh_dengar(s, rujuk_arab)
-    if jawapan:
-        tambah(jawapan)
+    # Butang "Dengar soalan & jawapan" meminta kunci `o-<baris>` bagi
+    # setiap baris. Satu baris satu klip membolehkan app menambah jeda
+    # antara baris — tanpa jeda, jawapan berbilang kedengaran seperti satu
+    # karangan panjang.
+    for baris in jawapan_dengar_segmen(s, rujuk_arab):
+        for segmen in baris:
+            tambah(segmen)
 
     return [(k, v, su) for k, v, su in keluar if v]
 
@@ -791,10 +812,14 @@ def main() -> int:
                 if siap % 25 == 0 or siap == len(perlu):
                     print(f"  {siap}/{len(perlu)}", flush=True)
 
-    # Manifest: kunci app -> nama fail. Manifest lama dibaca dahulu supaya
-    # menjana satu subjek sahaja (--subjek) tidak memadam klip subjek lain.
+    # Manifest: kunci app -> nama fail.
+    #
+    # Jana **penuh** (tanpa `--subjek`) membina manifest dari kosong —klip
+    # yang tidak lagi digunakan dibuang supaya saiz app tidak melonjak
+    # setiap kali data berubah. Jana satu subjek sahaja perlu membaca
+    # manifest lama, supaya klip subjek lain tidak dipadam.
     peta: dict[str, str] = {}
-    if os.path.exists(MANIFEST):
+    if penapis is not None and os.path.exists(MANIFEST):
         try:
             with open(MANIFEST, encoding="utf-8") as f:
                 lama = json.load(f)
