@@ -1762,6 +1762,7 @@ class _KertasScreenState extends State<KertasScreen> {
   /// satu lagi kegagalan berwarna merah.
   Widget _pembetulan(SoalanKertas s) {
     final teks = _teksPembetulan(s);
+    final soalan = _soalanPembeturean(s);
     if (teks.isEmpty) return const SizedBox.shrink();
 
     return Container(
@@ -1810,6 +1811,24 @@ class _KertasScreenState extends State<KertasScreen> {
             ],
           ),
           const SizedBox(height: 6),
+          // Soalan ikut dipaparkan di atas jawapan sebenar.
+          //
+          // Panel pembetulan ialah tempat murid mendapat jawapan. Tanpa
+          // soalan di sini, panel itu menunjukkan jawapan sahaja — dan
+          // murid yang mahu tahu "soalan mana ni?" harus pula menatal ke
+          // atas. Butang dengar sudah membacakan soalan dahulu, tetapi
+          // yang dilihat juga mesti cukup untuk difahami.
+          if (soalan.trim().isNotEmpty) ...[
+            Text('SOALAN', style: Teks.cop.copyWith(color: Warna.dakwat)),
+            const SizedBox(height: 2),
+            Text(
+              soalan.trim(),
+              style: Teks.label.copyWith(color: Colors.black87, height: 1.4),
+            ),
+            const SizedBox(height: 8),
+            Text('JAWAPAN SEBENAR', style: Teks.cop.copyWith(color: Warna.dakwat)),
+            const SizedBox(height: 2),
+          ],
           for (final baris in teks.split('\n'))
             if (baris.trim().isNotEmpty)
               Padding(
@@ -1841,6 +1860,20 @@ class _KertasScreenState extends State<KertasScreen> {
       sandaran: s.rumi.isEmpty ? s.soalan : s.rumi,
       segmenJawapan: s.jawapanDengarSegmen,
     );
+  }
+
+  /// Soalan yang dipaparkan di atas jawapan sebenar dalam panel
+  /// pembetulan.
+  ///
+  /// Bagi soalan "isi tempat kosong", ayat dengan tempat kosong itulah
+  /// soalan sebenar — arahan ("Isi tempat kosong…") tidak membantu murid
+  /// menyemak jawapan sendiri. Perkara yang sama digunakan pada skrin
+  /// semakan.
+  String _soalanPembeturean(SoalanKertas s) {
+    if (s.jenis == JenisKertas.tempatKosong) {
+      return s.item.map((it) => it.rumi).join('\n');
+    }
+    return s.rumi.isEmpty ? s.soalan : s.rumi;
   }
 
   /// Teks pembetulan yang **boleh dibacakan** — medan Rumi, atau medan Arab

@@ -155,7 +155,7 @@ class _InfoScreenState extends State<InfoScreen> {
                   ),
                   _Ciri(
                     ikon: Icons.ios_share_rounded,
-                    tajuk: 'Kongsi RESULT',
+                    tajuk: 'Kongsi slip keputusan',
                     butiran:
                         'Slip markah dan kad koleksi lencana boleh dikongsi '
                         'ke WhatsApp, Facebook atau dihantar melalui mana-mana '

@@ -440,6 +440,8 @@ class Suara {
     // ignore: avoid_print
     kunciDiminta.add(kunci);
     ayatTerakhir = kunci;
+    // ignore: avoid_print
+    if (!kunci.startsWith('f-')) print('SUARA>>> $kunci');
     if (!Tetapan.instance.bunyiHidup) return;
 
     // Manifest mesti siap sebelum kita tahu sama ada klip ini ada. Selepas

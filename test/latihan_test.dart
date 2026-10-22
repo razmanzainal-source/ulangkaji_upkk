@@ -1360,6 +1360,55 @@ void main() {
       await _tutup(tester);
     });
 
+    testWidgets('butang dengar panel pembetulan membaca soalan dahulu', (
+      tester,
+    ) async {
+      // Regression: butang "Dengar soalan & jawapan betul" pada panel
+      // pembetulan mesti membacakan **soalan** dahulu, baru jawapan. Jika
+      // tidak, murid mendengar jawapan sahaja tanpa konteks soalan.
+      await _bukaSebagaiLaluan(
+        tester,
+        _kertas(jenisSumber: 'latihan', bilangan: 3),
+      );
+      await tester.tap(find.text('Mula menjawab'));
+      await tester.pump();
+
+      // Pilihan kedua salah — pembetulan akan muncul.
+      await tester.tap(find.byType(ButangPilihan).at(1));
+      await tester.pump();
+      await tester.tap(find.text('Seterusnya'));
+      await tester.pump();
+
+      expect(find.text('Pembetulan — jawapan sebenar'), findsOneWidget);
+
+      final butang = find.byTooltip('Dengar soalan & jawapan betul');
+      expect(
+        butang,
+        findsOneWidget,
+        reason: 'panel pembdiet correction mesti ada butang dengar',
+      );
+
+      Suara.instance.kunciDiminta.clear();
+      await tester.tap(butang);
+      await tester.pump();
+      await tester.pump(const Duration(seconds: 2));
+
+      final diminta = Suara.instance.kunciDiminta;
+      expect(
+        diminta.isNotEmpty,
+        isTrue,
+        reason: 'butang dengar mesti meminta sesuatu',
+      );
+      expect(
+        diminta.first,
+        startsWith('q-'),
+        reason: 'soalan mesti dibacakan lebih dahulu, bukan jawapan sahaja. '
+            'Diminta: $diminta',
+      );
+
+      await _tutup(tester);
+    });
+
     testWidgets('jawapan betul terus bergerak maju tanpa pembetulan', (
       tester,
     ) async {
