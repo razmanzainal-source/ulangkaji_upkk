@@ -694,6 +694,9 @@
           "bilanganJawapan": 1,
           "jawapanContoh": [
             "صلاة ظهر"
+          ],
+          "jawapanContohRumi": [
+            "Solat Zohor"
           ]
         },
         {
@@ -705,6 +708,9 @@
           "bilanganJawapan": 1,
           "jawapanContoh": [
             "صلاة جمعة"
+          ],
+          "jawapanContohRumi": [
+            "Solat Jumaat"
           ]
         },
         {
@@ -716,6 +722,9 @@
           "bilanganJawapan": 1,
           "jawapanContoh": [
             "صلاة جمعة"
+          ],
+          "jawapanContohRumi": [
+            "Solat Jumaat"
           ]
         },
         {
@@ -727,6 +736,9 @@
           "bilanganJawapan": 1,
           "jawapanContoh": [
             "صلاة ظهر"
+          ],
+          "jawapanContohRumi": [
+            "Solat Zohor"
           ]
         },
         {
@@ -738,6 +750,9 @@
           "bilanganJawapan": 1,
           "jawapanContoh": [
             "صلاة ظهر"
+          ],
+          "jawapanContohRumi": [
+            "Solat Zohor"
           ]
         },
         {
@@ -749,6 +764,9 @@
           "bilanganJawapan": 1,
           "jawapanContoh": [
             "صلاة ظهر"
+          ],
+          "jawapanContohRumi": [
+            "Solat Zohor"
           ]
         },
         {
@@ -760,6 +778,9 @@
           "bilanganJawapan": 1,
           "jawapanContoh": [
             "صلاة جمعة"
+          ],
+          "jawapanContohRumi": [
+            "Solat Jumaat"
           ]
         }
       ]
@@ -780,7 +801,9 @@
           "jawapanContoh": [
             "مُحْرِمٌ"
           ],
-          "jawapanContohRumi": []
+          "jawapanContohRumi": [
+            "Muhrim"
+          ]
         },
         {
           "id": "ibadah-2024-d1-p2",
@@ -792,7 +815,9 @@
           "jawapanContoh": [
             "اِعْتِكَافٌ"
           ],
-          "jawapanContohRumi": []
+          "jawapanContohRumi": [
+            "Ibtikaf"
+          ]
         },
         {
           "id": "ibadah-2024-d1-p3",
@@ -804,7 +829,9 @@
           "jawapanContoh": [
             "هَرُوسْ"
           ],
-          "jawapanContohRumi": []
+          "jawapanContohRumi": [
+            "Herus"
+          ]
         },
         {
           "id": "ibadah-2024-d1-p4",
@@ -816,7 +843,9 @@
           "jawapanContoh": [
             "دِيَوَاسْ"
           ],
-          "jawapanContohRumi": []
+          "jawapanContohRumi": [
+            "Diwasa"
+          ]
         },
         {
           "id": "ibadah-2024-d1-p5",
@@ -828,7 +857,9 @@
           "jawapanContoh": [
             "وَاجِبْ"
           ],
-          "jawapanContohRumi": []
+          "jawapanContohRumi": [
+            "Wajib"
+          ]
         },
         {
           "id": "ibadah-2024-d1-p6",
@@ -840,7 +871,9 @@
           "jawapanContoh": [
             "حَرَامْ"
           ],
-          "jawapanContohRumi": []
+          "jawapanContohRumi": [
+            "Harām"
+          ]
         },
         {
           "id": "ibadah-2024-d2-p1",
@@ -851,6 +884,9 @@
           "bilanganJawapan": 1,
           "jawapanContoh": [
             "دلييت"
+          ],
+          "jawapanContohRumi": [
+            "Dalil"
           ]
         },
         {
@@ -865,6 +901,12 @@
             "بَلِيغَ",
             "عُمْرُ",
             "تُوْتُبُ"
+          ],
+          "jawapanContohRumi": [
+            "Aur at",
+            "Baligh",
+            "Umur",
+            "Tawb"
           ]
         },
         {
@@ -876,6 +918,9 @@
           "bilanganJawapan": 1,
           "jawapanContoh": [
             "صلاة ظهر - ١ تياد خطبة، ٢ سَأورَغ دِيْرِي اتاو برجماعه"
+          ],
+          "jawapanContohRumi": [
+            "Solat Zohor - 1 Didahului khutbah, 2 Diiring berjemaah"
           ]
         },
         {
@@ -887,6 +932,9 @@
           "bilanganJawapan": 1,
           "jawapanContoh": [
             "صلاة جمعة - ١ ددهولوءي دغن دوا خطبة، ٢ دتمڤت يغ دتتقكن"
+          ],
+          "jawapanContohRumi": [
+            "Solat Jumaat - 1 Disusuli dua khutbah, 2 Dilaksanakan berturut-turut"
           ]
         },
         {
@@ -899,7 +947,9 @@
           "jawapanContoh": [
             "أَشْهَدُ"
           ],
-          "jawapanContohRumi": []
+          "jawapanContohRumi": [
+            "Asyhadu"
+          ]
         },
         {
           "id": "ibadah-2024-d4-p2",
@@ -911,7 +961,9 @@
           "jawapanContoh": [
             "وَاجِبْ"
           ],
-          "jawapanContohRumi": []
+          "jawapanContohRumi": [
+            "Wajib"
+          ]
         },
         {
           "id": "ibadah-2024-d4-p3",
@@ -923,7 +975,9 @@
           "jawapanContoh": [
             "حَرَامْ"
           ],
-          "jawapanContohRumi": []
+          "jawapanContohRumi": [
+            "Harām"
+          ]
         },
         {
           "id": "ibadah-2024-d4-p4",
@@ -935,7 +989,9 @@
           "jawapanContoh": [
             "مُحَرَّمٌ"
           ],
-          "jawapanContohRumi": []
+          "jawapanContohRumi": [
+            "Muharram"
+          ]
         },
         {
           "id": "ibadah-2024-d4-p5",
@@ -947,7 +1003,9 @@
           "jawapanContoh": [
             "دِيَوَاسْ"
           ],
-          "jawapanContohRumi": []
+          "jawapanContohRumi": [
+            "Diwasa"
+          ]
         },
         {
           "id": "ibadah-2024-d5-p1",
@@ -958,6 +1016,9 @@
           "bilanganJawapan": 1,
           "jawapanContoh": [
             "صلاة برجماعه"
+          ],
+          "jawapanContohRumi": [
+            "Solat berjemaah"
           ]
         },
         {
@@ -970,6 +1031,10 @@
           "jawapanContoh": [
             "مُنْقَطِعٌ",
             "مُسْتَمِرٌّ"
+          ],
+          "jawapanContohRumi": [
+            "Munqati",
+            "Mustamir"
           ]
         },
         {
@@ -981,6 +1046,9 @@
           "bilanganJawapan": 1,
           "jawapanContoh": [
             "حكوم : تيدق صح"
+          ],
+          "jawapanContohRumi": [
+            "Hukum: tidak sah"
           ]
         },
         {
@@ -992,6 +1060,9 @@
           "bilanganJawapan": 1,
           "jawapanContoh": [
             "السن : صلاة جمع دلاكوكن قد وقتو يغ سام، سام اد جمع تقديم اتاو جمع تأخير."
+          ],
+          "jawapanContohRumi": [
+            "Alasan: solat Jumaat dilakukan pada waktu Zohor, sama ada Jumaat awal atau Jumaat akhir"
           ]
         },
         {
@@ -1004,6 +1075,10 @@
           "jawapanContoh": [
             "صلاة وتر",
             "صلاة ضحى"
+          ],
+          "jawapanContohRumi": [
+            "Solat witr",
+            "Solat dhuha"
           ]
         },
         {
@@ -1016,6 +1091,10 @@
           "jawapanContoh": [
             "صلاة سجارا دودوق",
             "صلاة سجارا باريغ مغيريغ"
+          ],
+          "jawapanContohRumi": [
+            "Solat secara senyap",
+            "Solat secara boleh didengar"
           ]
         },
         {
@@ -1028,6 +1107,10 @@
           "jawapanContoh": [
             "منوتوڤ عورة دغن سمڤورنا",
             "منجاك كحرمتن ديري"
+          ],
+          "jawapanContohRumi": [
+            "Menutup aurat dengan sempurna",
+            "Menjaga kehormatan diri"
           ]
         },
         {
@@ -1040,6 +1123,10 @@
           "jawapanContoh": [
             "تكبيرة الإحرام",
             "مَمْنَجِقَ سُورَةَ الْفَاتِحَةَ"
+          ],
+          "jawapanContohRumi": [
+            "Takbiratul ihram",
+            "Membaca surah Al-Fatihah"
           ]
         },
         {
@@ -1053,6 +1140,11 @@
             "صلاة سنة تراويح",
             "بُولَنْ رَمَضَانَ",
             "دَأْمُوْنْكِنْ دُوسَا يَغْ لَلُوْ"
+          ],
+          "jawapanContohRumi": [
+            "Solat sunat terawih",
+            "Berpuasa Ramadan",
+            "Bers consultora dengan Ahmad yang Fakir"
           ]
         }
       ]

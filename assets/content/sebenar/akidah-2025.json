@@ -799,7 +799,10 @@
             "نور",
             "خير"
           ],
-          "jawapanContohRumi": []
+          "jawapanContohRumi": [
+            "Nur",
+            "Khayr"
+          ]
         },
         {
           "id": "akidah-2025-d1-p2",
@@ -818,7 +821,16 @@
             "طاعة",
             "ڤاتوه"
           ],
-          "jawapanContohRumi": []
+          "jawapanContohRumi": [
+            "Syirik",
+            "Niraka",
+            "Perkahwinan",
+            "Pengqednian anak perempuan",
+            "Beriman",
+            "Bertakwa",
+            "Taat",
+            "Wafat"
+          ]
         },
         {
           "id": "akidah-2025-d2-p1",
@@ -833,7 +845,12 @@
             "سنتياس برسديا مڠݢتي ماتي",
             "سنتياس مياقيني بهاوا سموا مخلوق اکن ماتي"
           ],
-          "jawapanContohRumi": []
+          "jawapanContohRumi": [
+            "Sentiasa mengagungkan Allah",
+            "Sentiasa memuji ayat-ayat-Nya",
+            "Sentiasa bersedia menjadi tetamu",
+            "Sentiasa menerima kematian sebagai makhluk ciptaan"
+          ]
         },
         {
           "id": "akidah-2025-d2-p2",
@@ -848,7 +865,12 @@
             "مڠݢاکوکن اللّٰه",
             "ممبرسيهکن کلمه ديري"
           ],
-          "jawapanContohRumi": []
+          "jawapanContohRumi": [
+            "Sentiasa bersedia menjadi tetamu",
+            "Sentiasa menerima kematian sebagai makhluk ciptaan",
+            "Sentiasa mengagungkan Allah",
+            "Sentiasa memuji ayat-ayat-Nya"
+          ]
         },
         {
           "id": "akidah-2025-d3-p1",
@@ -864,7 +886,13 @@
             "کوجيڠ",
             "لمبو"
           ],
-          "jawapanContohRumi": []
+          "jawapanContohRumi": [
+            "Kambing",
+            "Ikan",
+            "Kerbau",
+            "Kijang",
+            "Lembu"
+          ]
         },
         {
           "id": "akidah-2025-d3-p2",
@@ -880,7 +908,13 @@
             "سوتوڠ",
             "کرڠ"
           ],
-          "jawapanContohRumi": []
+          "jawapanContohRumi": [
+            "Ikan",
+            "Udang",
+            "Katak",
+            "Sotong",
+            "Kerang"
+          ]
         },
         {
           "id": "akidah-2025-d4",
@@ -896,7 +930,13 @@
             "منجاءوهي معصية",
             "سنتياس برتوبرت"
           ],
-          "jawapanContohRumi": []
+          "jawapanContohRumi": [
+            "Iman bertambah",
+            "Takwa semakin kokoh",
+            "Memperbanyakkan ibadah",
+            "Menjauhi maksiat",
+            "Sentiasa bertaubat"
+          ]
         },
         {
           "id": "akidah-2025-d5",
@@ -911,7 +951,12 @@
             "صيفت بهارو هاث اد قد مخلوق",
             "تيدق مڠهارڤکن ڤر تولوݢ مخلوق لاءين"
           ],
-          "jawapanContohRumi": []
+          "jawapanContohRumi": [
+            "Allah tiada kelam",
+            "Allah tidak berbeza lain",
+            "Sifat baharu hanya ada pada makhluk",
+            "Tidak menyerupai perbuatan makhluk lain"
+          ]
         },
         {
           "id": "akidah-2025-d6-p1",
@@ -927,7 +972,13 @@
             "منداڤت واغين",
             "اڤين دري شرك"
           ],
-          "jawapanContohRumi": []
+          "jawapanContohRumi": [
+            "Kubur bertiang",
+            "Kubur yang dijulang",
+            "Tersekat di dalam kubur",
+            "Mendapat balasan",
+            "Jatuh dalam syirik"
+          ]
         },
         {
           "id": "akidah-2025-d6-p2",
@@ -942,7 +993,12 @@
             "منريما ڤوكولن درڤد ملائكة",
             "دسيقسا دݢن حيوان بربيسا"
           ],
-          "jawapanContohRumi": []
+          "jawapanContohRumi": [
+            "Kubur khalq",
+            "Kubur kliota",
+            "Dihimpunkan oleh malaikat",
+            "Disembelih seperti haiwan yang dibunuh"
+          ]
         }
       ]
     }

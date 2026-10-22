@@ -536,7 +536,10 @@
             "جوجور",
             "بيجقسان"
           ],
-          "jawapanContohRumi": []
+          "jawapanContohRumi": [
+            "Jujur",
+            "Bijaksana"
+          ]
         },
         {
           "id": "akidah-2024-c3-p2",
@@ -549,7 +552,10 @@
             "صيحت",
             "بيجقسان"
           ],
-          "jawapanContohRumi": []
+          "jawapanContohRumi": [
+            "Sihat",
+            "Bijaksana"
+          ]
         },
         {
           "id": "akidah-2024-c3-p3",
@@ -562,7 +568,10 @@
             "عجز",
             "كراهة"
           ],
-          "jawapanContohRumi": []
+          "jawapanContohRumi": [
+            "Lemah",
+            "Kebencian"
+          ]
         },
         {
           "id": "akidah-2024-c4",
@@ -738,6 +747,9 @@
           "bilanganJawapan": 1,
           "jawapanContoh": [
             "ارادة"
+          ],
+          "jawapanContohRumi": [
+            "Iradah"
           ]
         },
         {
@@ -749,6 +761,9 @@
           "bilanganJawapan": 1,
           "jawapanContoh": [
             "برأوسها، براختيار، برتوكل، رضا دݢن كتنتوان اللّه"
+          ],
+          "jawapanContohRumi": [
+            "Berusaha, berikhtiar, bertawakal, rida dengan ketetapan Allah"
           ]
         }
       ]
@@ -799,6 +814,9 @@
           "bilanganJawapan": 1,
           "jawapanContoh": [
             "ارادة"
+          ],
+          "jawapanContohRumi": [
+            "Iradah"
           ]
         },
         {
@@ -811,6 +829,10 @@
           "jawapanContoh": [
             "قرءان سباكاي سومبر علمو",
             "قرءان سباكاي قندوان دالم كهيدوڤن"
+          ],
+          "jawapanContohRumi": [
+            "Al-Quran sumber ilmu",
+            "Al-Quran panduan dalam kehidupan"
           ]
         },
         {
@@ -828,7 +850,14 @@
             "موده ڤوتوس اس",
             "برأوسها"
           ],
-          "jawapanContohRumi": []
+          "jawapanContohRumi": [
+            "Sabar",
+            "Rida",
+            "Bertawakal",
+            "Tidak putus asa",
+            "Bersedia berusaha",
+            "Berusaha"
+          ]
         },
         {
           "id": "akidah-2024-d4-p1",
@@ -839,6 +868,9 @@
           "bilanganJawapan": 1,
           "jawapanContoh": [
             "نعمت يغ دتريما سماکين برکورݢ"
+          ],
+          "jawapanContohRumi": [
+            "Nikmat yang diterima semakin berkurang"
           ]
         },
         {
@@ -851,6 +883,10 @@
           "jawapanContoh": [
             "تيدق تاكوت عذاب اللّٰه",
             "جيوا تيدق تنترم"
+          ],
+          "jawapanContohRumi": [
+            "Tidak takut azab Allah",
+            "Jiwa tidak tenteram"
           ]
         },
         {
@@ -871,7 +907,17 @@
             "عالم",
             "برزخ"
           ],
-          "jawapanContohRumi": []
+          "jawapanContohRumi": [
+            "Dosa",
+            "Kebala",
+            "Tenggelam dalam dosa",
+            "Hisab",
+            "Qadha Mahsyar",
+            "Syirik",
+            "Niraka",
+            "Alam Barzakh",
+            "Barzakh"
+          ]
         },
         {
           "id": "akidah-2024-d6",
@@ -889,7 +935,15 @@
             "ملائكة",
             "برزخ"
           ],
-          "jawapanContohRumi": []
+          "jawapanContohRumi": [
+            "Nikmat kubur",
+            "Azab kubur",
+            "Soal kubur",
+            "Hari Kiamat",
+            "Mizan",
+            "Malaikat",
+            "Barzakh"
+          ]
         }
       ]
     }
