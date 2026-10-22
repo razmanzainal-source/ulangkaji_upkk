@@ -348,6 +348,28 @@ class Suara {
       _adaMelayu = ada == true;
       if (_adaMelayu!) {
         await _had(_tts.setLanguage('ms-MY'), _hadSedia);
+        // Pilih suara Melayu **perempuan** bila telefon ada. Tanpa ini,
+        // nama murid boleh dibacakan dengan suara yang berlainan dengan
+        // rekaman Yasmin — dan sapaan jadi tidak smooth.
+        try {
+          final suara = await _tts.getVoices;
+          final melayuPerempuan = suara
+              .where((v) =>
+                  (v['locale'] ?? '').toLowerCase().startsWith('ms') &&
+                  (v['gender'] ?? '').toLowerCase() == 'female')
+              .toList();
+          if (melayuPerempuan.isNotEmpty) {
+            await _had(
+              _tts.setVoice({
+                'name': melayuPerempuan.first['name'],
+                'locale': melayuPerempuan.first['locale'],
+              }),
+              _hadSedia,
+            );
+          }
+        } catch (e) {
+          // Tiada senarai suara — guna bahasa Melayu sahaja.
+        }
       }
     } catch (e) {
       _adaMelayu = false;
@@ -369,7 +391,16 @@ class Suara {
   /// Ini **bukan** lagi pilihan suara: rakaman Yasmin sentiasa diutamakan (lihat
   /// dokumen kelas). Keputusan ini hanya menentukan sama ada enjin suara peranti
   /// boleh dipakai sebagai sandaran apabila sesuatu ayat tiada rakaman.
+  /// Bolehkah enjin suara peranti menyapa nama murid?
+  ///
+  /// Dalam ujian, rantaian TTS sukar dikawal sepenuhnya — jadi ujian
+  /// boleh memaksa jawapan. `null` bermaksud "tanya peranti".
+  @visibleForTesting
+  bool? paksaAdaSuaraMelayu;
+
   Future<bool> adaSuaraMelayu() async {
+    final paksa = paksaAdaSuaraMelayu;
+    if (paksa != null) return paksa;
     if (_adaMelayu == null) await _sediaTtsSekali();
     return _adaMelayu ?? false;
   }
@@ -545,15 +576,31 @@ class Suara {
   /// rakaman dengan nama di tengah.
   Future<void> sebutSalam({String? nama}) async {
     final namaMurid = (nama ?? '').trim();
+
+    // Nama hanya boleh disebut jika enjin suara peranti boleh menyebutnya.
+    // Kalau tidak (contohnya iPhone tanpa suara Melayu dipasang), **jatuh
+    // balik kepada rakaman penuh** — lebih licin daripada jeda sunyi di
+    // tengah sapaan.
     if (namaMurid.isEmpty) {
       await sebutKunci(kunciSelamat, sandaran: sapaan);
       return;
     }
 
-    await sebutKunci(kunciSelamat1, sandaran: 'Assalamualaikum');
-    await Future<void>.delayed(jedaAntaraBaris);
+    // Semak dahulu sama ada enjin suara boleh menyebut nama — supaya
+    // keputusan dibuat SEBELUM rakaman pertama dimainkan. Kalau tidak boleh,
+    // jatuh balik kepada rakaman penuh: lebih licin daripada jeda sunyi.
+    if (!await adaSuaraMelayu()) {
+      await sebutKunci(kunciSelamat, sandaran: sapaan);
+      return;
+    }
+
+    // "Assalamualaikum" [jeda pendek] <nama> [jeda] "jom ulangkaji KAFA
+    // bersama Raz." — jeda pendek supaya nama-sounding disambungkan
+    // seperti cakapPETUAL, bukan seperti dua ayat berasingan.
+    await sebutKunci(kunciSelamat1, sandaran: 'Assalamualaikum,');
+    await Future<void>.delayed(jedaSapaanNama);
     await sebut(namaMurid);
-    await Future<void>.delayed(jedaAntaraBaris);
+    await Future<void>.delayed(jedaSapaanNama);
     await sebutKunci(kunciSelamat2, sandaran: sapaanBer);
   }
 
@@ -571,6 +618,12 @@ class Suara {
 
   /// Jeda pendek antara segmen — nombor item dan jawapannya.
   static const Duration jedaPendek = Duration(milliseconds: 250);
+
+  /// Jeda sekitar nama dalam sapaan pembuka.
+  ///
+  /// Jeda ini sengaja pendek — jeda yang panjang menyebabkan sapaan
+  /// terpecah kepada dua ayat berasingan dan tidak kedengaran licin.
+  static const Duration jedaSapaanNama = Duration(milliseconds: 180);
 
   /// Jeda sebelum setiap baris jawapan.
   ///

@@ -12,6 +12,8 @@
 //      tahu jawapan yang mana milik item yang mana, dan bukan satu ayat
 //      panjang yang bersambung.
 
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:ulangkaji_upkk/models/jawapan.dart';
@@ -86,6 +88,9 @@ void main() {
     Suara.instance.kesanTerakhir = null;
     // Manifest rakaman palsu — dalam ujian `rootBundle` tiada bundle aset.
     Suara.instance.suntukManifest({
+      'f-selamat': 'sapaan.m4a',
+      'f-selamat-1': 'sapaan1.m4a',
+      'f-selamat-2': 'sapaan2.m4a',
       'q-uji-a1': 'soalan.m4a',
       'o-Nombor 1': 'nombor1.m4a',
       'o-Minuman berkarbonat': 'item1.m4a',
@@ -298,6 +303,44 @@ void main() {
       // Ayat juga mesti dipaparkan dalam semakan.
       expect(s.ayatSoalan.first, contains('Tetamu'));
       expect(s.jawapanTempatKosongPaparan, contains('bertandang'));
+    });
+  });
+
+  group('sapaan pembuka dengan nama', () {
+    testWidgets('nama tidak disebut ⇒ jatuh balik kepada rakaman penuh', (
+      tester,
+    ) async {
+      // Dalam ujian tiada enjin suara Melayu — nama tidak boleh disebut.
+      // Kalau aplikasi masih cuba menyebut nama, akan ada jeda sunyi di
+      // tengah sapaan dan ia tidak kedengaran licin. Rakaman penuh lebih baik.
+      Suara.instance.ayatTerakhir = null;
+      // Peranti tanpa suara Melayu (kes sebenar pada iPhone sesetengah).
+      Suara.instance.paksaAdaSuaraMelayu = false;
+      // Jangan `await` — `sebutKunci` menunggu klip tamat, jadi jam ujian
+      // perlu dipump secara manual.
+      unawaited(Suara.instance.sebutSalam(nama: 'Aisyah'));
+      // Rantaian await dalam enjin suara perlu beberapa pusingan jam.
+      for (var i = 0; i < 6; i++) {
+        await tester.pump();
+      }
+      await tester.pump(const Duration(milliseconds: 500));
+
+      expect(
+        Suara.instance.ayatTerakhir,
+        Suara.kunciSelamat,
+        reason: 'guna rakaman penuh bila nama tak boleh disebut',
+      );
+    });
+
+    testWidgets('tanpa nama ⇒ rakaman penuh', (tester) async {
+      Suara.instance.ayatTerakhir = null;
+      Suara.instance.paksaAdaSuaraMelayu = false;
+      unawaited(Suara.instance.sebutSalam());
+      for (var i = 0; i < 6; i++) {
+        await tester.pump();
+      }
+      await tester.pump(const Duration(milliseconds: 500));
+      expect(Suara.instance.ayatTerakhir, Suara.kunciSelamat);
     });
   });
 }

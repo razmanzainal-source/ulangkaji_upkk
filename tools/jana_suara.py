@@ -139,8 +139,8 @@ AYAT_TETAP = {
     # dipecahkan kepada dua rakaman dan nama di muchísimo diletakkan di
     # antara (lihat `Suara.sebutSalam`).
     "f-selamat": "Assalamualaikum, jom ulangkaji KAFA bersama Raz.",
-    "f-selamat-1": "Assalamualaikum",
-    "f-selamat-2": "jom ulangkaji KAFA bersama Raz",
+    "f-selamat-1": "Assalamualaikum,",
+    "f-selamat-2": "jom ulangkaji KAFA bersama Raz.",
     # Penutup latih tubi — tiga ayat mengikut peratus jawapan betul
     # (lihat `Suara.latihanSelesai`). Tiada markah disebut: latih tubi bukan
     # kertas. "Syabas" hanya untuk 70% ke atas. Tiada ", ya." di hujung

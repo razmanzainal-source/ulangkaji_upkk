@@ -151,6 +151,21 @@ void pasangAudioPalsu() {
         (_) async => null,
       );
 
+  // Enjin TTS (flutter_tts) — tanpa mock, panggilan platformnya **tidak
+  // pernah selesai** dan ujian akan menggantung. Kita.mock supaya
+  // `isLanguageAvailable` menjawab "tidak" (peranti tanpa suara Melayu) —
+  // inilah keadaan sebenar yangducingkan sapaan jatuh balik kepada
+  // rakaman penuh.
+  TestDefaultBinaryMessengerBinding.instance.defaultBinaryMessenger
+      .setMockMethodCallHandler(
+        const MethodChannel('flutter_tts'),
+        (call) async {
+          if (call.method == 'isLanguageAvailable') return false;
+          if (call.method == 'getVoices') return <dynamic>[];
+          return null;
+        },
+      );
+
   // Aliran peristiwa global pula dibuka oleh `AudioPlayer.global` sebaik sahaja
   // ia dicipta, dan tanpa pendengar palsu ia membaling `MissingPluginException`
   // di tengah-tengah ujian yang membenarkan masa sebenar berlalu (misalnya
