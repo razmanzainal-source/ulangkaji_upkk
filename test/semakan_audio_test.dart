@@ -229,16 +229,6 @@ void main() {
     });
   });
 
-  group('sapaan pembuka', () {
-    test('sapaan dipecahkan supaya nama boleh diletakkan di tengah', () {
-      // "Assalamualaikum, [nama], jom ulangkaji KAFA bersama Raz." —
-      // dua rakaman dengan nama di antaranya.
-      expect(Suara.kunciSelamat1, 'f-selamat-1');
-      expect(Suara.kunciSelamat2, 'f-selamat-2');
-      expect(Suara.sapaanBer, contains('Raz'));
-      expect(Suara.sapaan, contains('Assalamualaikum'));
-    });
-  });
 
   group('cara jawapan dibacakan', () {
     test('betul/salah disebut dengan perkataan, bukan tanda', () {
@@ -306,41 +296,4 @@ void main() {
     });
   });
 
-  group('sapaan pembuka dengan nama', () {
-    testWidgets('nama tidak disebut ⇒ jatuh balik kepada rakaman penuh', (
-      tester,
-    ) async {
-      // Dalam ujian tiada enjin suara Melayu — nama tidak boleh disebut.
-      // Kalau aplikasi masih cuba menyebut nama, akan ada jeda sunyi di
-      // tengah sapaan dan ia tidak kedengaran licin. Rakaman penuh lebih baik.
-      Suara.instance.ayatTerakhir = null;
-      // Peranti tanpa suara Melayu (kes sebenar pada iPhone sesetengah).
-      Suara.instance.paksaAdaSuaraMelayu = false;
-      // Jangan `await` — `sebutKunci` menunggu klip tamat, jadi jam ujian
-      // perlu dipump secara manual.
-      unawaited(Suara.instance.sebutSalam(nama: 'Aisyah'));
-      // Rantaian await dalam enjin suara perlu beberapa pusingan jam.
-      for (var i = 0; i < 6; i++) {
-        await tester.pump();
-      }
-      await tester.pump(const Duration(milliseconds: 500));
-
-      expect(
-        Suara.instance.ayatTerakhir,
-        Suara.kunciSelamat,
-        reason: 'guna rakaman penuh bila nama tak boleh disebut',
-      );
-    });
-
-    testWidgets('tanpa nama ⇒ rakaman penuh', (tester) async {
-      Suara.instance.ayatTerakhir = null;
-      Suara.instance.paksaAdaSuaraMelayu = false;
-      unawaited(Suara.instance.sebutSalam());
-      for (var i = 0; i < 6; i++) {
-        await tester.pump();
-      }
-      await tester.pump(const Duration(milliseconds: 500));
-      expect(Suara.instance.ayatTerakhir, Suara.kunciSelamat);
-    });
-  });
 }
