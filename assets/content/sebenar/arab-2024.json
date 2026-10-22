@@ -1,0 +1,977 @@
+{
+  "id": "arab-2024",
+  "subjek": "arab",
+  "tajuk": "Bahasa Arab UPKK 2024",
+  "sumber": "Kertas soalan UPKK 2024 — imbasan rasmi",
+  "jenisSumber": "sebenar",
+  "masa": 75,
+  "nota": "Jawapan diambil terus daripada skema rasmi (muka13 & muka14). Soalan A1: letak garis di bawah jawapan betul. Soalan A2: isi tempat kosong. Soalan A3: jawapan betul. Soalan C1: padan antara makmal/ruangan. Soalan C2: tanda ☑/☒. Soalan D1: petikan tentang Zaid ke kebun haiwan. Soalan D2: isi tempat kosong. Soalan D3: tulis jawapan mengikut topik (warna/hari/bulan/pronoun). Soalan D4: bina ayat. Soalan D5: preposisi (di atas/di bawah, di hadapan/di belakang). Soalan D6: bina ayat. Soalan D7: tulis 4 nama haiwan. Soalan D8: tulis makanan.",
+  "bahagian": [
+    {
+      "nama": "A",
+      "markah": 10,
+      "arahan": "Letak garis di bawah jawapan yang betul / Isi tempat kosong / Pilih jawapan yang betul.",
+      "arahanRumi": "Letak garis di bawah jawapan yang betul / Isi tempat kosong / Pilih jawapan yang betul.",
+      "soalan": [
+        {
+          "id": "arab-2024-a1",
+          "jenis": "objektif",
+          "soalan": "الاِسْمُ المَاءُ / يَفْتَحُ",
+          "rumi": "Al-ismu al-ma'u / yaftahu",
+          "markah": 1,
+          "item": [
+            {
+              "teks": "",
+              "rumi": "",
+              "pilihan": [
+                {
+                  "teks": "المَاءُ",
+                  "rumi": "al-ma'u"
+                },
+                {
+                  "teks": "يَفْتَحُ",
+                  "rumi": "yaftahu"
+                }
+              ],
+              "jawapan": 0
+            }
+          ]
+        },
+        {
+          "id": "arab-2024-a2",
+          "jenis": "objektif",
+          "soalan": "الاِسْمُ مَكَّةُ شَوْكَةٌ / يَأْخُذُ",
+          "rumi": "Al-ismu makkatu syawkah / ya'khuzu",
+          "markah": 1,
+          "item": [
+            {
+              "teks": "",
+              "rumi": "",
+              "pilihan": [
+                {
+                  "teks": "شَوْكَةٌ",
+                  "rumi": "syawkah"
+                },
+                {
+                  "teks": "يَأْخُذُ",
+                  "rumi": "ya'khuzu"
+                }
+              ],
+              "jawapan": 0
+            }
+          ]
+        },
+        {
+          "id": "arab-2024-a3",
+          "jenis": "objektif",
+          "soalan": "الفِعْلُ يَكْتُبُ / قَلَمٌ",
+          "rumi": "Al-fi'lu yaktubu / qalamun",
+          "markah": 1,
+          "item": [
+            {
+              "teks": "",
+              "rumi": "",
+              "pilihan": [
+                {
+                  "teks": "يَكْتُبُ",
+                  "rumi": "yaktubu"
+                },
+                {
+                  "teks": "قَلَمٌ",
+                  "rumi": "qalamun"
+                }
+              ],
+              "jawapan": 1
+            }
+          ]
+        },
+        {
+          "id": "arab-2024-a4",
+          "jenis": "senarai",
+          "soalan": "مَا اسْمُكِ؟ اِسْمِي ____",
+          "rumi": "Ma ismuki? Ismi ____",
+          "markah": 1,
+          "bilanganJawapan": 1,
+          "jawapanContoh": [
+            "نَجْوَى"
+          ]
+        },
+        {
+          "id": "arab-2024-a5",
+          "jenis": "senarai",
+          "soalan": "كَيْفَ حَالُكَ ؟ أَنَا ____",
+          "rumi": "Kayfa haluka? Ana ____",
+          "markah": 1,
+          "bilanganJawapan": 1,
+          "jawapanContoh": [
+            "بِخَيْرٍ"
+          ]
+        },
+        {
+          "id": "arab-2024-a6",
+          "jenis": "senarai",
+          "soalan": "كَمْ عُمْرُكَ ؟ عُمْرِي ____ سَنَةً",
+          "rumi": "Kam 'umruka? 'Umri ____ sanah",
+          "markah": 1,
+          "bilanganJawapan": 1,
+          "jawapanContoh": [
+            "أَحَدَ عَشَرَ"
+          ]
+        },
+        {
+          "id": "arab-2024-a7",
+          "jenis": "objektif",
+          "soalan": "الفِعْلُ طَالِبَةٌ / أَكَلَ",
+          "rumi": "Al-fi'lu thalibah / akala",
+          "markah": 1,
+          "item": [
+            {
+              "teks": "",
+              "rumi": "",
+              "pilihan": [
+                {
+                  "teks": "طَالِبَةٌ",
+                  "rumi": "thalibah"
+                },
+                {
+                  "teks": "أَكَلَ",
+                  "rumi": "akala"
+                }
+              ],
+              "jawapan": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nama": "B",
+      "markah": 10,
+      "arahan": "Soalan 1 hingga 10. Pilih jawapan yang betul.",
+      "arahanRumi": "Soalan 1 hingga 10. Pilih jawapan yang betul.",
+      "soalan": [
+        {
+          "id": "arab-2024-b1",
+          "jenis": "objektif",
+          "soalan": "صَحْنٌ (أ) جَديدٌ (ب) نَظِيفٌ",
+          "rumi": "Shahnun (a) jadidun (b) nazifun",
+          "markah": 1,
+          "item": [
+            {
+              "teks": "",
+              "rumi": "",
+              "pilihan": [
+                {
+                  "teks": "جَديدٌ",
+                  "rumi": "jadidun"
+                },
+                {
+                  "teks": "نَظِيفٌ",
+                  "rumi": "nazifun"
+                }
+              ],
+              "jawapan": 0
+            }
+          ]
+        },
+        {
+          "id": "arab-2024-b2",
+          "jenis": "objektif",
+          "soalan": "مَا هَذِهِ ؟ (أ) جَوْرَبٌ (ب) بَنْطَلُونٌ (ج) ثَلَّاجَةٌ (د) غَلَّايَةٌ",
+          "rumi": "Ma hadhihi? (a) jawrabun (b) banthalun (c) thalajah (d) ghallah",
+          "markah": 1,
+          "item": [
+            {
+              "teks": "",
+              "rumi": "",
+              "pilihan": [
+                {
+                  "teks": "جَوْرَبٌ",
+                  "rumi": "jawrabun"
+                },
+                {
+                  "teks": "بَنْطَلُونٌ",
+                  "rumi": "banthalun"
+                },
+                {
+                  "teks": "ثَلَّاجَةٌ",
+                  "rumi": "thalajah"
+                },
+                {
+                  "teks": "غَلَّايَةٌ",
+                  "rumi": "ghallah"
+                }
+              ],
+              "jawapan": 0
+            }
+          ]
+        },
+        {
+          "id": "arab-2024-b3",
+          "jenis": "objektif",
+          "soalan": "مَا هَذِهِ ؟ (أ) ثَلَّاجَةٌ (ب) غَلَّايَةٌ (ج) مِقْلَاةٌ (د) مِغْرَفَةٌ",
+          "rumi": "Ma hadhihi? (a) thalajah (b) ghallah (c) miqlah (d) mighrafah",
+          "markah": 1,
+          "item": [
+            {
+              "teks": "",
+              "rumi": "",
+              "pilihan": [
+                {
+                  "teks": "ثَلَّاجَةٌ",
+                  "rumi": "thalajah"
+                },
+                {
+                  "teks": "غَلَّايَةٌ",
+                  "rumi": "ghallah"
+                },
+                {
+                  "teks": "مِقْلَاةٌ",
+                  "rumi": "miqlah"
+                },
+                {
+                  "teks": "مِغْرَفَةٌ",
+                  "rumi": "mighrafah"
+                }
+              ],
+              "jawapan": 0
+            }
+          ]
+        },
+        {
+          "id": "arab-2024-b4",
+          "jenis": "objektif",
+          "soalan": "الطَّفْلُ (أ) يَأْخُذُ (ب) يُعْطِي (ج) يَفْتَحُ (د) يَضَعُ",
+          "rumi": "At-tiflu (a) ya'khuzu (b) yu'ti (c) yaftahu (d) yadha'u",
+          "markah": 1,
+          "item": [
+            {
+              "teks": "",
+              "rumi": "",
+              "pilihan": [
+                {
+                  "teks": "يَأْخُذُ",
+                  "rumi": "ya'khuzu"
+                },
+                {
+                  "teks": "يُعْطِي",
+                  "rumi": "yu'ti"
+                },
+                {
+                  "teks": "يَفْتَحُ",
+                  "rumi": "yaftahu"
+                },
+                {
+                  "teks": "يَضَعُ",
+                  "rumi": "yadha'u"
+                }
+              ],
+              "jawapan": 2
+            }
+          ]
+        },
+        {
+          "id": "arab-2024-b5",
+          "jenis": "objektif",
+          "soalan": "الأُخْتُ القُرْآنَ . (أ) تَقْرَأُ (ب) تَعْمَلُ (ج) تَذْهَبُ (د) تَكْتُبُ",
+          "rumi": "Al-ukhtu al-qur'ana. (a) taqra'u (b) ta'malu (c) tadhhabu (d) taktubu",
+          "markah": 1,
+          "item": [
+            {
+              "teks": "",
+              "rumi": "",
+              "pilihan": [
+                {
+                  "teks": "تَقْرَأُ",
+                  "rumi": "taqra'u"
+                },
+                {
+                  "teks": "تَعْمَلُ",
+                  "rumi": "ta'malu"
+                },
+                {
+                  "teks": "تَذْهَبُ",
+                  "rumi": "tadhhabu"
+                },
+                {
+                  "teks": "تَكْتُبُ",
+                  "rumi": "taktubu"
+                }
+              ],
+              "jawapan": 0
+            }
+          ]
+        },
+        {
+          "id": "arab-2024-b6",
+          "jenis": "objektif",
+          "soalan": "مَا مِائَةٌ بِالْكَلِمَاتِ ؟ (أ) مِائَةٌ (ب) مِائَتَانِ (ج) ثَلَاثُمِائَةٍ (د) أَرْبَعُمِائَةٍ",
+          "rumi": "Ma mi'atun bil-kalimati? (a) mi'atun (b) mi'atani (c) thalathumi'ah (d) arba'umi'ah",
+          "markah": 1,
+          "item": [
+            {
+              "teks": "",
+              "rumi": "",
+              "pilihan": [
+                {
+                  "teks": "مِائَةٌ",
+                  "rumi": "mi'atun"
+                },
+                {
+                  "teks": "مِائَتَانِ",
+                  "rumi": "mi'atani"
+                },
+                {
+                  "teks": "ثَلَاثُمِائَةٍ",
+                  "rumi": "thalathumi'ah"
+                },
+                {
+                  "teks": "أَرْبَعُمِائَةٍ",
+                  "rumi": "arba'umi'ah"
+                }
+              ],
+              "jawapan": 0
+            }
+          ]
+        },
+        {
+          "id": "arab-2024-b7",
+          "jenis": "objektif",
+          "soalan": "مَا اثْنَان وَثَمَانُونَ بِالأَرْقَامِ؟ (أ) ٢٨ (ب) ٨٢ (ج) ٢٩ (د) ٦٨",
+          "rumi": "Ma ithnan wa thamanuna bil-arqam? (a) 28 (b) 82 (c) 29 (d) 68",
+          "markah": 1,
+          "item": [
+            {
+              "teks": "",
+              "rumi": "",
+              "pilihan": [
+                {
+                  "teks": "٢٨",
+                  "rumi": "28"
+                },
+                {
+                  "teks": "٨٢",
+                  "rumi": "82"
+                },
+                {
+                  "teks": "٢٩",
+                  "rumi": "29"
+                },
+                {
+                  "teks": "٦٨",
+                  "rumi": "68"
+                }
+              ],
+              "jawapan": 1
+            }
+          ]
+        },
+        {
+          "id": "arab-2024-b8",
+          "jenis": "objektif",
+          "soalan": "كُلُّ مَا يَأْتِي مِنْ أَنْوَاعِ المَلَابِسِ . (أ) سَاعَةٌ (ب) سِتَارٌ (ج) مِنْدِيلٌ (د) فُسْتَانٌ",
+          "rumi": "Kullu ma ya'ti min anwa'i al-malabis. (a) sa'ah (b) sitara (c) mandil (d) fustan",
+          "markah": 1,
+          "item": [
+            {
+              "teks": "",
+              "rumi": "",
+              "pilihan": [
+                {
+                  "teks": "سَاعَةٌ",
+                  "rumi": "sa'ah"
+                },
+                {
+                  "teks": "سِتَارٌ",
+                  "rumi": "sitara"
+                },
+                {
+                  "teks": "مِنْدِيلٌ",
+                  "rumi": "mandil"
+                },
+                {
+                  "teks": "فُسْتَانٌ",
+                  "rumi": "fustan"
+                }
+              ],
+              "jawapan": 3
+            }
+          ]
+        },
+        {
+          "id": "arab-2024-b9",
+          "jenis": "objektif",
+          "soalan": "أَيُّ الإِجَابَةِ الصَّحِيحَةِ مَقْبُولَةٌ. i) سَاعَةٌ ii) سِتَارٌ iii) مِنْدِيلٌ iv) فُسْتَانٌ",
+          "rumi": "Ayyu al-ijabati as-sahihah maqbulah. i) sa'ah ii) sitara iii) mandil iv) fustan",
+          "markah": 1,
+          "item": [
+            {
+              "teks": "",
+              "rumi": "",
+              "pilihan": [
+                {
+                  "teks": "i dan ii",
+                  "rumi": "i dan ii"
+                },
+                {
+                  "teks": "ii dan iii",
+                  "rumi": "ii dan iii"
+                },
+                {
+                  "teks": "iii dan iv",
+                  "rumi": "iii dan iv"
+                },
+                {
+                  "teks": "iv dan i",
+                  "rumi": "iv dan i"
+                }
+              ],
+              "jawapan": 2
+            }
+          ]
+        },
+        {
+          "id": "arab-2024-b10",
+          "jenis": "objektif",
+          "soalan": "الطَّفْلُ (أ) يَأْخُذُ (ب) يُعْطِي (ج) يَفْتَحُ (د) يَضَعُ",
+          "rumi": "At-tiflu (a) ya'khuzu (b) yu'ti (c) yaftahu (d) yadha'u",
+          "markah": 1,
+          "item": [
+            {
+              "teks": "",
+              "rumi": "",
+              "pilihan": [
+                {
+                  "teks": "يَأْخُذُ",
+                  "rumi": "ya'khuzu"
+                },
+                {
+                  "teks": "يُعْطِي",
+                  "rumi": "yu'ti"
+                },
+                {
+                  "teks": "يَفْتَحُ",
+                  "rumi": "yaftahu"
+                },
+                {
+                  "teks": "يَضَعُ",
+                  "rumi": "yadha'u"
+                }
+              ],
+              "jawapan": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nama": "C",
+      "markah": 20,
+      "arahan": "Karyakan jawapan yang betul.",
+      "arahanRumi": "Karyakan jawapan yang betul.",
+      "soalan": [
+        {
+          "id": "arab-2024-c1",
+          "markah": 5,
+          "item": [
+            {
+              "teks": "كَنَبَةٌ",
+              "rumi": "Sofa",
+              "jawapan": 0
+            },
+            {
+              "teks": "غُرْفَةُ النَّوْمِ",
+              "rumi": "Bilik tidur",
+              "jawapan": 0
+            },
+            {
+              "teks": "غُرْفَةُ المُعَلِّمِينَ",
+              "rumi": "Bilik guru",
+              "jawapan": 1
+            },
+            {
+              "teks": "مَعْمَلُ الكُمْبِيُوتَرِ",
+              "rumi": "Makmal komputer",
+              "jawapan": 1
+            },
+            {
+              "teks": "مَعْمَلُ العُلُومِ",
+              "rumi": "Makmal sains",
+              "jawapan": 1
+            }
+          ],
+          "soalan": "Padankan antara Kumpulan (A) dan Kumpulan (B).",
+          "rumi": "Padankan antara Kumpulan (A) dan Kumpulan (B).",
+          "jenis": "kumpulan",
+          "kategori": [
+            "فِي البَيْتِ",
+            "فِي المَدْرَسَةِ"
+          ],
+          "kategoriRumi": [
+            "Di rumah",
+            "Di sekolah"
+          ]
+        },
+        {
+          "id": "arab-2024-c2",
+          "markah": 3,
+          "item": [
+            {
+              "teks": "التِّلِفِزْيُونُ فِي صَالَةِ الضُّيُوفِ .",
+              "rumi": "At-tilifiziyunu fi salati ad-duyuf.",
+              "betul": true
+            },
+            {
+              "teks": "السَّرِيرُ فِي الحَمَّامِ.",
+              "rumi": "As-sariru fi al-hammam.",
+              "betul": false
+            },
+            {
+              "teks": "يَقْرَأُ عَلِيٌّ القُرْآنَ فِي المُصَلَّى .",
+              "rumi": "Yaqra'u 'Aliyyun al-qur'ana fi al-musalla.",
+              "betul": true
+            }
+          ],
+          "jenis": "betul_salah",
+          "soalan": "Letak tanda ☑ pada pernyataan betul dan ☒ pada pernyataan salah.",
+          "rumi": "Letak tanda ☑ pada pernyataan betul dan ☒ pada pernyataan salah."
+        },
+        {
+          "id": "arab-2024-c3",
+          "markah": 4,
+          "item": [
+            {
+              "teks": "اليَوْمُ يَوْمُ الأَرْبِعَاءِ وَ أَمْسِ يَوْمُ ____",
+              "rumi": "Al-yawmu yawmu al-arba'a'i wa amsi yawmu ____"
+            },
+            {
+              "teks": "يَتَنَاوَلُ أَحْمَدُ الغَدَاءَ فِي ____",
+              "rumi": "Yatanawwalu Ahmad al-ghada'a fi ____"
+            },
+            {
+              "teks": "تُقَامُ صَلَاةُ العَصْرِ فِي ____",
+              "rumi": "Tuqamu salatu al-'asri fi ____"
+            }
+          ],
+          "soalan": "Isi tempat kosong dengan jawapan yang betul.",
+          "rumi": "Isi tempat kosong dengan jawapan yang betul.",
+          "jenis": "tempat_kosong",
+          "bank": [
+            "الثَّلَاثَاءِ",
+            "النَّهَارِ",
+            "الصَّبَاحِ"
+          ]
+        },
+        {
+          "id": "arab-2024-c4",
+          "markah": 4,
+          "item": [
+            {
+              "teks": "يَأْكُلُ مُحَمَّدٌ الأَرُزَّ ( بِ / كَ ) اللَّحْمِ .",
+              "rumi": "Ya'kulu Muhammad al-aruzza (bi / ka) al-lahmi.",
+              "pilihan": [
+                {
+                  "teks": "بِ",
+                  "rumi": "bi"
+                },
+                {
+                  "teks": "كَ",
+                  "rumi": "ka"
+                }
+              ],
+              "jawapan": 0
+            },
+            {
+              "teks": "يَسْكُنُ المُعَلِمُ ( فِي / إِلَى ) كوالا لومڤور .",
+              "rumi": "Yaskunu al-mu'allimu (fi / ila) Kuala Lumpur.",
+              "pilihan": [
+                {
+                  "teks": "فِي",
+                  "rumi": "fi"
+                },
+                {
+                  "teks": "إِلَى",
+                  "rumi": "ila"
+                }
+              ],
+              "jawapan": 1
+            },
+            {
+              "teks": "يَجْلِسُ عُثْمَانُ ( عَلَى / عَنْ ) الكُرْسِيِّ .",
+              "rumi": "Yajlisu 'Uthmanu ('ala / 'an) al-kursiyy.",
+              "pilihan": [
+                {
+                  "teks": "عَلَى",
+                  "rumi": "'ala"
+                },
+                {
+                  "teks": "عَنْ",
+                  "rumi": "'an"
+                }
+              ],
+              "jawapan": 0
+            }
+          ],
+          "soalan": "Pilih jawapan yang betul.",
+          "rumi": "Pilih jawapan yang betul.",
+          "jenis": "bulat"
+        },
+        {
+          "id": "arab-2024-c5",
+          "markah": 4,
+          "item": [
+            {
+              "teks": "القِطَّ وَالسَّاعَةُ ____ الطَّاوِلَةِ .",
+              "rumi": "Al-qittu wa as-sa'atu ____ at-tawilah."
+            },
+            {
+              "teks": "أَنَا عَلِيٌّ وَأَنَا أَحْمَدُ ____ الشَّجَرَةِ .",
+              "rumi": "Ana 'Aliyyun wa ana Ahmad ____ ash-shajarah."
+            },
+            {
+              "teks": "أَنَا عَلِيٌّ ____ الشَّجَرَةِ .",
+              "rumi": "Ana 'Aliyyun ____ ash-shajarah."
+            },
+            {
+              "teks": "وَعَلِيٌّ ____ الشَّجَرَةِ .",
+              "rumi": "Wa 'Aliyyun ____ ash-shajarah."
+            }
+          ],
+          "soalan": "Isi tempat kosong dengan jawapan yang betul.",
+          "rumi": "Isi tempat kosong dengan jawapan yang betul.",
+          "jenis": "tempat_kosong",
+          "bank": [
+            "فَوْقَ",
+            "تَحْتَ",
+            "أَمَامَ",
+            "خَلْفَ"
+          ]
+        }
+      ]
+    },
+    {
+      "nama": "D",
+      "markah": 30,
+      "arahan": "Jawab semua soalan.",
+      "arahanRumi": "Jawab semua soalan.",
+      "soalan": [
+        {
+          "id": "arab-2024-d1-p1",
+          "markah": 3,
+          "soalan": "فِي أَيِّ يَوْمٍ يَذْهَبُ زَيْدٌ إِلَى حَدِيقَةِ الحَيَوَانَاتِ؟",
+          "rumi": "Fi ayyi yawmin yadhhabu Zaid ila hadiqati al-hayawanat?",
+          "jenis": "tulis",
+          "bilanganJawapan": 1,
+          "jawapanContoh": [
+            "يَوْمِ الأَحَدِ"
+          ]
+        },
+        {
+          "id": "arab-2024-d1-p2",
+          "markah": 4,
+          "soalan": "أُكْتُبْ أَرْبَعَةً مِنْ أَسْمَاءِ الحَيَوَانَاتِ مِنْ القِطْعَةِ.",
+          "rumi": "Uktub arba'atan min asma'i al-hayawanat min al-qit'ah.",
+          "jenis": "senarai",
+          "bilanganJawapan": 4,
+          "jawapanContoh": [
+            "الفِيلُ",
+            "النَّمِرُ",
+            "الدُّبُّ",
+            "التِّمْسَاحُ",
+            "الطَّائِرُ"
+          ]
+        },
+        {
+          "id": "arab-2024-d1-p3",
+          "markah": 1,
+          "soalan": "السَّاعَةُ الخَامِسَةُ وَالنِّصْفُ بِالأُرْقَامِ: ____",
+          "rumi": "As-sa'atu al-khamisatu wa an-nisfu bil-arqam: ____",
+          "jenis": "tulis",
+          "bilanganJawapan": 1,
+          "jawapanContoh": [
+            "٥:٣٠"
+          ]
+        },
+        {
+          "id": "arab-2024-d1-p4",
+          "markah": 2,
+          "soalan": "اُكْتُبْ المَأْكُولَاتِ مِنْ القِطْعَةِ.",
+          "rumi": "Uktub al-ma'kulati min al-qit'ah.",
+          "jenis": "senarai",
+          "bilanganJawapan": 2,
+          "jawapanContoh": [
+            "المَكَرُونَةَ",
+            "الخُبْزَ",
+            "العَصِيرَ",
+            "المَاءَ"
+          ]
+        },
+        {
+          "id": "arab-2024-d2-p1",
+          "markah": 1,
+          "soalan": "أَكُلُ ____",
+          "rumi": "A'kulu ____",
+          "jenis": "tulis",
+          "bilanganJawapan": 1,
+          "jawapanContoh": [
+            "الأَرُزَّ"
+          ],
+          "jawapanContohRumi": []
+        },
+        {
+          "id": "arab-2024-d2-p2",
+          "markah": 1,
+          "soalan": "أَشْرَبُ ____",
+          "rumi": "Ashrabu ____",
+          "jenis": "tulis",
+          "bilanganJawapan": 1,
+          "jawapanContoh": [
+            "العَصِيرَ",
+            "المَاءَ"
+          ],
+          "jawapanContohRumi": []
+        },
+        {
+          "id": "arab-2024-d2-p3",
+          "markah": 4,
+          "soalan": "مَا أَلْوَانُ عَلَمِ مَالِيزِيَا ؟ ____",
+          "rumi": "Ma alwanu 'alam Malaysia? ____",
+          "jenis": "senarai",
+          "bilanganJawapan": 4,
+          "jawapanContoh": [
+            "أَحْمَرُ",
+            "أَبْيَضُ",
+            "أَزْرَقُ",
+            "كُمَارِي"
+          ],
+          "jawapanContohRumi": []
+        },
+        {
+          "id": "arab-2024-d3",
+          "markah": 6,
+          "soalan": "كُتُبُ الإِجَابَةَ حَسَبَ المَوْضُوعِ. (٦ دَرَجَاتٍ)",
+          "rumi": "Tulis jawapan mengikut topik: warna, hari, bulan, kata ganti nama. (6 markah)",
+          "jenis": "senarai",
+          "bilanganJawapan": 6,
+          "jawapanContoh": [
+            "أَحْمَرُ",
+            "أَبْيَضُ",
+            "يَوْمُ الثُّلَاثَاءِ",
+            "يَوْمُ الجُمْعَةِ",
+            "رَمَضَانُ",
+            "أَنَا"
+          ],
+          "jawapanContohRumi": [
+            "Merah",
+            "Putih",
+            "Hari Selasa",
+            "Hari Jumaat",
+            "Ramadan",
+            "Saya"
+          ]
+        },
+        {
+          "id": "arab-2024-d4-p1",
+          "markah": 4,
+          "soalan": "مَلْعَب / شَوْكَة / جَلَسَ",
+          "rumi": "mal'ab / syawkah / jalasa",
+          "jenis": "tulis",
+          "bilanganJawapan": 1,
+          "jawapanContoh": [
+            "يَلْعَبُ عَلِيٌّ الكُرَةَ فِي المَلْعَبِ ."
+          ]
+        },
+        {
+          "id": "arab-2024-d4-p2",
+          "markah": 1,
+          "soalan": "شَوْكَة / عَلَى / الصَّحْنِ",
+          "rumi": "syawkah / 'ala / as-sahni",
+          "jenis": "tulis",
+          "bilanganJawapan": 1,
+          "jawapanContoh": [
+            "الشَّوْكَةُ عَلَى الصَّحْنِ ."
+          ]
+        },
+        {
+          "id": "arab-2024-d4-p3",
+          "markah": 1,
+          "soalan": "جَلَسَ / أَبٌ / الكُرْسِيِّ",
+          "rumi": "jalasa / abun / al-kursiyy",
+          "jenis": "tulis",
+          "bilanganJawapan": 1,
+          "jawapanContoh": [
+            "جَلَسَ أَبٌ عَلَى الكُرْسِيِّ ."
+          ]
+        },
+        {
+          "id": "arab-2024-d5",
+          "markah": 4,
+          "item": [
+            {
+              "teks": "القِطَّ وَالسَّاعَةُ (فَوْقَ / تَحْتَ / فِي / أَمَامَ) الطَّاوِلَةِ .",
+              "rumi": "Al-qittu wa as-sa'atu (fawqa / tahta / fi / amama) at-tawilah.",
+              "pilihan": [
+                {
+                  "teks": "فَوْقَ",
+                  "rumi": "fawqa"
+                },
+                {
+                  "teks": "تَحْتَ",
+                  "rumi": "tahta"
+                },
+                {
+                  "teks": "فِي",
+                  "rumi": "fi"
+                },
+                {
+                  "teks": "أَمَامَ",
+                  "rumi": "amama"
+                }
+              ],
+              "jawapan": 0
+            },
+            {
+              "teks": "أَنَا عَلِيٌّ وَأَنَا أَحْمَدُ (تَحْتَ / فَوْقَ / أَمَامَ / خَلْفَ) الشَّجَرَةِ .",
+              "rumi": "Ana 'Aliyyun wa ana Ahmad (tahta / fawqa / amama / khalfa) ash-shajarah.",
+              "pilihan": [
+                {
+                  "teks": "تَحْتَ",
+                  "rumi": "tahta"
+                },
+                {
+                  "teks": "فَوْقَ",
+                  "rumi": "fawqa"
+                },
+                {
+                  "teks": "أَمَامَ",
+                  "rumi": "amama"
+                },
+                {
+                  "teks": "خَلْفَ",
+                  "rumi": "khalfa"
+                }
+              ],
+              "jawapan": 1
+            },
+            {
+              "teks": "أَنَا عَلِيٌّ (تَحْتَ / فَوْقَ / أَمَامَ / خَلْفَ) الشَّجَرَةِ .",
+              "rumi": "Ana 'Aliyyun (tahta / fawqa / amama / khalfa) ash-shajarah.",
+              "pilihan": [
+                {
+                  "teks": "تَحْتَ",
+                  "rumi": "tahta"
+                },
+                {
+                  "teks": "فَوْقَ",
+                  "rumi": "fawqa"
+                },
+                {
+                  "teks": "أَمَامَ",
+                  "rumi": "amama"
+                },
+                {
+                  "teks": "خَلْفَ",
+                  "rumi": "khalfa"
+                }
+              ],
+              "jawapan": 2
+            },
+            {
+              "teks": "وَعَلِيٌّ (تَحْتَ / فَوْقَ / أَمَامَ / خَلْفَ) الشَّجَرَةِ .",
+              "rumi": "Wa 'Aliyyun (tahta / fawqa / amama / khalfa) ash-shajarah.",
+              "pilihan": [
+                {
+                  "teks": "تَحْتَ",
+                  "rumi": "tahta"
+                },
+                {
+                  "teks": "فَوْقَ",
+                  "rumi": "fawqa"
+                },
+                {
+                  "teks": "أَمَامَ",
+                  "rumi": "amama"
+                },
+                {
+                  "teks": "خَلْفَ",
+                  "rumi": "khalfa"
+                }
+              ],
+              "jawapan": 3
+            }
+          ],
+          "soalan": "Pilih preposisi yang betul.",
+          "rumi": "Pilih preposisi yang betul.",
+          "jenis": "bulat"
+        },
+        {
+          "id": "arab-2024-d6-p1",
+          "markah": 4,
+          "soalan": "يَلْعَبُ عَلِيٌّ الكُرَةَ فِي المَلْعَبِ .",
+          "rumi": "Ya'labu 'Aliyyu al-kurata fi al-mal'abi.",
+          "jenis": "tulis",
+          "bilanganJawapan": 1,
+          "jawapanContoh": [
+            "يَلْعَبُ عَلِيٌّ الكُرَةَ فِي المَلْعَبِ ."
+          ]
+        },
+        {
+          "id": "arab-2024-d6-p2",
+          "markah": 1,
+          "soalan": "يَذْهَبُ زَيْدٌ إِلَى حَدِيقَةِ الحَيَوَانَاتِ فِي يَوْمِ الأَحَدِ .",
+          "rumi": "Yadhhabu Zaid ila hadiqati al-hayawanati fi yawmi al-ahad.",
+          "jenis": "tulis",
+          "bilanganJawapan": 1,
+          "jawapanContoh": [
+            "يَذْهَبُ زَيْدٌ إِلَى حَدِيقَةِ الحَيَوَانَاتِ فِي يَوْمِ الأَحَدِ ."
+          ]
+        },
+        {
+          "id": "arab-2024-d6-p3",
+          "markah": 1,
+          "soalan": "جَلَسَ أَبٌ عَلَى الكُرْسِيِّ .",
+          "rumi": "Jalasa abun 'ala al-kursiyy.",
+          "jenis": "tulis",
+          "bilanganJawapan": 1,
+          "jawapanContoh": [
+            "جَلَسَ أَبٌ عَلَى الكُرْسِيِّ ."
+          ]
+        },
+        {
+          "id": "arab-2024-d7",
+          "markah": 4,
+          "soalan": "____، ____، ____، ____",
+          "rumi": "____، ____، ____، ____",
+          "jenis": "senarai",
+          "bilanganJawapan": 4,
+          "jawapanContoh": [
+            "الفِيلُ",
+            "النَّمِرُ",
+            "الدُّبُّ",
+            "التِّمْسَاحُ",
+            "الطَّائِرُ"
+          ],
+          "jawapanContohRumi": []
+        },
+        {
+          "id": "arab-2024-d8",
+          "markah": 4,
+          "item": [
+            {
+              "teks": "المَكَرُونَةُ، ____، ____، ____",
+              "rumi": "al-makrunatu، ____، ____، ____"
+            }
+          ],
+          "soalan": "Tulis makanan dari petikan.",
+          "rumi": "Tulis makanan dari petikan.",
+          "jenis": "tempat_kosong",
+          "bank": [
+            "الخُبْزُ",
+            "العَصِيرُ",
+            "المَاءُ"
+          ]
+        }
+      ]
+    }
+  ]
+}

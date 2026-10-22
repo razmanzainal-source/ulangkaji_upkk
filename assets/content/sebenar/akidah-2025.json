@@ -1,0 +1,950 @@
+{
+  "id": "akidah-2025",
+  "subjek": "akidah",
+  "tajuk": "Akidah UPKK 2025",
+  "sumber": "Kertas soalan UPKK 2025 — imbasan rasmi",
+  "jenisSumber": "sebenar",
+  "masa": 75,
+  "nota": "Jawapan diambil terus daripada skema rasmi (muka13 J3 & muka14 J4). Soalan A2: padankan Malaikat (Jibril, Mika'il, Ridwan) dengan 'Nama Malaikat' dan Rasul (Musa, Daud, Muhammad) dengan 'Nama Rasul'. Soalan C1: tanda ☑/☒ skema menunjukkan item 2 & 3 betul, lain salah. Soalan C3: sifat berlawanan bagi Allah = Tadad (تعدد), sifat mustahil Rasul = Bladah (بلادة) & 'Ajz (عجز). Soalan D1: Malaikat = khayr/nur; Timbang = syirik/nirak. Soalan D2: dua ciri beriman Hayat + dua ciri beriman Kiamat. Soalan D3: hewan darat/air (mana-mana 2). Soalan D4: iman bertambah/takwa kokoh/memperbanyak ibadah/menjauhi maksiat/bertaubat. Soalan D5: Allah tiada kelam, sifat baru, tiada menyerupai makhluk. Soalan D6: nikmat/azab kubur (pelbagai jawapan diterima).",
+  "bahagian": [
+    {
+      "nama": "A",
+      "markah": 10,
+      "arahan": "Karyakan jawapan yang betul.",
+      "arahanRumi": "Karyakan jawapan yang betul.",
+      "soalan": [
+        {
+          "id": "akidah-2025-a1",
+          "jenis": "tempat_kosong",
+          "soalan": "سوالن فرتم: لڠکڤکن مقصود کلمه شهاده دباوه. (٤ مركه)",
+          "rumi": "Soalan Pertama: Lengkapkan makna Kalimah Syahadah di bawah. (4 markah)",
+          "markah": 4,
+          "item": [
+            {
+              "teks": "____ — دسمبه",
+              "rumi": "____ — Dismembah"
+            },
+            {
+              "teks": "____ — برسقسي",
+              "rumi": "____ — Bersaksi"
+            },
+            {
+              "teks": "____ — نبي محمد علية",
+              "rumi": "____ — Nabi Muhammad a.s."
+            },
+            {
+              "teks": "____ — ڤسوروه",
+              "rumi": "____ — Pesuruh"
+            }
+          ],
+          "bank": [
+            "أَشْهَدُ",
+            "وَأَشْهَدُ",
+            "مُحَمَّدًا",
+            "رَسُولُ اللَّهِ"
+          ]
+        },
+        {
+          "id": "akidah-2025-a2",
+          "jenis": "padan",
+          "soalan": "سوالن كدوا: سوايكن ( ا ) دݢن ( ب ) . (٦ مركه)",
+          "rumi": "Soalan Kedua: Suaikan ( a ) dengan ( b ). (6 markah)",
+          "markah": 6,
+          "item": [
+            {
+              "teks": "جبريل الملا",
+              "rumi": "Jibril al-Mala'",
+              "pilihan": [
+                {
+                  "teks": "نام رسول",
+                  "rumi": "Nama Rasul"
+                },
+                {
+                  "teks": "نام ملائكة",
+                  "rumi": "Nama Malaikat"
+                }
+              ],
+              "jawapan": 1
+            },
+            {
+              "teks": "موسى المليه",
+              "rumi": "Musa al-Mala'",
+              "pilihan": [
+                {
+                  "teks": "نام رسول",
+                  "rumi": "Nama Rasul"
+                },
+                {
+                  "teks": "نام ملائكة",
+                  "rumi": "Nama Malaikat"
+                }
+              ],
+              "jawapan": 0
+            },
+            {
+              "teks": "ميكائيل المليه",
+              "rumi": "Mika'il al-Mala'",
+              "pilihan": [
+                {
+                  "teks": "نام رسول",
+                  "rumi": "Nama Rasul"
+                },
+                {
+                  "teks": "نام ملائكة",
+                  "rumi": "Nama Malaikat"
+                }
+              ],
+              "jawapan": 1
+            },
+            {
+              "teks": "رضوان الله",
+              "rumi": "Ridwanullah",
+              "pilihan": [
+                {
+                  "teks": "نام رسول",
+                  "rumi": "Nama Rasul"
+                },
+                {
+                  "teks": "نام ملائكة",
+                  "rumi": "Nama Malaikat"
+                }
+              ],
+              "jawapan": 1
+            },
+            {
+              "teks": "داود الل",
+              "rumi": "Daud",
+              "pilihan": [
+                {
+                  "teks": "نام رسول",
+                  "rumi": "Nama Rasul"
+                },
+                {
+                  "teks": "نام ملائكة",
+                  "rumi": "Nama Malaikat"
+                }
+              ],
+              "jawapan": 0
+            },
+            {
+              "teks": "محمد لله",
+              "rumi": "Muhammadullah",
+              "pilihan": [
+                {
+                  "teks": "نام رسول",
+                  "rumi": "Nama Rasul"
+                },
+                {
+                  "teks": "نام ملائكة",
+                  "rumi": "Nama Malaikat"
+                }
+              ],
+              "jawapan": 0
+            }
+          ]
+        },
+        {
+          "id": "akidah-2025-a3",
+          "jenis": "tempat_kosong",
+          "soalan": "سوالن كتيک: ايسي تمڤت کوسوڠ دݢن جواڤن يڠ بتول. (٦ مركه)",
+          "rumi": "Soalan Ketiga: Isi tempat kosong dengan jawapan yang betul. (6 markah)",
+          "markah": 6,
+          "item": [
+            {
+              "teks": "____ — اللّٰه تيدق كڤد سسواتو.",
+              "rumi": "____ — Allah tidak ____ kepada sesuatu."
+            },
+            {
+              "teks": "برايمان دݢن صيفت رسول حكومث ____ .",
+              "rumi": "Beriman dengan sifat Rasul hukumnya ____ ."
+            },
+            {
+              "teks": "اللّٰه لمنجاديکن سموا مخلوق دݢن ____ دڤقسا.",
+              "rumi": "Allah menjadikan semua makhluk dengan ____ terpaksa."
+            },
+            {
+              "teks": "ڤريغكت كدوا دالم ڤروسيس جادي ماءنسي اداله ____ .",
+              "rumi": "Perkembangan kedua dalam proses jadi manusia ialah ____ ."
+            },
+            {
+              "teks": "روح دتيوڤ قد ڤريغكت ____ . ستله سمڤورنا اغكوتا بادن",
+              "rumi": "Ruh ditiup pada ____ . Selepas sempurna anggota badan"
+            },
+            {
+              "teks": "عالم اكن منجادي جك ترداقت لبيه درڤد ساتو توهن ____ .",
+              "rumi": "Alam akan menjadi ____ jika terlalu percaya kepada satu tuhan."
+            }
+          ],
+          "bank": [
+            "برحاجت",
+            "واجب",
+            "كهندق",
+            "علقه",
+            "جانين",
+            "هورو-هارا"
+          ]
+        }
+      ]
+    },
+    {
+      "nama": "B",
+      "markah": 10,
+      "arahan": "Soalan 1 hingga 15. Bulatkan jawapan yang betul.",
+      "arahanRumi": "Soalan 1 hingga 15. Bulatkan jawapan yang betul.",
+      "soalan": [
+        {
+          "id": "akidah-2025-b1",
+          "jenis": "objektif",
+          "soalan": "سوال ١: هاري قيامة مروڤاكن هاري ____ .",
+          "rumi": "Soalan 1: Hari Kiamat memperlihatkan hari ____ .",
+          "markah": 1,
+          "item": [
+            {
+              "teks": "",
+              "rumi": "",
+              "pilihan": [
+                {
+                  "teks": "حيوان دان تومبوهن",
+                  "rumi": "Haiwan dan Tumbuhan"
+                },
+                {
+                  "teks": "ماءنسي دان حيوان",
+                  "rumi": "Manusia dan Haiwan"
+                },
+                {
+                  "teks": "جين دان حيوان",
+                  "rumi": "Jin dan Haiwan"
+                },
+                {
+                  "teks": "ماءنسي دان جين",
+                  "rumi": "Manusia dan Jin"
+                }
+              ],
+              "jawapan": 3
+            }
+          ]
+        },
+        {
+          "id": "akidah-2025-b2",
+          "jenis": "objektif",
+          "soalan": "سوال ٢: مقصود علم اياله اللّٰه مها ____ .",
+          "rumi": "Soalan 2: Maksud 'Ilm bagi Allah ialah Maha ____ .",
+          "markah": 1,
+          "item": [
+            {
+              "teks": "",
+              "rumi": "",
+              "pilihan": [
+                {
+                  "teks": "مقتاهوءي",
+                  "rumi": "Matahai"
+                },
+                {
+                  "teks": "برکواس",
+                  "rumi": "Berkuasa"
+                },
+                {
+                  "teks": "مندݢر",
+                  "rumi": "Mendengar"
+                },
+                {
+                  "teks": "اسا",
+                  "rumi": "Asa"
+                }
+              ],
+              "jawapan": 1
+            }
+          ]
+        },
+        {
+          "id": "akidah-2025-b3",
+          "jenis": "objektif",
+          "soalan": "سوال ٣: اورغ يڠ برايمان دݢن صيفت مخالفته للحوادث اكن ____ .",
+          "rumi": "Soalan 3: Orang yang beriman dengan sifat Mukhalafatuhu li al-hawadith akan ____ .",
+          "markah": 1,
+          "item": [
+            {
+              "teks": "",
+              "rumi": "",
+              "pilihan": [
+                {
+                  "teks": "سوک منونتوت علمو",
+                  "rumi": "Suka menurut ilmu"
+                },
+                {
+                  "teks": "مڠوكوهکن تقواهن اللّٰه",
+                  "rumi": "Menguatkan takwa Allah"
+                },
+                {
+                  "teks": "منجاک توتور بيجارا",
+                  "rumi": "Menjaga tutor belajar"
+                },
+                {
+                  "teks": "براوسها دان بردعاء كڤد اللّٰه",
+                  "rumi": "Berusaha dan berdoa kepada Allah"
+                }
+              ],
+              "jawapan": 3
+            }
+          ]
+        },
+        {
+          "id": "akidah-2025-b4",
+          "jenis": "objektif",
+          "soalan": "سوال ٤: مقصود قدر اياله برسره كڤد اللّٰه ____ .",
+          "rumi": "Soalan 4: Maksud Qadar ialah berserah kepada Allah ____ .",
+          "markah": 1,
+          "item": [
+            {
+              "teks": "",
+              "rumi": "",
+              "pilihan": [
+                {
+                  "teks": "قلقساناءن كتنتوان اللّٰه",
+                  "rumi": "Keluh kesah ketentuan Allah"
+                },
+                {
+                  "teks": "كتتقن دان كتنتوان اللّٰه",
+                  "rumi": "Yakin dan ketentuan Allah"
+                },
+                {
+                  "teks": "براوسها دان بردعاء كڤد اللّٰه",
+                  "rumi": "Berusaha dan berdoa kepada Allah"
+                }
+              ],
+              "jawapan": 2
+            }
+          ]
+        },
+        {
+          "id": "akidah-2025-b5",
+          "jenis": "objektif",
+          "soalan": "سوال ٥: ڤرکارا يڠ اکن برلاکو سجوروس سلڤس سهاج مليهت ميت دكبوميكن ____ .",
+          "rumi": "Soalan 5: Perkara yang akan berlaku segerus sahaja melainkan dimasukkan ke kubur ____ .",
+          "markah": 1,
+          "item": [
+            {
+              "teks": "",
+              "rumi": "",
+              "pilihan": [
+                {
+                  "teks": "سوءال قبور",
+                  "rumi": "Soal Kubur"
+                },
+                {
+                  "teks": "تين صراط",
+                  "rumi": "Tin Sirat"
+                },
+                {
+                  "teks": "حساب",
+                  "rumi": "Hisab"
+                },
+                {
+                  "teks": "ميزان",
+                  "rumi": "Mizan"
+                }
+              ],
+              "jawapan": 0
+            }
+          ]
+        },
+        {
+          "id": "akidah-2025-b6",
+          "jenis": "objektif",
+          "soalan": "سوال ٦: ڤرݢتين اداله كنجرن باءيق باكي کولوݢ يڠ برايمان .",
+          "rumi": "Soalan 6: Pergantian adalah kejadian yang baik bagi kolongan yang beriman.",
+          "markah": 1,
+          "item": [
+            {
+              "teks": "",
+              "rumi": "",
+              "pilihan": [
+                {
+                  "teks": "نراك",
+                  "rumi": "Nirak"
+                },
+                {
+                  "teks": "ميزان",
+                  "rumi": "Mizan"
+                },
+                {
+                  "teks": "حساب",
+                  "rumi": "Hisab"
+                },
+                {
+                  "teks": "نعمت قبور",
+                  "rumi": "Nikmat Kubur"
+                }
+              ],
+              "jawapan": 3
+            }
+          ]
+        },
+        {
+          "id": "akidah-2025-b7",
+          "jenis": "objektif",
+          "soalan": "سوال ٧: فرمان اللّٰه: لَيْسَ كَمِثْلِهِ شَيْءٌ (سورة الشورى: ١١). برداسرکن ايات دأتس، اڤاکه صيفت واجب باكي اللّٰه؟",
+          "rumi": "Soalan 7: Firman Allah: Laisa kamithlihi syai'un (Surah Asy-Syura: 11). Berdasarkan ayat tersebut, apakah sifat wajib bagi Allah?",
+          "markah": 1,
+          "item": [
+            {
+              "teks": "",
+              "rumi": "",
+              "pilihan": [
+                {
+                  "teks": "علم",
+                  "rumi": "Ilmu"
+                },
+                {
+                  "teks": "حياة",
+                  "rumi": "Hayat"
+                },
+                {
+                  "teks": "قيامه بنفسه",
+                  "rumi": "Kiamat dengan badan"
+                },
+                {
+                  "teks": "مخالفته للحوادث",
+                  "rumi": "Mukhalafatuhu li al-hawadith"
+                }
+              ],
+              "jawapan": 3
+            }
+          ]
+        },
+        {
+          "id": "akidah-2025-b8",
+          "jenis": "objektif",
+          "soalan": "سوال ٨: قرأن القرءان اداله سباكاي ____ دالم كهيدوڤن ماءنسي.",
+          "rumi": "Soalan 8: Karangan Al-Quran adalah sebagai ____ dalam kehidupan manusia.",
+          "markah": 1,
+          "item": [
+            {
+              "teks": "",
+              "rumi": "",
+              "pilihan": [
+                {
+                  "teks": "هياسن",
+                  "rumi": "Hiasan"
+                },
+                {
+                  "teks": "سومبر علمو",
+                  "rumi": "Sumber Ilmu"
+                },
+                {
+                  "teks": "باهن باجاءن",
+                  "rumi": "Bahan Bangunan"
+                },
+                {
+                  "teks": "ڤناور",
+                  "rumi": "Penawar"
+                }
+              ],
+              "jawapan": 1
+            }
+          ]
+        },
+        {
+          "id": "akidah-2025-b9",
+          "jenis": "objektif",
+          "soalan": "سوال ٩: ماناکه بوكن بوقتي کوجودن اللّٰه؟ منجينتاءي القرءان؟",
+          "rumi": "Soalan 9: Manakah bukan bukti kewujudan Allah? Mengimani Al-Quran?",
+          "markah": 1,
+          "item": [
+            {
+              "teks": "",
+              "rumi": "",
+              "pilihan": [
+                {
+                  "teks": "مڠݢاج بيلا قرلو",
+                  "rumi": "Membaca bila keliru"
+                },
+                {
+                  "teks": "مڠهمي معني القرءان",
+                  "rumi": "Memahami makna Al-Quran"
+                },
+                {
+                  "teks": "مڠݢاج ستياق هاري",
+                  "rumi": "Membaca setiap hari"
+                },
+                {
+                  "teks": "مڠهمي قرکارا غاءيب",
+                  "rumi": "Memahami perkara ghaib"
+                }
+              ],
+              "jawapan": 0
+            }
+          ]
+        },
+        {
+          "id": "akidah-2025-b10",
+          "jenis": "objektif",
+          "soalan": "سوال ١٠: ممباج ستياق هاري (i), ممهمي قرکارا غاءيب (ii).",
+          "rumi": "Soalan 10: Membaca setiap hari (i), Memahami perkara ghaib (ii).",
+          "markah": 1,
+          "item": [
+            {
+              "teks": "",
+              "rumi": "",
+              "pilihan": [
+                {
+                  "teks": "i دان ii",
+                  "rumi": "i dan ii"
+                },
+                {
+                  "teks": "ii دان iii",
+                  "rumi": "ii dan iii"
+                },
+                {
+                  "teks": "iii دان ii",
+                  "rumi": "iii dan ii"
+                },
+                {
+                  "teks": "i دان iv",
+                  "rumi": "i dan iv"
+                }
+              ],
+              "jawapan": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nama": "C",
+      "markah": 30,
+      "arahan": "Karyakan jawapan yang betul.",
+      "arahanRumi": "Karyakan jawapan yang betul.",
+      "soalan": [
+        {
+          "id": "akidah-2025-c1",
+          "markah": 6,
+          "jenis": "betul_salah",
+          "item": [
+            {
+              "teks": "رضا دݢن تقدير اللّٰه مروڤاكن جيري ٢ اورع يڠ برايمان كڤد قضاء دان قدر.",
+              "rumi": "Rida dengan takdir Allah memperlihatkan ciri orang yang beriman kepada Qada dan Qadar.",
+              "betul": true
+            },
+            {
+              "teks": "تندا بسر هاري قيامة اياله باڤق برلاکو ڤمبونوهن.",
+              "rumi": "Tanda besar Hari Kiamat ialah peristiwa pembunuhan.",
+              "betul": false
+            },
+            {
+              "teks": "صيفت بصر برارتي اللّٰه مها مليهت.",
+              "rumi": "Sifat Basar bermakna Allah Maha Mulia.",
+              "betul": false
+            },
+            {
+              "teks": "صيفت وحدانية.",
+              "rumi": "Sifat Wahdaniyyah.",
+              "betul": false
+            },
+            {
+              "teks": "ايمان كيت اکن منجاديکن سماكين لمه جك برايمان دݢن هاري قيامة.",
+              "rumi": "Iman kita akan menjadikan semakin lemah jika beriman dengan Hari Kiamat.",
+              "betul": false
+            },
+            {
+              "teks": "منجاءوهي صيفت سومبوغ مروڤاكن كسن ممڤر جاياءي صيفت قيامه بنفسه.",
+              "rumi": "Menjauhi sifat sumbang memperlihatkan ciri menganugerahkan sifat Kiamat dengan badan.",
+              "betul": false
+            },
+            {
+              "teks": "اورع يع برايمان دݢن صيفت علم اللّٰه اکن برفيكير سبلوم ملاکوکن كجهاتن.",
+              "rumi": "Orang yang beriman dengan sifat Ilmu Allah akan berfikir sebelum melaku kan kejahatan.",
+              "betul": true
+            }
+          ],
+          "soalan": "تنداكن ☑ قد ڤتاتاءن يڠ بتول دان ☒ قد ڤتاتاءن يڠ ساله. (٦ مركه)",
+          "rumi": "Tandakan ☑ pada pernyataan yang betul dan ☒ pada pernyataan yang salah. (6 markah)"
+        },
+        {
+          "id": "akidah-2025-c2",
+          "markah": 6,
+          "item": [
+            {
+              "teks": "____ — اللّٰه تيدق كڤد سسواتو.",
+              "rumi": "____ — Allah tidak ____ kepada sesuatu."
+            },
+            {
+              "teks": "برايمان دݢن صيفت رسول حكومث ____ .",
+              "rumi": "Beriman dengan sifat Rasul hukumnya ____ ."
+            },
+            {
+              "teks": "اللّٰه لمنجاديکن سموا مخلوق دݢن ____ دڤقسا.",
+              "rumi": "Allah menjadikan semua makhluk dengan ____ terpaksa."
+            },
+            {
+              "teks": "ڤريغكت كدوا دالم ڤروسيس جادي ماءنسي اداله ____ .",
+              "rumi": "Perkembangan kedua dalam proses jadi manusia ialah ____ ."
+            },
+            {
+              "teks": "روح دتيوڤ قد ڤريغكت ____ . ستله سمڤورنا اغكوتا بادن",
+              "rumi": "Ruh ditiup pada ____ . Selepas sempurna anggota badan"
+            },
+            {
+              "teks": "عالم اكن منجادي جك ترداقت لبيه درڤد ساتو توهن ____ .",
+              "rumi": "Alam akan menjadi ____ jika terlalu percaya kepada satu tuhan."
+            }
+          ],
+          "soalan": "ايسي تمڤت کوسوڠ دݢن جواڤن يڠ بتول. (٦ مركه)",
+          "rumi": "Isi tempat kosong dengan jawapan yang betul. (6 markah)",
+          "jenis": "tempat_kosong",
+          "bank": [
+            "برحاجت",
+            "واجب",
+            "كهندق",
+            "علقه",
+            "جانين",
+            "هورو-هارا"
+          ]
+        },
+        {
+          "id": "akidah-2025-c3",
+          "markah": 6,
+          "item": [
+            {
+              "teks": "صيفت برلاونن باكي اللّٰه: ____",
+              "rumi": "Sifat berlawanan bagi Allah: ____"
+            },
+            {
+              "teks": "صيفت مستحيل باكي رسول: ____، ____",
+              "rumi": "Sifat mustahil bagi Rasul: ____، ____"
+            }
+          ],
+          "soalan": "سوايكن صيفت برلاونن باكي اللّٰه دان صيفت مستحيل باكي رسول. (٦ مركه)",
+          "rumi": "Suaikan sifat berlawanan bagi Allah dan sifat mustahil bagi Rasul. (6 markah)",
+          "jenis": "tempat_kosong",
+          "bank": [
+            "تعدد",
+            "بلادة",
+            "عجز",
+            "كراهة",
+            "خيانة"
+          ],
+          "bankRumi": [
+            "Tadad",
+            "Bladah",
+            "Ajz",
+            "Karahah",
+            "Khianah"
+          ]
+        },
+        {
+          "id": "akidah-2025-c4",
+          "markah": 6,
+          "item": [
+            {
+              "teks": "____",
+              "rumi": "____"
+            },
+            {
+              "teks": "____",
+              "rumi": "____"
+            },
+            {
+              "teks": "____",
+              "rumi": "____"
+            },
+            {
+              "teks": "____",
+              "rumi": "____"
+            },
+            {
+              "teks": "____",
+              "rumi": "____"
+            },
+            {
+              "teks": "____",
+              "rumi": "____"
+            }
+          ],
+          "soalan": "ايسي تمڤت کوسوڠ دݢن جواڤن يڠ بتول. (٦ مركه)",
+          "rumi": "Isi tempat kosong dengan jawapan yang betul. (6 markah)",
+          "jenis": "tempat_kosong",
+          "bank": [
+            "قدرة",
+            "علم",
+            "حياة",
+            "بصر",
+            "ارادة",
+            "وحدانية"
+          ]
+        },
+        {
+          "id": "akidah-2025-c5",
+          "markah": 6,
+          "item": [
+            {
+              "teks": "قد ڤريغكت (علقه / نطفة / مضغة / اغكوتا بادن دان سارف) ترݢب مولا تربنتوق.",
+              "rumi": "Pada perkembangan (Alaqah / Nutfah / Mudghah / Anggota badan dan Saraf) mula terbentuk.",
+              "pilihan": [
+                {
+                  "teks": "علقه",
+                  "rumi": "Alaqah"
+                },
+                {
+                  "teks": "نطفة",
+                  "rumi": "Nutfah"
+                },
+                {
+                  "teks": "مضغة",
+                  "rumi": "Mudghah"
+                },
+                {
+                  "teks": "اغكوتا بادن دان سارف",
+                  "rumi": "Anggota badan dan Saraf"
+                }
+              ],
+              "jawapan": 2
+            },
+            {
+              "teks": "فرݢمققورن انتارا اچير ماني للاكي دان قرمڤوان اياله (نطفة / علقه).",
+              "rumi": "Perbezaan antara air mani lelaki dan kering wanita ialah (Nutfah / Alaqah).",
+              "pilihan": [
+                {
+                  "teks": "نطفة",
+                  "rumi": "Nutfah"
+                },
+                {
+                  "teks": "علقه",
+                  "rumi": "Alaqah"
+                }
+              ],
+              "jawapan": 0
+            },
+            {
+              "teks": "____ مولا ممبوغكوس تولغ-بلولغ قد ڤريغكت جانين.",
+              "rumi": "____ mula membungkus tulang-belulang pada peringkat janin.",
+              "pilihan": [
+                {
+                  "teks": "اوتوت ٢",
+                  "rumi": "Otot-otot"
+                },
+                {
+                  "teks": "اورت ٢",
+                  "rumi": "Urat-urat"
+                }
+              ],
+              "jawapan": 0
+            },
+            {
+              "teks": "ملائكة (روسل / رسول) جوك برصيفت سڤرتي ساورغ ماءنسي بياسا.",
+              "rumi": "Malaikat (Rusul / Rasul) jog bersifat seperti manusia biasa.",
+              "pilihan": [
+                {
+                  "teks": "روسل",
+                  "rumi": "Rusul"
+                },
+                {
+                  "teks": "ر Sul",
+                  "rumi": "Rasul"
+                }
+              ],
+              "jawapan": 1
+            },
+            {
+              "teks": "____ اياله سيقساءن يغ ساغت قديه.",
+              "rumi": "____ ialah siksaan yang sangat pedih.",
+              "pilihan": [
+                {
+                  "teks": "نعمت قبور",
+                  "rumi": "Nikmat kubur"
+                },
+                {
+                  "teks": "عذاب قبور",
+                  "rumi": "Azab kubur"
+                }
+              ],
+              "jawapan": 1
+            },
+            {
+              "teks": "منجاءوهکن ديري درڤد صيفت (محمودة / مذمومة) مروڤاكن كسن برايمان دݢن صيفت٢ رسول.",
+              "rumi": "Menjauhi diri daripada sifat (Mahmudah / Mazmumah) memperlihatkan ciri beriman dengan sifat-sifat Rasul.",
+              "pilihan": [
+                {
+                  "teks": "محمودة",
+                  "rumi": "Mahmudah"
+                },
+                {
+                  "teks": "مذمومة",
+                  "rumi": "Mazmumah"
+                }
+              ],
+              "jawapan": 1
+            }
+          ],
+          "soalan": "بولتكن جواڤن يڠ بتول. (٦ مركه)",
+          "rumi": "Bulatkan jawapan yang betul. (6 markah)",
+          "jenis": "bulat"
+        }
+      ]
+    },
+    {
+      "nama": "D",
+      "markah": 20,
+      "arahan": "Jawab semua soalan.",
+      "arahanRumi": "Jawab semua soalan.",
+      "soalan": [
+        {
+          "id": "akidah-2025-d1-p1",
+          "markah": 2,
+          "soalan": "ملائكة — ____ , ____",
+          "rumi": "Malaikat — ____ , ____",
+          "jenis": "senarai",
+          "bilanganJawapan": 2,
+          "jawapanContoh": [
+            "نور",
+            "خير"
+          ],
+          "jawapanContohRumi": []
+        },
+        {
+          "id": "akidah-2025-d1-p2",
+          "markah": 3,
+          "soalan": "ميزان — ____ , ____ , ____",
+          "rumi": "Mizan — ____ , ____ , ____",
+          "jenis": "senarai",
+          "bilanganJawapan": 3,
+          "jawapanContoh": [
+            "شرك",
+            "نيراك",
+            "بالسن",
+            "كنجرن",
+            "برايمان",
+            "برتقوى",
+            "طاعة",
+            "ڤاتوه"
+          ],
+          "jawapanContohRumi": []
+        },
+        {
+          "id": "akidah-2025-d2-p1",
+          "markah": 2,
+          "soalan": "صيفت حياة: ____ , ____",
+          "rumi": "Sifat Hayat: ____ , ____",
+          "jenis": "senarai",
+          "bilanganJawapan": 2,
+          "jawapanContoh": [
+            "سنتياس مڠاکوکن اللّٰه",
+            "سنتياس ممبرسيهکن کلمه ديري",
+            "سنتياس برسديا مڠݢتي ماتي",
+            "سنتياس مياقيني بهاوا سموا مخلوق اکن ماتي"
+          ],
+          "jawapanContohRumi": []
+        },
+        {
+          "id": "akidah-2025-d2-p2",
+          "markah": 2,
+          "soalan": "هاري قيامة: ____ , ____",
+          "rumi": "Hari Kiamat: ____ , ____",
+          "jenis": "senarai",
+          "bilanganJawapan": 2,
+          "jawapanContoh": [
+            "سنتياس برسديا مڠݢتي ماتي",
+            "سنتياس مياقيني بهاوا سموا مخلوق اکن ماتي",
+            "مڠݢاکوکن اللّٰه",
+            "ممبرسيهکن کلمه ديري"
+          ],
+          "jawapanContohRumi": []
+        },
+        {
+          "id": "akidah-2025-d3-p1",
+          "markah": 2,
+          "soalan": "حيوان ددارت: ____ , ____",
+          "rumi": "Haiwan Darat: ____ , ____",
+          "jenis": "senarai",
+          "bilanganJawapan": 2,
+          "jawapanContoh": [
+            "كمبيڠ",
+            "ايم",
+            "کرباو",
+            "کوجيڠ",
+            "لمبو"
+          ],
+          "jawapanContohRumi": []
+        },
+        {
+          "id": "akidah-2025-d3-p2",
+          "markah": 2,
+          "soalan": "حيوان دأءير: ____ , ____",
+          "rumi": "Haiwan Air: ____ , ____",
+          "jenis": "senarai",
+          "bilanganJawapan": 2,
+          "jawapanContoh": [
+            "ايکن",
+            "اودڠ",
+            "کتام",
+            "سوتوڠ",
+            "کرڠ"
+          ],
+          "jawapanContohRumi": []
+        },
+        {
+          "id": "akidah-2025-d4",
+          "markah": 4,
+          "soalan": "____ , ____ , ____ , ____",
+          "rumi": "____ , ____ , ____ , ____",
+          "jenis": "senarai",
+          "bilanganJawapan": 4,
+          "jawapanContoh": [
+            "كأيمانن برتمبه",
+            "تقواهن سماکين کوکوه",
+            "ممقرباڤقکن عبادة",
+            "منجاءوهي معصية",
+            "سنتياس برتوبرت"
+          ],
+          "jawapanContohRumi": []
+        },
+        {
+          "id": "akidah-2025-d5",
+          "markah": 2,
+          "soalan": "____ , ____",
+          "rumi": "____ , ____",
+          "jenis": "senarai",
+          "bilanganJawapan": 2,
+          "jawapanContoh": [
+            "اللّٰه تياد كلمهن",
+            "اللّٰه تيدق برف بهارو ران",
+            "صيفت بهارو هاث اد قد مخلوق",
+            "تيدق مڠهارڤکن ڤر تولوݢ مخلوق لاءين"
+          ],
+          "jawapanContohRumi": []
+        },
+        {
+          "id": "akidah-2025-d6-p1",
+          "markah": 2,
+          "soalan": "نعمت قبور: ____ . ____",
+          "rumi": "Nikmat Kubur: ____ . ____",
+          "jenis": "senarai",
+          "bilanganJawapan": 2,
+          "jawapanContoh": [
+            "قبر برجهاي",
+            "قبر منجادي لاسع",
+            "ترلڤس دري سيڤسا قبر",
+            "منداڤت واغين",
+            "اڤين دري شرك"
+          ],
+          "jawapanContohRumi": []
+        },
+        {
+          "id": "akidah-2025-d6-p2",
+          "markah": 2,
+          "soalan": "عذاب قبور: ____ . ____",
+          "rumi": "Azab Kubur: ____ . ____",
+          "jenis": "senarai",
+          "bilanganJawapan": 2,
+          "jawapanContoh": [
+            "قبر کلف",
+            "قبر كليتا/قبر منجادي سمڤيت",
+            "منريما ڤوكولن درڤد ملائكة",
+            "دسيقسا دݢن حيوان بربيسا"
+          ],
+          "jawapanContohRumi": []
+        }
+      ]
+    }
+  ]
+}

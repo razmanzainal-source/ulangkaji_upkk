@@ -1,0 +1,1061 @@
+{
+  "id": "ibadah-2024",
+  "subjek": "ibadah",
+  "tajuk": "Ibadah UPKK 2024",
+  "sumber": "Kertas soalan UPKK 2024 — imbasan rasmi",
+  "jenisSumber": "sebenar",
+  "masa": 75,
+  "nota": "Jawapan diambil terus daripada skema rasmi (muka13 & muka14). Bahagian A 10 markah: Soalan 1 tanda wudhu (4m), Soalan 2 padankan nifas/haid/wafat & hadas besar/kecil (4m), Soalan 3 susun rukun solat (2m). Bahagian B 10 markah (10 soalan objektif). Bahagian C 30 markah: padankan solat, tanda betul/salah, isi kosong, pilih jawapan. Bahagian D 20 markah: petikan, tulis rukun, hukum, bina ayat. Skema pada muka13 & muka14.",
+  "bahagian": [
+    {
+      "nama": "A",
+      "markah": 10,
+      "arahan": "Karyakan jawapan yang betul.",
+      "arahanRumi": "Karyakan jawapan yang betul.",
+      "soalan": [
+        {
+          "id": "ibadah-2024-a1",
+          "jenis": "betul_salah",
+          "soalan": "تنداكن • قد اغكوتا وضوء دان X قد اغكوتا سنة وضوء. (٤ مركه)",
+          "rumi": "Tandakan • pada rukun wudhu dan X pada sunat wudhu. (4 markah)",
+          "markah": 4,
+          "item": [
+            {
+              "teks": "نِيَّةٌ",
+              "rumi": "Niyyah",
+              "betul": true
+            },
+            {
+              "teks": "مُسْحُ الرَّأْسِ",
+              "rumi": "Masaḥ ar-ra's",
+              "betul": true
+            },
+            {
+              "teks": "غَسْلُ الْوَجْهِ",
+              "rumi": "Ghasl al-wajh",
+              "betul": true
+            },
+            {
+              "teks": "غَسْلُ الْيَدَيْنِ إِلَى الْمَرَافِقِ",
+              "rumi": "Ghasl al-yadayn ila al-marafiq",
+              "betul": true
+            },
+            {
+              "teks": "التَّرْتِيبُ",
+              "rumi": "At-tartib",
+              "betul": false
+            },
+            {
+              "teks": "الْمُوَالَاةُ",
+              "rumi": "Al-muwalat",
+              "betul": false
+            }
+          ]
+        },
+        {
+          "id": "ibadah-2024-a2",
+          "jenis": "kumpulan",
+          "soalan": "سوايكن قد جواڤن يغ بتول. (٤ مركه)",
+          "rumi": "Suaikan dengan jawapan yang betul. (4 markah)",
+          "markah": 4,
+          "item": [
+            {
+              "teks": "نِفَاسٌ",
+              "rumi": "Nifas",
+              "jawapan": 0
+            },
+            {
+              "teks": "حَيْضٌ",
+              "rumi": "Haid",
+              "jawapan": 0
+            },
+            {
+              "teks": "وَفَاتٌ",
+              "rumi": "Wafat",
+              "jawapan": 0
+            },
+            {
+              "teks": "وَجَبَ التَّطَهُّرُ",
+              "rumi": "Wajabat at-tathahhur",
+              "jawapan": 0
+            }
+          ],
+          "kategori": [
+            "حَدَثٌ كَبِيرٌ",
+            "حَدَثٌ صَغِيرٌ"
+          ],
+          "kategoriRumi": [
+            "Hadas besar",
+            "Hadas kecil"
+          ]
+        },
+        {
+          "id": "ibadah-2024-a3",
+          "jenis": "susun",
+          "soalan": "نومبوركن ركن صلاة دباوه مقيكوت توروتن يغ بتول. (٢ مركه)",
+          "rumi": "Nomborkan rukun solat di bawah mengikut turutan yang betul. (2 markah)",
+          "markah": 2,
+          "item": [
+            {
+              "teks": "قِيَامٌ",
+              "rumi": "Qiyam"
+            },
+            {
+              "teks": "رُكُوعٌ",
+              "rumi": "Ruku'"
+            },
+            {
+              "teks": "سُجُودٌ",
+              "rumi": "Sujud"
+            },
+            {
+              "teks": "الْقُعُودُ الأَخِيرُ",
+              "rumi": "Al-qu'ud al-akhir"
+            }
+          ],
+          "urutan": [
+            "قِيَامٌ",
+            "رُكُوعٌ",
+            "سُجُودٌ",
+            "الْقُعُودُ الأَخِيرُ"
+          ],
+          "urutanRumi": [
+            "Qiyam",
+            "Ruku'",
+            "Sujud",
+            "Al-qu'ud al-akhir"
+          ]
+        }
+      ]
+    },
+    {
+      "nama": "B",
+      "markah": 10,
+      "arahan": "Soalan 1 hingga 10. Bulatkan jawapan yang betul.",
+      "arahanRumi": "Soalan 1 hingga 10. Bulatkan jawapan yang betul.",
+      "soalan": [
+        {
+          "id": "ibadah-2024-b1",
+          "jenis": "objektif",
+          "soalan": "انتارا يغ برايكوت، ماناكه شرط واجب صلاة؟",
+          "rumi": "Antara yang berikut, manakah syarat wajib solat?",
+          "markah": 1,
+          "item": [
+            {
+              "teks": "",
+              "rumi": "",
+              "pilihan": [
+                {
+                  "teks": "إِسْلَامٌ",
+                  "rumi": "Islam"
+                },
+                {
+                  "teks": "مَاسُوقُ وَقْتُهُ",
+                  "rumi": "Masuk waktunya"
+                },
+                {
+                  "teks": "مُشْهَدَقُ قِبْلَةٍ",
+                  "rumi": "Menghadap kiblat"
+                },
+                {
+                  "teks": "مُمَيِّزٌ",
+                  "rumi": "Mumayyiz"
+                }
+              ],
+              "jawapan": 0
+            }
+          ]
+        },
+        {
+          "id": "ibadah-2024-b2",
+          "jenis": "objektif",
+          "soalan": "مَنُونَيِكَنَ صَلَاةَ مَغْرِبٍ دَالِمَ وَقْتُهُ عِشَاءً مَرُوْفَكَنَ صَلَاةَ ___",
+          "rumi": "Menunaikan solat Maghrib dalam waktu Isya' disebut solat ___",
+          "markah": 1,
+          "item": [
+            {
+              "teks": "",
+              "rumi": "",
+              "pilihan": [
+                {
+                  "teks": "جَمْعَ تَقْدِيمٍ",
+                  "rumi": "Jamak taqdim"
+                },
+                {
+                  "teks": "جَمْعَ تَأْخِيرٍ",
+                  "rumi": "Jamak ta'khir"
+                },
+                {
+                  "teks": "سُنَّةَ أَبْعَاضٍ",
+                  "rumi": "Sunat ab'adh"
+                },
+                {
+                  "teks": "سُنَّةَ هَيْئَاتٍ",
+                  "rumi": "Sunat hayat"
+                }
+              ],
+              "jawapan": 0
+            }
+          ]
+        },
+        {
+          "id": "ibadah-2024-b3",
+          "jenis": "objektif",
+          "soalan": "صَلَاةَ سُنَّةَ يَغْ هَاثُ دِلَاكُوْكَنَ قَدْ بُولَنْ قُوَّاسَا أَيَالِهْ",
+          "rumi": "Solat sunat yang dilaksanakan pada bulan puasa ialah",
+          "markah": 1,
+          "item": [
+            {
+              "teks": "",
+              "rumi": "",
+              "pilihan": [
+                {
+                  "teks": "تَوْبَةَ",
+                  "rumi": "Taubah"
+                },
+                {
+                  "teks": "ضُحَى",
+                  "rumi": "Dhuha"
+                },
+                {
+                  "teks": "تَهَجُّدَ",
+                  "rumi": "Tahajjud"
+                },
+                {
+                  "teks": "تَرَاوِيحَ",
+                  "rumi": "Tarawih"
+                }
+              ],
+              "jawapan": 3
+            }
+          ]
+        },
+        {
+          "id": "ibadah-2024-b4",
+          "jenis": "objektif",
+          "soalan": "ڤرْكَارَا بَرَايكُوتْ مَرُوْفَكِنْ صَلَاةَ يَغْ بَرْكَاءِتِنْ دَغْنْ سِتُوَاسِي دَأَتْسْ، كِجْوَاليْ",
+          "rumi": "Perkara yang berkaitan dengan solat yang berkaitan dengan situasi tersebut, kecuali",
+          "markah": 1,
+          "item": [
+            {
+              "teks": "",
+              "rumi": "",
+              "pilihan": [
+                {
+                  "teks": "صَلَاةَ عِيدِ الأَضْحَى",
+                  "rumi": "Solat Aidiladha"
+                },
+                {
+                  "teks": "صَلَاةَ عِيدِ الفِطْرِ",
+                  "rumi": "Solat Aidilfitri"
+                },
+                {
+                  "teks": "صَلَاةَ رَوَاتِبَ",
+                  "rumi": "Solat rawatib"
+                },
+                {
+                  "teks": "صَلَاةَ جُمْعَةَ",
+                  "rumi": "Solat Jumaat"
+                }
+              ],
+              "jawapan": 3
+            }
+          ]
+        },
+        {
+          "id": "ibadah-2024-b5",
+          "jenis": "objektif",
+          "soalan": "قَرْكَارَا يَغْ دِلَرَنْغْ كَتِيْكَ حَدَثَ كَبِيرَ ايَالِهْ",
+          "rumi": "Perkara yang dilarang ketika hadas besar ialah",
+          "markah": 1,
+          "item": [
+            {
+              "teks": "",
+              "rumi": "",
+              "pilihan": [
+                {
+                  "teks": "مِمْنُوْعَ الْقُرْآنَ",
+                  "rumi": "Membaca Al-Quran"
+                },
+                {
+                  "teks": "قُوَّاسَا",
+                  "rumi": "Berpuasa"
+                },
+                {
+                  "teks": "طَلَاقَ",
+                  "rumi": "Talak"
+                },
+                {
+                  "teks": "بِرَادِ دَدَالِمَ مَسْجِدٍ",
+                  "rumi": "Berdiri dalam masjid"
+                }
+              ],
+              "jawapan": 0
+            }
+          ]
+        },
+        {
+          "id": "ibadah-2024-b6",
+          "jenis": "objektif",
+          "soalan": "حُكْمَةَ مُنْدِيْ وَاجِبَ __",
+          "rumi": "Hikmah wajib ____",
+          "markah": 1,
+          "item": [
+            {
+              "teks": "",
+              "rumi": "",
+              "pilihan": [
+                {
+                  "teks": "بُغْرَتَيْنَ حَدَثَ كَبِيرٍ",
+                  "rumi": "Dua peri hadas besar"
+                },
+                {
+                  "teks": "جِ رُكْنِ مُنْدِيْ وَاجِبَ",
+                  "rumi": "Rukun wajib"
+                },
+                {
+                  "teks": "دَ",
+                  "rumi": ""
+                },
+                {
+                  "teks": "جَرَاءَ مُطَوِّجِ حَدَثَ كَبِيرٍ",
+                  "rumi": "Jalan mengatasi hadas besar"
+                }
+              ],
+              "jawapan": 1
+            }
+          ]
+        },
+        {
+          "id": "ibadah-2024-b7",
+          "jenis": "objektif",
+          "soalan": "جَرَاءَ مَفُوجِهِنْ حَدَثَ كَبِيرٍ مُنُوْتُفْ عُورَةَ أَوْ نَتُوقْ مَنْدَافِتْ كُنْجِرَنْ قَهَالَا دَسِيْسِ اللّٰهْ",
+          "rumi": "Jalan mengatasi hadas besar menutup aurat atau mandapat karunia Allah",
+          "markah": 1,
+          "item": [
+            {
+              "teks": "",
+              "rumi": "",
+              "pilihan": [
+                {
+                  "teks": "تَندَاثَانِ بِالِغٍ",
+                  "rumi": "Dua orang baligh"
+                },
+                {
+                  "teks": "بُغْرَتَيْنَ بِالِغٍ",
+                  "rumi": "Dua peri baligh"
+                },
+                {
+                  "teks": "جِ بُغْرَتَيْنَ عُورَةَ",
+                  "rumi": "Dua peri aurat"
+                },
+                {
+                  "teks": "دَ حُكْمَةَ مَنُوْتُفْ عُورَةَ",
+                  "rumi": "Hikmah menutup aurat"
+                }
+              ],
+              "jawapan": 3
+            }
+          ]
+        },
+        {
+          "id": "ibadah-2024-b8",
+          "jenis": "objektif",
+          "soalan": "قَرْكَارَا يَغْ دِلَرَنْغْ كَتِيْكَ بَرْحَدَثْ بِسِرْ أَيَالِهْ",
+          "rumi": "Perkara yang dilarang ketika hadas kecil ialah",
+          "markah": 1,
+          "item": [
+            {
+              "teks": "",
+              "rumi": "",
+              "pilihan": [
+                {
+                  "teks": "وَضُوءَ",
+                  "rumi": "Wudhu"
+                },
+                {
+                  "teks": "صَلَاةَ",
+                  "rumi": "Solat"
+                },
+                {
+                  "teks": "ذِكْرُ دَ صَلَوَاتِ",
+                  "rumi": "Zikir selepas solat"
+                },
+                {
+                  "teks": "مَاسُوقَ وَقْتُ صَلَاةَ",
+                  "rumi": "Masuk waktu solat"
+                }
+              ],
+              "jawapan": 0
+            }
+          ]
+        },
+        {
+          "id": "ibadah-2024-b9",
+          "jenis": "objektif",
+          "soalan": "انتارا برايكوت، يق ماناكه ڤركار يغ تيدق ممبطلكن صلاة؟",
+          "rumi": "Antara berikut, yang manakah perkara yang tidak membatalkan solat?",
+          "markah": 1,
+          "item": [
+            {
+              "teks": "",
+              "rumi": "",
+              "pilihan": [
+                {
+                  "teks": "بِرْجَاكِفْ دَغْنَ سِعَاجِ",
+                  "rumi": "Bercakap dengan segan"
+                },
+                {
+                  "teks": "بِ مَنْيَغْكِلْكَنَ رُكْنَ صَلَاةَ",
+                  "rumi": "Meninggalkan rukun solat"
+                },
+                {
+                  "teks": "مَاْكَنَ دَغْنَ سِفَاجِ",
+                  "rumi": "Makan dengan segera"
+                },
+                {
+                  "teks": "مَاسُوقَ وَقْتُ صَلَاةَ",
+                  "rumi": "Masuk waktu solat"
+                }
+              ],
+              "jawapan": 0
+            }
+          ]
+        },
+        {
+          "id": "ibadah-2024-b10",
+          "jenis": "objektif",
+          "soalan": "ڤِيليه ڤياتاءن بركاءيتن صلاة دال كندراءن.",
+          "rumi": "Pilih pernyataan berkaitan solat dalam khutbah.",
+          "markah": 1,
+          "item": [
+            {
+              "teks": "",
+              "rumi": "",
+              "pilihan": [
+                {
+                  "teks": "مُغِيْكُوتْ جَنِيسَ كِنْدَرَاءِنْ يِ دِنَاءِقِ",
+                  "rumi": "Mengikuti jenis khutbah yang diniyaki"
+                },
+                {
+                  "teks": "أَدَانِي اِ",
+                  "rumi": "Adhani"
+                },
+                {
+                  "teks": "أَدَانِ ii",
+                  "rumi": "Adhani ii"
+                },
+                {
+                  "teks": "iii دان ii ب",
+                  "rumi": "iii dan ii"
+                },
+                {
+                  "teks": "iv دان i د",
+                  "rumi": "iv dan i"
+                }
+              ],
+              "jawapan": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nama": "C",
+      "markah": 30,
+      "arahan": "Karyakan jawapan yang betul.",
+      "arahanRumi": "Karyakan jawapan yang betul.",
+      "soalan": [
+        {
+          "id": "ibadah-2024-c1",
+          "markah": 6,
+          "item": [
+            {
+              "teks": "صَلَاةَ جَمْعَ تَقْدِيمٍ مُمُوْفَكِنْ لِيْمَ وَقْتُهُ",
+              "rumi": "Solat jamak taqdim mempercepatkan waktunya",
+              "betul": true
+            },
+            {
+              "teks": "صَلَاةَ سُنَّةَ كَرْهَانْ",
+              "rumi": "Solat sunat karahan",
+              "betul": false
+            },
+            {
+              "teks": "دَلَاكُوْكِنْ قَدْ وَقْتُهُ ظُهْرَ بَسَرْتَا خُطْبَةَ",
+              "rumi": "Dilaksanakan pada waktu Zuhur beserta khutbah",
+              "betul": true
+            },
+            {
+              "teks": "صَلَاةَ سُنَّةَ تَهَجُّدَ",
+              "rumi": "Solat sunat Tahajjud",
+              "betul": true
+            },
+            {
+              "teks": "دُوَ صَلَاةَ فَرْضَ دَالِمَ سَاتُو وَقْتُ",
+              "rumi": "Dua solat fardhu dalam satu waktu",
+              "betul": true
+            },
+            {
+              "teks": "أَفْضَلَ دَلَاكُوْكِنْ قَدْ ٢/٣ مَالِمَ",
+              "rumi": "Afzal dilaksanakan pada 2/3 malam",
+              "betul": true
+            },
+            {
+              "teks": "مِمْنَجِقَ سُورَةَ الْفَاتِحَةَ سَلْفَسْ اِعْتِدَالَ",
+              "rumi": "Membaca Al-Fatihah selaras dengan i'tidal",
+              "betul": true
+            }
+          ],
+          "jenis": "betul_salah",
+          "soalan": "سوايكن ڤياتاءن برايكوت بركاءيتن صلاة. (٦ مركه)",
+          "rumi": "Suaikan pernyataan berkaitan solat. (6 markah)"
+        },
+        {
+          "id": "ibadah-2024-c2",
+          "markah": 5,
+          "item": [
+            {
+              "teks": "جَارِقْ بُرْمَسَافِيرْ أَوْنتُوقْ صَلَاةَ جَمْعَ دَنْ قَصْرَ كُورْغْ دَرْوُدْ دُوَ مَرْحَلَةَ",
+              "rumi": "Musafir untung solat jamak dan qasar bergantung dua peringkat",
+              "betul": false
+            },
+            {
+              "teks": "بُوْاسَا رَمَضَانَ دْتُنَايْكِنْ أُولِيهِ سُمُوْا أُمَتْ إِسْلَامَ",
+              "rumi": "Puasa Ramadhan ditunaikan oleh semua umat Islam",
+              "betul": true
+            },
+            {
+              "teks": "أَغْكُوْتَ بَاوْهْ ڤُوسْتْ هِيْغْكْ لُتُوتْ اَدَالَهُ عُورَةَ لِلكِيْ",
+              "rumi": "Anggota badan yang tersembunyi adalah aurat untuk laki-laki",
+              "betul": false
+            },
+            {
+              "teks": "حُكُومْ صَلَاةَ جُمْعَةَ ايَالَهْ وَاجِبَ كَأَتْسْ لَأَكِيْ مُسْلِمِ",
+              "rumi": "Hukum solat Jumaat adalah wajib ke atas laki-laki Muslim",
+              "betul": true
+            },
+            {
+              "teks": "سُنْتِيْقِنْ وَكْسِيْنْ %vaks#n#وِلِيَهْ مَمْرْبُطْكِنْ ڤُوْاسَا",
+              "rumi": "Keyakinan vaksin wali mempertahankan puasa",
+              "betul": false
+            }
+          ],
+          "jenis": "betul_salah",
+          "soalan": "تنداكن ٧ قد ڤياتاءن يغ بتول دان X قد قياتاءن يغ ساله. (٥ مركه)",
+          "rumi": "Tandakan ☑ pada pernyataan betul dan ☒ pada pernyataan salah. (5 markah)"
+        },
+        {
+          "id": "ibadah-2024-c3",
+          "markah": 5,
+          "item": [
+            {
+              "teks": "مَمْبَاجَ دُعَاءَ قُنُوتْ",
+              "rumi": "Membaca doa qunut",
+              "jawapan": 0
+            },
+            {
+              "teks": "دُدُوقْ تَهِيَّةَ أُولَ",
+              "rumi": "Duduk tahiyat awal",
+              "jawapan": 0
+            },
+            {
+              "teks": "مَمْبَاجَ دُعَاءَ افْتِتَاحِ",
+              "rumi": "Membaca doa iftitah",
+              "jawapan": 1
+            },
+            {
+              "teks": "مَمْنْدَغْ كَتْمُقْتْ سُجُودْ",
+              "rumi": "Memandang tempat sujud",
+              "jawapan": 1
+            },
+            {
+              "teks": "مَمْبِرِيْ سَلَامَ كِدُوَا",
+              "rumi": "Memberi salam kedua",
+              "jawapan": 1
+            }
+          ],
+          "soalan": "ڤادنكن بهاكين ( ا ' دغن بهاكين ( ب ' . (5 مركه",
+          "rumi": "Padankan ( a ) dengan ( b ) . (5 markah)",
+          "jenis": "kumpulan",
+          "kategori": [
+            "سُنَّةَ أَبْعَاضٍ",
+            "سُنَّةَ هَيْئَاتٍ"
+          ],
+          "kategoriRumi": [
+            "Sunat ab'adh",
+            "Sunat hai'at"
+          ]
+        },
+        {
+          "id": "ibadah-2024-c4",
+          "markah": 6,
+          "item": [
+            {
+              "teks": "بِرْوُضُوءَ قَدْ بُولَنْ رَمَضَانَ تِرْمَاسُوقْ دَلْمَ ڤُوْاسَاً سُنَّةَ / وَاجِبَ",
+              "rumi": "Berwudhu pada bulan Ramadhan termasuk dalam puasa sunat / wajib",
+              "pilihan": [
+                {
+                  "teks": "سُنَّةَ",
+                  "rumi": "Sunat"
+                },
+                {
+                  "teks": "وَاجِبَ",
+                  "rumi": "Wajib"
+                }
+              ],
+              "jawapan": 1
+            },
+            {
+              "teks": "سَبَبْ بَرْلَاكُوْ حَدَثَ كَبِيرَ ايَالَهُ كِلُوَارَ اَيْرَ نِيْ / كِنْجِيْغْ",
+              "rumi": "Sebab Berlaku Hadas Besar Adalah Keluar Air Mani / Kinjing",
+              "pilihan": [
+                {
+                  "teks": "نِي",
+                  "rumi": "Mani"
+                },
+                {
+                  "teks": "كِنْجِيْغْ",
+                  "rumi": "Kinjing"
+                }
+              ],
+              "jawapan": 0
+            },
+            {
+              "teks": "حُكْمَةَ / ڤُغْرَتَيْنَ صَلَاةَ بُرْجَمَاعَةَ ايَالَهُ مَمْوْقُوقْ قِرْسَوْدَارَاءِنْ",
+              "rumi": "Hikmah / Faedah solat berjemaah adalah mempererat silaturahim",
+              "pilihan": [
+                {
+                  "teks": "حُكْمَةَ",
+                  "rumi": "Hikmah"
+                },
+                {
+                  "teks": "ڤُغْرَتَيْنَ",
+                  "rumi": "Faedah"
+                }
+              ],
+              "jawapan": 0
+            },
+            {
+              "teks": "انتارا تندا بالغ باكي قرمفوان اياله كلوار داره ' فَاسْ / حَيْضَ '",
+              "rumi": "Antara tanda baligh bagi perempuan keluar darah 'Fas / Haid'",
+              "pilihan": [
+                {
+                  "teks": "فَاسْ",
+                  "rumi": "Fas"
+                },
+                {
+                  "teks": "حَيْضَ",
+                  "rumi": "Haid"
+                }
+              ],
+              "jawapan": 1
+            },
+            {
+              "teks": "جَارَا مَلَكُوْكَنَ صَلَاةَ بَارِيقْ غَيْرِيْغْ / مَنْلَنْتِنْغْ يَالَهْ دَادَا مُغْهَادْبِ كَرَاهْ قِبْلَةَ",
+              "rumi": "Jalan melaksanakan solat berkhusyuk selain menunduk yang sesuai menghadap kiblat",
+              "pilihan": [
+                {
+                  "teks": "غَيْرِيْغْ",
+                  "rumi": "Girig"
+                },
+                {
+                  "teks": "مَنْلَنْتِنْغْ",
+                  "rumi": "Menenggeng"
+                }
+              ],
+              "jawapan": 0
+            },
+            {
+              "teks": "أُوْرْغْ إِسْلَامْ يِ مَنْيَغْكِلْ دُنْيَا عَاقِبَتْ كَمَالْغَنْ جَالَنْ رَايْ وَاجِبَ / سُنَّةَ",
+              "rumi": "Orang Islam yang meninggalkan dunia akibat kefasikan jalan raya wajib / sunat",
+              "pilihan": [
+                {
+                  "teks": "وَاجِبَ",
+                  "rumi": "Wajib"
+                },
+                {
+                  "teks": "سُنَّةَ",
+                  "rumi": "Sunat"
+                }
+              ],
+              "jawapan": 1
+            }
+          ],
+          "soalan": "كاريس قد جواڤن يغ بتول . (6 مركه",
+          "rumi": "Karyakan jawapan yang betul. (6 markah)",
+          "jenis": "bulat"
+        },
+        {
+          "id": "ibadah-2024-c5-p1",
+          "markah": 2,
+          "soalan": "تياد خطبة",
+          "rumi": "Tiada khutbah",
+          "jenis": "tulis",
+          "bilanganJawapan": 1,
+          "jawapanContoh": [
+            "صلاة ظهر"
+          ]
+        },
+        {
+          "id": "ibadah-2024-c5-p2",
+          "markah": 1,
+          "soalan": "تمقت يغ دتتفكن",
+          "rumi": "Tamat yang ditentukan",
+          "jenis": "tulis",
+          "bilanganJawapan": 1,
+          "jawapanContoh": [
+            "صلاة جمعة"
+          ]
+        },
+        {
+          "id": "ibadah-2024-c5-p3",
+          "markah": 1,
+          "soalan": "ددهولوءي دغن دوا خطبة",
+          "rumi": "Didahului dengan dua khutbah",
+          "jenis": "tulis",
+          "bilanganJawapan": 1,
+          "jawapanContoh": [
+            "صلاة جمعة"
+          ]
+        },
+        {
+          "id": "ibadah-2024-c5-p4",
+          "markah": 1,
+          "soalan": "برمولا سلڤس تربنم ماتاهاري",
+          "rumi": "Bermula selepas ternbit matahari",
+          "jenis": "tulis",
+          "bilanganJawapan": 1,
+          "jawapanContoh": [
+            "صلاة ظهر"
+          ]
+        },
+        {
+          "id": "ibadah-2024-c5-p5",
+          "markah": 1,
+          "soalan": "سأورغ ديري اتاو برجماعه",
+          "rumi": "Sendiirian atau berjemaah",
+          "jenis": "tulis",
+          "bilanganJawapan": 1,
+          "jawapanContoh": [
+            "صلاة ظهر"
+          ]
+        },
+        {
+          "id": "ibadah-2024-c5-p6",
+          "markah": 1,
+          "soalan": "صلاة ظهر",
+          "rumi": "Solat Zohor",
+          "jenis": "tulis",
+          "bilanganJawapan": 1,
+          "jawapanContoh": [
+            "صلاة ظهر"
+          ]
+        },
+        {
+          "id": "ibadah-2024-c5-p7",
+          "markah": 1,
+          "soalan": "صلاة جمعة",
+          "rumi": "Solat Jumaat",
+          "jenis": "tulis",
+          "bilanganJawapan": 1,
+          "jawapanContoh": [
+            "صلاة جمعة"
+          ]
+        }
+      ]
+    },
+    {
+      "nama": "D",
+      "markah": 20,
+      "arahan": "Jawab semua soalan.",
+      "arahanRumi": "Jawab semua soalan.",
+      "soalan": [
+        {
+          "id": "ibadah-2024-d1-p1",
+          "markah": 1,
+          "soalan": "مُحْرِمٌ",
+          "rumi": "Muharram",
+          "jenis": "tulis",
+          "bilanganJawapan": 1,
+          "jawapanContoh": [
+            "مُحْرِمٌ"
+          ],
+          "jawapanContohRumi": []
+        },
+        {
+          "id": "ibadah-2024-d1-p2",
+          "markah": 1,
+          "soalan": "اِعْتِكَافٌ",
+          "rumi": "I'tikaf",
+          "jenis": "tulis",
+          "bilanganJawapan": 1,
+          "jawapanContoh": [
+            "اِعْتِكَافٌ"
+          ],
+          "jawapanContohRumi": []
+        },
+        {
+          "id": "ibadah-2024-d1-p3",
+          "markah": 1,
+          "soalan": "هَرُوسْ",
+          "rumi": "Harus",
+          "jenis": "tulis",
+          "bilanganJawapan": 1,
+          "jawapanContoh": [
+            "هَرُوسْ"
+          ],
+          "jawapanContohRumi": []
+        },
+        {
+          "id": "ibadah-2024-d1-p4",
+          "markah": 1,
+          "soalan": "دِيَوَاسْ",
+          "rumi": "Dewasa",
+          "jenis": "tulis",
+          "bilanganJawapan": 1,
+          "jawapanContoh": [
+            "دِيَوَاسْ"
+          ],
+          "jawapanContohRumi": []
+        },
+        {
+          "id": "ibadah-2024-d1-p5",
+          "markah": 1,
+          "soalan": "وَاجِبْ",
+          "rumi": "Wajib",
+          "jenis": "tulis",
+          "bilanganJawapan": 1,
+          "jawapanContoh": [
+            "وَاجِبْ"
+          ],
+          "jawapanContohRumi": []
+        },
+        {
+          "id": "ibadah-2024-d1-p6",
+          "markah": 1,
+          "soalan": "حَرَامْ",
+          "rumi": "Haram",
+          "jenis": "tulis",
+          "bilanganJawapan": 1,
+          "jawapanContoh": [
+            "حَرَامْ"
+          ],
+          "jawapanContohRumi": []
+        },
+        {
+          "id": "ibadah-2024-d2-p1",
+          "markah": 0,
+          "soalan": "عورة اياله بادن يغ _",
+          "rumi": "Aurat ialah badan yang _",
+          "jenis": "tulis",
+          "bilanganJawapan": 1,
+          "jawapanContoh": [
+            "دلييت"
+          ]
+        },
+        {
+          "id": "ibadah-2024-d2-p2",
+          "markah": 4,
+          "soalan": "دلييت اوليه اورغ يغ بوكن بالغ اياله تله جوكوڤ عمور تاهڤ دتوتوڤ دان",
+          "rumi": "Dilihat oleh orang yang bukan baligh iaitu mereka yang sudah genap umur tetap dan",
+          "jenis": "senarai",
+          "bilanganJawapan": 4,
+          "jawapanContoh": [
+            "عورة",
+            "بَلِيغَ",
+            "عُمْرُ",
+            "تُوْتُبُ"
+          ]
+        },
+        {
+          "id": "ibadah-2024-d3-p1",
+          "markah": 1,
+          "soalan": "صلاة ظهر - ١ تياد خطبة، ٢ سَأورَغ دِيْرِي اتاو برجماعه",
+          "rumi": "Solat Zohor - 1 Tiada khutbah, 2 Sendiirian atau berjemaah",
+          "jenis": "tulis",
+          "bilanganJawapan": 1,
+          "jawapanContoh": [
+            "صلاة ظهر - ١ تياد خطبة، ٢ سَأورَغ دِيْرِي اتاو برجماعه"
+          ]
+        },
+        {
+          "id": "ibadah-2024-d3-p2",
+          "markah": 1,
+          "soalan": "صلاة جمعة - ١ ددهولوءي دغن دوا خطبة، ٢ دتمڤت يغ دتتقكن، برمولا سلڤس تربنم ماتاهاري، سَأورَغ ديري اتاو برجماعه",
+          "rumi": "Solat Jumaat - 1 Didahului 2 khutbah, 2 Waktu tentu, bermula syuruk, berjemaah",
+          "jenis": "tulis",
+          "bilanganJawapan": 1,
+          "jawapanContoh": [
+            "صلاة جمعة - ١ ددهولوءي دغن دوا خطبة، ٢ دتمڤت يغ دتتقكن"
+          ]
+        },
+        {
+          "id": "ibadah-2024-d4-p1",
+          "markah": 1,
+          "soalan": "اَشْكُوتَ",
+          "rumi": "Asyhadu",
+          "jenis": "tulis",
+          "bilanganJawapan": 1,
+          "jawapanContoh": [
+            "أَشْهَدُ"
+          ],
+          "jawapanContohRumi": []
+        },
+        {
+          "id": "ibadah-2024-d4-p2",
+          "markah": 1,
+          "soalan": "وَاجِبْ",
+          "rumi": "Wajib",
+          "jenis": "tulis",
+          "bilanganJawapan": 1,
+          "jawapanContoh": [
+            "وَاجِبْ"
+          ],
+          "jawapanContohRumi": []
+        },
+        {
+          "id": "ibadah-2024-d4-p3",
+          "markah": 1,
+          "soalan": "حَرَامْ",
+          "rumi": "Haram",
+          "jenis": "tulis",
+          "bilanganJawapan": 1,
+          "jawapanContoh": [
+            "حَرَامْ"
+          ],
+          "jawapanContohRumi": []
+        },
+        {
+          "id": "ibadah-2024-d4-p4",
+          "markah": 1,
+          "soalan": "مُحَرَّمٌ",
+          "rumi": "Muharram",
+          "jenis": "tulis",
+          "bilanganJawapan": 1,
+          "jawapanContoh": [
+            "مُحَرَّمٌ"
+          ],
+          "jawapanContohRumi": []
+        },
+        {
+          "id": "ibadah-2024-d4-p5",
+          "markah": 1,
+          "soalan": "دِيَوَاسْ",
+          "rumi": "Dewasa",
+          "jenis": "tulis",
+          "bilanganJawapan": 1,
+          "jawapanContoh": [
+            "دِيَوَاسْ"
+          ],
+          "jawapanContohRumi": []
+        },
+        {
+          "id": "ibadah-2024-d5-p1",
+          "markah": 0,
+          "soalan": "صلاة برجماعه",
+          "rumi": "Solat berjemaah",
+          "jenis": "tulis",
+          "bilanganJawapan": 1,
+          "jawapanContoh": [
+            "صلاة برجماعه"
+          ]
+        },
+        {
+          "id": "ibadah-2024-d5-p2",
+          "markah": 2,
+          "soalan": "دجينتاءي اللّٰه لهَ",
+          "rumi": "Menjawab Allah",
+          "jenis": "senarai",
+          "bilanganJawapan": 2,
+          "jawapanContoh": [
+            "مُنْقَطِعٌ",
+            "مُسْتَمِرٌّ"
+          ]
+        },
+        {
+          "id": "ibadah-2024-d6-p1",
+          "markah": 1,
+          "soalan": "١ أ. حكوم : تيدق صح",
+          "rumi": "1 A. Hukum: tidak sah",
+          "jenis": "tulis",
+          "bilanganJawapan": 1,
+          "jawapanContoh": [
+            "حكوم : تيدق صح"
+          ]
+        },
+        {
+          "id": "ibadah-2024-d6-p2",
+          "markah": 1,
+          "soalan": "1. السن : صلاة جمع دلاكوكن قد وقتو يغ سام، سام اد جمع تقديم اتاو جمع تأخير.",
+          "rumi": "1. Syarat: Solat jamak dilaksanakan pada waktu yang sama, jamak taqdim atau ta'khir.",
+          "jenis": "tulis",
+          "bilanganJawapan": 1,
+          "jawapanContoh": [
+            "السن : صلاة جمع دلاكوكن قد وقتو يغ سام، سام اد جمع تقديم اتاو جمع تأخير."
+          ]
+        },
+        {
+          "id": "ibadah-2024-d7-p1",
+          "markah": 2,
+          "soalan": "صلاة وتر",
+          "rumi": "Solat Witir",
+          "jenis": "senarai",
+          "bilanganJawapan": 2,
+          "jawapanContoh": [
+            "صلاة وتر",
+            "صلاة ضحى"
+          ]
+        },
+        {
+          "id": "ibadah-2024-d8-p1",
+          "markah": 2,
+          "soalan": "صلاة سجارا دودوق، صلاة سجارا باريغ مغيريغ",
+          "rumi": "Solat sunnah duduk, solat sunnah berdiri mengingat",
+          "jenis": "senarai",
+          "bilanganJawapan": 2,
+          "jawapanContoh": [
+            "صلاة سجارا دودوق",
+            "صلاة سجارا باريغ مغيريغ"
+          ]
+        },
+        {
+          "id": "ibadah-2024-d9-p1",
+          "markah": 3,
+          "soalan": "أ. منوتوڤ عورة دغن سمڤورنا",
+          "rumi": "A. Menutup aurat dengan sempurna",
+          "jenis": "senarai",
+          "bilanganJawapan": 2,
+          "jawapanContoh": [
+            "منوتوڤ عورة دغن سمڤورنا",
+            "منجاك كحرمتن ديري"
+          ]
+        },
+        {
+          "id": "ibadah-2024-d10-p1",
+          "markah": 2,
+          "soalan": "تكبيرة الإحرام، ممباج سورة الفاتحة",
+          "rumi": "Takbiratul Ihram, Membaca Al-Fatihah",
+          "jenis": "senarai",
+          "bilanganJawapan": 2,
+          "jawapanContoh": [
+            "تكبيرة الإحرام",
+            "مَمْنَجِقَ سُورَةَ الْفَاتِحَةَ"
+          ]
+        },
+        {
+          "id": "ibadah-2024-d11-p1",
+          "markah": 2,
+          "soalan": "صلاة سنة تراويح، بولن رمضان، دأمڤونكن دوسا يغ لالو",
+          "rumi": "Solat sunat Tarawih, Bulan Ramadhan, Menghapus dosa lalu",
+          "jenis": "senarai",
+          "bilanganJawapan": 2,
+          "jawapanContoh": [
+            "صلاة سنة تراويح",
+            "بُولَنْ رَمَضَانَ",
+            "دَأْمُوْنْكِنْ دُوسَا يَغْ لَلُوْ"
+          ]
+        }
+      ]
+    }
+  ]
+}

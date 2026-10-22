@@ -34,7 +34,7 @@ void main() {
   group('kertas Adab 2024', () {
     test('boleh dijawab, bukan sekadar imbasan', () {
       expect(BankKertas.instance.bolehJawab('adab-2024'), isTrue);
-      expect(BankKertas.instance.kertasJawab('adab-2025'), isNull);
+      expect(BankKertas.instance.kertasJawab('adab-2025'), isNotNull);
     });
 
     test('menepati format rasmi UPKK', () {
@@ -127,10 +127,9 @@ void main() {
       await t.pumpWidget(const MaterialApp(home: SenaraiKertasSebenar()));
       await t.pump();
 
-      // Adab 2024 sudah ditranskrip — butang Jawab muncul di sebelahnya.
+      // Adab 2024 dan 2025 sudah ditranskrip — butang Jawab muncul di sebelahnya.
       expect(find.byKey(const ValueKey('jawab-adab-2024')), findsOneWidget);
-      // Tahun lain belum ditranskrip — kekal sebagai imbasan sahaja.
-      expect(find.byKey(const ValueKey('jawab-adab-2025')), findsNothing);
+      expect(find.byKey(const ValueKey('jawab-adab-2025')), findsOneWidget);
       // Navigasi ke KertasScreen tidak diuji di sini: skrin itu memulakan
       // pemasa perkhidmatan suara yang belum lupus apabila ujian tamat.
     });

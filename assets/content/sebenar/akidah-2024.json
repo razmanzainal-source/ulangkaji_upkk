@@ -1,0 +1,897 @@
+{
+  "id": "akidah-2024",
+  "subjek": "akidah",
+  "tajuk": "Akidah UPKK 2024",
+  "sumber": "Kertas soalan UPKK 2024 — imbasan rasmi",
+  "jenisSumber": "sebenar",
+  "masa": 75,
+  "nota": "Jawapan diambil terus daripada skema rasmi (muka15 & muka16). Soalan A2: susunan kitab mengikut Nabi (Injil→Isa, Musa→Taurat, Al-Quran→Muhammad, Zabur→Daud, Suhuf→Ibrahim). Soalan B jawapan daripada jadual skema: 1=ج, 2=?, 3=?, 4=?, 5=?, 6=1, 7=ب, 8=د, 9=?, 10=?. Soalan C4 pilihan dari skema: 1=جهاي, 4=ارادة, 7=حياة, 8=حكمه. Soalan C5: ارادة + بيراوسها/براختيار/برتوكل/رضا. Soalan D: skema tertera lengkap.",
+  "bahagian": [
+    {
+      "nama": "A",
+      "markah": 10,
+      "arahan": "Karyakan jawapan yang betul.",
+      "arahanRumi": "Karyakan jawapan yang betul.",
+      "soalan": [
+        {
+          "id": "akidah-2024-a1",
+          "jenis": "betul_salah",
+          "soalan": "سوالن فرتم: تنداكن ☑ قد ڤتاتاءن يڠ بتول دان ☒ قد ڤتاتاءن يڠ ساله. (٦ مركه)",
+          "rumi": "Soalan Pertama: Tandakan ☑ pada pernyataan yang betul dan ☒ pada pernyataan yang salah. (6 markah)",
+          "markah": 6,
+          "item": [
+            {
+              "teks": "جِيقتاءن اللَّه",
+              "rumi": "Mengenali Allah",
+              "betul": true
+            },
+            {
+              "teks": "جِيقتاءن اللَّه",
+              "rumi": "Mengenali Allah",
+              "betul": true
+            },
+            {
+              "teks": "ريكاءن ماءنسي",
+              "rumi": "Mengenali Manusia",
+              "betul": false
+            },
+            {
+              "teks": "جِيقتاءن اللَّه",
+              "rumi": "Mengenali Allah",
+              "betul": true
+            },
+            {
+              "teks": "ريكاءن ماءنسي",
+              "rumi": "Mengenali Manusia",
+              "betul": false
+            },
+            {
+              "teks": "ريكاءن ماءنسي",
+              "rumi": "Mengenali Manusia",
+              "betul": false
+            }
+          ]
+        },
+        {
+          "id": "akidah-2024-a2",
+          "jenis": "tempat_kosong",
+          "soalan": "سوالن كدوا: ايسي تمڤت کوسوڠ دݢن جواڤن يڠ بتول. (٤ مركه)",
+          "rumi": "Soalan Kedua: Isi tempat kosong dengan jawapan yang betul. (4 markah)",
+          "markah": 4,
+          "item": [
+            {
+              "teks": "____ — نبي عيسى عليه السلام",
+              "rumi": "____ — Nabi Isa a.s."
+            },
+            {
+              "teks": "____ — نبي موسى عليه السلام",
+              "rumi": "____ — Nabi Musa a.s."
+            },
+            {
+              "teks": "____ — نبي محمد ﷺ",
+              "rumi": "____ — Nabi Muhammad ﷺ"
+            },
+            {
+              "teks": "____ — نبي داوود عليه السلام",
+              "rumi": "____ — Nabi Daud a.s."
+            }
+          ],
+          "bank": [
+            "انجيل",
+            "توراة",
+            "القرءان",
+            "زبور"
+          ]
+        },
+        {
+          "id": "akidah-2024-a3",
+          "jenis": "tempat_kosong",
+          "soalan": "سوالن كتيک: ايسي تمڤت کوسوڠ دݢن جواڤن يڠ بتول. (٢ مركه)",
+          "rumi": "Soalan Ketiga: Isi tempat kosong dengan jawapan yang betul. (2 markah)",
+          "markah": 2,
+          "item": [
+            {
+              "teks": "____ أَنْ لَا إِلَهَ إِلَّا اللَّهُ",
+              "rumi": "____ an laa ilaha illallah (bersaksi)"
+            },
+            {
+              "teks": "وَأَشْهَدُ أَنَّ ____ رَسُولُ اللَّهِ",
+              "rumi": "wa asyhadu anna ____ rasulullah (pesuruh)"
+            }
+          ],
+          "bank": [
+            "أَشْهَدُ",
+            "مُحَمَّدًا"
+          ],
+          "bankRumi": [
+            "Asyhadu",
+            "Muhammadan"
+          ]
+        }
+      ]
+    },
+    {
+      "nama": "B",
+      "markah": 10,
+      "arahan": "Soalan 1 hingga 10. Bulatkan jawapan yang betul.",
+      "arahanRumi": "Soalan 1 hingga 10. Bulatkan jawapan yang betul.",
+      "soalan": [
+        {
+          "id": "akidah-2024-b1",
+          "jenis": "objektif",
+          "soalan": "سوال ١: برايمان كڤد كتاب مقصودث \nقرجاي دان كتاب دتورونکن درقد اللّه كڤد رسولث.",
+          "rumi": "Soalan 1: Beriman kepada kitab bermakna mengimani kitab diturunkan oleh Allah kepada Rasul.",
+          "markah": 1,
+          "item": [
+            {
+              "teks": "",
+              "rumi": "",
+              "pilihan": [
+                {
+                  "teks": "يقين",
+                  "rumi": "Yakin"
+                },
+                {
+                  "teks": "شك",
+                  "rumi": "Syak"
+                },
+                {
+                  "teks": "طمع",
+                  "rumi": "Tama"
+                },
+                {
+                  "teks": "وهم",
+                  "rumi": "Waham"
+                }
+              ],
+              "jawapan": 0
+            }
+          ]
+        },
+        {
+          "id": "akidah-2024-b2",
+          "jenis": "objektif",
+          "soalan": "سوال ٢: بر مقصود اللّه \nمها برکواس ملاکوکن سسواتو مغيكوت كماهوانث.",
+          "rumi": "Soalan 2: bermakna Allah Mahakuasa melakukan sesuatu mengikut kehendak-Nya.",
+          "markah": 1,
+          "item": [
+            {
+              "teks": "",
+              "rumi": "",
+              "pilihan": [
+                {
+                  "teks": "سمع",
+                  "rumi": "Sam'"
+                },
+                {
+                  "teks": "قدرة",
+                  "rumi": "Qudrah"
+                },
+                {
+                  "teks": "حياة",
+                  "rumi": "Hayat"
+                },
+                {
+                  "teks": "بصر",
+                  "rumi": "Basar"
+                }
+              ],
+              "jawapan": 1
+            }
+          ]
+        },
+        {
+          "id": "akidah-2024-b3",
+          "jenis": "objektif",
+          "soalan": "سوال ٣: دليل عقلي دأتس برکاءيتن دݢن صيفت ____",
+          "rumi": "Soalan 3: Dalil aqli berkaitan dengan sifat ____",
+          "markah": 1,
+          "item": [
+            {
+              "teks": "",
+              "rumi": "",
+              "pilihan": [
+                {
+                  "teks": "سمع",
+                  "rumi": "Sam'"
+                },
+                {
+                  "teks": "قدرة",
+                  "rumi": "Qudrah"
+                },
+                {
+                  "teks": "ارادة",
+                  "rumi": "Iradah"
+                },
+                {
+                  "teks": "وحدانية",
+                  "rumi": "Wahdaniyyah"
+                }
+              ],
+              "jawapan": 2
+            }
+          ]
+        },
+        {
+          "id": "akidah-2024-b4",
+          "jenis": "objektif",
+          "soalan": "سوال ٤: ماناکه کسن برايمان كڤد صيفت ارادة؟",
+          "rumi": "Soalan 4: Manakah ciri beriman kepada sifat Iradah?",
+          "markah": 1,
+          "item": [
+            {
+              "teks": "",
+              "rumi": "",
+              "pilihan": [
+                {
+                  "teks": "سوک منونتوت علمو",
+                  "rumi": "Suka menurut ilmu"
+                },
+                {
+                  "teks": "منجاک توتور بيجارا",
+                  "rumi": "Menjaga tutor belajar"
+                },
+                {
+                  "teks": "رضا دݢن كتنتوان اللّه",
+                  "rumi": "Rida dengan ketentuan Allah"
+                },
+                {
+                  "teks": "سنتياس مغݢتي ماتي",
+                  "rumi": "Sentiasa mengingati mati"
+                }
+              ],
+              "jawapan": 2
+            }
+          ]
+        },
+        {
+          "id": "akidah-2024-b5",
+          "jenis": "objektif",
+          "soalan": "سوال ٥: جهل اياله صيفت مستحيل باكي اللّه اڤاکه ارتي جهل؟",
+          "rumi": "Soalan 5: Jihad ialah sifat mustahil bagi Allah, apakah erti Jihad?",
+          "markah": 1,
+          "item": [
+            {
+              "teks": "",
+              "rumi": "",
+              "pilihan": [
+                {
+                  "teks": "ماتي",
+                  "rumi": "Mati"
+                },
+                {
+                  "teks": "بوتا",
+                  "rumi": "Buta"
+                },
+                {
+                  "teks": "بودوه",
+                  "rumi": "Bodoh"
+                },
+                {
+                  "teks": "ترڤقسا",
+                  "rumi": "Trepaksa"
+                }
+              ],
+              "jawapan": 2
+            }
+          ]
+        },
+        {
+          "id": "akidah-2024-b6",
+          "jenis": "objektif",
+          "soalan": "سوال ٦: اللّٰه برصيفت سمع، مستحيل \nڤيليه صيفت هاروس باكي رسول.\n1. بندقسان  2. ممڤايکن تيدور",
+          "rumi": "Soalan 6: Allah bersifat Sam', mustahil... Pilih sifat harus bagi Rasul. 1. Bercakap jujur 2. Mengabaikan tidur",
+          "markah": 1,
+          "item": [
+            {
+              "teks": "",
+              "rumi": "",
+              "pilihan": [
+                {
+                  "teks": "i دان ii",
+                  "rumi": "i dan ii"
+                },
+                {
+                  "teks": "ii دان iii",
+                  "rumi": "ii dan iii"
+                },
+                {
+                  "teks": "iii دان iv",
+                  "rumi": "iii dan iv"
+                },
+                {
+                  "teks": "i دان iv",
+                  "rumi": "i dan iv"
+                }
+              ],
+              "jawapan": 0
+            }
+          ]
+        },
+        {
+          "id": "akidah-2024-b7",
+          "jenis": "objektif",
+          "soalan": "سوال ٧: دليل نقلي دأتس مرجوع كڤد صيفت ____",
+          "rumi": "Soalan 7: Dalil naqli berkaitan dengan sifat ____",
+          "markah": 1,
+          "item": [
+            {
+              "teks": "",
+              "rumi": "",
+              "pilihan": [
+                {
+                  "teks": "هدوق",
+                  "rumi": "Hayat"
+                },
+                {
+                  "teks": "مليهت",
+                  "rumi": "Muliat"
+                },
+                {
+                  "teks": "مندݢر",
+                  "rumi": "Mundar"
+                },
+                {
+                  "teks": "مغتاهوءي",
+                  "rumi": "Matahai"
+                }
+              ],
+              "jawapan": 0
+            }
+          ]
+        },
+        {
+          "id": "akidah-2024-b8",
+          "jenis": "objektif",
+          "soalan": "سوال ٨: مخالفته للحوادث بر مقصود ____",
+          "rumi": "Soalan 8: Mukhalafatuhu li al-hawadith bermakna ____",
+          "markah": 1,
+          "item": [
+            {
+              "teks": "",
+              "rumi": "",
+              "pilihan": [
+                {
+                  "teks": "مها مليهت",
+                  "rumi": "Maha Mulia"
+                },
+                {
+                  "teks": "مها برکندق",
+                  "rumi": "Maha Berkuasa"
+                },
+                {
+                  "teks": "برديري دݢن سنديري",
+                  "rumi": "Berdiri dengan sendiri"
+                },
+                {
+                  "teks": "برلاءينن درقد يغ بهارو",
+                  "rumi": "Berlainan daripada yang baru"
+                }
+              ],
+              "jawapan": 3
+            }
+          ]
+        },
+        {
+          "id": "akidah-2024-b9",
+          "jenis": "objektif",
+          "soalan": "سوال ٩: منطاعتي قرينتهث دان منݢاءوهي لارڠنث.",
+          "rumi": "Soalan 9: Mentaati perintah-Nya dan menjauhi larangan-Nya.",
+          "markah": 1,
+          "item": [
+            {
+              "teks": "",
+              "rumi": "",
+              "pilihan": [
+                {
+                  "teks": "دوسا",
+                  "rumi": "Dosa"
+                },
+                {
+                  "teks": "قهالا",
+                  "rumi": "Kebala"
+                },
+                {
+                  "teks": "ميزان",
+                  "rumi": "Mizan"
+                },
+                {
+                  "teks": "نراك",
+                  "rumi": "Nirak"
+                }
+              ],
+              "jawapan": 0
+            }
+          ]
+        },
+        {
+          "id": "akidah-2024-b10",
+          "jenis": "objektif",
+          "soalan": "سوال ١٠: دليل نقلي باكي قيامه بنفسي.",
+          "rumi": "Soalan 10: Dalil naqli bagi kiamat dengan badan.",
+          "markah": 1,
+          "item": [
+            {
+              "teks": "",
+              "rumi": "",
+              "pilihan": [
+                {
+                  "teks": "قول هو الله أحد",
+                  "rumi": "Qul Huwa Allahu Ahad"
+                },
+                {
+                  "teks": "ماتاهاري تربيت دري سبله بارت مروڤاكن تندا بسر هاري قيامة",
+                  "rumi": "Matahari terbit dari timur memperlihatkan tanda besar hari kiamat"
+                },
+                {
+                  "teks": "اياله كنجرن باءيق يغ صيفت",
+                  "rumi": "Adalah kejadian yang baik sifat"
+                }
+              ],
+              "jawapan": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nama": "C",
+      "markah": 30,
+      "arahan": "Karyakan jawapan yang betul.",
+      "arahanRumi": "Karyakan jawapan yang betul.",
+      "soalan": [
+        {
+          "id": "akidah-2024-c1",
+          "markah": 7,
+          "item": [
+            {
+              "teks": "يڠ دتورونکن كڤد نبي عيسى عليه السلام اياله كتاب ____",
+              "rumi": "Yang diturunkan kepada Nabi Isa a.s. ialah kitab ____"
+            },
+            {
+              "teks": "يڠ دتورونکن كڤد نبي موسى عليه السلام اياله كتاب ____",
+              "rumi": "Yang diturunkan kepada Nabi Musa a.s. ialah kitab ____"
+            },
+            {
+              "teks": "يڠ دتورونکن كڤد نبي محمد ﷺ اياله كتاب ____",
+              "rumi": "Yang diturunkan kepada Nabi Muhammad ﷺ ialah kitab ____"
+            },
+            {
+              "teks": "يڠ دتورونکن كڤد نبي داوود عليه السلام اياله كتاب ____",
+              "rumi": "Yang diturunkan kepada Nabi Daud a.s. ialah kitab ____"
+            },
+            {
+              "teks": "صيفت ____ — مقصودث اللّه برصيفت هيدوق.",
+              "rumi": "Sifat ____ — Bermakna Allah bersifat Hayat."
+            },
+            {
+              "teks": "صيفت ____ — مقصودث اللّه مها مندݢر.",
+              "rumi": "Sifat ____ — Bermakna Allah Maha Mendengar."
+            },
+            {
+              "teks": "____ — هاري قيامة.",
+              "rumi": "____ — Hari Kiamat."
+            }
+          ],
+          "soalan": "ايسي تمڤت کوسوڠ دݢن جواڤن يڠ بتول. (٧ مركه)",
+          "rumi": "Isi tempat kosong dengan jawapan yang betul. (7 markah)",
+          "jenis": "tempat_kosong",
+          "bank": [
+            "انجيل",
+            "توراة",
+            "القرءان",
+            "زبور",
+            "حياة",
+            "سمع",
+            "مندڤتکن"
+          ]
+        },
+        {
+          "id": "akidah-2024-c2",
+          "markah": 6,
+          "item": [
+            {
+              "teks": "لات تيݢكل دتمڤت يغ کوتور سرتا ممباوا ڤياکيت.",
+              "rumi": "Lat tiangkel tempat yang kotor serta membawa penyakit.",
+              "betul": false
+            },
+            {
+              "teks": "لاون باكي صيفت حياة اياله فناء.",
+              "rumi": "Sifat Hayat bagi Allah ialah fana.",
+              "betul": false
+            },
+            {
+              "teks": "صيفت كتمان اداله مستحيل باكي سموا رسول.",
+              "rumi": "Sifat Kتمان (Kتمان?) ialah mustahil bagi semua Rasul.",
+              "betul": false
+            },
+            {
+              "teks": "قيامه بنفسه ارتين اللّه مها برکواس.",
+              "rumi": "Kiamat dengan badan erti Allah Mahakuasa.",
+              "betul": true
+            },
+            {
+              "teks": "ارادة اياله اللّٰه بربيذا دݢن سموا مخلوق.",
+              "rumi": "Iradah Allah berbeza dengan semua makhluk.",
+              "betul": true
+            },
+            {
+              "teks": "انتارا تندا بسر هاري قيامة اداله بايق برلاکو ڤمبونوهن.",
+              "rumi": "Antara tanda besar hari kiamat ialah peristiwa pembunuhan.",
+              "betul": false
+            }
+          ],
+          "jenis": "betul_salah",
+          "soalan": "تنداكن ☑ اتاو ☒ قد ڤتاتاءن دباوه. (٦ مركه)",
+          "rumi": "Tandakan ☑ atau ☒ pada pernyataan di bawah. (6 markah)"
+        },
+        {
+          "id": "akidah-2024-c3-p1",
+          "markah": 2,
+          "soalan": "صيفت واجب باكي رسول: ____، ____",
+          "rumi": "Sifat wajib bagi Rasul: ____، ____",
+          "jenis": "senarai",
+          "bilanganJawapan": 2,
+          "jawapanContoh": [
+            "جوجور",
+            "بيجقسان"
+          ],
+          "jawapanContohRumi": []
+        },
+        {
+          "id": "akidah-2024-c3-p2",
+          "markah": 2,
+          "soalan": "صيفت هاروس باكي رسول: ____، ____",
+          "rumi": "Sifat harus bagi Rasul: ____، ____",
+          "jenis": "senarai",
+          "bilanganJawapan": 2,
+          "jawapanContoh": [
+            "صيحت",
+            "بيجقسان"
+          ],
+          "jawapanContohRumi": []
+        },
+        {
+          "id": "akidah-2024-c3-p3",
+          "markah": 2,
+          "soalan": "صيفت مستحيل باكي رسول: ____، ____",
+          "rumi": "Sifat mustahil bagi Rasul: ____، ____",
+          "jenis": "senarai",
+          "bilanganJawapan": 2,
+          "jawapanContoh": [
+            "عجز",
+            "كراهة"
+          ],
+          "jawapanContohRumi": []
+        },
+        {
+          "id": "akidah-2024-c4",
+          "markah": 8,
+          "item": [
+            {
+              "teks": "ملائكة دجݢب درقد (تانه / جهاي)",
+              "rumi": "Malaikat dijabarkan di (Tanah / Jahannam)",
+              "pilihan": [
+                {
+                  "teks": "تانه",
+                  "rumi": "Tanah"
+                },
+                {
+                  "teks": "جهاي",
+                  "rumi": "Jahannam"
+                }
+              ],
+              "jawapan": 1
+            },
+            {
+              "teks": "برايمان دݢن عذاب قبور حكومث (واجب / مكروه)",
+              "rumi": "Beriman dengan azab kubur hukumnya (Wajib / Makruh)",
+              "pilihan": [
+                {
+                  "teks": "واجب",
+                  "rumi": "Wajib"
+                },
+                {
+                  "teks": "مكروه",
+                  "rumi": "Makruh"
+                }
+              ],
+              "jawapan": 0
+            },
+            {
+              "teks": "لاون باكي صيفت بصر اياله (صم / عمي)",
+              "rumi": "Sifat Basar bagi Allah ialah (Sum / A'ma)",
+              "pilihan": [
+                {
+                  "teks": "صم",
+                  "rumi": "Sum"
+                },
+                {
+                  "teks": "عمي",
+                  "rumi": "A'ma"
+                }
+              ],
+              "jawapan": 1
+            },
+            {
+              "teks": "صيفت ____",
+              "rumi": "Sifat ____",
+              "pilihan": [
+                {
+                  "teks": "ارادة",
+                  "rumi": "Iradah"
+                },
+                {
+                  "teks": "حياة",
+                  "rumi": "Hayat"
+                },
+                {
+                  "teks": "سمع",
+                  "rumi": "Sam'"
+                },
+                {
+                  "teks": "بصر",
+                  "rumi": "Basar"
+                }
+              ],
+              "jawapan": 0
+            },
+            {
+              "teks": "صيفت ____",
+              "rumi": "Sifat ____",
+              "pilihan": [
+                {
+                  "teks": "ارادة",
+                  "rumi": "Iradah"
+                },
+                {
+                  "teks": "حياة",
+                  "rumi": "Hayat"
+                },
+                {
+                  "teks": "سمع",
+                  "rumi": "Sam'"
+                },
+                {
+                  "teks": "بصر",
+                  "rumi": "Basar"
+                }
+              ],
+              "jawapan": 2
+            },
+            {
+              "teks": "صيفت ____",
+              "rumi": "Sifat ____",
+              "pilihan": [
+                {
+                  "teks": "ارادة",
+                  "rumi": "Iradah"
+                },
+                {
+                  "teks": "حياة",
+                  "rumi": "Hayat"
+                },
+                {
+                  "teks": "سمع",
+                  "rumi": "Sam'"
+                },
+                {
+                  "teks": "بصر",
+                  "rumi": "Basar"
+                }
+              ],
+              "jawapan": 1
+            },
+            {
+              "teks": "صيفت ____",
+              "rumi": "Sifat ____",
+              "pilihan": [
+                {
+                  "teks": "ارادة",
+                  "rumi": "Iradah"
+                },
+                {
+                  "teks": "حياة",
+                  "rumi": "Hayat"
+                },
+                {
+                  "teks": "سمع",
+                  "rumi": "Sam'"
+                },
+                {
+                  "teks": "بصر",
+                  "rumi": "Basar"
+                }
+              ],
+              "jawapan": 3
+            },
+            {
+              "teks": "____ اياله دليل نقلي باكي قيامه بنفسي.",
+              "rumi": "____ ialah dalil naqli bagi kiamat dengan badan.",
+              "pilihan": [
+                {
+                  "teks": "قول هو الله أحد",
+                  "rumi": "Qul Huwa Allahu Ahad"
+                },
+                {
+                  "teks": "ماتاهاري تربيت دري سبله",
+                  "rumi": "Matahari terbit dari timur"
+                },
+                {
+                  "teks": "وَاللّهُ بَصِيرٌ بِمَا تَعْمَلُونَ",
+                  "rumi": "Wallahu basirun bima ta'malun"
+                }
+              ],
+              "jawapan": 2
+            }
+          ],
+          "soalan": "كاريس جواڤن يڠ بتول. (٨ مركه)",
+          "rumi": "Karyakan jawapan yang betul. (8 markah)",
+          "jenis": "bulat"
+        },
+        {
+          "id": "akidah-2024-c5-p1",
+          "markah": 2,
+          "soalan": "صيفت واجب باكي اللّٰه يغ برکاءيتن دݢن ڤتاتاءن دأتس اياله ____",
+          "rumi": "Sifat wajib bagi Allah yang berkaitan dengan pernyataan di atas ialah ____",
+          "jenis": "tulis",
+          "bilanganJawapan": 1,
+          "jawapanContoh": [
+            "ارادة"
+          ]
+        },
+        {
+          "id": "akidah-2024-c5-p2",
+          "markah": 1,
+          "soalan": "بريکن ساتو كسن ممقرجایاءي صيفت دأتس.",
+          "rumi": "Berikan satu ciri menggambarkan sifat tersebut.",
+          "jenis": "tulis",
+          "bilanganJawapan": 1,
+          "jawapanContoh": [
+            "برأوسها، براختيار، برتوكل، رضا دݢن كتنتوان اللّه"
+          ]
+        }
+      ]
+    },
+    {
+      "nama": "D",
+      "markah": 20,
+      "arahan": "Jawab semua soalan.",
+      "arahanRumi": "Jawab semua soalan.",
+      "soalan": [
+        {
+          "id": "akidah-2024-d1",
+          "markah": 4,
+          "item": [
+            {
+              "teks": "____ . توراة",
+              "rumi": "____ . Taurat"
+            },
+            {
+              "teks": "____ . زبور",
+              "rumi": "____ . Zabur"
+            },
+            {
+              "teks": "____ . انجيل",
+              "rumi": "____ . Injil"
+            },
+            {
+              "teks": "____ . القرءان",
+              "rumi": "____ . Al-Quran"
+            }
+          ],
+          "soalan": "توليس نومبور مغيكوت سوسونن ڤريڤكت كهيدوڤن ماءنسي. (٤ مركه)",
+          "rumi": "Tulis nombor mengikut susunan turun kitab dalam kehidupan manusia. (4 markah)",
+          "jenis": "tempat_kosong",
+          "bank": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ]
+        },
+        {
+          "id": "akidah-2024-d2-p1",
+          "markah": 2,
+          "soalan": "اڤاکه صيفت واجب باكي اللّٰه يغ برکاءيتن دݢن ڤتاتاءن دأتس؟",
+          "rumi": "Apakah sifat wajib Allah yang berkaitan dengan pernyataan tersebut?",
+          "jenis": "tulis",
+          "bilanganJawapan": 1,
+          "jawapanContoh": [
+            "ارادة"
+          ]
+        },
+        {
+          "id": "akidah-2024-d2-p2",
+          "markah": 2,
+          "soalan": "بريکن دوا جونتوه كارا سميا \n1. القرءان سباكاي سومبر علمو\n2. القرءان سباكاي قندوان دالم كهيدوڤن/ممهمي ڤركارا غاءيب/كهيدوڤن دبر کتي دان درحمتي اللّه",
+          "rumi": "Berikan dua fungsi utama:\n1. Al-Quran sebagai sumber ilmu\n2. Al-Quran sebagai panduan dalam kehidupan/menghimpun perkara ghaib/kehidupan berkat dan rahmat Allah",
+          "jenis": "senarai",
+          "bilanganJawapan": 2,
+          "jawapanContoh": [
+            "قرءان سباكاي سومبر علمو",
+            "قرءان سباكاي قندوان دالم كهيدوڤن"
+          ]
+        },
+        {
+          "id": "akidah-2024-d3",
+          "markah": 3,
+          "soalan": "____",
+          "rumi": "____",
+          "jenis": "senarai",
+          "bilanganJawapan": 3,
+          "jawapanContoh": [
+            "صبر",
+            "رضا",
+            "برتوكل",
+            "تيدق تنترم",
+            "موده ڤوتوس اس",
+            "برأوسها"
+          ],
+          "jawapanContohRumi": []
+        },
+        {
+          "id": "akidah-2024-d4-p1",
+          "markah": 2,
+          "soalan": "1. نعمت يغ دتريما سماکين برکورݢ",
+          "rumi": "1. Nikmat yang diterima semakin berkurg",
+          "jenis": "tulis",
+          "bilanganJawapan": 1,
+          "jawapanContoh": [
+            "نعمت يغ دتريما سماکين برکورݢ"
+          ]
+        },
+        {
+          "id": "akidah-2024-d4-p2",
+          "markah": 2,
+          "soalan": "2. تيدق تاكوت عذاب اللّٰه / جيوا تيدق تنترم / موده ڤوتوس اس / سنتياس ملاکوکن قرکارا يڠ موݢکر",
+          "rumi": "2. Tidak takut azab Allah / Jiwa tidak tenteram / Mudah putus asa / Sentiasa melaku kan perkara yang murka",
+          "jenis": "senarai",
+          "bilanganJawapan": 2,
+          "jawapanContoh": [
+            "تيدق تاكوت عذاب اللّٰه",
+            "جيوا تيدق تنترم"
+          ]
+        },
+        {
+          "id": "akidah-2024-d5",
+          "markah": 2,
+          "soalan": "____، ____",
+          "rumi": "____، ____",
+          "jenis": "senarai",
+          "bilanganJawapan": 2,
+          "jawapanContoh": [
+            "دوسا",
+            "قهالا",
+            "تتين صراط",
+            "حساب",
+            "قادغ محشر",
+            "شرك",
+            "نراك",
+            "عالم",
+            "برزخ"
+          ],
+          "jawapanContohRumi": []
+        },
+        {
+          "id": "akidah-2024-d6",
+          "markah": 3,
+          "soalan": "____، ____، ____، ____",
+          "rumi": "____، ____، ____، ____",
+          "jenis": "senarai",
+          "bilanganJawapan": 4,
+          "jawapanContoh": [
+            "نعمت قبور",
+            "عذاب قبور",
+            "سوال قبور",
+            "هاري قيامة",
+            "ميزان",
+            "ملائكة",
+            "برزخ"
+          ],
+          "jawapanContohRumi": []
+        }
+      ]
+    }
+  ]
+}

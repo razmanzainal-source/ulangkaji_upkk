@@ -1,0 +1,940 @@
+{
+  "id": "adab-2025",
+  "subjek": "adab",
+  "tajuk": "Adab UPKK 2025",
+  "sumber": "Kertas soalan UPKK 2025 — imbasan rasmi",
+  "jenisSumber": "sebenar",
+  "masa": 75,
+  "nota": "Jawapan diambil terus daripada skema rasmi (muka13 & muka14). Soalan C2 item 5: Jawi cetakan 'مڠيڠكوغ ڤراساءن بوڠا' dibaca sebagai 'mengungkit perkara lalu' mengikut konteks; skema jawapan: 'ڤرکادوهن' (pergaduhan). Soalan C4 item 2: pilihan B 'مڠهاتوس' dikira sebagai 'mengumpat/mengelirukan' — skema memilih jawapan ini. D4: petikan Sabri & rakan, soalan 1 jawapan 'ادب کتيک برگوتوڠ-رويوڠ', soalan 2 'دسکوله', soalan 3 'سماڠت بکرجاسام / سوک ممبتو'.",
+  "bahagian": [
+    {
+      "nama": "A",
+      "markah": 10,
+      "arahan": "Karyakan jawapan yang betul.",
+      "arahanRumi": "Karyakan jawapan yang betul.",
+      "soalan": [
+        {
+          "id": "adab-2025-a1",
+          "jenis": "betul_salah",
+          "soalan": "سوالن فرتم: تنداكن ☑ قد ڤتاتاءن يڠ بتول دان ☒ قد ڤتاتاءن يڠ ساله. (٣ مركه)",
+          "rumi": "Soalan Pertama: Tandakan ☑ pada pernyataan yang betul dan ☒ pada pernyataan yang salah. (3 markah)",
+          "markah": 3,
+          "item": [
+            {
+              "teks": "الله ﷻ سايغ قد اورڠ يڠ سنتياس برشكور.",
+              "rumi": "Allah ﷻ sayang pada orang yang sentiasa bersyukur.",
+              "betul": true
+            },
+            {
+              "teks": "الله ﷻ مورك كڤد اورڠ يڠ برادب.",
+              "rumi": "Allah ﷻ murka kepada orang yang beradab.",
+              "betul": false
+            },
+            {
+              "teks": "كيت هندقله منونايكں سوروهن الله ﷻ دان مڠيڠكلكن لارڠن.",
+              "rumi": "Kita hendaklah menunaikan suruhan Allah ﷻ dan meninggalkan larangan.",
+              "betul": true
+            }
+          ]
+        },
+        {
+          "id": "adab-2025-a2",
+          "jenis": "bulat",
+          "soalan": "سوالن كدوا: بولتکن جواڤن يڠ بتول. (٤ مركه)",
+          "rumi": "Soalan Kedua: Bulatkan jawapan yang betul. (4 markah)",
+          "markah": 4,
+          "item": [
+            {
+              "teks": "كيت هندقله (ممبتو / مڠابايكن) ايبو باف کتيک مريك دالم کسوسهن.",
+              "rumi": "Kita hendaklah (membantu / mengabaikan) ibu bapa ketika mereka dalam kesusahan.",
+              "pilihan": [
+                {
+                  "teks": "ممبتو",
+                  "rumi": "membantu"
+                },
+                {
+                  "teks": "مڠابايكن",
+                  "rumi": "mengabaikan"
+                }
+              ],
+              "jawapan": 0
+            },
+            {
+              "teks": "اورڠ يڠ مندرهاكاي ايبو باف اکن مندافت (عذاب / دوسا).",
+              "rumi": "Orang yang menderhakai ibu bapa akan mendapat (azab / dosa).",
+              "pilihan": [
+                {
+                  "teks": "عذاب",
+                  "rumi": "azab"
+                },
+                {
+                  "teks": "دوسا",
+                  "rumi": "dosa"
+                }
+              ],
+              "jawapan": 1
+            },
+            {
+              "teks": "كيت هندقله برچاكڤ دڠن ايبو باف سچارا (سوڤن سنتون / لمه لمبوت).",
+              "rumi": "Kita hendaklah bercakap dengan ibu bapa secara (sopan santun / lemah lembut).",
+              "pilihan": [
+                {
+                  "teks": "سوڤن سنتون",
+                  "rumi": "sopan santun"
+                },
+                {
+                  "teks": "لمه لمبوت",
+                  "rumi": "lemah lembut"
+                }
+              ],
+              "jawapan": 0
+            },
+            {
+              "teks": "اورڠ يڠ برادب كڤد ايبو باف اكن (دبركتي / دمولياكن) اوليه الله ﷻ.",
+              "rumi": "Orang yang beradab kepada ibu bapa akan (diberkati / dimuliakan) oleh Allah ﷻ.",
+              "pilihan": [
+                {
+                  "teks": "دبركتي",
+                  "rumi": "diberkati"
+                },
+                {
+                  "teks": "دمولياكن",
+                  "rumi": "dimuliakan"
+                }
+              ],
+              "jawapan": 0
+            }
+          ]
+        },
+        {
+          "id": "adab-2025-a3",
+          "jenis": "kumpulan",
+          "soalan": "سوالن كتيک: سوايكن دڠن جواڤن يڠ بتول. (٣ مركه)",
+          "rumi": "Soalan Ketiga: Suaikan dengan jawapan yang betul. (3 markah)",
+          "markah": 3,
+          "item": [
+            {
+              "teks": "كيت مستيله برصيفت قمعاف دالم برصحابت.",
+              "rumi": "Kita mestilah bersifat pemaaf dalam bersahabat.",
+              "jawapan": 0
+            },
+            {
+              "teks": "كيت ڤرلو مڠيغكري سكالا ڤرينته رسول الله ﷺ.",
+              "rumi": "Kita perlu mengingkari segala perintah Rasulullah ﷺ.",
+              "jawapan": 1
+            },
+            {
+              "teks": "اورڠ يڠ مڠعملكن سنة رسول الله ﷺ اكن مندافت ڤهال.",
+              "rumi": "Orang yang mengamalkan sunnah Rasulullah ﷺ akan mendapat pahala.",
+              "jawapan": 0
+            }
+          ],
+          "kategori": [
+            "برادب دڠن رسول الله ﷺ",
+            "تيدق برادب دڠن رسول الله ﷺ"
+          ],
+          "kategoriRumi": [
+            "Beradab dengan Rasulullah ﷺ",
+            "Tidak beradab dengan Rasulullah ﷺ"
+          ]
+        }
+      ]
+    },
+    {
+      "nama": "B",
+      "markah": 10,
+      "arahan": "Soalan 1 hingga 10. Bulatkan jawapan yang betul.",
+      "arahanRumi": "Soalan 1 hingga 10. Bulatkan jawapan yang betul.",
+      "soalan": [
+        {
+          "id": "adab-2025-b1",
+          "jenis": "objektif",
+          "soalan": "حق جيرن يڠ ڤرلو دڤليهارا اياله ____ مريك دان كلوارڬ.",
+          "rumi": "Hak jiran yang perlu dipelihara ialah ____ mereka dan keluarga.",
+          "markah": 1,
+          "item": [
+            {
+              "teks": "",
+              "rumi": "",
+              "pilihan": [
+                {
+                  "teks": "مڠحرمتي",
+                  "rumi": "menghormati"
+                },
+                {
+                  "teks": "مندعاءکن",
+                  "rumi": "mendoakan"
+                },
+                {
+                  "teks": "مڠوتاماكں",
+                  "rumi": "mengutamakan"
+                },
+                {
+                  "teks": "منجاك",
+                  "rumi": "menjaga"
+                }
+              ],
+              "jawapan": 0
+            }
+          ]
+        },
+        {
+          "id": "adab-2025-b2",
+          "jenis": "objektif",
+          "soalan": "ممينتا ____ تربيليه دهولو سبلوم برتاث كڤد کورو.",
+          "rumi": "Meminta ____ terlebih dahulu sebelum bertanya kepada guru.",
+          "markah": 1,
+          "item": [
+            {
+              "teks": "",
+              "rumi": "",
+              "pilihan": [
+                {
+                  "teks": "رستو",
+                  "rumi": "restu"
+                },
+                {
+                  "teks": "ايذين",
+                  "rumi": "izin"
+                },
+                {
+                  "teks": "لاينن",
+                  "rumi": "lainan"
+                },
+                {
+                  "teks": "جاس",
+                  "rumi": "jas"
+                }
+              ],
+              "jawapan": 1
+            }
+          ]
+        },
+        {
+          "id": "adab-2025-b3",
+          "jenis": "objektif",
+          "soalan": "مماتوهي ڤرأتورن دسکوله دافٿ ____.",
+          "rumi": "Mematuhi peraturan di sekolah dapat ____.",
+          "markah": 1,
+          "item": [
+            {
+              "teks": "",
+              "rumi": "",
+              "pilihan": [
+                {
+                  "teks": "ترهيندر درقد ڤاکيت",
+                  "rumi": "terhindar daripada penyakit"
+                },
+                {
+                  "teks": "منيمبولكن مينت کسکوله",
+                  "rumi": "menimbulkan minat sekolah"
+                },
+                {
+                  "teks": "مڠيلقكن کجالا ڤونتيڠ سکوله",
+                  "rumi": "mengelakkan kejadian ponteng sekolah"
+                },
+                {
+                  "teks": "موجودكن سواسان ڤمبلاجرن يڠ سيليسا",
+                  "rumi": "mewujudkan suasana pembelajaran yang selesa"
+                }
+              ],
+              "jawapan": 2
+            }
+          ]
+        },
+        {
+          "id": "adab-2025-b4",
+          "jenis": "objektif",
+          "soalan": "انتارا ادب کتيک منزيارهي ساودارا-مارا اياله ____.",
+          "rumi": "Antara adab ketika menziarahi saudara-mara ialah ____.",
+          "markah": 1,
+          "item": [
+            {
+              "teks": "",
+              "rumi": "",
+              "pilihan": [
+                {
+                  "teks": "مڠاءيكن ساودارا-مارا دهاذڤن اورڠ لاين",
+                  "rumi": "meng+aibkan saudara-mara di hadapan orang lain"
+                },
+                {
+                  "teks": "منجاك سيکف سماس برزياره",
+                  "rumi": "menjaga sikap semasa berziarah"
+                },
+                {
+                  "teks": "کحاضيرن تيدق دسڠي",
+                  "rumi": "kehadiran tidak disengajakan"
+                },
+                {
+                  "teks": "برتکور دڠن کاسر",
+                  "rumi": "bertengkar dengan kasar"
+                }
+              ],
+              "jawapan": 1
+            }
+          ]
+        },
+        {
+          "id": "adab-2025-b5",
+          "jenis": "objektif",
+          "soalan": "برايکوت ادب کتيک منزيارهي اورڠ ساکيت کچوالي",
+          "rumi": "Berikut adab ketika menziarahi orang sakit kecuali",
+          "markah": 1,
+          "item": [
+            {
+              "teks": "",
+              "rumi": "",
+              "pilihan": [
+                {
+                  "teks": "مंबري کات2 سماڠت",
+                  "rumi": "memberi kata-kata semangat"
+                },
+                {
+                  "teks": "ميباوا بواه تاڠن",
+                  "rumi": "membawa buah tangan"
+                },
+                {
+                  "teks": "منجاك تيڠکه لاکو",
+                  "rumi": "menjaga tingkah laku"
+                },
+                {
+                  "teks": "بربوال ڤرکارا يڠ سياء",
+                  "rumi": "berbual perkara yang sia-sia"
+                }
+              ],
+              "jawapan": 3
+            }
+          ]
+        },
+        {
+          "id": "adab-2025-b6",
+          "jenis": "objektif",
+          "soalan": "كيت دستنكن دالم كأداءن ____ کتيک منزيارهي قبور.",
+          "rumi": "Kita disunnahkan dalam keadaan ____ ketika menziarahi kubur.",
+          "markah": 1,
+          "item": [
+            {
+              "teks": "",
+              "rumi": "",
+              "pilihan": [
+                {
+                  "teks": "منوتوق عورة",
+                  "rumi": "menutup aurat"
+                },
+                {
+                  "teks": "بروضواء",
+                  "rumi": "berwuduk"
+                },
+                {
+                  "teks": "برسديه",
+                  "rumi": "bersedia"
+                },
+                {
+                  "teks": "صيحت",
+                  "rumi": "sihat"
+                }
+              ],
+              "jawapan": 1
+            }
+          ]
+        },
+        {
+          "id": "adab-2025-b7",
+          "jenis": "objektif",
+          "soalan": "ممنوهي تمڤت دودوق دباريسن هادڤن اداله ادب کتيک منزيارهي ____.",
+          "rumi": "Memenuhi tempat duduk di barisan hadapan adalah adab ketika menziarahi ____.",
+          "markah": 1,
+          "item": [
+            {
+              "teks": "",
+              "rumi": "",
+              "pilihan": [
+                {
+                  "teks": "قبور",
+                  "rumi": "kubur"
+                },
+                {
+                  "teks": "کماتين",
+                  "rumi": "kematian"
+                },
+                {
+                  "teks": "اورڠ ساکيت",
+                  "rumi": "orang sakit"
+                },
+                {
+                  "teks": "مجلس کراماين",
+                  "rumi": "majlis keramaian"
+                }
+              ],
+              "jawapan": 3
+            }
+          ]
+        },
+        {
+          "id": "adab-2025-b8",
+          "jenis": "objektif",
+          "soalan": "ڤتاتاءن دأتس برکاءيتن دڠن ادب کتيک ____.\nمنچاڤاي کڤوتوسن يڠ دڤرستوجوءي.",
+          "rumi": "Pernyataan di atas berkaitan dengan adab ketika ____.\nMencapai keputusan yang dipersetujui.",
+          "markah": 1,
+          "item": [
+            {
+              "teks": "",
+              "rumi": "",
+              "pilihan": [
+                {
+                  "teks": "کوتوڠ-رويوڠ",
+                  "rumi": "gotong-royong"
+                },
+                {
+                  "teks": "مجلس علمو",
+                  "rumi": "majlis ilmu"
+                },
+                {
+                  "teks": "برماءين",
+                  "rumi": "bermain"
+                },
+                {
+                  "teks": "برمشوارت",
+                  "rumi": "bermesyuarat"
+                }
+              ],
+              "jawapan": 3
+            }
+          ]
+        },
+        {
+          "id": "adab-2025-b9",
+          "jenis": "objektif",
+          "soalan": "اڤاکه ڤرلاکوان يڠ دلارڠ کتيک مڠݢوناكن کمودهن مسجد؟",
+          "rumi": "Apakah perlakuan yang dilarang ketika menggunakan kemudahan masjid?",
+          "markah": 1,
+          "item": [
+            {
+              "teks": "",
+              "rumi": "",
+              "pilihan": [
+                {
+                  "teks": "تيدق منجاک کبرسيهن",
+                  "rumi": "tidak menjaga kebersihan"
+                },
+                {
+                  "teks": "مبواڠ سمڤه مراتا-رات",
+                  "rumi": "membuang sampah merata-rata"
+                },
+                {
+                  "teks": "مباذير اير دان ايليکتريک",
+                  "rumi": "membazir air dan elektrik"
+                },
+                {
+                  "teks": "مڠهالڠ لالوان اورڠ کلوار ماسوق",
+                  "rumi": "menghalang laluan orang keluar masuk"
+                }
+              ],
+              "jawapan": 2
+            }
+          ]
+        },
+        {
+          "id": "adab-2025-b10",
+          "jenis": "objektif",
+          "soalan": "ڤيليه حکمه برادب دمجليس علمو.",
+          "rumi": "Pilih hikmah beradab di majlis ilmu.",
+          "markah": 1,
+          "item": [
+            {
+              "teks": "",
+              "rumi": "",
+              "pilihan": [
+                {
+                  "teks": "i دان ii",
+                  "rumi": "i dan ii"
+                },
+                {
+                  "teks": "ii دان iii",
+                  "rumi": "ii dan iii"
+                },
+                {
+                  "teks": "iii دان iv",
+                  "rumi": "iii dan iv"
+                },
+                {
+                  "teks": "i دان iv",
+                  "rumi": "i dan iv"
+                }
+              ],
+              "jawapan": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nama": "C",
+      "markah": 30,
+      "arahan": "Karyakan jawapan yang betul.",
+      "arahanRumi": "Karyakan jawapan yang betul.",
+      "soalan": [
+        {
+          "id": "adab-2025-c1",
+          "markah": 6,
+          "item": [
+            {
+              "teks": "جادیکن عملن (مموهون معاف / برتريما کاسيه) سکلپس برتاث.",
+              "rumi": "Jadikan amalan (memohon maaf / berterima kasih) selepas bertanya.",
+              "pilihan": [
+                {
+                  "teks": "مموهون معاف",
+                  "rumi": "memohon maaf"
+                },
+                {
+                  "teks": "برتريما کاسيه",
+                  "rumi": "berterima kasih"
+                }
+              ],
+              "jawapan": 1
+            },
+            {
+              "teks": "موريڊ يڠ برجاي اکن سنتياس (برادب / منطاعتي) دڠن کورو.",
+              "rumi": "Murid yang berjaya akan sentiasa (beradab / mentaati) dengan guru.",
+              "pilihan": [
+                {
+                  "teks": "برادب",
+                  "rumi": "beradab"
+                },
+                {
+                  "teks": "منطاعت",
+                  "rumi": "mentaati"
+                }
+              ],
+              "jawapan": 0
+            },
+            {
+              "teks": "منجاک کبرسيهن دافت موجودكن سواسان ڤمبلاجرن يڠ (سيليسا / چريا).",
+              "rumi": "Menjaga kebersihan dapat mewujudkan suasana pembelajaran yang (selesa / ceria).",
+              "pilihan": [
+                {
+                  "teks": "سيليسا",
+                  "rumi": "selesa"
+                },
+                {
+                  "teks": "چريا",
+                  "rumi": "ceria"
+                }
+              ],
+              "jawapan": 0
+            },
+            {
+              "teks": "مماتوهي ڤرأتورن سکوله دافت موجودكن سواسان (سجهترا / هرموي).",
+              "rumi": "Mematuhi peraturan sekolah dapat mewujudkan suasana (sejahtera / harmoni).",
+              "pilihan": [
+                {
+                  "teks": "سجهترا",
+                  "rumi": "sejahtera"
+                },
+                {
+                  "teks": "هرموي",
+                  "rumi": "harmoni"
+                }
+              ],
+              "jawapan": 1
+            },
+            {
+              "teks": "كيت هندقله سنتياس مندعاءكن (کسجهتراءن / کمسراءن) اورڠ کلاءين اوڤاي.",
+              "rumi": "Kita hendaklah sentiasa mendoakan (kesejahteraan / kemesraan) orang kelainan upaya.",
+              "pilihan": [
+                {
+                  "teks": "کسجهتراءن",
+                  "rumi": "kesejahteraan"
+                },
+                {
+                  "teks": "کمسراءن",
+                  "rumi": "kemesraan"
+                }
+              ],
+              "jawapan": 0
+            },
+            {
+              "teks": "فاءيده برادب دڠن اورڠ کلاءين اوڤاي دافت (مراتكن / مندکتکن) اخوه.",
+              "rumi": "Faedah beradab dengan orang kelainan upaya dapat (merapatkan / mendekatkan) ukhuwah.",
+              "pilihan": [
+                {
+                  "teks": "مراتكن",
+                  "rumi": "merapatkan"
+                },
+                {
+                  "teks": "مندکتکن",
+                  "rumi": "mendekatkan"
+                }
+              ],
+              "jawapan": 0
+            }
+          ],
+          "jenis": "bulat",
+          "soalan": "ݢاريسکن جواڤن يغ بتول. (٦ مركه)",
+          "rumi": "Gariskan jawapan yang betul. (6 markah)"
+        },
+        {
+          "id": "adab-2025-c2",
+          "markah": 6,
+          "item": [
+            {
+              "teks": "جيوا منجاديا تيدق ____ کران ڤرسليسيهن فهم.",
+              "rumi": "Jiwa menjadi tidak ____ kerana perselisihan faham.",
+              "jawapan": 0
+            },
+            {
+              "teks": "منزيارهي کماتين دافت ملهيركن راس ____ کڤد کلوارڬ سي ماتي.",
+              "rumi": "Menziarahi kematian dapat melahirkan rasa ____ kepada keluarga si mati.",
+              "jawapan": 1
+            },
+            {
+              "teks": "كيت هندقله منزيارهي ساودارا-مارا ڤد وقتو يڠ ____.",
+              "rumi": "Kita hendaklah menziarahi saudara-mara pada waktu yang ____.",
+              "jawapan": 2
+            },
+            {
+              "teks": "منزيارهي تانه ڤرقبورن دافت منيمبولكن راس ____.",
+              "rumi": "Menziarahi tanah perkuburan dapat menimbulkan rasa ____.",
+              "jawapan": 3
+            },
+            {
+              "teks": "مڠيڠكوغ ڤراساءن بوڠا مينمبولكن ____ انتارا ساودارا-مارا.",
+              "rumi": "Mengungkit perkara lalu menimbulkan ____ antara saudara-mara.",
+              "jawapan": 4
+            },
+            {
+              "teks": "کحاضيرن هشام دمجليس کراماين باف ساوڊاراث دافت ____ صلة الرحيم.",
+              "rumi": "Kehadiran Hisham di majlis keramaian bapa saudaranya dapat ____ silaturahim.",
+              "jawapan": 5
+            }
+          ],
+          "soalan": "ايسي تمڤت کوسوڠ دڠن جواڤن يڠ بتول. (٦ مركه)",
+          "rumi": "Isi tempat kosong dengan jawapan yang betul. (6 markah)",
+          "jenis": "tempat_kosong",
+          "bank": [
+            "تنترم",
+            "ڤريهاتين",
+            "سسواي",
+            "زُهْد",
+            "ڤرکادوهن",
+            "مڠرتن"
+          ]
+        },
+        {
+          "id": "adab-2025-c3",
+          "markah": 6,
+          "soalan": "لڠکڤكن جدوال دباوه. (٦ مركه)",
+          "rumi": "Lengkapkan jadual di bawah. (6 markah)",
+          "jenis": "tempat_kosong",
+          "item": [
+            {
+              "teks": "ادب کتيک ممليهارا دان مموليهارا عالم سکيتر: ____ ، ____",
+              "rumi": "Adab ketika memelihara dan memulihara alam sekitar: ____ , ____"
+            },
+            {
+              "teks": "عاقبت تيدق برادب کتيک ممليهارا دان مموليهارا عالم سکيتر: ____ ، ____",
+              "rumi": "Akibat tidak beradab ketika memelihara dan memulihara alam sekitar: ____ , ____"
+            },
+            {
+              "teks": "نيلاي مورني کتيک ممليهارا دان مموليهارا عالم سکيتر: ____ ، ____",
+              "rumi": "Nilai murni ketika memelihara dan memulihara alam sekitar: ____ , ____"
+            }
+          ],
+          "bank": [
+            "مڠعملكن اكتيويتي کيتر سمولا",
+            "اكتيويتي ڤنانمن سمولا ڤوکوق",
+            "کصيحتن ماءنسي ترججس",
+            "هيدوڤن سوغاي اکن ڤوڤوس",
+            "ڤريهاتين تنتغ کبرسيهن عالم سکيتر",
+            "منچينتاءي عالم سکيتر",
+            "ملاکوکن ڤمباكرن تربوك",
+            "عالم سکيتر لبيه اينده"
+          ],
+          "bankRumi": [
+            "mengamalkan aktiviti kitar semula",
+            "aktiviti penanaman semula pokok",
+            "kesihatan manusia terjejas",
+            "hidupan sungai akan pupus",
+            "perhatian tentang kebersihan alam sekitar",
+            "mencintai alam sekitar",
+            "melakukan pembakaran terbuka",
+            "alam sekitar lebih indah"
+          ]
+        },
+        {
+          "id": "adab-2025-c4",
+          "markah": 6,
+          "item": [
+            {
+              "teks": "كيت هندقله منجاك باتس ____ دمديا سوسيال.",
+              "rumi": "Kita hendaklah menjaga batas ____ di media sosial.",
+              "pilihan": [
+                {
+                  "teks": "ڤرکاءولن",
+                  "rumi": "pergaulan"
+                },
+                {
+                  "teks": "ڤرماءينن",
+                  "rumi": "permainan"
+                }
+              ],
+              "jawapan": 0
+            },
+            {
+              "teks": "امير ممبيركن بريتا ڤلسو دفيسبوك برتوجوان اونتوق ____ اورڠ لاين.",
+              "rumi": "Amir memberikan berita palsu di Facebook bertujuan untuk ____ orang lain.",
+              "pilihan": [
+                {
+                  "teks": "منصيحتي",
+                  "rumi": "menasihati"
+                },
+                {
+                  "teks": "مڠهاسوت",
+                  "rumi": "menghasut"
+                }
+              ],
+              "jawapan": 1
+            },
+            {
+              "teks": "هيدوڤ منجاديا تيدق ____ کران مبريکن فتنه دمديا سوسيال.",
+              "rumi": "Hidup menjadi tidak ____ kerana memberikan fitnah di media sosial.",
+              "pilihan": [
+                {
+                  "teks": "تنترم",
+                  "rumi": "tenteram"
+                },
+                {
+                  "teks": "ݢليسه",
+                  "rumi": "gelisah"
+                }
+              ],
+              "jawapan": 0
+            },
+            {
+              "teks": "كيت دافت برتوكر ____ دالم کروڤ وهو تساق.",
+              "rumi": "Kita dapat bertukar ____ dalam kumpulan WhatsApp.",
+              "pilihan": [
+                {
+                  "teks": "ڤميکيرن",
+                  "rumi": "pemikiran"
+                },
+                {
+                  "teks": "ڤندڠن",
+                  "rumi": "pandangan"
+                }
+              ],
+              "jawapan": 1
+            },
+            {
+              "teks": "رقية برتڠكوڠجواب ____ نام ميمونة کران مبريکن فتنه تننتڠ دفيسبوك.",
+              "rumi": "Ruqayyah bertanggungjawab ____ nama Maimunah kerana memberikan fitnah tentang di Facebook.",
+              "pilihan": [
+                {
+                  "teks": "مببريسيکن",
+                  "rumi": "membersihkan"
+                },
+                {
+                  "teks": "مبولييهکن",
+                  "rumi": "memuliakan"
+                }
+              ],
+              "jawapan": 0
+            },
+            {
+              "teks": "ڤڠكوناءن مديا سوسيال دڠن باعيف دافت ____ فتنه.",
+              "rumi": "Penggunaan media sosial dengan baik dapat ____ fitnah.",
+              "pilihan": [
+                {
+                  "teks": "مڠيلقکن",
+                  "rumi": "mengelakkan"
+                },
+                {
+                  "teks": "منولق",
+                  "rumi": "menolak"
+                }
+              ],
+              "jawapan": 0
+            }
+          ],
+          "jenis": "bulat",
+          "soalan": "بولتکن جواڤن يغ بتول. (٦ مركه)",
+          "rumi": "Bulatkan jawapan yang betul. (6 markah)"
+        },
+        {
+          "id": "adab-2025-c5",
+          "jenis": "betul_salah",
+          "markah": 6,
+          "item": [
+            {
+              "teks": "اللَّهُمَّ افْتَحْ لِيْ أَبْوَابَ رَحْمَتِكَ اداله دعاء کتيک ماسوق مسجد.",
+              "rumi": "Allahummaftah li abwaba rahmatika adalah doa ketika masuk masjid.",
+              "betul": true
+            },
+            {
+              "teks": "مسجد منجاديا تمڤت مشارکت برکومڤول.",
+              "rumi": "Masjid menjadi tempat masyarakat berkumpul.",
+              "betul": true
+            },
+            {
+              "teks": "مماسوقي مسجد دڠن برڤاکاين کوتور.",
+              "rumi": "Memasuki masjid dengan berpakaian kotor.",
+              "betul": false
+            },
+            {
+              "teks": "کمودهن مسجد دکوناءکن اونتوق اوروسن ڤريبادي.",
+              "rumi": "Kemudahan masjid digunakan untuk urusan peribadi.",
+              "betul": false
+            },
+            {
+              "teks": "فرداوس ممبوات بيسيڠ کتيک جماعه سدڠ برصلاة تراويح.",
+              "rumi": "Firdaus membuat bising ketika jemaah sedang bersolat tarawih.",
+              "betul": false
+            },
+            {
+              "teks": "مراتكن صلة الرحيم دڠن جماعه اداله کليبهن برادب کتيک صلاة جمعة.",
+              "rumi": "Merapatkan silaturahim dengan jemaah adalah kelebihan beradab ketika solat Jumaat.",
+              "betul": true
+            }
+          ],
+          "soalan": "تنداكن ☑ ڤد ڤتاتاءن يڠ بتول دان ☒ ڤد ڤتاتاءن يڠ ساله. (٦ مركه)",
+          "rumi": "Tandakan ☑ pada pernyataan yang betul dan ☒ pada pernyataan yang salah. (6 markah)"
+        }
+      ]
+    },
+    {
+      "nama": "D",
+      "markah": 20,
+      "arahan": "Jawab semua soalan.",
+      "arahanRumi": "Jawab semua soalan.",
+      "soalan": [
+        {
+          "id": "adab-2025-d1-p1",
+          "markah": 2,
+          "soalan": "توليس دوا ڤرکارا يڠ ڤرلو دهيندري کتيک بلاجر.",
+          "rumi": "Tulis dua perkara yang perlu dihindari ketika belajar.",
+          "jenis": "senarai",
+          "bilanganJawapan": 2,
+          "jawapanContoh": [
+            "تيدور",
+            "برماءين"
+          ]
+        },
+        {
+          "id": "adab-2025-d1-p2",
+          "markah": 3,
+          "soalan": "ڤاتاکن تيک ادب کتيک بلاجر.",
+          "rumi": "Nyatakan tiga adab ketika belajar.",
+          "jenis": "senarai",
+          "bilanganJawapan": 3,
+          "jawapanContoh": [
+            "نية يڠ اخلاص اونتوق بلاجر",
+            "مبچ دعاء سبلوم بلاجر",
+            "دودوق دڠن سوڤن"
+          ]
+        },
+        {
+          "id": "adab-2025-d1-p3",
+          "markah": 2,
+          "soalan": "جلسکن فاءيده برادب کتيک بلاجر.",
+          "rumi": "Jelaskan faedah beradab ketika belajar.",
+          "jenis": "huraian",
+          "bilanganJawapan": 1,
+          "jawapanContoh": [
+            "دافت ممبنتوق ڤريبادي دان اخلاق يڠ موليا"
+          ]
+        },
+        {
+          "id": "adab-2025-d2-p1",
+          "markah": 2,
+          "soalan": "توليس دوا ادب کتيک براعتکاف ددالم مسجد.",
+          "rumi": "Tulis dua adab ketika beriktikaf di dalam masjid.",
+          "jenis": "senarai",
+          "bilanganJawapan": 2,
+          "jawapanContoh": [
+            "منجاک کبرسيهن",
+            "ممقرباڤق ذکير کڤد الله ﷻ"
+          ]
+        },
+        {
+          "id": "adab-2025-d2-p2",
+          "markah": 2,
+          "soalan": "اڤاکه کليبهن مڠعملكن ادب کتيک براعتکاف ددالم مسجد؟",
+          "rumi": "Apakah kelebihan mengamalkan adab ketika beriktikaf di dalam masjid?",
+          "jenis": "senarai",
+          "bilanganJawapan": 2,
+          "jawapanContoh": [
+            "مندافت کتنڠ هاتي",
+            "ترڤليهارا درقد معصية"
+          ]
+        },
+        {
+          "id": "adab-2025-d2-p3",
+          "markah": 2,
+          "soalan": "هورايكن عاقبت تيدق مڠعملكن ادب کتيک براعتکاف ددالم مسجد.",
+          "rumi": "Huraikan akibat tidak mengamalkan adab ketika beriktikaf di dalam masjid.",
+          "jenis": "huraian",
+          "bilanganJawapan": 1,
+          "jawapanContoh": [
+            "مببريکن ايميج بوروق کڤد ديري سنديري"
+          ]
+        },
+        {
+          "id": "adab-2025-d3",
+          "markah": 3,
+          "item": [
+            {
+              "teks": "منزيارهي کماتين مروفاکن ____ يڠ دتونتوث ددالم إسلام.",
+              "rumi": "Menziarahi kematian merupakan ____ yang dituntut dalam Islam."
+            },
+            {
+              "teks": "اياث دافت ____ راس زُهْد دان مڠيڠكلكن ____ دنيا.",
+              "rumi": "Ia dapat ____ rasa zuhud dan meninggalkan ____ dunia."
+            }
+          ],
+          "soalan": "ايسي تمڤت کوسوڠ دڠن جواڤن يڠ سسواي. (٣ مركه)",
+          "rumi": "Isi tempat kosong dengan jawapan yang sesuai. (3 markah)",
+          "jenis": "tempat_kosong",
+          "bank": [
+            "عملن",
+            "منيمبولکن",
+            "کسرونوقن"
+          ]
+        },
+        {
+          "id": "adab-2025-d4-p1",
+          "markah": 1,
+          "soalan": "اڤاکه ادب يڠ سسواي برداسرکن ڤتيقن دأتس؟",
+          "rumi": "Apakah adab yang sesuai berdasarkan petikan di atas?",
+          "jenis": "tulis",
+          "bilanganJawapan": 1,
+          "jawapanContoh": [
+            "ادب کتيک برگوتوڠ-رويوڠ"
+          ]
+        },
+        {
+          "id": "adab-2025-d4-p2",
+          "markah": 1,
+          "soalan": "دماناکه صبري دان راکن-راکن ممبتو چيقکو شاکير؟",
+          "rumi": "Di manakah Sabri dan rakan-rakan membantu Cikgu Shakir?",
+          "jenis": "tulis",
+          "bilanganJawapan": 1,
+          "jawapanContoh": [
+            "دسکوله"
+          ]
+        },
+        {
+          "id": "adab-2025-d4-p3",
+          "markah": 2,
+          "soalan": "ڤاتاکن دوا صيفت صبري دان راکن-راکن يڠ بوليه دچونتوهي.",
+          "rumi": "Nyatakan dua sifat Sabri dan rakan-rakan yang boleh dicontohi.",
+          "jenis": "senarai",
+          "bilanganJawapan": 2,
+          "jawapanContoh": [
+            "سماڠت بکرجاسام",
+            "سوک ممبتو"
+          ]
+        }
+      ]
+    }
+  ]
+}
