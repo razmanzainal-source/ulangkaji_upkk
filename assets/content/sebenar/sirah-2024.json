@@ -1,0 +1,889 @@
+{
+  "id": "sirah-2024",
+  "subjek": "sirah",
+  "tajuk": "Sirah UPKK 2024",
+  "sumber": "Kertas soalan UPKK 2024 — imbasan rasmi",
+  "jenisSumber": "sebenar",
+  "masa": 75,
+  "nota": "Jawapan diambil daripada skema rasmi (muka13). Bahagian A 10, B 10, C 30, D 20.",
+  "bahagian": [
+    {
+      "nama": "A",
+      "markah": 10,
+      "arahan": "جواب سموا سوءالن.",
+      "arahanRumi": "Jawab semua soalan.",
+      "soalan": [
+        {
+          "id": "sirah-2024-a1",
+          "markah": 4,
+          "jenis": "suai",
+          "soalan": "توليس نومبور باكي جواڤن يغ بتول. (٤ مركه)",
+          "rumi": "Tulis nombor bagi jawapan yang betul. (4 markah)",
+          "pasangan": [
+            {
+              "kiri": "عبد الله",
+              "kanan": "نام باڤ نبي محمد ﷺ",
+              "kiriRumi": "Abdullah",
+              "kananRumi": "Nama bapa Nabi Muhammad"
+            },
+            {
+              "kiri": "امنة",
+              "kanan": "نام ايبو نبي محمد ﷺ",
+              "kiriRumi": "Aminah",
+              "kananRumi": "Nama ibu Nabi Muhammad"
+            },
+            {
+              "kiri": "عبد المطلب",
+              "kanan": "نام داتوق نبي محمد ﷺ",
+              "kiriRumi": "Abdul Muttalib",
+              "kananRumi": "Nama datuk Nabi Muhammad"
+            },
+            {
+              "kiri": "فاطمة",
+              "kanan": "نام نينيق نبي محمد ﷺ",
+              "kiriRumi": "Fatimah",
+              "kananRumi": "Nama nenek Nabi Muhammad"
+            }
+          ]
+        },
+        {
+          "id": "sirah-2024-a2",
+          "markah": 3,
+          "jenis": "bulat",
+          "soalan": "بولتكن ڤد جواڤن يغ بتول. (٣ مركه)",
+          "rumi": "Bulatkan pada jawapan yang betul. (3 markah)",
+          "item": [
+            {
+              "teks": "نبي محمد ﷺ دلاهيركن ڤد هاري ____.",
+              "rumi": "Nabi Muhammad ﷺ dilahirkan pada hari ____.",
+              "jawapan": 0,
+              "pilihan": [
+                {
+                  "teks": "اثنين",
+                  "rumi": "Isnin"
+                },
+                {
+                  "teks": "جمعة",
+                  "rumi": "Jumaat"
+                }
+              ]
+            },
+            {
+              "teks": "نبي محمد ﷺ دلاهيركن ڤد تاهون ____.",
+              "rumi": "Nabi Muhammad ﷺ dilahirkan pada tahun ____.",
+              "jawapan": 1,
+              "pilihan": [
+                {
+                  "teks": "اونتا",
+                  "rumi": "Unta"
+                },
+                {
+                  "teks": "كاجه",
+                  "rumi": "Gajah"
+                }
+              ]
+            },
+            {
+              "teks": "نبي محمد ﷺ دلاهيركن دكوتا ____.",
+              "rumi": "Nabi Muhammad ﷺ dilahirkan di kota ____.",
+              "jawapan": 0,
+              "pilihan": [
+                {
+                  "teks": "مكة",
+                  "rumi": "Makkah"
+                },
+                {
+                  "teks": "مدينة",
+                  "rumi": "Madinah"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "sirah-2024-a3",
+          "markah": 3,
+          "jenis": "bulat",
+          "soalan": "تنداكن ✓ ڤد جواڤن يغ بتول. (٣ مركه)",
+          "rumi": "Tandakan ✓ pada jawapan yang betul. (3 markah)",
+          "item": [
+            {
+              "teks": "كلرن يڠ دبريکن كڤد نبي محمد ﷺ اياله ____.",
+              "rumi": "Gelaran yang diberikan kepada Nabi Muhammad ﷺ ialah ____.",
+              "jawapan": 0,
+              "pilihan": [
+                {
+                  "teks": "الأمين",
+                  "rumi": "Al-Amin"
+                },
+                {
+                  "teks": "الصديق",
+                  "rumi": "As-Siddiq"
+                }
+              ]
+            },
+            {
+              "teks": "كتيك نبي محمد ﷺ برعمور ____، ايبو بݢيندا تله وفاة.",
+              "rumi": "Ketika Nabi Muhammad ﷺ berumur ____, ibu baginda telah wafat.",
+              "jawapan": 1,
+              "pilihan": [
+                {
+                  "teks": "تيك تاهون",
+                  "rumi": "Tiga tahun"
+                },
+                {
+                  "teks": "انم تاهون",
+                  "rumi": "Enam tahun"
+                }
+              ]
+            },
+            {
+              "teks": "نبي محمد ﷺ دلاهيركن ڤد بولن ____.",
+              "rumi": "Nabi Muhammad ﷺ dilahirkan pada bulan ____.",
+              "jawapan": 0,
+              "pilihan": [
+                {
+                  "teks": "ربيع الأول",
+                  "rumi": "Rabiulawal"
+                },
+                {
+                  "teks": "شوال",
+                  "rumi": "Syawal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nama": "B",
+      "markah": 10,
+      "arahan": "Soalan 1 hingga 10. Bulatkan jawapan yang betul.",
+      "arahanRumi": "Soalan 1 hingga 10. Bulatkan jawapan yang betul.",
+      "soalan": [
+        {
+          "id": "sirah-2024-b1",
+          "markah": 1,
+          "jenis": "objektif",
+          "soalan": "كوا حراء ترلتق دجبل ____.",
+          "rumi": "Gua Hira terletak di Jabal ____.",
+          "item": [
+            {
+              "teks": "",
+              "rumi": "",
+              "jawapan": 0,
+              "pilihan": [
+                {
+                  "teks": "نور",
+                  "rumi": "Nur"
+                },
+                {
+                  "teks": "احد",
+                  "rumi": "Uhud"
+                },
+                {
+                  "teks": "ثور",
+                  "rumi": "Thur"
+                },
+                {
+                  "teks": "رحمة",
+                  "rumi": "Rahmah"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "sirah-2024-b2",
+          "markah": 1,
+          "jenis": "objektif",
+          "soalan": "عمور سيدتنا خديجة كتيك بركهوين دڠن نبي محمد ﷺ اياله ____.",
+          "rumi": "Umur Saidatina Khadijah ketika berkahwin dengan Nabi Muhammad ﷺ ialah ____.",
+          "item": [
+            {
+              "teks": "",
+              "rumi": "",
+              "jawapan": 2,
+              "pilihan": [
+                {
+                  "teks": "٢٥ تاهون",
+                  "rumi": "25 tahun"
+                },
+                {
+                  "teks": "٣٨ تاهون",
+                  "rumi": "38 tahun"
+                },
+                {
+                  "teks": "٤٠ تاهون",
+                  "rumi": "40 tahun"
+                },
+                {
+                  "teks": "٦٣ تاهون",
+                  "rumi": "63 tahun"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "sirah-2024-b3",
+          "markah": 1,
+          "jenis": "objektif",
+          "soalan": "اڤاکه نام سورة قرآن ڤرتام يغ دتورونكن كڤد نبي محمد ﷺ؟",
+          "rumi": "Apakah nama surah Al-Quran pertama yang diturunkan kepada Nabi Muhammad ﷺ?",
+          "item": [
+            {
+              "teks": "",
+              "rumi": "",
+              "jawapan": 2,
+              "pilihan": [
+                {
+                  "teks": "الفاتحة",
+                  "rumi": "Al-Fatihah"
+                },
+                {
+                  "teks": "البقرة",
+                  "rumi": "Al-Baqarah"
+                },
+                {
+                  "teks": "العلق",
+                  "rumi": "Al-Alaq"
+                },
+                {
+                  "teks": "الناس",
+                  "rumi": "An-Nas"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "sirah-2024-b4",
+          "markah": 1,
+          "jenis": "objektif",
+          "soalan": "وانيتا ڤرتام يغ مملوق إسلام اياله ____.",
+          "rumi": "Wanita pertama yang memeluk Islam ialah ____.",
+          "item": [
+            {
+              "teks": "",
+              "rumi": "",
+              "jawapan": 3,
+              "pilihan": [
+                {
+                  "teks": "ميمونة بنت الحارث",
+                  "rumi": "Maimunah binti al-Harith"
+                },
+                {
+                  "teks": "عائشة بنت ابو بكر",
+                  "rumi": "Aisyah binti Abu Bakar"
+                },
+                {
+                  "teks": "حفصة بنت عمر",
+                  "rumi": "Hafsah binti Umar"
+                },
+                {
+                  "teks": "خديجة بنت خويلد",
+                  "rumi": "Khadijah binti Khuwailid"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "sirah-2024-b5",
+          "markah": 1,
+          "jenis": "objektif",
+          "soalan": "رومبوغن هجره كالي ڤرتام كدكتواءي اوليه ____.",
+          "rumi": "Rombongan hijrah kali pertama diketuai oleh ____.",
+          "item": [
+            {
+              "teks": "",
+              "rumi": "",
+              "jawapan": 2,
+              "pilihan": [
+                {
+                  "teks": "عثمان بن عفان",
+                  "rumi": "Uthman bin Affan"
+                },
+                {
+                  "teks": "طائف",
+                  "rumi": "Taif"
+                },
+                {
+                  "teks": "حبشة",
+                  "rumi": "Habsyah"
+                },
+                {
+                  "teks": "مدينة",
+                  "rumi": "Madinah"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "sirah-2024-b6",
+          "markah": 1,
+          "jenis": "objektif",
+          "soalan": "بيلاكه برلاكو ڤريستيوا اسراء دان معراج؟",
+          "rumi": "Bilakah berlaku peristiwa Israk dan Mikraj?",
+          "item": [
+            {
+              "teks": "",
+              "rumi": "",
+              "jawapan": 1,
+              "pilihan": [
+                {
+                  "teks": "١٢ ربيع الأول",
+                  "rumi": "12 Rabiulawal"
+                },
+                {
+                  "teks": "٢٧ رجب",
+                  "rumi": "27 Rejab"
+                },
+                {
+                  "teks": "١٧ رمضان",
+                  "rumi": "17 Ramadan"
+                },
+                {
+                  "teks": "١٥ شوال",
+                  "rumi": "15 Syawal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "sirah-2024-b7",
+          "markah": 1,
+          "jenis": "objektif",
+          "soalan": "دالم ڤرجنجين حديبية، سنجات اكن دلقساناكن سلام سڤولوه تاهون. ڤركاتاءن بركاريس بركاءيتن دڠن ____.",
+          "rumi": "Dalam Perjanjian Hudaibiyah, senjata akan dilaksanakan salam sepuluh tahun. Perkataan bergaris berkaitan dengan ____.",
+          "item": [
+            {
+              "teks": "",
+              "rumi": "",
+              "jawapan": 1,
+              "pilihan": [
+                {
+                  "teks": "كنجتن",
+                  "rumi": "Kemenangan"
+                },
+                {
+                  "teks": "ڤڤومڤولن",
+                  "rumi": "Pengumpulan"
+                },
+                {
+                  "teks": "جوال بلي",
+                  "rumi": "Jual beli"
+                },
+                {
+                  "teks": "ڤموسنهن",
+                  "rumi": "Pemusnahan"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "sirah-2024-b8",
+          "markah": 1,
+          "jenis": "objektif",
+          "soalan": "رسول الله ﷺ وفاة قد هاري اثنين كتيک وقتو ____.",
+          "rumi": "Rasulullah ﷺ wafat pada hari Isnin ketika waktu ____.",
+          "item": [
+            {
+              "teks": "",
+              "rumi": "",
+              "jawapan": 1,
+              "pilihan": [
+                {
+                  "teks": "صبح",
+                  "rumi": "Subuh"
+                },
+                {
+                  "teks": "ضحى",
+                  "rumi": "Dhuha"
+                },
+                {
+                  "teks": "ظهر",
+                  "rumi": "Zohor"
+                },
+                {
+                  "teks": "عصر",
+                  "rumi": "Asar"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "sirah-2024-b9",
+          "markah": 1,
+          "jenis": "objektif",
+          "soalan": "تيندقن ڤرتام رسول الله ﷺ ستله ڤمبوكاءن كوتا مكة اياله ____.",
+          "rumi": "Tindakan pertama Rasulullah ﷺ selepas pembukaan kota Makkah ialah ____.",
+          "item": [
+            {
+              "teks": "",
+              "rumi": "",
+              "jawapan": 1,
+              "pilihan": [
+                {
+                  "teks": "ملاكوكن طواف",
+                  "rumi": "Melakukan tawaf"
+                },
+                {
+                  "teks": "مموسنهكن برهالا",
+                  "rumi": "Memusnahkan berhala"
+                },
+                {
+                  "teks": "ملاكوكن صلاة سنة",
+                  "rumi": "Melakukan solat sunat"
+                },
+                {
+                  "teks": "ميمڤايكن خطبة",
+                  "rumi": "Menyampaikan khutbah"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "sirah-2024-b10",
+          "markah": 1,
+          "jenis": "objektif",
+          "soalan": "انتارا ڤنجاݢن Rasulullah ﷺ دالم ڤرجنجين حديبية اياله ____.",
+          "rumi": "Antara penjagaan Rasulullah ﷺ dalam Perjanjian Hudaibiyah ialah ____.",
+          "item": [
+            {
+              "teks": "",
+              "rumi": "",
+              "jawapan": 1,
+              "pilihan": [
+                {
+                  "teks": "مڠوتامكن ڤرتيکاين",
+                  "rumi": "Mengutamakan pertikaian"
+                },
+                {
+                  "teks": "منجاک ڤرجنجين",
+                  "rumi": "Menjaga perjanjian"
+                },
+                {
+                  "teks": "مڠابايكن ڤرموڤقاءتن",
+                  "rumi": "Mengabaikan permufakatan"
+                },
+                {
+                  "teks": "ممبري ڤونيشمن",
+                  "rumi": "Memberi hukuman"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nama": "C",
+      "markah": 30,
+      "arahan": "جواب سوءالن برايکوت.",
+      "arahanRumi": "Jawab soalan berikut.",
+      "soalan": [
+        {
+          "id": "sirah-2024-c1",
+          "markah": 5,
+          "jenis": "tempat_kosong",
+          "soalan": "ايسي تمڤت کوسوڠ برداسركن جواڤن يغ دبري. (٥ مركه)",
+          "rumi": "Isi tempat kosong berdasarkan jawapan yang diberi. (5 markah)",
+          "item": [
+            {
+              "teks": "____ اياله ڤرڠ يغ تربايك اخلاق.",
+              "rumi": "____ ialah orang yang terbaik akhlaknya."
+            },
+            {
+              "teks": "اورغ إسلام ڤرلو منجونتوهي ____ نبي محمد ﷺ.",
+              "rumi": "Orang Islam perlu mencontohi ____ Nabi Muhammad ﷺ."
+            },
+            {
+              "teks": "____ دتوكسكن اونتوق مپمڤايكن وحي كڤد نبي.",
+              "rumi": "____ ditugaskan untuk menyampaikan wahyu kepada nabi."
+            },
+            {
+              "teks": "____ ميمبوت باءيق كداتڠن نبي محمد ﷺ دالم ڤريستيوا هجره.",
+              "rumi": "____ menyambut baik kedatangan Nabi Muhammad ﷺ dalam peristiwa hijrah."
+            },
+            {
+              "teks": "____ برلاکو قد تاهون هجرة.",
+              "rumi": "____ berlaku pada tahun hijrah."
+            }
+          ],
+          "bank": [
+            "اخلاق",
+            "كليم",
+            "جبريل",
+            "انصار",
+            "خندق"
+          ],
+          "bankRumi": [
+            "Akhlak",
+            "Kalimah",
+            "Jibril",
+            "Ansar",
+            "Khandaq"
+          ]
+        },
+        {
+          "id": "sirah-2024-c2",
+          "markah": 5,
+          "jenis": "suai",
+          "soalan": "توليس ابجد باكي جواڤن يغ بتول. (٥ مركه)",
+          "rumi": "Tulis abjad bagi jawapan yang betul. (5 markah)",
+          "pasangan": [
+            {
+              "kiri": "نبي محمد ﷺ تركنل دڠن كلرن ____.",
+              "kanan": "الأمين",
+              "kiriRumi": "Nabi Muhammad ﷺ terkenal dengan gelaran ____.",
+              "kananRumi": "Al-Amin"
+            },
+            {
+              "kiri": "ڤرڠ تله برلاكو قد بولن شوال.",
+              "kanan": "خندق",
+              "kiriRumi": "Perang telah berlaku pada bulan Syawal.",
+              "kananRumi": "Khandaq"
+            },
+            {
+              "kiri": "رسول الله ﷺ سنتياس ____ كتيك ميمڤايكن دعوه.",
+              "kanan": "برصبر",
+              "kiriRumi": "Rasulullah ﷺ sentiasa ____ ketika menyampaikan dakwah.",
+              "kananRumi": "Bersabar"
+            },
+            {
+              "kiri": "رسول الله ﷺ سأورغ يغ ____ دڠن جنجي دان تيدق ...",
+              "kanan": "عاديل",
+              "kiriRumi": "Rasulullah ﷺ seorang yang ____ dengan janji dan tidak ...",
+              "kananRumi": "Adil"
+            },
+            {
+              "kiri": "اداله ڤرجالنن نبي محمد ﷺ قد وقتو مالم دري مسجد الحرام كمسجد الأقصى.",
+              "kanan": "اسراء",
+              "kiriRumi": "Ialah perjalanan Nabi Muhammad ﷺ pada waktu malam dari Masjidil Haram ke Masjidil Aqsa.",
+              "kananRumi": "Israk"
+            }
+          ]
+        },
+        {
+          "id": "sirah-2024-c3",
+          "markah": 5,
+          "jenis": "bulat",
+          "soalan": "كاريسكن جواڤن يغ بتول. (٥ مركه)",
+          "rumi": "Gariskan jawapan yang betul. (5 markah)",
+          "item": [
+            {
+              "teks": "لاکي ديواس ڤرتام يغ مملوق إسلام اياله ____.",
+              "rumi": "Lelaki dewasa pertama yang memeluk Islam ialah ____.",
+              "jawapan": 1,
+              "pilihan": [
+                {
+                  "teks": "سيدنا علي",
+                  "rumi": "Saidina Ali"
+                },
+                {
+                  "teks": "سيدنا ابو بكر",
+                  "rumi": "Saidina Abu Bakar"
+                }
+              ]
+            },
+            {
+              "teks": "ڤڠهجرهن اومت إسلام كحبشة قد كالي كدوا دكتواءي اوليه ____.",
+              "rumi": "Penghijrahan umat Islam ke Habsyah pada kali kedua diketuai oleh ____.",
+              "jawapan": 1,
+              "pilihan": [
+                {
+                  "teks": "عثمان",
+                  "rumi": "Uthman"
+                },
+                {
+                  "teks": "جعفر",
+                  "rumi": "Jaafar"
+                }
+              ]
+            },
+            {
+              "teks": "بيلڠن اومت إسلام سماكين برتمبه سلڤس برهجره كمدينة ____.",
+              "rumi": "Bilangan umat Islam semakin bertambah selepas berhijrah ke Madinah ____.",
+              "jawapan": 1,
+              "pilihan": [
+                {
+                  "teks": "طائف",
+                  "rumi": "Taif"
+                },
+                {
+                  "teks": "مدينة",
+                  "rumi": "Madinah"
+                }
+              ]
+            },
+            {
+              "teks": "عبادة يغ دفرضوكن كڤد اومت إسلام دالم ڤريستيوا اسراء دان معراج اداله ____.",
+              "rumi": "Ibadah yang difardukan kepada umat Islam dalam peristiwa Israk dan Mikraj ialah ____.",
+              "jawapan": 0,
+              "pilihan": [
+                {
+                  "teks": "صلاة",
+                  "rumi": "Solat"
+                },
+                {
+                  "teks": "ڤواسا",
+                  "rumi": "Puasa"
+                }
+              ]
+            },
+            {
+              "teks": "كتوكوهن رسول الله ﷺ دالم كلوارك اياله ____.",
+              "rumi": "Ketokohan Rasulullah ﷺ dalam keluarga ialah ____.",
+              "jawapan": 1,
+              "pilihan": [
+                {
+                  "teks": "براني",
+                  "rumi": "Berani"
+                },
+                {
+                  "teks": "عاديل",
+                  "rumi": "Adil"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "sirah-2024-c4",
+          "markah": 5,
+          "jenis": "betul_salah",
+          "soalan": "تنداكن ✓ ڤد ڤياتاءن يغ بتول دان ✗ ڤد ڤياتاءن يغ ساله بركاءيتن ڤريستيوا ڤمبوكاءن كوتا مكة. (٥ مركه)",
+          "rumi": "Tandakan ✓ pada pernyataan yang betul dan ✗ pada pernyataan yang salah berkaitan peristiwa pembukaan kota Makkah. (5 markah)",
+          "item": [
+            {
+              "teks": "تنترا إسلام تله مموسنهكن برهالا دسكليليغ كعبة.",
+              "rumi": "Tentera Islam telah memusnahkan berhala di sekeliling Kaabah.",
+              "betul": true
+            },
+            {
+              "teks": "زيد بن حارثة مروڤاكن اورغ ڤرتام يغ ملاڠوغكن اذان دبومبوغ كعبة.",
+              "rumi": "Zaid bin Harithah merupakan orang pertama yang melaungkan azan di bumbung Kaabah.",
+              "betul": false
+            },
+            {
+              "teks": "راماي مشركين مكة مملوق اكام إسلام سماس ڤمبوكاءن كوتا مكة.",
+              "rumi": "Ramai musyrikin Makkah memeluk agama Islam semasa pembukaan kota Makkah.",
+              "betul": true
+            },
+            {
+              "teks": "ستله برجاي مڠواساءي كوتا مكة، رسول الله ﷺ ملاكوكن طواف دان مڠوجوڤ حجر الأسود.",
+              "rumi": "Selepas berjaya menguasai kota Makkah, Rasulullah ﷺ melakukan tawaf dan mencium Hajar Aswad.",
+              "betul": true
+            },
+            {
+              "teks": "مشاركت مكة تيدق داڤت هيدوڤ دڠن امان سلڤس ڤمبوكاءن كوتا مكة.",
+              "rumi": "Masyarakat Makkah tidak dapat hidup dengan aman selepas pembukaan kota Makkah.",
+              "betul": false
+            }
+          ]
+        },
+        {
+          "id": "sirah-2024-c5",
+          "markah": 5,
+          "jenis": "suai",
+          "soalan": "ڤادنكن ڤياتاءن دباوه بركاءيتن ڤريستيوا معراج رسول الله ﷺ. (٥ مركه)",
+          "rumi": "Padankan pernyataan di bawah berkaitan peristiwa Mikraj Rasulullah ﷺ. (5 markah)",
+          "pasangan": [
+            {
+              "kiri": "نبي ادم",
+              "kanan": "لاغيت ڤرتام",
+              "kiriRumi": "Nabi Adam",
+              "kananRumi": "Langit pertama"
+            },
+            {
+              "kiri": "نبي يوسف",
+              "kanan": "لاغيت كتيك",
+              "kiriRumi": "Nabi Yusuf",
+              "kananRumi": "Langit ketiga"
+            },
+            {
+              "kiri": "نبي ادريس",
+              "kanan": "لاغيت كأمقت",
+              "kiriRumi": "Nabi Idris",
+              "kananRumi": "Langit keempat"
+            },
+            {
+              "kiri": "نبي هارون",
+              "kanan": "لاغيت كليم",
+              "kiriRumi": "Nabi Harun",
+              "kananRumi": "Langit kelima"
+            },
+            {
+              "kiri": "نبي موسى",
+              "kanan": "لاغيت كأنم",
+              "kiriRumi": "Nabi Musa",
+              "kananRumi": "Langit keenam"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nama": "D",
+      "markah": 20,
+      "arahan": "جواب سوءالن برايکوت دڠن لڠکڤ.",
+      "arahanRumi": "Jawab soalan berikut dengan lengkap.",
+      "soalan": [
+        {
+          "id": "sirah-2024-d1",
+          "markah": 2,
+          "jenis": "tulis",
+          "soalan": "بيلاکه ڤرڠ بدر برلاکو؟ (٢ مركه)",
+          "rumi": "Bilakah Perang Badar berlaku? (2 markah)",
+          "jawapanContoh": [
+            "قد ١٧ رمضان تاهون كدوا هجرة"
+          ],
+          "jawapanContohRumi": [
+            "Pada 17 Ramadan tahun kedua hijrah"
+          ]
+        },
+        {
+          "id": "sirah-2024-d2",
+          "markah": 2,
+          "jenis": "senarai",
+          "soalan": "مڠاڤاكه نبي محمد ﷺ مڠهالغ ڤرجالنن اڠكتن قبيلة قريش؟ (٢ مركه)",
+          "rumi": "Mengapakah Nabi Muhammad ﷺ menghalang perjalanan angkatan kabilah Quraisy? (2 markah)",
+          "bilanganJawapan": 1,
+          "jawapanContoh": [
+            "اورغ مشركين تله مرمڤس هرتا اورغ إسلام يغ دتيڠكلكن دمكة"
+          ],
+          "jawapanContohRumi": [
+            "Orang musyrikin telah merampas harta orang Islam yang ditinggalkan di Makkah"
+          ]
+        },
+        {
+          "id": "sirah-2024-d3",
+          "markah": 1,
+          "jenis": "tulis",
+          "soalan": "توليس جومله تنترا إسلام يغ ترليبت. (١ مركه)",
+          "rumi": "Tulis jumlah tentera Islam yang terlibat. (1 markah)",
+          "jawapanContoh": [
+            "٣١٣ اورغ"
+          ],
+          "jawapanContohRumi": [
+            "313 orang"
+          ]
+        },
+        {
+          "id": "sirah-2024-d4",
+          "markah": 1,
+          "jenis": "tulis",
+          "soalan": "سياڤاكه ڤميمڤين تنترا قريش؟ (١ مركه)",
+          "rumi": "Siapakah pemimpin tentera Quraisy? (1 markah)",
+          "jawapanContoh": [
+            "ابو جهل"
+          ],
+          "jawapanContohRumi": [
+            "Abu Jahal"
+          ]
+        },
+        {
+          "id": "sirah-2024-d5",
+          "markah": 4,
+          "jenis": "senarai",
+          "soalan": "ڤاتاكن دوا ڤڠاجرن درڤد ڤريستيوا ڤرڠ بدر. (٤ مركه)",
+          "rumi": "Nyatakan dua pengajaran daripada peristiwa Perang Badar. (4 markah)",
+          "bilanganJawapan": 2,
+          "jawapanContoh": [
+            "ڤييبرن اكام إسلام ڤرلو دتروسكن اونتوق ممبينا كقواتن اومت إسلام",
+            "مرانچڠ ستراتيکي سبلوم ڤڤرڠن اداله امت ڤنتيڠ دالم منڠفكن كبنرن"
+          ],
+          "jawapanContohRumi": [
+            "Penyebaran agama Islam perlu diteruskan untuk membina kekuatan umat Islam",
+            "Merancang strategi sebelum peperangan adalah amat penting dalam menegakkan kebenaran"
+          ]
+        },
+        {
+          "id": "sirah-2024-d6",
+          "markah": 3,
+          "jenis": "senarai",
+          "soalan": "توليسكن تيك ڤرانن سيدتنا خديجة دالم كهيدوڤن رسول الله ﷺ. (٣ مركه)",
+          "rumi": "Tuliskan tiga peranan Saidatina Khadijah dalam kehidupan Rasulullah ﷺ. (3 markah)",
+          "bilanganJawapan": 3,
+          "jawapanContoh": [
+            "سنتياس برسام سام نبي محمد ﷺ كتيك بݢيندا سنڠ اتاو سوسه",
+            "مغوربانكن هرتا اونتوق دعوه نبي محمد ﷺ",
+            "سنتياس ممبري دوروڠن كڤد نبي محمد ﷺ"
+          ],
+          "jawapanContohRumi": [
+            "Sentiasa bersama-sama Nabi Muhammad ﷺ ketika baginda senang atau susah",
+            "Mengorbankan harta untuk dakwah Nabi Muhammad ﷺ",
+            "Sentiasa memberi dorongan kepada Nabi Muhammad ﷺ"
+          ]
+        },
+        {
+          "id": "sirah-2024-d7",
+          "markah": 2,
+          "jenis": "tulis",
+          "soalan": "ڤاتاكن ساتو contoh معجزة نبي محمد ﷺ. (٢ مركه)",
+          "rumi": "Nyatakan satu contoh mukjizat Nabi Muhammad ﷺ. (2 markah)",
+          "jawapanContoh": [
+            "القرآن"
+          ],
+          "jawapanContohRumi": [
+            "Al-Quran"
+          ]
+        },
+        {
+          "id": "sirah-2024-d8",
+          "markah": 2,
+          "jenis": "tulis",
+          "soalan": "ڤرجنجين حديبية اياله ڤرجنجين داماي انتارا ____ دڠن ____. (٢ مركه)",
+          "rumi": "Perjanjian Hudaibiyah ialah perjanjian damai antara ____ dengan ____. (2 markah)",
+          "jawapanContoh": [
+            "رسول الله ﷺ",
+            "مشركين مكة"
+          ],
+          "jawapanContohRumi": [
+            "Rasulullah ﷺ",
+            "Musyrikin Makkah"
+          ]
+        },
+        {
+          "id": "sirah-2024-d9",
+          "markah": 1,
+          "jenis": "tulis",
+          "soalan": "ڤاتاكن سبب ستراتيکي رسول الله ﷺ مڠهالغ اوڠكون اڤي دالم ڤريستيوا ڤمبوكاءن كوتا مكة. (١ مركه)",
+          "rumi": "Nyatakan sebab strategi Rasulullah ﷺ menghalang angkatan api dalam peristiwa pembukaan kota Makkah. (1 markah)",
+          "jawapanContoh": [
+            "اونتوق مڠيلقكن ڤرتومڤهن داره"
+          ],
+          "jawapanContohRumi": [
+            "Untuk mengelakkan pertumpahan darah"
+          ]
+        },
+        {
+          "id": "sirah-2024-d10",
+          "markah": 2,
+          "jenis": "senarai",
+          "soalan": "توليسكن تيك صيفت ترڤوجي رسول الله ﷺ. (٢ مركه)",
+          "rumi": "Tuliskan tiga sifat terpuji Rasulullah ﷺ. (2 markah)",
+          "bilanganJawapan": 3,
+          "jawapanContoh": [
+            "عاديل",
+            "براني",
+            "ڤاتوه"
+          ],
+          "jawapanContohRumi": [
+            "Adil",
+            "Berani",
+            "Patuh"
+          ]
+        }
+      ]
+    }
+  ]
+}

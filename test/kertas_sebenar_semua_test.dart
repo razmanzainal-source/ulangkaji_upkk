@@ -81,8 +81,18 @@ void main() {
         expect(k.jenisSumber, 'sebenar', reason: '$nama jenis sumber');
         expect(
           k.bahagian.map((b) => b.nama).toSet(),
-          {'A', 'B', 'C', 'D'},
+          containsAll(['A', 'B', 'C', 'D']),
           reason: '$nama bahagian',
+        );
+        // Jawi dan Khat mempunyai bahagian E (menulis semula ayat dalam Jawi);
+        // subjek lain hanya A–D.
+        expect(
+          k.bahagian
+              .map((b) => b.nama)
+              .toSet()
+              .difference({'A', 'B', 'C', 'D', 'E'}),
+          isEmpty,
+          reason: '$nama mempunyai bahagian di luar A–E',
         );
         expect(
           k.bahagian.fold<int>(0, (j, b) => j + b.markah),

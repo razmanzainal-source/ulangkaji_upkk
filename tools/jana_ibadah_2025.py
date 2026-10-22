@@ -1,0 +1,394 @@
+#!/usr/bin/env python3
+"""Jana JSON kertas sebenar ibadah-2025 daripada transkrip imbasan + skema."""
+import json, sys
+
+def b(t, r, **kw):
+    d = {'teks': t, 'rumi': r}
+    d.update(kw)
+    return d
+
+def p(t, r):
+    return {'teks': t, 'rumi': r}
+
+kertas = {
+    'id': 'ibadah-2025',
+    'subjek': 'ibadah',
+    'tajuk': 'Ibadah UPKK 2025',
+    'sumber': 'Kertas soalan UPKK 2025 — imbasan rasmi',
+    'jenisSumber': 'sebenar',
+    'masa': 75,
+    'nota': 'Jawapan diambil terus daripada skema rasmi (muka13 & muka14). '
+            'Bahagian A 10, B 10, C 30, D 20.',
+    'bahagian': [
+        # ---------------- A ----------------
+        {
+            'nama': 'A', 'markah': 10,
+            'arahan': 'جواب سموا سوءالن.',
+            'arahanRumi': 'Jawab semua soalan.',
+            'soalan': [
+                {
+                    'id': 'ibadah-2025-a1', 'markah': 3, 'jenis': 'bulat',
+                    'soalan': 'تنداكن ڤد جواڤن يغ بتول. (٣ مركه)',
+                    'rumi': 'Tandakan pada jawapan yang betul. (3 markah)',
+                    'item': [
+                        b('كلوار داره حيض', 'Keluar darah haid', jawapan=1,
+                          pilihan=[p('حدث كجيل', 'Hadas kecil'),
+                                   p('حدث بسر', 'Hadas besar')]),
+                        b('كلوار اءير كنجيغ', 'Keluar air kencing', jawapan=0,
+                          pilihan=[p('حدث كجيل', 'Hadas kecil'),
+                                   p('حدث بسر', 'Hadas besar')]),
+                        b('كلوار اءير مني', 'Keluar air mani', jawapan=1,
+                          pilihan=[p('حدث كجيل', 'Hadas kecil'),
+                                   p('حدث بسر', 'Hadas besar')]),
+                    ],
+                },
+                {
+                    'id': 'ibadah-2025-a2', 'markah': 3, 'jenis': 'kumpulan',
+                    'soalan': 'سوايكن قد جواڤن يغ بتول. (٣ مركه)',
+                    'rumi': 'Suaikan dengan jawapan yang betul. (3 markah)',
+                    'kategori': ['ركن صلاة', 'قركارا سنة دالم صلاة'],
+                    'kategoriRumi': ['Rukun solat', 'Perkara sunat dalam solat'],
+                    'item': [
+                        b('نية', 'Niat', jawapan=0),
+                        b('تكبيرة الإحرام', 'Takbiratul ihram', jawapan=0),
+                        b('ممباج دعاء افتتاح', 'Membaca doa iftitah', jawapan=1),
+                    ],
+                },
+                {
+                    'id': 'ibadah-2025-a3', 'markah': 4, 'jenis': 'susun',
+                    'soalan': 'نومبوركن ركن وضوء دباوه مغيكوت توروتن يغ بتول. (٤ مركه)',
+                    'rumi': 'Nomborkan rukun wuduk di bawah mengikut turutan yang betul. (4 markah)',
+                    'item': [
+                        b('ممباسوه مuka', 'Membasuh muka'),
+                        b('ممباسوه كدوا تاڠن', 'Membasuh kedua tangan'),
+                        b('مڠوسڤ كڤالا', 'Mengusap kepala'),
+                        b('ممباسوه كدوا كاكي', 'Membasuh kedua kaki'),
+                    ],
+                    'urutan': ['ممباسوه مuka', 'ممباسوه كدوا تاڠن',
+                               'مڠوسڤ كڤالا', 'ممباسوه كدوا كاكي'],
+                    'urutanRumi': ['Membasuh muka', 'Membasuh kedua tangan',
+                                   'Mengusap kepala', 'Membasuh kedua kaki'],
+                },
+            ],
+        },
+        # ---------------- B ----------------
+        {
+            'nama': 'B', 'markah': 10,
+            'arahan': 'Soalan 1 hingga 10. Bulatkan jawapan yang betul.',
+            'arahanRumi': 'Soalan 1 hingga 10. Bulatkan jawapan yang betul.',
+            'soalan': [
+                {
+                    'id': 'ibadah-2025-b1', 'markah': 1, 'jenis': 'objektif',
+                    'soalan': 'صلاة اياله ڤركاتاءن دان ڤربواتن ترتنتو برمولا دغن تكبيرة الإحرام دان دسودهي دغن ____.',
+                    'rumi': 'Solat ialah perkataan dan perbuatan tertentu, dimulai dengan takbiratul ihram dan disudahi dengan ____.',
+                    'item': [b('', '', jawapan=2, pilihan=[
+                        p('تحية اخير', 'Tahiyat akhir'),
+                        p('ترتيب', 'Tertib'),
+                        p('سلام', 'Salam'),
+                        p('صلوات', 'Selawat'),
+                    ])],
+                },
+                {
+                    'id': 'ibadah-2025-b2', 'markah': 1, 'jenis': 'objektif',
+                    'soalan': 'اڤاكه صلاة يغ بوليه دجمعكن دغن صلاة ظهر؟',
+                    'rumi': 'Apakah solat yang boleh dijamakkan dengan solat Zohor?',
+                    'item': [b('', '', jawapan=1, pilihan=[
+                        p('صبح', 'Subuh'), p('عصر', 'Asar'),
+                        p('مغرب', 'Maghrib'), p('عشاء', 'Isyak'),
+                    ])],
+                },
+                {
+                    'id': 'ibadah-2025-b3', 'markah': 1, 'jenis': 'objektif',
+                    'soalan': 'انتارا شرط واجب صلاة اياله ____.',
+                    'rumi': 'Antara syarat wajib solat ialah ____.',
+                    'item': [b('', '', jawapan=3, pilihan=[
+                        p('ماسوق وقتو', 'Masuk waktu'),
+                        p('مغهادق قبلة', 'Menghadap kiblat'),
+                        p('منوتوڤ عورة', 'Menutup aurat'),
+                        p('سوجي درقد حدث', 'Suci daripada hadas'),
+                    ])],
+                },
+                {
+                    'id': 'ibadah-2025-b4', 'markah': 1, 'jenis': 'objektif',
+                    'soalan': 'ڤرکارا يغ دلارغ کتيک برحدث بسر اياله ____.',
+                    'rumi': 'Perkara yang dilarang ketika berhadas besar ialah ____.',
+                    'item': [b('', '', jawapan=1, pilihan=[
+                        p('صلاة', 'Solat'), p('ڤواسا', 'Puasa'),
+                        p('زكاة', 'Zakat'), p('اعتكاف', 'Iktikaf'),
+                    ])],
+                },
+                {
+                    'id': 'ibadah-2025-b5', 'markah': 1, 'jenis': 'objektif',
+                    'soalan': 'مراتاكن اعير مطلق كسلوروه بادن دغن نية يغ ترتنتو. ڤياتاءن دأتس بركاءنتن دغن ____.',
+                    'rumi': 'Meratakan air mutlak ke seluruh badan dengan niat yang tertentu. Pernyataan di atas berkaitan dengan ____.',
+                    'item': [b('', '', jawapan=3, pilihan=[
+                        p('تيمم', 'Tayamum'), p('وضوء', 'Wuduk'),
+                        p('استنجاء', 'Istinjak'), p('مندي واجب', 'Mandi wajib'),
+                    ])],
+                },
+                {
+                    'id': 'ibadah-2025-b6', 'markah': 1, 'jenis': 'objektif',
+                    'soalan': 'ڤركارا يغ ممرلوكن سسأورغ ايت بروضوء. ڤغرتين دأتس بركاءنتن دغن ____.',
+                    'rumi': 'Perkara yang memerlukan seseorang berwuduk. Pengertian di atas berkaitan dengan ____.',
+                    'item': [b('', '', jawapan=2, pilihan=[
+                        p('صلاة فرض', 'Solat fardu'), p('صلاة سنة', 'Solat sunat'),
+                        p('حدث كجيل', 'Hadas kecil'), p('حدث بسر', 'Hadas besar'),
+                    ])],
+                },
+                {
+                    'id': 'ibadah-2025-b7', 'markah': 1, 'jenis': 'objektif',
+                    'soalan': 'برايكوت اداله حكمه منوتوڤ عورة، كجوالي ____.',
+                    'rumi': 'Berikut ialah hikmah menutup aurat, kecuali ____.',
+                    'item': [b('', '', jawapan=1, pilihan=[
+                        p('منداقت كنجرن ڤهالا', 'Mendapat ganjaran pahala'),
+                        p('موده ملاكوكن معصية', 'Mudah melakukan maksiat'),
+                        p('داقت منجكه نفسو شهوة', 'Dapat menjauhi nafsu syahwat'),
+                        p('دجاءوهكن درقد فتنه دان كوداءن شيطان',
+                          'Dijauhkan daripada fitnah dan godaan syaitan'),
+                    ])],
+                },
+                {
+                    'id': 'ibadah-2025-b8', 'markah': 1, 'jenis': 'objektif',
+                    'soalan': 'ڤركاتاءن دأتس بركاءنتن دغن ____.',
+                    'rumi': 'Pernyataan di atas berkaitan dengan ____.',
+                    'item': [b('', '', jawapan=1, pilihan=[
+                        p('ركن صلاة', 'Rukun solat'),
+                        p('سنة هيئات', 'Sunat hai\'at'),
+                        p('قركارا سنة دالم صلاة', 'Perkara sunat dalam solat'),
+                        p('قركارا يغ ممبطلكن صلاة', 'Perkara yang membatalkan solat'),
+                    ])],
+                },
+                {
+                    'id': 'ibadah-2025-b9', 'markah': 1, 'jenis': 'objektif',
+                    'soalan': 'ماناكه تندا ٢ بالغ؟',
+                    'rumi': 'Manakah tanda-tanda baligh?',
+                    'item': [b('', '', jawapan=0, pilihan=[
+                        p('i دان ii', 'i dan ii'),
+                        p('ii دان iii', 'ii dan iii'),
+                        p('iii دان iv', 'iii dan iv'),
+                        p('iv دان i', 'iv dan i'),
+                    ])],
+                },
+                {
+                    'id': 'ibadah-2025-b10', 'markah': 1, 'jenis': 'objektif',
+                    'soalan': 'انتارا تندا بالغ باضي ڤرمڤوان اياله ____.',
+                    'rumi': 'Antara tanda baligh bagi perempuan ialah ____.',
+                    'item': [b('', '', jawapan=3, pilihan=[
+                        p('كلوار اءير مني', 'Keluar air mani'),
+                        p('تومبوه بولو', 'Tumbuh bulu'),
+                        p('سوارا بروبه', 'Suara berubah'),
+                        p('كلوار داره حيض', 'Keluar darah haid'),
+                    ])],
+                },
+            ],
+        },
+        # ---------------- C ----------------
+        {
+            'nama': 'C', 'markah': 30,
+            'arahan': 'جواب سوءالن برايکوت.',
+            'arahanRumi': 'Jawab soalan berikut.',
+            'soalan': [
+                {
+                    'id': 'ibadah-2025-c1', 'markah': 5, 'jenis': 'kumpulan',
+                    'soalan': 'سوايكن ڤياتاءن (ا) دان ڤياتاءن (ب). (٥ مركه)',
+                    'rumi': 'Suaikan pernyataan (A) dan pernyataan (B). (5 markah)',
+                    'kategori': ['جارا مندي واجب', 'حكمه مندي واجب'],
+                    'kategoriRumi': ['Cara mandi wajib', 'Hikmah mandi wajib'],
+                    'item': [
+                        b('نية', 'Niat', jawapan=0),
+                        b('بروضوء دغن سمڤورنا', 'Berwuduk dengan sempurna', jawapan=0),
+                        b('مڠوجي تاڠن سبلوم مندي', 'Membasuh tangan sebelum mandi', jawapan=0),
+                        b('منجادي چرݢس دان اكتيف', 'Menjadi cergas dan aktif', jawapan=1),
+                        b('منداڤت ڤهالا', 'Mendapat pahala', jawapan=1),
+                    ],
+                },
+                {
+                    'id': 'ibadah-2025-c2', 'markah': 5, 'jenis': 'betul_salah',
+                    'soalan': 'تنداكن ✓ ڤد ڤياتاءن يغ بتول دان ✗ ڤد ڤياتاءن يغ ساله. (٥ مركه)',
+                    'rumi': 'Tandakan ✓ pada pernyataan yang betul dan ✗ pada pernyataan yang salah. (5 markah)',
+                    'item': [
+                        b('صلاة ظهر بوليه دقصركن.', 'Solat Zohor boleh diqasarkan.', betul=False),
+                        b('صلاة جمعة اد امڤت ركعة.', 'Solat Jumaat ada empat rakaat.', betul=False),
+                        b('سنة برقواسا انم هاري ڤد بولن شوال.',
+                          'Sunat berpuasa enam hari pada bulan Syawal.', betul=True),
+                        b('ڤواسا ٩ ذو الحجة مروڤاكن ڤواسا واجب.',
+                          'Puasa 9 Zulhijjah merupakan puasa wajib.', betul=False),
+                        b('عورة للاكي اياله اغكوتا بادن دري ڤوست هيغك لوتوت.',
+                          'Aurat lelaki ialah anggota badan dari pusat hingga lutut.', betul=True),
+                    ],
+                },
+                {
+                    'id': 'ibadah-2025-c3', 'markah': 5, 'jenis': 'suai',
+                    'soalan': 'سوايكن ڤياتاءن (ا) دان ڤياتاءن (ب). (٥ مركه)',
+                    'rumi': 'Suaikan pernyataan (A) dan pernyataan (B). (5 markah)',
+                    'pasangan': [
+                        {'kiri': 'وقتو براخير اڤابيلا ماتاهاري تربنم.',
+                         'kanan': 'صلاة مغرب', 'kiriRumi': 'Waktu berakhir apabila matahari terbenam.',
+                         'kananRumi': 'Solat Maghrib'},
+                        {'kiri': 'دلاكوكن اونتوق مموهون ڤتونجوق ڤركارا يغ دراكوءي.',
+                         'kanan': 'صلاة حاجت', 'kiriRumi': 'Dilakukan untuk memohon pertolongan perkara yang dihajati.',
+                         'kananRumi': 'Solat Hajat'},
+                        {'kiri': 'ماتاهاري مولا تربنم سهيغك هيلغ جهاي ميره.',
+                         'kanan': 'صلاة عصر', 'kiriRumi': 'Matahari mula terbenam sehingga hilang cahaya merah.',
+                         'kananRumi': 'Solat Asar'},
+                        {'kiri': 'دلاكوكن كران مموڤاءي كأيڤينن سسواتو ڤركارا.',
+                         'kanan': 'صلاة استخارة', 'kiriRumi': 'Dilakukan kerana mempunyai keinginan sesuatu perkara.',
+                         'kananRumi': 'Solat Istikharah'},
+                        {'kiri': 'دلاكوكن دالم وقتو ظهر.',
+                         'kanan': 'صلاة جمعة', 'kiriRumi': 'Dilakukan dalam waktu Zohor.',
+                         'kananRumi': 'Solat Jumaat'},
+                    ],
+                },
+                {
+                    'id': 'ibadah-2025-c4', 'markah': 5, 'jenis': 'bulat',
+                    'soalan': 'كاريس ڤد جواڤن يغ بتول. (٥ مركه)',
+                    'rumi': 'Gariskan pada jawapan yang betul. (5 markah)',
+                    'item': [
+                        b('برستوبوه ترماسوق دالم حدث (كجيل / بسر).',
+                          'Bersetubuh termasuk dalam hadas (kecil / besar).', jawapan=1,
+                          pilihan=[p('كجيل', 'Kecil'), p('بسر', 'Besar')]),
+                        b('داره يغ كلوار سلقس ملاهيركن انق اياله داره (حيض / نفاس).',
+                          'Darah yang keluar selepas melahirkan anak ialah darah (haid / nifas).',
+                          jawapan=1, pilihan=[p('حيض', 'Haid'), p('نفاس', 'Nifas')]),
+                        b('حكمه صلاة برجماعه اياله منيمبولكن راس (كبر ساماءن / قربيذاءن) انتارا اورغ إسلام.',
+                          'Hikmah solat berjemaah ialah menimbulkan rasa (kebersamaan / perbezaan) antara orang Islam.',
+                          jawapan=0, pilihan=[p('كبر ساماءن', 'Kebersamaan'), p('قربيذاءن', 'Perbezaan')]),
+                        b('ڤغرتين (عورة / بالغ) ياله سسأورغ يغ تله چوکوڤ عمور تاهف ديواس.',
+                          'Pengertian (aurat / baligh) ialah seseorang yang telah cukup umur tahap dewasa.',
+                          jawapan=1, pilihan=[p('عورة', 'Aurat'), p('بالغ', 'Baligh')]),
+                        b('صلاة فرض واجب دلاكوكن والاوڤون دالم كأداءن (ساكيت / صيحت).',
+                          'Solat fardu wajib dilakukan walaupun dalam keadaan (sakit / sihat).',
+                          jawapan=0, pilihan=[p('ساكيت', 'Sakit'), p('صيحت', 'Sihat')]),
+                    ],
+                },
+                {
+                    'id': 'ibadah-2025-c5', 'markah': 4, 'jenis': 'kumpulan',
+                    'soalan': 'كلسكن ڤركارا بركاءنتن ڤد كاتکوري يغ بتول. (٤ مركه)',
+                    'rumi': 'Kelaskan perkara berkaitan pada kategori yang betul. (4 markah)',
+                    'kategori': ['ركن صلاة', 'قركارا سنة دالم صلاة'],
+                    'kategoriRumi': ['Rukun solat', 'Perkara sunat dalam solat'],
+                    'item': [
+                        b('ممباج سورة الفاتحة', 'Membaca surah Al-Fatihah', jawapan=0),
+                        b('اعتدال سرتا طمأنينة', 'Iktidal serta tomaninah', jawapan=0),
+                        b('ركوع سرتا طمأنينة', 'Rukuk serta tomaninah', jawapan=0),
+                        b('ممباج دعاء افتتاح', 'Membaca doa iftitah', jawapan=1),
+                        b('ممباج دعاء قنوت', 'Membaca doa qunut', jawapan=1),
+                    ],
+                },
+                {
+                    'id': 'ibadah-2025-c6', 'markah': 5, 'jenis': 'tempat_kosong',
+                    'soalan': 'ايسي تمڤت کوسوغ دغن جواڤن يغ بتول. (٥ مركه)',
+                    'rumi': 'Isi tempat kosong dengan jawapan yang betul. (5 markah)',
+                    'item': [
+                        b('ڤواسا ارتيث ____ ديري درقد ماكن', 'Puasa ertinya ____ diri daripada makan'),
+                        b('دان ____ سرتا ملاكوكن ڤركارا٢ يغ', 'dan ____ serta melakukan perkara-perkara yang'),
+                        b('____ برمولا درقد فجر (صبح) هيغك تربنم', '____ bermula dari fajar (subuh) hingga terbenam'),
+                        b('____ برسرتانية.', '____ bercengkerama.'),
+                    ],
+                    'bank': ['مناهن', 'مينوم', 'ممبطلكن', 'تربيت', 'ماتاهاري'],
+                    'bankRumi': ['Menahan', 'Minum', 'Membatalkan', 'Terbit', 'Matahari'],
+                },
+            ],
+        },
+        # ---------------- D ----------------
+        {
+            'nama': 'D', 'markah': 20,
+            'arahan': 'جواب سموا سوءالن.',
+            'arahanRumi': 'Jawab semua soalan.',
+            'soalan': [
+                {
+                    'id': 'ibadah-2025-d1', 'markah': 1, 'jenis': 'tulis',
+                    'soalan': 'احمد برمسافير لبيه دوا مرحلة كران ڤولغ كکامڤوڠ. برداسركن ڤياتاءن دأتس، ناماكن رخصة صلاة يغ بوليه دلاكوكن احمد.',
+                    'rumi': 'Ahmad bermusafir lebih dua marhalah kerana pulang ke kampung. Berdasarkan pernyataan di atas, namakan rukhsah solat yang boleh dilakukan Ahmad. (1 markah)',
+                    'jawapanContoh': ['صلاة جمع'],
+                    'jawapanContohRumi': ['Solat jamak'],
+                },
+                {
+                    'id': 'ibadah-2025-d2', 'markah': 2, 'jenis': 'tulis',
+                    'soalan': 'اڤاكه حكوم صلاة ترسبوت؟ (٢ مركه)',
+                    'rumi': 'Apakah hukum solat tersebut? (2 markah)',
+                    'jawapanContoh': ['هاروس'],
+                    'jawapanContohRumi': ['Harus'],
+                },
+                {
+                    'id': 'ibadah-2025-d3', 'markah': 2, 'jenis': 'senarai',
+                    'soalan': 'جلسكن ساتو حكمه رخصة صلاة ترسبوت. (٢ مركه)',
+                    'rumi': 'Jelaskan satu hikmah rukhsah solat tersebut. (2 markah)',
+                    'bilanganJawapan': 1,
+                    'jawapanContoh': ['منونجوقكن إسلام اڬام يغ موده'],
+                    'jawapanContohRumi': ['Menunjukkan Islam agama yang mudah'],
+                },
+                {
+                    'id': 'ibadah-2025-d4', 'markah': 2, 'jenis': 'tulis',
+                    'soalan': 'ڤركارا يغ ممرلوكن سسأورغ مندي واجب. ڤياتاءن دأتس بركاءنتن دغن ڤغرتين ____.',
+                    'rumi': 'Perkara yang memerlukan seseorang mandi wajib. Pernyataan di atas berkaitan dengan pengertian ____. (2 markah)',
+                    'jawapanContoh': ['مندي واجب'],
+                    'jawapanContohRumi': ['Mandi wajib'],
+                },
+                {
+                    'id': 'ibadah-2025-d5', 'markah': 2, 'jenis': 'senarai',
+                    'soalan': 'توليس دوا ڤركارا يغ مواجبكن مندي. (٢ مركه)',
+                    'rumi': 'Tulis dua perkara yang mewajibkan mandi. (2 markah)',
+                    'bilanganJawapan': 2,
+                    'jawapanContoh': ['ولادة', 'كلوار داره حيض'],
+                    'jawapanContohRumi': ['Wiladah (melahirkan)', 'Keluar darah haid'],
+                },
+                {
+                    'id': 'ibadah-2025-d6', 'markah': 2, 'jenis': 'senarai',
+                    'soalan': 'توليس دوا تونتوتن شرع كڤد اورغ يغ تله بالغ. (٢ مركه)',
+                    'rumi': 'Tulis dua tuntutan syarak kepada orang yang telah baligh. (2 markah)',
+                    'bilanganJawapan': 2,
+                    'jawapanContoh': ['منجاك كحرمتن ديري', 'منوتوڤ عورة دغن سمڤورنا'],
+                    'jawapanContohRumi': ['Menjaga kehormatan diri', 'Menutup aurat dengan sempurna'],
+                },
+                {
+                    'id': 'ibadah-2025-d7', 'markah': 2, 'jenis': 'senarai',
+                    'soalan': 'توليس دوا ركن صلاة سلڤس دودوق تحية اخير. (٢ مركه)',
+                    'rumi': 'Tulis dua rukun solat selepas duduk tahiyat akhir. (2 markah)',
+                    'bilanganJawapan': 2,
+                    'jawapanContoh': ['ممباج تحية اخير', 'صلوات كأتس نبي محمد'],
+                    'jawapanContohRumi': ['Membaca tahiyat akhir', 'Selawat ke atas Nabi Muhammad'],
+                },
+                {
+                    'id': 'ibadah-2025-d8', 'markah': 2, 'jenis': 'senarai',
+                    'soalan': 'توليس دوا حكمه صلاة برجماعه. (٢ مركه)',
+                    'rumi': 'Tulis dua hikmah solat berjemaah. (2 markah)',
+                    'bilanganJawapan': 2,
+                    'jawapanContoh': ['ممبوك ڤلواغ بركنلن', 'مموقوق ڤرساو داراءن'],
+                    'jawapanContohRumi': ['Membuka peluang berkenalan', 'Memupuk perasaan persaudaraan'],
+                },
+                {
+                    'id': 'ibadah-2025-d9', 'markah': 1, 'jenis': 'tulis',
+                    'soalan': 'أُصَلِّي سُنَّةَ الضُّحَى رَكْعَتَيْنِ لِلَّهِ تَعَالَى. توليس مقصود لفظ نية دأتس. (١ مركه)',
+                    'rumi': 'Tulis maksud lafaz niat di atas. (1 markah)',
+                    'jawapanContoh': ['ساهاج اكو صلاة سنة ضحى دوا ركعة كران اللّه تعالى'],
+                    'jawapanContohRumi': ['Sahaja aku solat sunat Dhuha dua rakaat kerana Allah Taala'],
+                },
+                {
+                    'id': 'ibadah-2025-d10', 'markah': 2, 'jenis': 'tulis',
+                    'soalan': 'بيلاكه وقتو صلاة ترسبوت سسواي دلاكوكن؟ (٢ مركه)',
+                    'rumi': 'Bilakah waktu solat tersebut sesuai dilakukan? (2 markah)',
+                    'jawapanContoh': ['وقتو ضحى برمولا اڤابيلا ماتاهاري تله تربيت سقدر ساتو كاله تيغكي'],
+                    'jawapanContohRumi': ['Waktu Dhuha bermula apabila matahari telah terbit sekadar satu kali tinggi'],
+                },
+                {
+                    'id': 'ibadah-2025-d11', 'markah': 2, 'jenis': 'senarai',
+                    'soalan': 'سنارايكن دوا فضيلت صلاة ترسبوت. (٢ مركه)',
+                    'rumi': 'Senaraikan dua fadilat solat tersebut. (2 markah)',
+                    'bilanganJawapan': 2,
+                    'jawapanContoh': ['جامينن رزقي', 'كقواتن جسماني'],
+                    'jawapanContohRumi': ['Jaminan rezeki', 'Kekuatan jasmani'],
+                },
+            ],
+        },
+    ],
+}
+
+# Jumlah markah bahagian mesti 70.
+jumlah = sum(b['markah'] for b in kertas['bahagian'])
+assert jumlah == 70, jumlah
+
+with open('assets/content/sebenar/ibadah-2025.json', 'w', encoding='utf-8') as f:
+    json.dump(kertas, f, ensure_ascii=False, indent=2)
+    f.write('\n')
+print('ibadah-2025.json ditulis; jumlah markah', jumlah)

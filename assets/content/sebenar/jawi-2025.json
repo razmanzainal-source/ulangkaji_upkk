@@ -1,0 +1,682 @@
+{
+  "id": "jawi-2025",
+  "subjek": "jawi",
+  "tajuk": "Jawi dan Khat UPKK 2025",
+  "sumber": "Kertas soalan UPKK 2025 — imbasan rasmi",
+  "jenisSumber": "sebenar",
+  "masa": 75,
+  "nota": "Jawapan daripada skema rasmi. Bahagian A 10, B 10, C 15, D 25, E 10.",
+  "bahagian": [
+    {
+      "nama": "A",
+      "markah": 10,
+      "arahan": "جواب سموا سوءالن.",
+      "arahanRumi": "Jawab semua soalan.",
+      "soalan": [
+        {
+          "id": "jawi-2025-a1",
+          "markah": 2,
+          "jenis": "tulis",
+          "soalan": "توليس حروف ووكل يغ بتول باكي ڤركاتاءن برايكوت. (٢ مركه)",
+          "rumi": "Tulis huruf vokal yang betul bagi perkataan berikut. (2 markah)",
+          "jawapanContoh": [
+            "اليم"
+          ],
+          "jawapanContohRumi": [
+            "Alim"
+          ]
+        },
+        {
+          "id": "jawi-2025-a2",
+          "markah": 2,
+          "jenis": "tulis",
+          "soalan": "سامبوغكن حروف ٢ دباوه منجادي ساتو ڤركاتاءن. (٢ مركه)",
+          "rumi": "Sambungkan huruf-huruf di bawah menjadi satu perkataan. (2 markah)",
+          "jawapanContoh": [
+            "ميجا"
+          ],
+          "jawapanContohRumi": [
+            "Meja"
+          ]
+        },
+        {
+          "id": "jawi-2025-a3",
+          "markah": 2,
+          "jenis": "tulis",
+          "soalan": "سامبوغكن سوكو كات برايكوت منجادي ڤركاتاءن. (٢ مركه)",
+          "rumi": "Sambungkan suku kata berikut menjadi perkataan. (2 markah)",
+          "jawapanContoh": [
+            "ميجا",
+            "ڤنتس",
+            "سعكول"
+          ],
+          "jawapanContohRumi": [
+            "Meja",
+            "Pantas",
+            "Sekolah"
+          ]
+        },
+        {
+          "id": "jawi-2025-a4",
+          "markah": 4,
+          "jenis": "tulis",
+          "soalan": "جاويكن ڤركاتاءن ٢ برايكوت. (٤ مركه)",
+          "rumi": "Jawikan perkataan-perkataan berikut. (4 markah)",
+          "jawapanContoh": [
+            "اولت",
+            "كايو",
+            "مينوم"
+          ],
+          "jawapanContohRumi": [
+            "Ulat",
+            "Kayu",
+            "Minum"
+          ]
+        }
+      ]
+    },
+    {
+      "nama": "B",
+      "markah": 10,
+      "arahan": "Soalan 1 hingga 10. Bulatkan jawapan yang betul.",
+      "arahanRumi": "Soalan 1 hingga 10. Bulatkan jawapan yang betul.",
+      "soalan": [
+        {
+          "id": "jawi-2025-b1",
+          "markah": 1,
+          "jenis": "objektif",
+          "soalan": "كامي اكن ككامڤوغ قد هاري احد ميعكو دقن. ماناكه يغ برايكوت ڤركاتاءن سرڤن بهاس عرب؟",
+          "rumi": "Kami akan ke kampung pada hari Ahad mengikut jadual. Manakah yang berikut perkataan serapan bahasa Arab?",
+          "item": [
+            {
+              "teks": "",
+              "rumi": "",
+              "jawapan": 2,
+              "pilihan": [
+                {
+                  "teks": "هوسڤيتل",
+                  "rumi": "Hospital"
+                },
+                {
+                  "teks": "كلينيك",
+                  "rumi": "Klinik"
+                },
+                {
+                  "teks": "مسجد",
+                  "rumi": "Masjid"
+                },
+                {
+                  "teks": "رومه",
+                  "rumi": "Rumah"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "jawi-2025-b2",
+          "markah": 1,
+          "jenis": "objektif",
+          "soalan": "سيتي داتڠ دڠن ممباوا buah تاعن. ڤيليه ايجاءن يغ بتول باكي ڤركاتاءن بركاريس.",
+          "rumi": "Siti datang dengan membawa buah tangan. Pilih ejaan yang betul bagi perkataan bergaris.",
+          "item": [
+            {
+              "teks": "",
+              "rumi": "",
+              "jawapan": 1,
+              "pilihan": [
+                {
+                  "teks": "بوءه",
+                  "rumi": "Buah"
+                },
+                {
+                  "teks": "بواه",
+                  "rumi": "Buah"
+                },
+                {
+                  "teks": "بووه",
+                  "rumi": "Buah"
+                },
+                {
+                  "teks": "بوئه",
+                  "rumi": "Buah"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "jawi-2025-b3",
+          "markah": 1,
+          "jenis": "objektif",
+          "soalan": "ايبو ممبلي اوبت دري ____.",
+          "rumi": "Ibu membeli ubat dari ____.",
+          "item": [
+            {
+              "teks": "",
+              "rumi": "",
+              "jawapan": 3,
+              "pilihan": [
+                {
+                  "teks": "قرمسي",
+                  "rumi": "Farmasi"
+                },
+                {
+                  "teks": "ڤرماسي",
+                  "rumi": "Farmasi"
+                },
+                {
+                  "teks": "فرمسي",
+                  "rumi": "Farmasi"
+                },
+                {
+                  "teks": "فرماسي",
+                  "rumi": "Farmasi"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "jawi-2025-b4",
+          "markah": 1,
+          "jenis": "objektif",
+          "soalan": "ساي اخيري دڠن تريما كاسيه. ____.",
+          "rumi": "Saya akhiri dengan terima kasih. ____.",
+          "item": [
+            {
+              "teks": "",
+              "rumi": "",
+              "jawapan": 1,
+              "pilihan": [
+                {
+                  "teks": "براوجڤ",
+                  "rumi": "Berhujah"
+                },
+                {
+                  "teks": "اوجڤن",
+                  "rumi": "Hujahan"
+                },
+                {
+                  "teks": "مڠوجق",
+                  "rumi": "Menguji"
+                },
+                {
+                  "teks": "دأوجڤ",
+                  "rumi": "Diuji"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "jawi-2025-b5",
+          "markah": 1,
+          "jenis": "objektif",
+          "soalan": "ڤيليه ڤركاتاءن يغ بتول باكي كات كندا ڤنوه؟",
+          "rumi": "Pilih perkataan yang betul bagi kata ganda penuh?",
+          "item": [
+            {
+              "teks": "",
+              "rumi": "",
+              "jawapan": 2,
+              "pilihan": [
+                {
+                  "teks": "جوالن ٢",
+                  "rumi": "Jualan-jualan"
+                },
+                {
+                  "teks": "جوال ٢ن",
+                  "rumi": "Jual-jual"
+                },
+                {
+                  "teks": "جوال-جوالن",
+                  "rumi": "Jual-belian"
+                },
+                {
+                  "teks": "جوالن-جوالن",
+                  "rumi": "Jualan-jualan"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "jawi-2025-b6",
+          "markah": 1,
+          "jenis": "objektif",
+          "soalan": "ڤركاتاءن برايكوت مڠاندوغي ديفتوغ كجوالي ____.",
+          "rumi": "Perkataan berikut mengandungi diftong, kecuali ____.",
+          "item": [
+            {
+              "teks": "",
+              "rumi": "",
+              "jawapan": 1,
+              "pilihan": [
+                {
+                  "teks": "لايجي",
+                  "rumi": "Laici"
+                },
+                {
+                  "teks": "ليماو",
+                  "rumi": "Limau"
+                },
+                {
+                  "teks": "هليا",
+                  "rumi": "Helai"
+                },
+                {
+                  "teks": "سراي",
+                  "rumi": "Surai"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "jawi-2025-b7",
+          "markah": 1,
+          "jenis": "objektif",
+          "soalan": "كاكق كمر منوليس ____ ڤرڤين.",
+          "rumi": "Kakak gemar menulis ____ peribahasa.",
+          "item": [
+            {
+              "teks": "",
+              "rumi": "",
+              "jawapan": 3,
+              "pilihan": [
+                {
+                  "teks": "جيرڤين",
+                  "rumi": "Jirpin"
+                },
+                {
+                  "teks": "جرقين",
+                  "rumi": "Jerkin"
+                },
+                {
+                  "teks": "جيرفين",
+                  "rumi": "Jirfin"
+                },
+                {
+                  "teks": "جرفين",
+                  "rumi": "Jirfin"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "jawi-2025-b8",
+          "markah": 1,
+          "jenis": "objektif",
+          "soalan": "ساي سيسي ڤمبلاجرن القرءان. ____.",
+          "rumi": "Saya selesai pembelajaran Al-Quran. ____.",
+          "item": [
+            {
+              "teks": "",
+              "rumi": "",
+              "jawapan": 0,
+              "pilihan": [
+                {
+                  "teks": "ايكوتن",
+                  "rumi": "Ikutan"
+                },
+                {
+                  "teks": "ڤڤيكوت",
+                  "rumi": "Pengikut"
+                },
+                {
+                  "teks": "مڠيكوتي",
+                  "rumi": "Mengikuti"
+                },
+                {
+                  "teks": "برايكوت",
+                  "rumi": "Berikut"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "jawi-2025-b9",
+          "markah": 1,
+          "jenis": "objektif",
+          "soalan": "انتارا برايكوت، يغ ماناكه بوكن ايات نفي؟",
+          "rumi": "Antara berikut, yang manakah bukan ayat nafi?",
+          "item": [
+            {
+              "teks": "",
+              "rumi": "",
+              "jawapan": 2,
+              "pilihan": [
+                {
+                  "teks": "كريتا ايت كڤوياءن احمد.",
+                  "rumi": "Kereta itu kepunyaan Ahmad."
+                },
+                {
+                  "teks": "ابو بوكن اديق كاندوغ ساي.",
+                  "rumi": "Abu bukan adik kandung saya."
+                },
+                {
+                  "teks": "ساي تيدق كمر ماكن سايور.",
+                  "rumi": "Saya tidak gemar makan sayur."
+                },
+                {
+                  "teks": "جاعن ممبواغ سمڤه مرات.",
+                  "rumi": "Jangan membuang sampah merata."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "jawi-2025-b10",
+          "markah": 1,
+          "jenis": "objektif",
+          "soalan": "ڤيليه جنيس ايات نفي.",
+          "rumi": "Pilih jenis ayat nafi.",
+          "item": [
+            {
+              "teks": "",
+              "rumi": "",
+              "jawapan": 3,
+              "pilihan": [
+                {
+                  "teks": "i دان ii",
+                  "rumi": "i dan ii"
+                },
+                {
+                  "teks": "ii dan iii",
+                  "rumi": "ii dan iii"
+                },
+                {
+                  "teks": "iii dan iv",
+                  "rumi": "iii dan iv"
+                },
+                {
+                  "teks": "iv dan i",
+                  "rumi": "iv dan i"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nama": "C",
+      "markah": 15,
+      "arahan": "جواب سوءالن برايکوت.",
+      "arahanRumi": "Jawab soalan berikut.",
+      "soalan": [
+        {
+          "id": "jawi-2025-c1",
+          "markah": 5,
+          "jenis": "bulat",
+          "soalan": "كاريسكن جنيس ايات يغ بتول. (٥ مركه)",
+          "rumi": "Gariskan jenis ayat yang betul. (5 markah)",
+          "item": [
+            {
+              "teks": "جم ترسبوت برورنا ميره.",
+              "rumi": "Jam tersebut berwarna merah.",
+              "jawapan": 0,
+              "pilihan": [
+                {
+                  "teks": "ڤيات",
+                  "rumi": "Penyata"
+                },
+                {
+                  "teks": "نفي",
+                  "rumi": "Nafi"
+                }
+              ]
+            },
+            {
+              "teks": "ادوه، ساكيتث كاكي ساي!",
+              "rumi": "Aduh, sakitnya kaki saya!",
+              "jawapan": 1,
+              "pilihan": [
+                {
+                  "teks": "تاث",
+                  "rumi": "Tanya"
+                },
+                {
+                  "teks": "سروان",
+                  "rumi": "Seruan"
+                }
+              ]
+            },
+            {
+              "teks": "بيلاكه سمبوتن هاري مليسيا برلغسوغ؟",
+              "rumi": "Bilakah sambutan Hari Malaysia berlangsung?",
+              "jawapan": 1,
+              "pilihan": [
+                {
+                  "teks": "ڤيات",
+                  "rumi": "Penyata"
+                },
+                {
+                  "teks": "تاث",
+                  "rumi": "Tanya"
+                }
+              ]
+            },
+            {
+              "teks": "علي بوكن سأورغ دوكتور ڤراوبتن.",
+              "rumi": "Ali bukan seorang doktor perubatan.",
+              "jawapan": 0,
+              "pilihan": [
+                {
+                  "teks": "نفي",
+                  "rumi": "Nafi"
+                },
+                {
+                  "teks": "ڤرينته",
+                  "rumi": "Perintah"
+                }
+              ]
+            },
+            {
+              "teks": "سيلا داتڠ كڤجابت ساي.",
+              "rumi": "Sila datang ke pejabat saya.",
+              "jawapan": 1,
+              "pilihan": [
+                {
+                  "teks": "ڤيات",
+                  "rumi": "Penyata"
+                },
+                {
+                  "teks": "ڤرينته",
+                  "rumi": "Perintah"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "jawi-2025-c2",
+          "markah": 5,
+          "jenis": "betul_salah",
+          "soalan": "تنداكن ✓ اتاو ✗ ڤد ڤڠكوناءن تندا باج برايكوت. (٥ مركه)",
+          "rumi": "Tandakan ✓ atau ✗ pada penggunaan tanda baca berikut. (5 markah)",
+          "item": [
+            {
+              "teks": "محمد سوك برماءين دڤادغ.",
+              "rumi": "Muhammad suka bermain di padang.",
+              "betul": true
+            },
+            {
+              "teks": "امبوي، جنتيقث باجو خديجة؟",
+              "rumi": "Amboi, cantiknya baju Khadijah?",
+              "betul": false
+            },
+            {
+              "teks": "براڤ هرک بوكو توليس اين؟",
+              "rumi": "Berapa harga buku tulis ini?",
+              "betul": true
+            },
+            {
+              "teks": "ايبو ممبلي بواه تمبيكاي. اغكور دان ايڤيل دڤاسر ڤاكي.",
+              "rumi": "Ibu membeli buah tembikai. Anggur dan epal dipaser paki.",
+              "betul": false
+            },
+            {
+              "teks": "سيلا داتڠ كڤجابت ساي.",
+              "rumi": "Sila datang ke pejabat saya.",
+              "betul": true
+            }
+          ]
+        },
+        {
+          "id": "jawi-2025-c3",
+          "markah": 5,
+          "jenis": "kumpulan",
+          "soalan": "ڤيليه ڤركاتاءن دباوه مڠيكوت كاتکوري. (٥ مركه)",
+          "rumi": "Pilih perkataan di bawah mengikut kategori. (5 markah)",
+          "kategori": [
+            "ڤركاتاءن سرڤن بهاس عرب",
+            "ڤركاتاءن سرڤن بهاس ايڤكريس"
+          ],
+          "kategoriRumi": [
+            "Perkataan serapan bahasa Arab",
+            "Perkataan serapan bahasa Inggeris"
+          ],
+          "item": [
+            {
+              "teks": "حكمه",
+              "rumi": "Hikmah",
+              "jawapan": 0
+            },
+            {
+              "teks": "معلومت",
+              "rumi": "Maklumat",
+              "jawapan": 0
+            },
+            {
+              "teks": "اكتيف",
+              "rumi": "Aktif",
+              "jawapan": 1
+            },
+            {
+              "teks": "ديسيڤلين",
+              "rumi": "Disiplin",
+              "jawapan": 1
+            },
+            {
+              "teks": "ڤروسيس",
+              "rumi": "Proses",
+              "jawapan": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nama": "D",
+      "markah": 25,
+      "arahan": "جواب سوءالن برايکوت دڠن لڠکڤ.",
+      "arahanRumi": "Jawab soalan berikut dengan lengkap.",
+      "soalan": [
+        {
+          "id": "jawi-2025-d1",
+          "markah": 4,
+          "jenis": "tulis",
+          "soalan": "جاويكن ڤركاتاءن دباوه. (٤ مركه)",
+          "rumi": "Jawikan perkataan di bawah. (4 markah)",
+          "jawapanContoh": [
+            "مڠمس بيليق",
+            "ڤڠوربانن ايبو",
+            "لايري اينترنيت",
+            "ڤسنن كورو"
+          ],
+          "jawapanContohRumi": [
+            "Mengemas bilik",
+            "Pengorbanan ibu",
+            "Layari internet",
+            "Pesanan guru"
+          ]
+        },
+        {
+          "id": "jawi-2025-d2",
+          "markah": 6,
+          "jenis": "tulis",
+          "soalan": "بينا ايات برداسركن ڤركاتاءن دبري. (٦ مركه)",
+          "rumi": "Bina ayat berdasarkan perkataan diberi. (6 markah)",
+          "jawapanContoh": [
+            "دلارغ ممبواغ سمقه كدالم سوغاي.",
+            "سيلا حاضير ككلس تڤت ڤد وقتوث."
+          ],
+          "jawapanContohRumi": [
+            "Dilarang membuang sampah ke dalam sungai.",
+            "Sila hadir ke kelas tepat pada waktunya."
+          ]
+        },
+        {
+          "id": "jawi-2025-d3",
+          "markah": 6,
+          "jenis": "tulis",
+          "soalan": "جواب سوءالن برداسركن بريتا دباوه. (٦ مركه)",
+          "rumi": "Jawab soalan berdasarkan berita di bawah. (6 markah)",
+          "jawapanContoh": [
+            "قد ١ اڤريل ٢٠٢٥ تله برلاكو كباكرن قد سالورن ڤاءيڤ اوتام ميليق ڤيترونس",
+            "ڤيترونس",
+            "بومبا"
+          ],
+          "jawapanContohRumi": [
+            "Pada 1 April 2025 telah berlaku kebakaran pada saluran paip utama milik Petronas",
+            "Petronas",
+            "Bomba"
+          ]
+        },
+        {
+          "id": "jawi-2025-d4",
+          "markah": 9,
+          "jenis": "tulis",
+          "soalan": "جواب سوءالن برداسركن لاڤورن دباوه. (٩ مركه)",
+          "rumi": "Jawab soalan berdasarkan laporan di bawah. (9 markah)",
+          "jawapanContoh": [
+            "كوتوغ-رويوغ",
+            "ڤروكرم, اكتيويتي",
+            "كاوسن, سماڠت"
+          ],
+          "jawapanContohRumi": [
+            "Gotong-royong",
+            "Program, aktiviti",
+            "Kawasan, semangat"
+          ]
+        }
+      ]
+    },
+    {
+      "nama": "E",
+      "markah": 10,
+      "arahan": "توليس سمولا خط دباوه.",
+      "arahanRumi": "Tulis semula khat di bawah.",
+      "soalan": [
+        {
+          "id": "jawi-2025-e1",
+          "markah": 10,
+          "jenis": "tulis",
+          "soalan": "توليس سمولا خط دباوه مڠيكوت جونتوه يغ دبري.",
+          "rumi": "Tulis semula khat di bawah mengikut contoh yang diberi.",
+          "jawapanContoh": [
+            "س",
+            "لب",
+            "قر",
+            "كس",
+            "حلال",
+            "جابتن"
+          ],
+          "jawapanContohRumi": [
+            "Sa",
+            "Lab",
+            "Qar",
+            "Kas",
+            "Halal",
+            "Jabatan"
+          ]
+        }
+      ]
+    }
+  ]
+}
