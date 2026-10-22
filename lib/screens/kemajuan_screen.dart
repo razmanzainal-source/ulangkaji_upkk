@@ -4,9 +4,13 @@ import '../models/gred.dart';
 import '../models/kertas.dart';
 import '../services/bank_kertas.dart';
 import '../services/kemajuan.dart';
+import '../services/kongsi.dart';
+import '../services/tetapan.dart';
 import '../tarikh.dart';
 import '../tema.dart';
+import '../widgets/kad_kemajuan_penuh.dart';
 import '../widgets/maskot.dart';
+import 'kongsi_screen.dart';
 import 'rumah_screen.dart';
 
 /// Tab "Kemajuan" — markah dan gred setiap subjek.
@@ -22,86 +26,209 @@ class KemajuanScreen extends StatefulWidget {
 }
 
 class _KemajuanScreenState extends State<KemajuanScreen> {
+  /// Kunci kad perkongsian yang dilukis di luar skrin.
+  final GlobalKey _kunciKongsi = GlobalKey();
+
+  /// Benar semasa gambar kad disediakan.
+  bool _menyediakanKongsi = false;
+
+  /// Menyediakan gambar kad kemajuan penuh, kemudian membuka skrin perkongsian.
+  Future<void> _kongsiKemajuan() async {
+    if (_menyediakanKongsi) return;
+    setState(() => _menyediakanKongsi = true);
+
+    // Satu bingkai diberi supaya kad perkongsian dilukis dahulu — gambar
+    // hanya boleh ditangkap selepas kad benar-benar dilukis.
+    await WidgetsBinding.instance.endOfFrame;
+    final imej = await Kongsi.tangkapImej(_kunciKongsi);
+
+    if (!mounted) return;
+    setState(() => _menyediakanKongsi = false);
+
+    if (imej == null) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(
+          content: Text('Gambar keputusan tidak dapat disediakan. Cuba lagi.'),
+        ),
+      );
+      return;
+    }
+
+    final nama = Tetapan.instance.namaAnak.trim();
+    final tarikh = tarikhMelayu(DateTime.now());
+    final totalPenuh = BankKertas.instance.subjek.length * 70;
+    var totalMarkah = 0;
+    for (final s in BankKertas.instance.subjek) {
+      totalMarkah += Kemajuan.instance.ringkasan(s.id).markahTerbaik;
+    }
+    final purata = totalPenuh > 0 ? ((totalMarkah / totalPenuh) * 100).round() : 0;
+    final gred = Gred.dariPeratus(purata);
+
+    await Navigator.of(context).push(
+      MaterialPageRoute<void>(
+        builder: (_) => KongsiScreen(
+          imej: imej,
+          teks: 'Slip keputusan kesemuhaan subjek UPKK untuk $nama pada $tarikh. '
+              'Jumlah: $totalMarkah/$totalPenuh ($purata%), Gred ${gred.huruf} (${gred.nama}).',
+          namaFail: 'keputusan-upkk-kemajuan-penuh.png',
+          namaSimpan: 'keputusan_upkk_kemajuan_penuh',
+        ),
+      ),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     final subjek = BankKertas.instance.subjek;
-    // Hanya kertas percubaan — latih tubi dipisahkan supaya "purata markah"
-    // tidak dicampur antara kertas 70 markah dan latihan 10 soalan.
     final rekod = Kemajuan.instance.rekodKertas;
     final jumlahPercubaan = rekod.length;
     final purata = rekod.isEmpty
         ? 0
         : (rekod.fold<int>(0, (j, r) => j + r.peratus) / rekod.length).round();
 
-    return CustomScrollView(
-      slivers: [
-        SliverToBoxAdapter(
-          child: KepalaRaz(
-            tajuk: 'Kemajuan',
-            sari: jumlahPercubaan == 0
-                ? 'Belum ada percubaan. Mulakan dengan satu kertas — markah '
-                    'pertama ialah titik tolak.'
-                : 'Purata anda $purata%. Ulang kaji bahagian yang lemah '
-                    'supaya gred naik.',
-            mood: jumlahPercubaan == 0 ? MoodMaskot.fikir : MoodMaskot.gembira,
-            kanak: Row(
-              children: [
-                CipStat(
-                  ikon: Icons.assignment_turned_in_rounded,
-                  teks: '$jumlahPercubaan percubaan',
+    return Stack(
+      children: [
+        CustomScrollView(
+          slivers: [
+            SliverToBoxAdapter(
+              child: KepalaRaz(
+                tajuk: 'Kemajuan',
+                sari: jumlahPercubaan == 0
+                    ? 'Belum ada percubaan. Mulakan dengan satu kertas — markah '
+                        'pertama ialah titik tolak.'
+                    : 'Purata anda $purata%. Ulang kaji bahagian yang lemah '
+                        'supaya gred naik.',
+                mood: jumlahPercubaan == 0 ? MoodMaskot.fikir : MoodMaskot.gembira,
+                kanak: Row(
+                  children: [
+                    CipStat(
+                      ikon: Icons.assignment_turned_in_rounded,
+                      teks: '$jumlahPercubaan percubaan',
+                    ),
+                    const SizedBox(width: 8),
+                    CipStat(
+                      ikon: Icons.local_fire_department_rounded,
+                      teks: '${Kemajuan.instance.rentetanHari} hari berturut',
+                    ),
+                  ],
                 ),
-                const SizedBox(width: 8),
-                CipStat(
-                  ikon: Icons.local_fire_department_rounded,
-                  teks: '${Kemajuan.instance.rentetanHari} hari berturut',
+              ),
+            ),
+            SliverPadding(
+              padding: const EdgeInsets.fromLTRB(16, 18, 16, 8),
+              sliver: SliverToBoxAdapter(
+                child: Text(
+                  'Mengikut subjek',
+                  style: Teks.sederhana.copyWith(color: Colors.black87),
                 ),
-              ],
+              ),
             ),
-          ),
-        ),
-        SliverPadding(
-          padding: const EdgeInsets.fromLTRB(16, 18, 16, 8),
-          sliver: SliverToBoxAdapter(
-            child: Text(
-              'Mengikut subjek',
-              style: Teks.sederhana.copyWith(color: Colors.black87),
+            SliverPadding(
+              padding: const EdgeInsets.fromLTRB(16, 0, 16, 16),
+              sliver: SliverList.separated(
+                itemCount: subjek.length,
+                separatorBuilder: (_, _) => const SizedBox(height: 10),
+                itemBuilder: (_, i) => _KadSubjek(
+                  subjek: subjek[i],
+                  ringkasan: Kemajuan.instance.ringkasan(subjek[i].id),
+                ),
+              ),
             ),
-          ),
+            if (rekod.isNotEmpty) ...[
+              SliverPadding(
+                padding: const EdgeInsets.fromLTRB(16, 12, 16, 4),
+                sliver: SliverToBoxAdapter(
+                  child: _butangKongsi(),
+                ),
+              ),
+              SliverPadding(
+                padding: const EdgeInsets.fromLTRB(16, 12, 16, 8),
+                sliver: SliverToBoxAdapter(
+                  child: Text(
+                    'Percubaan terkini',
+                    style: Teks.sederhana.copyWith(color: Colors.black87),
+                  ),
+                ),
+              ),
+              SliverPadding(
+                padding: const EdgeInsets.fromLTRB(16, 0, 16, 28),
+                sliver: SliverList.separated(
+                  itemCount: rekod.length > 12 ? 12 : rekod.length,
+                  separatorBuilder: (_, _) => const SizedBox(height: 8),
+                  itemBuilder: (_, i) => _BarisRekod(
+                    rekod: rekod[i],
+                    namaSubjek: _namaSubjek(rekod[i].subjekId),
+                  ),
+                ),
+              ),
+            ] else
+              const SliverToBoxAdapter(child: SizedBox(height: 24)),
+          ],
         ),
-        SliverPadding(
-          padding: const EdgeInsets.fromLTRB(16, 0, 16, 16),
-          sliver: SliverList.separated(
-            itemCount: subjek.length,
-            separatorBuilder: (_, _) => const SizedBox(height: 10),
-            itemBuilder: (_, i) => _KadSubjek(
-              subjek: subjek[i],
-              ringkasan: Kemajuan.instance.ringkasan(subjek[i].id),
-            ),
-          ),
-        ),
-        if (rekod.isNotEmpty) ...[
-          SliverPadding(
-            padding: const EdgeInsets.fromLTRB(16, 8, 16, 8),
-            sliver: SliverToBoxAdapter(
-              child: Text(
-                'Percubaan terkini',
-                style: Teks.sederhana.copyWith(color: Colors.black87),
+        // Kad perkongsian di luar skrin
+        if (_menyediakanKongsi)
+          Positioned(
+            left: -4000,
+            top: 0,
+            width: 360,
+            child: RepaintBoundary(
+              key: _kunciKongsi,
+              child: KadKemajuanPenuh(
+                nama: Tetapan.instance.namaAnak,
+                tarikh: tarikhMelayu(DateTime.now()),
               ),
             ),
           ),
-          SliverPadding(
-            padding: const EdgeInsets.fromLTRB(16, 0, 16, 28),
-            sliver: SliverList.separated(
-              itemCount: rekod.length > 12 ? 12 : rekod.length,
-              separatorBuilder: (_, _) => const SizedBox(height: 8),
-              itemBuilder: (_, i) => _BarisRekod(
-                rekod: rekod[i],
-                namaSubjek: _namaSubjek(rekod[i].subjekId),
+      ],
+    );
+  }
+
+  /// Butang kongsi penuh — gaya sama seperti butang pada skrin Keputusan.
+  ///
+  /// Ia diletak **atas** senarai "Percubaan terkini" supaya ibu bapa jumpa
+  /// dengan mudah: butang yang penuh dan berwarna lebih menonjol berbanding
+  /// butang kecil di dalam baris tajuk.
+  Widget _butangKongsi() {
+    return Column(
+      children: [
+        SizedBox(
+          width: double.infinity,
+          child: FilledButton.icon(
+            style: FilledButton.styleFrom(
+              minimumSize: const Size.fromHeight(58),
+              backgroundColor: Warna.utama,
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(18),
               ),
             ),
+            onPressed: _menyediakanKongsi ? null : _kongsiKemajuan,
+            icon: _menyediakanKongsi
+                ? const SizedBox(
+                    width: 22,
+                    height: 22,
+                    child: CircularProgressIndicator(
+                      strokeWidth: 2.6,
+                      color: Colors.white,
+                    ),
+                  )
+                : const Icon(Icons.share_rounded),
+            label: Text(
+              _menyediakanKongsi
+                  ? 'Menyediakan gambar...'
+                  : 'Kongsi Keputusan',
+              style: Teks.besar,
+            ),
           ),
-        ] else
-          const SliverToBoxAdapter(child: SizedBox(height: 24)),
+        ),
+        const SizedBox(height: 8),
+        Text(
+          'Hantar slip keputusan semua subjek kepada ibu bapa atau guru melalui '
+          'WhatsApp, Facebook, Instagram atau Threads.',
+          textAlign: TextAlign.center,
+          style: Teks.label.copyWith(
+            color: Colors.black.withValues(alpha: 0.55),
+          ),
+        ),
       ],
     );
   }

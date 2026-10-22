@@ -85,6 +85,7 @@ class KepalaRaz extends StatelessWidget {
     required this.sari,
     this.mood = MoodMaskot.gembira,
     this.kanak,
+    this.tindakan,
   });
 
   final String tajuk;
@@ -93,6 +94,9 @@ class KepalaRaz extends StatelessWidget {
 
   /// Kandungan tambahan di bawah sari kata (contohnya cip statistik).
   final Widget? kanak;
+
+  /// Butang tindakan di sisi kanan atas (contoh: kongsi).
+  final Widget? tindakan;
 
   @override
   Widget build(BuildContext context) {
@@ -157,6 +161,16 @@ class KepalaRaz extends StatelessWidget {
                   ),
                   const SizedBox(width: 10),
                   Maskot(saiz: 96, mood: mood),
+                  if (tindakan != null) ...[
+                    const SizedBox(width: 8),
+                    Align(
+                      alignment: Alignment.topRight,
+                      child: Padding(
+                        padding: const EdgeInsets.only(top: 8),
+                        child: tindakan!,
+                      ),
+                    ),
+                  ],
                 ],
               ),
             ),
