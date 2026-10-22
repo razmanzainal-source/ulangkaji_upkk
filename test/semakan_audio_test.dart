@@ -225,7 +225,9 @@ void main() {
         ],
       );
       expect(s.jawapanBerbilang, isFalse);
-      expect(s.jawapanPenuhTeksBernombor, 'ساتو');
+      // Sub-soalan item dibaca bersama jawapan — "Sabara — satu" — supaya
+      // panel pembetulan mempunyai konteks.
+      expect(s.jawapanPenuhTeksBernombor, 'سأبارا — ساتو');
     });
   });
 

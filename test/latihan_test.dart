@@ -581,8 +581,9 @@ void main() {
         findsOneWidget,
         reason: 'latih tubi ialah tempat belajar — ✗ sahaja tidak membantu',
       );
+      // Panel pembetulan memaparkan sub-soalan + jawapan betul.
       expect(
-        find.text('ساتو').evaluate().length,
+        find.textContaining('ساتو').evaluate().length,
         greaterThan(1),
         reason: 'jawapan betul mesti dipaparkan semula pada panel pembetulan',
       );

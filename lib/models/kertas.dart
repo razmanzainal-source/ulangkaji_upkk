@@ -408,10 +408,14 @@ class SoalanKertas {
   String get jawapanPenuhTeks {
     if (jawapanContoh.isNotEmpty) return jawapanContoh.join('\n');
     return switch (jenis) {
-      JenisKertas.bulat || JenisKertas.objektif => item
-          .where((i) => i.jawapan >= 0 && i.jawapan < i.pilihan.length)
-          .map((i) => i.pilihan[i.jawapan])
-          .join(', '),
+      JenisKertas.bulat || JenisKertas.objektif => [
+          for (final i in item)
+            if (i.jawapan >= 0 && i.jawapan < i.pilihan.length)
+              if (i.teks.isEmpty)
+                i.pilihan[i.jawapan]
+              else
+                '${i.teks} — ${i.pilihan[i.jawapan]}',
+        ].join('\n'),
       JenisKertas.betulSalah =>
         item.map((i) => '${i.teks} (${i.betul == true ? '✓' : '✗'})').join('\n'),
       JenisKertas.suai =>
@@ -588,7 +592,13 @@ class SoalanKertas {
           if (it.jawapan < 0 || it.jawapan >= pilihan.length) {
             continue;
           }
-          keluar.add(pilihan[it.jawapan]);
+          // Sub-soalan item (contoh "Najis yang paling berat ialah najis")
+          // ialah soalan sebenar bagi item itu. Tanpa ia, panel pembetulan
+          // membaca jawapan tanpa konteks.
+          final asal = jawapanArab ? it.teks : it.rumi;
+          keluar.add(
+            asal.isEmpty ? pilihan[it.jawapan] : '$asal — ${pilihan[it.jawapan]}',
+          );
         }
       case JenisKertas.kumpulan:
         for (var i = 0; i < item.length; i++) {
@@ -727,6 +737,19 @@ class SoalanKertas {
           jawapanArab ? it.teks : it.rumi,
           it.betul == true ? 'Betul' : 'Salah',
         ];
+      case JenisKertas.bulat:
+      case JenisKertas.objektif:
+        if (indeks >= item.length) return const [];
+        final it = item[indeks];
+        final pilihan = jawapanArab ? it.pilihan : it.pilihanRumi;
+        if (it.jawapan < 0 || it.jawapan >= pilihan.length) return const [];
+        // Sub-soalan dan jawapan dibaca sebagai dua segmen berasingan —
+        // "Najis yang paling berat ialah najis" … "mutawassitah" — supaya
+        // kedengaran seperti soalan dan jawapan, bukan satu ayat panjang.
+        final asal = jawapanArab ? it.teks : it.rumi;
+        return asal.isEmpty
+            ? [pilihan[it.jawapan]]
+            : [asal, pilihan[it.jawapan]];
       default:
         final baris = jawapanDengarBaris;
         if (indeks >= baris.length) return const [];
