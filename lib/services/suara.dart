@@ -215,6 +215,14 @@ class Suara {
   /// Fanfar untuk keputusan cemerlang.
   static const String kesanHebat = 'hebat';
 
+  /// Kunci rakaman yang diminta — untuk ujian sahaja.
+  ///
+  /// Ujian tidak boleh mendengar audio, jadi ia memeriksa **niat** melalui
+  /// senarai ini: urutan kunci menunjukkan sama ada soalan dimainkan dahulu
+  /// dan jawapan selepasnya.
+  @visibleForTesting
+  final List<String> kunciDiminta = [];
+
   /// Kunci rakaman satu soalan (teks soalan, bukan pilihannya).
   static String kunciSoalan(String id) => 'q-$id';
 
@@ -280,6 +288,20 @@ class Suara {
     unawaited(_sediaTtsSekali());
   }
 
+  /// Had masa memuatkan manifest rakaman.
+  static const Duration _hadManifest = Duration(seconds: 10);
+
+  /// Suntik senarai rakaman — untuk ujian sahaja.
+  ///
+  /// Dalam ujian, `rootBundle` tidak mempunyai bundle aset, jadi manifest
+  /// tidak boleh dimuatkan. Hook ini membolehkan ujian menguji aliran
+  /// rakaman tanpa bergantung pada fail sebenar.
+  @visibleForTesting
+  void suntukManifest(Map<String, String> peta) {
+    _peta = peta;
+    _penyediaan = Future<void>.value();
+  }
+
   Future<void>? _ttsSedia;
 
   /// Menyediakan enjin TTS sekali sahaja, walau berapa kali diminta.
@@ -287,7 +309,12 @@ class Suara {
 
   Future<void> _muatManifest() async {
     try {
-      final teks = await rootBundle.loadString(_laluanManifest);
+      // Had masa: `rootBundle` boleh menggantung dalam persekitaran ujian
+      // (tiada bundle aset) — dan aplikasi tidak boleh menggantungkan
+      // dirinya sendiri kerana senarai rakaman.
+      final teks = await rootBundle
+          .loadString(_laluanManifest)
+          .timeout(_hadManifest, onTimeout: () => '');
       final json = jsonDecode(teks) as Map<String, dynamic>;
       _peta = (json['fail'] as Map).cast<String, String>();
     } catch (e) {
@@ -298,6 +325,13 @@ class Suara {
 
   /// Had masa untuk setiap panggilan penyediaan enjin TTS.
   static const Duration _hadSedia = Duration(seconds: 2);
+
+  /// Had masa menunggu satu klip rakaman tamat.
+  ///
+  /// Klip app paling panjang beberapa saat; had ini hanya supaya platform
+  /// yang tidak pernah memancarkan peristiwa "tamat" tidak menggantungkan
+  /// app.
+  static const Duration _hadKlip = Duration(seconds: 30);
 
   Future<void> _sediaTts() async {
     try {
@@ -367,6 +401,8 @@ class Suara {
   /// [sandaran] ialah teks yang disebut oleh enjin TTS dalam kes sandaran itu;
   /// ia tidak pernah menggantikan rakaman.
   Future<void> sebutKunci(String kunci, {String? sandaran}) async {
+    // ignore: avoid_print
+    kunciDiminta.add(kunci);
     ayatTerakhir = kunci;
     if (!Tetapan.instance.bunyiHidup) return;
 
@@ -380,11 +416,23 @@ class Suara {
     if (fail != null) {
       try {
         await _had(_pemain.stop(), const Duration(seconds: 2));
-        _tungguSelesai = Completer<void>();
+        final selesai = Completer<void>();
+        _tungguSelesai = selesai;
         await _had(
           _pemain.play(AssetSource('bunyi/suara/$fail')),
           const Duration(seconds: 4),
         );
+
+        // Tunggu sehingga klip **tamat** sebelum pulang.
+        //
+        // `play()` selesai apabila mainsian *bermula*, bukan apabila ia
+        // *berakhir*. Kalau kita pulang lebih awal, ayat seterusnya akan
+        // memanggil `stop()` dan **memotong** klip ini — murid mendengar
+        // bunyi terputus-putus ("tiada penuh").
+        await _had(selesai.future, _hadKlip);
+        if (identical(_tungguSelesai, selesai)) {
+          _tungguSelesai = null;
+        }
         return;
       } catch (e) {
         _tungguSelesai = null;
@@ -552,7 +600,9 @@ class Suara {
     required String sandaran,
     required List<List<String>> segmenJawapan,
   }) async {
-    final jujukan = _jujukan;
+    // Siri baharu membatalkan siri yang sedang berjalan — satu butang
+    // speaker yang ditekan dua kali tidak menyebabkan dua siri bertindih.
+    final jujukan = ++_jujukan;
 
     // 1. Soalan dahulu — supaya murid tahu konteks jawapannya.
     await sebutKunci(kunciSoalan(id), sandaran: sandaran);

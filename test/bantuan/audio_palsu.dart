@@ -22,8 +22,19 @@ import 'package:flutter_test/flutter_test.dart';
 /// kosong dan bukannya `EventChannel` — saluran peristiwa dinamakan mengikut id
 /// pemain, jadi ia tidak boleh dipalsukan lebih awal.
 class _PlatformAudioPalsu extends AudioplayersPlatformInterface {
+  /// Aliran peristiwa bagi setiap pemain.
+  ///
+  /// Platform sebenar memancarkan peristiwa "tamat" selepas rakaman
+  /// keysthaben. `Suara.sebutKunci` **menunggu** peristiwa itu sebelum
+  /// ayat seterusnya dimainkan — kalau tidak, ayat seterusnya akan
+  /// memotong rakaman yang sedang berbunyi. Platform palsu ini pokoknya
+  /// memancarkan peristiwa yang sama, supaya ujian menguji aliran sebenar.
+  final Map<String, StreamController<AudioEvent>> _aliran = {};
+
   @override
-  Future<void> create(String playerId) async {}
+  Future<void> create(String playerId) async {
+    _aliran[playerId] ??= StreamController<AudioEvent>.broadcast();
+  }
 
   @override
   Future<void> dispose(String playerId) async {}
@@ -35,7 +46,15 @@ class _PlatformAudioPalsu extends AudioplayersPlatformInterface {
   Future<void> stop(String playerId) async {}
 
   @override
-  Future<void> resume(String playerId) async {}
+  Future<void> resume(String playerId) async {
+    // Peristiwa "tamat" selepas 300 ms — meniru platform sebenar supaya
+    // `sebutKunci` tahu bila rakaman sudah habis (dan tidak memotongnya).
+    Future<void>.delayed(const Duration(milliseconds: 300), () {
+      _aliran[playerId]?.add(
+        const AudioEvent(eventType: AudioEventType.complete),
+      );
+    });
+  }
 
   @override
   Future<void> release(String playerId) async {}
@@ -61,14 +80,18 @@ class _PlatformAudioPalsu extends AudioplayersPlatformInterface {
     String url, {
     bool? isLocal,
     String? mimeType,
-  }) async {}
+  }) async {
+    _sedia();
+  }
 
   @override
   Future<void> setSourceBytes(
     String playerId,
     Uint8List bytes, {
     String? mimeType,
-  }) async {}
+  }) async {
+    _sedia();
+  }
 
   @override
   Future<void> setAudioContext(
@@ -91,8 +114,26 @@ class _PlatformAudioPalsu extends AudioplayersPlatformInterface {
   @override
   Future<void> emitError(String playerId, String code, String message) async {}
 
+  /// Pancarkan peristiwa "prepared" — platform sebenaratóriaseret
+  /// apabila sumber siap dimuatkan. Tanpa ini, `play()` menggantung
+  /// menunggu peristiwa itu.
+  void _sedia([String? playerId]) {
+    for (final pengawal in _aliran.values) {
+      pengawal.add(
+        const AudioEvent(
+          eventType: AudioEventType.prepared,
+          isPrepared: true,
+        ),
+      );
+    }
+  }
+
   @override
-  Stream<AudioEvent> getEventStream(String playerId) => const Stream.empty();
+  Stream<AudioEvent> getEventStream(String playerId) {
+    final pengawal = _aliran[playerId] ??=
+        StreamController<AudioEvent>.broadcast();
+    return pengawal.stream;
+  }
 }
 
 /// Pasang platform audio palsu. Panggil sekali dalam `setUpAll` atau pada

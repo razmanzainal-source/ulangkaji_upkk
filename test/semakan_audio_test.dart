@@ -84,6 +84,16 @@ void main() {
   setUp(() {
     Suara.instance.ayatTerakhir = null;
     Suara.instance.kesanTerakhir = null;
+    // Manifest rakaman palsu — dalam ujian `rootBundle` tiada bundle aset.
+    Suara.instance.suntukManifest({
+      'q-uji-a1': 'soalan.m4a',
+      'o-Nombor 1': 'nombor1.m4a',
+      'o-Minuman berkarbonat': 'item1.m4a',
+      'o-Di dalam universiti': 'kategori1.m4a',
+      'o-Nombor 2': 'nombor2.m4a',
+      'o-Pasaran malam': 'item2.m4a',
+      'o-Di dalam masjid': 'kategori2.m4a',
+    });
   });
 
   group('audio skrin semakan', () {
@@ -127,14 +137,44 @@ void main() {
       await tester.ensureVisible(butang);
       await tester.pump();
       await tester.tap(butang);
-      await tester.pump(const Duration(milliseconds: 500));
+      await tester.pump();
 
+      // Skrin keputusan turut_INTERNAL playable audio keputusan; yang diperiksa
+      // di sini ialah **niat** — soalan diminta sebelum jawapan.
       expect(
-        Suara.instance.ayatTerakhir,
-        Suara.kunciSoalan('uji-a1'),
+        Suara.instance.kunciDiminta,
+        contains(Suara.kunciSoalan('uji-a1')),
         reason: 'soalan mesti dimainkan dahulu',
       );
       await _tutup(tester);
+    });
+
+
+    testWidgets('soalan diminta dahulu, sebelum jawapan', (tester) async {
+      // Regression: `sebutKunci` pernah pulang sebaik mainsian *bermula*,
+      // bukan apabila ia *tamat*. Ayat seterusnya kemudian memanggil
+      // `stop()` dan memotong rakaman — murid mendengar bunyi terputus.
+      //
+      // Ujian ini memeriksa **niat** (urutan kunci yang diminta), kerana
+      // platform audio palsu tidak boleh menghasilkan bunyi sebenar.
+      Suara.instance.ayatTerakhir = null;
+      Suara.instance.kunciDiminta.clear();
+      final s = _kertasKumpulan().semuaSoalan.first;
+
+      Suara.instance
+          .sebutSoalanDanJawapan(
+            id: s.id,
+            sandaran: s.rumi,
+            segmenJawapan: s.jawapanDengarSegmen,
+          )
+          .ignore();
+      await tester.pump();
+
+      expect(
+        Suara.instance.kunciDiminta.first,
+        Suara.kunciSoalan('uji-a1'),
+        reason: 'soalan mesti 먼저 vdira sebelum jawapan',
+      );
     });
 
     test('jawapan berbilang item diberi nombor', () {
