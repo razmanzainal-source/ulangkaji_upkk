@@ -343,6 +343,120 @@ def _baca(teks: str | None, rujuk_arab: bool) -> str:
     return bersih(teks or "")
 
 
+def _teks_pilihan(pilihan) -> list[str]:
+    """Senarai teks pilihan — boleh jadi rentetan atau objek {teks, rumi}."""
+    keluar = []
+    for x in pilihan or []:
+        if isinstance(x, dict):
+            keluar.append(x.get("teks", ""))
+        else:
+            keluar.append(str(x))
+    return keluar
+
+
+def jawapan_penuh_teks(s: dict) -> str:
+    """Cermin `SoalanKertas.jawapanPenuhTeks` dalam Dart (tulisan asal)."""
+    jc = s.get("jawapanContoh") or []
+    if jc:
+        return "\n".join(jc)
+    jenis = s.get("jenis")
+    if jenis in ("bulat", "objektif"):
+        keluar = []
+        for it in s.get("item") or []:
+            pil = _teks_pilihan(it.get("pilihan"))
+            jaw = it.get("jawapan", -1)
+            if isinstance(jaw, int) and 0 <= jaw < len(pil):
+                keluar.append(pil[jaw])
+        return ", ".join(keluar)
+    if jenis == "betul_salah":
+        keluar = []
+        for it in s.get("item") or []:
+            tanda = "\u2713" if it.get("betul") is True else "\u2717"
+            keluar.append(f"{it.get('teks', '')} ({tanda})")
+        return "\n".join(keluar)
+    if jenis == "suai":
+        return "\n".join(
+            f"{p.get('kiri', '')} \u2014 {p.get('kanan', '')}"
+            for p in s.get("pasangan") or []
+        )
+    if jenis == "susun":
+        return " ".join(s.get("urutan") or [])
+    if jenis == "tempat_kosong":
+        return ", ".join(s.get("bank") or [])
+    if jenis == "kumpulan":
+        kategori = s.get("kategori") or []
+        keluar = []
+        for it in s.get("item") or []:
+            jaw = it.get("jawapan", -1)
+            if isinstance(jaw, int) and 0 <= jaw < len(kategori):
+                keluar.append(f"{it.get('teks', '')} \u2014 {kategori[jaw]}")
+            else:
+                keluar.append(it.get("teks", ""))
+        return "\n".join(keluar)
+    return ""
+
+
+def jawapan_penuh_dengar(s: dict, rujuk_arab: bool) -> str:
+    """Cermin `SoalanKertas.jawapanPenuhDengar` dalam Dart.
+
+    Panel pembetulan meminta satu kunci: `o-<teks jawapan penuh>`. Kunci itu
+    mesti sama seperti teks yang appcribers, jadi logik ini kena salin
+    daripada model Dart. Tanpa padanan ini, jawapan pembetulan jatuh kepada
+    TTS peranti yang selalunya tiada suara Melayu.
+    """
+    jenis = s.get("jenis")
+    if rujuk_arab:
+        return jawapan_penuh_teks(s)
+
+    jcr = s.get("jawapanContohRumi") or []
+    if jcr:
+        return "\n".join(jcr)
+    jc = s.get("jawapanContoh") or []
+    if jc:
+        return "\n".join(jc)
+
+    if jenis in ("bulat", "objektif"):
+        keluar = []
+        for it in s.get("item") or []:
+            pil = _teks_pilihan(it.get("pilihanRumi"))
+            jaw = it.get("jawapan", -1)
+            if isinstance(jaw, int) and 0 <= jaw < len(pil):
+                keluar.append(pil[jaw])
+        return ", ".join(keluar)
+    if jenis == "betul_salah":
+        keluar = []
+        for it in s.get("item") or []:
+            tanda = "\u2713" if it.get("betul") is True else "\u2717"
+            keluar.append(f"{it.get('rumi', '')} ({tanda})")
+        return "\n".join(keluar)
+    if jenis == "suai":
+        return "\n".join(
+            f"{p.get('kiriRumi', '')} \u2014 {p.get('kananRumi', '')}"
+            for p in s.get("pasangan") or []
+        )
+    if jenis == "susun":
+        return " ".join(s.get("urutanRumi") or [])
+    if jenis == "tempat_kosong":
+        return ", ".join(s.get("bankRumi") or [])
+    if jenis == "kumpulan":
+        kategori = s.get("kategoriRumi") or []
+        keluar = []
+        for it in s.get("item") or []:
+            jaw = it.get("jawapan", -1)
+            if isinstance(jaw, int) and 0 <= jaw < len(kategori):
+                keluar.append(f"{it.get('rumi', '')} \u2014 {kategori[jaw]}")
+            else:
+                keluar.append(it.get("rumi", ""))
+        return "\n".join(keluar)
+    if jenis == "senarai":
+        return "\n".join(s.get("jawapanContohRumi") or s.get("jawapanContoh") or [])
+    if jenis in ("tulis", "huraian"):
+        # Rubrik sahaja — jawapannya ialah isi rubrik.
+        isi = s.get("idea") or []
+        return "\n".join(i.get("maksud", "") for i in isi if i.get("maksud"))
+    return ""
+
+
 def _teks(s: dict, rujuk_arab: bool) -> list[tuple[str, str, str]]:
     """Senarai (kunci, teks yang disebut, suara) bagi satu soalan.
 
@@ -524,6 +638,15 @@ def _teks(s: dict, rujuk_arab: bool) -> list[tuple[str, str, str]]:
             )
         else:
             tambah(kunci_teks)
+
+    # Jawapan penuh panel pembertura — satu kunci `o-<teks>`.
+    #
+    # Butang "Dengar soalan & jawapan betul" meminta kunci ini. Tanpa klip
+    # itu, jawapan hanya dibacakan oleh TTS peranti yang selalunya tiada
+    # suara Melayu — jadi murid tidak dapat mendengar jawapan sebenar.
+    jawapan = jawapan_penuh_dengar(s, rujuk_arab)
+    if jawapan:
+        tambah(jawapan)
 
     return [(k, v, su) for k, v, su in keluar if v]
 
