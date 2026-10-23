@@ -153,8 +153,8 @@
         {
           "id": "arab-2024-b1",
           "jenis": "objektif",
-          "soalan": "صَحْنٌ (أ) جَديدٌ (ب) نَظِيفٌ",
-          "rumi": "Shahnun (a) jadidun (b) nazifun",
+          "soalan": "هَذَا ______ جَدِيدٌ.",
+          "rumi": "Ini ______ baharu.",
           "markah": 1,
           "item": [
             {
@@ -162,12 +162,20 @@
               "rumi": "",
               "pilihan": [
                 {
-                  "teks": "جَديدٌ",
-                  "rumi": "jadidun"
+                  "teks": "صَحْنٌ",
+                  "rumi": "pinggan"
                 },
                 {
-                  "teks": "نَظِيفٌ",
-                  "rumi": "nazifun"
+                  "teks": "فِنْجَانٌ",
+                  "rumi": "cawan"
+                },
+                {
+                  "teks": "سِكِّينٌ",
+                  "rumi": "pisau"
+                },
+                {
+                  "teks": "إِبْرِيقٌ",
+                  "rumi": "teko"
                 }
               ],
               "jawapan": 2
