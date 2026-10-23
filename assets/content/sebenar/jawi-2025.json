@@ -609,6 +609,27 @@
           "jawapanContohRumi": [
             "Dilarang membuang sampah ke dalam sungai.",
             "Sila hadir ke kelas tepat pada waktunya."
+          ],
+          "idea": [
+            {
+              "maksud": "isi ayat",
+              "kata": [
+                "دلارغ",
+                "سمقه",
+                "سوغاي",
+                "حاضير",
+                "ككلس"
+              ]
+            },
+            {
+              "maksud": "pelengkap ayat",
+              "kata": [
+                "ممبواغ",
+                "كدالم",
+                "تڤت",
+                "وقتوث"
+              ]
+            }
           ]
         },
         {
@@ -626,6 +647,42 @@
             "Pada 1 April 2025 telah berlaku kebakaran pada saluran paip utama milik Petronas",
             "Petronas",
             "Bomba"
+          ],
+          "idea": [
+            {
+              "maksud": "tarikh kejadian",
+              "kata": [
+                "اڤريل",
+                "april",
+                "٢٠٢٥",
+                "2025"
+              ]
+            },
+            {
+              "maksud": "kebakaran",
+              "kata": [
+                "كباكرن",
+                "kebakaran"
+              ]
+            },
+            {
+              "maksud": "saluran paip",
+              "kata": [
+                "سالورن",
+                "saluran",
+                "ڤاءيڤ",
+                "paip"
+              ]
+            },
+            {
+              "maksud": "milik Petronas",
+              "kata": [
+                "ميليق",
+                "milik",
+                "ڤيترونس",
+                "petronas"
+              ]
+            }
           ]
         },
         {

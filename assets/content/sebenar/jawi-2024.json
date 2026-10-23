@@ -596,6 +596,26 @@
           "jawapanContohRumi": [
             "Hotel itu sangat besar.",
             "Sila tutup suis komputer itu."
+          ],
+          "idea": [
+            {
+              "maksud": "kata nama dalam ayat",
+              "kata": [
+                "سڤيتل",
+                "سوءيس",
+                "كومڤيوتر",
+                "komputer"
+              ]
+            },
+            {
+              "maksud": "kata kerja atau sifat",
+              "kata": [
+                "ساڠت",
+                "sangat",
+                "بسر",
+                "توتوڤ"
+              ]
+            }
           ]
         },
         {
@@ -626,6 +646,43 @@
           "jawapanContohRumi": [
             "Burung merbuk burung kedidi, Hinggap di pohon kayu tepi sawah, Jika hidup tidak berbudi, Ibarat pokok tidak berbuah.",
             "Hinggap, ibarat"
+          ],
+          "idea": [
+            {
+              "maksud": "burung merbuk burung kedidi",
+              "kata": [
+                "مربوق",
+                "merbuk",
+                "كديدي",
+                "kedidi"
+              ]
+            },
+            {
+              "maksud": "hinggap di pohon kopi",
+              "kata": [
+                "هيڠݢڤ",
+                "hinggap",
+                "دڤو"
+              ]
+            },
+            {
+              "maksud": "kalau hidup tidak bererti",
+              "kata": [
+                "بربودي",
+                "bererti",
+                "هيدوڤ",
+                "hidup"
+              ]
+            },
+            {
+              "maksud": "ibarat pohon tidak berbuah",
+              "kata": [
+                "بربواه",
+                "berbuah",
+                "ڤوکوق",
+                "pohon"
+              ]
+            }
           ]
         },
         {

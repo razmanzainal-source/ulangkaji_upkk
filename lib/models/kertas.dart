@@ -373,8 +373,12 @@ class SoalanKertas {
         JenisKertas.susun => urutan.length > 1 ? urutan.length : markah,
         JenisKertas.tempatKosong =>
           bilanganKosong > 0 ? bilanganKosong : markah,
+        // Markah penuh sentiasa markah yang tercetak pada kertas. Rubrik
+        // hanya menentukan **cara** markah itu diagihkan; bilangan isi rubrik
+        // tidak semestinya sama dengan markah (contohnya ayat 4 markah yang
+        // hanya mempunyai 3 isi penting).
         JenisKertas.tulis || JenisKertas.huraian =>
-          rubrik.ada ? rubrik.markah : markah,
+          markah > 0 ? markah : rubrik.markah,
         // Skema UPKK menulis markah rasmi soalan senarai ("4 markah" bagi dua
         // isi), jadi medan `markah` diutamakan — markah itulah yang dicetak
         // pada kertas. Bilangan jawapan hanya menjadi ganti apabila markah
@@ -870,7 +874,13 @@ class SoalanKertas {
       );
       return sama ? markah : 0;
     }
-    return Pemarkah.semak(rubrik, jawapan.teks).diperoleh;
+    final ditemui = Pemarkah.semak(rubrik, jawapan.teks);
+    if (ditemui.penuh <= 0) return 0;
+    final penuh = markah > 0 ? markah : ditemui.penuh;
+    if (ditemui.diperoleh >= ditemui.penuh) return penuh;
+    // Markah dikadar mengikut nisbah isi yang dijumpai. Apabila bilangan isi
+    // rubrik sama dengan markah soalan, kiraan ini tidak mengubah apa-apa.
+    return (ditemui.diperoleh * penuh / ditemui.penuh).floor();
   }
 
   /// Markah bagi soalan [JenisKertas.senarai].
