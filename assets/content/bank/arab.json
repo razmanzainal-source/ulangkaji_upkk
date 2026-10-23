@@ -388,69 +388,69 @@
       "bahagian": "A",
       "jenis": "bulat",
       "bahasa": "arab",
-      "soalan": "اخْتَرْ كَلِمَةَ الضِّدِّ الْمُنَاسِبَةَ.",
-      "rumi": "Ikhtar kalimah adh-dhidd al-munasibah.",
+      "soalan": "اخْتَرْ مُؤَنَّثَ الْكَلِمَةِ الصَّحِيحَ.",
+      "rumi": "Pilih kata mu'annath (perempuan) yang betul.",
       "markah": 4,
       "item": [
         {
-          "teks": "الضِّدُّ لِكَلِمَةِ «كَبِيرٍ» هُوَ ____.",
-          "rumi": "Adh-dhidd likalimah «kabir» huwa ____.",
+          "teks": "مُؤَنَّثُ «مُعَلِّم» هُوَ ____.",
+          "rumi": "Mu'annath bagi «mu'allim» ialah ____.",
           "pilihan": [
             {
-              "teks": "صَغِيرٌ",
-              "rumi": "saghir"
+              "teks": "مُعَلِّمَة",
+              "rumi": "mu'allimah"
             },
             {
-              "teks": "جَمِيلٌ",
-              "rumi": "jamil"
+              "teks": "مُعَلِّمُون",
+              "rumi": "mu'allimun"
             }
           ],
           "jawapan": 0
         },
         {
-          "teks": "الضِّدُّ لِكَلِمَةِ «نَظِيفٍ» هُوَ ____.",
-          "rumi": "Adh-dhidd likalimah «nazif» huwa ____.",
+          "teks": "مُؤَنَّثُ «مُسْلِم» هُوَ ____.",
+          "rumi": "Mu'annath bagi «muslim» ialah ____.",
           "pilihan": [
             {
-              "teks": "وَاسِعٌ",
-              "rumi": "wasi'"
+              "teks": "مُسْلِمَة",
+              "rumi": "muslimah"
             },
             {
-              "teks": "وَسِخٌ",
-              "rumi": "wasikh"
-            }
-          ],
-          "jawapan": 1
-        },
-        {
-          "teks": "الضِّدُّ لِكَلِمَةِ «طَوِيلٍ» هُوَ ____.",
-          "rumi": "Adh-dhidd likalimah «tawil» huwa ____.",
-          "pilihan": [
-            {
-              "teks": "قَصِيرٌ",
-              "rumi": "qasir"
-            },
-            {
-              "teks": "قَدِيمٌ",
-              "rumi": "qadim"
+              "teks": "مُسْلِمُون",
+              "rumi": "muslimun"
             }
           ],
           "jawapan": 0
         },
         {
-          "teks": "الضِّدُّ لِكَلِمَةِ «حَارٍّ» هُوَ ____.",
-          "rumi": "Adh-dhidd likalimah «harr» huwa ____.",
+          "teks": "مُؤَنَّثُ «كَاتِب» هُوَ ____.",
+          "rumi": "Mu'annath bagi «katib» ialah ____.",
           "pilihan": [
             {
-              "teks": "لَذِيذٌ",
-              "rumi": "ladzidz"
+              "teks": "كَاتِبَة",
+              "rumi": "katibah"
             },
             {
-              "teks": "بَارِدٌ",
-              "rumi": "barid"
+              "teks": "كَاتِبُون",
+              "rumi": "katibun"
             }
           ],
-          "jawapan": 1
+          "jawapan": 0
+        },
+        {
+          "teks": "مُؤَنَّثُ «طَبِيب» هُوَ ____.",
+          "rumi": "Mu'annath bagi «tabib» ialah ____.",
+          "pilihan": [
+            {
+              "teks": "طَبِيبَة",
+              "rumi": "tabibah"
+            },
+            {
+              "teks": "أَطِبَّاء",
+              "rumi": "atibba'"
+            }
+          ],
+          "jawapan": 0
         }
       ],
       "id": "arab-a7"
@@ -2882,31 +2882,31 @@
       "jenis": "objektif",
       "bahasa": "arab",
       "markah": 1,
-      "soalan": "الضِّدُّ لِكَلِمَةِ «نَظِيفٍ» هُوَ ____.",
-      "rumi": "Adh-dhidd likalimah «nazif» huwa ____.",
+      "soalan": "أَيُّ الْكَلِمَاتِ الْآتِيَةِ مُؤَنَّثٌ؟",
+      "rumi": "Yang manakah mu'annath (perempuan)?",
       "item": [
         {
           "teks": "",
           "rumi": "",
-          "jawapan": 0,
           "pilihan": [
             {
-              "teks": "وَسِخٌ",
-              "rumi": "wasikh"
+              "teks": "مُعَلِّمَة",
+              "rumi": "mu'allimah"
             },
             {
-              "teks": "جَدِيدٌ",
-              "rumi": "jadid"
+              "teks": "كِتَاب",
+              "rumi": "kitab"
             },
             {
-              "teks": "حُلْوٌ",
-              "rumi": "hulw"
+              "teks": "قَلَم",
+              "rumi": "qalam"
             },
             {
-              "teks": "طَوِيلٌ",
-              "rumi": "tawil"
+              "teks": "بَاب",
+              "rumi": "bab"
             }
-          ]
+          ],
+          "jawapan": 0
         }
       ],
       "id": "arab-b59"
@@ -2916,31 +2916,31 @@
       "jenis": "objektif",
       "bahasa": "arab",
       "markah": 1,
-      "soalan": "الضِّدُّ لِكَلِمَةِ «سَهْلٍ» هُوَ ____.",
-      "rumi": "Adh-dhidd likalimah «sahl» huwa ____.",
+      "soalan": "أَيُّ الْكَلِمَاتِ الْآتِيَةِ مُذَكَّرٌ؟",
+      "rumi": "Yang manakah mudhakkar (lelaki)?",
       "item": [
         {
           "teks": "",
           "rumi": "",
-          "jawapan": 3,
           "pilihan": [
             {
-              "teks": "قَرِيبٌ",
-              "rumi": "qarib"
+              "teks": "مَدْرَسَة",
+              "rumi": "madrasah"
             },
             {
-              "teks": "بَارِدٌ",
-              "rumi": "barid"
+              "teks": "حَدِيقَة",
+              "rumi": "hadiqah"
             },
             {
-              "teks": "قَدِيمٌ",
-              "rumi": "qadim"
+              "teks": "كِتَاب",
+              "rumi": "kitab"
             },
             {
-              "teks": "صَعْبٌ",
-              "rumi": "sa'b"
+              "teks": "مِلْعَقَة",
+              "rumi": "mil'aqah"
             }
-          ]
+          ],
+          "jawapan": 2
         }
       ],
       "id": "arab-b60"
@@ -4223,90 +4223,90 @@
       "jenis": "tulis",
       "bahasa": "arab",
       "markah": 4,
-      "soalan": "اكْتُبْ ضِدَّ هَذِهِ الْكَلِمَاتِ: كَبِيرٌ، طَوِيلٌ، جَدِيدٌ، نَظِيفٌ.",
-      "rumi": "Uktub didda hadhihil-kalimat: kabir, tawil, jadid, nazif.",
-      "idea": [
-        {
-          "maksud": "kabir -> saghir",
-          "kata": [
-            "صغير",
-            "saghir"
-          ]
-        },
-        {
-          "maksud": "tawil -> qasir",
-          "kata": [
-            "قصير",
-            "qasir"
-          ]
-        },
-        {
-          "maksud": "jadid -> qadim",
-          "kata": [
-            "قديم",
-            "qadim"
-          ]
-        },
-        {
-          "maksud": "nazif -> wasikh",
-          "kata": [
-            "وسخ",
-            "wasikh"
-          ]
-        }
-      ],
-      "jawapanContoh": [
-        "صَغِيرٌ، قَصِيرٌ، قَدِيمٌ، وَسِخٌ"
-      ],
+      "soalan": "اكْتُبْ مُؤَنَّثَ الْكَلِمَاتِ الْآتِيَةِ: مُعَلِّم، مُسْلِم، كَاتِب، طَبِيب.",
+      "rumi": "Tulis mu'annath bagi perkataan: mu'allim, muslim, katib, tabib.",
       "jawapanContohRumi": [
         "saghir, qasir, qadim, wasikh"
       ],
-      "id": "arab-c18"
+      "id": "arab-c18",
+      "jawapanContoh": [
+        "مُعَلِّمَةٌ، مُسْلِمَةٌ، كَاتِبَةٌ، طَبِيبَةٌ"
+      ],
+      "idea": [
+        {
+          "maksud": "mu'allim -> mu'allimah",
+          "kata": [
+            "معلمة",
+            "muallimah"
+          ]
+        },
+        {
+          "maksud": "muslim -> muslimah",
+          "kata": [
+            "مسلمة",
+            "muslimah"
+          ]
+        },
+        {
+          "maksud": "katib -> katibah",
+          "kata": [
+            "كاتبة",
+            "katibah"
+          ]
+        },
+        {
+          "maksud": "tabib -> tabibah",
+          "kata": [
+            "طبيبة",
+            "tabibah"
+          ]
+        }
+      ]
     },
     {
       "bahagian": "C",
       "jenis": "tulis",
       "bahasa": "arab",
       "markah": 4,
-      "soalan": "اكْتُبْ ضِدَّ هَذِهِ الْكَلِمَاتِ: قَرِيبٌ، سَهْلٌ، حَارٌّ، كَثِيرٌ.",
-      "rumi": "Uktub didda hadhihil-kalimat: qarib, sahl, harr, kathir.",
-      "idea": [
-        {
-          "maksud": "qarib -> ba'id",
-          "kata": [
-            "بعيد",
-            "baid"
-          ]
-        },
-        {
-          "maksud": "sahl -> sa'b",
-          "kata": [
-            "صعب",
-            "saab"
-          ]
-        },
-        {
-          "maksud": "harr -> barid",
-          "kata": [
-            "بارد",
-            "barid"
-          ]
-        },
-        {
-          "maksud": "kathir -> qalil",
-          "kata": [
-            "قليل",
-            "qalil"
-          ]
-        }
-      ],
-      "jawapanContoh": [
-        "بَعِيدٌ، صَعْبٌ، بَارِدٌ، قَلِيلٌ"
-      ],
+      "soalan": "اكْتُبْ مُؤَنَّثَ الْكَلِمَاتِ الْآتِيَةِ: تَاجِر، نَجَّار، خَبَّاز، حَارِس.",
+      "rumi": "Tulis mu'annath bagi perkataan: tajir, najjar, khabbaz, haris.",
       "jawapanContohRumi": [
         "ba'id, sa'b, barid, qalil"
       ],
-      "id": "arab-c19"
+      "id": "arab-c19",
+      "jawapanContoh": [
+        "تَاجِرَةٌ، نَجَّارَةٌ، خَبَّازَةٌ، حَارِسَةٌ"
+      ],
+      "idea": [
+        {
+          "maksud": "tajir -> tajirah",
+          "kata": [
+            "تاجرة",
+            "tajirah"
+          ]
+        },
+        {
+          "maksud": "najjar -> najjarah",
+          "kata": [
+            "نجارة",
+            "najjarah"
+          ]
+        },
+        {
+          "maksud": "khabbaz -> khabbazah",
+          "kata": [
+            "خبازة",
+            "khabbazah"
+          ]
+        },
+        {
+          "maksud": "haris -> harisah",
+          "kata": [
+            "حارسة",
+            "harisah"
+          ]
+        }
+      ]
     },
     {
       "bahagian": "C",
@@ -5132,66 +5132,66 @@
       "jenis": "huraian",
       "bahasa": "arab",
       "markah": 7,
-      "soalan": "اكْتُبْ ضِدَّ هَذِهِ الْكَلِمَاتِ: وَاسِعٌ، ثَقِيلٌ، سَعِيدٌ، جَمِيلٌ، الْيَمِينُ، مُجْتَهِدٌ، يَفْتَحُ.",
-      "rumi": "Uktub didda hadhihil-kalimat: wasi', thaqil, sa'id, jamil, al-yamin, mujtahid, yaftah.",
-      "idea": [
-        {
-          "maksud": "wasi' -> dyaiq",
-          "kata": [
-            "ضيق",
-            "dyaiq"
-          ]
-        },
-        {
-          "maksud": "thaqil -> khafif",
-          "kata": [
-            "خفيف",
-            "khafif"
-          ]
-        },
-        {
-          "maksud": "sa'id -> hazin",
-          "kata": [
-            "حزين",
-            "hazin"
-          ]
-        },
-        {
-          "maksud": "jamil -> qabih",
-          "kata": [
-            "قبيح",
-            "qabih"
-          ]
-        },
-        {
-          "maksud": "al-yamin -> asy-syimal",
-          "kata": [
-            "الشمال",
-            "syimal"
-          ]
-        },
-        {
-          "maksud": "mujtahid -> kaslan",
-          "kata": [
-            "كسلان",
-            "kaslan"
-          ]
-        },
-        {
-          "maksud": "yaftah -> yughliq",
-          "kata": [
-            "يغلق",
-            "yughliq"
-          ]
-        }
-      ],
-      "jawapanContoh": [
-        "ضَيِّقٌ، خَفِيفٌ، حَزِينٌ، قَبِيحٌ، الشِّمَالُ، كَسْلَانُ، يُغْلِقُ"
-      ],
+      "soalan": "اكْتُبْ مُؤَنَّثَ الْكَلِمَاتِ الْآتِيَةِ: مُعَلِّم، مُسْلِم، كَاتِب، طَبِيب، تَاجِر، نَجَّار، فَلَّاح.",
+      "rumi": "Tulis mu'annath bagi perkataan: mu'allim, muslim, katib, tabib, tajir, najjar, fallah.",
       "jawapanContohRumi": [
         "dhayyiq, khafif, hazin, qabih, asy-syimal, kaslan, yughliq"
       ],
-      "id": "arab-d2"
+      "id": "arab-d2",
+      "jawapanContoh": [
+        "مُعَلِّمَةٌ، مُسْلِمَةٌ، كَاتِبَةٌ، طَبِيبَةٌ، تَاجِرَةٌ، نَجَّارَةٌ، فَلَّاحَةٌ"
+      ],
+      "idea": [
+        {
+          "maksud": "mu'allim -> mu'allimah",
+          "kata": [
+            "معلمة",
+            "muallimah"
+          ]
+        },
+        {
+          "maksud": "muslim -> muslimah",
+          "kata": [
+            "مسلمة",
+            "muslimah"
+          ]
+        },
+        {
+          "maksud": "katib -> katibah",
+          "kata": [
+            "كاتبة",
+            "katibah"
+          ]
+        },
+        {
+          "maksud": "tabib -> tabibah",
+          "kata": [
+            "طبيبة",
+            "tabibah"
+          ]
+        },
+        {
+          "maksud": "tajir -> tajirah",
+          "kata": [
+            "تاجرة",
+            "tajirah"
+          ]
+        },
+        {
+          "maksud": "najjar -> najjarah",
+          "kata": [
+            "نجارة",
+            "najjarah"
+          ]
+        },
+        {
+          "maksud": "fallah -> fallahah",
+          "kata": [
+            "فلاحة",
+            "fallahah"
+          ]
+        }
+      ]
     },
     {
       "bahagian": "D",
@@ -6353,68 +6353,66 @@
       "jenis": "huraian",
       "bahasa": "arab",
       "markah": 7,
-      "soalan": "اكْتُبْ ضِدَّ هَذِهِ الْكَلِمَاتِ: سَرِيعٌ، غَالِي، غَنِيٌّ، نَهَارٌ، فَوْقَ، أَمَامَ، قَبْلَ.",
-      "rumi": "Uktub didda hadhihil-kalimat: sari', ghali, ghaniy, nahar, fauqa, amama, qabla.",
-      "idea": [
-        {
-          "maksud": "sari' -> bati'",
-          "kata": [
-            "بطيء",
-            "batik",
-            "bati"
-          ]
-        },
-        {
-          "maksud": "ghali -> rakhis",
-          "kata": [
-            "رخيص",
-            "rakhis"
-          ]
-        },
-        {
-          "maksud": "ghaniy -> faqir",
-          "kata": [
-            "فقير",
-            "faqir"
-          ]
-        },
-        {
-          "maksud": "nahar -> layl",
-          "kata": [
-            "ليل",
-            "الليل",
-            "layl"
-          ]
-        },
-        {
-          "maksud": "fauqa -> tahta",
-          "kata": [
-            "tahta",
-            "تحت"
-          ]
-        },
-        {
-          "maksud": "amama -> khalfa",
-          "kata": [
-            "khalfa",
-            "خلف"
-          ]
-        },
-        {
-          "maksud": "qabla -> ba'da",
-          "kata": [
-            "bada",
-            "بعد"
-          ]
-        }
-      ],
-      "jawapanContoh": [
-        "بَطِيءٌ، رَخِيصٌ، فَقِيرٌ، لَيْلٌ، تَحْتَ، خَلْفَ، بَعْدَ"
-      ],
+      "soalan": "حَوِّلِ الْجُمَلَ الْآتِيَةَ إِلَى الْمُؤَنَّثِ: هَذَا مُعَلِّمٌ نَشِيطٌ. هَذَا مُسْلِمٌ صَالِحٌ. هَذَا كَاتِبٌ مَشْهُورٌ. هَذَا طَبِيبٌ مَاهِرٌ. هَذَا تَاجِرٌ غَنِيٌّ. هَذَا نَجَّارٌ حَاذِقٌ. هَذَا فَلَّاحٌ نَشِيطٌ.",
+      "rumi": "Tukar ayat-ayat berikut kepada bentuk mu'annath: Ini guru lelaki yang rajin. Ini muslim lelaki yang soleh. Ini penulis lelaki yang terkenal. Ini doktor lelaki yang mahir. Ini peniaga lelaki yang kaya. Ini tukang kayu lelaki yang cekap. Ini petani lelaki yang rajin.",
       "jawapanContohRumi": [
         "bati', rakhis, faqir, lail, tahta, khalfa, ba'da"
       ],
-      "id": "arab-d14"
+      "id": "arab-d14",
+      "jawapanContoh": [
+        "هَذِهِ مُعَلِّمَةٌ نَشِيطَةٌ، هَذِهِ مُسْلِمَةٌ صَالِحَةٌ، هَذِهِ كَاتِبَةٌ مَشْهُورَةٌ، هَذِهِ طَبِيبَةٌ مَاهِرَةٌ، هَذِهِ تَاجِرَةٌ غَنِيَّةٌ، هَذِهِ نَجَّارَةٌ حَاذِقَةٌ، هَذِهِ فَلَّاحَةٌ نَشِيطَةٌ"
+      ],
+      "idea": [
+        {
+          "maksud": "mu'allim -> mu'allimah",
+          "kata": [
+            "معلمة",
+            "muallimah"
+          ]
+        },
+        {
+          "maksud": "muslim -> muslimah",
+          "kata": [
+            "مسلمة",
+            "muslimah"
+          ]
+        },
+        {
+          "maksud": "katib -> katibah",
+          "kata": [
+            "كاتبة",
+            "katibah"
+          ]
+        },
+        {
+          "maksud": "tabib -> tabibah",
+          "kata": [
+            "طبيبة",
+            "tabibah"
+          ]
+        },
+        {
+          "maksud": "tajir -> tajirah",
+          "kata": [
+            "تاجرة",
+            "tajirah"
+          ]
+        },
+        {
+          "maksud": "najjar -> najjarah",
+          "kata": [
+            "نجارة",
+            "najjarah"
+          ]
+        },
+        {
+          "maksud": "fallah -> fallahah",
+          "kata": [
+            "فلاحة",
+            "fallahah"
+          ]
+        }
+      ]
     },
     {
       "bahagian": "D",
