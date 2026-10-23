@@ -46,7 +46,7 @@
         },
         {
           "id": "akidah-2025-a2",
-          "jenis": "padan",
+          "jenis": "kumpulan",
           "soalan": "سوالن كدوا: سوايكن ( ا ) دݢن ( ب ) . (٦ مركه)",
           "rumi": "Soalan Kedua: Suaikan ( a ) dengan ( b ). (6 markah)",
           "markah": 6,
@@ -54,93 +54,41 @@
             {
               "teks": "جبريل الملا",
               "rumi": "Jibril al-Mala'",
-              "pilihan": [
-                {
-                  "teks": "نام رسول",
-                  "rumi": "Nama Rasul"
-                },
-                {
-                  "teks": "نام ملائكة",
-                  "rumi": "Nama Malaikat"
-                }
-              ],
               "jawapan": 1
             },
             {
               "teks": "موسى المليه",
               "rumi": "Musa al-Mala'",
-              "pilihan": [
-                {
-                  "teks": "نام رسول",
-                  "rumi": "Nama Rasul"
-                },
-                {
-                  "teks": "نام ملائكة",
-                  "rumi": "Nama Malaikat"
-                }
-              ],
               "jawapan": 0
             },
             {
               "teks": "ميكائيل المليه",
               "rumi": "Mika'il al-Mala'",
-              "pilihan": [
-                {
-                  "teks": "نام رسول",
-                  "rumi": "Nama Rasul"
-                },
-                {
-                  "teks": "نام ملائكة",
-                  "rumi": "Nama Malaikat"
-                }
-              ],
               "jawapan": 1
             },
             {
               "teks": "رضوان الله",
               "rumi": "Ridwanullah",
-              "pilihan": [
-                {
-                  "teks": "نام رسول",
-                  "rumi": "Nama Rasul"
-                },
-                {
-                  "teks": "نام ملائكة",
-                  "rumi": "Nama Malaikat"
-                }
-              ],
               "jawapan": 1
             },
             {
               "teks": "داود الل",
               "rumi": "Daud",
-              "pilihan": [
-                {
-                  "teks": "نام رسول",
-                  "rumi": "Nama Rasul"
-                },
-                {
-                  "teks": "نام ملائكة",
-                  "rumi": "Nama Malaikat"
-                }
-              ],
               "jawapan": 0
             },
             {
               "teks": "محمد لله",
               "rumi": "Muhammadullah",
-              "pilihan": [
-                {
-                  "teks": "نام رسول",
-                  "rumi": "Nama Rasul"
-                },
-                {
-                  "teks": "نام ملائكة",
-                  "rumi": "Nama Malaikat"
-                }
-              ],
               "jawapan": 0
             }
+          ],
+          "kategori": [
+            "نام رسول",
+            "نام ملائكة"
+          ],
+          "kategoriRumi": [
+            "Nama Rasul",
+            "Nama Malaikat"
           ]
         },
         {

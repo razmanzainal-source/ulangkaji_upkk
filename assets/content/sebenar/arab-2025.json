@@ -15,47 +15,10 @@
       "soalan": [
         {
           "id": "arab-2025-a1",
-          "jenis": "padan",
+          "jenis": "suai",
           "soalan": "وَافِقْ بَيْنَ مَجْمُوعَةٍ (أ) مَجْمُوعَةٍ (ب . (٣ دَرَجَاتٍ)",
           "rumi": "Wafiq bayna majmu'atin (a) majmu'atin (b). (3 markah)",
           "markah": 3,
-          "item": [
-            {
-              "teks": "السَّلَامُ عَلَيْكُمْ",
-              "rumi": "As-salamu 'alaykum",
-              "kumpulan": "A"
-            },
-            {
-              "teks": "مَسَاءَ الخَيْر",
-              "rumi": "Masa' al-khayr",
-              "kumpulan": "A"
-            },
-            {
-              "teks": "شُكْرًا",
-              "rumi": "Syukran",
-              "kumpulan": "A"
-            },
-            {
-              "teks": "وَعَلَيْكُمُ السَّلَامُ",
-              "rumi": "Wa 'alaykumu s-salam",
-              "kumpulan": "B"
-            },
-            {
-              "teks": "صَبَاحَ الخَيْرِ",
-              "rumi": "Sabaha al-khayr",
-              "kumpulan": "B"
-            },
-            {
-              "teks": "مَسَاءَ النُّورِ",
-              "rumi": "Masa' an-nur",
-              "kumpulan": "B"
-            },
-            {
-              "teks": "عَفْوًا",
-              "rumi": "'Afwan",
-              "kumpulan": "B"
-            }
-          ],
           "kategori": [
             "وَعَلَيْكُمُ السَّلَامُ",
             "صَبَاحَ الخَيْرِ",
@@ -65,6 +28,26 @@
             "",
             "",
             ""
+          ],
+          "pasangan": [
+            {
+              "kiri": "السَّلَامُ عَلَيْكُمْ",
+              "kiriRumi": "As-salamu 'alaykum",
+              "kanan": "وَعَلَيْكُمُ السَّلَامُ",
+              "kananRumi": "Wa 'alaykumu s-salam"
+            },
+            {
+              "kiri": "مَسَاءَ الخَيْرِ",
+              "kiriRumi": "Masa' al-khayr",
+              "kanan": "مَسَاءَ النُّورِ",
+              "kananRumi": "Masa' an-nur"
+            },
+            {
+              "kiri": "شُكْرًا",
+              "kiriRumi": "Syukran",
+              "kanan": "عَفْوًا",
+              "kananRumi": "'Afwan"
+            }
           ]
         },
         {
