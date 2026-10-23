@@ -153,6 +153,70 @@
         {
           "id": "arab-2024-b1",
           "jenis": "objektif",
+          "soalan": "هَذَا ______ نَظِيفٌ.",
+          "rumi": "Ini ______ bersih.",
+          "markah": 1,
+          "item": [
+            {
+              "teks": "",
+              "rumi": "",
+              "pilihan": [
+                {
+                  "teks": "جَوْرَبٌ",
+                  "rumi": "stoking"
+                },
+                {
+                  "teks": "حِزَامٌ",
+                  "rumi": "tali pinggang"
+                },
+                {
+                  "teks": "حِذَاءٌ",
+                  "rumi": "kasut"
+                },
+                {
+                  "teks": "بَنْطَلُونٌ",
+                  "rumi": "seluar"
+                }
+              ],
+              "jawapan": 2
+            }
+          ]
+        },
+        {
+          "id": "arab-2024-b2",
+          "jenis": "objektif",
+          "soalan": "مَا هَذِهِ؟",
+          "rumi": "Apakah ini?",
+          "markah": 1,
+          "item": [
+            {
+              "teks": "",
+              "rumi": "",
+              "pilihan": [
+                {
+                  "teks": "ثَلَّاجَةٌ",
+                  "rumi": "peti sejuk"
+                },
+                {
+                  "teks": "غَلَّايَةٌ",
+                  "rumi": "cerek"
+                },
+                {
+                  "teks": "مِقْلَاةٌ",
+                  "rumi": "kuali"
+                },
+                {
+                  "teks": "مِغْرَفَةٌ",
+                  "rumi": "senduk"
+                }
+              ],
+              "jawapan": 0
+            }
+          ]
+        },
+        {
+          "id": "arab-2024-b3",
+          "jenis": "objektif",
           "soalan": "هَذَا ______ جَدِيدٌ.",
           "rumi": "Ini ______ baharu.",
           "markah": 1,
@@ -178,70 +242,6 @@
                   "rumi": "teko"
                 }
               ],
-              "jawapan": 2
-            }
-          ]
-        },
-        {
-          "id": "arab-2024-b2",
-          "jenis": "objektif",
-          "soalan": "مَا هَذِهِ ؟ (أ) جَوْرَبٌ (ب) بَنْطَلُونٌ (ج) ثَلَّاجَةٌ (د) غَلَّايَةٌ",
-          "rumi": "Ma hadhihi? (a) jawrabun (b) banthalun (c) thalajah (d) ghallah",
-          "markah": 1,
-          "item": [
-            {
-              "teks": "",
-              "rumi": "",
-              "pilihan": [
-                {
-                  "teks": "جَوْرَبٌ",
-                  "rumi": "jawrabun"
-                },
-                {
-                  "teks": "بَنْطَلُونٌ",
-                  "rumi": "banthalun"
-                },
-                {
-                  "teks": "ثَلَّاجَةٌ",
-                  "rumi": "thalajah"
-                },
-                {
-                  "teks": "غَلَّايَةٌ",
-                  "rumi": "ghallah"
-                }
-              ],
-              "jawapan": 0
-            }
-          ]
-        },
-        {
-          "id": "arab-2024-b3",
-          "jenis": "objektif",
-          "soalan": "مَا هَذِهِ ؟ (أ) ثَلَّاجَةٌ (ب) غَلَّايَةٌ (ج) مِقْلَاةٌ (د) مِغْرَفَةٌ",
-          "rumi": "Ma hadhihi? (a) thalajah (b) ghallah (c) miqlah (d) mighrafah",
-          "markah": 1,
-          "item": [
-            {
-              "teks": "",
-              "rumi": "",
-              "pilihan": [
-                {
-                  "teks": "ثَلَّاجَةٌ",
-                  "rumi": "thalajah"
-                },
-                {
-                  "teks": "غَلَّايَةٌ",
-                  "rumi": "ghallah"
-                },
-                {
-                  "teks": "مِقْلَاةٌ",
-                  "rumi": "miqlah"
-                },
-                {
-                  "teks": "مِغْرَفَةٌ",
-                  "rumi": "mighrafah"
-                }
-              ],
               "jawapan": 1
             }
           ]
@@ -249,8 +249,8 @@
         {
           "id": "arab-2024-b4",
           "jenis": "objektif",
-          "soalan": "الطَّفْلُ (أ) يَأْخُذُ (ب) يُعْطِي (ج) يَفْتَحُ (د) يَضَعُ",
-          "rumi": "At-tiflu (a) ya'khuzu (b) yu'ti (c) yaftahu (d) yadha'u",
+          "soalan": "الطِّفْلُ ______ .",
+          "rumi": "Kanak-kanak itu ______ .",
           "markah": 1,
           "item": [
             {
@@ -258,20 +258,20 @@
               "rumi": "",
               "pilihan": [
                 {
-                  "teks": "يَأْخُذُ",
-                  "rumi": "ya'khuzu"
+                  "teks": "يَبْكِي",
+                  "rumi": "menangis"
                 },
                 {
-                  "teks": "يُعْطِي",
-                  "rumi": "yu'ti"
+                  "teks": "يَمْشِي",
+                  "rumi": "berjalan"
                 },
                 {
-                  "teks": "يَفْتَحُ",
-                  "rumi": "yaftahu"
+                  "teks": "يَضْحَكُ",
+                  "rumi": "ketawa"
                 },
                 {
-                  "teks": "يَضَعُ",
-                  "rumi": "yadha'u"
+                  "teks": "يَبْتَسِمُ",
+                  "rumi": "tersenyum"
                 }
               ],
               "jawapan": 0
@@ -313,8 +313,8 @@
         {
           "id": "arab-2024-b6",
           "jenis": "objektif",
-          "soalan": "مَا مِائَةٌ بِالْكَلِمَاتِ ؟ (أ) مِائَةٌ (ب) مِائَتَانِ (ج) ثَلَاثُمِائَةٍ (د) أَرْبَعُمِائَةٍ",
-          "rumi": "Ma mi'atun bil-kalimati? (a) mi'atun (b) mi'atani (c) thalathumi'ah (d) arba'umi'ah",
+          "soalan": "التِّلْمِيذُ ______ البَابَ.",
+          "rumi": "Murid itu ______ pintu.",
           "markah": 1,
           "item": [
             {
@@ -322,20 +322,20 @@
               "rumi": "",
               "pilihan": [
                 {
-                  "teks": "مِائَةٌ",
-                  "rumi": "mi'atun"
+                  "teks": "يَأْخُذُ",
+                  "rumi": "mengambil"
                 },
                 {
-                  "teks": "مِائَتَانِ",
-                  "rumi": "mi'atani"
+                  "teks": "يُعْطِي",
+                  "rumi": "memberi"
                 },
                 {
-                  "teks": "ثَلَاثُمِائَةٍ",
-                  "rumi": "thalathumi'ah"
+                  "teks": "يَفْتَحُ",
+                  "rumi": "membuka"
                 },
                 {
-                  "teks": "أَرْبَعُمِائَةٍ",
-                  "rumi": "arba'umi'ah"
+                  "teks": "يَضَعُ",
+                  "rumi": "meletakkan"
                 }
               ],
               "jawapan": 2
@@ -377,8 +377,8 @@
         {
           "id": "arab-2024-b8",
           "jenis": "objektif",
-          "soalan": "كُلُّ مَا يَأْتِي مِنْ أَنْوَاعِ المَلَابِسِ . (أ) سَاعَةٌ (ب) سِتَارٌ (ج) مِنْدِيلٌ (د) فُسْتَانٌ",
-          "rumi": "Kullu ma ya'ti min anwa'i al-malabis. (a) sa'ah (b) sitara (c) mandil (d) fustan",
+          "soalan": "مَا ١٠٠ بِالكَلِمَاتِ؟",
+          "rumi": "Apakah 100 dalam perkataan?",
           "markah": 1,
           "item": [
             {
@@ -386,20 +386,20 @@
               "rumi": "",
               "pilihan": [
                 {
-                  "teks": "سَاعَةٌ",
-                  "rumi": "sa'ah"
+                  "teks": "مِائَةٌ",
+                  "rumi": "seratus"
                 },
                 {
-                  "teks": "سِتَارٌ",
-                  "rumi": "sitara"
+                  "teks": "مِائَتَانِ",
+                  "rumi": "dua ratus"
                 },
                 {
-                  "teks": "مِنْدِيلٌ",
-                  "rumi": "mandil"
+                  "teks": "ثَلَاثُمِائَةٍ",
+                  "rumi": "tiga ratus"
                 },
                 {
-                  "teks": "فُسْتَانٌ",
-                  "rumi": "fustan"
+                  "teks": "أَرْبَعُمِائَةٍ",
+                  "rumi": "empat ratus"
                 }
               ],
               "jawapan": 0
@@ -409,8 +409,40 @@
         {
           "id": "arab-2024-b9",
           "jenis": "objektif",
-          "soalan": "أَيُّ الإِجَابَةِ الصَّحِيحَةِ مَقْبُولَةٌ. i) سَاعَةٌ ii) سِتَارٌ iii) مِنْدِيلٌ iv) فُسْتَانٌ",
-          "rumi": "Ayyu al-ijabati as-sahihah maqbulah. i) sa'ah ii) sitara iii) mandil iv) fustan",
+          "soalan": "مَا اثْنَانِ وَثَمَانُونَ بِالأَرْقَامِ؟",
+          "rumi": "Apakah 82 dalam angka?",
+          "markah": 1,
+          "item": [
+            {
+              "teks": "",
+              "rumi": "",
+              "pilihan": [
+                {
+                  "teks": "٢٨",
+                  "rumi": "28"
+                },
+                {
+                  "teks": "٨٢",
+                  "rumi": "82"
+                },
+                {
+                  "teks": "٨٦",
+                  "rumi": "86"
+                },
+                {
+                  "teks": "٦٨",
+                  "rumi": "68"
+                }
+              ],
+              "jawapan": 1
+            }
+          ]
+        },
+        {
+          "id": "arab-2024-b10",
+          "jenis": "objektif",
+          "soalan": "كُلُّ مَا يَأْتِي مِنْ أَنْوَاعِ المَلَابِسِ. i. سَاعَةٌ ii. سِتَارٌ iii. مِنْدِيلٌ iv. فُسْتَانٌ",
+          "rumi": "Yang berikut ialah jenis pakaian: i. jam ii. langsir iii. sapu tangan iv. gaun",
           "markah": 1,
           "item": [
             {
@@ -430,40 +462,8 @@
                   "rumi": "iii dan iv"
                 },
                 {
-                  "teks": "iv dan i",
-                  "rumi": "iv dan i"
-                }
-              ],
-              "jawapan": 1
-            }
-          ]
-        },
-        {
-          "id": "arab-2024-b10",
-          "jenis": "objektif",
-          "soalan": "الطَّفْلُ (أ) يَأْخُذُ (ب) يُعْطِي (ج) يَفْتَحُ (د) يَضَعُ",
-          "rumi": "At-tiflu (a) ya'khuzu (b) yu'ti (c) yaftahu (d) yadha'u",
-          "markah": 1,
-          "item": [
-            {
-              "teks": "",
-              "rumi": "",
-              "pilihan": [
-                {
-                  "teks": "يَأْخُذُ",
-                  "rumi": "ya'khuzu"
-                },
-                {
-                  "teks": "يُعْطِي",
-                  "rumi": "yu'ti"
-                },
-                {
-                  "teks": "يَفْتَحُ",
-                  "rumi": "yaftahu"
-                },
-                {
-                  "teks": "يَضَعُ",
-                  "rumi": "yadha'u"
+                  "teks": "i dan iv",
+                  "rumi": "i dan iv"
                 }
               ],
               "jawapan": 2
