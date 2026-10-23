@@ -155,11 +155,11 @@ void main() {
 
     // --- 2. Pilih subjek dan mula kertas percubaan ------------------------
     expect(
-      find.text('Mula kertas'),
+      find.text('Percubaan'),
       findsWidgets,
       reason: 'kad subjek patut menawarkan kertas percubaan',
     );
-    await _tekan(tester, find.text('Mula kertas'));
+    await _tekan(tester, find.text('Percubaan'));
 
     expect(
       await _tungguSehingga(tester, find.text('Mula menjawab')),

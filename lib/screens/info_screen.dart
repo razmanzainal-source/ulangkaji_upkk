@@ -19,7 +19,7 @@ class InfoScreen extends StatefulWidget {
   const InfoScreen({super.key});
 
   /// Versi app — dipaparkan pada skrin Info.
-  static const String versi = '1.0.0';
+  static const String versi = '1.2.6';
 
   /// Alamat e-mel pembina app, untuk pertanyaan dan pembetulan.
   static const String emel = 'razman.zainal@gmail.com';
@@ -76,9 +76,13 @@ class _InfoScreenState extends State<InfoScreen> {
                     'mengikut subjek.',
                   ),
                   _Perenggan(
-                    'Semua soalan dalam app ini ditulis sendiri untuk app ini '
-                    'berdasarkan format dan skop sukatan UPKK. Ia bukan '
-                    'soalan bocor dan bukan ramalan.',
+                    'Terdapat dua jenis kertas. Tab "Kertas" memuatkan '
+                    'transkrip kertas UPKK 2024 dan 2025 yang diimbas, '
+                    'lengkap dengan skema jawapan yang telah disemak satu '
+                    'demi satu. "Latih tubi" dan "Percubaan" pula dibina '
+                    'daripada soalan yang ditulis sendiri mengikut format '
+                    'dan skop sukatan UPKK — ia bukan soalan bocor dan '
+                    'bukan ramalan.',
                   ),
                 ],
               ),
@@ -177,10 +181,11 @@ class _InfoScreenState extends State<InfoScreen> {
                 ikon: Icons.folder_copy_rounded,
                 kanak: const [
                   _Perenggan(
-                    'Tab "Kertas" mengandungi imbasan kertas UPKK 2024 dan '
-                    '2025 untuk setiap subjek. Kertas ini dipaparkan sebagai '
-                    'gambar, bukan ditulis semula — jadi susun atur, arahan '
-                    'dan bentuk soalannya sama seperti kertas sebenar.',
+                    'Tab "Kertas" mengandungi kertas UPKK 2024 dan 2025 untuk '
+                    'setiap subjek. Imbasan asal boleh dibaca halaman demi '
+                    'halaman, dan kertas itu juga boleh dijawab terus dalam '
+                    'app — soalan, susunan dan markahnya mengikut kertas '
+                    'sebenar.',
                   ),
                   _Perenggan(
                     'Gunakan kertas sebenar untuk mengenal bentuk kertas. '
