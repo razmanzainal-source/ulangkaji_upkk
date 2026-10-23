@@ -16,5 +16,24 @@
     "jawi-2025": "ج ب ج ب ا ج ا د ج د",
     "sirah-2024": "ا ج ج د ج ب د ا ب ب",
     "sirah-2025": "د ب ا ا ج ا ج ب د ب"
+  },
+  "pengesahan_guru": {
+    "catatan": "Subjek yang telah disemak dan diluluskan oleh guru KAFA.",
+    "akidah": {
+      "status": "LULUS",
+      "kertas": [
+        "akidah-2024",
+        "akidah-2025"
+      ],
+      "oleh": "guru KAFA",
+      "tarikh": "2026-10-23"
+    },
+    "_belum_disemak_guru": [
+      "adab",
+      "arab",
+      "ibadah",
+      "jawi",
+      "sirah"
+    ]
   }
 }
