@@ -19,7 +19,7 @@ class InfoScreen extends StatefulWidget {
   const InfoScreen({super.key});
 
   /// Versi app — dipaparkan pada skrin Info.
-  static const String versi = '1.2.8';
+  static const String versi = '1.2.9';
 
   /// Alamat e-mel pembina app, untuk pertanyaan dan pembetulan.
   static const String emel = 'razman.zainal@gmail.com';
@@ -191,6 +191,51 @@ class _InfoScreenState extends State<InfoScreen> {
                     'Gunakan kertas sebenar untuk mengenal bentuk kertas. '
                     'Gunakan kertas percubaan dalam app untuk berlatih '
                     'menjawab dalam masa yang ditetapkan.',
+                  ),
+                ],
+              ),
+              const SizedBox(height: 12),
+              const _Kotak(
+                tajuk: 'Cara markah dikira',
+                ikon: Icons.calculate_rounded,
+                kanak: [
+                  _Perenggan(
+                    'Setiap kertas bernilai 70 markah. Markah penuh yang '
+                    'dipaparkan sentiasa mengikut markah yang tercetak pada '
+                    'kertas sebenar — bukan anggaran app.',
+                  ),
+                  _Perenggan(
+                    'Soalan pilihan (bulat, aneka pilihan, betul atau salah, '
+                    'padanan dan isi tempat kosong): satu jawapan betul = satu '
+                    'markah. Tiada markah diberi untuk jawapan kosong.',
+                  ),
+                  _Perenggan(
+                    'Soalan senarai isi: setiap baris yang ditulis murid '
+                    'dipadankan dengan satu jawapan dalam skema. Satu isi betul '
+                    '= satu bahagian markah. Isi yang sama ditulis dua kali '
+                    'tidak dikira dua kali.',
+                  ),
+                  _Perenggan(
+                    'Soalan jawapan bertulis (ayat): app menggunakan rubrik '
+                    'kata kunci. Setiap soalan dipecahkan kepada beberapa isi, '
+                    'dan setiap isi yang dijumpai dalam jawapan murid diberi '
+                    'markah. Murid tidak perlu menyalin ayat skema bulat-bulat '
+                    '— isi yang sama dengan perkataan sendiri tetap dikira.',
+                  ),
+                  _Perenggan(
+                    'Enjin pemarkahan menerima imbuhan berbeza ("mengangkut" '
+                    'sama dengan "angkut"), sinonim, salah eja kecil, serta '
+                    'tulisan Jawi dan Rumi. Ia tidak menilai tatabahasa atau '
+                    'mutu ayat.',
+                  ),
+                  _Perenggan(
+                    'Sebab itu jawapan contoh sentiasa dipaparkan selepas '
+                    'murid menjawab. Jika markahnya tersasar, murid tetap '
+                    'dapat melihat jawapan yang betul dan belajar daripadanya.',
+                  ),
+                  _Perenggan(
+                    'Latih tubi tidak memberi markah atau gred. Markah hanya '
+                    'dikira dalam kertas percubaan.',
                   ),
                 ],
               ),
