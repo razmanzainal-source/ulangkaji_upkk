@@ -19,7 +19,7 @@ class InfoScreen extends StatefulWidget {
   const InfoScreen({super.key});
 
   /// Versi app — dipaparkan pada skrin Info.
-  static const String versi = '1.3.0';
+  static const String versi = '1.3.1';
 
   /// Alamat e-mel pembina app, untuk pertanyaan dan pembetulan.
   static const String emel = 'razman.zainal@gmail.com';

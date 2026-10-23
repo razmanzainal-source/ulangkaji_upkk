@@ -354,7 +354,7 @@ class Pemarkah {
     }
 
     for (final bentuk in asas) {
-      if (bentuk.length >= _panjangMinimum) hasil.add(bentuk);
+      if (bentuk.length >= _panjangPadan) hasil.add(bentuk);
     }
     return hasil;
   }
@@ -404,6 +404,14 @@ class Pemarkah {
 
   /// Perkataan lebih pendek daripada ini tidak dipotong imbuhannya.
   static const int _panjangMinimum = 4;
+
+  /// Panjang terendah perkataan yang **boleh dipadankan secara tepat**.
+  ///
+  /// Tiga huruf dibenarkan supaya kata Arab pendek seperti «ليل» (malam),
+  /// «تحت» (bawah) dan «خلف» (belakang) masih boleh ditanda, tetapi padanan
+  /// kabur (lihat [hampirSama]) kekal bermula pada empat huruf supaya
+  /// perkataan pendek tidak bertukar sesuka hati.
+  static const int _panjangPadan = 3;
 
   static const String _vokal = 'aeiou';
 
