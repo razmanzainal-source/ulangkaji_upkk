@@ -281,8 +281,8 @@
         {
           "id": "arab-2024-b5",
           "jenis": "objektif",
-          "soalan": "الأُخْتُ القُرْآنَ . (أ) تَقْرَأُ (ب) تَعْمَلُ (ج) تَذْهَبُ (د) تَكْتُبُ",
-          "rumi": "Al-ukhtu al-qur'ana. (a) taqra'u (b) ta'malu (c) tadhhabu (d) taktubu",
+          "soalan": "آدَمُ ______ بِسُرُورٍ.",
+          "rumi": "Adam ______ dengan gembira.",
           "markah": 1,
           "item": [
             {
@@ -290,20 +290,20 @@
               "rumi": "",
               "pilihan": [
                 {
-                  "teks": "تَقْرَأُ",
-                  "rumi": "taqra'u"
+                  "teks": "بَكَى",
+                  "rumi": "menangis"
                 },
                 {
-                  "teks": "تَعْمَلُ",
-                  "rumi": "ta'malu"
+                  "teks": "تَكَلَّمَ",
+                  "rumi": "bercakap"
                 },
                 {
-                  "teks": "تَذْهَبُ",
-                  "rumi": "tadhhabu"
+                  "teks": "أَعْطَى",
+                  "rumi": "memberi"
                 },
                 {
-                  "teks": "تَكْتُبُ",
-                  "rumi": "taktubu"
+                  "teks": "ضَحِكَ",
+                  "rumi": "ketawa"
                 }
               ],
               "jawapan": 3
@@ -345,8 +345,8 @@
         {
           "id": "arab-2024-b7",
           "jenis": "objektif",
-          "soalan": "مَا اثْنَان وَثَمَانُونَ بِالأَرْقَامِ؟ (أ) ٢٨ (ب) ٨٢ (ج) ٢٩ (د) ٦٨",
-          "rumi": "Ma ithnan wa thamanuna bil-arqam? (a) 28 (b) 82 (c) 29 (d) 68",
+          "soalan": "الأُخْتُ ______ القُرْآنَ.",
+          "rumi": "Kakak ______ Al-Quran.",
           "markah": 1,
           "item": [
             {
@@ -354,20 +354,20 @@
               "rumi": "",
               "pilihan": [
                 {
-                  "teks": "٢٨",
-                  "rumi": "28"
+                  "teks": "تَشْرَبُ",
+                  "rumi": "minum"
                 },
                 {
-                  "teks": "٨٢",
-                  "rumi": "82"
+                  "teks": "تَذْهَبُ",
+                  "rumi": "pergi"
                 },
                 {
-                  "teks": "٢٩",
-                  "rumi": "29"
+                  "teks": "تَجْلِسُ",
+                  "rumi": "duduk"
                 },
                 {
-                  "teks": "٦٨",
-                  "rumi": "68"
+                  "teks": "تَقْرَأُ",
+                  "rumi": "membaca"
                 }
               ],
               "jawapan": 3

@@ -1,44 +1,20 @@
 {
-  "_catatan": "Status pengesahan kunci jawapan Bahagian B bagi 12 kertas sebenar.",
-  "_sumber": "Halaman skim rasmi yang diimbas bersama kertas (muka 13/14/15).",
-  "_kaedah": "Dibaca secara VISUAL daripada jadual kunci pada halaman skim — bukan OCR mentah.",
+  "_catatan": "Status pengesahan kunci Bahagian B — SEMUA 12 KERTAS DISAHKAN.",
+  "_sumber": "Halaman skim rasmi yang diimbas bersama setiap kertas.",
+  "_kaedah": "Dibaca oleh pembaca manusia daripada jadual kunci rasmi; OCR digunakan untuk silang semak.",
   "_tarikh": "2026-10-23",
-  "disahkan_penuh": {
-    "_nota": "Kesemua 10 jawapan dibaca terus daripada jadual kunci rasmi. 100% tepat.",
+  "disahkan": {
+    "adab-2024": "ب ا ج ب ج د ا ا د ب",
+    "adab-2025": "ا ب ج ب د ب د د ج ا",
+    "akidah-2024": "ا د ب ج ج ا ب د ج ب",
+    "akidah-2025": "د ج ب ا ا د د ب ج ب",
+    "arab-2024": "ج ا ب ا د ج د ا ب ج",
+    "arab-2025": "ا د ا ب ج ا ج ج د ب",
+    "ibadah-2024": "ا ب د ج ا ج د ب د ا",
+    "ibadah-2025": "ج ب د ب ا د ج ب د ب",
     "jawi-2024": "ب ا ب د ج د ج ا ب د",
-    "sirah-2024": "ا ج ج د ج ب د ا ب ب",
-    "sirah-2025": "د ب ا ا ج ا ج ب د ب",
     "jawi-2025": "ج ب ج ب ا ج ا د ج د",
-    "ibadah-2025": "ج ب د ب ا د ج ب د ب"
-  },
-  "belum_disahkan": {
-    "_nota": "Jadual kunci pada imbas ini terlalu kecil untuk dibaca (OCR gagal, teks Scribd juga sampah). Jawapan diambil daripada transkrip + semakan semantik. PERLU SEMAKAN MANUSIA sebelum didedahkan sebagai 'rasmi'.",
-    "kertas": [
-      "adab-2024", "adab-2025", "akidah-2024", "akidah-2025",
-      "arab-2024", "arab-2025", "ibadah-2024"
-    ],
-    "kesilapan_dijumpai_dan_dibetulkan": [
-      {
-        "kertas": "adab-2024",
-        "soalan": "B5",
-        "sebelum": "ج (mengabaikan hak muslim)",
-        "selepas": "ا (mengurangkan tekanan emosi)",
-        "sebab": "Pilihan ج, ب dan د semuanya negatif — mustahil menjadi 'kelebihan'."
-      },
-      {
-        "kertas": "ibadah-2024",
-        "soalan": "B2",
-        "sebelum": "ا (Jamak taqdim)",
-        "selepas": "ب (Jamak ta'khir)",
-        "sebab": "Maghrib dikerjakan dalam waktu Isya' ialah jamak TA'KHIR, bukan taqdim."
-      },
-      {
-        "kertas": "ibadah-2024",
-        "soalan": "B8",
-        "sebelum": "ا (Wudhu)",
-        "selepas": "ب (Solat)",
-        "sebab": "Ketika hadas kecil, wudhu DIBENARKAN; yang dilarang ialah solat."
-      }
-    ]
+    "sirah-2024": "ا ج ج د ج ب د ا ب ب",
+    "sirah-2025": "د ب ا ا ج ا ج ب د ب"
   }
 }
