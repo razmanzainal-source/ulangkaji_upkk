@@ -29,11 +29,27 @@
       "tarikh": "2026-10-23"
     },
     "_belum_disemak_guru": [
-      "adab",
       "arab",
       "ibadah",
-      "jawi",
-      "sirah"
-    ]
+      "jawi"
+    ],
+    "adab": {
+      "status": "LULUS",
+      "kertas": [
+        "adab-2024",
+        "adab-2025"
+      ],
+      "oleh": "guru KAFA",
+      "tarikh": "2026-10-24"
+    },
+    "sirah": {
+      "status": "LULUS",
+      "kertas": [
+        "sirah-2024",
+        "sirah-2025"
+      ],
+      "oleh": "guru KAFA",
+      "tarikh": "2026-10-24"
+    }
   }
 }
