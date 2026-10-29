@@ -19,7 +19,7 @@ class InfoScreen extends StatefulWidget {
   const InfoScreen({super.key});
 
   /// Versi app — dipaparkan pada skrin Info.
-  static const String versi = '1.3.2';
+  static const String versi = '1.3.3';
 
   /// Alamat e-mel pembina app, untuk pertanyaan dan pembetulan.
   static const String emel = 'razman.zainal@gmail.com';
@@ -262,6 +262,20 @@ class _InfoScreenState extends State<InfoScreen> {
               ),
               const SizedBox(height: 12),
               const _Sumbangan(),
+              const SizedBox(height: 12),
+              const _Kotak(
+                tajuk: 'Penghargaan',
+                ikon: Icons.volunteer_activism_rounded,
+                kanak: [
+                  _Perenggan(
+                    'Terima kasih kepada guru-guru KAFA Sekolah Kebangsaan '
+                    'Putrajaya Presint 15 (1) yang bersama-sama menguji app '
+                    'ini pada peringkat awal.',
+                  ),
+                  _NamaGuru('Mohamad Adam Idham bin Ismail'),
+                  _NamaGuru('Muhammad Islah bin Muhamad Sahimi'),
+                ],
+              ),
               const SizedBox(height: 12),
               _Kredit(),
             ],
@@ -608,6 +622,36 @@ class _Kotak extends StatelessWidget {
           ),
           const SizedBox(height: 12),
           ...kanak,
+        ],
+      ),
+    );
+  }
+}
+
+class _NamaGuru extends StatelessWidget {
+  const _NamaGuru(this.nama);
+
+  final String nama;
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: const EdgeInsets.only(bottom: 8),
+      child: Row(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          const Padding(
+            padding: EdgeInsets.only(top: 1),
+            child: Icon(Icons.person_outline_rounded,
+                size: 18, color: Warna.utama),
+          ),
+          const SizedBox(width: 10),
+          Expanded(
+            child: Text(
+              nama,
+              style: Teks.biasa.copyWith(fontWeight: FontWeight.w700),
+            ),
+          ),
         ],
       ),
     );
