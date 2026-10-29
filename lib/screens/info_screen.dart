@@ -19,7 +19,7 @@ class InfoScreen extends StatefulWidget {
   const InfoScreen({super.key});
 
   /// Versi app — dipaparkan pada skrin Info.
-  static const String versi = '1.3.3';
+  static const String versi = '1.3.4';
 
   /// Alamat e-mel pembina app, untuk pertanyaan dan pembetulan.
   static const String emel = 'razman.zainal@gmail.com';
@@ -272,8 +272,8 @@ class _InfoScreenState extends State<InfoScreen> {
                     'Putrajaya Presint 15 (1) yang bersama-sama menguji app '
                     'ini pada peringkat awal.',
                   ),
-                  _NamaGuru('Mohamad Adam Idham bin Ismail'),
-                  _NamaGuru('Muhammad Islah bin Muhamad Sahimi'),
+                  _NamaGuru('Ust. Mohamad Adam Idham bin Ismail'),
+                  _NamaGuru('Ust. Muhammad Islah bin Muhamad Sahimi'),
                 ],
               ),
               const SizedBox(height: 12),
@@ -649,7 +649,11 @@ class _NamaGuru extends StatelessWidget {
           Expanded(
             child: Text(
               nama,
-              style: Teks.biasa.copyWith(fontWeight: FontWeight.w700),
+              style: Teks.biasa.copyWith(
+                fontSize: 13.5,
+                fontWeight: FontWeight.w400,
+                color: Colors.black87,
+              ),
             ),
           ),
         ],
