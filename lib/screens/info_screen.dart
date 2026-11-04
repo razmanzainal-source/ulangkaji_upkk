@@ -446,7 +446,7 @@ class _Kepala extends StatelessWidget {
           ),
           const SizedBox(height: 4),
           Text(
-            'Versi ${InfoScreen.versi} • Percuma',
+            'Versi ${InfoScreen.versi} • Latih tubi percuma',
             style: Teks.label.copyWith(color: Colors.white70),
           ),
         ],
