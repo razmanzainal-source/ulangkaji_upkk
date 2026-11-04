@@ -129,7 +129,11 @@ void main() {
   ) async {
     // Mulakan dari keadaan bersih: tiada nama, tiada rekod kemajuan. Tanpa ini
     // ujian bergantung pada data yang tertinggal daripada larian sebelumnya.
-    SharedPreferences.setMockInitialValues({});
+    // Versi Penuh dianggap sudah dibeli supaya ujian dapat melalui mod
+    // Percubaan tanpa membuka skrin pembelian.
+    SharedPreferences.setMockInitialValues({
+      'pembelian_penuh': true,
+    });
 
     app.main();
 

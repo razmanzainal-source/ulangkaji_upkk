@@ -5,7 +5,6 @@
 // dianggap betul bagi «معلمة» — dan soalan ini tidak menguji apa-apa.
 import 'package:flutter_test/flutter_test.dart';
 import 'package:ulangkaji_upkk/models/jawapan.dart';
-import 'package:ulangkaji_upkk/models/kertas.dart';
 import 'package:ulangkaji_upkk/services/bank_kertas.dart';
 
 void main() {

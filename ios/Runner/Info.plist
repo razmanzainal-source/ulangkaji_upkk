@@ -27,7 +27,9 @@
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSPhotoLibraryAddUsageDescription</key>
-	<string>App ini menyimpan kod QR sumbangan ke dalam galeri foto anda apabila anda menekan butang Simpan.</string>
+	<string>Aplikasi menyimpan kad keputusan dan kad lencana ke dalam album Foto anda apabila anda menekan butang Simpan.</string>
+	<key>ITSAppUsesNonExemptEncryption</key>
+	<false/>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>

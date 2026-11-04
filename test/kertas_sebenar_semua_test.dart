@@ -14,7 +14,6 @@
 import 'dart:convert';
 import 'dart:io';
 
-import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 import 'package:ulangkaji_upkk/models/kertas.dart';
@@ -24,7 +23,7 @@ void main() {
   TestWidgetsFlutterBinding.ensureInitialized();
 
   /// Nama fail JSON di `assets/content/sebenar/` (tanpa `.json`).
-  List<String> _failSebenar() {
+  List<String> failSebenar() {
     final dir = Directory('assets/content/sebenar');
     if (!dir.existsSync()) return const [];
     return dir
@@ -39,7 +38,7 @@ void main() {
   group('muatan kertas sebenar', () {
     test('setiap fail JSON di assets/content/sebenar berjaya di-parse', () {
       final gagal = <String>[];
-      for (final nama in _failSebenar()) {
+      for (final nama in failSebenar()) {
         try {
           final json = jsonDecode(
             File('assets/content/sebenar/$nama.json').readAsStringSync(),
@@ -59,7 +58,7 @@ void main() {
 
     test('setiap kertas ditranskrip boleh dijawab dalam app', () async {
       await BankKertas.instance.muat();
-      for (final nama in _failSebenar()) {
+      for (final nama in failSebenar()) {
         expect(
           BankKertas.instance.bolehJawab(nama),
           isTrue,
@@ -70,7 +69,7 @@ void main() {
   });
 
   group('format rasmi setiap kertas sebenar', () {
-    for (final nama in _failSebenar()) {
+    for (final nama in failSebenar()) {
       test('$nama menepati format UPKK', () async {
         await BankKertas.instance.muat();
         final k = BankKertas.instance.kertasJawab(nama);

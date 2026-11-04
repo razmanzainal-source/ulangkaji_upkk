@@ -109,7 +109,7 @@ class _PlatformAudioPalsu extends AudioplayersPlatformInterface {
   Future<int?> getCurrentPosition(String playerId) async => null;
 
   @override
-  Future<void> emitLog(String playerId, String message) async {}
+  Future<void> emitLog(String? playerId, String message) async {}
 
   @override
   Future<void> emitError(String playerId, String code, String message) async {}
@@ -117,7 +117,7 @@ class _PlatformAudioPalsu extends AudioplayersPlatformInterface {
   /// Pancarkan peristiwa "prepared" — platform sebenaratóriaseret
   /// apabila sumber siap dimuatkan. Tanpa ini, `play()` menggantung
   /// menunggu peristiwa itu.
-  void _sedia([String? playerId]) {
+  void _sedia() {
     for (final pengawal in _aliran.values) {
       pengawal.add(
         const AudioEvent(

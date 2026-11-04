@@ -16,7 +16,6 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:ulangkaji_upkk/models/jawapan.dart';
 import 'package:ulangkaji_upkk/models/kertas.dart';
 import 'package:ulangkaji_upkk/screens/keputusan_screen.dart';
 import 'package:ulangkaji_upkk/services/suara.dart';
@@ -218,8 +217,8 @@ void main() {
             nombor: 1,
             teks: 'سأبارا',
             rumi: 'Sabara',
-            pilihan: const ['ساتو', 'دوا'],
-            pilihanRumi: const ['satu', 'dua'],
+            pilihan: ['ساتو', 'دوا'],
+            pilihanRumi: ['satu', 'dua'],
             jawapan: 0,
           ),
         ],

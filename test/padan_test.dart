@@ -1,3 +1,5 @@
+library;
+
 // Papan padanan (`suai`) — membetulkan padanan yang salah.
 //
 // Bug yang dikunci di sini: setelah semua item kanan terpakai, **tiada** cip

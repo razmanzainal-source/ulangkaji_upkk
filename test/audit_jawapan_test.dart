@@ -46,6 +46,7 @@ void main() {
     print('Soalan diperiksa: $jumlah | bermasalah: ${gagal.length}');
     // ignore: avoid_print
     for (final g in gagal.take(40)) {
+      // ignore: avoid_print
       print('  $g');
     }
     expect(gagal, isEmpty, reason: gagal.join('\n'));

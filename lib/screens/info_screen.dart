@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart' show rootBundle;
 
 import '../models/gred.dart';
 import '../services/bank_kertas.dart';
+import '../services/pembelian.dart';
 import '../services/kemajuan.dart';
-import '../services/simpan_gambar.dart';
 import '../services/tetapan.dart';
+import 'ibu_bapa_screen.dart';
 import '../tema.dart';
 import '../widgets/dialog_nama.dart';
 import '../widgets/maskot.dart';
@@ -19,7 +19,7 @@ class InfoScreen extends StatefulWidget {
   const InfoScreen({super.key});
 
   /// Versi app — dipaparkan pada skrin Info.
-  static const String versi = '1.3.5';
+  static const String versi = '2.0.0';
 
   /// Alamat e-mel pembina app, untuk pertanyaan dan pembetulan.
   static const String emel = 'razman.zainal@gmail.com';
@@ -39,8 +39,6 @@ class _InfoScreenState extends State<InfoScreen> {
   Widget build(BuildContext context) {
     final jumlahSoalan = BankKertas.instance.subjek
         .fold<int>(0, (j, s) => j + BankKertas.instance.bilanganSoalan(s.id));
-    final jumlahMuka = BankKertas.instance.semuaKertasSebenar
-        .fold<int>(0, (j, k) => j + k.muka);
 
     return ListView(
       padding: EdgeInsets.zero,
@@ -102,11 +100,13 @@ class _InfoScreenState extends State<InfoScreen> {
                   _BarisNilai(
                     label: 'Kertas sebenar',
                     nilai: '${BankKertas.instance.semuaKertasSebenar.length} '
-                        'kertas • $jumlahMuka muka',
+                        'kertas digital',
                   ),
                   const _BarisNilai(label: 'Versi', nilai: InfoScreen.versi),
                 ],
               ),
+              const SizedBox(height: 12),
+              const _VersiPenuh(),
               const SizedBox(height: 12),
               const _Kotak(
                 tajuk: 'Ciri-ciri',
@@ -114,7 +114,7 @@ class _InfoScreenState extends State<InfoScreen> {
                 kanak: [
                   _Ciri(
                     ikon: Icons.assignment_rounded,
-                    tajuk: '12 kertas UPKK sebenar',
+                    tajuk: 'Kertas UPKK 2024 & 2025',
                     butiran:
                         'Enam subjek bagi 2024 dan 2025 — boleh dijawab terus '
                         'dalam app, dengan skema jawapan rasmi.',
@@ -182,10 +182,10 @@ class _InfoScreenState extends State<InfoScreen> {
                 kanak: const [
                   _Perenggan(
                     'Tab "Kertas" mengandungi kertas UPKK 2024 dan 2025 untuk '
-                    'setiap subjek. Imbasan asal boleh dibaca halaman demi '
-                    'halaman, dan kertas itu juga boleh dijawab terus dalam '
-                    'app — soalan, susunan dan markahnya mengikut kertas '
-                    'sebenar.',
+                    'setiap subjek dalam bentuk digital. Setiap kertas boleh '
+                    'dijawab terus dalam app — soalan, susunan dan markahnya '
+                    'mengikut format kertas sebenar: 70 markah, 1 jam 15 '
+                    'minit.',
                   ),
                   _Perenggan(
                     'Gunakan kertas sebenar untuk mengenal bentuk kertas. '
@@ -261,7 +261,6 @@ class _InfoScreenState extends State<InfoScreen> {
                 ],
               ),
               const SizedBox(height: 12),
-              const _Sumbangan(),
               const SizedBox(height: 12),
               const _Kotak(
                 tajuk: 'Penghargaan',
@@ -290,6 +289,73 @@ class _InfoScreenState extends State<InfoScreen> {
 }
 
 /// Satu ciri app — ikon, tajuk dan penerangan ringkas.
+class _VersiPenuh extends StatelessWidget {
+  const _VersiPenuh();
+
+  @override
+  Widget build(BuildContext context) {
+    return ValueListenableBuilder<bool>(
+      valueListenable: Pembelian.instance.terbuka,
+      builder: (context, terbuka, _) => Container(
+        padding: const EdgeInsets.all(18),
+        decoration: BoxDecoration(
+          color: Colors.white,
+          borderRadius: BorderRadius.circular(18),
+          border: Border.all(color: const Color(0xFFF0D4DE)),
+        ),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Row(
+              children: [
+                Icon(
+                  terbuka
+                      ? Icons.verified_rounded
+                      : Icons.lock_open_rounded,
+                  size: 21,
+                  color: terbuka ? Warna.betul : Warna.utama,
+                ),
+                const SizedBox(width: 10),
+                Expanded(
+                  child: Text('Versi Penuh', style: Teks.sederhana),
+                ),
+              ],
+            ),
+            const SizedBox(height: 8),
+            Text(
+              terbuka
+                  ? 'Aktif — semua mod Percubaan dan kertas UPKK digital sudah '
+                      'dibuka. Terima kasih kerana menyokong app ini.'
+                  : 'Mod Percubaan dan kertas UPKK digital dibuka dengan satu '
+                      'pembelian. Latih tubi kekal percuma.',
+              style: Teks.biasa.copyWith(color: Colors.black87, height: 1.5),
+            ),
+            const SizedBox(height: 12),
+            SizedBox(
+              width: double.infinity,
+              child: OutlinedButton.icon(
+                key: const ValueKey('info-ibu-bapa'),
+                onPressed: () => Navigator.of(context).push(
+                  MaterialPageRoute(builder: (_) => const IbuBapaScreen()),
+                ),
+                icon: const Icon(Icons.family_restroom_rounded, size: 19),
+                label: Text(
+                  terbuka ? 'Urus pembelian' : 'Untuk Ibu Bapa & Guru',
+                  style: Teks.biasa,
+                ),
+                style: OutlinedButton.styleFrom(
+                  foregroundColor: Warna.utama,
+                  padding: const EdgeInsets.symmetric(vertical: 13),
+                ),
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
 class _Ciri extends StatelessWidget {
   const _Ciri({
     required this.ikon,
@@ -343,200 +409,6 @@ class _Ciri extends StatelessWidget {
           ),
         ],
       ),
-    );
-  }
-}
-
-/// Laluan kod QR sumbangan.
-///
-/// Kod QR **tidak** dipaparkan terus dalam skrin info (ia besar dan mengganggu
-/// bacaan); ia dibuka dalam tetingkap timbul melalui butang "Kod QR sumbangan".
-const String qrDonasi = 'assets/gambar/qr_donasi.png';
-
-/// Nama pemegang akaun yang tertera pada kod QR sumbangan.
-const String namaAkaunDonasi = 'Razman Bin Md Zainal';
-
-/// Kad sumbangan — app ini percuma dan tiada iklan.
-///
-/// Sumbangan **sukarela sepenuhnya**: tiada kandungan app dikunci di belakang
-/// bayaran, dan tiada gesaan berulang. Ia hanya dinyatakan sekali di sini,
-/// untuk ibu bapa yang bertanya bagaimana hendak membalas.
-class _Sumbangan extends StatelessWidget {
-  const _Sumbangan();
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      padding: const EdgeInsets.all(16),
-      decoration: BoxDecoration(
-        color: Warna.utamaLembut,
-        borderRadius: BorderRadius.circular(18),
-        border: Border.all(color: Warna.utamaMuda, width: 1.5),
-      ),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Row(
-            children: [
-              const Icon(Icons.favorite_rounded, size: 20, color: Warna.utama),
-              const SizedBox(width: 9),
-              Expanded(
-                child: Text(
-                  'App ini percuma dan tiada iklan',
-                  style: Teks.biasa.copyWith(fontWeight: FontWeight.w800),
-                ),
-              ),
-            ],
-          ),
-          const SizedBox(height: 10),
-          Text(
-            'Kalau app ini membantu anak atau murid awak, sumbangan sukarela '
-            'amat dihargai — bagi kos penyelenggaraan, suara rakaman dan '
-            'penambahan soalan baharu.',
-            style: Teks.biasa.copyWith(height: 1.5, color: Colors.black87),
-          ),
-          const SizedBox(height: 14),
-          Center(
-            child: FilledButton.icon(
-              onPressed: () => _bukaQr(context),
-              icon: const Icon(Icons.qr_code_2_rounded, size: 20),
-              label: const Text(
-                'Kod QR sumbangan',
-                style: TextStyle(fontSize: 16, fontWeight: FontWeight.w800),
-              ),
-              style: FilledButton.styleFrom(
-                backgroundColor: Warna.utama,
-                foregroundColor: Colors.white,
-                padding: const EdgeInsets.symmetric(
-                  horizontal: 22,
-                  vertical: 13,
-                ),
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(14),
-                ),
-              ),
-            ),
-          ),
-          const SizedBox(height: 8),
-          Text(
-            'Kod QR boleh dilihat, kemudian disimpan ke galeri telefon atau '
-            'dimuat turun.',
-            textAlign: TextAlign.center,
-            style: Teks.label.copyWith(color: Colors.black54),
-          ),
-        ],
-      ),
-    );
-  }
-
-  /// Buka kod QR sumbangan di dalam tetingkap timbul.
-  Future<void> _bukaQr(BuildContext context) => showDialog<void>(
-        context: context,
-        builder: (_) => const DialogQrDonasi(),
-      );
-}
-
-/// Tetingkap timbul kod QR sumbangan — boleh dilihat dan disimpan.
-class DialogQrDonasi extends StatefulWidget {
-  const DialogQrDonasi({super.key});
-
-  @override
-  State<DialogQrDonasi> createState() => _DialogQrDonasiState();
-}
-
-class _DialogQrDonasiState extends State<DialogQrDonasi> {
-  bool _menyimpan = false;
-
-  Future<void> _simpan() async {
-    setState(() => _menyimpan = true);
-
-    var berjaya = false;
-    try {
-      final data = await rootBundle.load(qrDonasi);
-      berjaya = await simpanGambarKeGaleri(
-        data.buffer.asUint8List(),
-        nama: 'qr_sumbangan_ulangkaji_upkk',
-      );
-    } catch (_) {
-      berjaya = false;
-    }
-
-    if (!mounted) return;
-    setState(() => _menyimpan = false);
-
-    ScaffoldMessenger.of(context).showSnackBar(
-      SnackBar(
-        content: Text(
-          berjaya
-              ? 'Kod QR disimpan. Semak dalam Galeri atau folder Muat Turun.'
-              : 'Kod QR tidak dapat disimpan. Cuba tangkap skrin, atau imbas '
-                  'terus daripada paparan ini.',
-        ),
-        behavior: SnackBarBehavior.floating,
-      ),
-    );
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    return AlertDialog(
-      backgroundColor: Colors.white,
-      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(24)),
-      title: const Text('Kod QR sumbangan', style: Teks.sederhana),
-      content: SingleChildScrollView(
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            Text(
-              'Terima kasih atas sokongan! Imbas kod QR ini dengan aplikasi '
-              'bank atau e-dompit, atau simpan untuk digunakan kemudian.',
-              textAlign: TextAlign.center,
-              style: Teks.label.copyWith(height: 1.45),
-            ),
-            const SizedBox(height: 14),
-            ClipRRect(
-              borderRadius: BorderRadius.circular(16),
-              child: Image.asset(
-                qrDonasi,
-                width: 250,
-                errorBuilder: (_, _, _) => Text(
-                  'Kod QR tidak dapat dipaparkan.',
-                  style: Teks.label.copyWith(color: Warna.salah),
-                ),
-              ),
-            ),
-            const SizedBox(height: 10),
-            const Text(
-              namaAkaunDonasi,
-              style: TextStyle(fontSize: 16, fontWeight: FontWeight.w800),
-            ),
-          ],
-        ),
-      ),
-      actions: [
-        TextButton(
-          onPressed: _menyimpan ? null : () => Navigator.of(context).pop(),
-          child: const Text('Tutup'),
-        ),
-        FilledButton.icon(
-          onPressed: _menyimpan ? null : _simpan,
-          icon: _menyimpan
-              ? const SizedBox(
-                  width: 16,
-                  height: 16,
-                  child: CircularProgressIndicator(
-                    strokeWidth: 2,
-                    valueColor: AlwaysStoppedAnimation(Colors.white),
-                  ),
-                )
-              : const Icon(Icons.download_rounded, size: 19),
-          label: Text(_menyimpan ? 'Menyimpan…' : 'Simpan'),
-          style: FilledButton.styleFrom(
-            backgroundColor: Warna.utama,
-            foregroundColor: Colors.white,
-          ),
-        ),
-      ],
     );
   }
 }

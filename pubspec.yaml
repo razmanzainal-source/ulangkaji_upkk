@@ -16,7 +16,7 @@ publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 # https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
 # In Windows, build-name is used as the major, minor, and patch parts
 # of the product and file versions while build-number is used as the build suffix.
-version: 1.3.5+23
+version: 2.0.0+24
 
 environment:
   sdk: ^3.13.5
@@ -44,6 +44,7 @@ dependencies:
   gal: ^2.3.3
   web: ^1.1.1
   share_plus: ^13.3.1
+  in_app_purchase: ^3.3.1
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -99,18 +100,6 @@ flutter:
     # Imbasan kertas sebenar didaftarkan SATU-SATU mengikut folder: Flutter
     # hanya membaca fail pada aras yang dinyatakan (tidak menuruni subfolder),
     # jadi "- assets/kertas/" sahaja akan meninggalkan semua muka surat.
-    - assets/kertas/adab-2024/
-    - assets/kertas/adab-2025/
-    - assets/kertas/akidah-2024/
-    - assets/kertas/akidah-2025/
-    - assets/kertas/arab-2024/
-    - assets/kertas/arab-2025/
-    - assets/kertas/ibadah-2024/
-    - assets/kertas/ibadah-2025/
-    - assets/kertas/jawi-2024/
-    - assets/kertas/jawi-2025/
-    - assets/kertas/sirah-2024/
-    - assets/kertas/sirah-2025/
     - assets/gambar/
     # Rakaman suara (sapaan, soalan, maklum balas keputusan). Ia berada dalam
     # folder sendiri; Flutter tidak menuruni subfolder, jadi folder itu mesti

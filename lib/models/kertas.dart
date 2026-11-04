@@ -179,9 +179,6 @@ class KertasSebenar {
         muka: json['muka'] as int? ?? 0,
       );
 
-  /// Laluan aset muka surat ke-[nombor] (bermula daripada 1).
-  String laluan(int nombor) =>
-      'assets/kertas/$folder/muka${nombor.toString().padLeft(2, '0')}.jpg';
 }
 
 /// Jenis soalan yang muncul dalam kertas UPKK.

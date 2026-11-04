@@ -4,6 +4,7 @@ import 'screens/kertas_screen.dart';
 import 'screens/rumah_screen.dart';
 import 'services/bank_kertas.dart';
 import 'services/kemajuan.dart';
+import 'services/pembelian.dart';
 import 'services/suara.dart';
 import 'services/tetapan.dart';
 import 'tema.dart';
@@ -92,6 +93,7 @@ class _SkrinMuatTurunState extends State<SkrinMuatTurun> {
     await Tetapan.instance.muat();
     await Kemajuan.instance.muat();
     await BankKertas.instance.muat();
+    await Pembelian.instance.muat();
 
     // Skrin kertas memerlukan senarai subjek untuk mendapatkan warna dan kod
     // subjek; ia diambil daripada bank yang baru dimuatkan.
