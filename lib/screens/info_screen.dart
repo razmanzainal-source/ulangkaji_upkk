@@ -248,9 +248,11 @@ class _InfoScreenState extends State<InfoScreen> {
                 ikon: Icons.lock_rounded,
                 kanak: const [
                   _Perenggan(
-                    'App ini berfungsi sepenuhnya tanpa Internet. Ia tidak '
-                    'meminta akaun, tidak menghantar apa-apa, dan tidak '
-                    'mengumpul sebarang data.',
+                    'App ini berfungsi tanpa Internet. Kebenaran Internet '
+                    'pada Android hanya digunakan oleh perkhidmatan '
+                    'pembelian (tip) Play Store. Ia tidak meminta akaun, '
+                    'tidak menghantar data, dan tidak mengumpul sebarang '
+                    'data.',
                   ),
                   _Perenggan(
                     'Markah dan rekod percubaan disimpan di dalam telefon ini '
