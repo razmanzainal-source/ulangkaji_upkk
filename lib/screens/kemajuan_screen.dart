@@ -14,6 +14,7 @@ import '../widgets/kad_lencana.dart';
 import '../widgets/lencana_widget.dart';
 import '../widgets/maskot.dart';
 import 'kongsi_screen.dart';
+import 'laporan_screen.dart';
 import 'rumah_screen.dart';
 
 /// Tab "Kemajuan" — markah dan gred setiap subjek.
@@ -178,6 +179,31 @@ class _KemajuanScreenState extends State<KemajuanScreen> {
                       teks: '${Kemajuan.instance.lencanaDiperoleh.length} lencana',
                     ),
                   ],
+                ),
+              ),
+            ),
+            SliverPadding(
+              padding: const EdgeInsets.fromLTRB(16, 12, 16, 0),
+              sliver: SliverToBoxAdapter(
+                child: SizedBox(
+                  width: double.infinity,
+                  child: OutlinedButton.icon(
+                    key: const ValueKey('buka-laporan'),
+                    onPressed: () => Navigator.of(context).push(
+                      MaterialPageRoute(
+                        builder: (_) => const LaporanScreen(),
+                      ),
+                    ),
+                    icon: const Icon(Icons.picture_as_pdf_rounded, size: 19),
+                    label: const Text('Laporan Ibu Bapa', style: Teks.biasa),
+                    style: OutlinedButton.styleFrom(
+                      foregroundColor: Warna.utama,
+                      padding: const EdgeInsets.symmetric(vertical: 13),
+                      side: BorderSide(
+                        color: Warna.utama.withValues(alpha: 0.35),
+                      ),
+                    ),
+                  ),
                 ),
               ),
             ),
