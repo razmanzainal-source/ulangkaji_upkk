@@ -71,9 +71,15 @@ Jawapan borang:
 | Kebenaran | Sebab | Boleh dikeluarkan? |
 |---|---|---|
 | `WRITE_EXTERNAL_STORAGE` (`maxSdkVersion=29`) | Simpan kad keputusan ke galeri pada Android 9 ke bawah | Tidak — diperlukan oleh `gal` pada API ≤29 |
+| `INTERNET`, `ACCESS_NETWORK_STATE` | **Hanya** untuk perpustakaan Google Play Billing yang memproses tip | Tidak — dimasukkan oleh `in_app_purchase` |
+| `com.android.vending.BILLING` | Pembelian dalam app (tip) | Tidak |
 
 Tiada kebenaran lain diminta (tiada kamera, mikrofon, lokasi, kenalan,
-notifikasi, akses fail penuh, atau AD_ID).
+notifikasi, akses fail penuh, atau **AD_ID**).
+
+> Aplikasi tidak menghantar sebarang data. Kebenaran rangkaian hanya
+> digunakan oleh perpustakaan pembayaran untuk berkomunikasi dengan Play
+> Store, bukan oleh kod aplikasi.
 
 ---
 

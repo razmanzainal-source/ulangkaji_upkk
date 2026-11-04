@@ -28,19 +28,18 @@ MAIN FLOW
 LOGIN
 None. There is no account, no sign-up, no email collection, and no server.
 
-IN-APP PURCHASE (RM 9.90, one-time, non-consumable)
-Product ID: ulangkaji_upkk_full
-To review the purchase flow:
-1. Open the "Info" tab.
+IN-APP PURCHASE (voluntary tips: RM 5 / RM 10 / RM 20, consumable)
+Product IDs: tip_5, tip_10, tip_20
+To review the tip flow:
+1. Open the "Info" tab and scroll to "Sokongan".
 2. Tap "Untuk Ibu Bapa & Guru".
 3. A parental gate asks a multiplication question (e.g. "Berapakah 17 x 8?").
    Answer correctly to continue.
-4. The "Versi Penuh" screen shows the price, the "Beli" button and
-   "Pulihkan pembelian" (Restore Purchases).
-5. Tapping "Percubaan" (or "Kertas" -> "Jawab") without purchasing opens the
-   same parental gate instead of the paid content.
+4. Three tip buttons are shown with the store's localised price.
 
-The purchase unlocks the exam mode only. All practice content remains free.
+The app is COMPLETELY FREE. Tips unlock nothing - all questions, papers and
+audio remain available to every user. There is no restore button because tips
+are consumables, not content purchases.
 
 EXTERNAL SERVICES
 None. The app works fully offline. No analytics, no advertising, no
@@ -76,8 +75,8 @@ screen (without completing a real transaction).
 
 | Perkara | Status |
 |---|---|
-| Produk IAP dicipta & **ditambah ke versi** di App Store Connect | ⬜ |
-| Produk IAP berstatus "Ready to Submit" | ⬜ |
+| Produk tip (`tip_5`, `tip_10`, `tip_20`) dicipta di App Store Connect | ⬜ |
+| Produk tip berstatus "Ready to Submit" (jika mahu disemak bersama) | ⬜ |
 | Privacy Policy URL diisi | ⬜ |
 | Support URL diisi | ⬜ |
 | App Privacy: **Data Not Collected** | ⬜ |

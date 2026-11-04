@@ -11,7 +11,7 @@ Dokumen ini ialah teks siap-salin untuk App Store Connect dan Google Play Consol
 | Nama app | `Ulangkaji UPKK` | 30 aksara ✓ |
 | Subtajuk (Apple sahaja) | `Ulang kaji KAFA Tahun 5` | 30 aksara ✓ |
 | Nama pendek (Play) | `Ulangkaji UPKK` | 30 ✓ |
-| Teks promosi (Apple) | `Latih tubi percuma untuk 6 subjek UPKK. Mod Percubaan dibuka dengan satu pembelian.` | 170 ✓ |
+| Teks promosi (Apple) | `Percuma sepenuhnya: 6 subjek UPKK, kertas percubaan dan suara bacaan. Tanpa iklan.` | 170 ✓ |
 
 ## Penerangan penuh
 
@@ -36,9 +36,9 @@ CARA PENGGUNAAN
 
 PERCUMA DAN SELAMAT
 • Latih tubi percuma untuk semua murid, semua subjek.
-• Mod Percubaan dibuka dengan satu pembelian RM 9.90 — sekali sahaja,
-  tiada langganan.
-• Pembelian berada di kawasan khas ibu bapa di belakang gerbang matematik.
+• Semua kandungan percuma — tiada kandungan dikunci.
+• Pilihan tip sukarela (RM 5/10/20) di kawasan khas ibu bapa, di belakang
+  gerbang matematik. Tip tidak membuka apa-apa.
 • Tiada akaun, tiada iklan, tiada penjejakan, tiada pengumpulan data.
 • Berfungsi sepenuhnya tanpa Internet. Semua rekod disimpan di dalam
   peranti sahaja.
@@ -58,7 +58,7 @@ UPKK,KAFA,ulangkaji,adab,akidah,ibadah,jawi,sirah,bahasa arab,tahun 5,KAFA
 | Peringkat umur | Kids Category → **Ages 9–11** | Target audience: **9–11** |
 | Harga app | Percuma | Percuma |
 | Iklan | Tiada | Tiada |
-| IAP | Ya — Versi Penuh RM 9.90 | Ya — produk `ulangkaji_upkk_full` |
+| IAP | Ya — tip sukarela (consumable) | Ya — `tip_5`, `tip_10`, `tip_20` |
 
 > Peringkat umur sebenar mesti dijawab dalam borang penilaian; jangan salin
 > nilai di atas tanpa menyemak soalan yang ditanya.
@@ -67,11 +67,11 @@ UPKK,KAFA,ulangkaji,adab,akidah,ibadah,jawi,sirah,bahasa arab,tahun 5,KAFA
 
 | Medan | Nilai |
 |---|---|
-| Product ID (kedua-dua kedai) | `ulangkaji_upkk_full` |
-| Jenis | Non-consumable (Apple) / One-time product (Google) |
-| Nama paparan | `Versi Penuh` |
-| Harga | RM 9.90 (Tier 5 / setara) |
-| Penerangan | `Membuka mod Percubaan dan kertas UPKK digital. Sekali bayar, tiada langganan.` |
+| Product ID | `tip_5` · `tip_10` · `tip_20` |
+| Jenis | **Consumable** (Apple) / Consumable one-time (Google) |
+| Nama paparan | `Tip RM 5` · `Tip RM 10` · `Tip RM 20` |
+| Harga | RM 5.00 · RM 10.00 · RM 20.00 |
+| Penerangan | `Tip sukarela untuk menyokong pembangunan app. Tidak membuka apa-apa kandungan.` |
 
 ## URL
 
@@ -85,9 +85,8 @@ UPKK,KAFA,ulangkaji,adab,akidah,ibadah,jawi,sirah,bahasa arab,tahun 5,KAFA
 ## Teks "Apa Yang Baharu" (2.0.0)
 
 ```
-• Mod Percubaan kini boleh dibuka dengan satu pembelian (RM 9.90, sekali
-  bayar) di kawasan khas ibu bapa.
-• Latih tubi kekal percuma untuk semua subjek.
+• Saiz aplikasi dikurangkan 45 MB — lebih pantas dimuat turun.
 • Kertas UPKK 2024 dan 2025 kini dalam bentuk digital.
-• Saiz aplikasi dikurangkan — lebih pantas dimuat turun.
+• Semua kandungan kekal percuma. Pilihan tip sukarela ditambah untuk
+  ibu bapa yang ingin menyokong.
 ```
