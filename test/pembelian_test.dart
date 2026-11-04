@@ -1,8 +1,11 @@
-// Gerbang ibu bapa dan kunci Versi Penuh.
+// Gerbang ibu bapa dan tip sukarela.
 //
-// Apple (Kids Category) membenarkan peluang pembelian dalam app kanak-kanak
-// hanya di belakang gerbang ibu bapa. Ujian ini memastikan gerbang itu benar-
-// benar menghalang, dan bahawa jawapan salah tidak membuka kedai.
+// Dua jaminan yang dikunci oleh ujian ini:
+//  1. Peluang pembelian hanya boleh dicapai di belakang gerbang matematik
+//     (Apple Kids Category 1.3, Google Play Families).
+//  2. Tiada kandungan dikunci — Percubaan tetap percuma untuk semua.
+import 'dart:io';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:ulangkaji_upkk/screens/ibu_bapa_screen.dart';
@@ -17,91 +20,78 @@ Widget _balut(Widget anak) => MaterialApp(
 void main() {
   TestWidgetsFlutterBinding.ensureInitialized();
 
-  setUp(() {
-    Pembelian.instance.tetapkanUntukUjian(terbuka: false);
+  setUp(() async {
+    await Pembelian.instance.lupakan();
   });
 
-  testWidgets('belum beli: gerbang ibu bapa dipaparkan, bukan kedai',
-      (tester) async {
-    await tester.pumpWidget(_balut(Builder(
-      builder: (context) => TextButton(
-        onPressed: () => pastikanVersiPenuh(context),
-        child: const Text('Buka'),
-      ),
-    )));
-
-    await tester.tap(find.text('Buka'));
-    await tester.pumpAndSettle();
+  testWidgets('gerbang ibu bapa muncul sebelum tip', (tester) async {
+    await tester.pumpWidget(_balut(const IbuBapaScreen()));
+    await tester.pump();
 
     expect(find.text('Kawasan khas ibu bapa'), findsOneWidget);
-    expect(find.byKey(const ValueKey('beli-penuh')), findsNothing);
+    expect(find.byKey(const ValueKey('tip-tip_5')), findsNothing);
   });
 
-  testWidgets('jawapan salah tidak membuka kedai', (tester) async {
+  testWidgets('jawapan salah tidak membuka pilihan tip', (tester) async {
     await tester.pumpWidget(_balut(const IbuBapaScreen()));
-    await tester.pumpAndSettle();
+    await tester.pump();
 
     await tester.enterText(
         find.byKey(const ValueKey('gerbang-jawapan')), '1');
     await tester.tap(find.byKey(const ValueKey('gerbang-teruskan')));
-    await tester.pumpAndSettle();
+    await tester.pump();
 
     expect(find.text('Jawapan tidak tepat. Cuba lagi.'), findsOneWidget);
-    expect(find.byKey(const ValueKey('beli-penuh')), findsNothing);
+    expect(find.byKey(const ValueKey('tip-tip_5')), findsNothing);
   });
 
-  testWidgets('jawapan betul membuka kedai Versi Penuh', (tester) async {
+  testWidgets('jawapan betul membuka tiga pilihan tip', (tester) async {
     await tester.pumpWidget(_balut(const IbuBapaScreen()));
-    await tester.pumpAndSettle();
+    await tester.pump();
 
-    // Baca soalan yang dijana: "Berapakah 14 × 7 ?"
     final teks = tester
         .widgetList<Text>(find.textContaining('Berapakah'))
         .first
         .data!;
-    final nombor = RegExp(r'(\d+)\s*×\s*(\d+)').firstMatch(teks)!;
+    final m = RegExp(r'(\d+)\s*×\s*(\d+)').firstMatch(teks)!;
     final jawapan =
-        (int.parse(nombor.group(1)!) * int.parse(nombor.group(2)!)).toString();
+        (int.parse(m.group(1)!) * int.parse(m.group(2)!)).toString();
 
     await tester.enterText(
         find.byKey(const ValueKey('gerbang-jawapan')), jawapan);
     await tester.tap(find.byKey(const ValueKey('gerbang-teruskan')));
-    // Maskot berdenyut tanpa henti, jadi `pumpAndSettle` tidak boleh dipakai.
+    // Maskot berdenyut tanpa henti — `pumpAndSettle` tidak boleh dipakai.
     await tester.pump();
     await tester.pump(const Duration(milliseconds: 400));
 
-    expect(find.text('Versi Penuh'), findsOneWidget);
-    expect(find.byKey(const ValueKey('beli-penuh')), findsOneWidget);
-    expect(find.byKey(const ValueKey('pulihkan-pembelian')), findsOneWidget);
+    expect(find.text('Sokongan Sukarela'), findsOneWidget);
+    for (final id in Pembelian.idTip) {
+      expect(find.byKey(ValueKey('tip-$id')), findsOneWidget);
+    }
+    // Tiada butang "pulihkan" — tip bukan pembelian kandungan.
+    expect(find.text('Tip tidak membuka atau mengunci apa-apa. Semua soalan, '
+        'kertas dan suara bacaan tetap percuma untuk semua orang.'),
+        findsOneWidget);
   });
 
-  testWidgets('sudah beli: tiada gerbang dipaparkan', (tester) async {
-    Pembelian.instance.tetapkanUntukUjian(terbuka: true);
-    bool? hasil;
-
-    await tester.pumpWidget(_balut(Builder(
-      builder: (context) => TextButton(
-        onPressed: () async {
-          hasil = await pastikanVersiPenuh(context);
-        },
-        child: const Text('Buka'),
-      ),
-    )));
-
-    await tester.tap(find.text('Buka'));
-    await tester.pump();
-    await tester.pump(const Duration(milliseconds: 300));
-
-    expect(hasil, isTrue);
-    expect(find.text('Kawasan khas ibu bapa'), findsNothing);
+  test('ID produk tip ialah consumable dan stabil', () {
+    expect(Pembelian.idTip, ['tip_5', 'tip_10', 'tip_20']);
   });
 
-  test('ID produk kedua-dua kedai sama', () {
-    expect(Pembelian.idProduk, 'ulangkaji_upkk_full');
-    expect(Pembelian.kunciSimpan, 'pembelian_penuh');
+  test('tiada gerbang pembelian pada Percubaan atau Kertas', () {
+    // Ciri yang pernah percuma tidak boleh dikunci semula tanpa keputusan
+    // perniagaan yang jelas. Ujian ini mengunci keputusan itu.
+    for (final fail in [
+      'lib/screens/pilih_subjek_screen.dart',
+      'lib/screens/kertas_sebenar_screen.dart',
+    ]) {
+      final isi = File(fail).readAsStringSync();
+      expect(isi.contains('pastikanVersiPenuh'), isFalse, reason: fail);
+      expect(isi.contains('IbuBapaScreen'), isFalse, reason: fail);
+    }
   });
 
-  test('warna tema tersedia untuk skrin pembelian', () {
+  test('warna tema tersedia untuk skrin tip', () {
     expect(Warna.utama, isNotNull);
   });
 }

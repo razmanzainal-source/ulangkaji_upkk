@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-import 'ibu_bapa_screen.dart';
 import 'kertas_screen.dart';
 import '../models/kertas.dart';
 import '../services/bank_kertas.dart';
@@ -194,13 +193,9 @@ class _CipTahun extends StatelessWidget {
       child: InkWell(
         key: ValueKey('jawab-${subjek.id}-${kertas.tahun}'),
         borderRadius: BorderRadius.circular(12),
-        onTap: () async {
-          if (!await pastikanVersiPenuh(context)) return;
-          if (!context.mounted) return;
-          await Navigator.of(context).push(
-            MaterialPageRoute(builder: (_) => KertasScreen(kertas: jawab)),
-          );
-        },
+        onTap: () => Navigator.of(context).push(
+          MaterialPageRoute(builder: (_) => KertasScreen(kertas: jawab)),
+        ),
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
           child: Row(

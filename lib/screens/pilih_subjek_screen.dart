@@ -8,7 +8,6 @@ import '../services/sapaan.dart';
 import '../services/tetapan.dart';
 import '../tema.dart';
 import '../widgets/dialog_nama.dart';
-import 'ibu_bapa_screen.dart';
 import 'kertas_screen.dart';
 import 'rumah_screen.dart';
 
@@ -159,9 +158,7 @@ class _PilihSubjekScreenState extends State<PilihSubjekScreen> {
     );
   }
 
-  Future<void> _mulaKertas(Subjek subjek) async {
-    if (!await pastikanVersiPenuh(context)) return;
-    if (!mounted) return;
+  void _mulaKertas(Subjek subjek) {
     final bank = BankKertas.instance.bank(subjek.id);
     if (bank.isEmpty) {
       _maklum('Bank soalan ${subjek.nama} belum tersedia.');
