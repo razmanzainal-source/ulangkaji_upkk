@@ -53,9 +53,9 @@ void main() {
         .widgetList<Text>(find.textContaining('Berapakah'))
         .first
         .data!;
-    final m = RegExp(r'(\d+)\s*×\s*(\d+)').firstMatch(teks)!;
+    final m = RegExp(r'(\d+)\s*\+\s*(\d+)').firstMatch(teks)!;
     final jawapan =
-        (int.parse(m.group(1)!) * int.parse(m.group(2)!)).toString();
+        (int.parse(m.group(1)!) + int.parse(m.group(2)!)).toString();
 
     await tester.enterText(
         find.byKey(const ValueKey('gerbang-jawapan')), jawapan);

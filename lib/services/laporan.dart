@@ -2,8 +2,13 @@ import 'dart:typed_data';
 
 import 'package:pdf/pdf.dart';
 import 'package:pdf/widgets.dart' as pw;
+import 'dart:io';
+
+import 'package:path_provider/path_provider.dart';
+import 'package:printing/printing.dart';
 import 'package:share_plus/share_plus.dart';
 
+import '../models/gred.dart';
 import 'bank_kertas.dart';
 import 'kemajuan.dart';
 import 'tetapan.dart';
@@ -73,13 +78,12 @@ class Laporan {
     return baris.reduce((a, b) => a.purata <= b.purata ? a : b);
   }
 
-  static String gred(int peratus) {
-    if (peratus >= 80) return 'A';
-    if (peratus >= 70) return 'B';
-    if (peratus >= 60) return 'C';
-    if (peratus >= 50) return 'D';
-    return 'E';
-  }
+  /// Gred rasmi UPKK (A/B/C/D) — **satu sumber kebenaran**: model [Gred].
+  ///
+  /// Laporan tidak boleh mengira gred sendiri; dulu ia menggunakan skala lima
+  /// gred yang berbeza, sehingga markah 55% dipaparkan sebagai D dalam app
+  /// tetapi E dalam laporan.
+  static String gred(int peratus) => Gred.dariPeratus(peratus).huruf;
 
   /// Bina dokumen PDF laporan.
   static Future<Uint8List> bina({DateTime? tarikh}) async {
@@ -230,27 +234,85 @@ class Laporan {
   }
 
   /// Kongsi PDF melalui lembaran kongsi sistem.
-  static Future<ShareResult?> kongsi({
+  ///
+  /// Fail ditulis ke **direktori Dokumen** aplikasi (bukan folder sementara).
+  /// WhatsApp di iOS menolak fail daripada folder sementara kerana ia tidak
+  /// dapat membaca laluan itu selepas salinan dibuat — gejala yang dilaporkan
+  /// ialah "Couldn't send message".
+  static Future<void> kongsi({
     required Uint8List pdf,
     required String namaMurid,
   }) async {
     final namaFail =
-        'laporan-upkk-${_namaFail(namaMurid)}-${_tarikh(DateTime.now())}.pdf';
-    try {
-      return await SharePlus.instance.share(
-        ShareParams(
-          subject: 'Laporan Ulangkaji UPKK',
-          text: 'Laporan kemajuan Ulangkaji UPKK.',
-          files: [
-            XFile.fromData(pdf, name: namaFail, mimeType: 'application/pdf'),
-          ],
-          fileNameOverrides: [namaFail],
-        ),
-      );
-    } catch (_) {
-      return null;
+        'laporan-upkk-${_namaFail(namaMurid)}-${_tarikhFail(DateTime.now())}.pdf';
+
+    final dir = await getApplicationDocumentsDirectory();
+    // Buang laporan lama supaya storan tidak membesar.
+    for (final lama in dir.listSync()) {
+      final n = lama.path.split('/').last;
+      if (n.startsWith('laporan-upkk-') && n.endsWith('.pdf')) {
+        try {
+          lama.deleteSync();
+        } catch (_) {}
+      }
     }
+
+    final fail = File('${dir.path}/$namaFail');
+    await fail.writeAsBytes(pdf, flush: true);
+
+    // **Jangan** sertakan `text` bersama fail. WhatsApp di iOS menerima fail
+    // tetapi gagal menghantarnya apabila teks disertakan serentak — gejala
+    // "Couldn't send message". Hantar fail sahaja; `subject` digunakan oleh
+    // aplikasi e-mel.
+    await SharePlus.instance.share(
+      ShareParams(
+        subject: 'Laporan Ulangkaji UPKK',
+        files: [XFile(fail.path, mimeType: 'application/pdf')],
+      ),
+    );
   }
+
+  /// Kongsi laporan sebagai **gambar PNG** (satu fail bagi setiap halaman).
+  ///
+  /// WhatsApp di sesetengah peranti menolak fail PDF walaupun PDF itu sah —
+  /// gambar sentiasa diterima. Ini jalan kedua apabila PDF gagal.
+  static Future<void> kongsiImej({
+    required Uint8List pdf,
+    required String namaMurid,
+  }) async {
+    final dir = await getApplicationDocumentsDirectory();
+    for (final lama in dir.listSync()) {
+      final n = lama.path.split('/').last;
+      if (n.startsWith('laporan-upkk-') &&
+          (n.endsWith('.pdf') || n.endsWith('.png'))) {
+        try {
+          lama.deleteSync();
+        } catch (_) {}
+      }
+    }
+
+    final asas = _namaFail(namaMurid);
+    final fail = <XFile>[];
+    var halaman = 0;
+    await for (final raster in Printing.raster(pdf, dpi: 200)) {
+      halaman++;
+      final nama = 'laporan-upkk-$asas-$halaman.png';
+      final f = File('${dir.path}/$nama');
+      await f.writeAsBytes(await raster.toPng(), flush: true);
+      fail.add(XFile(f.path, mimeType: 'image/png'));
+    }
+    if (fail.isEmpty) return;
+
+    await SharePlus.instance.share(
+      ShareParams(
+        subject: 'Laporan Ulangkaji UPKK',
+        files: fail,
+      ),
+    );
+  }
+
+  static String _tarikhFail(DateTime d) =>
+      '${d.year}-${d.month.toString().padLeft(2, '0')}-${d.day.toString().padLeft(2, '0')}';
 
   static String _tarikh(DateTime d) =>
       '${d.day} ${_bulan[d.month - 1]} ${d.year}';

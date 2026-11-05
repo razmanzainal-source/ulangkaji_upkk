@@ -6,6 +6,7 @@ import 'dart:convert';
 
 import 'package:flutter_test/flutter_test.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:ulangkaji_upkk/models/gred.dart';
 import 'package:ulangkaji_upkk/services/bank_kertas.dart';
 import 'package:ulangkaji_upkk/services/kemajuan.dart';
 import 'package:ulangkaji_upkk/services/laporan.dart';
@@ -13,17 +14,22 @@ import 'package:ulangkaji_upkk/services/laporan.dart';
 void main() {
   TestWidgetsFlutterBinding.ensureInitialized();
 
-  test('gred mengikut julat UPKK', () {
+  test('gred laporan sama dengan gred rasmi app (A/B/C/D)', () {
+    // Julat rasmi UPKK: A 80-100 · B 60-79 · C 40-59 · D 1-39 (tiada E).
     expect(Laporan.gred(100), 'A');
     expect(Laporan.gred(80), 'A');
     expect(Laporan.gred(79), 'B');
-    expect(Laporan.gred(70), 'B');
-    expect(Laporan.gred(69), 'C');
-    expect(Laporan.gred(60), 'C');
-    expect(Laporan.gred(59), 'D');
-    expect(Laporan.gred(50), 'D');
-    expect(Laporan.gred(49), 'E');
-    expect(Laporan.gred(0), 'E');
+    expect(Laporan.gred(60), 'B');
+    expect(Laporan.gred(59), 'C');
+    expect(Laporan.gred(40), 'C');
+    expect(Laporan.gred(39), 'D');
+    expect(Laporan.gred(0), 'D');
+  });
+
+  test('gred laporan tidak boleh menyimpang daripada model Gred', () {
+    for (var p = 0; p <= 100; p++) {
+      expect(Laporan.gred(p), Gred.dariPeratus(p).huruf, reason: 'pada $p%');
+    }
   });
 
   test('tanpa rekod: ringkasan kosong, tiada subjek fokus', () async {

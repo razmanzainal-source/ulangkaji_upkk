@@ -796,6 +796,13 @@ class _KertasScreenState extends State<KertasScreen> {
     }
 
     if (!mounted) return;
+    if (_bilanganDijawab == 0) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(
+          content: Text('Tiada jawapan — percubaan ini tidak direkodkan.'),
+        ),
+      );
+    }
     final lencanaBaru = await _simpanRekod();
     if (!mounted) return;
     // Masa yang sama dengan rekod yang baru disimpan — kad perkongsian mesti
@@ -823,6 +830,11 @@ class _KertasScreenState extends State<KertasScreen> {
   /// Mengembalikan lencana yang **baru** diperoleh dalam sesi ini — senarai
   /// ini supaya skrin keputusan boleh merayakan achievement itu.
   Future<List<Lencana>> _simpanRekod() async {
+    // Percubaan tanpa **satu jawapan pun** tidak direkodkan. Ia bukan percubaan
+    // yang bermakna, tetapi ia menurunkan purata subjek dan mencetuskan
+    // "cadangan fokus" yang mengelirukan dalam Laporan Ibu Bapa.
+    if (_bilanganDijawab == 0) return const [];
+
     final masa = _kertas.masaMinit * 60 - _saat;
     await Kemajuan.instance.simpanPercubaan(
       RekodPercubaan(

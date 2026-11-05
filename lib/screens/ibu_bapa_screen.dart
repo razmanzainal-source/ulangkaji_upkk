@@ -41,8 +41,11 @@ class _IbuBapaScreenState extends State<IbuBapaScreen> {
   void initState() {
     super.initState();
     final r = Random();
-    _a = 13 + r.nextInt(6); // 13–18
-    _b = 6 + r.nextInt(4); // 6–9
+    // Tambah sahaja (bukan sifir) — cukup untuk menghalang kanak-kanak
+    // menekan butang pembelian secara tidak sengaja, tetapi pantas untuk
+    // ibu bapa.
+    _a = 4 + r.nextInt(6); // 4–9
+    _b = 3 + r.nextInt(7); // 3–9
   }
 
   @override
@@ -51,7 +54,7 @@ class _IbuBapaScreenState extends State<IbuBapaScreen> {
     super.dispose();
   }
 
-  int get _betul => _a * _b;
+  int get _betul => _a + _b;
 
   void _semakGerbang() {
     if (int.tryParse(_jawapan.text.trim()) == _betul) {
@@ -136,7 +139,7 @@ class _IbuBapaScreenState extends State<IbuBapaScreen> {
                     const Icon(Icons.calculate_outlined, color: Warna.utama),
                     const SizedBox(width: 10),
                     Text(
-                      'Berapakah $_a × $_b ?',
+                      'Berapakah $_a + $_b ?',
                       style: Teks.besar.copyWith(fontWeight: FontWeight.w800),
                     ),
                   ],

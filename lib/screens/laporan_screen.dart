@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import 'pratonton_laporan_screen.dart';
 import '../services/kemajuan.dart';
 import '../services/laporan.dart';
 import '../services/tetapan.dart';
@@ -21,7 +22,7 @@ class _LaporanScreenState extends State<LaporanScreen> {
   bool _menjana = false;
   String? _mesej;
 
-  Future<void> _kongsi() async {
+  Future<void> _bukaPratonton() async {
     if (_menjana) return;
     setState(() {
       _menjana = true;
@@ -29,21 +30,12 @@ class _LaporanScreenState extends State<LaporanScreen> {
     });
     try {
       final pdf = await Laporan.bina();
-      final hasil = await Laporan.kongsi(
-        pdf: pdf,
-        namaMurid: Tetapan.instance.namaAnak.trim().isEmpty
-            ? 'murid'
-            : Tetapan.instance.namaAnak,
+      if (!mounted) return;
+      await Navigator.of(context).push(
+        MaterialPageRoute(builder: (_) => PratontonLaporanScreen(pdf: pdf)),
       );
-      if (!mounted) return;
-      setState(() {
-        _mesej = hasil == null
-            ? 'Laporan tidak dapat dikongsi. Cuba lagi.'
-            : null;
-      });
     } catch (_) {
-      if (!mounted) return;
-      setState(() => _mesej = 'Laporan tidak dapat dijana. Cuba lagi.');
+      if (mounted) setState(() => _mesej = 'Laporan tidak dapat dijana.');
     } finally {
       if (mounted) setState(() => _menjana = false);
     }
@@ -82,7 +74,7 @@ class _LaporanScreenState extends State<LaporanScreen> {
             width: double.infinity,
             child: FilledButton.icon(
               key: const ValueKey('kongsi-laporan'),
-              onPressed: _menjana ? null : _kongsi,
+              onPressed: _menjana ? null : _bukaPratonton,
               icon: _menjana
                   ? const SizedBox(
                       width: 18,
@@ -92,7 +84,7 @@ class _LaporanScreenState extends State<LaporanScreen> {
                     )
                   : const Icon(Icons.picture_as_pdf_rounded),
               label: Text(
-                _menjana ? 'Menjana…' : 'Kongsi laporan (PDF)',
+                _menjana ? 'Menjana…' : 'Lihat & kongsi laporan (PDF)',
                 style: const TextStyle(
                     fontSize: 16, fontWeight: FontWeight.w800),
               ),
