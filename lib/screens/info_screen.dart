@@ -4,7 +4,6 @@ import '../models/gred.dart';
 import '../services/bank_kertas.dart';
 import '../services/kemajuan.dart';
 import '../services/tetapan.dart';
-import 'ibu_bapa_screen.dart';
 import '../tema.dart';
 import '../widgets/dialog_nama.dart';
 import '../widgets/maskot.dart';
@@ -105,7 +104,7 @@ class _InfoScreenState extends State<InfoScreen> {
                 ],
               ),
               const SizedBox(height: 12),
-              const _Sokongan(),
+              const SizedBox(height: 12),
               const SizedBox(height: 12),
               const _Kotak(
                 tajuk: 'Ciri-ciri',
@@ -290,60 +289,6 @@ class _InfoScreenState extends State<InfoScreen> {
 }
 
 /// Satu ciri app — ikon, tajuk dan penerangan ringkas.
-class _Sokongan extends StatelessWidget {
-  const _Sokongan();
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      padding: const EdgeInsets.all(18),
-      decoration: BoxDecoration(
-        color: Colors.white,
-        borderRadius: BorderRadius.circular(18),
-        border: Border.all(color: const Color(0xFFF0D4DE)),
-      ),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Row(
-            children: [
-              const Icon(Icons.volunteer_activism_rounded,
-                  size: 21, color: Warna.utama),
-              const SizedBox(width: 10),
-              Expanded(
-                child: Text('Sokongan', style: Teks.sederhana),
-              ),
-            ],
-          ),
-          const SizedBox(height: 8),
-          Text(
-            'App ini percuma sepenuhnya. Jika ia membantu anak atau murid '
-            'awak, anda boleh memberi tip sukarela sebagai tanda sokongan. '
-            'Semua kandungan kekal percuma untuk semua orang.',
-            style: Teks.biasa.copyWith(color: Colors.black87, height: 1.5),
-          ),
-          const SizedBox(height: 12),
-          SizedBox(
-            width: double.infinity,
-            child: OutlinedButton.icon(
-              key: const ValueKey('info-ibu-bapa'),
-              onPressed: () => Navigator.of(context).push(
-                MaterialPageRoute(builder: (_) => const IbuBapaScreen()),
-              ),
-              icon: const Icon(Icons.family_restroom_rounded, size: 19),
-              label: const Text('Untuk Ibu Bapa & Guru', style: Teks.biasa),
-              style: OutlinedButton.styleFrom(
-                foregroundColor: Warna.utama,
-                padding: const EdgeInsets.symmetric(vertical: 13),
-              ),
-            ),
-          ),
-        ],
-      ),
-    );
-  }
-}
-
 class _Ciri extends StatelessWidget {
   const _Ciri({
     required this.ikon,
