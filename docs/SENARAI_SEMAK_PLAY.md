@@ -23,8 +23,8 @@ dan di Desktop.
 
 | Medan | Nilai |
 |---|---|
-| App bundle | `UlangkajiUPKK-2.0.0-28.aab` (169 MB) |
-| Release name | `2.0.0 (28)` |
+| App bundle | `UlangkajiUPKK-2.0.0-29.aab` (169 MB) |
+| Release name | `2.0.0 (29)` |
 | Release notes | `Keluaran pertama: 6 subjek UPKK, kertas percubaan, laporan ibu bapa PDF.` |
 
 Selepas muat naik: **Save → Review release → Start rollout to Internal testing**.
@@ -68,15 +68,8 @@ Rujukan penuh: `docs/DATA_SAFETY.md`
 
 ## 5. Monetization
 
-`Monetize → Products → In-app products` — cipta tiga produk **consumable**:
-
-| Product ID | Name | Price |
-|---|---|---|
-| `tip_5` | Tip RM 5 | RM 5.00 |
-| `tip_10` | Tip RM 10 | RM 10.00 |
-| `tip_20` | Tip RM 20 | RM 20.00 |
-
-Status mesti **Active**. (Kod app sudah menggunakan ID ini.)
+**Tiada produk IAP untuk keluaran ini** — bahagian tip dibuang sementara
+selepas semakan Apple 2.1.0. Tip akan ditambah dalam 2.1.0.
 
 ---
 
