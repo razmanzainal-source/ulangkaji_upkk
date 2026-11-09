@@ -87,9 +87,7 @@ class _IbuBapaScreenState extends State<IbuBapaScreen> {
       ),
       body: ListView(
         padding: const EdgeInsets.fromLTRB(16, 16, 16, 32),
-        children: [
-          if (!_lulus) _gerbang() else _tip(),
-        ],
+        children: [if (!_lulus) _gerbang() else _tip()],
       ),
     );
   }
@@ -115,8 +113,7 @@ class _IbuBapaScreenState extends State<IbuBapaScreen> {
                   Icon(Icons.lock_outline_rounded, color: Warna.utama),
                   SizedBox(width: 8),
                   Expanded(
-                    child: Text('Kawasan khas ibu bapa',
-                        style: Teks.sederhana),
+                    child: Text('Kawasan khas ibu bapa', style: Teks.sederhana),
                   ),
                 ],
               ),
@@ -128,8 +125,10 @@ class _IbuBapaScreenState extends State<IbuBapaScreen> {
               ),
               const SizedBox(height: 18),
               Container(
-                padding:
-                    const EdgeInsets.symmetric(horizontal: 16, vertical: 14),
+                padding: const EdgeInsets.symmetric(
+                  horizontal: 16,
+                  vertical: 14,
+                ),
                 decoration: BoxDecoration(
                   color: Warna.utamaLembut,
                   borderRadius: BorderRadius.circular(14),
@@ -161,8 +160,7 @@ class _IbuBapaScreenState extends State<IbuBapaScreen> {
               ),
               if (_ralat != null) ...[
                 const SizedBox(height: 8),
-                Text(_ralat!,
-                    style: Teks.biasa.copyWith(color: Warna.salah)),
+                Text(_ralat!, style: Teks.biasa.copyWith(color: Warna.salah)),
               ],
               const SizedBox(height: 14),
               SizedBox(
@@ -174,9 +172,10 @@ class _IbuBapaScreenState extends State<IbuBapaScreen> {
                     backgroundColor: Warna.utama,
                     padding: const EdgeInsets.symmetric(vertical: 14),
                   ),
-                  child: const Text('Teruskan',
-                      style:
-                          TextStyle(fontSize: 16, fontWeight: FontWeight.w800)),
+                  child: const Text(
+                    'Teruskan',
+                    style: TextStyle(fontSize: 16, fontWeight: FontWeight.w800),
+                  ),
                 ),
               ),
             ],
@@ -225,8 +224,11 @@ class _IbuBapaScreenState extends State<IbuBapaScreen> {
               Text(
                 'App ini percuma sepenuhnya. Jika ia membantu anak atau murid '
                 'awak, anda boleh memberi tip sebagai tanda sokongan.',
-                style: Teks.label
-                    .copyWith(color: Colors.white, height: 1.5, fontSize: 13),
+                style: Teks.label.copyWith(
+                  color: Colors.white,
+                  height: 1.5,
+                  fontSize: 13,
+                ),
               ),
             ],
           ),
@@ -242,8 +244,11 @@ class _IbuBapaScreenState extends State<IbuBapaScreen> {
           child: Row(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const Icon(Icons.info_outline_rounded,
-                  size: 19, color: Warna.utama),
+              const Icon(
+                Icons.info_outline_rounded,
+                size: 19,
+                color: Warna.utama,
+              ),
               const SizedBox(width: 10),
               Expanded(
                 child: Text(
@@ -256,12 +261,34 @@ class _IbuBapaScreenState extends State<IbuBapaScreen> {
           ),
         ),
         const SizedBox(height: 16),
-        ValueListenableBuilder<Map<String, String>>(
-          valueListenable: Pembelian.instance.harga,
-          builder: (context, harga, _) {
+        // Butang tip hanya dipaparkan untuk produk yang benar-benar wujud di
+        // kedai. Jika produk belum dicipta (atau belum diluluskan), murid dan
+        // ibu bapa tidak nampak butang yang tidak berfungsi — dan app kekal
+        // lengkap untuk semakan App Store.
+        ValueListenableBuilder<Map<int, String>>(
+          valueListenable: Pembelian.instance.idAktif,
+          builder: (context, aktif, _) {
+            if (aktif.isEmpty) {
+              return ValueListenableBuilder<bool>(
+                valueListenable: Pembelian.instance.kedaiTersedia,
+                builder: (context, adaKedai, _) {
+                  if (!adaKedai) return const SizedBox.shrink();
+                  return Padding(
+                    padding: const EdgeInsets.only(bottom: 6),
+                    child: Text(
+                      'Tip belum tersedia pada kedai buat masa ini. Sila cuba '
+                      'sebentar lagi.',
+                      style: Teks.kecil.copyWith(color: Colors.black54),
+                    ),
+                  );
+                },
+              );
+            }
+            final harga = Pembelian.instance.harga.value;
+            final tiers = aktif.keys.toList()..sort();
             return Column(
               children: [
-                for (final tier in Pembelian.tierTip) ...[
+                for (final tier in tiers) ...[
                   _butangTip(tier, harga['$tier']),
                   const SizedBox(height: 10),
                 ],

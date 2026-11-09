@@ -12,10 +12,8 @@ import 'package:ulangkaji_upkk/screens/ibu_bapa_screen.dart';
 import 'package:ulangkaji_upkk/services/pembelian.dart';
 import 'package:ulangkaji_upkk/tema.dart';
 
-Widget _balut(Widget anak) => MaterialApp(
-      theme: ThemeData(useMaterial3: true),
-      home: anak,
-    );
+Widget _balut(Widget anak) =>
+    MaterialApp(theme: ThemeData(useMaterial3: true), home: anak);
 
 void main() {
   TestWidgetsFlutterBinding.ensureInitialized();
@@ -36,8 +34,7 @@ void main() {
     await tester.pumpWidget(_balut(const IbuBapaScreen()));
     await tester.pump();
 
-    await tester.enterText(
-        find.byKey(const ValueKey('gerbang-jawapan')), '1');
+    await tester.enterText(find.byKey(const ValueKey('gerbang-jawapan')), '1');
     await tester.tap(find.byKey(const ValueKey('gerbang-teruskan')));
     await tester.pump();
 
@@ -54,39 +51,97 @@ void main() {
         .first
         .data!;
     final m = RegExp(r'(\d+)\s*\+\s*(\d+)').firstMatch(teks)!;
-    final jawapan =
-        (int.parse(m.group(1)!) + int.parse(m.group(2)!)).toString();
+    final jawapan = (int.parse(m.group(1)!) + int.parse(m.group(2)!))
+        .toString();
 
     await tester.enterText(
-        find.byKey(const ValueKey('gerbang-jawapan')), jawapan);
+      find.byKey(const ValueKey('gerbang-jawapan')),
+      jawapan,
+    );
     await tester.tap(find.byKey(const ValueKey('gerbang-teruskan')));
     // Maskot berdenyut tanpa henti — `pumpAndSettle` tidak boleh dipakai.
     await tester.pump();
     await tester.pump(const Duration(milliseconds: 400));
 
     expect(find.text('Sokongan Sukarela'), findsOneWidget);
+    // Tiada produk di kedai dalam ujian → tiada butang tip yang tidak
+    // berfungsi dipaparkan (app mesti kekal lengkap untuk semakan Apple).
+    expect(find.byKey(const ValueKey('tip-3')), findsNothing);
+  });
+
+  testWidgets('butang tip muncul hanya untuk tier yang tersedia', (
+    tester,
+  ) async {
+    Pembelian.instance.idAktif.value = {
+      3: 'com.razmanzainal.ulangkajiUpkk.tip3',
+      5: 'com.razmanzainal.ulangkajiUpkk.tip5',
+      10: 'com.razmanzainal.ulangkajiUpkk.tip10',
+    };
+    Pembelian.instance.harga.value = {
+      '3': 'RM 3.00',
+      '5': 'RM 5.00',
+      '10': 'RM 10.00',
+    };
+    addTearDown(() {
+      Pembelian.instance.idAktif.value = {};
+      Pembelian.instance.harga.value = {};
+    });
+
+    await tester.pumpWidget(_balut(const IbuBapaScreen()));
+    await tester.pump();
+    final teks = tester
+        .widgetList<Text>(find.textContaining('Berapakah'))
+        .first
+        .data!;
+    final m = RegExp(r'(\d+)\s*\+\s*(\d+)').firstMatch(teks)!;
+    final jawapan = (int.parse(m.group(1)!) + int.parse(m.group(2)!))
+        .toString();
+    await tester.enterText(
+      find.byKey(const ValueKey('gerbang-jawapan')),
+      jawapan,
+    );
+    await tester.tap(find.byKey(const ValueKey('gerbang-teruskan')));
+    await tester.pump();
+    await tester.pump(const Duration(milliseconds: 400));
+
     for (final tier in Pembelian.tierTip) {
       expect(find.byKey(ValueKey('tip-$tier')), findsOneWidget);
     }
     // Tiada butang "pulihkan" — tip bukan pembelian kandungan.
-    expect(find.text('Tip tidak membuka atau mengunci apa-apa. Semua soalan, '
-        'kertas dan suara bacaan tetap percuma untuk semua orang.'),
-        findsOneWidget);
+    expect(
+      find.text(
+        'Tip tidak membuka atau mengunci apa-apa. Semua soalan, '
+        'kertas dan suara bacaan tetap percuma untuk semua orang.',
+      ),
+      findsOneWidget,
+    );
   });
 
   test('tier tip ialah RM3 / RM5 / RM10', () {
     expect(Pembelian.tierTip, [3, 5, 10]);
   });
 
-  test('ID produk mengikut gaya bundle app Wira Kira, dengan sandaran lama', () {
-    // ID gaya bundle diutamakan; ID lama kekal supaya app terus berfungsi
-    // jika produk baru belum dicipta di kedai.
-    expect(Pembelian.semuaId, contains('com.razmanzainal.ulangkajiUpkk.tip3'));
-    expect(Pembelian.semuaId, contains('com.razmanzainal.ulangkajiUpkk.tip5'));
-    expect(Pembelian.semuaId, contains('com.razmanzainal.ulangkajiUpkk.tip10'));
-    expect(Pembelian.semuaId, contains('tip_5'));
-    expect(Pembelian.semuaId.length, 6);
-  });
+  test(
+    'ID produk mengikut gaya bundle app Wira Kira, dengan sandaran lama',
+    () {
+      // ID gaya bundle diutamakan; ID lama kekal supaya app terus berfungsi
+      // jika produk baru belum dicipta di kedai.
+      expect(
+        Pembelian.semuaId,
+        contains('com.razmanzainal.ulangkajiUpkk.tip3'),
+      );
+      expect(
+        Pembelian.semuaId,
+        contains('com.razmanzainal.ulangkajiUpkk.tip5'),
+      );
+      expect(
+        Pembelian.semuaId,
+        contains('com.razmanzainal.ulangkajiUpkk.tip10'),
+      );
+      expect(Pembelian.semuaId, contains('tip_5'));
+      expect(Pembelian.semuaId.length, 6);
+    },
+  );
 
   test('tiada gerbang pembelian pada Percubaan atau Kertas', () {
     // Ciri yang pernah percuma tidak boleh dikunci semula tanpa keputusan
