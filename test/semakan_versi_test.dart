@@ -129,6 +129,52 @@ void main() {
     });
   });
 
+  group('iOS: versi daripada App Store', () {
+    const appStoreJson = '''
+      {"resultCount":1,"results":[{"version":"2.2.0","trackViewUrl":"https://apps.apple.com/my/app/id6830672652"}]}
+    ''';
+
+    setUp(() {
+      SemakanVersi.instance.platformUjian = 'ios';
+    });
+
+    test('versi App Store mengatasi versi.json', () async {
+      SemakanVersi.instance.ambilJson = (uri) async {
+        if (uri.toString().contains('itunes.apple.com')) return appStoreJson;
+        return _jsonContoh; // versi.json: ios terkini 2.2.0, minimum 2.2.0
+      };
+      final m = await SemakanVersi.instance.semak();
+      expect(m, isNotNull);
+      expect(m!.terkini, '2.2.0');
+      expect(m.bandingkan('2.1.0'), StatusKemasKini.paksa);
+    });
+
+    test('tanpa versi.json, kemas kini hanya digalakkan', () async {
+      SemakanVersi.instance.ambilJson = (uri) async {
+        if (uri.toString().contains('itunes.apple.com')) return appStoreJson;
+        return null;
+      };
+      final m = await SemakanVersi.instance.semak();
+      expect(m!.terkini, '2.2.0');
+      expect(m.minimum, '0.0.0');
+      expect(m.bandingkan('2.1.0'), StatusKemasKini.galak);
+    });
+
+    test('jawapan App Store rosak tidak menyebabkan ralat', () async {
+      SemakanVersi.instance.ambilJson = (uri) async {
+        if (uri.toString().contains('itunes.apple.com')) return '{"results":[]}';
+        return null;
+      };
+      expect(await SemakanVersi.instance.semak(), isNull);
+      expect(await SemakanVersi.instance.versiAppStore(), isNull);
+    });
+
+    test('versi App Store dibaca', () async {
+      SemakanVersi.instance.ambilJson = (uri) async => appStoreJson;
+      expect(await SemakanVersi.instance.versiAppStore(), '2.2.0');
+    });
+  });
+
   group('dialog kemas kini', () {
     Widget balut(Widget anak) => MaterialApp(home: Scaffold(body: anak));
 

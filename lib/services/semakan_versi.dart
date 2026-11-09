@@ -117,6 +117,10 @@ class SemakanVersi {
   static const String urlVersi =
       'https://razmanzainal-source.github.io/ulangkaji-upkk-legal/versi.json';
 
+  /// iTunes Lookup — sumber rasmi versi App Store.
+  static const String urlAppStore =
+      'https://itunes.apple.com/lookup?bundleId=com.razmanzainal.ulangkajiUpkk&country=my';
+
   static const String pautanAppStore =
       'https://apps.apple.com/my/app/id6830672652';
   static const String pautanPlay =
@@ -135,7 +139,12 @@ class SemakanVersi {
     return Platform.isIOS ? pautanAppStore : pautanPlay;
   }
 
+  /// Digunakan dalam ujian untuk memaksa platform.
+  @visibleForTesting
+  String? platformUjian;
+
   String get _platform {
+    if (platformUjian != null) return platformUjian!;
     if (kIsWeb) return 'android';
     return Platform.isIOS ? 'ios' : 'android';
   }
@@ -150,19 +159,62 @@ class SemakanVersi {
   }
 
   /// Semak versi terkini di kedai. Pulang `null` jika tidak dapat disemak.
+  ///
+  /// Pada iOS, versi terbaharu dibaca terus daripada **App Store** (iTunes
+  /// Lookup API). Ini bermakna setiap kali versi baharu disahkan Apple dan
+  /// tersedia di kedai, app lama akan tahu tanpa perlu mengemas kini fail
+  /// manual. `versi.json` pula menentukan versi **minimum** yang masih
+  /// dibenarkan (dan boleh menindih nilai terkini jika perlu).
   Future<MaklumatVersi?> semak() async {
+    MaklumatVersi? dariFail;
     try {
       final teks = await ambilJson(Uri.parse(urlVersi))
           .timeout(const Duration(seconds: 6));
+      if (teks != null && teks.trim().isNotEmpty) {
+        dariFail = MaklumatVersi.daripadaJson(
+          jsonDecode(teks),
+          platform: _platform,
+          pautanLalai: pautanKedai,
+        );
+      }
+    } catch (_) {
+      // Tiada Internet, JSON rosak, atau masa tamat — cuba sumber lain.
+    }
+
+    if (_platform == 'ios') {
+      final versiKedai = await versiAppStore();
+      if (versiKedai != null) {
+        // `terkini` daripada App Store (paling tepat). `minimum` hanya
+        // diambil daripada versi.json; tanpanya kemas kini tidak dipaksa.
+        return MaklumatVersi(
+          terkini: versiKedai,
+          minimum: dariFail?.minimum ?? '0.0.0',
+          pautan: dariFail?.pautan ?? pautanKedai,
+          nota: dariFail?.nota,
+        );
+      }
+    }
+
+    return dariFail;
+  }
+
+  /// Baca versi terkini app ini di App Store. `null` jika tiada Internet,
+  /// app belum terbit, atau jawapan tidak dapat difahami.
+  Future<String?> versiAppStore() async {
+    try {
+      final teks = await ambilJson(Uri.parse(urlAppStore))
+          .timeout(const Duration(seconds: 6));
       if (teks == null || teks.trim().isEmpty) return null;
       final json = jsonDecode(teks);
-      return MaklumatVersi.daripadaJson(
-        json,
-        platform: _platform,
-        pautanLalai: pautanKedai,
-      );
+      if (json is! Map) return null;
+      final hasil = json['results'];
+      if (hasil is! List || hasil.isEmpty) return null;
+      final pertama = hasil.first;
+      if (pertama is! Map) return null;
+      final versi = pertama['version'];
+      if (versi is! String || versi.trim().isEmpty) return null;
+      return versi.trim();
     } catch (_) {
-      // Tiada Internet, JSON rosak, atau masa tamat — bukan masalah pengguna.
       return null;
     }
   }
@@ -195,6 +247,7 @@ class SemakanVersi {
   void setSemula() {
     ambilJson = _ambilJsonBenar;
     bacaVersiSemasa = _bacaVersiBenar;
+    platformUjian = null;
   }
 
   static Future<String?> _ambilJsonBenar(Uri uri) async {
