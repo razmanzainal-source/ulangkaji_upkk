@@ -359,8 +359,8 @@ class _IbuBapaScreenState extends State<IbuBapaScreen> {
 
   /// Harga lalai jika kedai belum membalas (contoh: offline).
   String _hargaLalai(String id) => switch (id) {
+        'tip_3' => 'RM 3.00',
         'tip_5' => 'RM 5.00',
-        'tip_10' => 'RM 10.00',
-        _ => 'RM 20.00',
+        _ => 'RM 10.00',
       };
 }

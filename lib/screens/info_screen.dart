@@ -7,6 +7,7 @@ import '../services/tetapan.dart';
 import '../tema.dart';
 import '../widgets/dialog_nama.dart';
 import '../widgets/maskot.dart';
+import 'ibu_bapa_screen.dart';
 
 /// Tab "Info" — penerangan app, tetapan dan kredit.
 ///
@@ -17,7 +18,7 @@ class InfoScreen extends StatefulWidget {
   const InfoScreen({super.key});
 
   /// Versi app — dipaparkan pada skrin Info.
-  static const String versi = '2.0.0';
+  static const String versi = '2.1.0';
 
   /// Alamat e-mel pembina app, untuk pertanyaan dan pembetulan.
   static const String emel = 'razman.zainal@gmail.com';
@@ -239,6 +240,8 @@ class _InfoScreenState extends State<InfoScreen> {
               ),
               const SizedBox(height: 12),
               _Gred(),
+              const SizedBox(height: 12),
+              const _Sokongan(),
               const SizedBox(height: 12),
               _Tetapan(),
               const SizedBox(height: 12),
@@ -559,6 +562,51 @@ class _Gred extends StatelessWidget {
               ],
             ),
           ),
+      ],
+    );
+  }
+}
+
+/// Kad sokongan sukarela — pintu masuk ke kawasan ibu bapa.
+///
+/// Kad ini hanya memaparkan penerangan. Butangnya membuka skrin gerbang
+/// matematik; tip sendiri tidak pernah boleh dicapai oleh murid tanpa
+/// melepasi gerbang itu (Apple Kids Category 1.3, Google Play Families).
+class _Sokongan extends StatelessWidget {
+  const _Sokongan();
+
+  @override
+  Widget build(BuildContext context) {
+    return _Kotak(
+      tajuk: 'Sokongan Sukarela',
+      ikon: Icons.favorite_rounded,
+      kanak: [
+        const _Perenggan(
+          'App ini percuma sepenuhnya — semua soalan, kertas percubaan dan '
+          'suara bacaan terbuka untuk semua murid.',
+        ),
+        const _Perenggan(
+          'Jika app ini membantu anak atau murid awak, anda boleh memberi '
+          'tip sukarela (RM 3, RM 5 atau RM 10) di kawasan khas ibu bapa. '
+          'Tip tidak membuka atau mengunci apa-apa kandungan.',
+        ),
+        const SizedBox(height: 4),
+        SizedBox(
+          width: double.infinity,
+          child: OutlinedButton.icon(
+            key: const ValueKey('info-sokongan'),
+            onPressed: () => Navigator.of(context).push(
+              MaterialPageRoute(builder: (_) => const IbuBapaScreen()),
+            ),
+            icon: const Icon(Icons.lock_outline_rounded, size: 18),
+            label: const Text('Buka kawasan ibu bapa'),
+            style: OutlinedButton.styleFrom(
+              foregroundColor: Warna.utama,
+              side: const BorderSide(color: Warna.utama),
+              padding: const EdgeInsets.symmetric(vertical: 12),
+            ),
+          ),
+        ),
       ],
     );
   }

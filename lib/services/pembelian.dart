@@ -16,7 +16,7 @@ class Pembelian {
 
   /// ID produk pada kedua-dua kedai. Semuanya **consumable** (boleh dibeli
   /// berulang kali).
-  static const List<String> idTip = ['tip_5', 'tip_10', 'tip_20'];
+  static const List<String> idTip = ['tip_3', 'tip_5', 'tip_10'];
 
   /// Benar apabila kedai boleh dihubungi pada peranti ini.
   final ValueNotifier<bool> kedaiTersedia = ValueNotifier<bool>(false);

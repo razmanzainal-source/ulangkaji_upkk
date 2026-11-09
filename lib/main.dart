@@ -5,10 +5,15 @@ import 'screens/rumah_screen.dart';
 import 'services/bank_kertas.dart';
 import 'services/kemajuan.dart';
 import 'services/pembelian.dart';
+import 'services/semakan_versi.dart';
 import 'services/suara.dart';
 import 'services/tetapan.dart';
 import 'tema.dart';
 import 'widgets/maskot.dart';
+
+/// Kunci navigator — digunakan oleh semakan versi untuk memaparkan dialog
+/// kemas kini walaupun ia berlaku di latar belakang.
+final GlobalKey<NavigatorState> kunciNavigator = GlobalKey<NavigatorState>();
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -27,6 +32,7 @@ class AplikasiUlangkajiUpkk extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Ulangkaji UPKK',
+      navigatorKey: kunciNavigator,
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         useMaterial3: true,
@@ -107,6 +113,10 @@ class _SkrinMuatTurunState extends State<SkrinMuatTurun> {
     Navigator.of(context).pushReplacement(
       MaterialPageRoute(builder: (_) => const RumahScreen()),
     );
+
+    // Semakan versi berjalan di latar belakang selepas app dibuka. Ia tidak
+    // melambatkan permulaan app dan tidak mengganggu penggunaan luar talian.
+    unawaited(SemakanVersi.instance.semakDanTunjuk(kunciNavigator));
   }
 
   @override

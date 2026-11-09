@@ -75,7 +75,7 @@ void main() {
   });
 
   test('ID produk tip ialah consumable dan stabil', () {
-    expect(Pembelian.idTip, ['tip_5', 'tip_10', 'tip_20']);
+    expect(Pembelian.idTip, ['tip_3', 'tip_5', 'tip_10']);
   });
 
   test('tiada gerbang pembelian pada Percubaan atau Kertas', () {

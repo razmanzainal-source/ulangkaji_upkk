@@ -35,7 +35,7 @@ PERCUMA DAN SELAMAT
 • Semua kandungan percuma untuk semua murid. Tiada kandungan dikunci.
 • Tiada akaun, tiada iklan, tiada penjejakan, tiada pengumpulan data.
 • Berfungsi tanpa Internet. Semua rekod disimpan di dalam peranti sahaja.
-• Pilihan tip sukarela untuk ibu bapa yang ingin menyokong pembangunan aplikasi.
+• Pilihan tip sukarela (RM 3 / RM 5 / RM 10) untuk ibu bapa yang ingin menyokong pembangunan aplikasi.
 
 Aplikasi ini bebas dan tidak bergabung dengan JAKIM atau mana-mana agensi kerajaan.
 ```
