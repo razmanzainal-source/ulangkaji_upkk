@@ -28,8 +28,8 @@ MAIN FLOW
 LOGIN
 None. There is no account, no sign-up, no email collection, and no server.
 
-IN-APP PURCHASE (voluntary tips: RM 5 / RM 10 / RM 20, consumable)
-Product IDs: tip_5, tip_10, tip_20
+IN-APP PURCHASE (voluntary tips: RM 3 / RM 5 / RM 10, consumable)
+Product IDs: tip_3, tip_5, tip_10
 To review the tip flow:
 1. Open the "Info" tab and scroll to "Sokongan".
 2. Tap "Untuk Ibu Bapa & Guru".
@@ -75,7 +75,7 @@ screen (without completing a real transaction).
 
 | Perkara | Status |
 |---|---|
-| Produk tip (`tip_5`, `tip_10`, `tip_20`) dicipta di App Store Connect | ⬜ |
+| Produk tip (`tip_3`, `tip_5`, `tip_10`) dicipta di App Store Connect | ⬜ |
 | Produk tip berstatus "Ready to Submit" (jika mahu disemak bersama) | ⬜ |
 | Privacy Policy URL diisi | ⬜ |
 | Support URL diisi | ⬜ |

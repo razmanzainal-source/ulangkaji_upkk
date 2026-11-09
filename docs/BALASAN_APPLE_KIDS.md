@@ -50,7 +50,7 @@ photo library. The app never reads from the photo library.
 Regarding Guideline 1.3: the app is designed for children aged 9-11 and
 contains no ads, no tracking, no analytics, no user-generated content, no
 chat, no external links in the child-facing area, and no data collection.
-The optional tip purchases (RM 5 / RM 10 / RM 20) are the only monetisation.
+The optional tip purchases (RM 3 / RM 5 / RM 10) are the only monetisation.
 They are placed in a separate area labelled "Untuk Ibu Bapa & Guru" that is
 behind a parental gate (an arithmetic question), and they unlock no content:
 every question, paper and audio recording is free for all users.
