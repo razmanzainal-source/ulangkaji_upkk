@@ -14,9 +14,31 @@ class Pembelian {
 
   static final Pembelian instance = Pembelian._();
 
-  /// ID produk pada kedua-dua kedai. Semuanya **consumable** (boleh dibeli
-  /// berulang kali).
-  static const List<String> idTip = ['tip_3', 'tip_5', 'tip_10'];
+  /// Tier tip dalam ringgit. Susunan ini juga susunan butang pada skrin.
+  ///
+  /// Setiap tier boleh mempunyai dua ID produk:
+  ///  1. ID gaya bundle (`com.razmanzainal.ulangkajiUpkk.tip3`) — sama seperti
+  ///     app Wira Kira (Math Hero).
+  ///  2. ID lama ringkas (`tip_3`).
+  ///
+  /// Kedua-duanya ditanya serentak; yang wujud di kedai akan digunakan. Ini
+  /// membolehkan app berfungsi walaupun produk baru belum dicipta di App Store
+  /// Connect / Play Console.
+  static const List<int> tierTip = [3, 5, 10];
+
+  static const Map<int, List<String>> _idMengikutTier = {
+    3: ['com.razmanzainal.ulangkajiUpkk.tip3', 'tip_3'],
+    5: ['com.razmanzainal.ulangkajiUpkk.tip5', 'tip_5'],
+    10: ['com.razmanzainal.ulangkajiUpkk.tip10', 'tip_10'],
+  };
+
+  /// Semua ID produk yang ditanya kepada kedai.
+  static List<String> get semuaId => [
+        for (final ids in _idMengikutTier.values) ...ids,
+      ];
+
+  /// ID produk yang benar-benar tersedia, mengikut tier (3 → id).
+  final ValueNotifier<Map<int, String>> idAktif = ValueNotifier({});
 
   /// Benar apabila kedai boleh dihubungi pada peranti ini.
   final ValueNotifier<bool> kedaiTersedia = ValueNotifier<bool>(false);
@@ -49,21 +71,40 @@ class Pembelian {
       if (!ada) return;
 
       final hasil = await InAppPurchase.instance.queryProductDetails(
-        idTip.toSet(),
+        semuaId.toSet(),
       );
-      if (hasil.productDetails.isEmpty) {
+      for (final p in hasil.productDetails) {
+        _produk[p.id] = p;
+      }
+      if (_produk.isEmpty) {
         if (hasil.error != null) mesej.value = hasil.error!.message;
         return;
       }
-      final peta = <String, String>{};
-      for (final p in hasil.productDetails) {
-        _produk[p.id] = p;
-        peta[p.id] = p.price;
-      }
-      harga.value = peta;
+      _kemasKiniTier();
     } catch (_) {
       kedaiTersedia.value = false;
     }
+  }
+
+  /// Tentukan ID produk mana yang mewakili setiap tier. ID gaya bundle
+  /// diutamakan; jika tiada, ID lama digunakan.
+  void _kemasKiniTier() {
+    final aktif = <int, String>{};
+    final petaHarga = <int, String>{};
+    for (final tier in tierTip) {
+      for (final id in _idMengikutTier[tier]!) {
+        final produk = _produk[id];
+        if (produk != null) {
+          aktif[tier] = id;
+          petaHarga[tier] = produk.price;
+          break;
+        }
+      }
+    }
+    idAktif.value = aktif;
+    harga.value = {
+      for (final e in petaHarga.entries) '${e.key}': e.value,
+    };
   }
 
   void _pasangPendengar() {
@@ -75,7 +116,7 @@ class Pembelian {
 
   Future<void> _proses(List<PurchaseDetails> senarai) async {
     for (final d in senarai) {
-      if (idTip.contains(d.productID)) {
+      if (semuaId.contains(d.productID)) {
         switch (d.status) {
           case PurchaseStatus.purchased:
           case PurchaseStatus.restored:
@@ -105,13 +146,15 @@ class Pembelian {
     sedangBeli.value = false;
   }
 
-  /// Mulakan pembelian tip bagi [id].
-  Future<void> beli(String id) async {
+  /// Mulakan pembelian tip bagi [tier] (3, 5 atau 10).
+  Future<void> beli(int tier) async {
     if (sedangBeli.value) return;
     mesej.value = null;
 
     if (_produk.isEmpty) await _tanyaKedai();
-    final produk = _produk[id];
+
+    final id = idAktif.value[tier] ?? _cariIdTersedia(tier);
+    final produk = id == null ? null : _produk[id];
     if (produk == null) {
       mesej.value =
           'Produk tidak tersedia buat masa ini. Sila cuba sebentar lagi.';
@@ -130,6 +173,13 @@ class Pembelian {
     }
   }
 
+  String? _cariIdTersedia(int tier) {
+    for (final id in _idMengikutTier[tier] ?? const <String>[]) {
+      if (_produk.containsKey(id)) return id;
+    }
+    return null;
+  }
+
   @visibleForTesting
   Future<void> lupakan() async {
     await _langganan?.cancel();
@@ -137,6 +187,7 @@ class Pembelian {
     _sedia = false;
     _produk.clear();
     kedaiTersedia.value = false;
+    idAktif.value = {};
     harga.value = {};
     mesej.value = null;
     sedangBeli.value = false;

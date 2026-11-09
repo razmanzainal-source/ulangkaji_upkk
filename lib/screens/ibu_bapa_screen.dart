@@ -261,8 +261,8 @@ class _IbuBapaScreenState extends State<IbuBapaScreen> {
           builder: (context, harga, _) {
             return Column(
               children: [
-                for (final id in Pembelian.idTip) ...[
-                  _butangTip(id, harga[id]),
+                for (final tier in Pembelian.tierTip) ...[
+                  _butangTip(tier, harga['$tier']),
                   const SizedBox(height: 10),
                 ],
               ],
@@ -325,15 +325,15 @@ class _IbuBapaScreenState extends State<IbuBapaScreen> {
     );
   }
 
-  Widget _butangTip(String id, String? harga) {
-    final label = harga ?? _hargaLalai(id);
+  Widget _butangTip(int tier, String? harga) {
+    final label = harga ?? _hargaLalai(tier);
     return SizedBox(
       width: double.infinity,
       child: ValueListenableBuilder<bool>(
         valueListenable: Pembelian.instance.sedangBeli,
         builder: (context, menunggu, _) => FilledButton.icon(
-          key: ValueKey('tip-$id'),
-          onPressed: menunggu ? null : () => Pembelian.instance.beli(id),
+          key: ValueKey('tip-$tier'),
+          onPressed: menunggu ? null : () => Pembelian.instance.beli(tier),
           icon: menunggu
               ? const SizedBox(
                   width: 18,
@@ -358,9 +358,5 @@ class _IbuBapaScreenState extends State<IbuBapaScreen> {
   }
 
   /// Harga lalai jika kedai belum membalas (contoh: offline).
-  String _hargaLalai(String id) => switch (id) {
-        'tip_3' => 'RM 3.00',
-        'tip_5' => 'RM 5.00',
-        _ => 'RM 10.00',
-      };
+  String _hargaLalai(int tier) => 'RM $tier.00';
 }

@@ -65,8 +65,8 @@ void main() {
     await tester.pump(const Duration(milliseconds: 400));
 
     expect(find.text('Sokongan Sukarela'), findsOneWidget);
-    for (final id in Pembelian.idTip) {
-      expect(find.byKey(ValueKey('tip-$id')), findsOneWidget);
+    for (final tier in Pembelian.tierTip) {
+      expect(find.byKey(ValueKey('tip-$tier')), findsOneWidget);
     }
     // Tiada butang "pulihkan" — tip bukan pembelian kandungan.
     expect(find.text('Tip tidak membuka atau mengunci apa-apa. Semua soalan, '
@@ -74,8 +74,18 @@ void main() {
         findsOneWidget);
   });
 
-  test('ID produk tip ialah consumable dan stabil', () {
-    expect(Pembelian.idTip, ['tip_3', 'tip_5', 'tip_10']);
+  test('tier tip ialah RM3 / RM5 / RM10', () {
+    expect(Pembelian.tierTip, [3, 5, 10]);
+  });
+
+  test('ID produk mengikut gaya bundle app Wira Kira, dengan sandaran lama', () {
+    // ID gaya bundle diutamakan; ID lama kekal supaya app terus berfungsi
+    // jika produk baru belum dicipta di kedai.
+    expect(Pembelian.semuaId, contains('com.razmanzainal.ulangkajiUpkk.tip3'));
+    expect(Pembelian.semuaId, contains('com.razmanzainal.ulangkajiUpkk.tip5'));
+    expect(Pembelian.semuaId, contains('com.razmanzainal.ulangkajiUpkk.tip10'));
+    expect(Pembelian.semuaId, contains('tip_5'));
+    expect(Pembelian.semuaId.length, 6);
   });
 
   test('tiada gerbang pembelian pada Percubaan atau Kertas', () {

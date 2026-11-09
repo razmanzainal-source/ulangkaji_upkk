@@ -58,7 +58,7 @@ UPKK,KAFA,ulangkaji,adab,akidah,ibadah,jawi,sirah,bahasa arab,tahun 5,KAFA
 | Peringkat umur | Kids Category → **Ages 9–11** | Target audience: **9–11** |
 | Harga app | Percuma | Percuma |
 | Iklan | Tiada | Tiada |
-| IAP | Ya — tip sukarela (consumable) | Ya — `tip_3`, `tip_5`, `tip_10` |
+| IAP | Ya — tip sukarela (consumable) | Ya — `com.razmanzainal.ulangkajiUpkk.tip3`, `.tip5`, `.tip10` |
 
 > Peringkat umur sebenar mesti dijawab dalam borang penilaian; jangan salin
 > nilai di atas tanpa menyemak soalan yang ditanya.
@@ -67,7 +67,7 @@ UPKK,KAFA,ulangkaji,adab,akidah,ibadah,jawi,sirah,bahasa arab,tahun 5,KAFA
 
 | Medan | Nilai |
 |---|---|
-| Product ID | `tip_3` · `tip_5` · `tip_10` |
+| Product ID | `com.razmanzainal.ulangkajiUpkk.tip3` · `.tip5` · `.tip10` |
 | Jenis | **Consumable** (Apple) / Consumable one-time (Google) |
 | Nama paparan | `Tip RM 3` · `Tip RM 5` · `Tip RM 10` |
 | Harga | RM 3.00 · RM 5.00 · RM 10.00 |

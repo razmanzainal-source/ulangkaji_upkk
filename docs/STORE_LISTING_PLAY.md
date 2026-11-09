@@ -97,6 +97,6 @@ Semua dalam `edaran/store/play/` dan di Desktop.
 
 | Product ID | Name | Description | Price | Status |
 |---|---|---|---|---|
-| `tip_3` | Tip RM 3 | Tip sukarela. Tiada kandungan dibuka. | RM 3.00 | **Active** |
-| `tip_5` | Tip RM 5 | Tip sukarela. Tiada kandungan dibuka. | RM 5.00 | **Active** |
-| `tip_10` | Tip RM 10 | Tip sukarela. Tiada kandungan dibuka. | RM 10.00 | **Active** |
+| `com.razmanzainal.ulangkajiUpkk.tip3` | Tip RM 3 | Tip sukarela. Tiada kandungan dibuka. | RM 3.00 | **Active** |
+| `com.razmanzainal.ulangkajiUpkk.tip5` | Tip RM 5 | Tip sukarela. Tiada kandungan dibuka. | RM 5.00 | **Active** |
+| `com.razmanzainal.ulangkajiUpkk.tip10` | Tip RM 10 | Tip sukarela. Tiada kandungan dibuka. | RM 10.00 | **Active** |

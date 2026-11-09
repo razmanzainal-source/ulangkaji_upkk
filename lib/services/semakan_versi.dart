@@ -118,8 +118,11 @@ class SemakanVersi {
       'https://razmanzainal-source.github.io/ulangkaji-upkk-legal/versi.json';
 
   /// iTunes Lookup — sumber rasmi versi App Store.
+  ///
+  /// Menggunakan **id app** (bukan bundleId) kerana ia sentiasa memulangkan
+  /// satu hasil yang tepat — kaedah sama seperti app Wira Kira (Math Hero).
   static const String urlAppStore =
-      'https://itunes.apple.com/lookup?bundleId=com.razmanzainal.ulangkajiUpkk&country=my';
+      'https://itunes.apple.com/lookup?id=6830672652&country=my';
 
   static const String pautanAppStore =
       'https://apps.apple.com/my/app/id6830672652';

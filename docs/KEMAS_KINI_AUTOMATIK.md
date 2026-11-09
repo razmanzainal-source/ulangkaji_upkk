@@ -9,8 +9,8 @@ diabaikan sepenuhnya.
 1. Selepas app dibuka (skrin Rumah dipaparkan), `SemakanVersi` membuat
    semakan di latar belakang.
 2. **iOS** — versi terbaharu dibaca terus daripada **App Store** melalui
-   iTunes Lookup API:
-   `https://itunes.apple.com/lookup?bundleId=com.razmanzainal.ulangkajiUpkk&country=my`
+   iTunes Lookup API (menggunakan id app, kaedah sama seperti app Wira Kira):
+   `https://itunes.apple.com/lookup?id=6830672652&country=my`
    Jadi setiap kali versi baharu disahkan Apple dan tersedia di kedai, app
    lama terus tahu — **tanpa** perlu mengemas kini fail manual.
 3. **Android** (dan sebagai sandaran) — versi dibaca daripada
