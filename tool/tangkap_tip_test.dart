@@ -5,7 +5,6 @@
 //   flutter test tool/tangkap_tip_test.dart
 // Hasil: edaran/store/play/tip-review.png (1290 x 2796)
 import 'dart:io';
-import 'dart:typed_data';
 import 'dart:ui' as ui;
 
 import 'package:flutter/material.dart';

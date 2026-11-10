@@ -1,3 +1,5 @@
+import 'package:flutter/foundation.dart'
+    show TargetPlatform, defaultTargetPlatform, kIsWeb;
 import 'package:flutter/material.dart';
 
 import 'screens/kertas_screen.dart';
@@ -99,7 +101,11 @@ class _SkrinMuatTurunState extends State<SkrinMuatTurun> {
     await Tetapan.instance.muat();
     await Kemajuan.instance.muat();
     await BankKertas.instance.muat();
-    await Pembelian.instance.muat();
+    // Tip (in-app purchase) hanya untuk iOS. Android menggunakan kod QR
+    // sumbangan di tab Info, seperti versi asal app.
+    if (!kIsWeb && defaultTargetPlatform == TargetPlatform.iOS) {
+      await Pembelian.instance.muat();
+    }
 
     // Skrin kertas memerlukan senarai subjek untuk mendapatkan warna dan kod
     // subjek; ia diambil daripada bank yang baru dimuatkan.

@@ -1,8 +1,12 @@
+import 'package:flutter/foundation.dart'
+    show TargetPlatform, defaultTargetPlatform, kIsWeb;
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart' show rootBundle;
 
 import '../models/gred.dart';
 import '../services/bank_kertas.dart';
 import '../services/kemajuan.dart';
+import '../services/simpan_gambar.dart';
 import '../services/tetapan.dart';
 import '../tema.dart';
 import '../widgets/dialog_nama.dart';
@@ -34,11 +38,17 @@ class InfoScreen extends StatefulWidget {
 }
 
 class _InfoScreenState extends State<InfoScreen> {
+  /// Tip sukarela (in-app purchase) hanya dipaparkan pada iOS.
+  ///
+  /// Android menggunakan kod QR sumbangan seperti versi asal — Play tidak
+  /// memerlukan gerbang ibu bapa untuk sumbangan, dan produk IAP tidak
+  /// dicipta di Play Console.
+  bool get _tunjukTip => !kIsWeb && defaultTargetPlatform == TargetPlatform.iOS;
+
   @override
   Widget build(BuildContext context) {
     final jumlahSoalan = BankKertas.instance.subjek
         .fold<int>(0, (j, s) => j + BankKertas.instance.bilanganSoalan(s.id));
-
     return ListView(
       padding: EdgeInsets.zero,
       children: [
@@ -241,7 +251,10 @@ class _InfoScreenState extends State<InfoScreen> {
               const SizedBox(height: 12),
               _Gred(),
               const SizedBox(height: 12),
-              const _Sokongan(),
+              // iOS: tip sukarela melalui App Store (di belakang gerbang ibu
+              // bapa). Android: kod QR sumbangan seperti versi asal — Google
+              // Play tidak memerlukan gerbang ibu bapa untuk sumbangan.
+              if (_tunjukTip) const _Sokongan() else const _Donasi(),
               const SizedBox(height: 12),
               _Tetapan(),
               const SizedBox(height: 12),
@@ -250,11 +263,12 @@ class _InfoScreenState extends State<InfoScreen> {
                 ikon: Icons.lock_rounded,
                 kanak: const [
                   _Perenggan(
-                    'App ini berfungsi tanpa Internet. Kebenaran Internet '
-                    'pada Android hanya digunakan oleh perkhidmatan '
-                    'pembelian (tip) Play Store. Ia tidak meminta akaun, '
-                    'tidak menghantar data, dan tidak mengumpul sebarang '
-                    'data.',
+                    'App ini berfungsi tanpa Internet. Internet hanya '
+                    'digunakan untuk dua perkara: menyemak sama ada versi '
+                    'baharu tersedia di kedai, dan (pada iOS) memproses tip '
+                    'sukarela melalui App Store. Ia tidak meminta akaun, '
+                    'tidak menghantar data murid, dan tidak mengumpul '
+                    'sebarang data.',
                   ),
                   _Perenggan(
                     'Markah dan rekod percubaan disimpan di dalam telefon ini '
@@ -817,6 +831,200 @@ class _Kredit extends StatelessWidget {
           ),
         ],
       ),
+    );
+  }
+}
+
+/// Laluan aset kod QR sumbangan.
+const String qrDonasi = 'assets/gambar/qr_donasi.png';
+
+/// Nama pemegang akaun yang dipaparkan di bawah kod QR.
+const String namaAkaunDonasi = 'Razman Bin Md Zainal';
+
+/// Kad sumbangan sukarela — **Android sahaja**.
+///
+/// Ini ruang yang sama seperti versi asal app (sebelum 2.0.0): kod QR bank
+/// yang boleh diimbas atau disimpan. Pada iOS, ruang ini digantikan dengan
+/// tip melalui App Store (lihat `_Sokongan`), kerana App Store mewajibkan
+/// pembelian dalam app kanak-kanak berada di belakang gerbang ibu bapa.
+class _Donasi extends StatelessWidget {
+  const _Donasi();
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      padding: const EdgeInsets.all(16),
+      decoration: BoxDecoration(
+        color: Warna.utamaLembut,
+        borderRadius: BorderRadius.circular(18),
+        border: Border.all(color: Warna.utamaMuda, width: 1.5),
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Row(
+            children: [
+              const Icon(Icons.favorite_rounded, size: 20, color: Warna.utama),
+              const SizedBox(width: 9),
+              Expanded(
+                child: Text(
+                  'App ini percuma dan tiada iklan',
+                  style: Teks.biasa.copyWith(fontWeight: FontWeight.w800),
+                ),
+              ),
+            ],
+          ),
+          const SizedBox(height: 10),
+          Text(
+            'Kalau app ini membantu anak atau murid awak, sumbangan sukarela '
+            'amat dihargai — bagi kos penyelenggaraan, suara rakaman dan '
+            'penambahan soalan baharu.',
+            style: Teks.biasa.copyWith(height: 1.5, color: Colors.black87),
+          ),
+          const SizedBox(height: 14),
+          Center(
+            child: FilledButton.icon(
+              key: const ValueKey('info-donasi'),
+              onPressed: () => _bukaQr(context),
+              icon: const Icon(Icons.qr_code_2_rounded, size: 20),
+              label: const Text(
+                'Kod QR sumbangan',
+                style: TextStyle(fontSize: 16, fontWeight: FontWeight.w800),
+              ),
+              style: FilledButton.styleFrom(
+                backgroundColor: Warna.utama,
+                foregroundColor: Colors.white,
+                padding: const EdgeInsets.symmetric(
+                  horizontal: 22,
+                  vertical: 13,
+                ),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(14),
+                ),
+              ),
+            ),
+          ),
+          const SizedBox(height: 8),
+          Text(
+            'Kod QR boleh dilihat, kemudian disimpan ke galeri telefon atau '
+            'dimuat turun.',
+            textAlign: TextAlign.center,
+            style: Teks.label.copyWith(color: Colors.black54),
+          ),
+        ],
+      ),
+    );
+  }
+
+  /// Buka kod QR sumbangan di dalam tetingkap timbul.
+  Future<void> _bukaQr(BuildContext context) => showDialog<void>(
+        context: context,
+        builder: (_) => const DialogQrDonasi(),
+      );
+}
+
+/// Tetingkap kod QR sumbangan.
+class DialogQrDonasi extends StatefulWidget {
+  const DialogQrDonasi({super.key});
+
+  @override
+  State<DialogQrDonasi> createState() => _DialogQrDonasiState();
+}
+
+class _DialogQrDonasiState extends State<DialogQrDonasi> {
+  bool _menyimpan = false;
+
+  Future<void> _simpan() async {
+    setState(() => _menyimpan = true);
+
+    var berjaya = false;
+    try {
+      final data = await rootBundle.load(qrDonasi);
+      berjaya = await simpanGambarKeGaleri(
+        data.buffer.asUint8List(),
+        nama: 'qr_sumbangan_ulangkaji_upkk',
+      );
+    } catch (_) {
+      berjaya = false;
+    }
+
+    if (!mounted) return;
+    setState(() => _menyimpan = false);
+
+    ScaffoldMessenger.of(context).showSnackBar(
+      SnackBar(
+        content: Text(
+          berjaya
+              ? 'Kod QR disimpan. Semak dalam Galeri atau folder Muat Turun.'
+              : 'Kod QR tidak dapat disimpan. Cuba tangkap skrin, atau imbas '
+                  'terus daripada paparan ini.',
+        ),
+        behavior: SnackBarBehavior.floating,
+      ),
+    );
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return AlertDialog(
+      backgroundColor: Colors.white,
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(24)),
+      title: const Text('Kod QR sumbangan', style: Teks.sederhana),
+      content: SingleChildScrollView(
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Text(
+              'Terima kasih atas sokongan! Imbas kod QR ini dengan aplikasi '
+              'bank atau e-dompit, atau simpan untuk digunakan kemudian.',
+              textAlign: TextAlign.center,
+              style: Teks.label.copyWith(height: 1.45),
+            ),
+            const SizedBox(height: 14),
+            ClipRRect(
+              borderRadius: BorderRadius.circular(16),
+              child: Image.asset(
+                qrDonasi,
+                width: 250,
+                errorBuilder: (_, _, _) => Text(
+                  'Kod QR tidak dapat dipaparkan.',
+                  style: Teks.label.copyWith(color: Warna.salah),
+                ),
+              ),
+            ),
+            const SizedBox(height: 10),
+            const Text(
+              namaAkaunDonasi,
+              style: TextStyle(fontSize: 16, fontWeight: FontWeight.w800),
+            ),
+          ],
+        ),
+      ),
+      actions: [
+        TextButton(
+          onPressed: _menyimpan ? null : () => Navigator.of(context).pop(),
+          child: const Text('Tutup'),
+        ),
+        FilledButton.icon(
+          key: const ValueKey('donasi-simpan'),
+          onPressed: _menyimpan ? null : _simpan,
+          icon: _menyimpan
+              ? const SizedBox(
+                  width: 16,
+                  height: 16,
+                  child: CircularProgressIndicator(
+                    strokeWidth: 2,
+                    valueColor: AlwaysStoppedAnimation(Colors.white),
+                  ),
+                )
+              : const Icon(Icons.download_rounded, size: 19),
+          label: Text(_menyimpan ? 'Menyimpan…' : 'Simpan'),
+          style: FilledButton.styleFrom(
+            backgroundColor: Warna.utama,
+            foregroundColor: Colors.white,
+          ),
+        ),
+      ],
     );
   }
 }
