@@ -35,7 +35,7 @@ PERCUMA DAN SELAMAT
 • Semua kandungan percuma untuk semua murid. Tiada kandungan dikunci.
 • Tiada akaun, tiada iklan, tiada penjejakan, tiada pengumpulan data.
 • Berfungsi tanpa Internet. Semua rekod disimpan di dalam peranti sahaja.
-• Pilihan tip sukarela (RM 3 / RM 5 / RM 10) untuk ibu bapa yang ingin menyokong pembangunan aplikasi.
+• Pilihan sumbangan sukarela (kod QR) untuk mereka yang ingin menyokong pembangunan aplikasi.
 
 Aplikasi ini bebas dan tidak bergabung dengan JAKIM atau mana-mana agensi kerajaan.
 ```
@@ -93,10 +93,9 @@ Semua dalam `edaran/store/play/` dan di Desktop.
 
 ---
 
-## In-app products
+## Sumbangan (Android)
 
-| Product ID | Name | Description | Price | Status |
-|---|---|---|---|---|
-| `com.razmanzainal.ulangkajiUpkk.tip3` | Tip RM 3 | Tip sukarela. Tiada kandungan dibuka. | RM 3.00 | **Active** |
-| `com.razmanzainal.ulangkajiUpkk.tip5` | Tip RM 5 | Tip sukarela. Tiada kandungan dibuka. | RM 5.00 | **Active** |
-| `com.razmanzainal.ulangkajiUpkk.tip10` | Tip RM 10 | Tip sukarela. Tiada kandungan dibuka. | RM 10.00 | **Active** |
+Android menggunakan **kod QR sumbangan** di tab Info (aset `assets/gambar/qr_donasi.png`).
+Tiada produk in-app di Play untuk versi ini.
+
+Tip melalui App Store (IAP `…ulangkajiUpkk.tip3/5/10`) adalah **untuk iOS sahaja**.
